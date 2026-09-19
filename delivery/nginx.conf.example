@@ -1,0 +1,12 @@
+# Merge into your existing HTTPS server. Replace root with your deployment directory.
+# Configure your own domain and TLS certificate separately.
+server {
+    listen 80;
+    server_name your-domain.example;
+    root /var/www/zhenji;
+    index index.html;
+    include mime.types;
+    location = /index.html { add_header Cache-Control "no-cache"; }
+    location ~* \.(js|css)$ { add_header Cache-Control "no-cache"; }
+    location / { try_files $uri $uri/ =404; }
+}
