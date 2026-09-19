@@ -1,0 +1,8 @@
+崇羲篆體 Chongxi Seal (2022)
+字形書寫：王心怡；製作團隊：謝清俊、莊德明、季旭昇、王心怡。
+來源：https://xiaoxue.iis.sinica.edu.tw/chongxi/
+Webfont mirror：https://github.com/Caf555/seal
+授權：CC-BY-ND-3.0-TW-or-later
+https://creativecommons.org/licenses/by-nd/3.0/tw/
+https://xiaoxue.iis.sinica.edu.tw/chongxi/copyright.htm
+本應用原樣使用鏡像所提供的字型檔，未修改。
