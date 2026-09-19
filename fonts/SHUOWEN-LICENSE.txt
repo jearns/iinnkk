@@ -1,0 +1,9 @@
+全字庫說文解字 EBAS
+來源：數位發展部，CNS11643中文標準交換碼全字庫網站，https://www.cns11643.gov.tw。
+官方下載：https://www.cns11643.gov.tw/downloadList.jsp?ID=2&ID2=20
+授權：政府資料開放授權條款 第1版。https://data.gov.tw/license
+官方授權聲明：https://www.cns11643.gov.tw/pageView.jsp?ID=59
+本網站以無償及非專屬授權方式授權使用者得不限時間及地域，重製、編輯、公開傳輸或為其他利用方式，開發各種產品或服務，但授權範圍不包含商標權及專利權。使用時應以適當方式註明來源出處。
+本應用將原始 TTF 無損封裝為 WOFF，字形未修改。
+
+Rendering note: the absent 跡 seal glyph is composed from the font’s 足 and 亦 components; this is a modern seal lettering treatment, not a facsimile of an ancient inscription. Other unavailable small-seal characters use the explicitly indicated regular-script fallback.
