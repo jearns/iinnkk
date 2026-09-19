@@ -1,0 +1,4 @@
+Simplified-to-Traditional character mappings derived from OpenCC STCharacters.txt.
+Source: https://github.com/BYVoid/OpenCC
+Copyright OpenCC contributors. Apache License 2.0; see OpenCC-LICENSE.txt.
+Modified for this application: the first traditional candidate is used; two inscription defaults are set explicitly. This is character-based conversion, not contextual word disambiguation.
