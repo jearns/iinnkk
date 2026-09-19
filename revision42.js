@@ -1,0 +1,13 @@
+(function init(){if(!window.Revision41?.ready){setTimeout(init,30);return}const $=id=>document.getElementById(id),app=AnnotationApp;
+// Keep the writing header's seal only; the homepage retains its full brand.
+document.querySelector('.topStrip .appName>span')?.remove();
+const dock=$('bottomDock'),status=document.createElement('div'),scroll=document.createElement('div');status.id='statusBar42';scroll.id='statusDetails42';status.append(scroll,$('dockToggle'));scroll.append($('zoomReadout'));dock.insertBefore(status,$('dockContent'));
+const field=(id,label,dialog,control)=>{const b=document.createElement('button');b.id=id;b.title='设置'+label;b.onclick=()=>{app.openDialog(dialog);requestAnimationFrame(()=>{const e=$(control);e?.scrollIntoView({block:'center'});e?.focus({preventScroll:true})})};scroll.append(b);return b};
+const ratio=field('statusRatio42','作品比例','paperDialog','ratio'),pattern=field('statusPattern42','纹样','paperDialog','paperPattern'),material=field('statusMaterial42','材质','paperDialog','material'),color=field('statusColor42','纸色与配色','paperDialog','colorPair'),mount=field('statusMount42','装裱','mountDialog','sceneChoice');
+function option(id){return $(id)?.selectedOptions?.[0]?.textContent||''}function set(e,s){if(e.textContent!==s)e.textContent=s}
+function sync(){set(ratio,'比例 '+option('ratio'));set(pattern,'纹样 '+option('paperPattern'));set(material,'材质 '+option('material'));set(color,'纸色 '+option('papercolor'));const scene=$('sceneChoice').value;set(mount,'装裱 '+(scene!=='none'?option('sceneChoice'):option('quickMount')))}
+for(const id of ['topPattern','topRatio','topMount'])if($(id)){$(id).hidden=true;$(id).setAttribute('aria-hidden','true')}
+const dialog=document.createElement('dialog');dialog.id='photoSettings42';dialog.innerHTML='<div class="dialogHead"><h2>图文与明信片</h2><button id="closePhotoSettings42">完成 ×</button></div><div class="dialogBody"></div>';document.body.append(dialog);const body=dialog.querySelector('.dialogBody');body.append($('photoMode').closest('label'),document.querySelector('.postcardSettings41'));if($('photoVeil'))body.append($('photoVeil').closest('label'));$('closePhotoSettings42').onclick=()=>dialog.close();
+const upload=document.createElement('button');upload.className='wide';upload.textContent='上传风光照片';upload.onclick=()=>{dialog.close();$('photoUpload').click()};body.append(upload);
+const b=Revision38.icon('photoSettingsQuick42','图文／照片／明信片设置','<rect x="3" y="4" width="18" height="16" rx="1"/><path d="M13 4v16M3 14l4-4 6 6M16 9h3M16 13h3M16 17h3"/>');b.onclick=()=>app.openDialog('photoSettings42');$('bottomIcons39').prepend(b);
+window.Status42={sync};sync();window.Revision42={ready:true};app.refreshPaper();})();
