@@ -1,0 +1,8 @@
+{
+  "name":"iinnkk",
+  "main":"server/worker47.mjs",
+  "compatibility_date":"2026-08-06",
+  "assets":{"directory":"dist/client","binding":"ASSETS","run_worker_first":["/api/*"]},
+  "d1_databases":[{"binding":"DB","database_name":"iinnkk","database_id":"REPLACE_WITH_YOUR_D1_DATABASE_ID","migrations_dir":"drizzle"}],
+  "r2_buckets":[{"binding":"BUCKET","bucket_name":"iinnkk-works"}]
+}

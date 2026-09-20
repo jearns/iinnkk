@@ -9,4 +9,4 @@ window.restoreToolbarOrder=order=>{orderRow($('topActions'),top,order?.version==
 restoreToolbarOrder(window.pendingToolbarOrder43);installToolbarDrag43($('bottomIcons39'));
 $('redo').title='返回 · 恢复上一操作';$('redo').setAttribute('aria-label','返回');
 $('myWorks').innerHTML='<svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h6l2 3h10v12H3zM5 6V3h13v6M7 14h10M7 17h6"/></svg>';
-if(['留下真迹','见字如我'].includes($('tailText').value))AnnotationApp.editSeal('tail',{config:{text:'见墨如我'}});window.Revision43={ready:true};window.Revision44={ready:true};window.Revision45={ready:true};window.Revision46={ready:true};document.documentElement.classList.add('ui-ready');})();
+if(['留下真迹','见字如我'].includes($('tailText').value))AnnotationApp.editSeal('tail',{config:{text:'见墨如我'}});window.Revision43={ready:true};window.Revision44={ready:true};window.Revision45={ready:true};window.Revision46={ready:true};})();
