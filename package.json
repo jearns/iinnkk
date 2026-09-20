@@ -1,1 +1,2 @@
-{"name":"iinnkk","private":true,"version":"47.0.0","type":"module","scripts":{"build":"node scripts/build47.mjs","schema":"drizzle-kit generate","test":"node --test tests/server47.test.mjs"},"dependencies":{"jose":"^6.1.0","qrcode":"^1.5.4","drizzle-orm":"^0.44.5"},"devDependencies":{"esbuild":"^0.25.10","drizzle-kit":"^0.31.4","miniflare":"^4.20250917.0"}}
+{"name":"iinnkk","private":true,"version":"47.0.0","type":"module","scripts":{"build":"node scripts/build47.mjs","schema":"drizzle-kit generate","test":"node --test tests/server47.test.mjs tests/password48.test.mjs"},"dependencies":{"jose":"^6.1.0","qrcode":"^1.5.4","drizzle-orm":"^0.44.5"},"devDependencies":{"esbuild":"^0.25.10","drizzle-kit":"^0.31.4","miniflare":"^4.20250917.0"}}
+

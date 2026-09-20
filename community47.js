@@ -1,14 +1,40 @@
 (async function init(){if(!window.Revision47?.ready){setTimeout(init,40);return}const $=id=>document.getElementById(id),app=AnnotationApp,{create:E,dialog}=Revision47;let me=null,site={content:{},revision:0,templates:[]},session=null,parentWork=window.parentWork47||null,activeWork=null,publishBusy=false;
 // Creative tools are available to everyone; cloud ownership and admin checks remain separate.
 window.Member47={user:null,canAdvanced:()=>true};
+let accountMode='login';
 const api=async(path,options={})=>{const headers=new Headers(options.headers);if(options.body&&typeof options.body!=='string'&&!(options.body instanceof Blob)&&!(options.body instanceof ArrayBuffer)){headers.set('content-type','application/json');options.body=JSON.stringify(options.body)}const r=await fetch(path,{...options,headers,credentials:'same-origin',cache:'no-store'});let d;try{d=await r.json()}catch{throw Error('此站尚未启用在线服务，本机作品仍可使用')}if(!r.ok)throw Error(d.error||'操作未完成，请重试');return d};
 const report=e=>app.toast(e.message||String(e));const run=fn=>async()=>{try{await fn()}catch(e){report(e)}};const action=(label,fn,parent,primary=false)=>{const b=E('button',{class:primary?'primary':''},label);b.onclick=run(fn);parent.append(b);return b};
 const account=dialog('accountDialog47','我的亲笔'),login=E('button',{id:'account47'},'登录');document.querySelector('.annotationBrand').append(login);login.onclick=()=>{renderAccount();app.openDialog(account.d.id)};
 const gallery=E('section',{id:'community47'}),gh=E('div',{class:'actions47'}),grid=E('div',{class:'communityGrid47'});gh.append(E('h2',{},'亲笔广场'));action('刷新',loadGallery,gh);gallery.append(gh,grid);$('annotationHome').append(gallery);
 async function loadSession(){session=await api('/api/session');me=session.user;login.textContent=me?me.name+' · '+({founder:'书仙',saint:'书圣',member:'书家'}[me.role]):'登录';window.Member47={user:me,canAdvanced:()=>true};return session}
-function renderAccount(){const b=account.b;b.replaceChildren();if(!session){b.append(E('p',{class:'notice47'},'在线账号服务尚未连接。可继续本机书写；已保存的本机作品不会删除。'));action('重新连接',async()=>{await loadSession();renderAccount()},b);return}if(!me){b.append(E('p',{class:'notice47'},'创作功能全部免费开放，无需登录。登录仅用于云端同步和作品互动。'));const p=E('div',{class:'actions47'});for(const provider of session.providers){const a=E('a',{class:'provider47',href:provider.enabled?'/api/auth/'+provider.id+'/start':'#','aria-disabled':String(!provider.enabled)},provider.name);if(!provider.enabled)a.onclick=e=>{e.preventDefault();app.toast(provider.name+'登录尚未完成平台应用授权')};p.append(a)}b.append(p);if(session.sitesSignIn)b.append(E('a',{href:'/signin-with-chatgpt?return_to=%2F%3FsignedIn%3D1',target:'_top'},'使用 ChatGPT 登录'));b.append(E('p',{class:'notice47'},'灰色入口等待平台授权，不会模拟登录。'));return}
+function renderAccount(){const b=account.b;b.replaceChildren();if(!session){b.append(E('p',{class:'notice47'},'在线账号服务尚未连接。可继续本机书写；已保存的本机作品不会删除。'));action('重新连接',async()=>{await loadSession();renderAccount()},b);return}if(!me){renderPasswordLogin(b);return}
 const name=E('input',{value:me.name,'aria-label':'显示名称',maxlength:'50'});b.append(name);action('保存昵称',async()=>{await api('/api/profile',{method:'PATCH',body:{name:name.value}});await loadSession();renderAccount()},b);const stats=E('div',{class:'accountStats47'});b.append(stats);api('/api/stats').then(s=>{for(const[k,label,v]of [['characters','估算书写字数',s.characters],['days','书写天数',s.days],['seconds','累计分钟',Math.round(s.seconds/60)]]){const d=E('div');d.append(E('strong',{},String(v||0)),E('small',{},label));stats.append(d)}}).catch(report);b.append(E('p',{class:'notice47'},'所有创作功能已免费开放，无体验期限'));
 const a=E('div',{class:'actions47'});action('保存我的设置',saveCloudSettings,a);action('恢复云端设置',async()=>{const c=await api('/api/settings');if(!c.settings)throw Error('还没有云端设置');app.applyCloudSettings(c.settings);if(c.toolbar)restoreToolbarOrder(c.toolbar);if(c.moments)await DraftStore.set('annotation.moments.v1',c.moments);app.toast('已恢复云端设置')},a);action('我的云端作品',showMine,a);if(me.role==='founder'){action('网站管理',openAdmin,a);action('所见即所得编辑',()=>{account.d.close();startCMS()},a)}action('退出',async()=>{await api('/api/auth/logout',{method:'POST'});if(session.sitesSignIn)location.href='/signout-with-chatgpt?return_to=%2F';else{await loadSession();renderAccount()}},a);b.append(a)}
+
+function renderPasswordLogin(b){
+ b.append(E('p',{class:'accountEyebrow48'},'今日亲笔 · 留下你的墨迹'));
+ const tabs=E('div',{class:'accountTabs48','aria-label':'账号操作'});
+ for(const [mode,label] of [['login','登录'],['register','注册']]){const t=E('button',{type:'button','aria-pressed':String(accountMode===mode)},label);t.onclick=()=>{accountMode=mode;renderAccount()};tabs.append(t)}
+ b.append(tabs);
+ if(!session.passwordLogin){b.append(E('p',{class:'notice47'},'账号密码服务正在更新，请稍后重试。'));return}
+ const form=E('form',{class:'accountForm48'}),fields={};
+ for(const [key,label,type,auto,placeholder] of [['username','用户名','text','username','3—32 位字母或数字'],['password','密码','password',accountMode==='register'?'new-password':'current-password','至少 15 个字符，可使用长句'],...(accountMode==='register'?[['name','昵称（选填）','text','nickname','作品旁显示的名字']]:[])]){
+  const l=E('label',{},label),input=E('input',{name:key,type,autocomplete:auto,placeholder,autocapitalize:'none',spellcheck:'false'});
+  if(key!=='name')input.required=true;
+  input.maxLength=key==='username'?32:key==='password'?128:50;
+  if(key==='username')input.pattern='[A-Za-z0-9][A-Za-z0-9_.\\-]{2,31}';
+  if(key==='password')input.minLength=15;
+  fields[key]=input;l.append(input);form.append(l);
+ }
+ const error=E('p',{class:'error47',role:'status','aria-live':'polite'}),submit=E('button',{type:'submit',class:'accountSubmit48'},accountMode==='register'?'注册并登录':'登录');
+ form.append(error,submit);form.onsubmit=async ev=>{ev.preventDefault();if(submit.disabled||!form.reportValidity())return;submit.disabled=true;error.textContent='';submit.textContent='正在连接…';
+  try{await api('/api/auth/'+accountMode,{method:'POST',body:Object.fromEntries(Object.entries(fields).map(([k,v])=>[k,v.value]))});fields.password.value='';await loadSession();if(!me)throw Error('登录状态未保存，请检查浏览器是否允许 Cookie');renderAccount();loadGallery();app.toast('已登录，作品与设置可以同步了')}
+  catch(e){error.textContent=e.message;submit.disabled=false;submit.textContent=accountMode==='register'?'注册并登录':'登录'}
+ };b.append(form,E('p',{class:'notice47'},'创作功能无需登录。账号用于同步设置、保存云端作品、点赞与点评。请妥善记住密码，暂未开放自助找回。'));
+ const enabled=(session.providers||[]).filter(p=>p.enabled);
+ if(enabled.length){const providers=E('div',{class:'actions47'});for(const p of enabled)providers.append(E('a',{href:'/api/auth/'+p.id+'/start'},p.name));b.append(providers)}
+}
+
 function requireLogin(){if(me)return true;renderAccount();app.openDialog(account.d.id);return false}
 async function saveCloudSettings(){if(!requireLogin())return;await api('/api/settings',{method:'PUT',body:{settings:app.settingsSnapshot(),toolbar:window.toolbarOrder(),moments:await DraftStore.get('annotation.moments.v1')}});app.toast('设置已同步到账号')}
 let settingsTimer;document.addEventListener('settings-changed47',()=>{if(me){clearTimeout(settingsTimer);settingsTimer=setTimeout(()=>saveCloudSettings().catch(report),900)}});$('saveSettings')?.addEventListener('click',()=>{if(me)saveCloudSettings().catch(report)});
@@ -48,7 +74,7 @@ let referenceConfig=null;async function startReference(files,config={}){referenc
 async function useCopybook(t){const files=[];for(const[src,i]of t.config.pages.map((x,i)=>[x,i])){const r=await fetch(src);if(!r.ok)throw Error('原帖加载失败');files.push(new File([await r.blob()],t.title+'-'+i+'.png',{type:r.headers.get('content-type')||'image/png'}))}admin.d.close();await startReference(files,t.config)}
 const refTools=E('div',{class:'actions47'});action('在线原帖库',async()=>{const d=dialog('copyLibrary47','在线原帖');const books=site.templates.filter(t=>t.kind==='copybook');if(!books.length)d.b.append(E('p',{},'暂无公开原帖。书仙可在网站管理中上传，或直接上传本机图片。'));for(const t of books)action(t.title,async()=>{d.d.close();await useCopybook(t)},d.b);app.openDialog(d.d.id)},refTools);$('copyDialog').querySelector('.dialogBody').prepend(refTools);
 document.addEventListener('writing-scenario47',()=>{parentWork=window.parentWork47=null});
-document.addEventListener('reference-loaded47',async e=>{try{const im=e.detail.image;await app.reference47(im,referenceConfig||{});const segments=window.Reference47?.detect(im);if(segments?.length){const first=segments[0];app.focusPoint47(first.x*4,first.y*4*im.height/im.width)}referenceConfig=null;app.toast('已按原帖尺寸定位右上起笔；行列可在设置中校正，四向按钮逐字移动')}catch(err){report(err)}});
+document.addEventListener('reference-loaded47',async e=>{try{const im=e.detail.image;await app.reference47(im,referenceConfig||{});const segments=window.Reference47?.detect(im);if(segments?.length){const first=segments[0];const point=app.referencePoint47(im,first);app.focusPoint47(point.x,point.y)}referenceConfig=null;app.toast('已铺入 3:4 固定纸张；原帖完整显示，四向按钮逐字移动')}catch(err){report(err)}});
 // Location is requested at the start of writing only after the user opts in; browser permission always applies.
 const locButton=E('button',{id:'nearby47'},'附近历史落款');locButton.onclick=run(locateHistory);$('statusDetails42').append(locButton);Revision47.registerTool('nearbyQuick47','附近历史落款','<path d="M12 22s8-9 8-14a8 8 0 0 0-16 0c0 5 8 14 8 14Z"/><circle cx="12" cy="8" r="3"/>',locateHistory);
 let askedLocation=false;const showWriter=app.showWriter;app.showWriter=()=>{showWriter();if(!askedLocation&&session&&localStorage.getItem('ink.nearby.enabled')!=='0'){askedLocation=true;locateHistory(true).catch(()=>{})}};
@@ -61,3 +87,4 @@ try{await loadSession();site=await api('/api/site');registerCMS();applySceneOrde
 await loadGallery();const shared=new URLSearchParams(location.search).get('work');if(shared)openWork(shared).catch(report);
 window.Community47={ready:true,api,openAdmin,openWork,saveCloudSettings,startReference,get user(){return me},get site(){return site}};
 })();
+
