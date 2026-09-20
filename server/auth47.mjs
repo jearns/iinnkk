@@ -2,7 +2,8 @@ import {createRemoteJWKSet,jwtVerify} from 'jose';
 export const uid=()=>crypto.randomUUID();
 export const hash=async s=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))].map(v=>v.toString(16).padStart(2,'0')).join('');
 const cookie=(r,k)=>r.headers.get('cookie')?.split(';').map(s=>s.trim()).find(s=>s.startsWith(k+'='))?.slice(k.length+1);
-export const entitled=u=>!!u&&(u.role==='founder'||u.role==='saint'||Date.now()-u.created<7*86400000);
+// Membership no longer limits creative features. Routes still enforce login and ownership.
+export const entitled=()=>true;
 export async function register(env,identity,name){let u=await env.DB.prepare('SELECT * FROM users WHERE identity=?').bind(identity).first();if(u)return u;const id=uid();await env.DB.batch([env.DB.prepare('INSERT OR IGNORE INTO users(id,identity,name,role,created) VALUES (?,?,?,?,?)').bind(id,identity,String(name||'亲笔书家').slice(0,50),'member',Date.now()),env.DB.prepare("INSERT OR IGNORE INTO site_state(key,value) SELECT 'founder', id FROM users WHERE identity=?").bind(identity),env.DB.prepare("UPDATE users SET role='founder' WHERE id=(SELECT value FROM site_state WHERE key='founder')")]);return env.DB.prepare('SELECT * FROM users WHERE identity=?').bind(identity).first()}
 export async function user(request,env){const token=cookie(request,'ink_session');if(token){const u=await env.DB.prepare('SELECT u.* FROM users u JOIN sessions s ON s.user_id=u.id WHERE s.id=? AND s.expires>?').bind(await hash(token),Date.now()).first();if(u)return u}
 // These headers are used only on the trusted Sites dispatcher deployment, never on a self-hosted Worker.
