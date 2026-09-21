@@ -1,2 +1,25 @@
-{"name":"iinnkk","private":true,"version":"47.0.0","type":"module","scripts":{"build":"node scripts/build47.mjs","schema":"drizzle-kit generate","test":"node --test tests/server47.test.mjs tests/password48.test.mjs"},"dependencies":{"jose":"^6.1.0","qrcode":"^1.5.4","drizzle-orm":"^0.44.5"},"devDependencies":{"esbuild":"^0.25.10","drizzle-kit":"^0.31.4","miniflare":"^4.20250917.0"}}
-
+{
+  "name": "iinnkk",
+  "private": true,
+  "version": "47.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build47.mjs",
+    "schema": "drizzle-kit generate",
+    "test": "node --test tests/server47.test.mjs tests/password48.test.mjs",
+    "build:studio": "esbuild scripts/craft3d50-entry.js --bundle --minify --format=iife --outfile=craft3d50.js",
+    "build:cloud": "esbuild scripts/supabase51-entry.js --bundle --minify --format=iife --outfile=supabase51.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.116.0",
+    "drizzle-orm": "^0.44.5",
+    "jose": "^6.1.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.4",
+    "esbuild": "^0.25.10",
+    "miniflare": "^4.20250917.0",
+    "three": "0.186.0"
+  }
+}
