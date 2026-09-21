@@ -6,8 +6,8 @@ const KEY='iinnkk.studio.v1',AUTH='iinnkk.studio.admin.v1';
 const copy=x=>JSON.parse(JSON.stringify(x)),clamp=(x,a,b)=>Math.max(a,Math.min(b,Number(x)||a));
 const defaults={version:1,brand:{name:'今日亲笔',slogan:'亲笔手书，见墨如我',color:'#34382e',size:28},integrations:{ai:'',model:'',protocol:'responses',webhook:''},nav:[
  {id:'single',title:'单字',layout:'single',format:'square',direction:'vertical',rows:1,columns:1,size:400,zoom:100,preset:'ouyang',ruling:'mi',pattern:'dragon',material:'plain',paper:'#f5f1e6',ink:'#050505',dry:.14,dynamics:.6,opacity:1,text:'',advanced:{}},
- {id:'letter',title:'写信',layout:'free',format:'letter',direction:'vertical',rows:8,columns:6,size:18,zoom:300,preset:'zhang',ruling:'vertical',pattern:'dragon',material:'plain',paper:'#f5f1e6',ink:'#050505',dry:.4,dynamics:.9,opacity:1,text:'',advanced:{}},
- {id:'copy',title:'临帖',layout:'free',format:'letter',direction:'vertical',rows:10,columns:6,size:18,zoom:300,preset:'zhang',ruling:'hui',pattern:'dragon',material:'plain',paper:'#f5f1e6',ink:'#050505',dry:.4,dynamics:.9,opacity:1,text:'',advanced:{}}
+ {id:'copy',title:'临帖',layout:'free',format:'letter',direction:'vertical',rows:10,columns:6,size:18,zoom:300,preset:'zhang',ruling:'hui',pattern:'dragon',material:'plain',paper:'#f5f1e6',ink:'#050505',dry:.4,dynamics:.9,opacity:1,text:'',advanced:{}},
+ {id:'letter',title:'创作',layout:'free',format:'letter',direction:'vertical',rows:8,columns:6,size:35,zoom:200,preset:'zhang',ruling:'vertical',pattern:'dragon',material:'plain',paper:'#f5f1e6',ink:'#050505',dry:.4,dynamics:.9,opacity:1,text:'',advanced:{}}
  ]};
 const formats={square:['斗方',1,'vermillion'],letter:['书信 · 3:4',.75,'letter'],couplet:['对联',.544444,'vermillion'],horizontal:['横幅',1.85567,'vermillion'],middle:['中堂',.538889,'scroll'],plaque:['匾额',3,'plaque'],postcard:['明信片',.75,'postcard'],fan:['扇面',1.8,'studioFan']};
 const E=(tag,attrs={},text)=>{const e=document.createElement(tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,String(v));if(text!==undefined)e.textContent=text;return e};
@@ -19,7 +19,7 @@ function normalize(raw){
  for(const k of ['ai','model','webhook'])c.integrations[k]=String(raw.integrations?.[k]||'').slice(0,500);c.integrations.protocol=raw.integrations?.protocol==='chat'?'chat':'responses';
  return c;
 }
-let config=copy(defaults),loadError='';try{const raw=localStorage.getItem(KEY);if(raw)config=normalize(JSON.parse(raw))}catch{loadError='本机配置无法读取，暂用默认入口；原数据未覆盖。'}
+let config=copy(defaults),loadError='';try{const raw=localStorage.getItem(KEY);if(raw)config=normalize(JSON.parse(raw));if(!localStorage.getItem('iinnkk.nav54')){const single=config.nav.find(n=>n.id==='single'),copyMode=config.nav.find(n=>n.id==='copy'),creation=config.nav.find(n=>n.id==='letter');if(single&&copyMode&&creation){creation.title='创作';creation.zoom=200;creation.size=35;config.nav=[single,copyMode,creation,...config.nav.filter(n=>!['single','copy','letter'].includes(n.id))];localStorage.setItem(KEY,JSON.stringify(config))}localStorage.setItem('iinnkk.nav54','1')}}catch{loadError='本机配置无法读取，暂用默认入口；原数据未覆盖。'}
 let app,unlocked=false,admin,selected=config.nav[0]?.id,status,applying=false,managementParent53=null;
 function save(next=config){const valid=normalize(next);try{localStorage.setItem(KEY,JSON.stringify(valid))}catch{throw Error('本机存储已满或被禁用，修改未保存；请先导出配置。')}if(next!==config)config=valid;else{config.nav.forEach((n,i)=>Object.assign(n,valid.nav[i]));config.brand=valid.brand;config.integrations=valid.integrations;}renderNav();applyBrand();if(status)status.textContent='已保存到此设备 · '+new Date().toLocaleTimeString();document.dispatchEvent(new Event('studio-config50'));}
 function download(blob,name){const a=E('a',{href:URL.createObjectURL(blob),download:name});document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),60000)}
