@@ -8,13 +8,6 @@
       "when": 1789903092058,
       "tag": "0000_broken_vapor",
       "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "6",
-      "when": 1789920428953,
-      "tag": "0001_password_accounts48",
-      "breakpoints": true
     }
   ]
 }
