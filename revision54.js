@@ -43,12 +43,12 @@ function showGroup(name){current=name;[...steps.children].forEach(b=>b.setAttrib
 delete groups['文创'];for(const name of Object.keys(groups)){const b=E('button',{type:'button'},name);b.onclick=()=>showGroup(name);steps.append(b)}showGroup(current);
 close.onclick=()=>d.close();
 download.onclick=()=>{for(const id of ['download_seals','download_mount','download_material','download_inkColor','download_paperColor'])if($(id))$(id).checked=true;if($('download_guide'))$('download_guide').checked=false;if($('download_lines'))$('download_lines').checked=$('showLines').value==='yes';d.close();$('generateDownload').click()};
-const effects=E('section',{id:'previewEffects55',hidden:''});effects.append(steps,rail,note);$('board').append(effects);d.remove();
+const effects=E('section',{id:'previewEffects55',hidden:''});effects.append(steps,rail,note);$('board').parentElement.append(effects);d.remove();
 async function render(){A.refresh();Status42.sync();}
 const originalFit=$('fitView').onclick;
 $('fitView').onclick=()=>{originalFit();effects.hidden=!A.isOverview55();};
 $('export').onclick=()=>{if(!A.isOverview55())originalFit();effects.hidden=false;for(const k of ['seals','mount','material','inkColor','paperColor'])if($('download_'+k))$('download_'+k).checked=true;$('download_guide').checked=false;$('generateDownload').click()};
-const save=E('button',{type:'button'},'下载作品');save.onclick=()=>$('export').click();steps.append(save);
+const previewActions=E('div',{class:'previewActions56'}),save=E('button',{type:'button',id:'previewDownload56',class:'primary'},'生成并下载作品');save.onclick=()=>$('export').click();previewActions.append(save);effects.append(previewActions);
 const write=E('button',{type:'button'},'返回书写');write.onclick=()=>{if(A.isOverview55())$('fitView').click();effects.hidden=true};steps.prepend(write);
 const craftButton=E('button',{type:'button'},'文创预览');craftButton.onclick=()=>window.InkProduction50?.open().catch(e=>A.toast(e.message||'文创预览未能打开'));steps.append(craftButton);
 const select=E('button',{type:'button'},'圈选局部');select.onclick=()=>$('selectInk').click();steps.append(select);
