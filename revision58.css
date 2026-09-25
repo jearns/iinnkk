@@ -1,0 +1,9 @@
+/* The three writing modes sit above the visual template carousel on every viewport. */
+body.home-open #annotationHome #homeQuick47{order:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;width:min(100%,610px);margin:5px auto 12px;flex:0 0 auto}
+body.home-open #annotationHome #homeQuick47 button{min-width:0;min-height:48px;padding:8px 12px;border:1px solid #b7c0b6;border-radius:10px;background:#e9ede7;color:#263b32;font-size:16px;font-weight:600;box-shadow:0 2px 7px #182d2112}
+body.home-open #annotationHome #homeQuick47 button:focus-visible{outline:3px solid #a43329;outline-offset:2px}
+body.home-open #annotationHome .annotationGallery{order:1;min-height:0}
+body.home-open #annotationHome #annotationCategories{order:2}
+body.home-open #annotationHome .annotationAction{order:3}
+body.home-open #annotationHome footer{order:4}
+@media(max-width:500px){body.home-open #annotationHome #homeQuick47{gap:7px;margin:4px auto 10px}body.home-open #annotationHome #homeQuick47 button{min-height:44px;padding:6px 4px;font-size:15px}}
