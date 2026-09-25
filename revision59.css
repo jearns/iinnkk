@@ -1,0 +1,7 @@
+/* One clear decision row beneath the preview effects. */
+body.preview-open56 #previewEffects55 .previewActions56{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:5px 12px max(7px,env(safe-area-inset-bottom,0px))}
+body.preview-open56 #previewEffects55 .previewActions56 button{width:100%;min-width:0;min-height:50px;padding:9px 7px;border-radius:12px;font:600 16px/1.2 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;box-shadow:0 5px 16px #30231429;cursor:pointer}
+body.preview-open56 #returnWriting59{background:#fffaf0;color:#253b31;border:2px solid #9a8a67}
+body.preview-open56 #generateArtwork59{background:#9d3025;color:#fff;border:2px solid #bb5649}
+body.preview-open56 #returnWriting59:focus-visible,body.preview-open56 #generateArtwork59:focus-visible{outline:3px solid #30594b;outline-offset:2px}
+body.home-open #annotationHome #featuredWorks54{order:1}

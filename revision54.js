@@ -48,9 +48,8 @@ async function render(){A.refresh();Status42.sync();}
 const originalFit=$('fitView').onclick;
 $('fitView').onclick=()=>{originalFit();effects.hidden=!A.isOverview55();};
 $('export').onclick=()=>{if(!A.isOverview55())originalFit();effects.hidden=false;for(const k of ['seals','mount','material','inkColor','paperColor'])if($('download_'+k))$('download_'+k).checked=true;$('download_guide').checked=false;$('generateDownload').click()};
-const previewActions=E('div',{class:'previewActions56'}),save=E('button',{type:'button',id:'previewDownload56',class:'primary'},'生成并下载作品');save.onclick=()=>$('export').click();previewActions.append(save);effects.append(previewActions);
-const write=E('button',{type:'button'},'返回书写');write.onclick=()=>{if(A.isOverview55())$('fitView').click();effects.hidden=true};steps.prepend(write);
-const craftButton=E('button',{type:'button'},'文创预览');craftButton.onclick=()=>window.InkProduction50?.open().catch(e=>A.toast(e.message||'文创预览未能打开'));steps.append(craftButton);
+const previewActions=E('div',{class:'previewActions56'}),write=E('button',{type:'button',id:'returnWriting59'},'↶ 返回书写'),save=E('button',{type:'button',id:'generateArtwork59',class:'primary'},'生成下载 ↓');write.onclick=()=>{if(A.isOverview55())$('fitView').click();effects.hidden=true};save.onclick=()=>$('export').click();previewActions.append(write,save);effects.append(previewActions);
+const craftButton=E('button',{type:'button'},'文创预览');craftButton.onclick=()=>{if(!window.InkProduction50){A.toast('文创预览尚未加载');return}window.InkProduction50.open().catch(e=>A.toast(e.message||'文创预览未能打开'))};steps.append(craftButton);
 const select=E('button',{type:'button'},'圈选局部');select.onclick=()=>$('selectInk').click();steps.append(select);
 // Local homepage curation. Recommended finished works replace empty historical covers.
 const feature=E('section',{id:'featuredWorks54',hidden:''}),track=E('div',{class:'featuredTrack54'}),featureHead=E('header',{},'首页展播 · 亲笔进入文明现场');feature.append(featureHead,track);document.querySelector('.annotationGallery')?.before(feature);
