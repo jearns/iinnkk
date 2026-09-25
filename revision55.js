@@ -1,6 +1,6 @@
 /* Unified paper preview and local copybook library. */
 (function init(){
-if(!window.FinalStudio54||!window.InkCloud51||!window.Modes53){setTimeout(init,50);return}
+if(!window.FinalStudio54||!window.Modes53){setTimeout(init,50);return}
 const A=AnnotationApp,U=InkStudio50,$=id=>document.getElementById(id),E=U.E;
 const readout=$('zoomReadout');readout.hidden=true;
 for(const [id,label,dialog,control] of [['statusZoom55','缩放','paperDialog','zoom'],['statusSize55','笔径','brushDialog','sizeNumber']]){const b=E('button',{id,type:'button'},label);b.onclick=()=>{A.openDialog(dialog);requestAnimationFrame(()=>{$(control).scrollIntoView({block:'center'});$(control).focus()})};$('statusDetails42').prepend(b)}

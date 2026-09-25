@@ -1,11 +1,24 @@
 (function(root){
 const presets={
- song:{name:'宋韵素绫',ratio:.75,side:.13,top:.16,bottom:.20,mat:'#d8ceb9',edge:'#8f8067',style:'double'},
- japanese:{name:'京都榉木',ratio:.75,side:.16,top:.16,bottom:.24,mat:'#eee8d8',edge:'#9a7c59',style:'float'},
- nordic:{name:'北欧白橡',ratio:.75,side:.18,top:.16,bottom:.23,mat:'#f5f2e9',edge:'#c1a57d',style:'step'},
- paris:{name:'巴黎香槟',ratio:.75,side:.18,top:.22,bottom:.26,mat:'#eee4d2',edge:'#ae8b51',style:'paris'},
- dark:{name:'墨线留白',ratio:.75,side:.10,top:.10,bottom:.14,mat:'#f2f0e9',edge:'#343632',style:'frame'},
- bare:{name:'无框素笺',ratio:.75,side:0,top:0,bottom:0,mat:'#f5f1e6',edge:'#f5f1e6',style:'bare'}
+ xuanhe:{name:'宫廷 · 宣和装意匠',ratio:.75,side:.11,top:.38,bottom:.24,mat:'#b4a483',edge:'#50482d',style:'xuanhe'},
+ shaoxing:{name:'宫廷 · 绍兴装意匠',ratio:.75,side:.075,top:.30,bottom:.21,mat:'#c4bea4',edge:'#6d7262',style:'shaoxing'},
+ qianlong:{name:'宫廷 · 乾隆内府意匠',ratio:.75,side:.15,top:.34,bottom:.25,mat:'#b99851',edge:'#533f26',style:'qianlong'},
+ japanese:{name:'京都 · 榉木浮裱',ratio:.75,side:.16,top:.16,bottom:.24,mat:'#eee8d8',edge:'#9a7c59',style:'float'},
+ nordic:{name:'北欧 · 白橡深盒',ratio:.75,side:.18,top:.16,bottom:.23,mat:'#f5f2e9',edge:'#c1a57d',style:'step'},
+ bauhaus:{name:'包豪斯 · 几何构成',ratio:.75,side:.14,top:.14,bottom:.20,mat:'#e9e5d8',edge:'#282a29',style:'bauhaus'},
+ bronze:{name:'纽约 · 古铜悬浮',ratio:.75,side:.10,top:.10,bottom:.17,mat:'#e2dbca',edge:'#796248',style:'bronze'},
+ paris:{name:'巴黎 · 香槟拱廊',ratio:.75,side:.18,top:.22,bottom:.26,mat:'#eee4d2',edge:'#ae8b51',style:'paris'},
+ song:{name:'宋韵 · 素绫双缘',ratio:.75,side:.13,top:.16,bottom:.2,mat:'#d8ceb9',edge:'#8f8067',style:'double'},
+ ru:{name:'汝青 · 瓷色细边',ratio:.75,side:.09,top:.09,bottom:.13,mat:'#dbe5df',edge:'#698e8b',style:'inset'},
+ walnut:{name:'乌木 · 悬浮窄框',ratio:.75,side:.08,top:.08,bottom:.08,mat:'#302b28',edge:'#181513',style:'float'},
+ gallery:{name:'雪白 · 错层卡纸',ratio:.75,side:.17,top:.13,bottom:.24,mat:'#faf9f5',edge:'#bbb8b0',style:'step'},
+ gold:{name:'香槟 · 细金画框',ratio:.75,side:.1,top:.1,bottom:.15,mat:'#f1e9d9',edge:'#ab8b50',style:'gold'},
+ bare:{name:'素笺',ratio:.76,side:0,top:0,bottom:0,mat:'#f5f1e6',edge:'#f5f1e6',style:'bare'},
+ silk:{name:'素绫立轴',ratio:.43,side:.085,top:.23,bottom:.16,mat:'#d1c8b2',edge:'#756953',style:'scroll'},
+ square:{name:'美术馆 · 月白卡纸',ratio:1,side:.12,top:.12,bottom:.16,mat:'#f6f4ed',edge:'#b4ada0',style:'frame'},
+ dark:{name:'墨线 · 细框留白',ratio:2.4,side:.10,top:.10,bottom:.14,mat:'#f2f0e9',edge:'#343632',style:'frame'},
+ red:{name:'茶绫 · 长轴',ratio:.28,side:.10,top:.25,bottom:.19,mat:'#b9ab91',edge:'#736652',style:'scroll'},
+ blue:{name:'青灰 · 册页',ratio:.76,side:.14,top:.15,bottom:.15,mat:'#a4aaa4',edge:'#626960',style:'album'}
 };
 function box(key,w,h){const p=presets[key]||presets.bare;return{x:w*p.side,y:w*p.top,width:w*(1+2*p.side),height:h+w*(p.top+p.bottom)}}
 function draw(t,key,w,h){const p=presets[key]||presets.bare,b=box(key,w,h);t.fillStyle=p.mat;t.fillRect(0,0,b.width,b.height);if(key==='bare')return b;

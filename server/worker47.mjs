@@ -17,7 +17,7 @@ need(env.DB&&env.BUCKET,503,'在线服务尚未配置，本机书写和作品仍
 if(!['GET','HEAD','OPTIONS'].includes(method)&&!path.endsWith('/callback'))need(r.headers.get('origin')===url.origin,403,'请从本站页面提交');
 if(path.startsWith('/api/auth/'))return auth(r,env,path);
 const u=await user(r,env);const logged=()=>need(u,401,'请先登录');const founder=()=>{logged();need(u.role==='founder',403,'仅书仙可管理网站')};
-if(path==='/api/session')return json({user:publicUser(u),providers:providers(env),passwordLogin:true,sitesSignIn:env.SITES_AUTH==='enabled'});
+if(path==='/api/session')return json({user:publicUser(u),providers:providers(env),sitesSignIn:env.SITES_AUTH==='enabled'});
 if(path==='/api/site'&&method==='GET'){const row=await q(env,"SELECT value,revision FROM site_state WHERE key='content'").first();return json({content:row?JSON.parse(row.value):{},revision:row?.revision||0,templates:(await q(env,'SELECT * FROM templates WHERE hidden=0 ORDER BY position').all()).results.map(t=>({...t,config:JSON.parse(t.config)}))})}
 if(path==='/api/settings'){logged();if(method==='GET')return json(JSON.parse(u.settings));if(method==='PUT'){const data=await body(r,150000);await q(env,'UPDATE users SET settings=? WHERE id=?',JSON.stringify(data),u.id).run();return json({saved:true})}}
 if(path==='/api/profile'&&method==='PATCH'){logged();const data=await body(r);need(text(data.name),400,'请输入名称');await q(env,'UPDATE users SET name=? WHERE id=?',text(data.name,50),u.id).run();return json({saved:true})}
@@ -42,4 +42,3 @@ if(path==='/api/admin/upload'){const data=await r.arrayBuffer(),b=new Uint8Array
 if(path==='/api/nearby'){const lat=Number(url.searchParams.get('lat')),lon=Number(url.searchParams.get('lon'));need(Number.isFinite(lat)&&Math.abs(lat)<=90&&Number.isFinite(lon)&&Math.abs(lon)<=180,400,'位置不正确');const row=await q(env,"SELECT value FROM site_state WHERE key='content'").first();const events=row?(JSON.parse(row.value).places||[]):[];const radians=n=>n*Math.PI/180;const distance=(a,b)=>{const dlat=radians(a-lat),dlon=radians(b-lon);return 6371*2*Math.asin(Math.sqrt(Math.sin(dlat/2)**2+Math.cos(radians(lat))*Math.cos(radians(a))*Math.sin(dlon/2)**2))};const curated=events.map(e=>({...e,distance:distance(Number(e.lat),Number(e.lon))})).filter(e=>Number.isFinite(e.distance)&&e.distance<=10&&e.year&&e.source).sort((a,b)=>a.distance-b.distance).slice(0,8);return json({events:curated.length?curated:await nearby(lat,lon),notice:'只显示有来源的附近历史记录；没有匹配时不生成故事。'})}
 return json({error:'接口不存在'},404)}
 export default {async fetch(request,env,ctx){try{return await route(request,env)}catch(e){if(!e.status)console.error('Request failed',new URL(request.url).pathname,e.name);return json({error:e.status?e.message:'在线服务暂不可用，请稍后重试'},e.status||503)}}};
-

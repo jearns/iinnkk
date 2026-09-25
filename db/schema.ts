@@ -9,7 +9,3 @@ export const comments=sqliteTable('comments',{id:text('id').primaryKey(),userId:
 export const activity=sqliteTable('activity',{id:text('id').primaryKey(),userId:text('user_id').notNull().references(()=>users.id),day:text('day').notNull(),seconds:integer('seconds').notNull(),characters:integer('characters').notNull(),strokes:integer('strokes').notNull()});
 export const templates=sqliteTable('templates',{id:text('id').primaryKey(),title:text('title').notNull(),kind:text('kind').notNull(),config:text('config').notNull(),position:integer('position').notNull().default(0),hidden:integer('hidden').notNull().default(0)});
 export const uploads=sqliteTable('uploads',{id:text('id').primaryKey(),owner:text('owner').notNull().references(()=>users.id),key:text('key').notNull(),type:text('type').notNull()});
-
-
-export const passwordAccounts=sqliteTable('password_accounts',{username:text('username').primaryKey(),userId:text('user_id').notNull().references(()=>users.id),salt:text('salt').notNull(),digest:text('digest').notNull()});
-export const authLimits=sqliteTable('auth_limits',{key:text('key').primaryKey(),attempts:integer('attempts').notNull(),expires:integer('expires').notNull()});
