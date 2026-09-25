@@ -1,0 +1,20 @@
+/* A quiet typographic entry to the three writing modes. */
+body.home-open #annotationHome #homeQuick47{order:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;width:min(100%,620px);margin:4px auto 14px;padding:3px 0;border-top:1px solid #9b8b7047;border-bottom:1px solid #9b8b7047}
+body.home-open #annotationHome #homeQuick47 button{position:relative;display:block;width:100%;min-width:0;min-height:52px;margin:0;padding:9px 8px;border:0;border-radius:0;background:transparent!important;box-shadow:none!important;color:#27372e;font:600 clamp(17px,4.4vw,23px)/1.35 "Songti SC","Noto Serif CJK SC",serif;letter-spacing:.18em}
+body.home-open #annotationHome #homeQuick47 button+button::before{content:"";position:absolute;left:0;top:20%;height:60%;border-left:1px solid #8d7b615c}
+body.home-open #annotationHome #homeQuick47 button::after{content:"";position:absolute;left:30%;right:30%;bottom:2px;border-bottom:2px solid transparent;transition:border-color .18s,transform .18s;transform:scaleX(.6)}
+body.home-open #annotationHome #homeQuick47 button:hover::after,body.home-open #annotationHome #homeQuick47 button:focus-visible::after{border-color:#9b3027;transform:scaleX(1)}
+body.home-open #annotationHome #homeQuick47 button:focus-visible{outline:2px solid #9b3027;outline-offset:-3px}
+body.home-open #annotationHome .annotationGallery{order:1}
+body.home-open #annotationHome #annotationCategories{order:2}
+body.home-open #annotationHome .annotationAction{order:3}
+body.home-open #annotationHome .featured47{order:4}
+body.home-open #annotationHome #community47{order:5;width:min(100%,880px);margin:18px auto 26px;padding:16px 0;border-top:1px solid #b3a68d7d}
+body.home-open #annotationHome #community47 h2{font:600 22px/1.5 "Songti SC",serif;letter-spacing:.18em;color:#27372e}
+body.home-open #annotationHome footer{order:6}
+#community47 #featuredWorks54{width:100%;margin:8px auto 18px}
+#community47 .featuredTrack54 img{max-height:42dvh}
+#imageDialog #savePhotos{background:#253c32!important;color:#fff!important;border:2px solid #253c32!important;box-shadow:0 4px 14px #253c3233;font-size:16px;font-weight:700;min-height:50px}
+#imageDialog #savePhotos:focus-visible{outline:3px solid #a33327;outline-offset:3px}
+#worksGrid .publishPlaza60{color:#803326;border:1px solid #a88773;background:#f9f2e5;min-height:36px}
+@media(max-width:500px){body.home-open #annotationHome #homeQuick47{margin:2px auto 10px}body.home-open #annotationHome #homeQuick47 button{min-height:46px;padding:7px 3px;font-size:18px}body.home-open #annotationHome #community47{margin:14px auto 20px;padding-top:12px}}

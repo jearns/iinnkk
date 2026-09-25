@@ -55,5 +55,5 @@ const moonForeign57 = [
 ];
 window.Moon50 = [
 ...moonChinese57.map(([author,title,preview,q],i)=>({id:'moon57-'+(i+1),cat:'moon',rank:i+1,preview,q,s:`${author}《${title}》· 全文`,author,source:`${author}《${title}》`})),
-...moonForeign57.map(([author,title,q,original],i)=>({id:'moon57-'+(i+41),cat:'moon',rank:i+41,preview:q,q,s:`${author}《${title}》· 中文自译短摘`,author,source:original}))
+...moonForeign57.map(([author,title,q,original],i)=>({id:'moon57-'+(i+41),cat:'moon',rank:i+41,preview:q,q,s:`${author}《${title}》· 中文自译短摘`,author,source:`${author}《${title}》`,original}))
 ];
