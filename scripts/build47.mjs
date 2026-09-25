@@ -8,7 +8,7 @@ const excluded=new Set(['.git','.env','.openai','.sites-runtime','dist','downloa
 async function files(dir=''){
  const result=[];
  for(const entry of await readdir(path.join(root,dir),{withFileTypes:true})){
-  if(!dir&&(excluded.has(entry.name)||entry.name.startsWith('.sites-checkout')))continue;
+  if(!dir&&(excluded.has(entry.name)||entry.name==='.gitignore'||entry.name.startsWith('.sites-checkout')))continue;
   const name=path.posix.join(dir,entry.name);
   if(entry.isDirectory())result.push(...await files(name));
   else if(entry.isFile()&&!name.endsWith('.zip')&&!name.endsWith('.tar.gz'))result.push(name);
