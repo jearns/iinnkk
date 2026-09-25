@@ -54,3 +54,4 @@
  function render(st,t,W,H,clip=null){if(!st.points?.length)return null;const state=start(st,t,W,H);state.clip=clip;if(st.points.length===1){const s=settings(st.settings);dab(t,state.pos.x,state.pos.y,s.size*.12*(W/390),0,s,0,1,0,state,W/390)}return advance(st,state,t,W,H)}
  const api={setCanvasFactory,prepare,settings,radiusForSpeed,dryForSpeed,start,advance,render};root.ParticleBrush=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
+

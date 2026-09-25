@@ -1,0 +1,40 @@
+-- Run after schema.sql. Local admin passwords do NOT grant cloud privileges.
+alter table public.ink_works add column if not exists published boolean not null default false;
+alter table public.ink_works add column if not exists featured boolean not null default false;
+create table if not exists public.ink_members(owner uuid primary key references auth.users(id) on delete cascade,role text not null default '书家' check(role in ('书家','书圣','书仙')));
+alter table public.ink_members enable row level security;
+create or replace function public.ink_admin55() returns boolean language sql stable security definer set search_path=public as $$ select exists(select 1 from ink_members where owner=auth.uid() and role='书仙') $$;
+revoke all on function public.ink_admin55() from public;
+grant execute on function public.ink_admin55() to anon,authenticated;
+drop policy if exists members_read55 on public.ink_members;
+create policy members_read55 on public.ink_members for select to authenticated using(owner=auth.uid() or public.ink_admin55());
+drop policy if exists members_manage55 on public.ink_members;
+create policy members_manage55 on public.ink_members for all to authenticated using(public.ink_admin55()) with check(public.ink_admin55());
+grant select,insert,update,delete on public.ink_members to authenticated;
+-- A user can publish their own work; only cloud admins can feature it.
+create or replace function public.guard_feature55() returns trigger language plpgsql set search_path=public as $$ begin if (tg_op='INSERT' and new.featured) or (tg_op='UPDATE' and new.featured is distinct from old.featured) then if not public.ink_admin55() then raise exception '仅云端书仙可推荐首页'; end if; end if; return new; end $$;
+drop trigger if exists guard_feature55 on public.ink_works;
+create trigger guard_feature55 before insert or update on public.ink_works for each row execute function public.guard_feature55();
+drop policy if exists works_public55 on public.ink_works;
+create policy works_public55 on public.ink_works for select to anon,authenticated using(published);
+drop policy if exists works_admin55 on public.ink_works;
+create policy works_admin55 on public.ink_works for update to authenticated using(public.ink_admin55()) with check(public.ink_admin55());
+grant select on public.ink_works to anon;
+drop policy if exists files_public55 on storage.objects;
+create policy files_public55 on storage.objects for select to anon,authenticated using(bucket_id='ink-works' and exists(select 1 from public.ink_works w where w.published and w.image_path=name));
+create table if not exists public.ink_likes(work uuid references public.ink_works(id) on delete cascade,owner uuid references auth.users(id) on delete cascade,primary key(work,owner));
+create table if not exists public.ink_comments(id uuid primary key default gen_random_uuid(),work uuid references public.ink_works(id) on delete cascade,owner uuid references auth.users(id) on delete cascade,body text not null check(char_length(body) between 1 and 500),created_at timestamptz default now());
+alter table public.ink_likes enable row level security;
+alter table public.ink_comments enable row level security;
+drop policy if exists likes_read55 on public.ink_likes;
+create policy likes_read55 on public.ink_likes for select using(exists(select 1 from public.ink_works w where w.id=work and w.published));
+drop policy if exists likes_write55 on public.ink_likes;
+create policy likes_write55 on public.ink_likes for all to authenticated using(owner=auth.uid()) with check(owner=auth.uid() and exists(select 1 from public.ink_works w where w.id=work and w.published));
+drop policy if exists comments_read55 on public.ink_comments;
+create policy comments_read55 on public.ink_comments for select using(exists(select 1 from public.ink_works w where w.id=work and w.published));
+drop policy if exists comments_write55 on public.ink_comments;
+create policy comments_write55 on public.ink_comments for all to authenticated using(owner=auth.uid() or public.ink_admin55()) with check(owner=auth.uid() and exists(select 1 from public.ink_works w where w.id=work and w.published));
+grant select on public.ink_likes,public.ink_comments to anon;
+grant select,insert,update,delete on public.ink_likes,public.ink_comments to authenticated;
+-- Project owner provisions the first cloud admin explicitly in SQL Editor:
+-- insert into public.ink_members(owner,role) values ('AUTH_USER_UUID','书仙') on conflict(owner) do update set role=excluded.role;

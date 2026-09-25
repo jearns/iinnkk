@@ -30,3 +30,4 @@ html:not(.ui-ready) body>header,html:not(.ui-ready) #topActions,html:not(.ui-rea
 #homeQuick47 button{display:flex;align-items:center;justify-content:center;min-height:64px;padding:14px 10px}
 #savedImage,#nineImages img{-webkit-touch-callout:default!important;user-select:auto!important;-webkit-user-select:auto!important;touch-action:auto}
 .actions47[hidden]{display:none!important}
+
