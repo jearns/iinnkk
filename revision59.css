@@ -5,3 +5,5 @@ body.preview-open56 #returnWriting59{background:#fffaf0;color:#253b31;border:2px
 body.preview-open56 #generateArtwork59{background:#9d3025;color:#fff;border:2px solid #bb5649}
 body.preview-open56 #returnWriting59:focus-visible,body.preview-open56 #generateArtwork59:focus-visible{outline:3px solid #30594b;outline-offset:2px}
 body.home-open #annotationHome #featuredWorks54{order:1}
+
+body.preview-open56 #returnWriting59,body.preview-open56 #generateArtwork59{box-shadow:none}
