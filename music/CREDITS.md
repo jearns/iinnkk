@@ -14,3 +14,9 @@
 - 肖邦 · 降E大调夜曲 Op.9 No.2：Beeswaxcandle at English Wikisource and Londonjackbooks at English Wikisource；CC BY-SA 3.0。来源 https://commons.wikimedia.org/wiki/File:Chopin Nocturne Op 9 No 2.ogg；许可 https://creativecommons.org/licenses/by-sa/3.0。MP3转码，未改编。
 
 - 蓝色多瑙河：United States Marine Band，美国联邦政府作品（PD-USGov-Military-Marines）。https://commons.wikimedia.org/wiki/File:"An der schönen, blauen Donau" performed by the U.S. Marine Band.flac。MP3转码。
+
+第 66 版自然环境音为实地录音，均为 CC0 1.0；使用 [moonseal 音频项目](https://github.com/twtrubiks/moonseal/blob/main/public/audio/README.md) 已处理的 128 kbps、循环淡化 MP3：
+
+- 流水 `water.mp3`：GOLD_TAPE_53_54_Water 中 G53-19a Brook or Creek，https://archive.org/details/GOLD_TAPE_53_54_Water ，经 moonseal 转码及循环处理。
+- 雨声 `rain.mp3`：Silencyo，https://freesound.org/people/silencyo/sounds/81818/ ，CC0 1.0，经 moonseal 转码及循环处理。
+- 海浪 `ocean.mp3`：Rmutt，https://freesound.org/people/Rmutt/sounds/156598/ ，CC0 1.0，经 moonseal 转码及循环处理。
