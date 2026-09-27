@@ -20,3 +20,11 @@
 - 流水 `water.mp3`：GOLD_TAPE_53_54_Water 中 G53-19a Brook or Creek，https://archive.org/details/GOLD_TAPE_53_54_Water ，经 moonseal 转码及循环处理。
 - 雨声 `rain.mp3`：Silencyo，https://freesound.org/people/silencyo/sounds/81818/ ，CC0 1.0，经 moonseal 转码及循环处理。
 - 海浪 `ocean.mp3`：Rmutt，https://freesound.org/people/Rmutt/sounds/156598/ ，CC0 1.0，经 moonseal 转码及循环处理。
+
+## 第 67 次修订：自然综合环境音和专注曲目
+
+- `nature.mp3`：自然实录混音。森林鸟鸣、虫鸣与风声：nille，《Forest (field recording).ogg》，公有领域，https://commons.wikimedia.org/wiki/File:20090610_0_ambience.ogg ；滴水：ZooFari，CC BY-SA 3.0，https://commons.wikimedia.org/wiki/File:Water_drops_dripping.ogg ；落叶声：Wilfredor，《Leaves falling from the trees during autumn in the forest.wav》，CC0 1.0，https://commons.wikimedia.org/wiki/File:Leaves_falling_from_the_trees_during_autumn_in_the_forest.wav ；并叠加上列已注明出处的流水录音。独立声轨混合、调低音量、转码 MP3。
+- `spring.mp3`：维瓦尔第《四季·春》，E 大调 RV269 第一乐章 Allegro；John Harrison 小提琴，Robert Turizziani 指挥，Wichita State University Chamber Players；CC BY-SA 4.0，https://commons.wikimedia.org/wiki/File:Vivaldi_-_Four_Seasons_1_Spring_mvt_1_Allegro_-_John_Harrison_violin.oga 。替换此前错误的第二乐章音频。
+- `focus-goldberg.mp3`：巴赫《哥德堡变奏曲》咏叹调，Kimiko Ishizaka 钢琴，开放钢琴项目公有领域演奏；https://commons.wikimedia.org/wiki/File:Goldberg_Variations_01_Aria.ogg 。
+- `focus-satie.mp3`：萨蒂《第一号裸体歌舞》，Robin Alciatore 钢琴，公有领域；https://commons.wikimedia.org/wiki/File:Erik_Satie_-_gymnopedies_-_la_1_ere._lent_et_douloureux.ogg 。
+- `focus-debussy.mp3`：德彪西《月光》，Laurens Goedhart 钢琴，CC BY 3.0；https://commons.wikimedia.org/wiki/File:Clair_de_lune_(Claude_Debussy)_Suite_bergamasque.ogg 。

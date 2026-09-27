@@ -4,3 +4,12 @@
 #previewEffects55 .finalRail54,#previewEffects55 .finalSteps54{text-align:center;justify-content:safe center}
 
 #homeQuick47{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:1px;max-width:760px;margin:auto;padding:9px 0;border-top:1px solid #a18b6845;border-bottom:1px solid #a18b6845}#homeQuick47 button{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;color:#283c36!important;letter-spacing:.19em;font-weight:600;font-size:clamp(14px,3.7vw,22px);padding:9px 3px!important;min-width:0}#homeQuick47 button+button{border-left:1px solid #a18b6855!important}#homeQuick47 button:focus-visible{outline:2px solid #a5835e;outline-offset:-3px}@media(max-width:500px){#homeQuick47{margin:0 12px}}
+/* Long texts remain readable in the local quote editor on narrow screens. */
+.adminInner62,.quoteList62,.quoteRow62{min-width:0;max-width:100%;box-sizing:border-box}
+.quoteList62{max-height:min(54dvh,620px);overflow:auto;align-content:start;gap:8px}
+.quoteRow62{display:grid!important;grid-template-columns:minmax(0,1fr);height:auto!important;min-height:0!important;width:100%;white-space:normal!important;text-align:left;overflow-wrap:anywhere;word-break:break-word;line-height:1.65}
+.quoteRow62 strong,.quoteRow62 span{display:block;min-width:0;white-space:normal!important;overflow-wrap:anywhere}
+.quoteRow62 strong{font-size:12px;color:#765c45;font-weight:600}
+.quoteRow62 span{font-size:13px;color:#2c332e}
+.quoteCountry62{margin:12px 0 2px;font-size:13px;color:#8d4a32;border-bottom:1px solid #ae9b7755;padding-bottom:4px}
+.adminSection62 .adminRow62 input[type=search]{min-width:min(100%,160px);flex:1 1 170px}

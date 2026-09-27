@@ -1,4 +1,6 @@
 @font-face{font-family:ChongxiSeal;src:url("fonts/small-seal.woff2") format("woff2");font-display:swap}
+@font-face{font-family:YouLongSeal;src:url("fonts/ZiHunYouLongZhuanTi.woff2") format("woff2");font-display:swap}
+@font-face{font-family:YiShanBeiSeal;src:url("fonts/YiShanBeiZhuanTi.woff2") format("woff2");font-display:swap}
 /* Preserve text editing inside forms while shielding the writing canvas from selection. */
 body:not(.home-open) #board,body:not(.home-open) #board canvas,body:not(.home-open) #board button{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:none}
 body:not(.home-open) #board input,body:not(.home-open) #board textarea,body:not(.home-open) #board [contenteditable="true"]{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default;touch-action:auto}
