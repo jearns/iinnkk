@@ -9,3 +9,8 @@ body.preview-open56 #previewEffects55 .finalSteps54{padding-right:184px;box-sizi
 body.preview-open56 #dailyBar{display:flex!important;position:relative;z-index:11;max-height:72px;min-height:38px;overflow:visible}
 body.preview-open56 #dailyBar #dailyQuote{max-height:56px}
 .previewZoom66{display:none}body.preview-open56 .previewZoom66{display:inline-flex;position:absolute;z-index:12;left:8px;top:8px;gap:3px;margin:0}
+
+body.preview-open56.quotes-hidden #dailyBar{display:none!important}
+body.preview-open56 #previewQuotes70{width:33px;min-width:33px;height:33px;min-height:33px;padding:6px;border:1px solid #a49475;background:#fdf9ed;color:#503e30;border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
+body.preview-open56 #previewQuotes70[aria-pressed="true"]{background:#e5d8bd;color:#613b27}
+body.preview-open56 #previewQuotes70 svg{width:18px;height:18px}

@@ -13,3 +13,19 @@
 .quoteRow62 span{font-size:13px;color:#2c332e}
 .quoteCountry62{margin:12px 0 2px;font-size:13px;color:#8d4a32;border-bottom:1px solid #ae9b7755;padding-bottom:4px}
 .adminSection62 .adminRow62 input[type=search]{min-width:min(100%,160px);flex:1 1 170px}
+
+/* The admin dialog has its own global button styles; give full texts independent rows. */
+#studioAdmin50 .adminSection62{width:100%;min-width:0;box-sizing:border-box}
+#studioAdmin50 .adminInner62{display:block;min-width:0}
+#studioAdmin50 .adminInner62>.adminRow62{justify-content:flex-start;margin:12px 0;align-items:end}
+#studioAdmin50 .adminInner62>.adminRow62 label{flex:0 0 auto;white-space:nowrap}
+#studioAdmin50 .adminInner62>.adminRow62 select{width:auto;max-width:min(45vw,180px);flex:0 1 auto}
+#studioAdmin50 .quoteList62{display:block;width:100%;max-height:min(53dvh,580px);overflow-y:auto;overflow-x:hidden;min-width:0;padding:4px 2px;box-sizing:border-box}
+#studioAdmin50 .quoteRow62{display:block!important;box-sizing:border-box;position:static;width:100%;height:auto!important;min-height:0!important;max-height:none!important;margin:0 0 9px;padding:12px 14px;white-space:normal!important;overflow:visible!important;line-height:1.7!important;background:#fffdf7;border:1px solid #c7bda850;border-radius:12px;text-align:left;vertical-align:top}
+#studioAdmin50 .quoteRow62 strong,#studioAdmin50 .quoteRow62 span{display:block;width:100%;height:auto;max-height:none;white-space:pre-wrap!important;overflow-wrap:anywhere;word-break:break-word;line-height:1.7;letter-spacing:normal}
+#studioAdmin50 .quoteRow62 strong{margin-bottom:5px;font-size:13px}
+#studioAdmin50 .quoteRow62 span{font-size:14px}
+.adminDialog62{width:min(94vw,640px);overflow:auto;box-sizing:border-box}
+.adminDialog62 .dialogBody,.adminDialog62 label{min-width:0}
+.adminDialog62 textarea{width:100%;line-height:1.7;white-space:pre-wrap;resize:vertical}
+@media(max-width:600px){#studioAdmin50 .adminInner62>.adminRow62{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center}#studioAdmin50 .adminInner62>.adminRow62 input[type=search],#studioAdmin50 .adminInner62>.adminRow62 button{grid-column:1/-1;width:100%}#studioAdmin50 .adminInner62>.adminRow62 select{width:100%;max-width:100%}}
