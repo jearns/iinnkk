@@ -20,3 +20,13 @@ test('stationary finger before moving does not leave a round dot at stroke entry
  assert.equal(samples.filter(p=>Math.abs(p.x-60)<.1).length,0,'initial contact is not stamped separately');
  assert.ok(samples[0].r<samples.at(-1).r,'the brush enters the paper progressively');
 });
+test('a slow stroke enters roundly and leaves without an ink bulb',()=>{
+ const stroke=widths([[30,100],[34,100],[40,100],[50,100],[65,100],[85,100],[105,100],[125,100],[145,100],[150,100]]);
+ const body=stroke.filter(p=>p.x>80&&p.x<125).map(p=>p.r);
+ const start=stroke.filter(p=>p.x<35).map(p=>p.r);
+ const end=stroke.filter(p=>p.x>148).map(p=>p.r);
+ assert.ok(body.length&&start.length&&end.length);
+ assert.ok(Math.max(...start)>0,'the entry is rounded rather than an invisible needle');
+ assert.ok(Math.max(...start)<Math.max(...body)*.7);
+ assert.ok(Math.max(...end)<Math.max(...body)*.9,'the tip does not swell past the stroke body');
+});

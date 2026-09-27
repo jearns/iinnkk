@@ -11,6 +11,19 @@ body.preview-open56 #dailyBar #dailyQuote{max-height:56px}
 .previewZoom66{display:none}body.preview-open56 .previewZoom66{display:inline-flex;position:absolute;z-index:12;left:8px;top:8px;gap:3px;margin:0}
 
 body.preview-open56.quotes-hidden #dailyBar{display:none!important}
-body.preview-open56 #previewQuotes70{width:33px;min-width:33px;height:33px;min-height:33px;padding:6px;border:1px solid #a49475;background:#fdf9ed;color:#503e30;border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
-body.preview-open56 #previewQuotes70[aria-pressed="true"]{background:#e5d8bd;color:#613b27}
-body.preview-open56 #previewQuotes70 svg{width:18px;height:18px}
+
+#dailyDialog{width:min(680px,calc(100vw - 24px));max-height:min(80dvh,780px);background:rgba(248,245,234,.80);backdrop-filter:blur(20px);border:1px solid rgba(116,98,70,.45);box-shadow:0 16px 52px #25211640;overflow:auto}
+#dailyDialog::backdrop{background:rgba(25,24,22,.16);backdrop-filter:blur(2px)}
+#dailyDialog .dialogHead{background:rgba(248,245,234,.82);cursor:grab;touch-action:none;user-select:none}#dailyDialog .dialogHead:active{cursor:grabbing}
+#dailyDialog #quoteText{white-space:pre-wrap;overflow-wrap:anywhere;font-size:clamp(16px,3vw,21px);line-height:1.85}
+#previewEffects55 .finalRail54 button[data-value^="#"]{padding-top:9px;border-radius:14px;min-height:44px;border:1px solid #403c3426;box-shadow:inset 0 0 0 1px #ffffff3d;text-shadow:0 1px 3px #12121232}
+#previewEffects55 .finalRail54 button[data-value^="#"]::before{display:none}
+#previewEffects55 .finalRail54 button.customColour71{padding-top:9px;min-height:44px;border-radius:14px;background:conic-gradient(#e95355,#f8ba4e,#62ba8b,#5ea3d9,#b983cb,#e95355);color:#1e2523;border:1px solid #362c3470;font-weight:750}
+#previewEffects55 .finalRail54 button.customColour71::before{display:none}
+#sealInspector{left:8px;right:8px;bottom:10px;width:min(540px,calc(100% - 16px));max-height:min(43dvh,310px);margin:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:14px;background:rgba(250,247,239,.90);backdrop-filter:blur(18px);border:1px solid #c7b69a85;border-radius:17px;box-shadow:0 12px 32px #1b211e2b;box-sizing:border-box;overflow:auto}
+#sealInspector label{display:flex;flex-direction:column;gap:5px;min-width:0;font-size:12px;line-height:1.4;letter-spacing:.025em}
+#sealInspector input,#sealInspector select{width:100%;box-sizing:border-box;min-width:0;max-width:100%;height:36px;border-radius:9px;border:1px solid #b8a9896e;background:#fffdf9eb;padding:5px 8px}
+#sealInspector button{grid-column:1/-1;justify-self:end;border:0;border-radius:20px;padding:6px 18px;background:#31443b;color:#fff}
+@media(max-width:520px){#sealInspector{grid-template-columns:repeat(2,minmax(0,1fr));max-height:45dvh}}
+.inkSelectionBox .inkDeleteX,.inkSelectionBox .inkScaleHandle{position:absolute;box-sizing:border-box;width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important;padding:0!important;border-radius:50%!important;border:1px solid #9c492f;background:#fffaf0;color:#793c32;display:flex;align-items:center;justify-content:center;font:normal 22px/1 system-ui,sans-serif;transform:none;aspect-ratio:1;touch-action:none}
+.inkSelectionBox .inkDeleteX{right:-15px;top:-15px}.inkSelectionBox .inkScaleHandle{right:-15px;bottom:-15px;background:#9e4031;color:white;font-size:18px}

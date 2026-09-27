@@ -1,7 +1,7 @@
 (function(root){
  function traditional(text){return [...text].map(c=>(root.SEAL_MAP||{})[c]||c).join('')}
  function hash(x,y){const z=Math.sin(x*127.1+y*311.7)*43758.5453;return z-Math.floor(z)}
- const stampCache=new Map();function stamp({text,type='yin',rough=.06,font='youlong',fontLoaded=false,shape='square',layout='horizontal',fontScale=1,color='#b62118'}){const key=JSON.stringify([text,type,rough,font,fontLoaded,shape,layout,fontScale,color,root.sealFontRevision||0]);if(stampCache.has(key))return stampCache.get(key);
+ const stampCache=new Map();function stamp({text,type='yin',rough=.06,font='yishan',fontLoaded=false,shape='square',layout='horizontal',fontScale=1,color='#b62118'}){const key=JSON.stringify([text,type,rough,font,fontLoaded,shape,layout,fontScale,color,root.sealFontRevision||0]);if(stampCache.has(key))return stampCache.get(key);
   const chars=[...traditional(text.trim())].slice(0,6),canvas=document.createElement('canvas');canvas.width=256;canvas.height=256;const t=canvas.getContext('2d');if(!chars.length)return canvas;
   const yin=type==='yin';t.fillStyle=color;
   if(yin)t.fillRect(5,5,246,246);else{t.strokeStyle=color;t.lineWidth=4;t.strokeRect(8.5,8.5,239,239)}

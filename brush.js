@@ -44,9 +44,9 @@
    state.dry=mix(state.dry,dryForSpeed(state.velocity,s,pressure),1-Math.exp(-dt/95));const dryness=clamp(state.dry*(.28+1.2*noise(state.travel/29,state.seed*.01,state.seed+91))*(1-Math.min(.7,Math.abs(state.turn)*.6)),0,.9),opacity=1;
    const steps=Math.max(1,Math.ceil(d/(Math.max(.55,next*.11)*scale)));
    for(let j=1;j<=steps;j++){
-    const f=j/steps,travel=state.travel+d/scale*f,startEnvelope=clamp(travel/(s.size*.48),.012,1);
+    const f=j/steps,travel=state.travel+d/scale*f,startEnvelope=clamp(.055+travel/(s.size*.29),.055,1);
     let envelope=startEnvelope,dry=dryness;
-    if(tail&&tail.sharp){const remain=tail.remaining[i]+d/scale*(1-f),len=tail.hook?Math.min(s.size*.52,tail.length*.38):Math.min(s.size*.5,tail.length*.24);if(remain<len){envelope*=mix(1,Math.max(.04,remain/len),tail.hook?Math.max(.85,s.taper):s.taper);dry=Math.min(.85,dry+.20*s.dry*(1-remain/len))}}
+    if(tail){const remain=tail.remaining[i]+d/scale*(1-f),len=tail.hook?Math.min(s.size*.52,tail.length*.38):Math.min(s.size*.38,tail.length*.24);if(remain<len&&len>.01){const taper=tail.sharp?Math.max(.8,s.taper):Math.min(.72,s.taper);envelope*=mix(1,Math.max(tail.sharp?.12:.38,remain/len),taper);dry=Math.min(.85,dry+.15*s.dry*(1-remain/len))}}
     state.contact=mix(state.r,next,f)*envelope;dab(t,state.pos.x+dx*f,state.pos.y+dy*f,state.contact*scale,state.angle+da*f,s,dry,opacity,state.turn,state,scale);
    }
    state.travel+=d/scale;state.pos={x:nx,y:ny};state.r=next;state.angle=a;state.last=p;
