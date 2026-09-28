@@ -1,1 +1,19 @@
-{"version":74,"entries":{}}
+{
+  "version": 74,
+  "entries": {
+    "qinling": {
+      "title": "毛泽东·沁园春·雪",
+      "place": "手稿版本待核",
+      "museum": "请管理员指定所用手稿及收藏机构",
+      "status": "作品原词与题写手迹须区分",
+      "url": "",
+      "style": "zhang",
+      "size": 360,
+      "zoom": 180,
+      "pages": [
+        "timeline/pages/qinling/mukxjm05-0.jpg",
+        "timeline/pages/qinling/mukxjnjm-1.jpg"
+      ]
+    }
+  }
+}
