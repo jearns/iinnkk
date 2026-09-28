@@ -3,24 +3,34 @@
 const {url,anonKey}=window.IINNKK_SUPABASE;
 if(!url||!anonKey)return;
 const db=window.IInkSupabaseSDK.createClient(url,anonKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}}),$=id=>document.getElementById(id),app=AnnotationApp;
-let user=null,busy=false;
+let user=null,role=null,busy=false,availableOAuth={};
+fetch(url+'/auth/v1/settings',{headers:{apikey:anonKey}}).then(r=>r.ok?r.json():null).then(data=>{availableOAuth=data?.external||{};if(dialog.open)renderAccount()}).catch(()=>{});
 const err=(e)=>{if(e)throw Error(e.message||String(e))};
 const toast=e=>app.toast(e.message||String(e));
 const node=(tag,text,cls)=>{const el=document.createElement(tag);if(text!=null)el.textContent=text;if(cls)el.className=cls;return el};
 const btn=(text,fn,parent)=>{const b=node('button',text);b.type='button';b.onclick=async()=>{b.disabled=true;try{await fn()}catch(e){toast(e)}finally{b.disabled=false}};parent.append(b);return b};
 const dialog=node('dialog',null,'cloud75-dialog');dialog.id='cloudAccount75';const head=node('div',null,'cloud75-head');head.append(node('strong','我的亲笔 · 云端'));btn('关闭',()=>dialog.close(),head);const body=node('div',null,'cloud75-body');dialog.append(head,body);document.body.append(dialog);
 const login=$('account47');login.onclick=()=>{renderAccount();dialog.showModal()};
-function renderAccount(){body.replaceChildren();btn('浏览公开作品',showGallery,body);if(user){body.append(node('p',user.email||'已登录'));btn('查看我的云端作品',showMine,body);btn('退出登录',async()=>{err((await db.auth.signOut()).error);user=null;renderAccount();login.textContent='登录'},body);return}
+function renderAccount(){body.replaceChildren();btn('浏览公开作品',showGallery,body);if(user){body.append(node('p',(user.email||'已登录')+' · '+(role||'书家')));btn('查看我的云端作品',showMine,body);btn('退出登录',async()=>{err((await db.auth.signOut()).error);user=null;role=null;renderAccount();login.textContent='登录';document.dispatchEvent(new Event('admin-unlocked53'))},body);return}
  body.append(node('p','登录后可把本机作品同步到云端，并在亲笔广场点赞、点评。书写无需登录。'));
  const email=node('input'),pass=node('input');email.type='email';email.autocomplete='email';email.placeholder='邮箱';email.setAttribute('aria-label','邮箱');pass.type='password';pass.autocomplete='current-password';pass.placeholder='密码（至少 6 位）';pass.setAttribute('aria-label','密码');body.append(email,pass);
  btn('登录',async()=>{err((await db.auth.signInWithPassword({email:email.value.trim(),password:pass.value})).error);app.toast('已登录')},body);
  btn('注册',async()=>{err((await db.auth.signUp({email:email.value.trim(),password:pass.value,options:{emailRedirectTo:location.origin+location.pathname}})).error);app.toast('注册成功，请查收确认邮件；若已关闭邮件确认，可直接登录')},body);
+ const choices=[['Google','google'],['Apple','apple']];for(const [name,id] of [['微信','wechat'],['小红书','xiaohongshu'],['华为','huawei'],['抖音','douyin']]){const provider=window.IINNKK_SUPABASE.oauthProviders?.[id];if(/^custom:[a-z0-9_-]+$/i.test(provider||''))choices.push([name,provider])}const methods=node('div',null,'cloudOAuth76');for(const [name,provider] of choices){if(!provider.startsWith('custom:')&&!availableOAuth[provider])continue;btn(name+' 登录',async()=>{err((await db.auth.signInWithOAuth({provider,options:{redirectTo:location.origin+location.pathname}})).error)},methods)}if(methods.childElementCount)body.append(methods);else body.append(node('small','第三方登录待在 Supabase 与对应开放平台开通；邮箱登录可先使用。'));
 }
-async function refresh(){const {data,error}=await db.auth.getUser();if(error&&error.name!=='AuthSessionMissingError')console.warn('cloud auth:',error.message);user=data?.user||null;login.textContent=user?(user.email?.split('@')[0]||'我的账号'):'登录';if(dialog.open)renderAccount();}
+async function refresh(){const {data,error}=await db.auth.getUser();if(error&&error.name!=='AuthSessionMissingError')console.warn('cloud auth:',error.message);user=data?.user||null;role=null;if(user){const claimed=await db.rpc('ink_claim_membership76');if(claimed.error){console.warn('membership:',claimed.error.message);const existing=await db.from('ink_members').select('role').eq('owner',user.id).maybeSingle();role=existing.data?.role||'书家'}else role=claimed.data||'书家'}login.textContent=user?(user.email?.split('@')[0]||'我的账号'):'登录';document.dispatchEvent(new Event('admin-unlocked53'));if(dialog.open)renderAccount();}
 db.auth.onAuthStateChange(()=>setTimeout(()=>{refresh().catch(toast);renderGallery().catch(toast)},0));refresh().catch(toast);
+async function cloudImage(blob){
+ const source=new Image(),url=URL.createObjectURL(blob);try{source.src=url;await source.decode();const canvas=document.createElement('canvas'),ctx=canvas.getContext('2d',{alpha:false});if(!ctx)throw Error('无法压缩作品图片');
+ let factor=Math.min(1,2200/Math.max(source.naturalWidth,source.naturalHeight)),quality=.84,out;
+ for(let attempt=0;attempt<13;attempt++){canvas.width=Math.max(1,Math.round(source.naturalWidth*factor));canvas.height=Math.max(1,Math.round(source.naturalHeight*factor));ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(source,0,0,canvas.width,canvas.height);out=await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',quality));if(!out)throw Error('图片压缩失败');if(out.size<=500000)return out;
+ factor=Math.max(.08,factor*Math.max(.65,Math.min(.88,Math.sqrt(470000/out.size))));quality=Math.max(.48,quality-.025);
+ }throw Error('作品仍超过 500 KB，无法保存云端');
+ }finally{URL.revokeObjectURL(url)}
+}
 async function save(record,published=false){if(!user){dialog.showModal();renderAccount();return}if(busy)return;busy=true;try{
- if(!record?.blob)throw Error('本机作品无法读取');const id=String(record.id).replace(/[^a-zA-Z0-9_-]/g,'_'),path=user.id+'/'+id+'.png';
- err((await db.storage.from('ink-works').upload(path,record.blob,{upsert:true,contentType:record.blob.type||'image/png'})).error);
+ if(!record?.blob)throw Error('本机作品无法读取');const id=String(record.id).replace(/[^a-zA-Z0-9_-]/g,'_'),path=user.id+'/'+id+'.jpg',image=await cloudImage(record.blob);
+ err((await db.storage.from('ink-works').upload(path,image,{upsert:true,contentType:'image/jpeg'})).error);
  const row={owner:user.id,local_id:String(record.id),title:record.title||'亲笔真迹',image_path:path,updated_at:new Date().toISOString()};
  if(published)row.published=true;
  err((await db.from('ink_works').upsert(row,{onConflict:'owner,local_id'})).error);app.toast(published?'已发布到亲笔广场':'作品已存入我的云端');if(published)await renderGallery();
@@ -34,5 +44,5 @@ async function renderGallery(){if(!gallery)return;gallery.replaceChildren();cons
 async function showMine(){if(!user){renderAccount();dialog.showModal();return}const {data,error}=await db.from('ink_works').select('title,image_path,published').eq('owner',user.id).order('updated_at',{ascending:false});err(error);body.replaceChildren();body.append(node('h3','我的云端作品'));if(!data?.length)body.append(node('p','暂无作品。进入“我的作品”，选择作品存入云端。'));for(const item of data){const row=node('div',null,'cloudWork75');row.append(node('span',item.title+(item.published?' · 已公开':' · 私密')));const img=node('img');img.alt=item.title;img.loading='lazy';signed(item.image_path).then(link=>{img.src=link}).catch(()=>{});row.append(img);body.append(row)}btn('返回账号',renderAccount,body);dialog.showModal()}
 const view=node('dialog',null,'cloud75-dialog');view.id='cloudWorkView75';document.body.append(view);
 async function openWork(work){view.replaceChildren();const h=node('div',null,'cloud75-head');h.append(node('strong',work.title));btn('关闭',()=>view.close(),h);view.append(h);const img=node('img');img.src=await signed(work.image_path);img.alt=work.title;view.append(img);const reactions=node('div',null,'cloud75-reactions');view.append(reactions);async function update(){const [likes,comments]=await Promise.all([db.from('ink_likes').select('owner').eq('work',work.id),db.from('ink_comments').select('body,created_at').eq('work',work.id).order('created_at',{ascending:true}).limit(100)]);err(likes.error);err(comments.error);reactions.replaceChildren();btn('赞 '+(likes.data?.length||0),async()=>{if(!user){renderAccount();dialog.showModal();return}const exists=likes.data?.some(x=>x.owner===user.id);err((await (exists?db.from('ink_likes').delete().eq('work',work.id).eq('owner',user.id):db.from('ink_likes').insert({work:work.id,owner:user.id}))).error);await update()},reactions);for(const c of comments.data||[])reactions.append(node('p',c.body));const input=node('textarea');input.placeholder='写下点评（最多 500 字）';input.maxLength=500;reactions.append(input);btn('发表点评',async()=>{if(!user){renderAccount();dialog.showModal();return}const body=input.value.trim();if(!body)return;err((await db.from('ink_comments').insert({work:work.id,owner:user.id,body})).error);await update()},reactions)}await update();view.showModal()}
-renderGallery().catch(toast);window.InkCloud75={client:db,get user(){return user},refresh,renderGallery};
+renderGallery().catch(toast);window.InkCloud75={client:db,get user(){return user},get role(){return role},refresh,renderGallery};
 })();
