@@ -5,7 +5,7 @@ window.InkLocalMode50=true;
 const KEY='iinnkk.studio.v1',AUTH='iinnkk.studio.admin.v1';
 const copy=x=>JSON.parse(JSON.stringify(x)),clamp=(x,a,b)=>Math.max(a,Math.min(b,Number(x)||a));
 const defaults={version:1,brand:{name:'今日亲笔',slogan:'亲笔手书，见墨如我',color:'#34382e',size:28},integrations:{ai:'',model:'',protocol:'responses',webhook:''},nav:[
- {id:'single',title:'大字',layout:'single',format:'square',direction:'vertical',rows:1,columns:1,size:400,zoom:100,preset:'ouyang',ruling:'mi',pattern:'dragon',material:'plain',paper:'#f5f1e6',ink:'#050505',dry:.14,dynamics:.6,opacity:1,text:'',advanced:{}},
+ {id:'single',title:'大字',layout:'single',format:'square',direction:'vertical',rows:1,columns:1,size:800,zoom:100,preset:'yan',ruling:'mi',pattern:'dragon',material:'plain',paper:'#f5f1e6',ink:'#050505',dry:.14,dynamics:.6,opacity:1,text:'',advanced:{}},
  {id:'copy',title:'临帖',layout:'free',format:'letter',direction:'vertical',rows:10,columns:6,size:18,zoom:300,preset:'zhang',ruling:'hui',pattern:'dragon',material:'plain',paper:'#f5f1e6',ink:'#050505',dry:.4,dynamics:.9,opacity:1,text:'',advanced:{}},
  {id:'photo',title:'图文',layout:'free',format:'letter',direction:'vertical',rows:8,columns:6,size:35,zoom:200,preset:'zhang',ruling:'none',pattern:'none',material:'plain',paper:'#f5f1e6',ink:'#050505',dry:.4,dynamics:.9,opacity:1,text:'',advanced:{}},
  {id:'letter',title:'创作',layout:'free',format:'letter',direction:'vertical',rows:8,columns:6,size:35,zoom:200,preset:'zhang',ruling:'vertical',pattern:'dragon',material:'plain',paper:'#f5f1e6',ink:'#050505',dry:.4,dynamics:.9,opacity:1,text:'',advanced:{}}
@@ -22,7 +22,7 @@ function normalize(raw){
 }
 let config=copy(defaults),loadError='';try{const raw=localStorage.getItem(KEY);if(raw)config=normalize(JSON.parse(raw));if(!localStorage.getItem('iinnkk.nav54')){const single=config.nav.find(n=>n.id==='single'),copyMode=config.nav.find(n=>n.id==='copy'),creation=config.nav.find(n=>n.id==='letter');if(single&&copyMode&&creation){creation.title='创作';creation.zoom=200;creation.size=35;config.nav=[single,copyMode,creation,...config.nav.filter(n=>!['single','copy','letter'].includes(n.id))];localStorage.setItem(KEY,JSON.stringify(config))}localStorage.setItem('iinnkk.nav54','1')}}catch{loadError='本机配置无法读取，暂用默认入口；原数据未覆盖。'}
 // Upgrade the core entrances for every visitor while preserving administrator custom layouts.
-try{const n=config.nav,single=n.find(x=>x.id==='single'),copyMode=n.find(x=>x.id==='copy'),photo=n.find(x=>x.id==='photo'),letter=n.find(x=>x.id==='letter');if(single)single.title='大字';if(copyMode&&letter&&!photo)n.splice(n.indexOf(letter),0,{...copy(letter),id:'photo',title:'图文',ruling:'none',pattern:'none'});localStorage.setItem(KEY,JSON.stringify(config))}catch{}
+try{const n=config.nav,single=n.find(x=>x.id==='single'),copyMode=n.find(x=>x.id==='copy'),photo=n.find(x=>x.id==='photo'),letter=n.find(x=>x.id==='letter');if(single){single.title='大字';if(single.size===400&&single.preset==='ouyang'&&!Object.keys(single.advanced||{}).length){single.size=800;single.preset='yan';single.dry=.15;single.dynamics=.64;single.zoom=100}}if(copyMode&&letter&&!photo)n.splice(n.indexOf(letter),0,{...copy(letter),id:'photo',title:'图文',ruling:'none',pattern:'none'});localStorage.setItem(KEY,JSON.stringify(config))}catch{}
 let app,unlocked=!!localStorage.getItem(AUTH)&&localStorage.getItem('iinnkk.remember55')==='yes',admin,selected=config.nav[0]?.id,status,applying=false,managementParent53=null;
 function save(next=config){const valid=normalize(next);try{localStorage.setItem(KEY,JSON.stringify(valid))}catch{throw Error('本机存储已满或被禁用，修改未保存；请先导出配置。')}if(next!==config)config=valid;else{config.nav.forEach((n,i)=>Object.assign(n,valid.nav[i]));config.brand=valid.brand;config.integrations=valid.integrations;}renderNav();applyBrand();if(status)status.textContent='已保存到此设备 · '+new Date().toLocaleTimeString();document.dispatchEvent(new Event('studio-config50'));}
 function download(blob,name){const a=E('a',{href:URL.createObjectURL(blob),download:name});document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),60000)}
@@ -39,7 +39,7 @@ async function applyMode(n,internal=false){
  if(n.layout==='single')Object.assign(values,{rows:'1',columns:'1',ruling:'mi',showLines:'yes',papercolor:'#e4d5b5',zoom:'100'});
  if(n.format==='couplet')Object.assign(values,{columns:'2',followDirection:'vertical'});
  const preset=app.presets[n.preset]?n.preset:'zhang';const patch={};for(const k of ['softness','smoothing','taper','fullness'])if(Number.isFinite(n.advanced.brush?.[k]))patch[k]=clamp(n.advanced.brush[k],0,k==='fullness'?2:1);
- await app.configure47({values,preset,size:n.layout==='single'?400:n.size,inkOpacity:n.opacity,mountKey:n.layout==='single'?'dark':n.advanced.mountKey||'paris',brushPatch:{...patch,dry:n.dry,dynamics:n.dynamics,color:n.ink},focus:'start'});
+ await app.configure47({values,preset,size:n.size,inkOpacity:n.opacity,mountKey:n.layout==='single'?'dark':n.advanced.mountKey||'paris',brushPatch:{...patch,dry:n.dry,dynamics:n.dynamics,color:n.ink},focus:'start'});
  if(n.text)app.setGuide(n.text,'参考文字');window.writingLocked=true;window.Revision39?.syncLock();document.dispatchEvent(new Event('writing-scenario47'));app.showWriter();
  }finally{applying=false}
 }

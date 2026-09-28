@@ -54,5 +54,5 @@ let lastPalette=null,overlayTitle='';document.addEventListener('quote-changed',e
  const colors=colorSets[country];if(!colors)return;const choices=[];
  for(let p=0;p<3;p++)for(let i=0;i<3;i++)if(i!==p){const ink=tintToContrast(colors[i],colors[p],7),seal=tintToContrast(colors[3-p-i],colors[p],4.5);if(contrast(ink,colors[p])>=7&&contrast(seal,colors[p])>=4.5)choices.push({paper:colors[p],ink,seal})}
  if(!choices.length)return;const chosen=choices[Math.floor(Math.random()*choices.length)];lastPalette=chosen;A.applyLiteraryPalette61?.(chosen)});
-window.Revision62={getPalette:()=>lastPalette,getOverlay:()=>overlayTitle,getPresets:()=>presets,defaultCopy};
+window.Revision62={getPalette:()=>lastPalette,getOverlay:()=>overlayTitle,getPresets:()=>presets,defaultCopy,photoPanel,photoStep};
 })();
