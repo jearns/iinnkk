@@ -2,7 +2,8 @@
 (function init(){
 if(!window.FinalStudio54||!window.Modes53){setTimeout(init,50);return}
 const A=AnnotationApp,U=InkStudio50,$=id=>document.getElementById(id),E=U.E;
-const readout=$('zoomReadout');readout.hidden=true;
+// A later revision can remove the legacy readout before this initializer runs.
+const readout=$('zoomReadout');if(readout)readout.hidden=true;
 for(const [id,label,dialog,control] of [['statusZoom55','缩放','paperDialog','zoom'],['statusSize55','笔径','brushDialog','sizeNumber']]){const b=E('button',{id,type:'button'},label);b.onclick=()=>{A.openDialog(dialog);requestAnimationFrame(()=>{$(control).scrollIntoView({block:'center'});$(control).focus()})};$('statusDetails42').prepend(b)}
 const sync=Status42.sync;Status42.sync=()=>{sync();$('statusZoom55').textContent=$('zoom').value+'%';$('statusSize55').textContent='笔径 '+A.getState().brush.size};Status42.sync();
 const edit=[...document.querySelectorAll('.liveEdit53')].at(-1);if(edit){$('dockToggle').before(edit);edit.classList.add('writerEdit55')}
