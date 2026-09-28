@@ -30,3 +30,12 @@ test('a slow stroke enters roundly and leaves without an ink bulb',()=>{
  assert.ok(Math.max(...start)<Math.max(...body)*.7);
  assert.ok(Math.max(...end)<Math.max(...body)*.9,'the tip does not swell past the stroke body');
 });
+test('a long pause at the end does not stamp a separate round cap',()=>{
+ const samples=[];const canvas={beginPath(){},ellipse(x,y,rx,ry){samples.push({x,y,r:Math.max(rx,ry)})},fill(){}};
+ const points=[[35,90,0],[55,90,80],[75,90,160],[95,90,240],[115,90,320],[135,90,400],[150,90,470],[150,90,700]].map(([x,y,t],i)=>({x:x/390,y:y/390,t,lift:i===7}));
+ context.ParticleBrush.render({points,settings:{size:38,dry:0,taper:.86},done:true,seed:9,hasPressure:false},canvas,390,390);
+ const body=samples.filter(p=>p.x>82&&p.x<122);const end=samples.filter(p=>p.x>148);
+ assert.ok(body.length&&end.length);
+ assert.ok(Math.max(...end.map(p=>p.r))<Math.max(...body.map(p=>p.r))*.72);
+ assert.ok(end.length<8,'the stationary lift does not redraw the endpoint repeatedly');
+});

@@ -30,7 +30,7 @@
    const i=state.index,p=st.points[i],prev=state.last,dt=clamp(p.t-prev.t,1,250),rawX=p.x*W,rawY=p.y*H,rawD=Math.hypot(rawX-prev.x*W,rawY-prev.y*H),pressure=st.hasPressure&&Number.isFinite(p.pressure)?p.pressure:null;
    if(rawD<.06*scale&&p.lift){state.last=p;continue}
    // A pause wets the existing contact, never inflates a new circular blot.
-   if(rawD<.06*scale){if(!state.travel){state.hold+=dt;state.last=p;continue}if(!state.hold)state.holdBase=state.contact||state.r;state.hold+=dt;const rest=1-Math.exp(-state.hold/650),base=state.holdBase,limit=Math.min(base*.10,s.size*.012),desired=base+limit*rest;state.r=desired;state.contact=desired;dab(t,state.pos.x,state.pos.y,desired*scale,state.angle,s,Math.max(0,state.dry*(1-rest)),1,state.turn,state,scale);state.last=p;continue}
+   if(rawD<.06*scale){if(st.done&&tail?.remaining[i]<s.size*.16){state.last=p;continue}if(!state.travel){state.hold+=dt;state.last=p;continue}if(!state.hold)state.holdBase=state.contact||state.r;state.hold+=dt;const rest=1-Math.exp(-state.hold/650),base=state.holdBase,limit=Math.min(base*.10,s.size*.012),desired=base+limit*rest;state.r=desired;state.contact=desired;dab(t,state.pos.x,state.pos.y,desired*scale,state.angle,s,Math.max(0,state.dry*(1-rest)),1,state.turn,state,scale);state.last=p;continue}
    state.hold=0;const speed=rawD/scale/dt;state.velocity=state.travel?mix(state.velocity,speed,1-Math.exp(-dt/28)):speed;
    // Light causal smoothing, followed by an exact final sample; never replace
    // the user's character with a font or infer a different written shape.
@@ -46,7 +46,7 @@
    for(let j=1;j<=steps;j++){
     const f=j/steps,travel=state.travel+d/scale*f,startEnvelope=clamp(.055+travel/(s.size*.29),.055,1);
     let envelope=startEnvelope,dry=dryness;
-    if(tail){const remain=tail.remaining[i]+d/scale*(1-f),len=tail.hook?Math.min(s.size*.52,tail.length*.38):Math.min(s.size*.38,tail.length*.24);if(remain<len&&len>.01){const taper=tail.sharp?Math.max(.8,s.taper):Math.min(.72,s.taper);envelope*=mix(1,Math.max(tail.sharp?.12:.38,remain/len),taper);dry=Math.min(.85,dry+.15*s.dry*(1-remain/len))}}
+    if(tail){const remain=tail.remaining[i]+d/scale*(1-f),len=tail.hook?Math.min(s.size*.52,tail.length*.38):Math.min(s.size*.38,tail.length*.24);if(remain<len&&len>.01){const taper=tail.sharp?Math.max(.8,s.taper):Math.min(.72,s.taper);envelope*=mix(1,Math.max(tail.sharp?.12:.15,remain/len),taper);dry=Math.min(.85,dry+.15*s.dry*(1-remain/len))}}
     state.contact=mix(state.r,next,f)*envelope;dab(t,state.pos.x+dx*f,state.pos.y+dy*f,state.contact*scale,state.angle+da*f,s,dry,opacity,state.turn,state,scale);
    }
    state.travel+=d/scale;state.pos={x:nx,y:ny};state.r=next;state.angle=a;state.last=p;
