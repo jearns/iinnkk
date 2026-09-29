@@ -1,0 +1,36 @@
+/* Version 82: compact work controls and a right-to-left calligraphy scroll. */
+#annotationHome{overflow-anchor:none!important}
+#annotationHome .timelineBranch76 .timelineHero73{background:#eae3d2!important}
+#annotationHome .timelineNow73 .timelineHero73 img{width:100%;height:100%;object-fit:cover!important;object-position:center;background:#ede6d6}
+.cloudSave75,.workCard .cloudSave75{display:flex;flex-wrap:nowrap;gap:4px;align-items:center;justify-content:center}
+.cloudSave75 button,.workCard .feature54{min-width:0!important;padding:3px 9px!important;line-height:1.2;border-radius:4px!important;font-size:11px!important;white-space:nowrap}
+.cloudWorkTools82{display:flex;align-items:center;justify-content:flex-end;gap:10px;border-bottom:1px solid #d6c9ae;padding-bottom:7px}
+.cloud75-dialog .cloudWorkTools82 button{border:0;background:transparent;color:#284a4b;border-radius:0;font-size:13px;padding:3px 5px}
+.cloud75-dialog .cloudWorkTools82 button:hover{color:#9e3931}
+.copyMark82{position:fixed;z-index:300;display:flex;gap:4px;align-items:center;padding:5px;background:#fcf8edeb;backdrop-filter:blur(10px);border:1px solid #c4b99e;border-radius:6px;box-shadow:0 8px 24px #13242a38}
+.copyMark82 button{border:0;background:transparent;color:#324d4c;font-size:11px;padding:5px}
+#rollPreview82{width:min(97vw,1160px);max-height:90dvh;padding:9px;border:1px solid #cfc3ac;border-radius:7px;background:#e8e1d3;color:#294746;box-shadow:0 20px 70px #10212a77}
+#rollPreview82::backdrop{background:#081523c9}
+#rollPreview82 header,#rollPreview82 footer{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:4px 6px;font-size:12px}
+#rollPreview82 button{border:0;background:#f6f0e4;color:#274747;border-radius:4px;padding:5px 9px}
+#rollPreview82 .rollScroll82{overflow:auto hidden;width:100%;height:min(75dvh,750px);display:block;touch-action:pan-x pinch-zoom;overscroll-behavior:contain;background:#f5f0e5}
+#rollPreview82 img{display:block;height:min(72dvh,700px);width:auto;max-width:none;max-height:none;user-select:none;-webkit-user-drag:none}
+#previewEffects55 .photoLayouts62 button[aria-pressed="true"]{background:#234a48!important;color:#fff!important;opacity:1!important}
+#previewEffects55 .photoLayouts62 button[aria-pressed="false"]{background:#d6d2c8!important;color:#445250!important;opacity:.65!important}
+#dailyDialog.quoteBookmark73{width:fit-content!important;min-width:min(190px,80vw)!important;max-width:min(360px,82vw)!important}
+#dailyDialog.quoteBookmark73 .dialogHead{position:relative;padding-right:25px!important}
+#dailyDialog.quoteBookmark73 [data-close]{position:absolute;right:0;top:0;z-index:3;font-size:17px!important}
+#dailyDialog.quoteBookmark73 .bookmarkSource79{overflow-wrap:anywhere!important;white-space:normal!important}
+#dailyDialog.quoteBookmark73 #quoteText{max-height:min(58dvh,540px);overflow:auto;user-select:none;-webkit-user-select:none}
+#dailyDialog.quoteBookmark73 .bookmarkNav81 button{border:0!important;min-width:24px;padding:1px 3px;background:transparent!important;font-size:19px;line-height:1}
+#dailyDialog.quoteBookmark73 .bookmarkNav81 svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.frontQuoteEditor81{width:min(94vw,890px);max-height:90dvh;padding:13px 15px;box-sizing:border-box}
+.frontQuoteEditor81 .adminInner62{display:block;min-width:0}
+.frontQuoteEditor81 .adminRow62{display:flex;justify-content:flex-start;gap:7px;align-items:center;flex-wrap:wrap;margin:10px 0}
+.frontQuoteEditor81 .adminRow62 :is(select,input){min-width:110px;max-width:min(250px,100%);padding:6px;border:1px solid #bfb5a5;border-radius:5px;background:#fffaf1}
+.frontQuoteEditor81 .quoteList62{display:block;max-height:50dvh;overflow:auto;min-width:0}
+.frontQuoteEditor81 .quoteRow62{display:grid!important;grid-template-columns:1fr;gap:4px;width:100%;padding:10px 12px;margin:0 0 6px;box-sizing:border-box;line-height:1.5}
+.frontQuoteEditor81 .quoteRow62 span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap!important;font-size:12px}
+.quoteCategories82{border-bottom:1px solid #d2c6b2;padding:5px 0 12px;margin-bottom:12px}.quoteCategories82 h3{font-size:14px;margin:4px 0}
+.categoryRows82{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:5px}.categoryRow82,.categoryAdd82{display:flex;align-items:center;gap:3px;min-width:0}.categoryRow82 input,.categoryAdd82 input{min-width:0;flex:1;padding:4px;border:1px solid #d1c4ae;border-radius:4px}.categoryRow82 button,.categoryAdd82 button{border:0;background:#ede6da;color:#2b4b49;padding:4px 6px;font-size:11px;white-space:nowrap}
+@media(max-width:600px){.frontQuoteEditor81 .adminRow62{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.frontQuoteEditor81 .adminRow62 :is(select,input){min-width:0;width:100%}.categoryRows82{grid-template-columns:1fr}}
