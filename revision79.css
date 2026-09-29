@@ -1,0 +1,50 @@
+/* Homepage: compact fixed masthead and a narrower parallel history. */
+#annotationHome #homeQuick47{display:flex!important;align-items:center;gap:0!important;width:min(100%,1040px)!important}
+#annotationHome #homeQuick47 button{font-size:clamp(12px,1.3vw,16px)!important;letter-spacing:.1em!important;min-width:0!important;flex:1 1 0}
+#annotationHome #homeQuick47 #homeBrand79{display:flex;align-items:center;justify-content:center;gap:6px;flex:0 0 auto;width:clamp(107px,19vw,170px);white-space:nowrap;font:500 clamp(12px,1.35vw,17px) STKaiti,'Kaiti SC',serif!important;letter-spacing:.04em!important;border-right:1px solid #8a999479;background:transparent!important}
+.homeBrandSeal79{display:grid;place-items:center;width:25px;height:25px;background:#aa4339;color:#fff6dc;border-radius:3px;font:18px STKaiti,'Kaiti SC',serif}
+#annotationHome .annotationIntro{display:grid;gap:7px;max-width:880px;margin:20px auto 13px!important;text-align:center}
+#annotationHome .annotationIntro strong{font:500 clamp(24px,4vw,43px)/1.15 STKaiti,'Kaiti SC',serif;letter-spacing:.1em}
+#annotationHome .annotationIntro small{font:11px/1.5 system-ui,sans-serif;letter-spacing:.08em}
+#annotationHome .homeTheme78{padding:2px;margin:1px 20px 8px;border-radius:16px}
+#annotationHome .homeTheme78 button{padding:4px 9px;font-size:10px;letter-spacing:0}
+body.home-open #annotationHome #inkTimeline73{width:min(100%,980px)!important}
+#annotationHome .timelineEpoch76::after{left:149px}
+#annotationHome .timelineEpoch76::before{left:142px!important}
+#annotationHome .timelineEra76,#annotationHome .timelineBranch76{margin-left:165px!important}
+#annotationHome .timelineWorld78{left:0;width:130px;gap:3px;padding:6px 5px 9px 0}
+#annotationHome .timelineWorld78::before{content:'世界文字时空';font-size:9px}
+#annotationHome .timelineWorld78 strong{font-size:13px}
+#annotationHome .timelineWorld78 :is(time,span,a){font-size:9px;line-height:1.38}
+#annotationHome .timelineBranch76 .timelineCard73{height:clamp(360px,66dvh,630px)!important;max-width:100%;min-width:0;overflow:hidden}
+#annotationHome .timelineHero73{min-height:0!important;flex:1 1 57%;overflow:hidden}
+#annotationHome .timelineHero73 img{width:100%;height:100%;object-fit:contain!important}
+#annotationHome .timelineInfo73{min-height:0!important;flex:0 1 auto;overflow:auto;max-height:43%;padding:10px 14px!important}
+#annotationHome .timelineLandmark79{position:absolute;right:5%;bottom:7%;width:min(34%,150px);display:grid;color:#d8d0b9;opacity:.68;text-align:center;pointer-events:none}
+#annotationHome .timelineLandmark79 svg{width:100%}
+#annotationHome .timelineLandmark79 small{font:9px/1.3 system-ui,sans-serif;overflow-wrap:anywhere}
+#annotationHome .timelineMarks79{display:flex;justify-content:center;gap:7px;padding:5px 8px 8px;position:relative;z-index:3;background:#f4ede0}
+#annotationHome .timelineMarks79 button{border:1px solid #7c8b86;border-radius:2px;background:transparent;color:#345656;font:11px STKaiti,'Kaiti SC',serif;padding:4px 10px;white-space:nowrap}
+#annotationHome .timelineMarks79 button.done79{border-color:#a94339;color:#9d3c34}
+#annotationHome .timelineMarks79 button.done79{font-family:YiShanBeiSeal,STKaiti,serif;letter-spacing:.07em;border:2px solid #aa3d35}
+#annotationHome .timelineMarks79 button.done79[data-mark="visit"]{background:#a94339;color:#fff2df}
+.visitDialog79{max-width:min(360px,90vw);border:1px solid #bdad8d;border-radius:7px;padding:20px;background:#faf6e9;color:#344f4f;box-shadow:0 20px 60px #0005}
+.visitDialog79::backdrop{background:#092033aa}
+.visitDialog79>*{display:block;margin:9px 0}.visitDialog79 button{padding:7px 12px}
+.studyThumbs79{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.studyThumb79{min-width:0;background:#f2eee3;border:1px solid #d9ceba;padding:4px;display:grid;gap:5px}
+.studyThumb79 img{width:100%;aspect-ratio:3/4;object-fit:contain;background:#dfd8c8}
+.studyThumb79 span{font:10px/1.3 system-ui,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#405753}
+.studyMarks79{display:flex;flex-wrap:wrap;gap:5px}.studyMarks79 span{font:11px/1.4 STKaiti,'Kaiti SC',serif;color:#9e3931;border:1px solid #b96256;padding:4px 7px}.studyMarks79 p{font-size:12px}
+#toolPopup79{width:min(370px,92vw);max-height:70dvh;overflow:auto;border:1px solid #d1be9b;border-radius:12px;padding:15px;background:#f6f1e5;color:#2b4a4b;box-shadow:0 20px 70px #07192688}
+#toolPopup79::backdrop{background:#09192878}#toolPopup79 header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font:17px STKaiti,'Kaiti SC',serif}#toolPopup79 header button{border:0;background:transparent;font-size:23px}
+.toolPopupBody79{display:flex;flex-wrap:wrap;gap:7px}.toolPopupBody79 button{font:12px/1.3 system-ui,sans-serif;border:1px solid #aabbb2;border-radius:4px;padding:7px 9px;background:#fffaf0;color:#304e4e}.toolPopupBody79 input[type=range]{width:75%;accent-color:#467777}.toolPopupBody79 output{font-size:12px}
+#previewEffects55 .previewActions56 button{min-width:0!important;white-space:nowrap;font-size:11px!important;padding:5px 8px!important}
+body:not(.home-open) #dailyDialog.quoteBookmark73{background:color-mix(in srgb,var(--bookmark-seal73,#a63832) 78%,transparent)!important;cursor:grab;touch-action:none;width:min(210px,48vw)!important;min-height:0!important;padding:8px 10px!important}
+#dailyDialog.quoteBookmark73 .dialogHead{display:flex;align-items:start;gap:3px}
+#dailyDialog.quoteBookmark73 .bookmarkSource79{flex:1;min-width:0;border:0;background:transparent;color:inherit;text-align:left;font:11px/1.4 STKaiti,'Kaiti SC',serif;padding:2px}
+#dailyDialog.quoteBookmark73 .bookmarkPicker79:not([hidden]){position:absolute;left:5px;top:30px;width:calc(100% - 10px);z-index:4;background:#fff9ed;color:#314b49;font-size:12px}
+#dailyDialog.quoteBookmark73 #quoteText{background:transparent!important;box-shadow:none!important;padding:0!important;cursor:pointer}
+#dailyDialog.quoteBookmark73 .dialogBody{background:transparent!important}
+#dailyDialog.quoteBookmark73 [data-close]{background:transparent!important;padding:1px 4px!important;font-size:17px!important}
+@media(max-width:660px){#annotationHome #homeQuick47{width:100%!important}#annotationHome #homeQuick47 #homeBrand79{width:80px;flex:0 0 80px;font-size:10px!important;gap:3px}.homeBrandSeal79{width:19px;height:19px;font-size:14px}#annotationHome #homeQuick47 button{font-size:11px!important;padding:5px 2px!important}#annotationHome .annotationIntro{padding:4px 8px!important}#annotationHome .annotationIntro small{font-size:10px}#annotationHome .timelineEpoch76::after{left:62px}#annotationHome .timelineEpoch76::before{left:55px!important}#annotationHome .timelineEra76,#annotationHome .timelineBranch76{margin-left:72px!important}#annotationHome .timelineWorld78{width:53px;left:0;padding:2px 1px}#annotationHome .timelineWorld78::before{font-size:8px}#annotationHome .timelineWorld78 strong{font-size:10px}#annotationHome .timelineWorld78 :is(time,span,a){font-size:8px}#annotationHome .timelineBranch76 .timelineCard73{width:min(75vw,390px)!important;flex-basis:min(75vw,390px)!important;height:clamp(350px,60dvh,560px)!important}#annotationHome .timelineInfo73{padding:6px 8px!important;max-height:47%}#annotationHome .timelineLandmark79{width:29%}#annotationHome .timelineMarks79 button{font-size:10px;padding:3px 5px}}
