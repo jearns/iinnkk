@@ -96,6 +96,8 @@
   "revision82.js",
   "revision83.css",
   "revision83.js",
+  "revision84.css",
+  "revision84.js",
   "scenes",
   "seal-chars.js",
   "seal.js",
@@ -116,6 +118,8 @@
   "timeline77-curation.js",
   "timeline78-data.js",
   "updates",
+  "work-albums84.js",
+  "work-meta84.js",
   "writing-music.js",
   "zip.js"
 ]

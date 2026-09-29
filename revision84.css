@@ -1,0 +1,15 @@
+/* Albums and a vermilion intaglio avatar. */
+.albumToolbar84{display:grid;gap:6px;margin:0 0 14px;padding:0 0 10px;border-bottom:1px solid #cbbfa44d}
+.albumNavigation84,.albumCreate84{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px}
+.albumCreate84[hidden]{display:none}
+.albumToolbar84 select,.albumToolbar84 input,.albumAssign84,.cloudAlbumFilter84{min-width:0;max-width:100%;box-sizing:border-box;background:#f7f3ea;color:#28433f;border:1px solid #c9c0ad80;border-radius:6px;padding:6px 8px;font:inherit;font-size:12px}
+.albumNavigation84>select{flex:1 1 150px}.albumCreate84 input{flex:1 1 140px}
+.albumToolbar84 button,.cloudAlbumManage84,#batchAlbum84,.albumMove84 button{border:0;border-radius:5px;padding:6px 9px;background:#e8e2d6;color:#28433f;font-size:12px;min-height:28px}
+.albumToolbar84 button:disabled{opacity:.35}.albumToolbar84 small{font-size:11px;text-align:center;color:#68766c;overflow-wrap:anywhere}
+.albumPlacement84{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:6px;font-size:11px;color:#69756c}.albumPlacement84 select{flex:1;max-width:220px}.cloudWork75>.albumAssign84{width:100%;grid-column:1/-1}
+.cloudAlbumFilter84{margin:6px}.albumMove84{max-width:310px;padding:18px;border:0;border-radius:12px}.albumMove84 select{display:block;width:100%;margin-bottom:12px}.albumMove84 button{margin:0 5px}
+.annotationBrand .accountAvatar83{flex:0 0 32px;width:32px;height:32px;min-width:32px;max-width:32px;min-height:32px;max-height:32px;aspect-ratio:1;box-sizing:border-box;border:0!important;border-radius:50%!important;background:#b12722!important;color:#fff7e5!important;padding:0!important;display:grid;place-items:center;overflow:hidden;font:22px/1 YiShanBeiSeal,ChongxiSeal,ShuowenSeal,serif!important}
+#dailyDialog .bookmarkNav81 button:nth-child(2){font-size:0;display:grid;place-items:center;flex:0 0 26px;padding:0}
+#dailyDialog .bookmarkNav81 button:nth-child(2) svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.timelineNow73 .timelineDate78{display:none}
+@media(max-width:500px){.albumNavigation84{gap:4px}.albumNavigation84 button{padding:6px}.albumNavigation84>select{flex-basis:100%}}
