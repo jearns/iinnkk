@@ -1,0 +1,74 @@
+/* Parallel histories share a single dated spine. The wider bank belongs to calligraphy. */
+body.home-open #annotationHome #inkTimeline73{width:min(100%,1050px)!important}
+#annotationHome .homeTheme78{display:flex;gap:0;width:max-content;margin:0 20px 14px;border:1px solid #d8c59b8c;border-radius:999px;padding:3px;background:#08172877;position:relative;z-index:2}
+#annotationHome .homeTheme78 button{border:0;border-radius:999px;background:transparent;color:#c4cbd0;padding:7px 17px;font-size:11px;letter-spacing:.13em;cursor:pointer}
+#annotationHome .homeTheme78 button[aria-pressed="true"]{background:#e9ddc7;color:#26394a;box-shadow:0 2px 10px #0002}
+#annotationHome .timelineEpoch76{border:0!important;isolation:isolate}
+#annotationHome .timelineEpoch76::after{content:'';position:absolute;left:202px;top:0;bottom:0;width:1px;background:linear-gradient(#d2ae7950,#d2ae79ad,#d2ae7950);pointer-events:none}
+#annotationHome .timelineEpoch76::before{left:195px!important;top:40px!important;z-index:1}
+#annotationHome .timelineEra76{margin-left:220px!important}
+#annotationHome .timelineBranch76{margin-left:220px;min-width:0}
+#annotationHome .timelineWorld78{position:absolute;left:5px;top:30px;width:176px;display:grid;gap:6px;padding:8px 11px 12px 0;color:#bbcad1;border-top:1px solid #cbb78b99;line-height:1.45}
+#annotationHome .timelineWorld78::before{content:'世界文字文明';font:600 9px/1.4 system-ui,sans-serif;letter-spacing:.18em;color:#d9bf8d}
+#annotationHome .timelineWorld78 time{font:11px/1.4 system-ui,sans-serif;color:#e8cc99}
+#annotationHome .timelineWorld78 strong{font:500 15px/1.4 STKaiti,'Kaiti SC',serif;color:#f2e5cf}
+#annotationHome .timelineWorld78 span,#annotationHome .timelineWorld78 a{font:10px/1.6 system-ui,sans-serif;color:#afbdc4;text-decoration:none}
+#annotationHome .timelineWorld78 a{border-bottom:1px solid #c7b58680;width:fit-content;max-width:100%}
+#annotationHome .timelineDate78{display:block;font:600 11px/1.4 system-ui,sans-serif;letter-spacing:.1em;color:#925a43;margin:2px 0}
+#annotationHome .timelinePortrait77{width:clamp(110px,30%,182px);bottom:9px;right:5%;opacity:.52;color:#182a30}
+#annotationHome .timelinePortrait77 svg{filter:none;stroke-linecap:round;stroke-linejoin:round}
+#annotationHome .timelineHero73{background:radial-gradient(circle at 46% 25%,#d5c6a7,#a79b88 52%,#4d5960)!important}
+#annotationHome .timelineCard73:focus-visible,#annotationHome .timelineWorld78 a:focus-visible{outline:2px solid #d9b976;outline-offset:3px}
+#annotationHome .timelineIntro73{display:none!important}
+#annotationHome #homeTop76:not([hidden]){right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));border-radius:999px!important;padding:10px 13px!important}
+body.home-open #annotationHome .homeTop78{display:grid;place-items:center;position:fixed!important;right:max(14px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));z-index:1200!important;width:43px;height:43px;border:1px solid #cfb988;border-radius:50%;background:#163548ed;color:#fff2d5;font-size:21px;box-shadow:0 5px 20px #09152778;cursor:pointer}
+body.home-open #annotationHome #homeTop76{display:none!important}
+body.home-open[data-home-theme="river"] #annotationHome .homeTop78{background:#f2f1e7;color:#30575d;border-color:#78958d}
+body.home-open[data-home-theme="river"] #annotationHome{background:radial-gradient(ellipse at 23% 23%,#f2ead6 0%,transparent 56%),radial-gradient(ellipse at 89% 72%,#cad9d3 0%,transparent 55%),linear-gradient(170deg,#eee8dc,#e0e9e3 48%,#d2e2e0)!important;color:#233c44!important}
+body.home-open[data-home-theme="river"] #annotationHome::before{background-image:repeating-radial-gradient(ellipse at 34% 38%,transparent 0 55px,#799eb11d 57px 58px,transparent 60px 106px);opacity:.65}
+body.home-open[data-home-theme="river"] #annotationHome .annotationBrand *,body.home-open[data-home-theme="river"] #annotationHome .annotationIntro *,body.home-open[data-home-theme="river"] #annotationHome .timelineHead73 span,body.home-open[data-home-theme="river"] #annotationHome .timelineEra76 span{color:#244048!important}
+body.home-open[data-home-theme="river"] #annotationHome .timelineHead73 small,body.home-open[data-home-theme="river"] #annotationHome .timelineEra76 small{color:#4d6970!important}
+body.home-open[data-home-theme="river"] #annotationHome #homeQuick47{background:#eaf0e9eb!important;border-color:#6a888069!important}
+body.home-open[data-home-theme="river"] #annotationHome #homeQuick47 button{color:#25464b!important}
+body.home-open[data-home-theme="river"] #annotationHome .homeTheme78{background:#e6ece5}
+body.home-open[data-home-theme="river"] #annotationHome .homeTheme78 button{color:#31525a}
+body.home-open[data-home-theme="river"] #annotationHome .homeTheme78 button[aria-pressed="true"]{background:#30575f;color:#f8f2df}
+body.home-open[data-home-theme="river"] #annotationHome .timelineWorld78{border-color:#77999b;color:#466469}
+body.home-open[data-home-theme="river"] #annotationHome .timelineWorld78 :is(time,strong,span,a),body.home-open[data-home-theme="river"] #annotationHome .timelineWorld78::before{color:#34565c}
+body.home-open[data-home-theme="river"] #annotationHome #homeTop76{background:#f5f1e5;color:#285057;border-color:#698f8f}
+@media(max-width:660px){
+ #annotationHome .timelineEpoch76::after{left:79px}#annotationHome .timelineEpoch76::before{left:72px!important}
+ #annotationHome .timelineEra76{margin-left:91px!important}#annotationHome .timelineBranch76{margin-left:91px}
+ #annotationHome .timelineWorld78{width:67px;left:0;top:23px;padding:5px 2px 7px 0;gap:4px}
+ #annotationHome .timelineWorld78::before{font-size:8px;letter-spacing:0}#annotationHome .timelineWorld78 strong{font-size:12px}
+ #annotationHome .timelineWorld78 :is(time,span,a){font-size:9px;line-height:1.4;overflow-wrap:anywhere}
+ #annotationHome .timelineBranch76 .timelineCard73{flex-basis:min(77vw,470px)!important;width:min(77vw,470px)!important;height:clamp(400px,65dvh,590px)!important}
+ #annotationHome .timelinePortrait77{width:28%;right:3%}#annotationHome .homeTheme78{margin-inline:10px}
+ #annotationHome .timelineEra76 span{font-size:19px!important}#annotationHome .timelineDate78{font-size:9px}
+}
+/* Account becomes a compact study with clear hierarchy and quiet actions. */
+.cloud75-dialog{width:min(92vw,520px);max-width:520px;border:1px solid #dfcfb2;border-radius:18px;background:linear-gradient(160deg,#faf6ed,#eef2ed);padding:0;box-shadow:0 24px 90px #071b2f7d}
+.cloud75-dialog::backdrop{background:#091728aa;backdrop-filter:blur(5px)}
+.cloud75-head{padding:15px 21px;margin:0;border-bottom:1px solid #cabd9f99;color:#2c4a4b}
+.cloud75-head strong{font:500 16px/1.5 STKaiti,'Kaiti SC',serif;letter-spacing:.1em}
+.cloud75-head button{background:transparent!important;color:#536961!important;padding:5px 7px!important}
+.cloud75-body{padding:20px 24px 26px;gap:15px}
+.cloudWelcome78{padding:11px 0 16px;border-bottom:1px solid #9baba06b}
+.cloudWelcome78 small,.studyHero78 small{font:600 10px/1.6 system-ui,sans-serif;letter-spacing:.24em;color:#967858}
+.cloudWelcome78 h2,.studyHero78 h2{font:500 28px/1.3 STKaiti,'Kaiti SC',serif;margin:9px 0;color:#263f3f}
+.cloudWelcome78 p,.studyHero78 p{font:12px/1.75 system-ui,sans-serif;color:#667875;margin:0}
+.cloudForm78{display:grid;gap:11px}.cloud75-dialog .cloudForm78 input{border-radius:4px;border:1px solid #b4beb0;background:#fffdf8;padding:11px 13px;font-size:14px}
+.cloudFormActions78{display:grid;grid-template-columns:1fr 1fr;gap:9px}.cloud75-dialog .cloudFormActions78 button,.studyNav78 button{border-radius:4px;background:#2f514f;color:#f9f2e4;font-size:13px}
+.cloud75-dialog .cloudFormActions78 button+button{background:transparent;color:#315551;border:1px solid #78948b}
+.cloudDivider78{text-align:center;color:#70817a}.cloudOAuth76{justify-content:center}.cloudOAuth76 button{border-radius:4px}
+.studyHero78{padding:9px 0 16px;border-bottom:1px solid #b8c9ba}.studyHero78 h2{margin-bottom:2px}
+.studyNav78{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.studyNav78 button{padding:9px 2px}
+.studyContent78{display:grid;gap:10px;min-height:140px}.studyContent78 h3{font:500 18px STKaiti,'Kaiti SC',serif;margin:13px 0 0;color:#304e4d}
+.studyStats78{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#bdc9bb;border:1px solid #bdc9bb}.studyStats78>div{display:grid;text-align:center;gap:3px;background:#f6f4eb;padding:11px 5px}.studyStats78 strong{font:400 25px Georgia,serif;color:#395b58}.studyStats78 small{font-size:10px;color:#71817c}
+.studyList78{display:grid;gap:0;border-top:1px solid #b9c7bb}.studyList78>div,.studyList78>p{padding:8px 0;margin:0;border-bottom:1px solid #b9c7bb8c;font:12px/1.6 system-ui,sans-serif;color:#405f5b}.studyFoot78{border-top:1px solid #b7c7bb;padding-top:13px}.studyFoot78 button{background:transparent;color:#6d7d76;border:1px solid #aebeb0}
+.cloudComment78{padding:8px;border-bottom:1px solid #c3cabc}.cloudComment78 p{margin:0 0 4px}.cloudComment78 button{padding:3px 7px;background:transparent;color:#506b64;border:1px solid #a6b7ad}
+/* The selected graphic is editable by the existing crop and replace controls. */
+#previewEffects55.photoActive63 .finalRail54{flex:0 0 82px!important;max-height:82px!important;min-height:82px!important;overflow:auto hidden;justify-content:flex-start}
+#previewEffects55.photoActive63{max-height:min(128px,23dvh)!important}
+#previewEffects55.photoActive63 .finalRail54 .photoLayouts62{flex-wrap:nowrap!important;justify-content:flex-start!important;max-width:100%;overflow-x:auto}
+#previewEffects55 .photoPreset78{height:66px;min-width:85px!important;width:85px;padding:38px 3px 3px!important;background-size:cover;background-position:center;color:#fff!important;font-size:10px!important;line-height:1.1!important;border:1px solid #ddc9a0!important;border-radius:3px!important;text-shadow:0 1px 3px #000}
