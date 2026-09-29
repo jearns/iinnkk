@@ -1,0 +1,23 @@
+/* Version 81: restrained layouts with compact, anchored settings. */
+#annotationHome .timelineEpoch76{padding-block:12px!important;gap:6px!important}
+#annotationHome .timelineBranch76{padding-block:2px 8px!important}
+#annotationHome .timelineNow73 .timelineHero73 img,#annotationHome .timelineBranch76 .timelineHero73 img{object-fit:cover!important}
+#annotationHome .timelineNow73 .timelineInfo73 strong{font-size:clamp(13px,1.4vw,17px)!important}
+#annotationHome .timelineNow73 .timelineInfo73 :is(time,small){font-size:9px!important}
+#toolPopup79,.bookmarkPicker79{max-width:calc(100vw - 16px)}
+#toolPopup79 .toolPopupBody79{justify-content:center;align-items:center}
+#toolPopup79 .toolPopupBody79 button{text-align:center;white-space:normal}
+#copyNav80{gap:3px}#copyNav80 button{min-width:30px}
+#copyAlbumViewer38{max-width:min(94vw,920px);max-height:93dvh;overflow:auto}
+#copyAlbumViewer38 #albumImage38{display:block;max-width:100%;max-height:73dvh;object-fit:contain;margin:auto;user-select:none}
+#copyAlbumViewer38 .musicActions{display:flex;flex-wrap:wrap;justify-content:center;gap:5px}
+#dailyDialog.quoteBookmark73 .dialogHead{min-height:0;padding-block:2px!important}
+#dailyDialog.quoteBookmark73 .bookmarkSource79{background:#fffcf333!important;color:#fffaf0;padding:1px 3px!important;line-height:1.15!important}
+.bookmarkNav81{display:flex;justify-content:flex-end;gap:3px;margin-top:4px}
+.bookmarkNav81 button{min-width:26px;background:transparent;color:inherit;border:1px solid currentColor;border-radius:3px;padding:2px 4px;font-size:11px}
+
+#previewEffects55 .photoLayouts62 button{min-width:0!important;flex:1 1 auto;text-align:center;padding:5px 8px!important}
+
+.frontQuoteEditor81{width:min(920px,95vw);max-height:88dvh;overflow:auto;border:1px solid #b5ad98;border-radius:8px;background:#f7f3ea;padding:12px}.frontQuoteEditor81 .quoteRow62{white-space:normal!important;text-align:left!important;height:auto!important;overflow-wrap:anywhere}.bookmarkEdit81{border:0;background:transparent;color:inherit;font-size:10px;padding:1px 2px}
+
+.downloadAlbum81{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;font-size:12px}.downloadAlbum81 select,.downloadAlbum81 input,.albumFilter81{min-width:100px;max-width:180px;border:1px solid #b7ab97;border-radius:4px;background:#fbf8f0;padding:5px;color:#2f5050}.downloadAlbum81 input[hidden]{display:none!important}
