@@ -1,0 +1,16 @@
+/* V83: compact publishing, adaptable bookmark, and facsimile branches. */
+.cloudSave75,.workCard .cloudSave75{display:grid!important;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);justify-items:stretch;align-items:center;gap:5px;width:100%;box-sizing:border-box}
+.cloudSave75 button,.workCard .cloudSave75 .feature54{display:flex;align-items:center;justify-content:center;width:100%;margin:0!important;min-width:0!important;white-space:nowrap}
+.cloudMineTools83{display:flex;flex-wrap:wrap;justify-content:center;gap:5px;margin-top:5px}.cloudMineTools83 button{border:1px solid #d1c4af;border-radius:4px;padding:5px 9px;background:#f4efe6;color:#294743;font-size:12px}
+.profileEdit83{display:grid;gap:5px;max-width:330px;margin:8px auto}.profileEdit83 input{width:100%;box-sizing:border-box;border:1px solid #c5bca9;border-radius:4px;padding:7px;background:#fffaf0;color:#233f3e}.profileEdit83 button{border:0;background:#294b49;color:#fff;padding:7px}
+.studyThumb79[role=button]{cursor:pointer}.studyThumb79[role=button]:focus-visible{outline:2px solid #b03a32}
+.annotationBrand .accountAvatar83{display:grid;place-items:center;width:30px;height:30px;min-width:30px;padding:0;border:1px solid #baa786;border-radius:50%;background:#e9e0d0;color:#38504b;font:16px/1 STKaiti,'Kaiti SC',serif}
+#annotationHome .timelineCopy83 .timelineHero73 img{object-fit:cover;width:100%;height:100%;background:#e7dfd0}
+body:not(.home-open) #dailyDialog.quoteBookmark73{width:max-content!important;min-width:0!important;max-width:min(86vw,470px)!important;height:fit-content!important;max-height:84dvh!important;box-sizing:border-box}
+#dailyDialog.quoteBookmark73 .dialogHead{padding-right:38px!important;min-height:24px!important;align-items:flex-start}
+#dailyDialog.quoteBookmark73 .bookmarkSource79{width:auto!important;max-width:100%;white-space:normal!important;overflow-wrap:anywhere;padding:1px 3px!important;background:transparent!important}
+#dailyDialog.quoteBookmark73 [data-close]{right:5px!important;top:3px!important;min-width:25px!important;height:25px;line-height:24px;text-align:center}
+#dailyDialog.quoteBookmark73 .bookmarkNav81{gap:10px;align-items:center}
+#dailyDialog.quoteBookmark73 .bookmarkNav81 button{border:0!important;box-shadow:none!important;background:transparent!important;border-radius:0!important;padding:3px 4px!important;min-width:28px;color:inherit}
+#dailyDialog.quoteBookmark73 .bookmarkNav81 button:focus-visible{outline:1px solid currentColor}
+@media(max-width:550px){.cloudSave75{gap:3px}.cloudSave75 button,.workCard .cloudSave75 .feature54{font-size:10px!important;padding:4px 2px!important}body:not(.home-open) #dailyDialog.quoteBookmark73{max-width:88vw!important}}
