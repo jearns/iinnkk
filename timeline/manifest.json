@@ -14,6 +14,25 @@
         "timeline/pages/qinling/mukxjm05-0.jpg",
         "timeline/pages/qinling/mukxjnjm-1.jpg"
       ]
+    },
+    "yuyouren": {
+      "title": "于右任·草书满江红",
+      "place": "",
+      "museum": "请管理员指定馆藏与具体墨迹",
+      "status": "同词书写有不同作品",
+      "url": "",
+      "style": "zhang",
+      "size": 340,
+      "zoom": 178,
+      "pages": [
+        "timeline/pages/yuyouren/mum84xny-0.jpg",
+        "timeline/pages/yuyouren/mum84ynf-1.jpg",
+        "timeline/pages/yuyouren/mum850p0-2.jpg",
+        "timeline/pages/yuyouren/mum852o9-3.jpg",
+        "timeline/pages/yuyouren/mum854bu-4.jpg",
+        "timeline/pages/yuyouren/mum855x0-5.jpg",
+        "timeline/pages/yuyouren/mum857fk-6.jpg"
+      ]
     }
   }
 }
