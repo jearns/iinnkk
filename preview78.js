@@ -1,6 +1,6 @@
 /* Built-in editable visual starting points. SVGs are rasterized by the existing photo importer. */
 (function init(){if(!window.AnnotationApp?.ready||!window.Revision62?.photoPanel||!document.getElementById('previewReset73')){setTimeout(init,70);return}
-const A=AnnotationApp,outer=Revision62.photoPanel.querySelectorAll('.photoLayouts62')[2];if(!outer)return;
+const A=AnnotationApp,outer=[...Revision62.photoPanel.querySelectorAll('.photoLayouts62')].at(-1)||document.querySelector('#previewEffects55 .finalRail54 .photoLayouts62');if(!outer)return;
 const themes={
  '明信片':['#d9b896','#f9edda','SHANGHAI · 2026','<path d="M25 191 Q130 93 270 174 T630 136 M60 119 Q240 79 410 128" fill="none" stroke="#836852" stroke-width="4" opacity=".55"/><circle cx="557" cy="73" r="44" fill="none" stroke="#a15443" stroke-width="3"/>','写给远方'],
  '签名照':['#191c2a','#dfb982','XU ZHANG · THE ARTIST','<circle cx="282" cy="170" r="118" fill="#b58b59" opacity=".27"/><path d="M205 290 Q218 226 250 216 Q229 198 231 161 Q234 114 281 111 Q325 116 326 166 Q324 202 304 218 Q354 238 370 290Z" fill="#e9ddc0" opacity=".87"/><path d="M243 135 Q283 67 326 132 M232 180 Q290 195 329 178" stroke="#382a26" stroke-width="7" fill="none"/><path d="M442 295 Q446 224 489 217 Q466 195 473 157 Q477 121 515 119 Q553 120 558 159 Q560 195 537 217 Q574 228 581 295Z" fill="none" stroke="#d3b784" stroke-width="3" stroke-dasharray="8 7"/>','张旭 · 草书签名 / 右侧上传你的合影'],
