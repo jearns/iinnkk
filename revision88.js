@@ -55,12 +55,20 @@
    sub.textContent='见墨·iinnkk.me·如我';
    sub.style.letterSpacing='0px';
    sub.style.width='auto';
-   const target=title.getBoundingClientRect().width;
+   sub.style.fontSize='';
+   const target=Math.min(title.getBoundingClientRect().width,box.getBoundingClientRect().width);
    const cs=getComputedStyle(sub),canvas=alignBrandSubtitle88.canvas||(alignBrandSubtitle88.canvas=document.createElement('canvas')),ctx=canvas.getContext('2d');
+   let size=parseFloat(cs.fontSize)||12;
    ctx.font=cs.font;
-   const chars=Array.from(sub.textContent),base=ctx.measureText(sub.textContent).width;
-   const spacing=chars.length>1?Math.max(0,Math.min(7,(target-base)/(chars.length-1))):0;
+   let base=ctx.measureText(sub.textContent).width;
+   if(base>target&&target>0){
+     size=Math.max(8,size*(target/base)*.97);
+     sub.style.fontSize=size+'px';
+     const cs2=getComputedStyle(sub);ctx.font=cs2.font;base=ctx.measureText(sub.textContent).width;
+   }
+   const chars=Array.from(sub.textContent),spacing=chars.length?Math.max(0,Math.min(innerWidth<560?3.2:6,(target-base)/chars.length)):0;
    sub.style.width=target+'px';
+   sub.style.maxWidth='100%';
    sub.style.letterSpacing=spacing+'px';
  }
  requestAnimationFrame(()=>requestAnimationFrame(alignBrandSubtitle88));
@@ -101,6 +109,8 @@
    const bookmark=p.bookmark?.color||p.ink;
    document.documentElement.style.setProperty('--bookmark-bg88',bookmark);
    document.documentElement.style.setProperty('--bookmark-fg88',contrast(bookmark));
+   document.documentElement.style.setProperty('--reader-bg88',p.ink);
+   document.documentElement.style.setProperty('--reader-fg88',contrast(p.ink));
  }
  // Override public palette API so V86 preview-random uses the infinite generator.
  if(window.Revision85){Revision85.palette=infinitePalette;Revision85.applyPalette=applyInfinite}
@@ -177,11 +187,15 @@
      actions.id='homeActions88';
      brand?.append(actions);
    }
+   const account=$('account47');
+   const river=[...theme.querySelectorAll('button')].find(b=>/浅色河流|浅色/.test(b.textContent||''));
+   const star=[...theme.querySelectorAll('button')].find(b=>/深色星空|深色/.test(b.textContent||''));
+   if(river){river.textContent='浅色';river.title='浅色河流 · 阳刻';river.setAttribute('aria-label','浅色河流')}
+   if(star){star.textContent='深色';star.title='深色星空 · 阴刻';star.setAttribute('aria-label','深色星空')}
    if(theme)actions.append(theme);
    if(reminder)actions.append(reminder);
    if(works)actions.append(works);
-   const river=[...theme.querySelectorAll('button')].find(b=>/浅色河流/.test(b.textContent||''));
-   const star=[...theme.querySelectorAll('button')].find(b=>/深色星空/.test(b.textContent||''));
+   if(account)actions.append(account);
    function autoTheme88(){
      const hour=new Date().getHours();
      const target=(hour>=18||hour<6)?star:river;
@@ -197,15 +211,23 @@
  const account=$('account47');if(account)account.classList.add('accountWhite88e');
  new MutationObserver(()=>{$('account47')?.classList.add('accountWhite88e')}).observe(home,{childList:true,subtree:true});
 
- // 8. Final writer top-right compact text controls.
- // Redo/恢复 stays in DOM for the core history engine but is removed from this visible strip.
+ // 8. Writer top-right: 加纸加字 icon → 撤销 → 返回 → 清屏 → 预览/书写 → 下载 → hamburger.
  const actionBar88=$('topActions');
  if(actionBar88){
    const guide=$('textGuide88');if(guide)guide.hidden=true;
    const undo=$('undo'),redo=$('redo'),back=$('writerBack88'),clear=$('clear'),fit=$('fitView'),download=$('export'),menu=$('menuToggle');
    if(redo){redo.hidden=true;redo.classList.add('hideRedo88f')}
-   const label=(el,text)=>{if(!el)return;el.classList.add('writerText88e');el.replaceChildren(document.createTextNode(text));el.title=text;el.setAttribute('aria-label',text)};
-   label(undo,'撤销');label(back,'返回');label(clear,'清屏');label(download,'下载');
+   const sourceAdd=document.querySelector('#bigPaper62 button');
+   let addPaper=$('topAddPaper88');
+   if(sourceAdd){
+     sourceAdd.hidden=true;
+     if(!addPaper){addPaper=document.createElement('button');addPaper.id='topAddPaper88';addPaper.type='button';addPaper.title='加纸加字';addPaper.setAttribute('aria-label','加纸加字');addPaper.onclick=()=>sourceAdd.click()}
+   }
+   const decorate=(el,label,symbol)=>{if(!el)return;el.classList.add('writerText88e','writerIconText88');el.dataset.label=label;el.dataset.symbol=symbol;el.title=label;el.setAttribute('aria-label',label)};
+   decorate(undo,'撤销','↶');
+   decorate(back,'返回','‹');
+   decorate(clear,'清屏','⌫');
+   decorate(download,'下载','⇩');
    if(back){
      back.title='返回上一步';
      back.setAttribute('aria-label','返回上一步');
@@ -213,16 +235,30 @@
        const open=[...document.querySelectorAll('dialog[open]')].at(-1);
        if(open){open.close();return}
        if(A.isOverview55?.()){fit?.click();return}
+       const inspector=$('sealInspector');if(inspector&&!inspector.hidden){inspector.hidden=true;return}
        document.dispatchEvent(new CustomEvent('writer-back88',{detail:{source:'toolbar'}}));
      };
    }
-   function syncFitLabel88(){if(!fit)return;label(fit,A.isOverview55?.()?'书写':'预览')}
+   function syncFitLabel88(){if(!fit)return;decorate(fit,A.isOverview55?.()?'书写':'预览',A.isOverview55?.()?'✎':'▣')}
    syncFitLabel88();
    fit?.addEventListener('click',()=>requestAnimationFrame(()=>requestAnimationFrame(syncFitLabel88)));
    document.getElementById('board')?.addEventListener('pointerup',()=>setTimeout(syncFitLabel88,40),{passive:true});
+   if(addPaper){addPaper.classList.add('writerAddPaper88');addPaper.dataset.symbol='＋';actionBar88.append(addPaper)}
    for(const el of [undo,back,clear,fit,download,menu])if(el)actionBar88.append(el);
-   if(menu){menu.classList.remove('writerText88e');menu.title='菜单';menu.setAttribute('aria-label','菜单')}
+   if(menu){menu.classList.remove('writerText88e','writerIconText88');menu.title='菜单';menu.setAttribute('aria-label','菜单')}
  }
+
+ // 9. Full-paper preview uses one fixed two-line watermark; all random opening copy stays hidden.
+ const board=$('board'),fit88=$('fitView');
+ let wm=$('previewWatermark88');
+ if(board&&!wm){
+   wm=document.createElement('div');wm.id='previewWatermark88';wm.innerHTML='<strong>单指双击，即刻书写</strong><small>见墨·iinnkk.me·如我</small>';wm.hidden=true;board.append(wm);
+ }
+ function syncPreviewWatermark88(){if(wm)wm.hidden=!A.isOverview55?.()}
+ syncPreviewWatermark88();
+ if(fit88)new MutationObserver(syncPreviewWatermark88).observe(fit88,{attributes:true,attributeFilter:['aria-label']});
+ fit88?.addEventListener('click',()=>requestAnimationFrame(()=>requestAnimationFrame(syncPreviewWatermark88)));
+ board?.addEventListener('pointerup',()=>setTimeout(syncPreviewWatermark88,40),{passive:true});
 
  document.documentElement.classList.add('v88-ready');
  window.Revision88={ready:true,palette:infinitePalette,applyPalette:applyInfinite};
