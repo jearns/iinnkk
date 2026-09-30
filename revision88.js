@@ -24,8 +24,31 @@
 
  // 3. Homepage intro wording + exact equal-width subtitle under the brand.
  const intro=home.querySelector('.annotationIntro');
- const introSmall=intro?.querySelector('small');
- if(introSmall)introSmall.textContent='在数字的赛博空间，你我一起来结网记字！';
+ if(intro){
+   let strong=intro.querySelector('strong');
+   if(!strong){
+     const oldText=(intro.childNodes[0]?.nodeType===3?intro.childNodes[0].textContent:'').trim();
+     intro.textContent='';
+     strong=document.createElement('strong');
+     strong.textContent=oldText||'人类群星闪耀时';
+     const small=document.createElement('small');
+     small.textContent='在数字的赛博空间，你我一起来结网记字！';
+     intro.append(strong,small);
+   }else{
+     strong.textContent='人类群星闪耀时';
+     let small=intro.querySelector('small');
+     if(!small){small=document.createElement('small');intro.append(small)}
+     small.textContent='在数字的赛博空间，你我一起来结网记字！';
+   }
+   intro.classList.add('introHead88');
+   const brand=home.querySelector('.annotationBrand');
+   const nav=home.querySelector('#homeQuick47');
+   if(brand){
+     // Original head visual area: below brand/actions, above the fixed category nav.
+     if(nav?.parentElement===home)home.insertBefore(intro,nav);
+     else if(brand.nextSibling!==intro)brand.after(intro);
+   }
+ }
  function alignBrandSubtitle88(){
    const box=home.querySelector('.annotationBrand>div'),title=box?.querySelector('h1'),sub=box?.querySelector('p');
    if(!title||!sub)return;
