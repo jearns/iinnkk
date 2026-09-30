@@ -13,14 +13,36 @@
    const brand=home.querySelector('.annotationBrand');
    const buttons=[...brand?.querySelectorAll('button')||[]];
    const reminder=buttons.find(b=>/天后|今天|明天|国庆|中秋|元旦|春节|提醒|日历|倒计时/.test((b.textContent||'')+' '+(b.title||'')+' '+(b.getAttribute('aria-label')||'')));
+   for(const b of theme.querySelectorAll('button')){
+     const t=(b.textContent||'').trim();
+     b.classList.toggle('riverSeal88',/浅色河流/.test(t));
+     b.classList.toggle('starSeal88',/深色星空/.test(t));
+   }
    if(reminder?.parentElement)reminder.parentElement.insertBefore(theme,reminder);
    else if($('continueWriting')?.parentElement)$('continueWriting').parentElement.insertBefore(theme,$('continueWriting'));
  }
 
- // 3. Homepage intro wording.
+ // 3. Homepage intro wording + exact equal-width subtitle under the brand.
  const intro=home.querySelector('.annotationIntro');
  const introSmall=intro?.querySelector('small');
  if(introSmall)introSmall.textContent='在数字的赛博空间，你我一起来结网记字！';
+ function alignBrandSubtitle88(){
+   const box=home.querySelector('.annotationBrand>div'),title=box?.querySelector('h1'),sub=box?.querySelector('p');
+   if(!title||!sub)return;
+   sub.textContent='见墨·iinnkk.me·如我';
+   sub.style.letterSpacing='0px';
+   sub.style.width='auto';
+   const target=title.getBoundingClientRect().width;
+   const cs=getComputedStyle(sub),canvas=alignBrandSubtitle88.canvas||(alignBrandSubtitle88.canvas=document.createElement('canvas')),ctx=canvas.getContext('2d');
+   ctx.font=cs.font;
+   const chars=Array.from(sub.textContent),base=ctx.measureText(sub.textContent).width;
+   const spacing=chars.length>1?Math.max(0,Math.min(7,(target-base)/(chars.length-1))):0;
+   sub.style.width=target+'px';
+   sub.style.letterSpacing=spacing+'px';
+ }
+ requestAnimationFrame(()=>requestAnimationFrame(alignBrandSubtitle88));
+ document.fonts?.ready?.then(alignBrandSubtitle88);
+ addEventListener('resize',alignBrandSubtitle88,{passive:true});
 
  // 4. Infinite harmonious colour generator — no fixed palette count.
  const frac=x=>x-Math.floor(x);
@@ -73,7 +95,12 @@
  $('annotationHomeButton')?.remove();
  $('topRemove')?.remove();
  const top=$('topActions'),quick=$('writingQuick73'),group=$('writerFixed85');
- if(group)group.remove();
+ if(top&&group){
+   // V85 moved undo inside this wrapper. Move it back BEFORE removing the wrapper,
+   // otherwise core historyState() loses #undo and the whole app/navigation crashes.
+   const undoInGroup=group.querySelector('#undo');if(undoInGroup)top.append(undoInGroup);
+   group.remove();
+ }
  if(top){
    const order=['undo','redo','clear','export','fitView'];
    for(const id of order){const el=$(id);if(el)top.append(el)}
