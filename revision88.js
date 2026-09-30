@@ -7,6 +7,7 @@
  // A single real seal in the hero; its counterpart appears only once the hero leaves view.
  hero.replaceChildren();const logo=el('img','heroSeal90');logo.src='favicon90.png';logo.alt='篆书筆字印章';hero.append(logo,el('span','','今日亲笔'));
  const sub=brandBox.querySelector('p');sub.textContent='见墨·iinnkk.me·如我';
+ const syncHeroWidth=()=>{if(home.clientWidth>0)root.style.setProperty('--home-width91',home.clientWidth+'px')};new ResizeObserver(syncHeroWidth).observe(home);syncHeroWidth();
  const intro=home.querySelector('.annotationIntro');const constellation=el('img','heroConstellation91');constellation.src='hero-constellation91.png';constellation.alt='';constellation.setAttribute('aria-hidden','true');constellation.decoding='async';intro.replaceChildren(constellation,el('strong','','人类群星闪耀时'),el('small','','在数字赛博空间，你我一起结网记字！'));
  home.querySelectorAll('.homeLogo85,.homeLogo86,.homeLogo87,#homeTop86').forEach(e=>e.remove());
  const account=$('account47'),reminder=$('homeMoments')||$('momentReminder')||$('homeMoment47')||brand.querySelector('[id*=Moment]')||[...brand.querySelectorAll('button')].find(b=>/提醒|日历|天后|今天|明天/.test(b.textContent+' '+b.title));
@@ -116,10 +117,32 @@
  const extras=el('div','writerExtras90');extras.id='writerExtras90';for(const b of [...bar.children])if(b.tagName==='BUTTON'&&!['annotationHomeButton','topRemove'].includes(b.id))extras.append(b);extras.hidden=true;
  for(const b of extras.querySelectorAll('button')){const label=({topQuotes:'好句',topUpload:'加图',topLines:'线条',topDirection:'方向',topAuto:'移纸',topOptimize:'润笔',selectInk:'选字',topSize:'笔径',topRatio:'比例',topMount:'装裱',topInk:'墨色',topStart:'起笔',myWorks:'作品',calendarMoments:'日历',recordProcess:'录制'})[b.id];if(label){b.title=label;const cap=el('span','',label);b.append(cap)}}
  // Good-quotes is always reachable, independent of whether the floating reader is open.
- const homeButton=$('annotationHomeButton');if(homeButton){homeButton.hidden=false;homeButton.classList.add('tool90');homeButton.innerHTML='<img src="favicon90.png" width="20" height="20" alt="篆书筆"><span>首页</span>';homeButton.onclick=()=>{reader.close();AnnotationHome.show()};left.prepend(homeButton)}
+ const homeButton=$('annotationHomeButton');if(homeButton){homeButton.hidden=false;homeButton.classList.add('tool90');homeButton.innerHTML='<img src="favicon90.png" width="20" height="20" alt="返回首页">';homeButton.onclick=()=>{reader.close();AnnotationHome.show()};left.prepend(homeButton)}
  const leftTools=[['myWorks','作品','M3 6h6l2 3h10v12H3zM7 13h10M7 17h6'],['selectInk','选字','M4 8V4h4M16 4h4v4M20 16v4h-4M8 20H4v-4M9 9h6v6H9z'],['recordProcess','录屏','M3 5h12v14H3zM15 9l6-3v12l-6-3'],['topQuotes','文摘','M5 4h14v16H5zM8 8h8M8 12h8M8 16h5']];
  for(const [id,name,path]of leftTools){const button=$(id);if(button){button.hidden=false;decorate(button,name,path);left.insertBefore(button,expand)}}
- const quotes=$('topQuotes');if(quotes){quotes.onclick=()=>{showReader();jump.hidden=false;title.setAttribute('aria-expanded','true');renderList()};quotes.setAttribute('aria-pressed','true')}
+ const excerptMenu=el('aside','excerptCategories91');excerptMenu.id='excerptCategories91';excerptMenu.hidden=true;excerptMenu.setAttribute('aria-label','好词好句类目');excerptMenu.setAttribute('role','menu');document.body.append(excerptMenu);
+ const quotes=$('topQuotes');
+ function closeExcerpts(){excerptMenu.hidden=true;quotes?.setAttribute('aria-expanded','false')}
+ function placeExcerpts(){if(excerptMenu.hidden||!quotes)return;const r=quotes.getBoundingClientRect(),w=excerptMenu.offsetWidth,h=excerptMenu.offsetHeight;excerptMenu.style.left=Math.max(8,Math.min(innerWidth-w-8,r.left))+'px';excerptMenu.style.top=Math.max(8,Math.min(innerHeight-h-8,r.bottom+6))+'px'}
+ function openExcerpts(){
+  showReader();jump.hidden=true;title.setAttribute('aria-expanded','false');
+  excerptMenu.replaceChildren();
+  for(const category of document.querySelectorAll('#quoteMenu [data-quote-category]')){
+   const button=el('button','',category.textContent);button.type='button';button.dataset.quoteCategory91=category.dataset.quoteCategory;button.setAttribute('role','menuitem');button.setAttribute('aria-current',String(category.dataset.quoteCategory===window.currentQuote?.cat));
+   button.onclick=()=>{D.select(button.dataset.quoteCategory91);showReader();closeExcerpts()};excerptMenu.append(button);
+  }
+  excerptMenu.hidden=false;quotes?.setAttribute('aria-expanded','true');placeExcerpts();
+  const menuRect=excerptMenu.getBoundingClientRect(),rect=reader.getBoundingClientRect(),w=rect.width,h=rect.height;
+  const preferredLeft=menuRect.right+10+w<=innerWidth-8?menuRect.right+10:Math.max(8,(innerWidth-w)/2);
+  const preferredTop=preferredLeft>=menuRect.right?menuRect.top:menuRect.bottom+8;
+  reader.style.setProperty('left',Math.max(8,Math.min(innerWidth-w-8,preferredLeft))+'px','important');
+  reader.style.setProperty('top',Math.max(8,Math.min(innerHeight-h-8,preferredTop))+'px','important');
+ }
+ if(quotes){quotes.type='button';quotes.onclick=openExcerpts;quotes.setAttribute('aria-pressed','true');quotes.setAttribute('aria-haspopup','menu');quotes.setAttribute('aria-controls',excerptMenu.id);quotes.setAttribute('aria-expanded','false')}
+ // One capture handler owns this action, so legacy toolbar click handlers cannot toggle it back off.
+ document.addEventListener('click',e=>{if(e.target instanceof Element&&e.target.closest('#topQuotes')){e.preventDefault();e.stopImmediatePropagation();openExcerpts()}},true);
+ document.addEventListener('pointerdown',e=>{if(!excerptMenu.hidden&&!excerptMenu.contains(e.target)&&!quotes?.contains(e.target))closeExcerpts()},true);
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeExcerpts()});addEventListener('resize',placeExcerpts);reader.addEventListener('close',closeExcerpts);
  $('dailyBar').hidden=true;
 
  for(const id of ['writingQuick73','writerFixed85','topRemove']){const e=$(id);if(e){e.hidden=true;document.body.append(e)}}
@@ -130,16 +153,18 @@
  for(const [id,name,type] of [['undo','撤销','undo'],['redo','返回','redo'],['clear','清屏','clear'],['export','下载','download'],['menuToggle','菜单','menu']])decorate($(id),name,paths[type]);
  const wm=el('div','previewWatermark90');wm.id='previewWatermark90';wm.innerHTML='<strong>单指双击，即刻书写</strong><small>见墨·iinnkk.me·如我</small>';$('board').append(wm);
  $('hint').hidden=true;$('previewHint85')?.remove();document.querySelectorAll('.brandWatermark44').forEach(e=>e.remove());
- const actionsPreview=document.querySelector('#previewEffects55 .previewActions56');actionsPreview.classList.add('previewActions90');
+ const actionsPreview=document.querySelector('#previewEffects55 .previewActions56');
+ if(actionsPreview){actionsPreview.hidden=true;actionsPreview.setAttribute('aria-hidden','true');actionsPreview.classList.remove('previewActions90');for(const button of actionsPreview.querySelectorAll('button'))button.tabIndex=-1}
+ requestAnimationFrame(()=>{const controls=$('previewEffects55'),workspace=$('board')?.parentElement;if(controls&&!controls.hidden&&workspace){workspace.style.setProperty('--preview-controls-height56',Math.ceil(controls.getBoundingClientRect().height)+'px');dispatchEvent(new Event('resize'))}});
  const random=$('previewRandom79'),reset=$('previewReset73');let savedPalette=null;random.onclick=()=>applyPalette(palette());
  random.addEventListener('pointerdown',()=>{if(!savedPalette){const s=A.getState();savedPalette={paper:s.values.papercolor,ink:s.brush.color,seal:s.values.headColor}}},true);
  reset.onclick=()=>{if(savedPalette){applyPalette(savedPalette);savedPalette=null}else $('resetSettings').click();syncView()};
- let mode='';document.addEventListener('mode-changed54',e=>{mode=e.detail.id;$('quotesVisibility').value='shown';$('quotesVisibility').dispatchEvent(new Event('change'));A.resetSealPosition('head');if(mode==='letter')showReader();else reader.close();requestAnimationFrame(syncView)});
+ let mode='';document.addEventListener('mode-changed54',e=>{closeExcerpts();mode=e.detail.id;$('quotesVisibility').value='shown';$('quotesVisibility').dispatchEvent(new Event('change'));A.resetSealPosition('head');if(mode==='letter')showReader();else reader.close();requestAnimationFrame(syncView)});
  document.addEventListener('quote-changed',e=>{applyPalette(palette());updateReader(e.detail)});
  for(const event of ['change','input'])document.addEventListener(event,e=>{if(/ink|color/i.test(e.target.id))syncInk()},true);
  // Core emits this after state changes, so mode labels/watermark/ink cannot drift.
  document.addEventListener('ink-view-changed90',()=>{syncView();syncInk()});
  new MutationObserver(()=>{if(reader.open){syncInk();updateReader()}}).observe(reader,{attributes:true,attributeFilter:['open']});
  document.title='今日亲笔';root.classList.add('v88-ready','v89-ready','v90-ready');syncView();updateReader();
- window.Revision88={ready:true,palette,applyPalette};window.Revision89={ready:true};window.Revision90={ready:true,syncView,syncInk,normalize,autoTheme};window.Revision91={ready:true};
+ window.Revision88={ready:true,palette,applyPalette};window.Revision89={ready:true};window.Revision90={ready:true,syncView,syncInk,normalize,autoTheme,openExcerpts};window.Revision91={ready:true};
 })();
