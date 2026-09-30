@@ -49,3 +49,11 @@ body:not(.home-open) #dailyDialog.quoteBookmark73{background:color-mix(in srgb,v
 #dailyDialog.quoteBookmark73 .dialogBody{background:transparent!important}
 #dailyDialog.quoteBookmark73 [data-close]{background:transparent!important;padding:1px 4px!important;font-size:17px!important}
 @media(max-width:660px){#annotationHome #homeQuick47{width:100%!important}#annotationHome #homeQuick47 #homeBrand79{width:80px;flex:0 0 80px;font-size:10px!important;gap:3px}.homeBrandSeal79{width:19px;height:19px;font-size:14px}#annotationHome #homeQuick47 button{font-size:11px!important;padding:5px 2px!important}#annotationHome .annotationIntro{padding:4px 8px!important}#annotationHome .annotationIntro small{font-size:10px}#annotationHome .timelineEpoch76::after{left:62px}#annotationHome .timelineEpoch76::before{left:55px!important}#annotationHome .timelineEra76,#annotationHome .timelineBranch76{margin-left:72px!important}#annotationHome .timelineWorld78{width:53px;left:0;padding:2px 1px}#annotationHome .timelineWorld78::before{font-size:8px}#annotationHome .timelineWorld78 strong{font-size:10px}#annotationHome .timelineWorld78 :is(time,span,a){font-size:8px}#annotationHome .timelineBranch76 .timelineCard73{width:min(75vw,390px)!important;flex-basis:min(75vw,390px)!important;height:clamp(350px,60dvh,560px)!important}#annotationHome .timelineInfo73{padding:6px 8px!important;max-height:47%}#annotationHome .timelineLandmark79{width:29%}#annotationHome .timelineMarks79 button{font-size:10px;padding:3px 5px}}
+
+/* V89: legacy bookmark layer must never inject a red background or native giant select. */
+body:not(.home-open) #dailyDialog.quoteBookmark73{
+ background:var(--reader-bg89,var(--reader-bg88,#3d3d3d))!important;
+ color:var(--reader-fg89,var(--reader-fg88,#fff))!important;
+ cursor:default!important;touch-action:auto!important
+}
+#dailyDialog.quoteBookmark73 .bookmarkPicker79{display:none!important}
