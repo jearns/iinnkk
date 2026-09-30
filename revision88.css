@@ -4,10 +4,12 @@
 #annotationHome .homeTheme78.homeTheme88{
   position:static!important;
   display:inline-flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
   align-items:center!important;
-  gap:5px!important;
+  gap:3px!important;
   width:auto!important;
-  margin:0 8px 0 auto!important;
+  margin:0 2px 0 auto!important;
   padding:0!important;
   transform:none!important;
   border:0!important;
@@ -59,6 +61,6 @@
 #writingQuick73[hidden]{display:none!important}
 #topActions :is(#undo,#redo,#clear,#export,#fitView){display:grid!important}
 @media(max-width:560px){
- #annotationHome .homeTheme78.homeTheme88{gap:3px!important;margin-right:5px!important}
+ #annotationHome .homeTheme78.homeTheme88{gap:2px!important;margin-right:2px!important}
  #annotationHome .homeTheme78.homeTheme88 button{height:25px!important;font-size:9px!important;padding:3px 6px!important}
 }
