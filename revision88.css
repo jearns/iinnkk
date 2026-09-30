@@ -86,3 +86,126 @@
    width:31px!important;min-width:31px!important;height:32px!important;min-height:32px!important;padding:4px!important
  }
 }
+
+
+/* V88e responsive homepage theme/reminder cluster */
+#themeReminder88{
+  display:inline-flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:5px!important;
+  margin-left:auto!important;
+  white-space:nowrap!important;
+  min-width:0!important;
+}
+#themeReminder88 .homeTheme78.homeTheme88{
+  position:static!important;
+  display:inline-flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  align-items:center!important;
+  gap:3px!important;
+  margin:0!important;
+  padding:0!important;
+  flex:0 0 auto!important;
+}
+#themeReminder88 .homeTheme78.homeTheme88 button{
+  height:27px!important;
+  min-width:0!important;
+  padding:3px 8px 4px!important;
+  border-radius:3px!important;
+  font:600 10px/1 STKaiti,'Kaiti SC',serif!important;
+  letter-spacing:.05em!important;
+  white-space:nowrap!important;
+}
+/* 阳刻：白地朱文 */
+#themeReminder88 .homeTheme78.homeTheme88 .riverSeal88{
+  color:#a52d27!important;
+  -webkit-text-fill-color:#a52d27!important;
+  background:#fffdf8!important;
+  border:1px solid #a52d27!important;
+  box-shadow:inset 0 0 0 2px #fffdf8,inset 0 0 0 3px #a52d27!important;
+}
+/* 阴刻：朱地白文 */
+#themeReminder88 .homeTheme78.homeTheme88 .starSeal88{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+  background:#a52d27!important;
+  border:1px solid #8f241f!important;
+  box-shadow:inset 0 0 0 2px #a52d27,inset 0 0 0 3px #fff!important;
+}
+#themeReminder88>button{
+  flex:0 0 auto!important;
+}
+
+/* Account seal: always vermilion background + white seal-script glyph. */
+#account47,#account47.accountWhite88e,#account47 *{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+  fill:currentColor!important;
+}
+
+/* Writer common actions: text first, hamburger icon last. */
+#topActions .writerText88e{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex:0 0 auto!important;
+  width:auto!important;
+  min-width:38px!important;
+  height:32px!important;
+  min-height:32px!important;
+  padding:0 7px!important;
+  margin:0!important;
+  border:0!important;
+  background:transparent!important;
+  font:500 12px/1.1 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif!important;
+  letter-spacing:.02em!important;
+  white-space:nowrap!important;
+}
+#topActions #menuToggle{
+  display:grid!important;
+  place-items:center!important;
+  flex:0 0 34px!important;
+  width:34px!important;
+  min-width:34px!important;
+  height:32px!important;
+  min-height:32px!important;
+  padding:5px!important;
+  margin-left:2px!important;
+}
+#topActions #textGuide88[hidden]{display:none!important}
+
+@media(max-width:560px){
+  #themeReminder88{
+    gap:4px!important;
+    margin-left:auto!important;
+    max-width:calc(100vw - 210px)!important;
+  }
+  #themeReminder88 .homeTheme78.homeTheme88{
+    gap:2px!important;
+    transform:none!important;
+  }
+  #themeReminder88 .homeTheme78.homeTheme88 button{
+    height:24px!important;
+    padding:2px 5px 3px!important;
+    font-size:9px!important;
+    letter-spacing:0!important;
+  }
+  #topActions .writerText88e{
+    min-width:34px!important;
+    height:30px!important;
+    min-height:30px!important;
+    padding:0 5px!important;
+    font-size:11px!important;
+  }
+  #topActions #menuToggle{
+    width:31px!important;
+    min-width:31px!important;
+    height:30px!important;
+    min-height:30px!important;
+    padding:4px!important;
+  }
+}
