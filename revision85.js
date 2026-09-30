@@ -77,10 +77,21 @@
  const keys=new Set(base.map(x=>(x.id||'')+'|'+x.cat+'|'+x.q));
  const add=[];
  const push=(row)=>{const k=(row.id||'')+'|'+row.cat+'|'+row.q;if(!keys.has(k)){keys.add(k);add.push(row)}};
- // 东坡先生: reuse existing public-domain Su Shi poetry / prose / calligraphy transcriptions.
- for(const q of base)if(q.author==='苏轼')push({...q,id:'dongpo-'+(q.id||Math.random().toString(36).slice(2)),cat:'dongpo',country:'中国'});
- for(const q of window.Poetry100||[])if(q.author==='苏轼')push({...q,id:'dongpo-poetry-'+q.id,cat:'dongpo',country:'中国'});
- for(const p of window.PracticeTexts||[])if(p.author==='苏轼')push({id:'dongpo-practice-'+p.id,cat:'dongpo',q:p.text,s:'中国·苏轼《'+p.name.split('·').at(-1).trim()+'》',source:'苏轼《'+p.name.split('·').at(-1).trim()+'》',author:'苏轼',title:p.name.split('·').at(-1).trim(),country:'中国',supplied:true});
+ // 东坡先生：只收诗词、文章、书法释文；明确排除“书法理论”，并按正文/作品名去重。
+ const dongpoSeen=new Set();
+ const normDongpo=row=>{
+   const title=String(row.title||row.source||row.s||'').replace(/[《》【】·s]/g,'').replace(/中国|宋|苏轼/g,'');
+   const body=String(row.q||'').replace(/[s，。！？；：、“”‘’（）()《》【】—…]/g,'');
+   return (body.slice(0,160)||title)+'|'+title.slice(0,60);
+ };
+ const pushDongpo=row=>{
+   if(!row||row.cat==='theory'||/书法理论|论书|书论/.test(String(row.category||'')+' '+String(row.type||'')))return;
+   const k=normDongpo(row);if(!k||dongpoSeen.has(k))return;dongpoSeen.add(k);
+   push({...row,cat:'dongpo',country:'中国'});
+ };
+ for(const q of base)if(q.author==='苏轼'&&q.cat!=='theory')pushDongpo({...q,id:'dongpo-'+(q.id||Math.random().toString(36).slice(2))});
+ for(const q of window.Poetry100||[])if(q.author==='苏轼')pushDongpo({...q,id:'dongpo-poetry-'+(q.id||Math.random().toString(36).slice(2))});
+ for(const p of window.PracticeTexts||[])if(p.author==='苏轼'&&!/理论|论书|书论/.test(String(p.name||'')+' '+String(p.note||'')))pushDongpo({id:'dongpo-practice-'+p.id,q:p.text,s:'中国·苏轼《'+p.name.split('·').at(-1).trim()+'》',source:'苏轼《'+p.name.split('·').at(-1).trim()+'》',author:'苏轼',title:p.name.split('·').at(-1).trim(),country:'中国',supplied:true});
  // Nobel category: only existing verified/user-supplied excerpts, no fabricated text.
  const nobelAuthors=new Set(['苏利·普吕多姆','蒙森','比昂松','米斯特拉尔','显克维奇','卡尔杜齐','吉卜林','欧肯','拉格洛夫','海泽','梅特林克','豪普特曼','泰戈尔','罗曼·罗兰','叶芝','萧伯纳','托马斯·曼','辛克莱·刘易斯','高尔斯华绥','皮兰德娄','奥尼尔','黑塞','纪德','艾略特','福克纳','罗素','拉格奎斯特','海明威','加缪','帕斯捷尔纳克','圣琼·佩斯','斯坦贝克','萨特','肖洛霍夫','川端康成','贝克特','索尔仁尼琴','聂鲁达','伯尔','辛格','米沃什','马尔克斯','戈尔丁','布罗茨基','帕斯','沃尔科特','大江健三郎','希尼','若泽·萨拉马戈','君特·格拉斯','奈保尔','库切','帕慕克','勒克莱齐奥','赫塔·米勒','特朗斯特罗姆','莫言','门罗','莫迪亚诺','阿列克谢耶维奇','石黑一雄','托卡尔丘克','彼得·汉德克','古尔纳']);
  for(const q of base)if(q.cat==='literature'&&nobelAuthors.has(q.author))push({...q,id:'nobel-'+(q.id||Math.random().toString(36).slice(2)),cat:'nobel'});
