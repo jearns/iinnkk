@@ -295,3 +295,105 @@
  document.documentElement.classList.add('v88-ready');
  window.Revision88={ready:true,palette:infinitePalette,applyPalette:applyInfinite};
 })();
+
+/* V88j — single day/night seal, source metadata cleanup, preview action bar and sticky brand polish. */
+(function init88j(){
+ if(!window.Revision88?.ready||!window.AnnotationApp?.ready||!window.DailyQuotes38){setTimeout(init88j,60);return}
+ const $=id=>document.getElementById(id),A=AnnotationApp,D=DailyQuotes38,home=$('annotationHome');
+
+ // One square replaces the old two-button light/dark pair. Existing buttons stay as hidden state engines.
+ const theme=home?.querySelector('.homeTheme78.homeTheme88');
+ if(theme&&!$('themeSwitch88j')){
+   const river=[...theme.querySelectorAll('button')].find(b=>/浅色|河流/.test(b.textContent||''));
+   const star=[...theme.querySelectorAll('button')].find(b=>/深色|星空/.test(b.textContent||''));
+   for(const b of [river,star])if(b)b.classList.add('themeSource88j');
+   const one=document.createElement('button');
+   one.id='themeSwitch88j';one.type='button';
+   one.innerHTML='<span aria-hidden="true">浅</span>';
+   const sync=()=>{
+     const dark=star?.getAttribute('aria-pressed')==='true';
+     one.dataset.mode=dark?'dark':'light';
+     one.querySelector('span').textContent=dark?'深':'浅';
+     one.title=dark?'当前深色 · 阴刻；点击切换浅色':'当前浅色 · 阳刻；点击切换深色';
+     one.setAttribute('aria-label',one.title);
+   };
+   one.onclick=()=>{const dark=one.dataset.mode==='dark';(dark?river:star)?.click();sync()};
+   theme.prepend(one);
+   new MutationObserver(sync).observe(theme,{attributes:true,subtree:true,attributeFilter:['aria-pressed']});
+   sync();
+ }
+
+ // Remove the old house glyph. The nav already has the real seal canvas + title; animate only after hero disappears.
+ $('homeTop86')?.remove();
+ const navBrand=$('homeBrand79');
+ if(navBrand){navBrand.classList.add('navSeal88j');navBrand.title='今日亲笔 · 回到顶部';navBrand.onclick=()=>home?.scrollTo({top:0,left:0,behavior:'smooth'})}
+
+ // Correct country metadata before every category/source picker renders.
+ const countries={
+  '鲁迅':'中国','老舍':'中国','朱自清':'中国','钱钟书':'中国','张爱玲':'中国','史铁生':'中国','路遥':'中国','余华':'中国','陈忠实':'中国','刘震云':'中国','金庸':'中国','莫言':'中国','刘慈欣':'中国','苏轼':'中国',
+  '吉卜林':'英国','罗素':'英国','石黑一雄':'英国','奈保尔':'英国','高尔斯华绥':'英国','艾略特':'英国','戈尔丁':'英国','品特':'英国',
+  '莎士比亚':'英国','简·奥斯汀':'英国','夏洛蒂·勃朗特':'英国','艾米莉·勃朗特':'英国','狄更斯':'英国','伍尔夫':'英国','奥威尔':'英国','赫胥黎':'英国',
+  '叶芝':'爱尔兰','萧伯纳':'爱尔兰','贝克特':'爱尔兰','希尼':'爱尔兰',
+  '歌德':'德国','黑塞':'德国','托马斯·曼':'德国','君特·格拉斯':'德国','海泽':'德国','豪普特曼':'德国',
+  '托尔斯泰':'俄罗斯','陀思妥耶夫斯基':'俄罗斯','普希金':'俄罗斯','高尔基':'俄罗斯','帕斯捷尔纳克':'俄罗斯','肖洛霍夫':'俄罗斯','索尔仁尼琴':'俄罗斯','布罗茨基':'俄罗斯',
+  '罗曼·罗兰':'法国','加缪':'法国','萨特':'法国','纪德':'法国','莫迪亚诺':'法国','勒克莱齐奥':'法国','安妮·埃尔诺':'法国','圣琼·佩斯':'法国','普吕多姆':'法国','苏利·普吕多姆':'法国',
+  '泰戈尔':'印度','川端康成':'日本','大江健三郎':'日本',
+  '海明威':'美国','福克纳':'美国','斯坦贝克':'美国','辛克莱·刘易斯':'美国','奥尼尔':'美国','赛珍珠':'美国','鲍勃·迪伦':'美国','托妮·莫里森':'美国','塞林格':'美国','菲茨杰拉德':'美国','梭罗':'美国','阿西莫夫':'美国','赫伯特':'美国','勒古恩':'美国',
+  '马尔克斯':'哥伦比亚','加西亚·马尔克斯':'哥伦比亚',
+  '聂鲁达':'智利','米斯特拉尔':'智利',
+  '辛波斯卡':'波兰','显克维奇':'波兰','米沃什':'波兰','托卡尔丘克':'波兰',
+  '帕慕克':'土耳其','若泽·萨拉马戈':'葡萄牙','库切':'南非','纳丁·戈迪默':'南非',
+  '博尔赫斯':'阿根廷','帕斯':'墨西哥','沃尔科特':'圣卢西亚','门罗':'加拿大','阿列克谢耶维奇':'白俄罗斯','赫塔·米勒':'德国','特朗斯特罗姆':'瑞典','拉格洛夫':'瑞典','拉格奎斯特':'瑞典',
+  '皮兰德娄':'意大利','卡尔杜齐':'意大利','夸西莫多':'意大利','蒙塔莱':'意大利',
+  '梅特林克':'比利时','辛格':'美国','伯尔':'德国','古尔纳':'英国','彼得·汉德克':'奥地利','耶利内克':'奥地利','纪伯伦':'黎巴嫩','卡夫卡':'奥地利','昆德拉':'法国','尼采':'德国','帕斯卡':'法国','卢梭':'法国','培根':'英国','塞万提斯':'西班牙','雨果':'法国','大仲马':'法国','圣埃克苏佩里':'法国','狄兰·托马斯':'英国'
+ };
+ const rows=D.all();
+ let changed=false;
+ const fixed=rows.map(q=>{
+   const country=countries[q.author];
+   if(country&&q.country!==country){changed=true;return {...q,country}}
+   return q
+ });
+ if(changed)D.setAll(fixed);
+ const label=q=>[q.country||q.era||q.dynasty||'',q.author||'',q.title||String(q.source||q.s||'').match(/《([^》]+)》/)?.[1]||''].filter(Boolean).join('·');
+ document.addEventListener('quote-changed',e=>{
+   const q=e.detail||window.currentQuote||{},txt=label(q);
+   const src=$('quoteSource'),head=document.querySelector('.bookmarkSource79');
+   if(src&&txt)src.textContent=txt;if(head&&txt)head.textContent=txt;
+ },true);
+ D.refresh?.();
+
+ // Preview reset restores the paper/ink/seal state before the first random press, without touching handwriting.
+ const actions=document.querySelector('#previewEffects55 .previewActions56'),random=$('previewRandom79');
+ if(actions&&random&&!$('previewReset88j')){
+   let before=null;
+   random.addEventListener('pointerdown',()=>{
+     if(before)return;
+     const s=A.getState?.()||{},v=s.values||{};
+     before={paper:v.papercolor||$('papercolor')?.value||'#f5f1e6',ink:s.brush?.color||$('freeInk')?.value||'#050505',seal:v.headColor||v.tailColor||'#b62118'};
+   },true);
+   const reset=document.createElement('button');reset.id='previewReset88j';reset.type='button';reset.textContent='重置';
+   reset.onclick=e=>{e.preventDefault();e.stopPropagation();if(before){A.applyLiteraryPalette61?.(before);A.refresh?.();before=null}};
+   random.after(reset);
+   actions.classList.add('previewActions88j');
+ }
+
+ // Make the header the dedicated drag handle; content itself remains smooth vertical scroll.
+ const dialog=$('dailyDialog'),headBar=dialog?.querySelector('.dialogHead');
+ if(dialog&&headBar&&!headBar.dataset.drag88j){
+   headBar.dataset.drag88j='1';let drag=null;
+   headBar.addEventListener('pointerdown',e=>{
+     if(e.button!==0||e.target.closest('button,select,a,input'))return;
+     const r=dialog.getBoundingClientRect();drag={id:e.pointerId,dx:e.clientX-r.left,dy:e.clientY-r.top};
+     headBar.setPointerCapture(e.pointerId);e.preventDefault();e.stopPropagation();
+   },true);
+   headBar.addEventListener('pointermove',e=>{
+     if(!drag||e.pointerId!==drag.id)return;
+     dialog.style.setProperty('left',Math.max(4,Math.min(innerWidth-dialog.offsetWidth-4,e.clientX-drag.dx))+'px','important');
+     dialog.style.setProperty('top',Math.max(4,Math.min(innerHeight-dialog.offsetHeight-4,e.clientY-drag.dy))+'px','important');
+   },true);
+   const end=e=>{if(drag?.id===e.pointerId)drag=null};
+   headBar.addEventListener('pointerup',end,true);headBar.addEventListener('pointercancel',end,true);
+ }
+ document.documentElement.classList.add('v88j-ready');
+})();

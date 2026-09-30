@@ -619,3 +619,88 @@
   #topActions .writerIconText88::after{font-size:10px!important}
   #topActions #menuToggle{width:31px!important;min-width:31px!important;height:40px!important}
 }
+
+
+/* V88j */
+#annotationHome .homeTheme78.homeTheme88 .themeSource88j{display:none!important}
+#annotationHome #themeSwitch88j{
+  display:grid!important;place-items:center!important;
+  width:31px!important;height:31px!important;min-width:31px!important;max-width:31px!important;
+  padding:0!important;border-radius:4px!important;
+  font:600 11px/1 STKaiti,'Kaiti SC',serif!important;letter-spacing:0!important;
+  transition:transform .16s ease,filter .16s ease,box-shadow .16s ease!important
+}
+#annotationHome #themeSwitch88j[data-mode="light"]{
+  color:#a52d27!important;-webkit-text-fill-color:#a52d27!important;background:#fffdf8!important;
+  border:1px solid #a52d27!important;box-shadow:inset 0 0 0 2px #fffdf8,inset 0 0 0 3px #a52d27!important
+}
+#annotationHome #themeSwitch88j[data-mode="dark"]{
+  color:#fff!important;-webkit-text-fill-color:#fff!important;background:#a52d27!important;
+  border:1px solid #8f241f!important;box-shadow:inset 0 0 0 2px #a52d27,inset 0 0 0 3px #fff!important
+}
+#annotationHome #themeSwitch88j:active{transform:scale(.94)!important}
+
+/* Full-reading: translucent whole card; source/title becomes a dark translucent ribbon. */
+#dailyDialog,
+#dailyDialog .dialogBody,
+#dailyDialog #quoteExpanded,
+#dailyDialog .bookmarkNav81{
+  background:color-mix(in srgb,var(--reader-bg88,var(--bookmark-bg88,#563b34)) 78%,transparent)!important;
+  backdrop-filter:blur(15px) saturate(1.08)!important;
+  -webkit-backdrop-filter:blur(15px) saturate(1.08)!important
+}
+#dailyDialog .dialogHead{
+  background:rgba(0,0,0,.28)!important;
+  min-height:28px!important;padding:3px 7px!important;
+  cursor:grab!important;touch-action:none!important
+}
+#dailyDialog .dialogHead:active{cursor:grabbing!important}
+#dailyDialog .dialogHead,
+#dailyDialog .dialogHead *{color:#fff!important;-webkit-text-fill-color:#fff!important}
+#dailyDialog .bookmarkSource79{
+  background:transparent!important;color:#fff!important;-webkit-text-fill-color:#fff!important;
+  border:0!important;box-shadow:none!important;padding:2px 5px!important;font-size:11px!important
+}
+#dailyDialog .dialogBody{overflow:hidden!important}
+#dailyDialog #quoteText,#dailyDialog #quoteExpanded{
+  max-height:calc(1.72em * 7)!important;overflow-y:auto!important;
+  overscroll-behavior:contain!important;-webkit-overflow-scrolling:touch!important;touch-action:pan-y!important;
+  scrollbar-width:thin
+}
+
+/* One integrated four-button preview control. */
+#previewEffects55 .previewActions56.previewActions88j{
+  display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:0!important;
+  width:min(92vw,520px)!important;margin:9px auto 0!important;
+  overflow:hidden!important;border:1px solid color-mix(in srgb,currentColor 24%,transparent)!important;
+  border-radius:10px!important;background:color-mix(in srgb,#f7f2e7 82%,transparent)!important;
+  box-shadow:0 8px 24px #14211d18!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important
+}
+#previewEffects55 .previewActions56.previewActions88j>button{
+  margin:0!important;border:0!important;border-radius:0!important;min-width:0!important;height:38px!important;
+  padding:0 8px!important;background:transparent!important;color:inherit!important;font-size:12px!important;
+  box-shadow:none!important;border-right:1px solid color-mix(in srgb,currentColor 16%,transparent)!important
+}
+#previewEffects55 .previewActions56.previewActions88j>button:last-child{border-right:0!important}
+#previewEffects55 .previewActions56.previewActions88j>button:is(#generateArtwork59,.primary){
+  background:color-mix(in srgb,currentColor 10%,transparent)!important;font-weight:650!important
+}
+
+/* Sticky nav uses the real seal, no house. */
+#homeTop86{display:none!important}
+#homeBrand79.navSeal88j{
+  display:flex!important;align-items:center!important;gap:7px!important;max-width:0!important;opacity:0!important;
+  overflow:hidden!important;transform:translateX(-12px) scale(.82)!important;filter:blur(4px)!important;
+  transition:max-width .34s ease,opacity .28s ease,transform .34s cubic-bezier(.2,.75,.2,1),filter .28s ease!important
+}
+#homeBrand79.navSeal88j.visible85{
+  max-width:150px!important;opacity:1!important;transform:translateX(0) scale(1)!important;filter:blur(0)!important;
+  padding-inline:5px 10px!important
+}
+#homeBrand79.navSeal88j .homeNavLogo85{width:30px!important;height:30px!important;flex:0 0 30px!important}
+#homeBrand79.navSeal88j span{font-size:14px!important;white-space:nowrap!important}
+
+/* Refined writer icons: quieter and consistent. */
+#topActions .writerIconText88::before{font-weight:300!important;opacity:.82!important}
+#topActions .writerIconText88::after{font-weight:500!important;letter-spacing:.03em!important}
+#topActions #menuToggle svg{stroke-width:1.35!important}
