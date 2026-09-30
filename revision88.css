@@ -64,3 +64,25 @@
  #annotationHome .homeTheme78.homeTheme88{gap:2px!important;margin-right:2px!important}
  #annotationHome .homeTheme78.homeTheme88 button{height:25px!important;font-size:9px!important;padding:3px 6px!important}
 }
+
+
+/* V88d writer core actions */
+#topActions :is(#textGuide88,#fitView,#clear,#undo,#writerBack88,#menuToggle){
+  display:grid!important;
+  place-items:center!important;
+  flex:0 0 34px!important;
+  width:34px!important;
+  min-width:34px!important;
+  height:34px!important;
+  min-height:34px!important;
+  padding:5px!important;
+  margin:0!important;
+  border:0!important;
+  background:transparent!important;
+}
+#topActions #menuToggle{margin-left:2px!important}
+@media(max-width:560px){
+ #topActions :is(#textGuide88,#fitView,#clear,#undo,#writerBack88,#menuToggle){
+   width:31px!important;min-width:31px!important;height:32px!important;min-height:32px!important;padding:4px!important
+ }
+}
