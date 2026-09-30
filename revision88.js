@@ -248,6 +248,19 @@
    if(menu){menu.classList.remove('writerText88e','writerIconText88');menu.title='菜单';menu.setAttribute('aria-label','菜单')}
  }
 
+ // Reader background always follows the CURRENT ink, including manual ink changes.
+ function syncReaderInk88(){
+   const ink=A.getState?.()?.brush?.color||$('freeInk')?.value||'#563b34';
+   if(!/^#[0-9a-f]{6}$/i.test(ink))return;
+   document.documentElement.style.setProperty('--reader-bg88',ink);
+   document.documentElement.style.setProperty('--reader-fg88',contrast(ink));
+ }
+ syncReaderInk88();
+ document.addEventListener('quote-changed',()=>setTimeout(syncReaderInk88,0));
+ document.addEventListener('input',e=>{if(['freeInk','quickInk','color'].includes(e.target?.id))setTimeout(syncReaderInk88,0)},true);
+ document.addEventListener('change',e=>{if(['freeInk','quickInk','color','colorPair'].includes(e.target?.id))setTimeout(syncReaderInk88,0)},true);
+ if(daily)new MutationObserver(()=>{if(daily.open)syncReaderInk88()}).observe(daily,{attributes:true,attributeFilter:['open']});
+
  // 9. Full-paper preview uses one fixed two-line watermark; all random opening copy stays hidden.
  const board=$('board'),fit88=$('fitView');
  let wm=$('previewWatermark88');
