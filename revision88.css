@@ -39,7 +39,7 @@ body:not(.home-open) #topActions{display:flex!important;justify-content:space-be
 #topActions .tool90 span,#topActions #topQuotes span{display:block!important;font:500 10px/12px system-ui,sans-serif!important}
 #topActions .tool90:disabled{opacity:.28!important}
 #writerExtras90{display:flex;gap:3px;align-items:center;flex-wrap:wrap;justify-content:flex-start;padding:6px;border-top:1px solid #7773;max-height:140px;overflow:auto}
-#writerExtras90[hidden],#writingQuick73,#writerFixed85,#annotationHomeButton,#topRemove,#hint,#previewHint85,.brandWatermark44{display:none!important}
+#writerExtras90[hidden],#writingQuick73,#writerFixed85,#topRemove,#hint,#previewHint85,.brandWatermark44{display:none!important}
 #writerExtras90 button{display:grid;place-items:center;min-width:36px;height:42px;border:0;background:none;font-size:10px}
 #writerExtras90 svg{width:18px;height:18px}
 #bigPaper62{display:none!important}
@@ -51,7 +51,7 @@ body:not(.home-open) #dailyDialog.quoteBookmark73 .readerTitle90{display:block!i
 .readerTitle90::after{content:' ▾';opacity:.7}
 body:not(.home-open) #dailyDialog.quoteBookmark73 [data-close]{margin:0!important;border:0!important;padding:0!important;width:22px!important;min-width:22px!important;height:22px!important;min-height:22px!important;font-size:18px!important}
 body:not(.home-open) #dailyDialog.quoteBookmark73 .dialogBody{padding:0 12px 12px!important;overflow:hidden!important;max-height:none!important}
-body:not(.home-open) #dailyDialog.quoteBookmark73 .dialogBody>:not(#quoteExpanded),body:not(.home-open) #dailyDialog.quoteBookmark73 .bookmarkNav81{display:none!important}
+body:not(.home-open) #dailyDialog.quoteBookmark73 .dialogBody>:not(#quoteExpanded){display:none!important}
 body:not(.home-open) #dailyDialog.quoteBookmark73 #quoteExpanded{display:block!important;margin:0!important;padding:0!important;border:0!important;max-height:calc(1.8em * 7)!important;overflow:auto!important;overscroll-behavior:contain!important;touch-action:pan-y!important;white-space:pre-wrap!important;font:15px/1.8 'LXGW WenKai',STKaiti,serif!important;-webkit-overflow-scrolling:touch!important}
 body:not(.home-open) #dailyDialog.quoteBookmark73 .readerJump90{position:absolute;z-index:20;inset:34px 0 auto;background:color-mix(in srgb,var(--reader-ink90) 92%,transparent)!important;border:1px solid #8884;border-radius:8px;backdrop-filter:blur(12px);padding:5px}
 body:not(.home-open) #dailyDialog.quoteBookmark73 .readerJump90[hidden]{display:none!important}
@@ -87,3 +87,36 @@ body:not(.home-open) #dailyDialog.quoteBookmark73 .readerList90 button[aria-curr
 
 #annotationHome #homeActions90>.homeTheme78{order:0!important}#annotationHome #homeMoments{order:1!important}#annotationHome #account47{order:3!important}
 #topActions>#extendPaper63{display:none!important}
+
+/* V91 extends the existing visual system. */
+body:not(.home-open) #dailyBar{display:none!important}
+#writerLeft90>#annotationHomeButton{display:grid!important}
+#writerLeft90>#annotationHomeButton img{width:20px;height:20px;object-fit:contain}
+#writerExtras90{display:none!important}
+body:not(.home-open) #dailyDialog.quoteBookmark73,body.home-open #dailyDialog.quoteBookmark73{background:var(--reader-bg91,rgba(48,48,46,.66))!important;background-image:none!important}
+body:not(.home-open) #dailyDialog.quoteBookmark73 #quoteExpanded{touch-action:none!important}
+body:not(.home-open) #dailyDialog.quoteBookmark73 .bookmarkNav81{display:flex!important;justify-content:flex-end!important;align-items:center!important;gap:4px!important;margin:0!important;padding:0 9px 7px!important;border:0!important}
+body:not(.home-open) #dailyDialog.quoteBookmark73 .bookmarkNav81 button{display:grid!important;place-items:center!important;width:28px!important;min-width:28px!important;height:26px!important;min-height:26px!important;margin:0!important;padding:3px!important;border:0!important;border-radius:4px!important;font:20px/1 system-ui!important}
+body:not(.home-open) #dailyDialog.quoteBookmark73 .bookmarkNav81 svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+body:not(.home-open) #dailyDialog.quoteBookmark73 .readerCategory91{display:block!important;width:100%!important;max-width:100%!important;height:30px!important;margin:0 0 5px!important;color:inherit!important;border:1px solid currentColor!important;border-radius:4px}
+.inkSwatch91{width:34px!important;min-width:34px!important;height:34px!important;min-height:34px!important;border-radius:50%!important;background:var(--swatch91)!important;border:2px solid #8888!important;box-shadow:inset 0 0 0 2px #ffffff80!important;padding:0!important}
+.timelineNow73 .timelineHero73 img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
+@media(max-width:430px){
+ body:not(.home-open) #topActions{display:grid!important;grid-template-columns:1fr!important;gap:0!important;height:auto!important}
+ #writerLeft90{justify-self:start;justify-content:flex-start}
+ #writerRight90{justify-self:end;justify-content:flex-end;margin-left:0}
+ body:not(.home-open) .topStrip{min-height:82px!important}
+ #writerLeft90 .tool90,#writerRight90 .tool90,#topActions #topQuotes{width:32px!important;min-width:32px!important;height:38px!important;min-height:38px!important}
+}
+
+#annotationHome .annotationIntro{position:relative!important;overflow:hidden!important;isolation:isolate!important;border-radius:14px!important;min-height:clamp(190px,24vw,300px)!important;box-sizing:border-box!important;padding:clamp(20px,3vw,40px)!important;display:flex!important;flex-direction:column!important;justify-content:center!important;background:#dae5ea!important;color:#162e3b!important}
+#annotationHome .annotationIntro .heroConstellation91{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;z-index:-1!important;pointer-events:none!important}
+#annotationHome .annotationIntro strong,#annotationHome .annotationIntro small{color:#162e3b!important;text-shadow:0 1px 9px #ffffffe0!important;max-width:49%!important}
+#annotationHome .annotationIntro strong{font-size:clamp(21px,3.3vw,38px)!important}
+@media(max-width:600px){
+ #annotationHome .annotationIntro{min-height:210px!important;padding:18px!important;justify-content:flex-end!important}
+ #annotationHome .annotationIntro .heroConstellation91{object-position:68% center!important}
+ #annotationHome .annotationIntro::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#f3f6f5f2,transparent 82%)}
+ #annotationHome .annotationIntro strong,#annotationHome .annotationIntro small{max-width:100%!important}
+ #annotationHome .annotationIntro small{font-size:11px!important}
+}
