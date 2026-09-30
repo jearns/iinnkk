@@ -272,3 +272,42 @@
     padding-right:10px!important;
   }
 }
+
+
+/* V88g: restore main slogan to original homepage head visual area */
+#annotationHome .annotationIntro.introHead88{
+  display:grid!important;
+  gap:8px!important;
+  width:min(100%,880px)!important;
+  margin:22px auto 14px!important;
+  padding:0 16px!important;
+  text-align:center!important;
+}
+#annotationHome .annotationIntro.introHead88 strong{
+  display:block!important;
+  font:500 clamp(28px,4.4vw,46px)/1.16 STKaiti,'Kaiti SC',serif!important;
+  letter-spacing:.10em!important;
+  white-space:nowrap!important;
+}
+#annotationHome .annotationIntro.introHead88 small{
+  display:block!important;
+  font:400 clamp(11px,1.25vw,14px)/1.55 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif!important;
+  letter-spacing:.06em!important;
+  opacity:.82!important;
+}
+@media(max-width:560px){
+  #annotationHome .annotationIntro.introHead88{
+    margin:16px auto 10px!important;
+    padding:0 12px!important;
+    gap:6px!important;
+  }
+  #annotationHome .annotationIntro.introHead88 strong{
+    font-size:clamp(26px,8.5vw,36px)!important;
+    letter-spacing:.07em!important;
+    white-space:normal!important;
+  }
+  #annotationHome .annotationIntro.introHead88 small{
+    font-size:11px!important;
+    line-height:1.5!important;
+  }
+}
