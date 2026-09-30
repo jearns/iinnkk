@@ -15,10 +15,10 @@ test('duplicate and reserved directory names cannot corrupt selection or storage
  assert.throws(()=>M.create(M.create({},'诗'),'诗'));
  for(const name of ['@none','+','__proto__',' ','x'.repeat(37)])assert.throws(()=>M.create({},name));
 });
-test('homepage attribution preserves writing date and quoted author with no time of day',()=>{
- const title=T.format('墨客','2026.09.29 17:48 写苏轼《定风波》','2026-10-01', '', '');
- assert.equal(title,'墨客 · 2026.09.29 写【苏轼·定风波】');
- assert.equal(T.format('新名字',title,'2026-10-02'),'新名字 · 2026.09.29 写【苏轼·定风波】');
+test('homepage attribution keeps the author and work, removes date/time and uses the detected city',()=>{
+ const title=T.format('墨客','2026.09.29 17:48 写苏轼《定风波》','2026-10-01','','','杭州');
+ assert.equal(title,'墨客 写《苏轼·定风波》于 杭州');
+ assert.equal(T.format('新名字',title,'2026-10-02','','','杭州'),'新名字 写《苏轼·定风波》于 杭州');
  assert.equal(T.owner(title),'墨客');
- assert.equal(T.format('墨客','亲笔真迹 · 2026.09.29 17:48','2026-09-29'),'墨客 · 2026.09.29 写【随手书写】');
+ assert.equal(T.format('墨客','亲笔真迹 · 2026.09.29 17:48','2026-09-29','','','杭州'),'墨客 写《随手书写》于 杭州');
 });

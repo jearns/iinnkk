@@ -21,7 +21,7 @@
    navBrand.replaceChildren();const c=document.createElement('canvas');c.className='homeNavLogo85';c.width=c.height=256;const n=document.createElement('span');n.textContent='今日亲笔';navBrand.append(c,n);
    const copy=()=>{const src=$('appLogo');if(!src?.width)return;const t=c.getContext('2d');t.clearRect(0,0,256,256);try{t.drawImage(src,0,0,256,256)}catch{}};copy();setTimeout(copy,450);
    navBrand.classList.remove('visible85');
-   if(heroTitle&&'IntersectionObserver'in window)new IntersectionObserver(es=>navBrand.classList.toggle('visible85',!es[0].isIntersecting),{root:home,threshold:.08}).observe(heroTitle);
+
  }
 
  // Writer top row: 返回 / 撤销 / 删除 | 预览 / 下载 / 清屏 | 三横菜单.
@@ -110,7 +110,7 @@
  function palette(seed){const n=hash(seed),h=n%360,v=(n>>>7)%12,j=((n>>>17)%19)-9;if(v===0)return{paper:hsl(h,18,96),ink:hsl(h+185+j,48,18),seal:hsl(h+18,70,38)};if(v===1)return{paper:hsl(h,36,88),ink:hsl(h+145+j,58,19),seal:hsl(h+285,64,42)};if(v===2)return{paper:hsl(h,22,18),ink:hsl(h+28+j,28,92),seal:hsl(h+165,70,58)};if(v===3)return{paper:hsl(h,48,84),ink:hsl(h+205+j,60,17),seal:hsl(h+330,72,38)};if(v===4)return{paper:hsl(h,14,97),ink:hsl(h+24+j,62,21),seal:hsl(h+190,60,37)};if(v===5)return{paper:hsl(h,28,24),ink:hsl(h+178+j,24,92),seal:hsl(h+52,76,57)};if(v===6)return{paper:hsl(h,50,86),ink:hsl(h+120+j,62,18),seal:hsl(h+245,66,40)};if(v===7)return{paper:hsl(h,12,92),ink:hsl(h+225+j,48,19),seal:hsl(h+8,74,39)};if(v===8)return{paper:hsl(h,38,21),ink:hsl(h+205+j,38,90),seal:hsl(h+95,68,59)};if(v===9)return{paper:hsl(h,34,88),ink:hsl(h+300+j,52,18),seal:hsl(h+155,66,37)};if(v===10)return{paper:hsl(h,20,79),ink:hsl(h+160+j,58,15),seal:hsl(h+275,68,34)};return{paper:hsl(h,10,96),ink:hsl(h+180+j,50,16),seal:hsl(h+28,74,36)}}
  function contrast(hex){const x=hex.replace('#',''),r=parseInt(x.slice(0,2),16),g=parseInt(x.slice(2,4),16),b=parseInt(x.slice(4,6),16);return (.2126*r+.7152*g+.0722*b)/255>.56?'#181817':'#f8f4ea'}
  function applyPalette(p){if(!p)return;A.applyLiteraryPalette61?.(p);for(const item of A.sealItems?.()||[])if(item?.extra)A.editSeal?.(item.key,{config:{color:p.seal}});document.documentElement.style.setProperty('--bookmark-bg85',p.ink);document.documentElement.style.setProperty('--bookmark-fg85',contrast(p.ink));document.documentElement.style.setProperty('--bookmark-seal85',p.seal)}
- document.addEventListener('quote-changed',e=>{const q=e.detail||{};applyPalette(palette((q.id||'')+'|'+(q.q||'')+'|'+(q.author||'')))});
+ document.addEventListener('quote-changed',e=>{const q=e.detail||{};if(!window.Revision90)applyPalette(palette((q.id||'')+'|'+(q.q||'')+'|'+(q.author||'')))});
  setTimeout(()=>D.refresh?.(),0);
  window.Revision85={ready:true,palette,applyPalette,focusUpperRight};
 })();

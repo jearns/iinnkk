@@ -19,7 +19,7 @@ const prior=Status42.sync;Status42.sync=()=>{prior();status54()};status54();
 
 // A pouch is more recognisable than the former generic quotation glyph.
 if($('topQuotes'))$('topQuotes').innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55"><path d="M7 4c2 2 8 2 10 0l-2 4c4 3 5 7 3 11H6C4 15 5 11 9 8L7 4Z"/><path d="M8 8h8M10 13h4M12 11v5"/></svg>';
-function quotesFor(n){const show=n?.id==='letter';$('quotesVisibility').value=show?'shown':'hidden';$('quotesVisibility').dispatchEvent(new Event('change'));document.body.classList.toggle('quotes-hidden',!show)}
+function quotesFor(n){const show=true;$('quotesVisibility').value=show?'shown':'hidden';$('quotesVisibility').dispatchEvent(new Event('change'));document.body.classList.toggle('quotes-hidden',!show)}
 document.addEventListener('mode-changed54',e=>quotesFor(e.detail));
 
 // Final-look studio: all choices modify the real composition, while the ink coordinates stay intact.
