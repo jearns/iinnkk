@@ -60,9 +60,13 @@
  // Override public palette API so V86 preview-random uses the infinite generator.
  if(window.Revision85){Revision85.palette=infinitePalette;Revision85.applyPalette=applyInfinite}
  document.addEventListener('quote-changed',e=>{const q=e.detail||{};applyInfinite(infinitePalette((q.id||'')+'|'+(q.q||'')+'|'+(q.author||'')+'|'+performance.now()))});
- // Opening the bookmark gets a fresh related colour when the current page has not just changed.
+ // Opening the bookmark never recolours the artwork; it only reuses one colour from the latest paper/ink/seal family.
+ let lastPalette=null;
+ const baseApply=applyInfinite;
+ applyInfinite=p=>{lastPalette=p;baseApply(p)};
+ if(window.Revision85){Revision85.applyPalette=applyInfinite}
  const daily=$('dailyDialog');
- if(daily)new MutationObserver(()=>{if(daily.open){const state=A.getState?.(),seed=(window.currentQuote?.id||'bookmark')+'|'+(state?.brush?.color||'')+'|'+Date.now();applyInfinite(infinitePalette(seed))}}).observe(daily,{attributes:true,attributeFilter:['open']});
+ if(daily)new MutationObserver(()=>{if(daily.open){const p=lastPalette;if(p){const chosen=p.bookmark?.color||p.ink;document.documentElement.style.setProperty('--bookmark-bg88',chosen);document.documentElement.style.setProperty('--bookmark-fg88',contrast(chosen))}else{const ink=A.getState?.()?.brush?.color||'#563b34';document.documentElement.style.setProperty('--bookmark-bg88',ink);document.documentElement.style.setProperty('--bookmark-fg88',contrast(ink))}}}).observe(daily,{attributes:true,attributeFilter:['open']});
 
  // 5. Writer top-right keeps: undo, redo(返回/恢复), clear, download, preview/write.
  // Remove only the home button and remove-all-pictures button from this top-right strip.
@@ -79,5 +83,6 @@
  // Remove text shortcut duplicates now that the same actions remain as icons.
  if(quick)quick.hidden=true;
 
+ document.documentElement.classList.add('v88-ready');
  window.Revision88={ready:true,palette:infinitePalette,applyPalette:applyInfinite};
 })();
