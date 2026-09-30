@@ -114,7 +114,15 @@
  }
  // Override public palette API so V86 preview-random uses the infinite generator.
  if(window.Revision85){Revision85.palette=infinitePalette;Revision85.applyPalette=applyInfinite}
- document.addEventListener('quote-changed',e=>{const q=e.detail||{};applyInfinite(infinitePalette((q.id||'')+'|'+(q.q||'')+'|'+(q.author||'')+'|'+performance.now()))});
+ function recolorQuote88(q,reason='quote'){
+   q=q||window.currentQuote||{};
+   const p=infinitePalette((q.cat||'all')+'|'+(q.id||'')+'|'+(q.q||'')+'|'+(q.author||'')+'|'+reason+'|'+Date.now());
+   applyInfinite(p);
+   syncReaderInk88?.();
+ }
+ document.addEventListener('quote-changed',e=>recolorQuote88(e.detail||{},'change'));
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-quote-category],#dailyQuote,.bookmarkNav81 button');if(b)setTimeout(()=>recolorQuote88(window.currentQuote,'nav'),0)},true);
+ setTimeout(()=>recolorQuote88(window.currentQuote,'init'),120);
  // Opening the bookmark never recolours the artwork; it only reuses one colour from the latest paper/ink/seal family.
  let lastPalette=null;
  const baseApply=applyInfinite;
@@ -211,43 +219,54 @@
  const account=$('account47');if(account)account.classList.add('accountWhite88e');
  new MutationObserver(()=>{$('account47')?.classList.add('accountWhite88e')}).observe(home,{childList:true,subtree:true});
 
- // 8. Writer top-right: 加纸加字 icon → 撤销 → 返回 → 清屏 → 预览/书写 → 下载 → hamburger.
+ // 8. Writer toolbar: left tools | 加纸加字  ...  撤销 / 返回(Redo) / 清屏 / 预览或书写 / 下载 / 菜单.
  const actionBar88=$('topActions');
  if(actionBar88){
    const guide=$('textGuide88');if(guide)guide.hidden=true;
-   const undo=$('undo'),redo=$('redo'),back=$('writerBack88'),clear=$('clear'),fit=$('fitView'),download=$('export'),menu=$('menuToggle');
-   if(redo){redo.hidden=true;redo.classList.add('hideRedo88f')}
+   const legacyBack=$('writerBack88');if(legacyBack)legacyBack.hidden=true;
+
+   const undo=$('undo'),redo=$('redo'),clear=$('clear'),fit=$('fitView'),download=$('export'),menu=$('menuToggle');
+   if(redo){redo.hidden=false;redo.classList.remove('hideRedo88f')}
+
+   // Move real “加纸加字” into the left functional zone.
    const sourceAdd=document.querySelector('#bigPaper62 button');
    let addPaper=$('topAddPaper88');
    if(sourceAdd){
      sourceAdd.hidden=true;
-     if(!addPaper){addPaper=document.createElement('button');addPaper.id='topAddPaper88';addPaper.type='button';addPaper.title='加纸加字';addPaper.setAttribute('aria-label','加纸加字');addPaper.onclick=()=>sourceAdd.click()}
+     if(!addPaper){
+       addPaper=document.createElement('button');addPaper.id='topAddPaper88';addPaper.type='button';
+       addPaper.title='加纸加字';addPaper.setAttribute('aria-label','加纸加字');
+       addPaper.onclick=()=>sourceAdd.click();
+     }
+     addPaper.className='writerAddPaper88';
+     addPaper.dataset.symbol='＋';
    }
-   const decorate=(el,label,symbol)=>{if(!el)return;el.classList.add('writerText88e','writerIconText88');el.dataset.label=label;el.dataset.symbol=symbol;el.title=label;el.setAttribute('aria-label',label)};
+
+   // Remove old SVG/text content from the 5 common buttons: only one icon layer + one text layer remains.
+   const decorate=(el,label,symbol)=>{
+     if(!el)return;
+     el.replaceChildren();
+     el.classList.remove('writerText88e');
+     el.classList.add('writerIconText88');
+     el.dataset.label=label;el.dataset.symbol=symbol;
+     el.title=label;el.setAttribute('aria-label',label);
+   };
    decorate(undo,'撤销','↶');
-   decorate(back,'返回','‹');
+   decorate(redo,'返回','↷'); // actual Redo: cancel the previous undo
    decorate(clear,'清屏','⌫');
    decorate(download,'下载','⇩');
-   if(back){
-     back.title='返回上一步';
-     back.setAttribute('aria-label','返回上一步');
-     back.onclick=()=>{
-       const open=[...document.querySelectorAll('dialog[open]')].at(-1);
-       if(open){open.close();return}
-       if(A.isOverview55?.()){fit?.click();return}
-       const inspector=$('sealInspector');if(inspector&&!inspector.hidden){inspector.hidden=true;return}
-       document.dispatchEvent(new CustomEvent('writer-back88',{detail:{source:'toolbar'}}));
-     };
-   }
    function syncFitLabel88(){if(!fit)return;decorate(fit,A.isOverview55?.()?'书写':'预览',A.isOverview55?.()?'✎':'▣')}
    syncFitLabel88();
    fit?.addEventListener('click',()=>requestAnimationFrame(()=>requestAnimationFrame(syncFitLabel88)));
    document.getElementById('board')?.addEventListener('pointerup',()=>setTimeout(syncFitLabel88,40),{passive:true});
-   if(addPaper){addPaper.classList.add('writerAddPaper88');addPaper.dataset.symbol='＋';actionBar88.append(addPaper)}
-   for(const el of [undo,back,clear,fit,download,menu])if(el)actionBar88.append(el);
+
+   // Split point: Undo is the first button of the right group.
+   let split=$('writerSplit88');if(!split){split=document.createElement('span');split.id='writerSplit88';split.setAttribute('aria-hidden','true')}
+   if(addPaper)actionBar88.append(addPaper);
+   actionBar88.append(split);
+   for(const el of [undo,redo,clear,fit,download,menu])if(el)actionBar88.append(el);
    if(menu){menu.classList.remove('writerText88e','writerIconText88');menu.title='菜单';menu.setAttribute('aria-label','菜单')}
  }
-
  // Reader background always follows the CURRENT ink, including manual ink changes.
  function syncReaderInk88(){
    const ink=A.getState?.()?.brush?.color||$('freeInk')?.value||'#563b34';
@@ -259,7 +278,7 @@
  document.addEventListener('quote-changed',()=>setTimeout(syncReaderInk88,0));
  document.addEventListener('input',e=>{if(['freeInk','quickInk','color'].includes(e.target?.id))setTimeout(syncReaderInk88,0)},true);
  document.addEventListener('change',e=>{if(['freeInk','quickInk','color','colorPair'].includes(e.target?.id))setTimeout(syncReaderInk88,0)},true);
- if(daily)new MutationObserver(()=>{if(daily.open)syncReaderInk88()}).observe(daily,{attributes:true,attributeFilter:['open']});
+ if(daily)new MutationObserver(()=>{if(daily.open){syncReaderInk88();recolorQuote88(window.currentQuote,'read')}}).observe(daily,{attributes:true,attributeFilter:['open']});
 
  // 9. Full-paper preview uses one fixed two-line watermark; all random opening copy stays hidden.
  const board=$('board'),fit88=$('fitView');
