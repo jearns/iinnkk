@@ -397,3 +397,111 @@
  }
  document.documentElement.classList.add('v88j-ready');
 })();
+
+/* V88k — unify writer modes, reader colour, sticky brand and deep/light slider. */
+(function init88k(){
+ if(!window.Revision88?.ready||!window.AnnotationApp?.ready){setTimeout(init88k,60);return}
+ const $=id=>document.getElementById(id),A=AnnotationApp,home=$('annotationHome');
+ if(!home)return;
+
+ // Exact homepage editorial line requested for the hero intro.
+ const intro=home.querySelector('.annotationIntro');
+ if(intro){
+   let strong=intro.querySelector('strong'),small=intro.querySelector('small');
+   if(!strong){strong=document.createElement('strong');intro.prepend(strong)}
+   if(!small){small=document.createElement('small');intro.append(small)}
+   strong.textContent='人类群星闪耀时';
+   small.textContent='在数字赛博空间，你我一起结网记字！';
+ }
+
+ // Replace the v88j square seal with one black/white segmented slider: 深 | 浅.
+ const theme=home.querySelector('.homeTheme78.homeTheme88');
+ if(theme){
+   $('themeSwitch88j')?.remove();
+   const river=[...theme.querySelectorAll('button')].find(b=>b.classList.contains('riverSeal88')||/浅色|河流/.test(b.textContent||''));
+   const star=[...theme.querySelectorAll('button')].find(b=>b.classList.contains('starSeal88')||/深色|星空/.test(b.textContent||''));
+   for(const b of [river,star])if(b)b.classList.add('themeSource88k');
+   let slider=$('themeSwitch88k');
+   if(!slider){
+     slider=document.createElement('button');slider.id='themeSwitch88k';slider.type='button';
+     slider.innerHTML='<span class="themeThumb88k" aria-hidden="true"></span><span class="themeDark88k">深</span><span class="themeLight88k">浅</span>';
+     theme.prepend(slider);
+   }
+   const syncTheme=()=>{
+     const dark=star?.getAttribute('aria-pressed')==='true';
+     slider.dataset.mode=dark?'dark':'light';
+     slider.title=dark?'当前深色 · 阴刻；点击切换浅色':'当前浅色 · 阳刻；点击切换深色';
+     slider.setAttribute('aria-label',slider.title);
+   };
+   slider.onclick=()=>{const dark=slider.dataset.mode==='dark';(dark?river:star)?.click();syncTheme()};
+   if(!theme.dataset.observe88k){
+     theme.dataset.observe88k='1';
+     new MutationObserver(syncTheme).observe(theme,{attributes:true,subtree:true,attributeFilter:['aria-pressed']});
+   }
+   syncTheme();
+ }
+
+ // Robust sticky brand visibility: only show after the large hero brand has actually left view.
+ const navBrand=$('homeBrand79'),hero=home.querySelector('.annotationBrand h1')||home.querySelector('.annotationBrand');
+ if(navBrand&&hero){
+   navBrand.classList.add('navSeal88k');
+   const syncSticky=()=>{
+     const hr=hero.getBoundingClientRect(),rr=home.getBoundingClientRect();
+     navBrand.classList.toggle('visible85',hr.bottom<=rr.top+3);
+   };
+   try{
+     const io=new IntersectionObserver(entries=>navBrand.classList.toggle('visible85',!entries[0].isIntersecting),{root:home,threshold:.01});
+     io.observe(hero);
+   }catch{}
+   home.addEventListener('scroll',syncSticky,{passive:true});addEventListener('resize',syncSticky,{passive:true});syncSticky();
+ }
+
+ // Every writing mode starts from the same true default head-seal anchor at the paper's upper-right edge.
+ const resetHead=()=>{try{A.resetSealPosition?.('head')}catch{}};
+ document.addEventListener('mode-changed54',()=>setTimeout(resetHead,40));
+ document.addEventListener('writing-scenario47',()=>setTimeout(resetHead,60));
+
+ // Split the old combined button into two permanent left-side controls.
+ const bar=$('topActions'),sourceAdd=document.querySelector('#bigPaper62 button'),bigDialog=$('bigDialog62');
+ if(bar&&sourceAdd&&bigDialog){
+   $('topAddPaper88')?.remove();
+   let addPaper=$('topAddPaper88k'),addChar=$('topAddChar88k');
+   const openBig=which=>{
+     sourceAdd.click();
+     requestAnimationFrame(()=>{
+       const nums=[...bigDialog.querySelectorAll('input[type="number"]')];
+       const target=which==='char'?nums[0]:nums[1]||nums[0];
+       target?.focus();target?.select?.();
+     });
+   };
+   if(!addPaper){addPaper=document.createElement('button');addPaper.id='topAddPaper88k';addPaper.type='button';addPaper.onclick=()=>openBig('paper')}
+   if(!addChar){addChar=document.createElement('button');addChar.id='topAddChar88k';addChar.type='button';addChar.onclick=()=>openBig('char')}
+   for(const [b,label,symbol] of [[addPaper,'加纸','＋'],[addChar,'加字','字']]){
+     b.className='writerIconText88 writerAdd88k';b.dataset.label=label;b.dataset.symbol=symbol;b.title=label;b.setAttribute('aria-label',label);
+   }
+   bar.prepend(addChar);bar.prepend(addPaper);
+ }
+
+ // Keep the common action set identical in every mode and give icon controls a two-character caption.
+ const labels={undo:'撤销',redo:'返回',clear:'清屏',fitView:A.isOverview55?.()?'书写':'预览',export:'下载',menuToggle:'菜单'};
+ for(const [id,label] of Object.entries(labels)){
+   const b=$(id);if(!b)continue;b.dataset.label=label;b.title=label;b.setAttribute('aria-label',label);
+   if(id==='menuToggle')b.classList.add('writerMenuText88k');
+ }
+ const fit=$('fitView');fit?.addEventListener('click',()=>setTimeout(()=>{fit.dataset.label=A.isOverview55?.()?'书写':'预览'},40));
+
+ // Full reader is one continuous colour surface: no dark header ribbon or sectional fills.
+ const reader=$('dailyDialog');
+ if(reader){
+   const unify=()=>{
+     if(!reader.open)return;
+     const ink=A.getState?.()?.brush?.color||$('freeInk')?.value||'#563b34';
+     document.documentElement.style.setProperty('--reader-bg88',ink);
+   };
+   new MutationObserver(unify).observe(reader,{attributes:true,attributeFilter:['open']});
+   document.addEventListener('quote-changed',unify);unify();
+ }
+
+ document.documentElement.classList.add('v88k-ready');
+ window.Revision88k={ready:true,resetHead};
+})();
