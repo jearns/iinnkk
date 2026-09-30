@@ -3,7 +3,7 @@ const top=['annotationHomeButton','myWorks','selectInk','undo','redo','clear','f
 const bottom=['menuToggle','topSize','export','topOptimize','copyPagesQuick39','photoSettingsQuick42','topLines','topInk','inkScope39','calendarMoments','topReset','lockWriting39','styleCycle39','topDirection','topAuto','topMusic','topStart'];
 const extra=['topRemove','topGuide'];for(const id of ['topUpload','topPattern','topRatio','topMount']){$(id).hidden=true;$('paperQuickRow').append($(id))}
 for(const id of extra)$('paperQuickRow').append($(id));
-const orderRow=(row,defaults,order)=>{for(const id of [...new Set([...(Array.isArray(order)?order:[]),...defaults])])if(defaults.includes(id)){$(id).hidden=false;row.append($(id))}};
+const orderRow=(row,defaults,order)=>{for(const id of [...new Set([...(Array.isArray(order)?order:[]),...defaults])])if(defaults.includes(id)&&$(id)){$(id).hidden=false;row.append($(id))}};
 window.toolbarOrder=()=>({version:45,top:[...$('topActions').children].map(b=>b.id).filter(id=>top.includes(id)),bottom:[...$('bottomIcons39').children].map(b=>b.id).filter(id=>bottom.includes(id))});
 window.restoreToolbarOrder=order=>{if(window.Revision90)return;orderRow($('topActions'),top,order?.version===45?order.top:[]);orderRow($('bottomIcons39'),bottom,[43,45].includes(order?.version)?order.bottom:[])};
 restoreToolbarOrder(window.pendingToolbarOrder43);installToolbarDrag43($('bottomIcons39'));

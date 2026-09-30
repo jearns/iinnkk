@@ -5,7 +5,7 @@
 
  // Disable browser context menu / accidental selection across the writing experience.
  document.addEventListener('contextmenu',e=>{e.preventDefault();e.stopImmediatePropagation()},{capture:true});
- for(const type of ['selectstart','dragstart'])document.addEventListener(type,e=>{if(!e.target.closest('input,textarea,select,[contenteditable="true"]')){e.preventDefault();e.stopImmediatePropagation()}},{capture:true});
+ for(const type of ['selectstart','dragstart'])document.addEventListener(type,e=>{if(!(e.target instanceof Element)||!e.target.closest('input,textarea,select,[contenteditable="true"]')){e.preventDefault();e.stopImmediatePropagation()}},{capture:true});
 
  // Homepage brand.
  const brand=home.querySelector('.annotationBrand'),brandBox=brand?.querySelector('div'),heroTitle=brandBox?.querySelector('h1');

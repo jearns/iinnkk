@@ -91,7 +91,7 @@ body:not(.home-open) #dailyDialog.quoteBookmark73 .readerList90 button[aria-curr
 /* V91 extends the existing visual system. */
 body:not(.home-open) #dailyBar{display:none!important}
 #writerLeft90>#annotationHomeButton{display:grid!important}
-#writerLeft90>#annotationHomeButton img{width:20px;height:20px;object-fit:contain}
+#writerLeft90>#annotationHomeButton img{width:26px!important;height:26px!important;object-fit:contain}
 #writerExtras90{display:none!important}
 body:not(.home-open) #dailyDialog.quoteBookmark73,body.home-open #dailyDialog.quoteBookmark73{background:var(--reader-bg91,rgba(48,48,46,.66))!important;background-image:none!important}
 body:not(.home-open) #dailyDialog.quoteBookmark73 #quoteExpanded{touch-action:none!important}
@@ -111,7 +111,8 @@ body:not(.home-open) #dailyDialog.quoteBookmark73 .readerCategory91{display:bloc
 
 #annotationHome .annotationIntro{position:relative!important;overflow:hidden!important;isolation:isolate!important;width:var(--home-width91,100vw)!important;max-width:none!important;align-self:center!important;flex:none!important;margin:0 0 18px!important;border-radius:0!important;min-height:clamp(190px,24vw,300px)!important;box-sizing:border-box!important;padding:clamp(20px,3vw,40px)!important;display:flex!important;flex-direction:column!important;justify-content:center!important;background:#dae5ea!important;color:#162e3b!important}
 #annotationHome .annotationIntro .heroConstellation91{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;z-index:-1!important;pointer-events:none!important}
-#annotationHome .annotationIntro strong,#annotationHome .annotationIntro small{color:#162e3b!important;text-shadow:0 1px 9px #ffffffe0!important;max-width:49%!important}
+body.home-open[data-home-theme] #annotationHome .annotationIntro strong,body.home-open[data-home-theme] #annotationHome .annotationIntro small{color:#162e3b!important;-webkit-text-fill-color:#162e3b!important;text-shadow:0 1px 9px #ffffffe0!important}
+#annotationHome .annotationIntro strong,#annotationHome .annotationIntro small{max-width:49%!important}
 #annotationHome .annotationIntro strong{font-size:clamp(21px,3.3vw,38px)!important}
 @media(max-width:600px){
  #annotationHome .annotationIntro{min-height:210px!important;padding:18px!important;justify-content:flex-end!important}

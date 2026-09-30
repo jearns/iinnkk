@@ -1,5 +1,5 @@
 /* 第62版：本机后台内容管理、扩纸字、临帖组图与图文创作。 */
-(function init(){if(!window.InkStudio50?.ready||!window.DailyQuotes38?.setAll||!window.CopyAlbums38||!window.AnnotationApp?.ready){setTimeout(init,50);return}
+(function init(){if(!document.querySelector('#previewEffects55 .finalRail54')||!window.InkStudio50?.ready||!window.DailyQuotes38?.setAll||!window.CopyAlbums38||!window.AnnotationApp?.ready){setTimeout(init,50);return}
 const $=id=>document.getElementById(id),U=InkStudio50,A=AnnotationApp,E=U.E;
 const safe=(v,n=30000)=>String(v||'').trim().slice(0,n),clone=x=>structuredClone(x);
 let quoteRows=DailyQuotes38.all(),presets=[],photoPresets=[],photoLoadBusy=false,settings={defaultCategory:'poetry',order:'sequence',preview:['书风','墨迹','纸色','线条','纹样','框架','流变','图文配置']};

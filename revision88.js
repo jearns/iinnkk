@@ -117,7 +117,7 @@
  const extras=el('div','writerExtras90');extras.id='writerExtras90';for(const b of [...bar.children])if(b.tagName==='BUTTON'&&!['annotationHomeButton','topRemove'].includes(b.id))extras.append(b);extras.hidden=true;
  for(const b of extras.querySelectorAll('button')){const label=({topQuotes:'好句',topUpload:'加图',topLines:'线条',topDirection:'方向',topAuto:'移纸',topOptimize:'润笔',selectInk:'选字',topSize:'笔径',topRatio:'比例',topMount:'装裱',topInk:'墨色',topStart:'起笔',myWorks:'作品',calendarMoments:'日历',recordProcess:'录制'})[b.id];if(label){b.title=label;const cap=el('span','',label);b.append(cap)}}
  // Good-quotes is always reachable, independent of whether the floating reader is open.
- const homeButton=$('annotationHomeButton');if(homeButton){homeButton.hidden=false;homeButton.classList.add('tool90');homeButton.innerHTML='<img src="favicon90.png" width="20" height="20" alt="返回首页">';homeButton.onclick=()=>{reader.close();AnnotationHome.show()};left.prepend(homeButton)}
+ const homeButton=$('annotationHomeButton');if(homeButton){homeButton.hidden=false;homeButton.classList.add('tool90');homeButton.innerHTML='<img src="favicon90.png" width="26" height="26" alt="返回首页">';homeButton.onclick=()=>{reader.close();AnnotationHome.show()};left.prepend(homeButton)}
  const leftTools=[['myWorks','作品','M3 6h6l2 3h10v12H3zM7 13h10M7 17h6'],['selectInk','选字','M4 8V4h4M16 4h4v4M20 16v4h-4M8 20H4v-4M9 9h6v6H9z'],['recordProcess','录屏','M3 5h12v14H3zM15 9l6-3v12l-6-3'],['topQuotes','文摘','M5 4h14v16H5zM8 8h8M8 12h8M8 16h5']];
  for(const [id,name,path]of leftTools){const button=$(id);if(button){button.hidden=false;decorate(button,name,path);left.insertBefore(button,expand)}}
  const excerptMenu=el('aside','excerptCategories91');excerptMenu.id='excerptCategories91';excerptMenu.hidden=true;excerptMenu.setAttribute('aria-label','好词好句类目');excerptMenu.setAttribute('role','menu');document.body.append(excerptMenu);
@@ -148,7 +148,7 @@
  for(const id of ['writingQuick73','writerFixed85','topRemove']){const e=$(id);if(e){e.hidden=true;document.body.append(e)}}
  bar.replaceChildren(left,right);bar.after(extras);
  const settings=el('button');settings.id='writerSettings90';settings.type='button';decorate(settings,'设置','M4 4h16v16H4zM8 8h8M8 12h8M8 16h8');settings.onclick=()=>A.openDialog('brushDialog');extras.append(settings);
- const menu=$('menuToggle');menu.removeAttribute('data-open');menu.onclick=()=>A.openDialog('controlDialog');
+ const menu=$('menuToggle');menu.removeAttribute('data-open');menu.setAttribute('aria-haspopup','dialog');menu.setAttribute('aria-controls','brushDialog');menu.onclick=()=>{const settings=$('brushDialog');settings.setAttribute('aria-label','本站全局设置');settings.querySelector('.dialogHead h2').textContent='本站全局设置';A.openDialog('brushDialog')};
  let lastView;function syncView(){const overview=A.isOverview55();if(lastView!==overview||!$('fitView').querySelector('span')){decorate($('fitView'),overview?'书写':'预览',paths[overview?'write':'preview']);lastView=overview}wm.hidden=!overview;}
  for(const [id,name,type] of [['undo','撤销','undo'],['redo','返回','redo'],['clear','清屏','clear'],['export','下载','download'],['menuToggle','菜单','menu']])decorate($(id),name,paths[type]);
  const wm=el('div','previewWatermark90');wm.id='previewWatermark90';wm.innerHTML='<strong>单指双击，即刻书写</strong><small>见墨·iinnkk.me·如我</small>';$('board').append(wm);
