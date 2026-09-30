@@ -12,10 +12,6 @@
  brandBox?.querySelector('.homeDomain44')?.remove();
  if(brandBox){
    const sub=brandBox.querySelector('p');if(sub)sub.textContent='见墨·iinnkk.me·如我';
-   if(heroTitle&&!heroTitle.querySelector('.homeLogo85')){
-     const c=document.createElement('canvas');c.className='homeLogo85';c.width=c.height=256;c.setAttribute('aria-label','篆书筆字标志');heroTitle.prepend(c);
-     const copy=()=>{const src=$('appLogo');if(!src?.width)return;const t=c.getContext('2d');t.clearRect(0,0,256,256);try{t.drawImage(src,0,0,256,256)}catch{}};copy();setTimeout(copy,350);setTimeout(copy,1000);
-   }
  }
  const direct=$('continueWriting');if(direct){direct.textContent='我的作品';direct.onclick=e=>{e.preventDefault();$('myWorks')?.click()}}
 
