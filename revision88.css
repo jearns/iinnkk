@@ -704,3 +704,85 @@
 #topActions .writerIconText88::before{font-weight:300!important;opacity:.82!important}
 #topActions .writerIconText88::after{font-weight:500!important;letter-spacing:.03em!important}
 #topActions #menuToggle svg{stroke-width:1.35!important}
+
+
+/* V88k — final interaction corrections. */
+
+/* 深｜浅: one black/white segmented control with a moving black thumb. */
+#annotationHome .homeTheme78.homeTheme88 .themeSource88k{display:none!important}
+#annotationHome #themeSwitch88k{
+  position:relative!important;display:grid!important;grid-template-columns:1fr 1fr!important;align-items:center!important;
+  width:76px!important;min-width:76px!important;height:30px!important;padding:2px!important;margin:0!important;
+  overflow:hidden!important;border:1px solid #1a1a1a!important;border-radius:8px!important;background:#fff!important;
+  box-shadow:none!important;color:#111!important;font:600 11px/1 system-ui,-apple-system,"PingFang SC",sans-serif!important;
+}
+#themeSwitch88k .themeThumb88k{
+  position:absolute!important;z-index:0!important;top:2px!important;bottom:2px!important;width:calc(50% - 2px)!important;
+  border-radius:6px!important;background:#111!important;transform:translateX(0)!important;
+  transition:transform .24s cubic-bezier(.22,.8,.2,1)!important;box-shadow:0 2px 7px #0002!important
+}
+#themeSwitch88k[data-mode="light"] .themeThumb88k{transform:translateX(100%)!important}
+#themeSwitch88k .themeDark88k,#themeSwitch88k .themeLight88k{
+  position:relative!important;z-index:1!important;display:grid!important;place-items:center!important;height:100%!important;
+  transition:color .2s ease!important;letter-spacing:.12em!important
+}
+#themeSwitch88k[data-mode="dark"] .themeDark88k,
+#themeSwitch88k[data-mode="light"] .themeLight88k{color:#fff!important;-webkit-text-fill-color:#fff!important}
+#themeSwitch88k[data-mode="dark"] .themeLight88k,
+#themeSwitch88k[data-mode="light"] .themeDark88k{color:#111!important;-webkit-text-fill-color:#111!important}
+
+/* One uninterrupted reader background. Children are transparent; only the outer card owns colour. */
+#dailyDialog.quoteBookmark73,#dailyDialog{
+  background:color-mix(in srgb,var(--reader-bg88,#563b34) 84%,transparent)!important;
+  color:var(--reader-fg88,#f8f4ea)!important;
+  backdrop-filter:blur(16px) saturate(1.08)!important;-webkit-backdrop-filter:blur(16px) saturate(1.08)!important
+}
+#dailyDialog .dialogHead,
+#dailyDialog .dialogBody,
+#dailyDialog #quoteText,
+#dailyDialog #quoteExpanded,
+#dailyDialog .bookmarkNav81,
+#dailyDialog .bookmarkSource79{
+  background:transparent!important;background-color:transparent!important;box-shadow:none!important
+}
+#dailyDialog .dialogHead,#dailyDialog .dialogHead *,#dailyDialog .bookmarkSource79,
+#dailyDialog :is(#quoteText,#quoteExpanded,#quoteSource,#quotePrompt,.bookmarkNav81){
+  color:var(--reader-fg88,#f8f4ea)!important;-webkit-text-fill-color:var(--reader-fg88,#f8f4ea)!important
+}
+
+/* Permanent two controls at the far left; same common toolbar in every writing mode. */
+#topActions #topAddPaper88k,#topActions #topAddChar88k{
+  order:-20!important;display:grid!important;grid-template-rows:18px 12px!important;place-items:center!important;
+  width:38px!important;min-width:38px!important;height:42px!important;min-height:42px!important;padding:1px 3px!important;
+  border:0!important;background:transparent!important;color:inherit!important
+}
+#topActions #topAddPaper88k::before,#topActions #topAddChar88k::before{
+  content:attr(data-symbol)!important;font:400 18px/18px STKaiti,'Kaiti SC',serif!important;opacity:.86!important
+}
+#topActions #topAddPaper88k::after,#topActions #topAddChar88k::after{
+  content:attr(data-label)!important;font:500 10px/12px system-ui,-apple-system,"PingFang SC",sans-serif!important;white-space:nowrap!important
+}
+#topActions #menuToggle.writerMenuText88k{
+  display:grid!important;grid-template-rows:18px 12px!important;place-items:center!important;height:42px!important;min-height:42px!important;padding:1px 4px!important
+}
+#topActions #menuToggle.writerMenuText88k::after{
+  content:attr(data-label)!important;font:500 10px/12px system-ui,-apple-system,"PingFang SC",sans-serif!important
+}
+#topActions #menuToggle.writerMenuText88k svg{width:18px!important;height:18px!important}
+
+/* Make the sticky brand entrance unmistakable but only after hero exits. */
+#homeBrand79.navSeal88k{
+  will-change:opacity,transform,filter,max-width!important;
+  transition:max-width .36s ease,opacity .28s ease,transform .38s cubic-bezier(.16,.82,.25,1),filter .3s ease!important
+}
+#homeBrand79.navSeal88k:not(.visible85){opacity:0!important;transform:translateX(-14px) scale(.78)!important;filter:blur(5px)!important;max-width:0!important}
+#homeBrand79.navSeal88k.visible85{opacity:1!important;transform:translateX(0) scale(1)!important;filter:blur(0)!important;max-width:160px!important}
+
+/* Exact intro treatment. */
+#annotationHome .annotationIntro.introHead88 small{white-space:normal!important;letter-spacing:.04em!important}
+
+@media(max-width:560px){
+ #annotationHome #themeSwitch88k{width:68px!important;min-width:68px!important;height:28px!important;font-size:10px!important}
+ #topActions #topAddPaper88k,#topActions #topAddChar88k{width:34px!important;min-width:34px!important;height:40px!important}
+ #topActions #menuToggle.writerMenuText88k{height:40px!important;min-height:40px!important}
+}
