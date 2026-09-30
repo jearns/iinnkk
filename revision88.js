@@ -143,6 +143,53 @@
    const redo=$('redo');if(redo&&redo.nextElementSibling===menu)actionBar.insertBefore(redo,guideBtn);
  }
 
+ // 7. V88e responsive theme/reminder cluster + local-time automatic day/night.
+ if(theme){
+   const brand=home.querySelector('.annotationBrand');
+   const candidates=[...brand?.querySelectorAll('button')||[]];
+   const reminder=candidates.find(b=>/天后|今天|明天|国庆|中秋|元旦|春节|提醒|日历|倒计时/.test((b.textContent||'')+' '+(b.title||'')+' '+(b.getAttribute('aria-label')||'')));
+   if(reminder){
+     let cluster=$('themeReminder88');
+     if(!cluster){
+       cluster=document.createElement('div');
+       cluster.id='themeReminder88';
+       reminder.parentElement?.insertBefore(cluster,reminder);
+     }
+     cluster.append(theme,reminder);
+   }
+   const river=[...theme.querySelectorAll('button')].find(b=>/浅色河流/.test(b.textContent||''));
+   const star=[...theme.querySelectorAll('button')].find(b=>/深色星空/.test(b.textContent||''));
+   function autoTheme88(){
+     const hour=new Date().getHours(); // browser/device local timezone
+     const target=(hour>=18||hour<6)?star:river;
+     if(target&&target.getAttribute('aria-pressed')!=='true')target.click();
+     document.documentElement.dataset.autoTheme88=(hour>=18||hour<6)?'dark':'light';
+   }
+   autoTheme88();
+   clearInterval(window.autoThemeTimer88);
+   window.autoThemeTimer88=setInterval(autoTheme88,60*1000);
+ }
+
+ // Account seal glyph stays white in both themes, including late auth rendering.
+ const account=$('account47');if(account)account.classList.add('accountWhite88e');
+ new MutationObserver(()=>{$('account47')?.classList.add('accountWhite88e')}).observe(home,{childList:true,subtree:true});
+
+ // 8. Final writer top-right compact text controls:
+ // 撤销 → 返回 → 清屏 → 预览/书写 → 下载 → hamburger.
+ const actionBar88=$('topActions');
+ if(actionBar88){
+   const guide=$('textGuide88');if(guide)guide.hidden=true;
+   const undo=$('undo'),back=$('writerBack88'),clear=$('clear'),fit=$('fitView'),download=$('export'),menu=$('menuToggle');
+   const label=(el,text)=>{if(!el)return;el.classList.add('writerText88e');el.replaceChildren(document.createTextNode(text));el.title=text;el.setAttribute('aria-label',text)};
+   label(undo,'撤销');label(back,'返回');label(clear,'清屏');label(download,'下载');
+   function syncFitLabel88(){if(!fit)return;label(fit,A.isOverview55?.()?'书写':'预览')}
+   syncFitLabel88();
+   fit?.addEventListener('click',()=>requestAnimationFrame(()=>requestAnimationFrame(syncFitLabel88)));
+   document.getElementById('board')?.addEventListener('pointerup',()=>setTimeout(syncFitLabel88,40),{passive:true});
+   for(const el of [undo,back,clear,fit,download,menu])if(el)actionBar88.append(el);
+   if(menu){menu.classList.remove('writerText88e');menu.title='菜单';menu.setAttribute('aria-label','菜单')}
+ }
+
  document.documentElement.classList.add('v88-ready');
  window.Revision88={ready:true,palette:infinitePalette,applyPalette:applyInfinite};
 })();
