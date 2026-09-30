@@ -1,0 +1,21 @@
+/* V85 */
+#writerFixed85{display:flex;align-items:center;gap:0;flex:0 0 auto}
+#writerFixed85 button,.writerMenu85{width:36px!important;min-width:36px!important;height:36px!important;min-height:36px!important;padding:6px!important;border:0!important;background:transparent!important}
+.writerMenu85{margin-left:2px!important}
+#annotationHome #homeQuick47>button:not(#homeBrand79){font-size:clamp(15px,1.65vw,20px)!important}
+#homeBrand79{display:none!important}
+#homeBrand79.visible85{display:flex!important}
+.homeNavLogo85{width:25px;height:25px;flex:0 0 25px}
+.homeLogo85{width:46px;height:46px;vertical-align:middle;margin-right:10px;flex:0 0 46px}
+.annotationBrand h1{display:flex!important;align-items:center!important}
+.annotationBrand>div{width:max-content;max-width:100%}
+.annotationBrand>div p{width:100%;box-sizing:border-box;text-align:justify;text-align-last:justify;letter-spacing:.12em!important;white-space:nowrap}
+#previewHint85{position:absolute;inset:0;z-index:22;display:flex;align-items:center;justify-content:center;pointer-events:none;color:#4f5d58;opacity:.36;font-size:clamp(13px,1.8vw,19px);letter-spacing:.10em;text-align:center}
+#previewHint85[hidden]{display:none!important}
+#sealInspector{max-width:min(235px,68vw)!important;padding:8px!important;background:rgba(250,247,239,.86)!important;backdrop-filter:blur(14px)!important;border-radius:10px!important;box-shadow:0 10px 32px #18241f26!important}
+#sealInspector label{font-size:11px!important;gap:3px!important}
+:is(#brushDialog,#paperDialog,#sealDialog,#copyDialog,#controlDialog,#bigDialog62,#mountDialog){width:min(430px,92vw)!important;max-height:82dvh!important;background:rgba(250,247,239,.90)!important;backdrop-filter:blur(16px)!important}
+#dailyDialog.quoteBookmark73{width:fit-content!important;min-width:min(190px,80vw)!important;max-width:min(360px,82vw)!important;background:var(--bookmark-bg85,var(--bookmark-seal73,#a63832))!important;color:var(--bookmark-fg85,#f8f4ea)!important;touch-action:none!important}
+#dailyDialog.quoteBookmark73 #quoteText{max-height:calc(1.65em * 7)!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;touch-action:pan-y!important}
+#dailyDialog.quoteBookmark73 :is(#quoteText,#quoteExpanded,.bookmarkNav81){color:var(--bookmark-fg85,#f8f4ea)!important}
+@media(max-width:560px){.homeLogo85{width:38px;height:38px;flex-basis:38px;margin-right:7px}#writerFixed85 button,.writerMenu85{width:31px!important;min-width:31px!important;height:34px!important;min-height:34px!important;padding:5px!important}}
