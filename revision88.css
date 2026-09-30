@@ -512,3 +512,110 @@
   #previewWatermark88 strong{font-size:clamp(22px,7vw,34px)!important}
   #previewWatermark88 small{font-size:10px!important}
 }
+
+
+/* V88i — definitive writer split + all-category reading colour */
+#topActions{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  width:100%!important;
+}
+#writerSplit88{
+  display:block!important;
+  flex:1 1 auto!important;
+  min-width:18px!important;
+  height:1px!important;
+}
+#topActions #topAddPaper88{
+  display:grid!important;
+  place-items:center!important;
+  flex:0 0 34px!important;
+  width:34px!important;
+  min-width:34px!important;
+  height:42px!important;
+  margin:0 4px 0 0!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+}
+#topActions #topAddPaper88::before{
+  content:"＋"!important;
+  font:400 25px/1 system-ui,-apple-system,sans-serif!important;
+}
+#topActions .writerIconText88{
+  display:grid!important;
+  grid-template-rows:18px 14px!important;
+  place-items:center!important;
+  align-content:center!important;
+  flex:0 0 auto!important;
+  min-width:42px!important;
+  width:auto!important;
+  height:44px!important;
+  padding:2px 6px!important;
+  margin:0!important;
+  border:0!important;
+  background:transparent!important;
+  font-size:0!important;
+  line-height:1!important;
+}
+#topActions .writerIconText88::before{
+  content:attr(data-symbol)!important;
+  display:block!important;
+  font:400 19px/18px system-ui,-apple-system,sans-serif!important;
+}
+#topActions .writerIconText88::after{
+  content:attr(data-label)!important;
+  display:block!important;
+  font:500 11px/14px system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif!important;
+  white-space:nowrap!important;
+}
+#topActions #undo{margin-left:0!important}
+#topActions #redo{
+  display:grid!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+#topActions #writerBack88[hidden],
+#topActions #textGuide88[hidden]{display:none!important}
+#topActions #menuToggle{
+  margin-left:2px!important;
+  flex:0 0 36px!important;
+  width:36px!important;
+  min-width:36px!important;
+  height:44px!important;
+}
+
+/* Read-full dialog and bookmark: every category follows the active ink, not literature only. */
+#dailyDialog,
+#dailyDialog .dialogBody,
+#dailyDialog #quoteExpanded,
+#dailyDialog .bookmarkNav81{
+  background:var(--reader-bg88,var(--bookmark-bg88,#563b34))!important;
+  color:var(--reader-fg88,var(--bookmark-fg88,#f8f4ea))!important;
+}
+#dailyDialog .dialogHead{
+  background:color-mix(in srgb,var(--reader-bg88,var(--bookmark-bg88,#563b34)) 22%,#fff 78%)!important;
+}
+#dailyDialog :is(#quoteText,#quoteExpanded,#quoteSource,#quotePrompt,.bookmarkNav81,.bookmarkNav81 button){
+  color:var(--reader-fg88,var(--bookmark-fg88,#f8f4ea))!important;
+}
+#dailyDialog .dialogHead,
+#dailyDialog .dialogHead *{
+  color:#3d342f!important;
+  -webkit-text-fill-color:#3d342f!important;
+}
+
+@media(max-width:560px){
+  #writerSplit88{min-width:10px!important}
+  #topActions #topAddPaper88{
+    width:30px!important;min-width:30px!important;height:40px!important;margin-right:2px!important;
+  }
+  #topActions .writerIconText88{
+    min-width:35px!important;height:40px!important;padding:1px 3px!important;
+    grid-template-rows:17px 13px!important;
+  }
+  #topActions .writerIconText88::before{font-size:16px!important}
+  #topActions .writerIconText88::after{font-size:10px!important}
+  #topActions #menuToggle{width:31px!important;min-width:31px!important;height:40px!important}
+}
