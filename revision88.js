@@ -505,3 +505,114 @@
  document.documentElement.classList.add('v88k-ready');
  window.Revision88k={ready:true,resetHead};
 })();
+
+/* V89 — source cleanup: one reader, one homepage copy, one toolbar. */
+(function init89(){
+ if(!window.AnnotationApp?.ready||!window.DailyQuotes38||!document.getElementById('annotationHome')){setTimeout(init89,70);return}
+ const $=id=>document.getElementById(id),A=AnnotationApp,D=DailyQuotes38,home=$('annotationHome');
+
+ // Final homepage copy. Remove any stale text nodes or duplicate legacy intro content.
+ const intro=home.querySelector('.annotationIntro');
+ if(intro){
+   intro.replaceChildren();
+   const h=document.createElement('strong'),p=document.createElement('small');
+   h.textContent='人类群星闪耀时';p.textContent='在数字赛博空间，你我一起结网记字！';
+   intro.append(h,p);intro.classList.add('introHead88','intro89');
+ }
+ home.querySelectorAll('.timelineHead73 small').forEach(e=>e.textContent='在数字赛博空间，你我一起结网记字！');
+
+ // Reader colour follows the actual live ink and also overwrites every historical bookmark variable.
+ const dialog=$('dailyDialog');
+ const luminance=hex=>{
+   const s=String(hex||'').replace('#','');if(!/^[0-9a-f]{6}$/i.test(s))return .3;
+   const [r,g,b]=[0,2,4].map(i=>parseInt(s.slice(i,i+2),16)/255);
+   return .2126*r+.7152*g+.0722*b;
+ };
+ function liveInk89(){
+   const state=A.getState?.(),candidate=state?.brush?.color||$('freeInk')?.value||'#30302e';
+   return /^#[0-9a-f]{6}$/i.test(candidate)?candidate:'#30302e';
+ }
+ let lastInk89='';
+ function syncReader89(force=false){
+   if(!dialog)return;
+   const ink=liveInk89();if(!force&&ink===lastInk89)return;lastInk89=ink;
+   const fg=luminance(ink)>.58?'#171716':'#fffaf0';
+   const root=document.documentElement;
+   for(const k of ['--reader-bg89','--reader-bg88','--bookmark-bg88','--bookmark-bg87','--bookmark-bg85','--bookmark-seal73'])root.style.setProperty(k,ink);
+   for(const k of ['--reader-fg89','--reader-fg88','--bookmark-fg88','--bookmark-fg87','--bookmark-fg85','--bookmark-text73'])root.style.setProperty(k,fg);
+   dialog.style.setProperty('--reader-bg89',ink);dialog.style.setProperty('--reader-fg89',fg);
+ }
+ syncReader89(true);
+ for(const ev of ['quote-changed','ink-stroke','writing-scenario47'])document.addEventListener(ev,()=>setTimeout(()=>syncReader89(true),0));
+ document.addEventListener('input',e=>{if(/ink|color/i.test(e.target?.id||''))setTimeout(()=>syncReader89(true),0)},true);
+ document.addEventListener('change',e=>{if(/ink|color/i.test(e.target?.id||''))setTimeout(()=>syncReader89(true),0)},true);
+ clearInterval(window.readerInkTimer89);
+ window.readerInkTimer89=setInterval(()=>{if(dialog?.open)syncReader89()},350);
+
+ // Replace the native select with a compact quick-jump sheet.
+ if(dialog){
+   const head=dialog.querySelector('.dialogHead'),source=head?.querySelector('.bookmarkSource79'),old=head?.querySelector('.bookmarkPicker79');
+   if(old)old.hidden=true;
+   let jump=$('bookmarkJump89');
+   if(!jump){
+     jump=document.createElement('div');jump.id='bookmarkJump89';jump.hidden=true;
+     jump.innerHTML='<div class="jumpSearch89"><input type="search" placeholder="快速查作者 / 作品 / 句子" aria-label="快速查找佳句"><button type="button" aria-label="收起">×</button></div><div class="jumpList89"></div>';
+     dialog.append(jump);
+   }
+   const input=jump.querySelector('input'),list=jump.querySelector('.jumpList89'),close=jump.querySelector('button');
+   const key=q=>q.id||q.s+'|'+q.q;
+   function buildJump89(){
+     const cat=window.currentQuote?.cat||'poetry',query=input.value.trim().toLowerCase();
+     const rows=D.all().filter(q=>q.cat===cat).filter(q=>!query||[q.country,q.era,q.author,q.title,q.q].join(' ').toLowerCase().includes(query));
+     list.replaceChildren();
+     for(const q of rows){
+       const b=document.createElement('button');b.type='button';b.className='jumpItem89';
+       const meta=[q.country||q.era||q.dynasty,q.author,q.title].filter(Boolean).join(' · ');
+       b.innerHTML='<strong></strong><small></small>';b.querySelector('strong').textContent=meta||'未署名';b.querySelector('small').textContent=String(q.q||'').replace(/\s+/g,' ').slice(0,38);
+       if(key(q)===key(window.currentQuote||{}))b.setAttribute('aria-current','true');
+       b.onclick=()=>{D.selectId(key(q));jump.hidden=true;input.value='';syncReader89(true)};
+       list.append(b);
+     }
+   }
+   function toggleJump89(show){
+     jump.hidden=show===undefined?!jump.hidden:!show;
+     if(!jump.hidden){input.value='';buildJump89();requestAnimationFrame(()=>input.focus())}
+   }
+   if(source){
+     source.onclick=e=>{e.preventDefault();e.stopImmediatePropagation();toggleJump89(jump.hidden)};
+     source.title='点击快速跳选';
+   }
+   input.oninput=buildJump89;close.onclick=()=>toggleJump89(false);
+   document.addEventListener('quote-changed',()=>{if(!jump.hidden)buildJump89()});
+ }
+
+ // Sticky nav brand: always recompute from actual scroll position, not a one-shot observer state.
+ const nav=$('homeBrand79'),hero=home.querySelector('.annotationBrand');
+ function sticky89(){
+   if(!nav||!hero)return;
+   const hr=hero.getBoundingClientRect(),rr=home.getBoundingClientRect();
+   nav.classList.toggle('visible85',hr.bottom<=rr.top+8);
+ }
+ home.addEventListener('scroll',sticky89,{passive:true});addEventListener('resize',sticky89,{passive:true});
+ requestAnimationFrame(sticky89);setTimeout(sticky89,350);
+
+ // Final toolbar order. Previous version decorators are removed each time this function runs.
+ function toolbar89(){
+   const bar=$('topActions');if(!bar)return;
+   const source=document.querySelector('#bigPaper62 button'),big=$('bigDialog62');
+   let addPaper=$('topAddPaper89'),addChar=$('topAddChar89');
+   const open=which=>{source?.click();requestAnimationFrame(()=>{const nums=[...big?.querySelectorAll('input[type=number]')||[]];(which==='char'?nums[0]:nums[1]||nums[0])?.focus()})};
+   if(!addPaper){addPaper=document.createElement('button');addPaper.id='topAddPaper89';addPaper.type='button';addPaper.onclick=()=>open('paper')}
+   if(!addChar){addChar=document.createElement('button');addChar.id='topAddChar89';addChar.type='button';addChar.onclick=()=>open('char')}
+   for(const [b,l,s] of [[addPaper,'加纸','＋'],[addChar,'加字','字']]){b.className='writerFinal89';b.dataset.label=l;b.dataset.symbol=s;b.title=l;b.setAttribute('aria-label',l)}
+   const fit=$('fitView'),defs=[[$('undo'),'撤销','↶'],[$('redo'),'返回','↷'],[$('clear'),'清屏','⌫'],[fit,A.isOverview55?.()?'书写':'预览',A.isOverview55?.()?'✎':'▣'],[$('export'),'下载','⇩'],[$('menuToggle'),'菜单','☰']];
+   for(const [b,l,s] of defs){if(!b)continue;b.classList.add('writerFinal89');b.dataset.label=l;b.dataset.symbol=s;b.title=l;b.setAttribute('aria-label',l)}
+   // Remove obsolete duplicate add controls and splitter.
+   for(const id of ['topAddPaper88','topAddPaper88k','topAddChar88k','writerSplit88'])$(id)?.remove();
+   for(const el of [addPaper,addChar,...defs.map(x=>x[0]).filter(Boolean)])bar.append(el);
+ }
+ toolbar89();document.addEventListener('mode-changed54',()=>setTimeout(toolbar89,30));$('fitView')?.addEventListener('click',()=>setTimeout(toolbar89,50));
+
+ document.documentElement.classList.add('v89-ready');
+ window.Revision89={ready:true,syncReader:syncReader89,toolbar:toolbar89};
+})();
