@@ -110,6 +110,39 @@
  // Remove text shortcut duplicates now that the same actions remain as icons.
  if(quick)quick.hidden=true;
 
+ // 6. Writer top-right core strip:
+ // 文字引导 → 预览/书写 → 清屏 → 撤销 → 返回 → 三横菜单.
+ const actionBar=$('topActions');
+ if(actionBar){
+   let guideBtn=$('textGuide88');
+   if(!guideBtn){
+     guideBtn=document.createElement('button');
+     guideBtn.id='textGuide88';
+     guideBtn.type='button';
+     guideBtn.title='文字引导';
+     guideBtn.setAttribute('aria-label','文字引导');
+     guideBtn.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14M12 4v16M7 9h10M8 14h8"/><path d="M4 20h16"/></svg>';
+     guideBtn.onclick=()=>{
+       const dialog=$('controlDialog');
+       if(dialog){A.openDialog?.(dialog);setTimeout(()=>{$('guideMode')?.focus()},80)}
+     };
+   }
+   let backBtn=$('writerBack88');
+   if(!backBtn){
+     backBtn=document.createElement('button');
+     backBtn.id='writerBack88';
+     backBtn.type='button';
+     backBtn.title='返回首页';
+     backBtn.setAttribute('aria-label','返回首页');
+     backBtn.innerHTML='<svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 8 12l7 7"/><path d="M8 12h11"/></svg>';
+     backBtn.onclick=()=>window.AnnotationHome?.show?.();
+   }
+   const fit=$('fitView'),clear=$('clear'),undo=$('undo'),menu=$('menuToggle');
+   for(const el of [guideBtn,fit,clear,undo,backBtn,menu])if(el)actionBar.append(el);
+   // Redo remains available in the full toolbar, but not in the right-most core strip.
+   const redo=$('redo');if(redo&&redo.nextElementSibling===menu)actionBar.insertBefore(redo,guideBtn);
+ }
+
  document.documentElement.classList.add('v88-ready');
  window.Revision88={ready:true,palette:infinitePalette,applyPalette:applyInfinite};
 })();
