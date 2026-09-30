@@ -350,7 +350,7 @@ $('photoDeleteX').onclick=()=>{endPhotoEdit();photos.splice(selectedPhoto,1);sel
 $('topQuotes').onclick=()=>{$('quotesVisibility').value=$('quotesVisibility').value==='shown'?'hidden':'shown';syncDock();syncNewIcons();resize();saveSoon()};
 $('topInk').onclick=()=>{const colors=['#050505','#fffaf0','#c62820'],next=colors[(colors.indexOf(brush.color)+1)%colors.length];$('colorPair').value='custom';setInkColor(next);readBrush();recolorWork();syncQuickControls()};
 function syncNewIcons(){if($('topSize')&&$('topRatio'))quickIconLabels();const shown=$('quotesVisibility').value==='shown';toolbarIcon('topQuotes',shown?'shown':'hidden',shown?'<path d="M4 4h7v16H4zM13 4h7v16h-7z"/>':'<path d="M4 4h7v16H4zM13 4h7v16h-7zM3 3l18 18"/>',shown?'隐藏今日宜写':'显示今日宜写',shown);const names={'#050505':'玄墨','#fffaf0':'雪白','#c62820':'朱红'},c=brush.color;toolbarIcon('topInk',c,'<circle cx="12" cy="12" r="7" fill="'+c+'" stroke="#85765e"/>','墨色：'+(names[c]||'自定义')+' · 点击循环黑、白、红')}
-const openingPhrases=['落指有音，见字如面','你只要亲笔，就是大手笔','AI 制造一切假象，动手留下唯一真迹','言为心声，笔为心意','江海万里，心中念你','纸短情长，身远心近','为文明接力，让文艺复兴'];function randomOpening(){$('hintMessage').textContent=openingPhrases[Math.floor(Math.random()*openingPhrases.length)]}randomOpening();
+function randomOpening(){const hint=$('hintMessage');if(hint)hint.textContent=''}randomOpening();
 
 const settingsStorageKey='zhenji.settings.v1';let savedSettings=null;
 function settingsSnapshot(){const values={};[...paperKeys,...sealKeys,...extraKeys,'refFit','refX','refY'].forEach(k=>values[k]=$(k).value);return{inkOpacity:window.annotationInkOpacity??1,values,brush:{...brush},mountKey,basicRatio,guideTexts:structuredClone(guideTexts),exportPrefs:{...exportPrefs},toolbarOrder:window.toolbarOrder?.()}}
