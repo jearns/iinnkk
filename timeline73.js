@@ -4,7 +4,7 @@
  const $=id=>document.getElementById(id),U=InkStudio50,A=AnnotationApp,chapters=[...CalligraphyTimeline73].sort((a,b)=>(b.year||0)-(a.year||0));
  const E=(tag,cls='',text='')=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text)e.textContent=text;return e};
  const section=E('section','timeline73'),title=E('div','timelineHead73'),intro=E('div','timelineIntro73'),rail=E('div','timelineRail73');section.id='inkTimeline73';rail.tabIndex=0;rail.setAttribute('aria-label','全球文字文明与中国书法时间轴：向下穿越年代，左右翻看同题书作');
- title.innerHTML='<span>人类群星闪耀时</span><small>每个时代都有闪耀的明星，在人类的文字长河中，你也来书写一抹亮色</small>';
+ title.innerHTML='<span>人类群星闪耀时</span><small>在数字赛博空间，你我一起结网记字！</small>';
  const prev=E('button','timelineArrow73','‹'),next=E('button','timelineArrow73','›');prev.type=next.type='button';prev.setAttribute('aria-label','向今翻动');next.setAttribute('aria-label','向古翻动');
  const theme=E('div','homeTheme78');theme.setAttribute('role','group');theme.setAttribute('aria-label','首页主题');for(const [label,key] of [['浅色河流','river'],['深色星空','stars']]){const b=E('button','',label);b.type='button';b.dataset.theme=key;b.onclick=()=>{document.body.dataset.homeTheme=key;try{localStorage.setItem('iinnkk.home.theme78',key)}catch{};theme.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)))};theme.append(b)}const savedTheme=(()=>{try{return localStorage.getItem('iinnkk.home.theme78')}catch{return null}})();theme.querySelector('[data-theme="'+(savedTheme==='river'?'river':'stars')+'"]').click();
  const wrap=E('div','timelineFrame73');wrap.append(prev,rail,next);section.append(title,theme,intro,wrap);
