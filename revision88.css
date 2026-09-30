@@ -209,3 +209,66 @@
     padding:4px!important;
   }
 }
+
+
+/* V88f homepage actions row: theme → reminder → my works, never covering logo */
+#annotationHome .annotationBrand{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  align-items:flex-start!important;
+}
+#homeActions88{
+  order:90!important;
+  width:100%!important;
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:8px!important;
+  margin-top:8px!important;
+  margin-left:0!important;
+  white-space:nowrap!important;
+}
+#homeActions88 .homeTheme78.homeTheme88{
+  position:static!important;
+  display:inline-flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  align-items:center!important;
+  gap:3px!important;
+  margin:0!important;
+  flex:0 0 auto!important;
+}
+#homeActions88>button{
+  flex:0 0 auto!important;
+  margin:0!important;
+}
+#homeActions88 #continueWriting{
+  margin-left:0!important;
+}
+/* Old cluster is obsolete */
+#themeReminder88{display:contents!important}
+
+/* Keep redo alive for JS history, but remove the circled visible arrow. */
+#redo.hideRedo88f{display:none!important}
+
+@media(max-width:560px){
+  #homeActions88{
+    gap:5px!important;
+    margin-top:7px!important;
+    padding-left:0!important;
+    overflow:visible!important;
+  }
+  #homeActions88 .homeTheme78.homeTheme88{gap:2px!important}
+  #homeActions88 .homeTheme78.homeTheme88 button{
+    height:24px!important;
+    padding:2px 5px 3px!important;
+    font-size:9px!important;
+  }
+  #homeActions88>button{
+    min-width:0!important;
+    padding-left:10px!important;
+    padding-right:10px!important;
+  }
+}
