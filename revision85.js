@@ -95,7 +95,7 @@
 
  // Country · author · work attribution, theory full paragraph, no commentary.
  function quoteLabel(q){const title=q.title||String(q.source||q.s||'').match(/《([^》]+)》/)?.[1]||'';return [q.country||q.era||q.dynasty||'中国',q.author||'',title].filter(Boolean).join('·')}
- document.addEventListener('quote-changed',e=>{const q=e.detail||{};window.currentQuote=q;const label=quoteLabel(q);const source=$('quoteSource'),head=document.querySelector('.bookmarkSource79');if(source)source.textContent=label;if(head)head.textContent=label;if(q.cat==='theory'){if($('quoteText'))$('quoteText').textContent=q.q||'';if($('quoteExpanded'))$('quoteExpanded').textContent=q.paragraph||q.q||''}},true);
+ document.addEventListener('quote-changed',e=>{const q=e.detail||{};window.currentQuote=q;const label=quoteLabel(q);const source=$('quoteSource'),head=document.querySelector('.bookmarkSource79');if(source)source.textContent=label;if(head)head.textContent=label;if(q.cat==='theory'){if($('quoteText'))$('quoteText').textContent=q.q||'';if($('quoteExpanded'))$('quoteExpanded').textContent=q.paragraph||q.q||''}});
 
  // Large elegant palette family for every quote category.
  const hash=s=>{let h=2166136261;for(const ch of String(s)){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0};
@@ -104,5 +104,6 @@
  function contrast(hex){const x=hex.replace('#',''),r=parseInt(x.slice(0,2),16),g=parseInt(x.slice(2,4),16),b=parseInt(x.slice(4,6),16);return (.2126*r+.7152*g+.0722*b)/255>.56?'#181817':'#f8f4ea'}
  function applyPalette(p){if(!p)return;A.applyLiteraryPalette61?.(p);for(const item of A.sealItems?.()||[])if(item?.extra)A.editSeal?.(item.key,{config:{color:p.seal}});document.documentElement.style.setProperty('--bookmark-bg85',p.ink);document.documentElement.style.setProperty('--bookmark-fg85',contrast(p.ink));document.documentElement.style.setProperty('--bookmark-seal85',p.seal)}
  document.addEventListener('quote-changed',e=>{const q=e.detail||{};applyPalette(palette((q.id||'')+'|'+(q.q||'')+'|'+(q.author||'')))});
+ setTimeout(()=>D.refresh?.(),0);
  window.Revision85={ready:true,palette,applyPalette,focusUpperRight};
 })();
