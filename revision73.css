@@ -7,3 +7,17 @@ body:not(.home-open) #board,body:not(.home-open) #board *,body:not(.home-open) #
 @media(max-width:600px){#writingQuick73{padding:0 5px;gap:5px}#writingQuick73 button{font-size:10px;letter-spacing:0}#dailyDialog.quoteBookmark73{width:min(176px,48vw)!important;top:53px}#photoInside73{bottom:8px}}
 
 #previewEffects55.photoActive63{max-height:min(36dvh,230px)}#previewEffects55.photoActive63 .finalRail54{display:flex;max-height:50px;min-height:40px;flex:0 0 auto;overflow-x:auto}#previewEffects55.photoActive63 .finalNote54{display:none}
+
+/* V89 source cleanup: the quote card no longer owns a historical vermilion fallback. */
+#dailyDialog.quoteBookmark73{
+ background:var(--reader-bg89,var(--reader-bg88,#3d3d3d))!important;
+ color:var(--reader-fg89,var(--reader-fg88,#fff))!important;
+ overflow:visible!important;
+ touch-action:auto!important;
+}
+#dailyDialog.quoteBookmark73 .dialogHead,
+#dailyDialog.quoteBookmark73 .dialogBody,
+#dailyDialog.quoteBookmark73 #quoteText,
+#dailyDialog.quoteBookmark73 #quoteExpanded,
+#dailyDialog.quoteBookmark73 .bookmarkNav81{background:transparent!important}
+#dailyDialog.quoteBookmark73 .dialogBody>:not(#quoteText){display:initial!important}
