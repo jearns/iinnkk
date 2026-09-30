@@ -1,0 +1,6 @@
+/* V86 */
+#homeTop86{display:inline-grid!important;place-items:center!important;flex:0 0 38px!important;width:38px!important;min-width:38px!important;max-width:38px!important;height:38px!important;padding:4px!important;margin:0 4px 0 0!important;border:0!important;background:transparent!important;color:inherit!important;border-radius:0!important}
+#homeTop86 svg{display:block;width:27px;height:27px}
+.writerMenu86{order:999!important;flex:0 0 36px!important}
+#writerFixed85{order:1}#writingQuick73{order:2}
+@media(max-width:560px){#homeTop86{width:34px!important;min-width:34px!important;max-width:34px!important;height:34px!important}#homeTop86 svg{width:24px;height:24px}}
