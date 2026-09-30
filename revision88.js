@@ -143,24 +143,24 @@
    const redo=$('redo');if(redo&&redo.nextElementSibling===menu)actionBar.insertBefore(redo,guideBtn);
  }
 
- // 7. V88e responsive theme/reminder cluster + local-time automatic day/night.
+ // 7. V88f: theme + reminder + my works are one dedicated row, never inside the logo area.
  if(theme){
    const brand=home.querySelector('.annotationBrand');
-   const candidates=[...brand?.querySelectorAll('button')||[]];
-   const reminder=candidates.find(b=>/天后|今天|明天|国庆|中秋|元旦|春节|提醒|日历|倒计时/.test((b.textContent||'')+' '+(b.title||'')+' '+(b.getAttribute('aria-label')||'')));
-   if(reminder){
-     let cluster=$('themeReminder88');
-     if(!cluster){
-       cluster=document.createElement('div');
-       cluster.id='themeReminder88';
-       reminder.parentElement?.insertBefore(cluster,reminder);
-     }
-     cluster.append(theme,reminder);
+   const reminder=[...brand?.querySelectorAll('button')||[]].find(b=>/天后|今天|明天|国庆|中秋|元旦|春节|提醒|日历|倒计时/.test((b.textContent||'')+' '+(b.title||'')+' '+(b.getAttribute('aria-label')||'')));
+   const works=$('continueWriting');
+   let actions=$('homeActions88');
+   if(!actions){
+     actions=document.createElement('div');
+     actions.id='homeActions88';
+     brand?.append(actions);
    }
+   if(theme)actions.append(theme);
+   if(reminder)actions.append(reminder);
+   if(works)actions.append(works);
    const river=[...theme.querySelectorAll('button')].find(b=>/浅色河流/.test(b.textContent||''));
    const star=[...theme.querySelectorAll('button')].find(b=>/深色星空/.test(b.textContent||''));
    function autoTheme88(){
-     const hour=new Date().getHours(); // browser/device local timezone
+     const hour=new Date().getHours();
      const target=(hour>=18||hour<6)?star:river;
      if(target&&target.getAttribute('aria-pressed')!=='true')target.click();
      document.documentElement.dataset.autoTheme88=(hour>=18||hour<6)?'dark':'light';
@@ -174,14 +174,25 @@
  const account=$('account47');if(account)account.classList.add('accountWhite88e');
  new MutationObserver(()=>{$('account47')?.classList.add('accountWhite88e')}).observe(home,{childList:true,subtree:true});
 
- // 8. Final writer top-right compact text controls:
- // 撤销 → 返回 → 清屏 → 预览/书写 → 下载 → hamburger.
+ // 8. Final writer top-right compact text controls.
+ // Redo/恢复 stays in DOM for the core history engine but is removed from this visible strip.
  const actionBar88=$('topActions');
  if(actionBar88){
    const guide=$('textGuide88');if(guide)guide.hidden=true;
-   const undo=$('undo'),back=$('writerBack88'),clear=$('clear'),fit=$('fitView'),download=$('export'),menu=$('menuToggle');
+   const undo=$('undo'),redo=$('redo'),back=$('writerBack88'),clear=$('clear'),fit=$('fitView'),download=$('export'),menu=$('menuToggle');
+   if(redo){redo.hidden=true;redo.classList.add('hideRedo88f')}
    const label=(el,text)=>{if(!el)return;el.classList.add('writerText88e');el.replaceChildren(document.createTextNode(text));el.title=text;el.setAttribute('aria-label',text)};
    label(undo,'撤销');label(back,'返回');label(clear,'清屏');label(download,'下载');
+   if(back){
+     back.title='返回上一步';
+     back.setAttribute('aria-label','返回上一步');
+     back.onclick=()=>{
+       const open=[...document.querySelectorAll('dialog[open]')].at(-1);
+       if(open){open.close();return}
+       if(A.isOverview55?.()){fit?.click();return}
+       document.dispatchEvent(new CustomEvent('writer-back88',{detail:{source:'toolbar'}}));
+     };
+   }
    function syncFitLabel88(){if(!fit)return;label(fit,A.isOverview55?.()?'书写':'预览')}
    syncFitLabel88();
    fit?.addEventListener('click',()=>requestAnimationFrame(()=>requestAnimationFrame(syncFitLabel88)));
