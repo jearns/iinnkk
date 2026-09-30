@@ -132,10 +132,10 @@
      backBtn=document.createElement('button');
      backBtn.id='writerBack88';
      backBtn.type='button';
-     backBtn.title='返回首页';
-     backBtn.setAttribute('aria-label','返回首页');
+     backBtn.title='返回上一步';
+     backBtn.setAttribute('aria-label','返回上一步');
      backBtn.innerHTML='<svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 8 12l7 7"/><path d="M8 12h11"/></svg>';
-     backBtn.onclick=()=>window.AnnotationHome?.show?.();
+     backBtn.onclick=()=>document.dispatchEvent(new CustomEvent('writer-back88',{detail:{source:'toolbar-init'}}));
    }
    const fit=$('fitView'),clear=$('clear'),undo=$('undo'),menu=$('menuToggle');
    for(const el of [guideBtn,fit,clear,undo,backBtn,menu])if(el)actionBar.append(el);
