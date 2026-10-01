@@ -297,7 +297,10 @@ function writeAtPreview96(clientX,clientY){
  const x=Math.max(0,Math.min(b.w,(clientX-r.left-v.x)/v.scale)),y=Math.max(0,Math.min(b.h,(clientY-r.top-v.y)/v.scale));
  touches.clear();previewTap=null;singleTap=null;secondTap=null;gestureTap=null;previousTap=null;gesturing=false;gestureCenter=null;pointer=null;threeFingerPan=false;
  cancelAutoMove();wrapFocus=null;pendingWrap=null;overview=false;focused=true;writingOnPhoto=true;
- resize();locate(x,y);updateGuide();return true;
+ const effects=$('previewEffects55');if(effects)effects.hidden=true;
+ document.body.classList.remove('preview-open56');
+ const target={x,y};resize();locate(x,y);wrapFocus=target;updateGuide();
+ requestAnimationFrame(()=>{if(!overview&&!active){resize();locate(x,y);wrapFocus=target;updateGuide()}});return true;
 }
 function paperScreen(){const b=sheetBounds();if(!overview)return{scale:S,x:-camera.x*S,y:-camera.y*S};const mb=Mounting.box(mountKey,b.w,b.h),scale=Math.min(W/mb.width,H/mb.height)*previewView.zoom;return{scale,x:(W-mb.width*scale)/2+mb.x*scale+previewView.x,y:(H-mb.height*scale)/2+mb.y*scale+previewView.y}}
 function photoHit(x,y){if(overview&&$('sceneChoice').value!=='none'&&!$('sceneChoice').value.startsWith('annotation:'))return-1;const v=paperScreen(),box=live.getBoundingClientRect(),p={x:(x-box.left-v.x)/v.scale,y:(y-box.top-v.y)/v.scale};return photoRects().findIndex(r=>p.x>=r.x&&p.y>=r.y&&p.x<=r.x+r.w&&p.y<=r.y+r.h)}
