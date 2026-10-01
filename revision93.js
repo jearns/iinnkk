@@ -2,7 +2,7 @@
 const $=id=>document.getElementById(id),A=AnnotationApp;
 const actions=document.querySelector('#previewEffects55 .previewActions56');if(actions){actions.classList.add('previewActions93');actions.hidden=false;actions.removeAttribute('aria-hidden');for(const button of actions.querySelectorAll('button')){button.tabIndex=0;button.classList.remove('primary')}for(const id of ['previewRandom79','previewReset73','returnWriting59','generateArtwork59'])if($(id))actions.append($(id));$('previewEffects55').append(actions)}
 // Arrange controls inside their panel, then let its ResizeObserver reserve only actual height.
-if(actions){const panel=$('previewEffects55');const place=()=>{if(actions.parentElement!==panel||panel.lastElementChild!==actions)panel.append(actions)};new MutationObserver(place).observe(panel,{childList:true,subtree:true});place()}
+if(actions){const panel=$('previewEffects55');const place=()=>{if(actions.id==='previewFloating97')return;if(actions.parentElement!==panel||panel.lastElementChild!==actions)panel.append(actions)};new MutationObserver(place).observe(panel,{childList:true,subtree:true});place()}
 const left=$('writerLeft90');if(left){left.prepend($('topAddPaper90'));left.prepend($('topQuotes'))}
 const swatches={
  中国:[['中国红黄紫','#b6232d','#ffe49a','#6b347a'],['中国红与墨','#f5ead5','#201b19','#b52f2b']],
