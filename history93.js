@@ -1,0 +1,29 @@
+/* Dates are evidence-labelled: reminder slots are never presented as historical dates. */
+(function init(){if(!window.Revision90?.ready||!window.Moments){setTimeout(init,60);return}
+const $=id=>document.getElementById(id),E=(tag,text)=>{const n=document.createElement(tag);if(text)n.textContent=text;return n};
+const events=[
+ {year:-219,yearText:'公元前219年',md:'05-01',title:'李斯与峄山刻石',dateNote:'年份有据；5月1日为策展纪念日，非创作日期',body:'秦始皇东巡峄山，立石颂秦功德，传统归于李斯小篆。今传碑本涉及后世摹刻，不当作秦代原石墨迹。',source:'https://tcmb.culture.tw/zh-tw/detail?id=14000102744&indexCode=MOCCOLLECTIONS'},
+ {year:353,yearText:'353年 · 永和九年',lunar:'3-3',title:'王羲之写《兰亭序》',dateNote:'史载夏历三月初三；每年按农历纪念',body:'兰亭雅集，王羲之为诗集作序。原迹不存，传世唐摹本与刻本延续了它的影响。',source:'https://www.dpm.org.cn/lemmas/242565.html'},
+ {year:649,yearText:'649年及唐代记载',md:'07-01',title:'《兰亭序》与唐太宗昭陵的传说',dateNote:'殉葬说见于记载，未获考古证实；7月1日为策展纪念日',body:'唐太宗推重王羲之、命人摹写传播《兰亭序》。原迹随葬昭陵是传统记载，不应写作已证实的出土事实。',source:'https://www.dpm.org.cn/collection/handwriting/228277.html'},
+ {year:750,yearText:'传为唐代 · 创作年代待考',md:'08-01',title:'传张旭《古诗四帖》',dateNote:'作者归属和年代有争议；8月1日为策展纪念日',body:'这卷狂草收录庾信与谢灵运的诗文。张旭是传统书法归属，并不是四首诗的文学作者。',source:'https://www.dpm.org.cn/Uploads/File/2022/03/09/u622826aeac161.pdf'},
+ {year:758,yearText:'758年 · 乾元元年',lunar:'9-3',title:'颜真卿写《祭侄文稿》',dateNote:'文稿自署夏历九月初三；每年按农历纪念',body:'颜真卿祭悼颜季明，以涂改和笔势留下悲恸中的真实书写，成为行书史上的重要原迹。',source:'https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P'},
+ {year:1082,yearText:'1082年作诗 · 书写在此后',md:'04-04',title:'苏轼《黄州寒食诗》与《寒食帖》',dateNote:'4月4日为策展纪念日；不等同于1082年书写日',body:'黄州谪居第三年写成寒食诗，随后书成此卷。必须区分诗作年代与书迹完成日期。',source:'https://digitalarchive.npm.gov.tw/Collection/Detail/14714?dep=P'},
+ {year:1922,yearText:'1922年前后',md:'11-01',title:'溥仪以赏赐名义将宫藏书画运出故宫',dateNote:'持续发生的事件；11月1日为策展纪念日',body:'溥仪与溥杰将精选书画和古籍运出宫，导致包括书法国宝在内的宫藏流散。不是发生于单一确定日的行动。',source:'https://img.dpm.org.cn/Uploads/File/2024/01/29/u65b7138df3f59.pdf'},
+ {year:1948,yearText:'1948年12月23日',md:'12-23',title:'故宫精选文物首批启运台湾',dateNote:'公历日期有馆方记载',body:'首批文物由中鼎号于12月23日起运、26日抵达基隆；书画珍藏在迁运与后续保管中得以延续。',source:'https://south.npm.gov.tw/ActivitiesDetailC006110.aspx?Cond=306e5c89-9d01-4810-9842-9f569771c869'},
+ {year:1952,yearText:'1952年1月5日',md:'01-05',title:'墨人会成立：日本前卫书法走向世界',dateNote:'公历成立日期有据',body:'森田子龙、井上有一等在京都结成墨人会，推动书法与国际现代艺术对话。在书法与抽象表现艺术之间建立了新的交流。',source:'https://exh.shibunkaku.co.jp/exhibitions/12-morita-shiryu-bokujin/'},
+ {year:2010,yearText:'2010年6月3日',md:'06-03',title:'《砥柱铭》拍出4.368亿元',dateNote:'公历成交日期有据；纪录限定为当时',body:'黄庭坚《砥柱铭》在保利春拍含佣金成交4.368亿元，创当时中国艺术品拍卖成交纪录；不称为今天所有艺术品的世界最高价。',source:'https://www.jjckb.cn/invest/2010-06/11/content_227647.htm'}
+];
+const lunarFormat=new Intl.DateTimeFormat('en-u-ca-chinese',{month:'numeric',day:'numeric'});
+function dayMatch(event,date){if(event.lunar){const parts=lunarFormat.formatToParts(date);return parts.find(p=>p.type==='month')?.value+'-'+parts.find(p=>p.type==='day')?.value===event.lunar}return event.md===String(date.getMonth()+1).padStart(2,'0')+'-'+String(date.getDate()).padStart(2,'0')}
+function onDay(date){return events.filter(e=>dayMatch(e,date))}
+const dialog=E('dialog');dialog.id='historyMoments93';const head=E('div');head.className='dialogHead';head.append(E('h2','历史上的亲笔'));const close=E('button','完成 ×');close.onclick=()=>dialog.close();head.append(close);dialog.append(head);const body=E('div');body.className='dialogBody';dialog.append(body);document.body.append(dialog);
+body.append(E('p','确切日期、农历纪念与策展纪念日分别标注。没有可靠日月的事件只安排提醒，不伪造历史日期。'));const date=E('input');date.type='date';date.setAttribute('aria-label','查看历史上的这一天');const iso=d=>[d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');date.value=iso(new Date());body.append(date);const today=E('section');today.className='historyToday93';body.append(today);function renderToday(){today.replaceChildren(E('h3',date.value+' · 当日纪念'));const d=new Date(date.value+'T12:00:00'),rows=onDay(d);if(!rows.length)today.append(E('p','这一天没有已收录的书法纪念。可以浏览完整时间轴，或记下自己的重要日子。'));for(const row of rows)today.append(E('strong',row.title),E('p',row.dateNote));for(const row of Moments.eventsOn(d).filter(e=>e.personal))today.append(E('strong','我的纪念日 · '+row.title),E('p',row.prompt))}date.onchange=renderToday;
+const timeline=E('section');timeline.className='historyList93';body.append(timeline);for(const event of events){const card=E('article');card.className='historyEvent93';card.append(E('small',event.yearText),E('h3',event.title),E('p',event.body),E('small',event.dateNote));const link=E('a','查看史料');link.href=event.source;link.target='_blank';link.rel='noopener noreferrer';card.append(E('br'),link);timeline.append(card)}
+const personal=E('section');personal.className='historyPersonal93';personal.append(E('h3','我的亲笔纪念日'),E('p','保存在这台设备；可导出到系统日历。'));for(const id of ['momentForm','personalMoments']){const element=$(id);if(element)personal.append(element)}body.append(personal);const oldForm=$('momentForm'),oldSubmit=oldForm.onsubmit;oldForm.onsubmit=e=>{oldSubmit(e);setTimeout(renderToday,0)};
+function open(){renderToday();if(!dialog.open)dialog.showModal()}
+for(const id of ['homeMoments','calendarMoments','momentReminder']){const button=$(id);if(button){button.onclick=open;button.title='历史上的亲笔';button.setAttribute('aria-label','历史上的亲笔');if(id==='homeMoments')button.textContent='历史上的亲笔'}}
+// The old holiday-label observer must not replace this stable entry name.
+const homeButton=$('homeMoments');if(homeButton)new MutationObserver(()=>{if(homeButton.textContent!=='历史上的亲笔')homeButton.textContent='历史上的亲笔'}).observe(homeButton,{childList:true});
+const previousOpen=Moments.open;Moments.open=open;for(const button of document.querySelectorAll('.settingsTabs button'))if(button.textContent==='纪念日'){button.textContent='历史上的亲笔';button.onclick=open}
+window.History93={events,onDay,open,previousOpen};renderToday();
+})();

@@ -16,7 +16,7 @@ const server=http.createServer((req,res)=>{const file=path.join(root,req.url.spl
    for(const theme of ['stars','river']){
     await page.evaluate(theme=>{document.body.dataset.homeTheme=theme},theme);
     const colours=await page.locator('.annotationIntro strong,.annotationIntro small').evaluateAll(nodes=>nodes.map(node=>({colour:getComputedStyle(node).color,fill:getComputedStyle(node).webkitTextFillColor})));
-    assert(colours.every(c=>c.colour==='rgb(22, 46, 59)'&&c.fill===c.colour),`${width}: readable headline in ${theme}`);
+    assert(colours.every(c=>c.colour==='rgb(16, 47, 59)'&&c.fill===c.colour),`${width}: readable headline in ${theme}`);
    }
    await page.locator('#homeQuick47 button').filter({hasText:/^大字$/}).click();
    await page.waitForFunction(()=>!document.body.classList.contains('home-open'));

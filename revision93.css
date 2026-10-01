@@ -1,0 +1,25 @@
+/* V93: quiet, legible controls; the artwork keeps the available space. */
+body.home-open[data-home-theme] #annotationHome .annotationIntro::before{content:''!important;position:absolute!important;inset:0!important;z-index:-1!important;background:linear-gradient(90deg,rgba(246,249,248,.96),rgba(246,249,248,.84) 42%,rgba(246,249,248,.12) 70%,transparent)!important;pointer-events:none!important}
+body.home-open[data-home-theme] #annotationHome .annotationIntro :is(strong,small){position:relative!important;color:#102f3b!important;-webkit-text-fill-color:#102f3b!important;text-shadow:none!important}
+#topActions #writerLeft90{flex:1 1 auto!important;min-width:0!important;overflow-x:auto!important;overflow-y:hidden!important;flex-wrap:nowrap!important;touch-action:pan-x;scrollbar-width:none}
+#writerLeft90::-webkit-scrollbar{display:none}
+#writerRight90{flex:0 0 auto!important;flex-wrap:nowrap!important;position:relative;background:#f5f4f0}
+#writerLeft90 #topQuotes{order:-3!important}#writerLeft90 #topAddPaper90{order:-2!important}#writerLeft90 #annotationHomeButton{order:-1!important}
+body:not(.home-open) #topActions{display:flex!important;align-items:center!important;flex-wrap:nowrap!important;gap:5px!important;grid-template-columns:none!important}
+#previewEffects55 .previewActions56.previewActions93{display:flex!important;justify-content:center!important;align-items:center!important;gap:8px!important;width:100%!important;height:auto!important;min-height:52px!important;margin:10px 0 0!important;padding:6px 8px calc(6px + env(safe-area-inset-bottom))!important;border:0!important;border-radius:0!important;box-sizing:border-box!important;background:transparent!important;flex:none!important}
+#previewEffects55 .previewActions93 button{display:grid!important;place-items:center!important;flex:0 1 78px!important;width:78px!important;min-width:0!important;height:38px!important;margin:0!important;padding:4px 10px!important;border:1px solid #43595355!important;border-radius:7px!important;background:#f8faf8!important;color:#203c38!important;font:500 14px/1.2 system-ui!important;box-shadow:none!important}
+#previewEffects55{padding-bottom:0!important;min-height:0!important;max-height:min(42dvh,260px)!important}
+#previewEffects55 .finalRail54{min-height:0!important}
+#previewEffects55 .previewActions56.previewActions93{position:static!important;inset:auto!important;transform:none!important;min-width:0!important;max-width:100%!important}
+.authFeedback93{font-size:14px;line-height:1.6;margin:8px 0;white-space:pre-wrap}.authFeedback93:empty{display:none}.authFeedback93[data-state=error]{color:#a12626}.authFeedback93[data-state=success]{color:#20583c}
+.profileEdit83 label{display:grid;gap:5px;font-size:14px}.profilePrivacy93{display:flex!important;align-items:flex-start;gap:8px}.profilePrivacy93 input{width:auto!important}
+#historyMoments93{width:min(720px,94vw);max-height:88dvh}.historyIntro93{font-size:14px;line-height:1.6}.historyToday93{border-left:3px solid #b6372d;padding:0 12px;margin:16px 0}
+.historyList93{border-left:1px solid #49646055;margin:16px 8px;padding-left:20px}.historyEvent93{position:relative;padding:0 0 22px}.historyEvent93::before{content:'';position:absolute;left:-25px;top:5px;width:8px;height:8px;border-radius:50%;background:#b6372d}.historyEvent93 h3{font-size:17px;margin:5px 0}.historyEvent93 p{font-size:14px;line-height:1.6;margin:6px 0}.historyEvent93 small{font-size:12px;color:#536763}.historyEvent93 a{font-size:13px;color:#204e61}.historyEvent93 button,.shareTools93 button{min-height:36px;font-size:14px}.historyPersonal93 form{display:grid;grid-template-columns:1fr 1fr;gap:8px}.historyPersonal93 input{width:100%;box-sizing:border-box}.historyPersonal93 label{font-size:14px}.historyPersonal93 [type=submit]{grid-column:1/-1}.shareTools93{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.sharePanel93 img{display:block;width:100%;max-height:55dvh;object-fit:contain}.sharePanel93 p{font-size:14px;line-height:1.6}.sharePanel93 input{font-size:14px}.sharePanel93 [role=status]{color:#315950}
+@media(max-width:600px){
+ body.home-open[data-home-theme] #annotationHome .annotationIntro::before{background:linear-gradient(0deg,rgba(246,249,248,.98),rgba(246,249,248,.8) 40%,transparent 90%)!important}
+ body:not(.home-open) .topStrip{height:48px!important;min-height:48px!important;box-sizing:border-box!important}
+ body:not(.home-open) #topActions{height:40px!important}
+ #topActions .tool90,#topActions #topQuotes{flex:0 0 28px!important;width:28px!important;min-width:28px!important;max-width:28px!important}
+ #writerRight90{gap:0!important}#writerLeft90{gap:2px!important}
+ #annotationHome #homeMoments{max-width:84px!important;white-space:normal!important;font-size:11px!important;line-height:1.2!important}
+}

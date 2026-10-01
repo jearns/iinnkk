@@ -58,7 +58,7 @@
  })};
  for(const method of ['setAll','add','replace']){const fn=D[method];if(fn)D[method]=rows=>fn(normalize(rows))}
  D.setAll(D.all());
- const label=q=>[q.country||q.era||q.dynasty||'',q.author||'',q.title||String(q.source||q.s||'').match(/《([^》]+)》/)?.[1]||''].filter(Boolean).join('·');
+ const label=q=>[q.country||'',q.dynasty||q.era||'',q.author||(q.cat==='film'?'编剧信息待核':q.cat==='heritage'?'文化地标介绍':''),q.title||String(q.source||q.s||'').match(/《([^》]+)》/)?.[1]||(q.cat==='heritage'?q.source||q.s:'')||''].filter((v,i,a)=>v&&a.indexOf(v)===i).join('·');
  const luma=hex=>{const c=hex.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);return .2126*c[0]+.7152*c[1]+.0722*c[2]};
  const fg=ink=>luma(ink)>.3?'#111111':'#fffaf0';
  function syncInk(){const ink=A.getState().brush.color;if(!/^#[0-9a-f]{6}$/i.test(ink))return;root.style.setProperty('--reader-ink90',ink);root.style.setProperty('--reader-text90',fg(ink));const rgb=ink.slice(1).match(/../g).map(x=>parseInt(x,16));root.style.setProperty('--reader-bg91','rgba('+rgb.join(',')+',.66)');}
@@ -125,24 +125,19 @@
  function closeExcerpts(){excerptMenu.hidden=true;quotes?.setAttribute('aria-expanded','false')}
  function placeExcerpts(){if(excerptMenu.hidden||!quotes)return;const r=quotes.getBoundingClientRect(),w=excerptMenu.offsetWidth,h=excerptMenu.offsetHeight;excerptMenu.style.left=Math.max(8,Math.min(innerWidth-w-8,r.left))+'px';excerptMenu.style.top=Math.max(8,Math.min(innerHeight-h-8,r.bottom+6))+'px'}
  function openExcerpts(){
-  showReader();jump.hidden=true;title.setAttribute('aria-expanded','false');
+  if(reader.open)reader.close();jump.hidden=true;title.setAttribute('aria-expanded','false');
   excerptMenu.replaceChildren();
   for(const category of document.querySelectorAll('#quoteMenu [data-quote-category]')){
    const button=el('button','',category.textContent);button.type='button';button.dataset.quoteCategory91=category.dataset.quoteCategory;button.setAttribute('role','menuitem');button.setAttribute('aria-current',String(category.dataset.quoteCategory===window.currentQuote?.cat));
    button.onclick=()=>{D.select(button.dataset.quoteCategory91);showReader();closeExcerpts()};excerptMenu.append(button);
   }
   excerptMenu.hidden=false;quotes?.setAttribute('aria-expanded','true');placeExcerpts();
-  const menuRect=excerptMenu.getBoundingClientRect(),rect=reader.getBoundingClientRect(),w=rect.width,h=rect.height;
-  const preferredLeft=menuRect.right+10+w<=innerWidth-8?menuRect.right+10:Math.max(8,(innerWidth-w)/2);
-  const preferredTop=preferredLeft>=menuRect.right?menuRect.top:menuRect.bottom+8;
-  reader.style.setProperty('left',Math.max(8,Math.min(innerWidth-w-8,preferredLeft))+'px','important');
-  reader.style.setProperty('top',Math.max(8,Math.min(innerHeight-h-8,preferredTop))+'px','important');
  }
  if(quotes){quotes.type='button';quotes.onclick=openExcerpts;quotes.setAttribute('aria-pressed','true');quotes.setAttribute('aria-haspopup','menu');quotes.setAttribute('aria-controls',excerptMenu.id);quotes.setAttribute('aria-expanded','false')}
  // One capture handler owns this action, so legacy toolbar click handlers cannot toggle it back off.
  document.addEventListener('click',e=>{if(e.target instanceof Element&&e.target.closest('#topQuotes')){e.preventDefault();e.stopImmediatePropagation();openExcerpts()}},true);
  document.addEventListener('pointerdown',e=>{if(!excerptMenu.hidden&&!excerptMenu.contains(e.target)&&!quotes?.contains(e.target))closeExcerpts()},true);
- document.addEventListener('keydown',e=>{if(e.key==='Escape')closeExcerpts()});addEventListener('resize',placeExcerpts);reader.addEventListener('close',closeExcerpts);
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeExcerpts()});addEventListener('resize',placeExcerpts);reader.addEventListener('close',()=>{if(excerptMenu.hidden)closeExcerpts()});
  $('dailyBar').hidden=true;
 
  for(const id of ['writingQuick73','writerFixed85','topRemove']){const e=$(id);if(e){e.hidden=true;document.body.append(e)}}

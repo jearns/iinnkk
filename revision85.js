@@ -43,7 +43,11 @@
  function setBottomPhoto(){for(const id of ['photoMode','quickPhotoMode']){const el=$(id);if(!el)continue;const o=[...el.options].find(x=>x.value==='bottom'||/下图上文/.test(x.textContent));if(o){el.value=o.value;el.dispatchEvent(new Event('change',{bubbles:true}))}}}
  let previewHint=$('previewHint85');if(!previewHint){previewHint=document.createElement('div');previewHint.id='previewHint85';previewHint.textContent='单指双击屏幕，即刻亲笔书写！';$('board')?.append(previewHint)}previewHint.hidden=true;
  function openPhotoPreview(){setBottomPhoto();setTimeout(()=>{if(!A.isOverview55?.())$('fitView')?.click();previewHint.hidden=false},100)}
- let lastTap=0;$('board')?.addEventListener('pointerup',e=>{if(!A.isOverview55?.()||e.pointerType==='mouse'&&e.button!==0)return;const now=Date.now();if(now-lastTap<360){$('fitView')?.click();previewHint.hidden=true;lastTap=0}else lastTap=now},{passive:true});
+ let lastTap=null,previewPointers85=new Map(),previewMulti85=false;
+ $('board')?.addEventListener('pointerdown',e=>{if(!A.isOverview55?.())return;previewPointers85.set(e.pointerId,{x:e.clientX,y:e.clientY,t:Date.now(),moved:false});if(previewPointers85.size>1){previewMulti85=true;lastTap=null}},true);
+ $('board')?.addEventListener('pointermove',e=>{const p=previewPointers85.get(e.pointerId);if(p&&Math.hypot(e.clientX-p.x,e.clientY-p.y)>8)p.moved=true},true);
+ const previewRelease85=e=>{const p=previewPointers85.get(e.pointerId);previewPointers85.delete(e.pointerId);const valid=p&&!p.moved&&!previewMulti85&&e.type==='pointerup'&&Date.now()-p.t<300&&A.isOverview55?.();if(!previewPointers85.size)previewMulti85=false;if(!valid){lastTap=null;return}const now=Date.now();if(lastTap&&now-lastTap.t<360&&Math.hypot(e.clientX-lastTap.x,e.clientY-lastTap.y)<28){$('fitView')?.click();previewHint.hidden=true;lastTap=null}else lastTap={t:now,x:e.clientX,y:e.clientY}};
+ for(const type of ['pointerup','pointercancel'])$('board')?.addEventListener(type,previewRelease85,{passive:true});
  $('fitView')?.addEventListener('click',()=>setTimeout(()=>{if(!A.isOverview55?.())previewHint.hidden=true},0));
 
  // Seal editor stays small and moves away from the seal that was touched.

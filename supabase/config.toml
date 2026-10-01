@@ -1,0 +1,5 @@
+[functions.wechat-oauth]
+verify_jwt = false
+
+[functions.wechat-share]
+verify_jwt = false
