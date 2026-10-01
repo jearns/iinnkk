@@ -2,6 +2,7 @@
  if(!window.Revision94?.ready||!window.Toolbar95||!document.getElementById('previewEffects55')){setTimeout(init97,60);return}
  const A=AnnotationApp,$=id=>document.getElementById(id),body=document.body,board=$('board'),panel=$('previewEffects55'),steps=panel.querySelector('.finalSteps54'),rail=panel.querySelector('.finalRail54');
  for(const b of steps.querySelectorAll('button')){const label=b.textContent.trim();if(label==='图文配置')b.textContent='图文';if(/文创/.test(label)){b.textContent='文创';b.hidden=true}if(label==='流变')b.hidden=true}
+ const bell=$('adminBell95'),reminder=$('homeMoments')||$('momentReminder'),theme=document.querySelector('#homeActions90 .homeTheme78');if(theme){if(reminder)theme.before(reminder);if(bell)theme.before(bell)}
  const ratio=[...steps.querySelectorAll('button')].find(b=>b.textContent==='比例'),current=steps.querySelector('[aria-current=true]');ratio?.click();requestAnimationFrame(()=>{const h=rail.getBoundingClientRect().height;panel.style.setProperty('--rail-height97',(h>0?h:54)+'px');if(current&&current!==ratio&&!current.hidden)current.click()});
  const actions=panel.querySelector('.previewActions93');$('previewReset73').hidden=true;actions.id='previewFloating97';board.append(actions);
  const flags={top:false,bottom:false,config:false},toggles={};
