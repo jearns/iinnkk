@@ -9,7 +9,7 @@ try{if(!localStorage.getItem('iinnkk.nav54')){const key='iinnkk.studio.v1',c=JSO
 // Branding and default seals.
 
 const brand=document.querySelector('.annotationBrand');if(brand){brand.querySelector('p').textContent='见墨如我·iinnkk.me';brand.querySelectorAll('.homeDomain44').forEach(e=>e.hidden=true)}
-if(['亲笔手书','今日亲笔'].includes($('headText').value))$('headText').value='亲笔书写';
+if(['亲笔手书','亲笔书写'].includes($('headText').value))$('headText').value='今日亲笔';
 document.querySelectorAll('[data-save-settings],#saveSettings').forEach(b=>b.textContent='保存设置');
 
 // Keep the status centered and factual.
