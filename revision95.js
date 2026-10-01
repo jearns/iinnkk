@@ -1,0 +1,27 @@
+/* User preferences keep real buttons and their original actions intact. */
+(function init(){if(!window.Revision94?.ready||!window.InkCloud75){setTimeout(init,70);return}
+const $=id=>document.getElementById(id);
+const names={female:['如梦令','一剪梅','蝶恋花','浣溪沙','醉花阴','点绛唇','玉楼春','满庭芳','菩萨蛮','鹊桥仙'],male:['江城子','满江红','念奴娇','水调歌头','破阵子','临江仙','定风波','望海潮','渔家傲','西江月'],any:['清平乐','青玉案','踏莎行','诉衷情','忆江南','采桑子','浪淘沙','长相思']};
+window.CiNames95={names,suggest:gender=>{const pool=names[gender]||names.any;return pool[Math.floor(Math.random()*pool.length)]}};
+const left=$('writerLeft90');for(const id of ['annotationHomeButton','myWorks','recordProcess','selectInk','topQuotes','topAddPaper90'])if($(id))left.append($(id));
+const groups=[$('writerLeft90'),$('writerRight90'),$('bottomIcons39')].filter(Boolean),key='ink.toolOrder95';let stored={};try{stored=JSON.parse(localStorage.getItem(key)||'{}')}catch{}
+const buttons=g=>[...g.children].filter(b=>b.tagName==='BUTTON'&&b.id&&b.id!=='annotationHomeButton');
+function paint(g){for(const b of buttons(g))b.style.setProperty('order','0','important')}
+const origins=new Map(groups.flatMap(g=>buttons(g).map(b=>[b.id,g.id])));
+for(const g of groups){const saved=Array.isArray(stored[g.id])?stored[g.id]:[];for(const id of saved){const b=$(id),origin=origins.get(id);if(b&&origin&&((origin==='bottomIcons39')===(g.id==='bottomIcons39')))g.append(b)}paint(g);if(g===left)g.prepend($('annotationHomeButton'))}
+let drag=null,suppressUntil=0;
+function persist(){const order=Object.fromEntries(groups.map(g=>[g.id,buttons(g).map(b=>b.id)]));try{localStorage.setItem(key,JSON.stringify(order))}catch{AnnotationApp.toast('顺序已调整；浏览器未允许保存偏好')}}
+function end(cancel=false){if(!drag)return;clearTimeout(drag.timer);if(drag.active){drag.button.classList.remove('reordering95');suppressUntil=performance.now()+600;if(!cancel)persist();else{for(const [g,ids] of drag.original)for(const id of ids)g.append($(id));for(const g of groups)paint(g);left.prepend($('annotationHomeButton'))}}drag=null}
+document.addEventListener('pointerdown',e=>{const b=e.target.closest('button'),g=b?.parentElement;if(!groups.includes(g)||b.id==='annotationHomeButton'||e.button>0)return;end();drag={button:b,x:e.clientX,y:e.clientY,id:e.pointerId,active:false,original:groups.map(g=>[g,buttons(g).map(b=>b.id)])};drag.timer=setTimeout(()=>{if(!drag)return;drag.active=true;b.classList.add('reordering95');b.setPointerCapture(e.pointerId);AnnotationApp.toast('拖动调整顺序，松手自动保存')},450)},true);
+document.addEventListener('pointermove',e=>{if(!drag||drag.id!==e.pointerId)return;if(drag.scrolling){e.preventDefault();drag.button.parentElement.scrollLeft-=e.clientX-drag.lastX;drag.lastX=e.clientX;return}if(!drag.active){if(Math.hypot(e.clientX-drag.x,e.clientY-drag.y)>9){const g=drag.button.parentElement;if(e.pointerType==='touch'&&g.scrollWidth>g.clientWidth&&Math.abs(e.clientX-drag.x)>Math.abs(e.clientY-drag.y)){clearTimeout(drag.timer);drag.scrolling=true;g.scrollLeft-=e.clientX-drag.x;drag.lastX=e.clientX;drag.button.setPointerCapture(e.pointerId);e.preventDefault()}else end()}return}e.preventDefault();e.stopPropagation();const target=document.elementFromPoint(e.clientX,e.clientY)?.closest('button');if(!target||target===drag.button||target.id==='annotationHomeButton')return;const targetGroup=target.parentElement,sourceGroup=drag.button.parentElement;if(!groups.includes(targetGroup)||((targetGroup.id==='bottomIcons39')!==(sourceGroup.id==='bottomIcons39')))return;const r=target.getBoundingClientRect();if(e.clientX<r.x+r.width/2)target.before(drag.button);else target.after(drag.button);paint(targetGroup);paint(sourceGroup)},true);
+document.addEventListener('pointerup',e=>{if(drag?.id!==e.pointerId)return;if(drag.active||drag.scrolling){e.preventDefault();e.stopPropagation();suppressUntil=performance.now()+600}end()},true);document.addEventListener('pointercancel',()=>end(true),true);
+const suppressClick=()=>performance.now()<suppressUntil;
+document.addEventListener('click',e=>{if(suppressClick()&&groups.some(g=>g.contains(e.target))){e.preventDefault();e.stopImmediatePropagation()}},true);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')end(true);if(!e.altKey||!['ArrowLeft','ArrowRight'].includes(e.key))return;const b=e.target.closest('button'),g=b?.parentElement;if(!groups.includes(g)||b.id==='annotationHomeButton')return;const pool=buttons(g),i=pool.indexOf(b),other=pool[i+(e.key==='ArrowLeft'?-1:1)];if(!other)return;e.preventDefault();if(e.key==='ArrowLeft')other.before(b);else other.after(b);paint(g);persist()});
+for(const g of groups)for(const b of buttons(g))b.dataset.reorder95='true';
+window.Toolbar95={suppressClick,persist};
+function saveLabels(){const top=$('export'),bottom=$('generateArtwork59');if(top){top.dataset.caption90='保存';top.querySelector('span')?.replaceChildren('保存');top.title='保存作品';top.setAttribute('aria-label','保存作品')}if(bottom){bottom.textContent='保存';bottom.title='保存作品';bottom.setAttribute('aria-label','保存作品')}}saveLabels();
+const heritageLabel=q=>String(q.source||q.s||'').split(' · ')[0].replace(/\s*·\s*/g,'·');
+document.addEventListener('quote-changed',e=>{const q=e.detail||window.currentQuote;if(q?.cat!=='heritage')return;const label=heritageLabel(q);for(const selector of ['#quoteSource','.bookmarkSource81','#dailyDialog .readerSource90']){const el=document.querySelector(selector);if(el)el.textContent=label}});
+window.Revision95={ready:true,heritageLabel};
+})();

@@ -58,7 +58,7 @@
  })};
  for(const method of ['setAll','add','replace']){const fn=D[method];if(fn)D[method]=rows=>fn(normalize(rows))}
  D.setAll(D.all());
- const label=q=>[q.country||'',q.dynasty||q.era||'',q.author||(q.cat==='film'?'编剧信息待核':q.cat==='heritage'?'文化地标介绍':''),q.title||String(q.source||q.s||'').match(/《([^》]+)》/)?.[1]||(q.cat==='heritage'?q.source||q.s:'')||''].filter((v,i,a)=>v&&a.indexOf(v)===i).join('·');
+ const label=q=>q.cat==='heritage'?String(q.source||q.s||'').split(' · ')[0].replace(/\s*·\s*/g,'·'):[q.country||'',q.dynasty||q.era||'',q.author||(q.cat==='film'?'编剧信息待核':q.cat==='heritage'?'文化地标介绍':''),q.title||String(q.source||q.s||'').match(/《([^》]+)》/)?.[1]||(q.cat==='heritage'?q.source||q.s:'')||''].filter((v,i,a)=>v&&a.indexOf(v)===i).join('·');
  const luma=hex=>{const c=hex.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);return .2126*c[0]+.7152*c[1]+.0722*c[2]};
  const fg=ink=>luma(ink)>.3?'#111111':'#fffaf0';
  function syncInk(){const ink=A.getState().brush.color;if(!/^#[0-9a-f]{6}$/i.test(ink))return;root.style.setProperty('--reader-ink90',ink);root.style.setProperty('--reader-text90',fg(ink));const rgb=ink.slice(1).match(/../g).map(x=>parseInt(x,16));root.style.setProperty('--reader-bg91','rgba('+rgb.join(',')+',.66)');}
@@ -135,7 +135,7 @@
  }
  if(quotes){quotes.type='button';quotes.onclick=openExcerpts;quotes.setAttribute('aria-pressed','true');quotes.setAttribute('aria-haspopup','menu');quotes.setAttribute('aria-controls',excerptMenu.id);quotes.setAttribute('aria-expanded','false')}
  // One capture handler owns this action, so legacy toolbar click handlers cannot toggle it back off.
- document.addEventListener('click',e=>{if(e.target instanceof Element&&e.target.closest('#topQuotes')){e.preventDefault();e.stopImmediatePropagation();openExcerpts()}},true);
+ document.addEventListener('click',e=>{if(e.target instanceof Element&&e.target.closest('#topQuotes')){if(window.Toolbar95?.suppressClick()){e.preventDefault();e.stopImmediatePropagation();return}e.preventDefault();e.stopImmediatePropagation();openExcerpts()}},true);
  document.addEventListener('pointerdown',e=>{if(!excerptMenu.hidden&&!excerptMenu.contains(e.target)&&!quotes?.contains(e.target))closeExcerpts()},true);
  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeExcerpts()});addEventListener('resize',placeExcerpts);reader.addEventListener('close',()=>{if(excerptMenu.hidden)closeExcerpts()});
  $('dailyBar').hidden=true;
@@ -145,7 +145,7 @@
  const settings=el('button');settings.id='writerSettings90';settings.type='button';decorate(settings,'设置','M4 4h16v16H4zM8 8h8M8 12h8M8 16h8');settings.onclick=()=>A.openDialog('brushDialog');extras.append(settings);
  const menu=$('menuToggle');menu.removeAttribute('data-open');menu.setAttribute('aria-haspopup','dialog');menu.setAttribute('aria-controls','brushDialog');menu.onclick=()=>{const settings=$('brushDialog');settings.setAttribute('aria-label','本站全局设置');settings.querySelector('.dialogHead h2').textContent='本站全局设置';A.openDialog('brushDialog')};
  let lastView;function syncView(){const overview=A.isOverview55();if(lastView!==overview||!$('fitView').querySelector('span')){decorate($('fitView'),overview?'书写':'预览',paths[overview?'write':'preview']);lastView=overview}wm.hidden=!overview;}
- for(const [id,name,type] of [['undo','撤销','undo'],['redo','返回','redo'],['clear','清屏','clear'],['export','下载','download'],['menuToggle','菜单','menu']])decorate($(id),name,paths[type]);
+ for(const [id,name,type] of [['undo','撤销','undo'],['redo','返回','redo'],['clear','清屏','clear'],['export','保存','download'],['menuToggle','菜单','menu']])decorate($(id),name,paths[type]);
  const wm=el('div','previewWatermark90');wm.id='previewWatermark90';wm.innerHTML='<strong>单指双击，即刻书写</strong><small>见墨·iinnkk.me·如我</small>';$('board').append(wm);
  $('hint').hidden=true;$('previewHint85')?.remove();document.querySelectorAll('.brandWatermark44').forEach(e=>e.remove());
  const actionsPreview=document.querySelector('#previewEffects55 .previewActions56');
@@ -160,6 +160,6 @@
  // Core emits this after state changes, so mode labels/watermark/ink cannot drift.
  document.addEventListener('ink-view-changed90',()=>{syncView();syncInk()});
  new MutationObserver(()=>{if(reader.open){syncInk();updateReader()}}).observe(reader,{attributes:true,attributeFilter:['open']});
- document.title='今日亲笔';root.classList.add('v88-ready','v89-ready','v90-ready');syncView();updateReader();
+ root.classList.add('v88-ready','v89-ready','v90-ready');syncView();updateReader();
  window.Revision88={ready:true,palette,applyPalette};window.Revision89={ready:true};window.Revision90={ready:true,syncView,syncInk,normalize,autoTheme,openExcerpts};window.Revision91={ready:true};
 })();

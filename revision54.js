@@ -7,7 +7,7 @@ const A=AnnotationApp,U=InkStudio50,$=id=>document.getElementById(id),E=(tag,att
 try{if(!localStorage.getItem('iinnkk.nav54')){const key='iinnkk.studio.v1',c=JSON.parse(localStorage.getItem(key)||'null');if(c?.nav?.length){const one=id=>c.nav.find(n=>n.id===id);const single=one('single'),copy=one('copy'),letter=one('letter');if(single&&copy&&letter){letter.title='创作';letter.zoom=200;letter.size=35;c.nav=[single,copy,{...copy,id:'photo',title:'图文',format:'letter',layout:'free',size:35,zoom:200},letter,...c.nav.filter(n=>!['single','copy','letter'].includes(n.id))];localStorage.setItem(key,JSON.stringify(c))}}localStorage.setItem('iinnkk.nav54','1')}}catch{}
 
 // Branding and default seals.
-document.title='今日亲笔·见墨如我·iinnkk.me';
+
 const brand=document.querySelector('.annotationBrand');if(brand){brand.querySelector('p').textContent='见墨如我·iinnkk.me';brand.querySelectorAll('.homeDomain44').forEach(e=>e.hidden=true)}
 if(['亲笔手书','今日亲笔'].includes($('headText').value))$('headText').value='亲笔书写';
 document.querySelectorAll('[data-save-settings],#saveSettings').forEach(b=>b.textContent='保存设置');

@@ -3,7 +3,7 @@
  if(!window.Revision86?.ready||!window.AnnotationApp?.ready||!document.getElementById('annotationHome')){setTimeout(init87,45);return}
  const $=id=>document.getElementById(id),A=AnnotationApp;
 
- document.title='今日亲笔';
+
 
  // Reset labels now match the destructive V87 reset behavior implemented in app.js.
  for(const id of ['resetSettings','topReset']){const el=$(id);if(el){const label='重置：笔径70 · 缩放100% · 斗方，并清空图片、临帖和全部当前内容';el.title=label;el.setAttribute('aria-label',label)}}
