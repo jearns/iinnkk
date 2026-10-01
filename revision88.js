@@ -79,30 +79,24 @@
  for(const child of body.children)child.hidden=child!==text;text.hidden=false;
  function updateReader(q){q=q||window.currentQuote||{};title.textContent=label(q)||'好词好句';$('quoteSource').textContent=label(q);const raw=(q.cat==='theory'?q.paragraph||q.original:q.full||q.text)||q.q||'';text.textContent=['poetry','moon','dongpo'].includes(q.cat)&&!raw.includes('\n')?raw.replace(/([。！？])/g,'$1\n').trim():raw;text.scrollTop=0;if(!jump.hidden)renderList();syncInk()}
  const showReader=()=>{syncInk();updateReader();if(!reader.open)reader.show()};$('readQuote').onclick=showReader;$('quoteDetails').onclick=showReader;
- // Short vertical swipes scroll the text; press and hold anywhere to move the entire reader.
- let drag=null,moved=false,holdTimer=0;
- const interactive='button,input,select,textarea,a,.readerJump90,.bookmarkNav81';
+ // Drag immediately from the text, title, empty space or navigation buttons.
+ let drag=null,moved=false;
  reader.addEventListener('pointerdown',e=>{
-  if(e.button>0||e.target.closest(interactive))return;
-  if(drag){clearTimeout(holdTimer);drag=null;return}
-  const r=reader.getBoundingClientRect(),inText=text.contains(e.target);
-  drag={id:e.pointerId,x:e.clientX,y:e.clientY,lastY:e.clientY,left:r.left,top:r.top,move:!inText,scroll:false};moved=false;
-  reader.setPointerCapture(e.pointerId);
-  if(inText)holdTimer=setTimeout(()=>{if(drag?.id===e.pointerId&&!drag.scroll)drag.move=true},180);
+  if(e.button>0||e.target.closest('input,select,textarea,a,.readerJump90'))return;
+  if(drag)return;
+  const r=reader.getBoundingClientRect();drag={id:e.pointerId,x:e.clientX,y:e.clientY,left:r.left,top:r.top};moved=false;
+  if(!e.target.closest('button')){e.preventDefault();reader.setPointerCapture(e.pointerId)}
   e.stopPropagation();
- });
+ },true);
  reader.addEventListener('pointermove',e=>{
   if(!drag||drag.id!==e.pointerId)return;
-  const dx=e.clientX-drag.x,dy=e.clientY-drag.y;
-  if(!drag.move&&Math.hypot(dx,dy)>=6){clearTimeout(holdTimer);drag.scroll=true}
-  if(drag.scroll){text.scrollTop-=e.clientY-drag.lastY;drag.lastY=e.clientY;e.preventDefault();return}
-  if(!drag.move||Math.hypot(dx,dy)<4)return;
-  moved=true;e.preventDefault();
+  const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.hypot(dx,dy)<3)return;
+  moved=true;e.preventDefault();if(!reader.hasPointerCapture(e.pointerId))reader.setPointerCapture(e.pointerId);
   reader.style.setProperty('left',Math.max(4,Math.min(innerWidth-reader.offsetWidth-4,drag.left+dx))+'px','important');
   reader.style.setProperty('top',Math.max(4,Math.min(innerHeight-reader.offsetHeight-4,drag.top+dy))+'px','important');
- });
- const endDrag=e=>{if(drag?.id!==e.pointerId)return;clearTimeout(holdTimer);if(reader.hasPointerCapture(e.pointerId))reader.releasePointerCapture(e.pointerId);drag=null;if(moved){e.preventDefault();setTimeout(()=>moved=false,0)}};
- reader.addEventListener('pointerup',endDrag);reader.addEventListener('pointercancel',endDrag);
+ },{capture:true,passive:false});
+ const endDrag=e=>{if(drag?.id!==e.pointerId)return;if(reader.hasPointerCapture(e.pointerId))reader.releasePointerCapture(e.pointerId);drag=null;if(moved){e.preventDefault();setTimeout(()=>moved=false,0)}};
+ reader.addEventListener('pointerup',endDrag,true);reader.addEventListener('pointercancel',endDrag,true);
  reader.addEventListener('click',e=>{if(moved){e.preventDefault();e.stopImmediatePropagation()}},true);
  // Restore the original three real navigation controls and their existing order state.
  const readerNav=reader.querySelector('.bookmarkNav81');

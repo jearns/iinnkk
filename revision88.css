@@ -133,3 +133,8 @@ body:not(.home-open) #dailyDialog.quoteBookmark73{z-index:2000!important}
 #excerptCategories91 button{display:block!important;width:100%!important;min-height:33px!important;padding:6px 9px!important;margin:0!important;border:0!important;border-radius:4px!important;background:transparent!important;color:inherit!important;text-align:left!important;font:12px/1.6 system-ui,sans-serif!important;white-space:normal!important}
 #excerptCategories91 button[aria-current=true]{font-weight:650!important;box-shadow:inset 0 0 0 1px #8887!important}
 #excerptCategories91 button:focus-visible{outline:2px solid currentColor;outline-offset:-2px}
+
+/* Suppress iOS text callouts and native selection while writing or moving the reader. */
+#board,#board *,#dailyDialog,#dailyDialog *{-webkit-touch-callout:none!important;-webkit-user-select:none!important;user-select:none!important}
+#dailyDialog,#dailyDialog .dialogHead,#dailyDialog .dialogBody,#dailyDialog #quoteExpanded,#dailyDialog .bookmarkNav81,#dailyDialog button{touch-action:none!important}
+#dailyDialog :is(input,textarea){-webkit-user-select:text!important;user-select:text!important}
