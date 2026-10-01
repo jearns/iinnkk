@@ -18,3 +18,5 @@ body.hide-config97 #previewEffects55{display:none!important}body.hide-config97.p
 
 #previewFloating97 button{display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:1 0 34px!important;width:auto!important;min-width:34px!important;white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important;padding:0 2px!important;font:500 12px/1.3 "Songti SC","Noto Serif CJK SC","STSong",serif!important;letter-spacing:.1em!important}
 #previewFloating97{gap:2px!important}
+
+#previewFloating97{display:none!important}.topRandom99{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:10px;min-width:32px;width:32px;padding:2px;border:0;background:transparent}
