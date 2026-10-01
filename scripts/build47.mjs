@@ -4,7 +4,7 @@ import {createHash} from 'node:crypto';
 import path from 'node:path';
 
 const root=process.cwd();
-const release=(await readFile('VERSION.txt','utf8')).match(/网页版\s*(\d+)/)?.[1];
+const release=(await readFile('VERSION.txt','utf8')).match(/网页版\s*(\d+(?:\.\d+)?)/)?.[1];
 if(!release)throw Error('Missing release version');
 const excluded=new Set(['.git','.env','.openai','.sites-runtime','dist','downloads','updates','apple','wechat','node_modules','.wrangler']);
 async function files(dir=''){
