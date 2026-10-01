@@ -12,16 +12,16 @@ const server=http.createServer((req,res)=>{const file=path.join(root,req.url.spl
    page.on('pageerror',e=>{errors.push(e.message);console.error(e.stack)});
    await page.route(/https?:\/\/(?!127\.0\.0\.1)/,route=>route.abort());
    await page.goto(`http://127.0.0.1:${server.address().port}`);
-   await page.waitForFunction(()=>window.Revision90?.ready);
+   await page.waitForFunction(()=>window.Revision94?.ready);
    for(const theme of ['stars','river']){
     await page.evaluate(theme=>{document.body.dataset.homeTheme=theme},theme);
     const colours=await page.locator('.annotationIntro strong,.annotationIntro small').evaluateAll(nodes=>nodes.map(node=>({colour:getComputedStyle(node).color,fill:getComputedStyle(node).webkitTextFillColor})));
-    assert(colours.every(c=>c.colour==='rgb(16, 47, 59)'&&c.fill===c.colour),`${width}: readable headline in ${theme}`);
+    assert(colours.every(c=>c.colour===(width<=600?'rgb(255, 247, 233)':'rgb(25, 58, 66)')&&c.fill===c.colour),`${width}: readable headline in ${theme}`);
    }
    await page.locator('#homeQuick47 button').filter({hasText:/^大字$/}).click();
    await page.waitForFunction(()=>!document.body.classList.contains('home-open'));
    const sizes=await page.evaluate(()=>({logo:document.querySelector('#annotationHomeButton img').getBoundingClientRect().width,icon:document.querySelector('#myWorks svg').getBoundingClientRect().width,overflow:document.documentElement.scrollWidth>innerWidth}));
-   assert.equal(sizes.logo,26);assert(sizes.logo>sizes.icon);assert(!sizes.overflow,`${width}: no horizontal overflow`);
+   assert.equal(sizes.logo,28);assert(sizes.logo>sizes.icon);assert(!sizes.overflow,`${width}: no horizontal overflow`);
    await page.locator('#menuToggle').click();
    assert(await page.locator('#brushDialog').isVisible(),`${width}: menu opens visible settings`);
    assert.equal(await page.locator('#brushDialog .dialogHead h2').textContent(),'本站全局设置');

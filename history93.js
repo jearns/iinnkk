@@ -10,10 +10,11 @@ const events=[
  {year:1082,yearText:'1082年作诗 · 书写在此后',md:'04-04',title:'苏轼《黄州寒食诗》与《寒食帖》',dateNote:'4月4日为策展纪念日；不等同于1082年书写日',body:'黄州谪居第三年写成寒食诗，随后书成此卷。必须区分诗作年代与书迹完成日期。',source:'https://digitalarchive.npm.gov.tw/Collection/Detail/14714?dep=P'},
  {year:1922,yearText:'1922年前后',md:'11-01',title:'溥仪以赏赐名义将宫藏书画运出故宫',dateNote:'持续发生的事件；11月1日为策展纪念日',body:'溥仪与溥杰将精选书画和古籍运出宫，导致包括书法国宝在内的宫藏流散。不是发生于单一确定日的行动。',source:'https://img.dpm.org.cn/Uploads/File/2024/01/29/u65b7138df3f59.pdf'},
  {year:1948,yearText:'1948年12月23日',md:'12-23',title:'故宫精选文物首批启运台湾',dateNote:'公历日期有馆方记载',body:'首批文物由中鼎号于12月23日起运、26日抵达基隆；书画珍藏在迁运与后续保管中得以延续。',source:'https://south.npm.gov.tw/ActivitiesDetailC006110.aspx?Cond=306e5c89-9d01-4810-9842-9f569771c869'},
- {year:1952,yearText:'1952年1月5日',md:'01-05',title:'墨人会成立：日本前卫书法走向世界',dateNote:'公历成立日期有据',body:'森田子龙、井上有一等在京都结成墨人会，推动书法与国际现代艺术对话。在书法与抽象表现艺术之间建立了新的交流。',source:'https://exh.shibunkaku.co.jp/exhibitions/12-morita-shiryu-bokujin/'},
+ {year:1957,yearText:'1957年',md:'10-01',title:'手岛右卿《崩坏》走上圣保罗双年展',dateNote:'展览年份有据；10月1日为策展纪念日，不是作品创作日',body:'手岛右卿的象书代表作《崩坏》受邀参加圣保罗双年展，让汉字的书写结构与世界现代艺术相遇。',source:'https://yukei-museum.sub.jp/wordpress/手島右卿とは/'},
  {year:2010,yearText:'2010年6月3日',md:'06-03',title:'《砥柱铭》拍出4.368亿元',dateNote:'公历成交日期有据；纪录限定为当时',body:'黄庭坚《砥柱铭》在保利春拍含佣金成交4.368亿元，创当时中国艺术品拍卖成交纪录；不称为今天所有艺术品的世界最高价。',source:'https://www.jjckb.cn/invest/2010-06/11/content_227647.htm'}
 ];
 const lunarFormat=new Intl.DateTimeFormat('en-u-ca-chinese',{month:'numeric',day:'numeric'});
+events.push({year:920,yearText:'10世纪上半叶',md:'02-01',title:'伊本·穆格莱奠定阿拉伯比例书法',dateNote:'时代范围有据；2月1日为策展纪念日，不是创制日期',body:'阿拔斯宫廷的伊本·穆格莱建立以点、字母与几何比例为核心的书法规范，影响《古兰经》抄写及后世书家；不把后世抄本归为他的亲笔。',source:'https://education.asianart.org/resources/the-history-of-islamic-calligraphy/'});events.sort((a,b)=>a.year-b.year);
 function dayMatch(event,date){if(event.lunar){const parts=lunarFormat.formatToParts(date);return parts.find(p=>p.type==='month')?.value+'-'+parts.find(p=>p.type==='day')?.value===event.lunar}return event.md===String(date.getMonth()+1).padStart(2,'0')+'-'+String(date.getDate()).padStart(2,'0')}
 function onDay(date){return events.filter(e=>dayMatch(e,date))}
 const dialog=E('dialog');dialog.id='historyMoments93';const head=E('div');head.className='dialogHead';head.append(E('h2','历史上的亲笔'));const close=E('button','完成 ×');close.onclick=()=>dialog.close();head.append(close);dialog.append(head);const body=E('div');body.className='dialogBody';dialog.append(body);document.body.append(dialog);

@@ -155,7 +155,7 @@
  random.addEventListener('pointerdown',()=>{if(!savedPalette){const s=A.getState();savedPalette={paper:s.values.papercolor,ink:s.brush.color,seal:s.values.headColor}}},true);
  reset.onclick=()=>{if(savedPalette){applyPalette(savedPalette);savedPalette=null}else $('resetSettings').click();syncView()};
  let mode='';document.addEventListener('mode-changed54',e=>{closeExcerpts();mode=e.detail.id;$('quotesVisibility').value='shown';$('quotesVisibility').dispatchEvent(new Event('change'));A.resetSealPosition('head');if(mode==='letter')showReader();else reader.close();requestAnimationFrame(syncView)});
- document.addEventListener('quote-changed',e=>{applyPalette(palette());updateReader(e.detail)});
+ document.addEventListener('quote-changed',e=>{if(!window.Revision94)applyPalette(palette());updateReader(e.detail)});
  for(const event of ['change','input'])document.addEventListener(event,e=>{if(/ink|color/i.test(e.target.id))syncInk()},true);
  // Core emits this after state changes, so mode labels/watermark/ink cannot drift.
  document.addEventListener('ink-view-changed90',()=>{syncView();syncInk()});
