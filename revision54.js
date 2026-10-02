@@ -25,10 +25,12 @@ document.addEventListener('mode-changed54',e=>quotesFor(e.detail));
 // Final-look studio: all choices modify the real composition, while the ink coordinates stay intact.
 const d=E('dialog',{id:'finalStudio54','aria-label':'作品最终效果'}),head=E('header',{class:'dialogHead'}),title=E('h2',{},'作品最终效果'),close=E('button',{type:'button'},'返回书写 ×');head.append(title,close);const body=E('div',{class:'finalBody54'}),stage=E('div',{class:'finalStage54'}),img=E('img',{alt:'所见即所得的作品最终效果'}),busy=E('span',{class:'finalBusy54'},'正在呈现…');stage.append(img,busy);const steps=E('nav',{class:'finalSteps54','aria-label':'效果步骤'}),rail=E('div',{class:'finalRail54'}),note=E('p',{class:'finalNote54'}),actions=E('footer',{class:'finalActions54'}),portrait=E('input',{type:'file',accept:'image/*',hidden:''}),download=E('button',{type:'button',class:'primary'},'采用效果并下载');actions.append(download);body.append(stage,steps,rail,note,actions);d.append(head,body);document.body.append(d);
 let url='',renderToken=0,craft='';
+// Art notes: terminology cross-checked against the Palace Museum calligraphy collection
+// https://www.dpm.org.cn/collection/handwriting/231809.html
+// https://www.dpm.org.cn/study_detail/98489.html
 const groups={
- '书风':[
-  ['张旭','zhang','醉舞狂逸 · 狂草以疾徐、开合见气势'],['怀素','huaisu','龙蛇奔放 · 大草以中锋连绵贯气'],['柳公权','liu','骨力劲健 · 楷书以清晰转折立骨'],['颜真卿','yan','雄浑宽博 · 楷书以藏锋外拓蓄势']],
- '墨迹':[['玄黑','#050505','黑墨庄重沉静，最宜正文与长篇'],['雪白','#fffaf0','白墨清醒克制，适合深色纸'],['朱红','#c62820','朱砂醒目热烈，适合题签与祝愿'],['自定','custom','自定义墨色，保留属于你的气息']],
+ '书风':[['史籀','shizhou','传统上与《史籀篇》相联系，大篆古拙圆厚。'],['李斯','lisi','秦代小篆代表，匀圆修长，书同文的时代印记。'],['蔡邕','cai','汉隶名家，熹平石经的书写传统。'],['钟繇','zhong','早期楷书名家，古雅朴厚，开启楷法。'],['王羲之','wang','书圣，行书映带自然，《兰亭序》传为典范。'],['张旭','zhang','草圣，狂草纵逸，疾徐开合见气势。'],['颜真卿','yan','颜体雄浑宽博，楷书外拓，行书沉郁。'],['黄庭坚','huang','宋四家之一，长笔放射，行气欹宕。'],['赵孟頫','zhao','元代复古名家，圆润流美，楷行兼擅。'],['祝枝山','zhu','吴中书家，草书纵逸，大小错落。'],['王铎','wangduo','明清行草名家，涨墨跌宕，长轴气势雄强。']],
+ '墨迹':[['玄黑','#050505','玄墨沉静，浓淡枯润皆有余地。'],['雪白','#fffaf0','白墨映深笺，留出清醒的光。'],['朱红','#c62820','朱砂醒目，适合题签与祝愿。'],['靛蓝','#245782','靛蓝沉着，如青花落在纸上。'],['藤黄','#dab636','藤黄明亮，深笺上如金光。'],['烟紫','#78518e','烟紫含蓄，兼有古意与现代气息。'],['自定','custom','自定墨色，留住个人的气息。']],
  '纸色':[['本色宣','#f5f1e6','温润自然，最接近日常宣纸观感'],['仿古笺','#e4d5b5','岁月感温厚，适合古文诗词'],['淡红笺','#efded6','含蓄喜庆，适合书信与祝愿'],['墨黑','#161918','深邃醒目，宜白墨与朱砂'],['岩灰','#858987','现代克制，适合极简装裱'],['竹青','#d4dcbf','清雅有生机'],['松绿','#193f33','沉稳东方色'],['朱红','#b12722','正红笺，适合书写春联'],['雾蓝','#d8e5e7','清冷明净'],['自定','custom','自定义纸色']],
  '线条':[['竖线','vertical','竖写行气清晰'],['横线','horizontal','现代横写更易阅读'],['米字格','mi','八向参照，适合单字结构'],['回宫格','hui','内外宫位帮助收放'],['无线条','none','只留纸墨呼吸']],
  '纹样':[['描金云龙','dragon','云龙暗纹寓意生生不息'],['洒金笺','gold','金屑点染，喜庆而不喧'],['连绵回纹','fret','回环不断，寓意绵延'],['竹影条纹','stripe','清风竹影，疏朗雅致']],

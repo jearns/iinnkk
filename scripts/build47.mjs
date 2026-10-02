@@ -30,7 +30,7 @@ await build({entryPoints:['scripts/qr-entry47.js'],outfile:'qr47.js',bundle:true
 const assets=await assetFiles(),core=assets.filter(x=>!x.includes('/')||x==='fonts/shuowen-core45.woff');
 await writeFile('offline-assets.json',JSON.stringify(assets));
 const worker=await readFile('sw.js','utf8');
-await writeFile('sw.js',worker.replace(/annotation-core\d+/g,'annotation-core'+release).replace(/annotation-assets\d+/g,'annotation-assets'+release).replace(/CORE=\[[^;]+;/,'CORE='+JSON.stringify(core)+';'));
+await writeFile('sw.js',worker.replace(/annotation-core[\d.]+/g,'annotation-core'+release).replace(/annotation-assets[\d.]+/g,'annotation-assets'+release).replace(/CORE=\[[^;]+;/,'CORE='+JSON.stringify(core)+';'));
 const source=await files(),parts=[];
 for(const name of source){const data=await readFile(name);parts.push({name,url:name,bytes:data.length,sha256:createHash('sha256').update(data).digest('hex')});}
 const manifest={filename:'iinnkk-web-v'+release+'.zip',bytes:parts.reduce((n,p)=>n+p.bytes,0),parts};
