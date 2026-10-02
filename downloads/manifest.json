@@ -1,6 +1,6 @@
 {
-  "filename": "iinnkk-web-v104.zip",
-  "bytes": 108378469,
+  "filename": "iinnkk-web-v105.zip",
+  "bytes": 108378782,
   "parts": [
     {
       "name": "ADMIN-95.md",
@@ -120,7 +120,7 @@
       "name": "VERSION.txt",
       "url": "VERSION.txt",
       "bytes": 13,
-      "sha256": "88e63e3f10e88bc374b3cad99d87bb474d8f42ffaaf47cde5929d33a7f2e4e4e"
+      "sha256": "32e281b2ac5ee703dfd6934445685a4785558aa5efc7c557d5bf2c46a5a56e73"
     },
     {
       "name": "WECHAT-93.md",
@@ -899,8 +899,8 @@
     {
       "name": "index.html",
       "url": "index.html",
-      "bytes": 51722,
-      "sha256": "e1d402c5c46552a49656c5746acb8030765db4cf43439219ac33c53acd373aad"
+      "bytes": 51888,
+      "sha256": "b7d134938143c7003fc9e294092c72e417bce311a62c05b7f2c6d535edf90e19"
     },
     {
       "name": "ink-selection.js",
@@ -1080,7 +1080,7 @@
       "name": "offline38.js",
       "url": "offline38.js",
       "bytes": 2982,
-      "sha256": "f2e2a2eebda0fb2b4742656b92e0b9caa1f4fefa0ae7f1e0c11af470c6c85732"
+      "sha256": "90f5d04b9c0c43fe7c06feaf544177af9c2659c96b6a447c4304d31049ef0492"
     },
     {
       "name": "package-lock.json",
@@ -1559,8 +1559,8 @@
     {
       "name": "revision87.css",
       "url": "revision87.css",
-      "bytes": 670,
-      "sha256": "71bb3de86bed47fb90e32abd9e4fcf37105ffd011bde3937dc2cf7280717ae4f"
+      "bytes": 605,
+      "sha256": "bcf9b05819c2870e9c65200af7f397a404ab2280cef3b6fb770ab8395e334496"
     },
     {
       "name": "revision87.js",
@@ -1625,8 +1625,8 @@
     {
       "name": "revision97.js",
       "url": "revision97.js",
-      "bytes": 5870,
-      "sha256": "11d39a8e0ea09e2ac748b5f4e520da0707ca9e40eb03b9b404daf6fca4ca400e"
+      "bytes": 5881,
+      "sha256": "36073e8f805048fc056cf0b531bbdb80e61380016457186c28d8a4d26685cc92"
     },
     {
       "name": "scripts/build-static.py",
@@ -1847,8 +1847,8 @@
     {
       "name": "sw.js",
       "url": "sw.js",
-      "bytes": 5685,
-      "sha256": "b21cc31092c42a744300bf7d3ef2c54588aeb3275c06878161642c08a144ddf4"
+      "bytes": 5886,
+      "sha256": "4a7b0ddac80cc9e938d332b692ad9de1c02a3e743144702422e88bbdf3526495"
     },
     {
       "name": "template-manager.js",
