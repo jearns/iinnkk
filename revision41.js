@@ -1,6 +1,6 @@
 (function init(){if(!window.Revision39?.ready||typeof window.AnnotationApp?.sealUnit!=='function'){setTimeout(init,30);return}const $=id=>document.getElementById(id),app=AnnotationApp;
 
-const defaults={head:'亲笔手书',tail:'见墨如我'};for(const key of ['head','tail']){if(['真迹','亲笔','今日親筆','手書真跡','今日亲笔','手书真迹'].includes($(key+'Text').value)){app.editSeal(key,{config:{text:defaults[key],type:key==='head'?'yang':'yin',shape:key==='head'?'tall':'square',layout:key==='head'?'vertical':'horizontal',font:'small'}})}}
+const defaults={head:'今日亲笔',tail:'见墨如我'};for(const key of ['head','tail']){if(['真迹','亲笔','今日親筆','手書真跡','手书真迹'].includes($(key+'Text').value)){app.editSeal(key,{config:{text:defaults[key],type:key==='head'?'yang':'yin',shape:key==='head'?'tall':'square',layout:'horizontal',font:key==='head'?'yishan':'small'}})}}
 const container=$('sealDialog').querySelector('.sealGroups39');
 window.SealMenu41=()=>{container.replaceChildren();for(const [name,kind]of [['引首章','head'],['腰章','waist'],['落款章','tail']]){let key=kind==='waist'?'extra0':kind;const section=document.createElement('section'),title=document.createElement('h3');title.textContent=name;section.append(title);const grid=document.createElement('div');grid.className='sealFields41';section.append(grid);container.append(section);
 const get=()=>app.sealItems().find(s=>s.key===key);let item=get(),cfg=item?.config||{text:kind==='waist'?'见字如面':defaults[kind],font:'small',type:kind==='tail'?'yin':'yang',shape:kind==='head'?'tall':'square',layout:kind==='head'?'vertical':'horizontal',fontScale:1};

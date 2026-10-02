@@ -40,3 +40,5 @@ body.preview-open56 #previewEffects55 .previewActions56.previewActions93 button:
  #topActions #writerLeft90{scroll-padding-left:34px}
  #writerLeft90 #annotationHomeButton{position:sticky!important;left:0;z-index:2;background:#f5f4f0!important}
 }
+
+.heroPending101 .heroPeople94,.heroFailed101 .heroPeople94{visibility:hidden!important}
