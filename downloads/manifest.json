@@ -1,6 +1,6 @@
 {
-  "filename": "iinnkk-web-v103.zip",
-  "bytes": 108357662,
+  "filename": "iinnkk-web-v104.zip",
+  "bytes": 108378469,
   "parts": [
     {
       "name": "ADMIN-95.md",
@@ -120,7 +120,7 @@
       "name": "VERSION.txt",
       "url": "VERSION.txt",
       "bytes": 13,
-      "sha256": "cf59940eb7ae9011b9268f1e2b70a7624adf23843c2adcc6f65d10b4f601bcf4"
+      "sha256": "88e63e3f10e88bc374b3cad99d87bb474d8f42ffaaf47cde5929d33a7f2e4e4e"
     },
     {
       "name": "WECHAT-93.md",
@@ -545,8 +545,8 @@
     {
       "name": "app.js",
       "url": "app.js",
-      "bytes": 167532,
-      "sha256": "a288cf3c8e33312c12a7018ec60facae9c5ccd3af1580f53f3f1e497d6addf3d"
+      "bytes": 167124,
+      "sha256": "7819bbefddb3b7296d3a204c114e319e1595ca6da7704d9be1cc07fb612095f0"
     },
     {
       "name": "apple-touch-icon.png",
@@ -899,8 +899,8 @@
     {
       "name": "index.html",
       "url": "index.html",
-      "bytes": 50018,
-      "sha256": "0504cd30827e1f93e4583430f573130f775daa28818887f0932bc1b5a13f146f"
+      "bytes": 51722,
+      "sha256": "e1d402c5c46552a49656c5746acb8030765db4cf43439219ac33c53acd373aad"
     },
     {
       "name": "ink-selection.js",
@@ -1067,8 +1067,8 @@
     {
       "name": "offline-assets.json",
       "url": "offline-assets.json",
-      "bytes": 5330,
-      "sha256": "63caf3a27e82ec5904f69562bfc6d31b0c078b1451f9684712561b7fc9d77a99"
+      "bytes": 5365,
+      "sha256": "80d2bc4bf49a943c9ee65ba06608315ae45a41c338b0ce4aa2b88ddfb095c434"
     },
     {
       "name": "offline-sync101.js",
@@ -1079,8 +1079,8 @@
     {
       "name": "offline38.js",
       "url": "offline38.js",
-      "bytes": 2810,
-      "sha256": "97c8b97d1afd9af947f948385114f8aa625aa1c8170f7a237e6d8a81f69bf6f4"
+      "bytes": 2982,
+      "sha256": "f2e2a2eebda0fb2b4742656b92e0b9caa1f4fefa0ae7f1e0c11af470c6c85732"
     },
     {
       "name": "package-lock.json",
@@ -1225,6 +1225,18 @@
       "url": "revision103.js",
       "bytes": 3394,
       "sha256": "49a99aa355175575e8d60ddd688b3d1170bd68c4488a886c44dc4e0411ff5965"
+    },
+    {
+      "name": "revision104.css",
+      "url": "revision104.css",
+      "bytes": 272,
+      "sha256": "8baa0725500d483b0f278b1050db5dfc5697811117ef826453efad6d8802769b"
+    },
+    {
+      "name": "revision104.js",
+      "url": "revision104.js",
+      "bytes": 283,
+      "sha256": "873f2fc1ab8250fe7a0b83a682e173ae190423546ae09fcd9b55bff87c3fe7c3"
     },
     {
       "name": "revision38.js",
@@ -1559,8 +1571,8 @@
     {
       "name": "revision88.css",
       "url": "revision88.css",
-      "bytes": 21171,
-      "sha256": "e4807b90891d9cd2b090db27ffb0cdfebeddea52af2bf3191c40f6d836c3c92d"
+      "bytes": 21151,
+      "sha256": "e8243c9e9346303577eb5921e0e9bb9a4979e9131ab7483ee424b58941b4370d"
     },
     {
       "name": "revision88.js",
@@ -1589,8 +1601,8 @@
     {
       "name": "revision94.js",
       "url": "revision94.js",
-      "bytes": 7176,
-      "sha256": "f12376c81322b8b7cf630eb0a423975b32680a8780f6a1c5f0c160d0db4edecc"
+      "bytes": 7702,
+      "sha256": "45d6f3bcc4409954b5bbd89d65740ecbc4db4794240c178e6465dbea1a09482f"
     },
     {
       "name": "revision95.css",
@@ -1613,8 +1625,8 @@
     {
       "name": "revision97.js",
       "url": "revision97.js",
-      "bytes": 5514,
-      "sha256": "a4b467975b2e37ed277315ddd593cc66e50fa0878a409e7c4fb9cabaee1931a3"
+      "bytes": 5870,
+      "sha256": "11d39a8e0ea09e2ac748b5f4e520da0707ca9e40eb03b9b404daf6fca4ca400e"
     },
     {
       "name": "scripts/build-static.py",
@@ -1835,8 +1847,8 @@
     {
       "name": "sw.js",
       "url": "sw.js",
-      "bytes": 4969,
-      "sha256": "08b9ec714f5fb04a1c6b0e9f1b09ba8a4449489adb27c4ca88d12d7a5b034a95"
+      "bytes": 5685,
+      "sha256": "b21cc31092c42a744300bf7d3ef2c54588aeb3275c06878161642c08a144ddf4"
     },
     {
       "name": "template-manager.js",
@@ -2001,6 +2013,12 @@
       "sha256": "4d6d2c32396723c4877af1710897a784bb4ceada2b992e350635845cdb835826"
     },
     {
+      "name": "tests/startup104.cjs",
+      "url": "tests/startup104.cjs",
+      "bytes": 1780,
+      "sha256": "f95f5827c09458ed357c107a33673762781429b23a8846777a62b3fd249e8ce4"
+    },
+    {
       "name": "tests/studio50.cjs",
       "url": "tests/studio50.cjs",
       "bytes": 9027,
@@ -2035,6 +2053,12 @@
       "url": "tests/ui103.cjs",
       "bytes": 15005,
       "sha256": "cf613667b96dfbd292f51e8bd5ab789510a78d6384776db123da17ce8f47b131"
+    },
+    {
+      "name": "tests/ui104.cjs",
+      "url": "tests/ui104.cjs",
+      "bytes": 15391,
+      "sha256": "5fec99417e836751546bcb091eabcb66abae5cd230f2c09b80ecef49f3836b81"
     },
     {
       "name": "tests/ui90.cjs",

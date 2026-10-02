@@ -1,0 +1,1 @@
+(function init104(){if(!window.Revision103?.ready){setTimeout(init104,60);return}const A=AnnotationApp,state=A.getState(),p=state.paletteCredit96;if(p){A.setPaletteCredit96({...p,idea:Revision94.designIdea104(p.idea,state.mountKey)});A.refresh()}window.Revision104={ready:true}})();

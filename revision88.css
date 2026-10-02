@@ -1,5 +1,5 @@
 /* Release 90: a single layout and colour surface, replacing historical overrides. */
-html:not(.v90-ready) #annotationHome{visibility:hidden!important}
+#annotationHome{visibility:visible!important}
 #annotationHome .annotationBrand{display:grid!important;grid-template-columns:max-content minmax(0,1fr)!important;align-items:start!important;gap:12px!important;padding:18px 20px 10px!important}
 #annotationHome .annotationBrand>div:first-child{width:max-content!important;max-width:100%!important;min-width:0!important}
 #annotationHome .annotationBrand h1{display:flex!important;align-items:center!important;gap:8px!important;width:max-content!important;font-size:25px!important;margin:0!important;white-space:nowrap!important}
