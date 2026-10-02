@@ -27,7 +27,8 @@ async function assetFiles(){
  return out;
 }
 await build({entryPoints:['scripts/qr-entry47.js'],outfile:'qr47.js',bundle:true,minify:true,platform:'browser',format:'iife'});
-const listed=await assetFiles(),sourceAssets=await files(),assets=[...new Set([...listed,...sourceAssets.filter(x=>/\.(js|css|woff2?|png|webp|jpg|svg|mp3|json)$/.test(x)&&!x.startsWith('server/')&&!x.startsWith('scripts/')&&!x.startsWith('tests/')&&!x.startsWith('drizzle/'))])],core=assets.filter(x=>!x.includes('/')&&/\.(js|css|html|json)$/.test(x)||['hero-wide94.webp','hero-mobile94.webp','dragon-paper.png','favicon90.png','favicon90.svg','apple-touch-icon.png','fonts/shuowen-core45.woff','fonts/YiShanBeiZhuanTi.woff2'].includes(x));
+await import('./runtime106.mjs');
+const listed=await assetFiles(),sourceAssets=await files(),assets=[...new Set([...listed,...sourceAssets.filter(x=>/\.(js|css|woff2?|png|webp|jpg|svg|mp3|json)$/.test(x)&&!x.startsWith('server/')&&!x.startsWith('scripts/')&&!x.startsWith('tests/')&&!x.startsWith('drizzle/'))])],core=assets.filter(x=>/^app-runtime\.[a-f0-9]+\.(js|css)$/.test(x)||['index.html','hero-wide94.webp','hero-mobile94.webp','dragon-paper.png','favicon90.png','apple-touch-icon.png','fonts/shuowen-core45.woff','fonts/YiShanBeiZhuanTi.woff2'].includes(x));
 await writeFile('offline-assets.json',JSON.stringify(assets));
 const worker=await readFile('sw.js','utf8');
 await writeFile('sw.js',worker.replace(/annotation-core[\d.]+/g,'annotation-core'+release).replace(/annotation-assets[\d.]+/g,'annotation-assets'+release).replace(/CORE=\[[^;]+;/,'CORE='+JSON.stringify(core)+';'));

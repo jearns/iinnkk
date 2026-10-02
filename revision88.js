@@ -82,7 +82,7 @@
  // Drag immediately from the text, title, empty space or navigation buttons.
  let drag=null,moved=false;
  reader.addEventListener('pointerdown',e=>{
-  if(e.button>0||e.target.closest('input,select,textarea,a,.readerJump90'))return;
+  if(e.button>0||e.target.closest('input,select,textarea,a,.readerJump90,#quoteExpanded'))return;
   if(drag)return;
   const r=reader.getBoundingClientRect();drag={id:e.pointerId,x:e.clientX,y:e.clientY,left:r.left,top:r.top};moved=false;
   if(!e.target.closest('button')){e.preventDefault();reader.setPointerCapture(e.pointerId)}

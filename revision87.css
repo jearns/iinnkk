@@ -1,5 +1,5 @@
 /* V87 */
-
+html:not(.v87-ready) #annotationHome{visibility:hidden!important}
 #dailyDialog.quoteBookmark73{background:var(--bookmark-bg87,var(--bookmark-bg85,#563b34))!important;color:var(--bookmark-fg87,var(--bookmark-fg85,#f8f4ea))!important}
 #dailyDialog.quoteBookmark73 :is(#quoteText,#quoteExpanded,.bookmarkNav81){color:var(--bookmark-fg87,var(--bookmark-fg85,#f8f4ea))!important}
 /* The pale source/header field stays readable without changing the bookmark's structure. */
