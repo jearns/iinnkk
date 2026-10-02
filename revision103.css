@@ -1,0 +1,5 @@
+#previewWatermark90,#previewHint85{display:none!important}
+#writingHint100{gap:6px!important;text-align:center;font:14px/1.6 system-ui!important;color:#6b66564d!important}#writingHint100 b{font:inherit!important}#writingHint100 span{display:block;white-space:nowrap}
+#paperPen100{width:300px;max-height:calc(100dvh - 24px);overflow:auto;touch-action:pan-y}#paperPen100 header,dialog header,dialog .dialogHead{touch-action:none;cursor:grab}
+#paperPen100 label{grid-template-columns:32px minmax(60px,1fr) 40px}#paperPen100 label>div{grid-column:1/-1;flex-wrap:wrap;justify-content:center;gap:5px}#paperPen100 .adjust103{grid-column:1/-1;justify-content:center}
+.adjust103{display:flex;gap:12px;align-items:center}.adjust103 button{border:0;border-radius:50%;background:#eae6da;color:#5e6657;min-width:30px;min-height:30px;padding:2px;font:18px system-ui}
