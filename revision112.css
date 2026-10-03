@@ -1,0 +1,8 @@
+#userExcerpt112{width:min(92vw,540px);max-height:85dvh;overflow:auto}
+#userExcerpt112 form{display:flex;flex-direction:column;gap:12px}
+#userExcerpt112 label{display:flex;flex-direction:column;gap:5px;font-size:13px}
+#userExcerpt112 input,#userExcerpt112 textarea{width:100%;box-sizing:border-box;padding:9px;border:1px solid #998b7166;border-radius:7px;font:16px/1.7 system-ui}
+#userExcerpt112 textarea{resize:vertical;min-height:180px;white-space:pre-wrap}
+#userExcerpt112 p{margin:0;font-size:12px;line-height:1.7}
+#excerptStatus112{color:#a33725}
+#excerptCategories91 #ownExcerpt112{color:#8b352b;border-top:1px solid #998b7133;margin-top:5px}
