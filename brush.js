@@ -5,8 +5,8 @@
  function noise(x,y,seed){const ix=Math.floor(x),iy=Math.floor(y),u=x-ix,v=y-iy,fx=u*u*(3-2*u),fy=v*v*(3-2*v);return mix(mix(hash(ix,iy,seed),hash(ix+1,iy,seed),fx),mix(hash(ix,iy+1,seed),hash(ix+1,iy+1,seed),fx),fy)}
  const defaults={size:30,dynamics:.82,dry:.45,softness:.48,smoothing:.32,taper:.8,fullness:1,color:'#050505',particle:'round'};
  function settings(s){return {...defaults,...s}}
- function radiusForSpeed(v,s,p=null){s=settings(s);const slow=1/(1+Math.pow(Math.max(v,0)/.24,1.85));let load=mix(.85,.025+slow*.98,Math.pow(clamp(s.dynamics,0,1),.20));if(p!==null)load=mix(load,.018+Math.pow(clamp(p,0,1),1.25)*1.04,.88);return s.size*.5*s.fullness*load}
- function dryForSpeed(v,s,p=null){let d=s.dry*Math.pow(clamp((v-.20)/.80,0,1),.70);if(p!==null)d=Math.max(d,s.dry*Math.pow(1-p,2)*.7);return Math.min(.85,d)}
+ function radiusForSpeed(v,s,p=null){s=settings(s);v*=s.speedResponse||1;const slow=1/(1+Math.pow(Math.max(v,0)/.24,1.85));let load=mix(.85,.025+slow*.98,Math.pow(clamp(s.dynamics,0,1),.20));if(p!==null)load=mix(load,.018+Math.pow(clamp(p,0,1),1.25)*1.04,.88);return s.size*.5*s.fullness*load}
+ function dryForSpeed(v,s,p=null){v*=s.speedResponse||1;let d=s.dry*Math.pow(clamp((v-.20)/.80,0,1),.70);if(p!==null)d=Math.max(d,s.dry*Math.pow(1-p,2)*.7);return Math.min(.85,d)}
  let canvasFactory=null;const masks=new Map();
  function setCanvasFactory(factory){canvasFactory=factory}
  function mask(s,level){const key=s.color+':'+s.particle+':'+level;if(masks.has(key))return masks.get(key);const create=canvasFactory||(root.document?()=>root.document.createElement('canvas'):null);if(!create)return null;const c=create();c.width=128;c.height=128;const ctx=c.getContext('2d');ctx.fillStyle=s.color;ctx.fillRect(0,0,128,128);const data=ctx.getImageData(0,0,128,128);for(let y=0;y<128;y++)for(let x=0;x<128;x++){const xx=s.particle==='square'?Math.floor(x/2)*2:x,yy=s.particle==='square'?Math.floor(y/2)*2:y,cloud=noise(xx/3.2,yy/2,72)*.8+hash(xx,yy,18)*.2;data.data[(y*128+x)*4+3]=Math.round(clamp((cloud-level/5*.54)/.10+.5,0,1)*255)}ctx.putImageData(data,0,0);if(masks.size>=24)masks.delete(masks.keys().next().value);masks.set(key,c);return c}

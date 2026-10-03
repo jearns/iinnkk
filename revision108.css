@@ -1,0 +1,37 @@
+body.ui108 #dailyDialog.quoteBookmark73 .readerTitle90{white-space:nowrap!important;word-break:normal!important;overflow:auto hidden!important;text-overflow:clip!important;line-height:1.6!important;scrollbar-width:none;touch-action:pan-x!important}
+body.ui108 #dailyDialog.quoteBookmark73 #quoteExpanded{word-break:normal!important;overflow-wrap:anywhere!important;line-break:strict!important;text-wrap:pretty!important;white-space:pre-wrap!important;line-height:1.85!important}
+body.ui108 #previewEffects55 #photoPanel62{flex:1 1 auto!important;justify-content:flex-start!important;align-items:center!important;height:100%!important;min-height:0!important}
+body.ui108 #photoPanel62 .photoChoices106{display:flex!important;align-items:center!important;justify-content:safe center!important;gap:6px!important;min-height:100%;margin:auto!important;padding:0!important;flex:0 0 auto!important}
+body.ui108 #photoPanel62 .photoChoices106 button{display:inline-flex!important;justify-content:center!important;align-items:center!important;text-align:center!important;line-height:1.3!important;padding:5px 10px!important;margin:0!important}
+body.ui108 dialog .dialogBody{gap:12px}
+body.ui108 dialog label:not(.choice107,.choice108){line-height:1.55;max-width:100%;box-sizing:border-box}
+body.ui108 dialog label>select,body.ui108 dialog label>input:not([type=radio],[type=checkbox],[type=color]){max-width:100%;box-sizing:border-box}
+body.ui108 :is(#quick107,#lineDialog108,#gridDialog108){width:min(360px,calc(100vw - 20px));max-height:78vh;padding:0;border:1px solid #c7bba6;border-radius:14px;background:#faf7f0;color:#5c5346}
+body.ui108 :is(#lineDialog108,#gridDialog108) .dialogBody{display:grid;grid-template-columns:1fr;padding:14px;overflow-y:auto;max-height:calc(78vh - 50px)}
+body.ui108 .field108{display:grid!important;grid-template-columns:1fr auto!important;align-items:center!important;gap:8px!important;margin:0!important;padding:10px!important;border-radius:9px;background:#eee8dc;font-size:12px;text-align:left}
+body.ui108 .field108 :is(select,input[type=range],.rangePoints100,.adjust103,.points108){grid-column:1/-1;min-width:0;width:100%;margin:0!important}
+body.ui108 .field108 select{padding:7px;border:1px solid #d4c8b4;border-radius:7px;font-size:12px}
+body.ui108 .field108 output{font-size:12px;font-variant-numeric:tabular-nums}
+body.ui108 .field108 :is(.rangePoints100,.points108){display:flex!important;align-items:center;justify-content:flex-start;flex-wrap:wrap;gap:5px}
+body.ui108 .field108 :is(.rangePoints100,.points108) button{min-width:28px;min-height:25px;padding:3px 7px;font-size:11px;background:#faf7ef;border:1px solid #d6cbb9;border-radius:6px}
+body.ui108 .field108 .adjust103{display:flex;justify-content:flex-end;gap:7px}
+body.ui108 .choice108{display:flex;gap:9px;align-items:center;font-size:13px;padding:8px 0}
+body.ui108 #quick107 .dialogBody{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));padding:14px;gap:9px}
+body.ui108 #quick107 .choice107{display:flex;align-items:center;gap:6px;min-width:0;padding:10px 7px;background:#eee8dc;border-radius:8px;font-size:12px;white-space:nowrap}
+body.ui108 #quick107 .colors107{grid-column:1/-1;justify-content:center;padding:9px 0 0;gap:12px}
+body.ui108 #bigDialog62 .dialogBody{display:grid;gap:12px;padding:16px}
+body.ui108 #bigDialog62 h2{margin:0;font-size:16px}
+body.ui108 .fields108{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+body.ui108 .fields108>.field108:first-child{grid-column:1/-1}
+body.ui108 .actions108{display:flex;justify-content:flex-end;gap:9px}
+body.ui108 .actions108 button{min-width:90px;min-height:34px;padding:7px 12px;border-radius:8px}
+body.ui108 .workCard>.workView{width:100%;grid-column:1/-1}
+body.ui108 .workActions108{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px!important;width:100%;grid-column:1/-1;padding-top:8px}
+body.ui108 .workActions108>div,body.ui108 .workActions108>section{display:contents!important}
+body.ui108 .workActions108 button{display:flex!important;justify-content:center;align-items:center;height:30px!important;min-height:30px!important;width:100%!important;min-width:0!important;margin:0!important;padding:4px!important;white-space:nowrap;font-size:11px!important;border:1px solid #d3c7b3!important;border-radius:7px!important;background:#f6f1e7!important;color:#615748!important}
+@media(max-width:420px){body.ui108 .fields108{grid-template-columns:1fr}body.ui108 .workActions108{gap:4px!important}}
+body.ui108 .field108>.stepper63{grid-column:1/-1;width:100%;display:flex}
+body.ui108 .field108 .stepper63>.adjust103{display:none!important}
+body.ui108 .field108 .stepper63 input[type=range]{min-width:80px!important;flex:1;width:auto}
+body.ui108 .field108 .stepper63 .rangeNumber63{width:36px!important;flex:0 0 36px}
+body.ui108 dialog .stepper63>.adjust103{display:none!important}
