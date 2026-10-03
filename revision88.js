@@ -73,7 +73,7 @@
  const close=head.querySelector('[data-close]');head.replaceChildren(title,close);close.textContent='×';close.setAttribute('aria-label','收起全文');
  const jump=el('div','readerJump90');jump.hidden=true;jump.id='readerJump90';const list=el('div','readerList90');jump.append(list);reader.append(jump);
  const key=q=>q.id||q.s+'|'+q.q;
- function renderList(){list.replaceChildren();const categories=el('select','readerCategory91');categories.setAttribute('aria-label','文摘类别');for(const b of document.querySelectorAll('#quoteMenu [data-quote-category]')){const opt=el('option','',b.textContent);opt.value=b.dataset.quoteCategory;categories.append(opt)}categories.value=window.currentQuote?.cat||'';categories.onchange=()=>{D.select(categories.value);showReader();renderList()};list.append(categories);for(const q of D.all().filter(q=>q.cat===window.currentQuote?.cat)){const b=el('button','',label(q));b.type='button';b.setAttribute('aria-current',String(key(q)===key(window.currentQuote)));b.onclick=()=>{D.selectId(key(q));jump.hidden=true;title.setAttribute('aria-expanded','false')};list.append(b)}}
+ function renderList(){list.replaceChildren();const categories=el('select','readerCategory91');categories.setAttribute('aria-label','文摘类别');for(const b of document.querySelectorAll('#quoteMenu [data-quote-category]')){const opt=el('option','',b.textContent);opt.value=b.dataset.quoteCategory;categories.append(opt)}categories.value=window.currentQuote?.cat||'';categories.onchange=()=>{D.select(categories.value);showReader();renderList()};list.append(categories);const groups=new Map();for(const q of D.all().filter(q=>q.cat===window.currentQuote?.cat)){const region=window.Revision109?.quoteGroup(q)||q.dynasty||q.country||q.era||'其他';if(!groups.has(region))groups.set(region,[]);groups.get(region).push(q)}const epochs=['先秦','秦','秦末','西汉','东汉','汉代','东汉末年','曹魏','三国·蜀汉','东晋','南朝','南唐','唐','宋','元','明','明末清初','清','近现代'];for(const [region,rows]of [...groups].sort((a,b)=>{const x=epochs.indexOf(a[0]),y=epochs.indexOf(b[0]);return x>=0&&y>=0?x-y:x>=0?-1:y>=0?1:a[0].localeCompare(b[0],'zh')})){list.append(el('h4','quoteGroup109',region));rows.sort((a,b)=>String(a.author||'').localeCompare(String(b.author||''),'zh')||String(a.title||'').localeCompare(String(b.title||''),'zh'));for(const q of rows){const b=el('button','',label(q));b.type='button';b.setAttribute('aria-current',String(key(q)===key(window.currentQuote)));b.onclick=()=>{D.selectId(key(q));jump.hidden=true;title.setAttribute('aria-expanded','false')};list.append(b)}}}
  title.onclick=()=>{jump.hidden=!jump.hidden;title.setAttribute('aria-expanded',String(!jump.hidden));if(!jump.hidden)renderList()};
  // Keep legacy IDs alive for corpus import/editor code; only the title and body are visible.
  for(const child of body.children)child.hidden=child!==text;text.hidden=false;
@@ -82,7 +82,7 @@
  // Drag immediately from the text, title, empty space or navigation buttons.
  let drag=null,moved=false;
  reader.addEventListener('pointerdown',e=>{
-  if(e.button>0||e.target.closest('input,select,textarea,a,.readerJump90,#quoteExpanded'))return;
+  if(e.button>0||e.target.closest('input,select,textarea,a,.readerJump90'))return;
   if(drag)return;
   const r=reader.getBoundingClientRect();drag={id:e.pointerId,x:e.clientX,y:e.clientY,left:r.left,top:r.top};moved=false;
   if(!e.target.closest('button')){e.preventDefault();reader.setPointerCapture(e.pointerId)}

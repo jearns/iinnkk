@@ -36,7 +36,7 @@
  // 临帖 / 创作 start from the absolute upper-right writing edge.
  let pendingMode='';
  document.addEventListener('click',e=>{const b=e.target.closest('#homeQuick47 button,#writerModes53 button');if(!b)return;const t=b.textContent.trim();if(['临帖','创作','图文'].includes(t))pendingMode=t},{capture:true});
- function focusUpperRight(){const g=A.writingGrid67?.();if(!g?.area)return;const a=g.area;A.focusPoint?.({x:a.x+a.w-Math.max(.01,g.dx*.35),y:a.y+Math.max(.01,g.dy*.35)})}
+ function focusUpperRight(){if(A.isOverview55?.())return;const g=A.writingGrid67?.();if(!g?.area)return;const a=g.area;A.focusPoint?.({x:a.x+a.w-Math.max(.01,g.dx*.35),y:a.y+Math.max(.01,g.dy*.35)})}
  const bodyObserver=new MutationObserver(()=>{if(!document.body.classList.contains('home-open')&&pendingMode){const mode=pendingMode;pendingMode='';setTimeout(()=>mode==='图文'?openPhotoPreview():focusUpperRight(),100)}});bodyObserver.observe(document.body,{attributes:true,attributeFilter:['class']});
 
  // 图文 defaults to 下图上文 and enters full-paper preview.

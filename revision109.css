@@ -1,0 +1,17 @@
+body.ui109.hide-top97.hide-config97.preview-open56 #writerModes53{display:none!important}
+.ui109 #readerTitle90{width:max-content!important;flex:0 0 auto!important;max-width:none!important;min-width:0!important;white-space:nowrap!important;overflow:visible!important;letter-spacing:0!important}
+.ui109 #dailyDialog .dialogHead{width:max-content!important;min-width:100%!important;box-sizing:border-box;gap:8px}
+.ui109 #dailyDialog{max-width:calc(100vw - 12px)!important;overflow:auto!important;touch-action:none}
+.ui109 #quoteExpanded{white-space:pre-wrap!important;line-height:1.9!important;touch-action:none;overflow-wrap:anywhere}
+.ui109 #writerLeft90 button.active109,.ui109 #writerRight90 button.active109{color:#a33725!important;background:#f1ddbd!important;box-shadow:inset 0 -2px #a33725!important}
+.ui109 .settings109{display:flex;align-items:center;justify-content:center;gap:8px;flex:1;overflow-x:auto}
+.ui109 .settings109 label{display:flex;align-items:center;gap:5px;white-space:nowrap;font-size:12px}
+.ui109 .settings109 input,.ui109 .settings109 select{max-width:100px;min-width:54px}
+.ui109 #photoPanel62 .photoChoices106{justify-content:center!important;align-items:center!important}
+.ui109 #previewWatermark90{opacity:.65!important;text-shadow:0 1px 3px #80808066!important}
+.ui109 #previewWatermark90 strong,.ui109 #previewWatermark90 small{color:inherit!important}
+.ui109 #previewEffects55.customStyle109 .finalRail54{height:160px!important;max-height:160px!important;flex-basis:160px!important;overflow-y:auto!important}
+.ui109 #customStyle109{width:100%;padding:6px 12px!important;box-sizing:border-box}
+.ui109 #customStyle109 .field108{width:100%;max-width:500px;margin:auto}
+
+.mode-loading109 #writerModes53 button,.mode-loading109 #homeQuick47 button{opacity:.6;cursor:progress}
