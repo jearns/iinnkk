@@ -5,6 +5,15 @@
  function noise(x,y,seed){const ix=Math.floor(x),iy=Math.floor(y),u=x-ix,v=y-iy,fx=u*u*(3-2*u),fy=v*v*(3-2*v);return mix(mix(hash(ix,iy,seed),hash(ix+1,iy,seed),fx),mix(hash(ix,iy+1,seed),hash(ix+1,iy+1,seed),fx),fy)}
  const defaults={size:30,dynamics:.82,dry:.45,softness:.48,smoothing:.32,taper:.8,fullness:1,color:'#050505',particle:'round'};
  function settings(s){return {...defaults,...s}}
+ // One continuous control, with distinct rounded, firm and flowing stages.
+ function lineProfile108(value){const level=clamp(Number(value)||0,0,100),stages=[
+  {dynamics:.06,smoothing:.08,softness:.10,taper:.12,speedResponse:.35},
+  {dynamics:.32,smoothing:.20,softness:.22,taper:.38,speedResponse:.65},
+  {dynamics:.64,smoothing:.40,softness:.42,taper:.66,speedResponse:1},
+  {dynamics:.86,smoothing:.60,softness:.65,taper:.88,speedResponse:1.5},
+  {dynamics:1,smoothing:.80,softness:.86,taper:1,speedResponse:2.2}
+ ];const i=Math.min(3,Math.floor(level/25)),f=(level-i*25)/25,out={lineStrength108:level};
+ for(const key of Object.keys(stages[0]))out[key]=mix(stages[i][key],stages[i+1][key],f);return out}
  function radiusForSpeed(v,s,p=null){s=settings(s);v*=s.speedResponse||1;const slow=1/(1+Math.pow(Math.max(v,0)/.24,1.85));let load=mix(.85,.025+slow*.98,Math.pow(clamp(s.dynamics,0,1),.20));if(p!==null)load=mix(load,.018+Math.pow(clamp(p,0,1),1.25)*1.04,.88);return s.size*.5*s.fullness*load}
  function dryForSpeed(v,s,p=null){v*=s.speedResponse||1;let d=s.dry*Math.pow(clamp((v-.20)/.80,0,1),.70);if(p!==null)d=Math.max(d,s.dry*Math.pow(1-p,2)*.7);return Math.min(.85,d)}
  let canvasFactory=null;const masks=new Map();
@@ -53,5 +62,5 @@
   }if(st.done&&state.travel===0&&st.points.length>1){dab(t,state.pos.x,state.pos.y,s.size*.12*scale,0,s,0,1,0,state,scale)}state.ended=!!st.done;return state;
  }
  function render(st,t,W,H,clip=null){if(!st.points?.length)return null;const state=start(st,t,W,H);state.clip=clip;if(st.points.length===1){const s=settings(st.settings);dab(t,state.pos.x,state.pos.y,s.size*.12*(W/390),0,s,0,1,0,state,W/390)}return advance(st,state,t,W,H)}
- const api={setCanvasFactory,prepare,settings,radiusForSpeed,dryForSpeed,start,advance,render};root.ParticleBrush=api;if(typeof module!=='undefined')module.exports=api;
+ const api={setCanvasFactory,prepare,settings,lineProfile108,radiusForSpeed,dryForSpeed,start,advance,render};root.ParticleBrush=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

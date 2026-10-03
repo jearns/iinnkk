@@ -1,6 +1,6 @@
 {
   "filename": "iinnkk-web-v108.zip",
-  "bytes": 110657058,
+  "bytes": 110665618,
   "parts": [
     {
       "name": "ADMIN-95.md",
@@ -71,8 +71,8 @@
     {
       "name": "RELEASE-108.md",
       "url": "RELEASE-108.md",
-      "bytes": 1863,
-      "sha256": "2622cdcfa676be344c19d282a8015d26f3fe4d6b07a226b65fd159f60c840450"
+      "bytes": 2568,
+      "sha256": "7c9b7a2ca6be050fc44ef51a530cdcccd6decadfb651bc7a4a488c6ab7576b8e"
     },
     {
       "name": "RELEASE-38.md",
@@ -561,22 +561,22 @@
       "sha256": "901c891ffa7656c6d87bb853cf0298a41c1147c4098f5efed0d38af2fe3d2e6e"
     },
     {
-      "name": "app-runtime.8f31f6642b2ec9d7.js",
-      "url": "app-runtime.8f31f6642b2ec9d7.js",
-      "bytes": 1867908,
-      "sha256": "8f31f6642b2ec9d74c0a075b30b4278c56778fa1d916e28106fc3889d49a221e"
+      "name": "app-runtime.4b72c7a84b0a8f44.js",
+      "url": "app-runtime.4b72c7a84b0a8f44.js",
+      "bytes": 1870402,
+      "sha256": "4b72c7a84b0a8f444b17561d6684949c8cf171b9e6cc9cddb93bf2755759be2f"
     },
     {
-      "name": "app-runtime.dad8a3ff7a6e6ba5.css",
-      "url": "app-runtime.dad8a3ff7a6e6ba5.css",
-      "bytes": 226253,
-      "sha256": "dad8a3ff7a6e6ba522e6cc9460e686998cb51f4060444dab5dde2593ef0a33e2"
+      "name": "app-runtime.53f5db151e48741b.css",
+      "url": "app-runtime.53f5db151e48741b.css",
+      "bytes": 226678,
+      "sha256": "53f5db151e48741bcf6c3bcc3da851547d453d02033d53ea4a05b26fe220f666"
     },
     {
       "name": "app.js",
       "url": "app.js",
-      "bytes": 169549,
-      "sha256": "f11de639f38cdd4210751b77e7019586e34078bda0bf3c554de87d60ec604c2f"
+      "bytes": 169841,
+      "sha256": "a10a84e43d67d9bbdc04ffbdd3243149c8e18e8a60ea2eec790ffb94e7c2a704"
     },
     {
       "name": "apple-touch-icon.png",
@@ -605,8 +605,8 @@
     {
       "name": "brush.js",
       "url": "brush.js",
-      "bytes": 9317,
-      "sha256": "5c0362cec150b012fb2facd336fbec11c4b5071a1784eeab0d2222928ad5b20c"
+      "bytes": 10041,
+      "sha256": "617bd3205e771981940e6fe6851db7740eb48c5332cbe13e7d97810154198558"
     },
     {
       "name": "classic-history82.js",
@@ -954,7 +954,7 @@
       "name": "index.html",
       "url": "index.html",
       "bytes": 44326,
-      "sha256": "bf56b164ef7468072f0451ef401bcca7b3675c27130cb69d3b92087cd617fb03"
+      "sha256": "068f5a1fb0da0da4027869a8b97503b9b066901f59f82f9496b92ab166620482"
     },
     {
       "name": "ink-selection.js",
@@ -1122,7 +1122,7 @@
       "name": "offline-assets.json",
       "url": "offline-assets.json",
       "bytes": 5597,
-      "sha256": "8170c97e2c0e30a62129d03eaf9478334bbb7f36c9d7d0f1b2c38927e565755b"
+      "sha256": "7b9c11be0b857230d4fca6eddab57d14d5ea1e72e69f34668e33556a59ae61a2"
     },
     {
       "name": "offline-sync101.js",
@@ -1313,14 +1313,14 @@
     {
       "name": "revision108.css",
       "url": "revision108.css",
-      "bytes": 4877,
-      "sha256": "3c7600f2d0f6bc1f1604fab8777945d56cd8632220d77a0732c60626de9ad3ce"
+      "bytes": 5306,
+      "sha256": "ea58adda71c2e8ac8e38698a162734d1910fd15476a701f112c8831ec84d31b9"
     },
     {
       "name": "revision108.js",
       "url": "revision108.js",
-      "bytes": 8903,
-      "sha256": "2cbcc7ac0d2a3e28b24b52b3a48aa4b197c9d911d30d003d721ca4716ce55194"
+      "bytes": 11015,
+      "sha256": "6fe5a9eb9305269fc19feae65d472cde68ed3789155f9d03b90b6ef6bedc6854"
     },
     {
       "name": "revision38.js",
@@ -1944,7 +1944,7 @@
       "name": "sw.js",
       "url": "sw.js",
       "bytes": 3640,
-      "sha256": "05e44d292b31e090e9d4a58c2babd797f285dfee3b4bf3275cc96f9ba8be9684"
+      "sha256": "9ac5b5e437c184521efc375ebd61d7e51a1c4896f81406e464654ae147be927c"
     },
     {
       "name": "template-manager.js",
@@ -2207,8 +2207,8 @@
     {
       "name": "tests/ui108.cjs",
       "url": "tests/ui108.cjs",
-      "bytes": 14981,
-      "sha256": "73f98dc4bd4cbb6f979f9889ad135ef872c487af9d5d283ab12d3ade9347c860"
+      "bytes": 16360,
+      "sha256": "09c26eaed492f4ba52180ee51cb193039ecc1e272f56c62d7cd7318dffe6bb62"
     },
     {
       "name": "tests/ui90.cjs",

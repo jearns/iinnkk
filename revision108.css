@@ -35,3 +35,7 @@ body.ui108 .field108 .stepper63>.adjust103{display:none!important}
 body.ui108 .field108 .stepper63 input[type=range]{min-width:80px!important;flex:1;width:auto}
 body.ui108 .field108 .stepper63 .rangeNumber63{width:36px!important;flex:0 0 36px}
 body.ui108 dialog .stepper63>.adjust103{display:none!important}
+body.ui108 .field108>input.number108{grid-column:2!important;grid-row:1;width:78px!important;min-width:0;padding:7px 6px;border:1px solid #d4c8b4;border-radius:7px;background:#faf7ef;font:14px system-ui;text-align:center}
+body.ui108 .field108>output[hidden]{display:none!important}
+body.ui108 .field108:has(.number108) .adjust103{display:none!important}
+body.ui108 .lineStage108{font-size:14px;text-align:center;line-height:1.6}
