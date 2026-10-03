@@ -1,6 +1,6 @@
 {
-  "filename": "iinnkk-web-v106.zip",
-  "bytes": 110560415,
+  "filename": "iinnkk-web-v107.zip",
+  "bytes": 110605680,
   "parts": [
     {
       "name": "ADMIN-95.md",
@@ -61,6 +61,12 @@
       "url": "RECOVERY-106.md",
       "bytes": 4071,
       "sha256": "d330a81bea363b61c2551d46f2fb4503841a6705d56832e1e8f629760ec18ca3"
+    },
+    {
+      "name": "RELEASE-107.md",
+      "url": "RELEASE-107.md",
+      "bytes": 2121,
+      "sha256": "f7fdc8040ae54f19b8d764cd4b0e96b779728904841a33fa24948fadb8fb78d2"
     },
     {
       "name": "RELEASE-38.md",
@@ -126,7 +132,7 @@
       "name": "VERSION.txt",
       "url": "VERSION.txt",
       "bytes": 13,
-      "sha256": "df022b8f7779667c68f9cba571ce1743a1ad41dfe912baf12c58a451f3f19c77"
+      "sha256": "399399a8e7ff46b4efcf12959f1578dc4bfb73c3412e182333cc9d6fa43e7a9e"
     },
     {
       "name": "WECHAT-93.md",
@@ -549,22 +555,22 @@
       "sha256": "901c891ffa7656c6d87bb853cf0298a41c1147c4098f5efed0d38af2fe3d2e6e"
     },
     {
-      "name": "app-runtime.bce5ca6857d89d56.css",
-      "url": "app-runtime.bce5ca6857d89d56.css",
-      "bytes": 217269,
-      "sha256": "bce5ca6857d89d56a00d0282e4436d68a269a49a22293889a190f8f20bd4b57b"
+      "name": "app-runtime.0e22648daf4ec93a.js",
+      "url": "app-runtime.0e22648daf4ec93a.js",
+      "bytes": 1859685,
+      "sha256": "0e22648daf4ec93ad60d0ecfaa2ebd0c64b96ad89d6428579afb83025650061f"
     },
     {
-      "name": "app-runtime.ed8ef3b98bb632e8.js",
-      "url": "app-runtime.ed8ef3b98bb632e8.js",
-      "bytes": 1851210,
-      "sha256": "ed8ef3b98bb632e81ab641daf08d5f6cf7ec5edb73f01adb32d495dc514acc7c"
+      "name": "app-runtime.e062d98924c1e1e3.css",
+      "url": "app-runtime.e062d98924c1e1e3.css",
+      "bytes": 221413,
+      "sha256": "e062d98924c1e1e3cf4c5d76089b22ec1435ab11a64325f745744a1a3da7b017"
     },
     {
       "name": "app.js",
       "url": "app.js",
-      "bytes": 166730,
-      "sha256": "ebca5ad182e5200375660f6ba25a92c9d9520c048aed3e7956ab5d66bd96eb3c"
+      "bytes": 167382,
+      "sha256": "24489325c3a2288b8fb32ab507e6e501dc3d3c7d69c57d3a665deb4b59fcb905"
     },
     {
       "name": "apple-touch-icon.png",
@@ -809,8 +815,8 @@
     {
       "name": "features106.js",
       "url": "features106.js",
-      "bytes": 6252,
-      "sha256": "9935acbdcc871e8abc71a6fdd4b317bb643237fb76b72462f62a3f4907a00fe7"
+      "bytes": 6251,
+      "sha256": "067fbe77f82097a5fb91ae8217ef423bf7dc3abcd97e95f2e02aaaeeae904633"
     },
     {
       "name": "fonts/ATTRIBUTION.txt",
@@ -936,13 +942,13 @@
       "name": "index-source106.html",
       "url": "index-source106.html",
       "bytes": 44292,
-      "sha256": "9942549624de6389598ecfe25319ee70b9445aa1a80487b2b5a396914e2354b2"
+      "sha256": "459f81758d45e98915873713a9f7414c8239806159f25238f61d2a94d8dae6e9"
     },
     {
       "name": "index.html",
       "url": "index.html",
       "bytes": 44326,
-      "sha256": "35c1fd400870d30d02c2f5458db86a6b82613d848e3e73d643a18c3a64d2bd17"
+      "sha256": "27804867ddc823787a615e968e35958900e586872948d988bfa4147f595cc6ab"
     },
     {
       "name": "ink-selection.js",
@@ -1109,8 +1115,8 @@
     {
       "name": "offline-assets.json",
       "url": "offline-assets.json",
-      "bytes": 5527,
-      "sha256": "0f2c797781bd3f2728c13064a64f7eaba65145e6410a2073b22cb1349d11c3d3"
+      "bytes": 5562,
+      "sha256": "e6f56bf3a9235b6fea52ef10cdd95ac77b1f352b2eefa2960ab72ed56da145c7"
     },
     {
       "name": "offline-sync101.js",
@@ -1122,7 +1128,7 @@
       "name": "offline38.js",
       "url": "offline38.js",
       "bytes": 2982,
-      "sha256": "6fb64ad00fc36d303ea87c22e544eebdac8fb85cab63b5d3ee09b8eaa327eb17"
+      "sha256": "cbab951521d9e42a9b48db20d1311b7b81e4f0da5aefabfea9b410e4d2d349c1"
     },
     {
       "name": "package-lock.json",
@@ -1241,8 +1247,8 @@
     {
       "name": "revision100.js",
       "url": "revision100.js",
-      "bytes": 5882,
-      "sha256": "ad7b516967e3ad0a2e240fa4b0209b0d1c886b2eeba90a682b684a85427c7894"
+      "bytes": 5808,
+      "sha256": "6ac3d3bdfc7af64b858aefa6f57e76f5c4c77191622918e174f3168e20b976b6"
     },
     {
       "name": "revision102.css",
@@ -1253,8 +1259,8 @@
     {
       "name": "revision102.js",
       "url": "revision102.js",
-      "bytes": 963,
-      "sha256": "e4e05ec4bb17656eda1db1e20fcfb100465f699948de5b2862dcdf53593e21a8"
+      "bytes": 995,
+      "sha256": "59b4df31e6344cb495c1b0051a4f8f5c78c132366de461ffd85482a9fbf5a3fa"
     },
     {
       "name": "revision103.css",
@@ -1283,8 +1289,20 @@
     {
       "name": "revision106.js",
       "url": "revision106.js",
-      "bytes": 579,
-      "sha256": "5085df5031f84b52af3a54d289e21223bd55d15e347ff4d90b8252446444be79"
+      "bytes": 593,
+      "sha256": "05a53ae0282a4755ae78169c68edec344ac6c0cbfd683fdefed6ce963f92d5c7"
+    },
+    {
+      "name": "revision107.css",
+      "url": "revision107.css",
+      "bytes": 4183,
+      "sha256": "63e1e70c366c6984c0edfd8ea73342f4cde3ba3e0c6356bdef35aaae90ceaa5a"
+    },
+    {
+      "name": "revision107.js",
+      "url": "revision107.js",
+      "bytes": 10758,
+      "sha256": "41374d825d9fc5b3984564cf8ab0f51d94299df232d673eed6a3c6c384ea7e5a"
     },
     {
       "name": "revision38.js",
@@ -1649,8 +1667,8 @@
     {
       "name": "revision94.js",
       "url": "revision94.js",
-      "bytes": 7702,
-      "sha256": "45d6f3bcc4409954b5bbd89d65740ecbc4db4794240c178e6465dbea1a09482f"
+      "bytes": 6697,
+      "sha256": "2e13548d2c0569a5851c706a18c884f3f2cc1201fa12722cf44aedd313ce6c24"
     },
     {
       "name": "revision95.css",
@@ -1679,8 +1697,8 @@
     {
       "name": "runtime-sources106.json",
       "url": "runtime-sources106.json",
-      "bytes": 3200,
-      "sha256": "bca8f71586e6fb15c9a5d8aab62eb82df21bd83357999384c40410a4413e2d64"
+      "bytes": 3245,
+      "sha256": "0bf454727de476bb08b79e6f7779f4f2e7d7cce0e67149c83258e5bcde93846d"
     },
     {
       "name": "scripts/build-static.py",
@@ -1908,7 +1926,7 @@
       "name": "sw.js",
       "url": "sw.js",
       "bytes": 3640,
-      "sha256": "a2a604156941829d49493fa502af99b468e7880efadff40e3c92a59e30bfb6c6"
+      "sha256": "474e8254921946c8d01b5cddda8f94cfa281450a3e1463554df28ccdda356b33"
     },
     {
       "name": "template-manager.js",
@@ -2159,8 +2177,14 @@
     {
       "name": "tests/ui106.cjs",
       "url": "tests/ui106.cjs",
-      "bytes": 18293,
-      "sha256": "88fb98a4db9bd5c6abad506615157935febcb648e85968f040e35e65bd6e6258"
+      "bytes": 18571,
+      "sha256": "a8cfce90cff6e3127b1f1cb39c29b7a214277d72b1a6061df4b9da70747b1ee6"
+    },
+    {
+      "name": "tests/ui107.cjs",
+      "url": "tests/ui107.cjs",
+      "bytes": 10514,
+      "sha256": "18ee7c735c6ba8612b3da1b2fcedbf8b93cfe7a2181c357d9be751adbf14b5a2"
     },
     {
       "name": "tests/ui90.cjs",
@@ -2209,6 +2233,12 @@
       "url": "tests/upgrade106.cjs",
       "bytes": 3463,
       "sha256": "4a02c86bd347904c90e27c5973cd5bd27fdf53cfcaa1cafdd40193189e00b030"
+    },
+    {
+      "name": "tests/upgrade107.cjs",
+      "url": "tests/upgrade107.cjs",
+      "bytes": 5094,
+      "sha256": "08cd6d5d713490b9837e0edd64429b4b9525c8856952f00b4d922ef38bbcb23e"
     },
     {
       "name": "tests/web-selection.test.cjs",

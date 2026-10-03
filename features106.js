@@ -28,7 +28,7 @@
  const captions={topSize:'笔径',zoomQuick79:'纸面',topAuto:'走纸',topStyle:'书风',topMotion:'移纸',topReference:'临帖',topUpload:'加图',topColor:'墨色',topLines:'栏线',topGuide:'引导',topDirection:'方向',topMusic:'音乐',topDaily:'文摘'};
  function labelTools(){for(const b of $('bottomIcons39').querySelectorAll('button')){if(!b.querySelector('svg')||b.querySelector('span'))continue;const name=captions[b.id]||(b.getAttribute('aria-label')||b.title||b.textContent||'设置').replace(/[\s·]/g,'').slice(0,2);b.classList.add('tool90','bottomTool106');const label=document.createElement('span');label.className='caption106';label.textContent=name;b.append(label)}}labelTools();new MutationObserver(labelTools).observe($('bottomIcons39'),{childList:true,subtree:true});
  // Position hints against the actual paper rather than viewport dimensions.
- const hint=$('writingHint100');function placeHint(){const f=A.previewFrame94();hint.style.setProperty('left',Math.max(12,f.x+12)+'px','important');hint.style.setProperty('top',Math.max(12,f.y+12)+'px','important')};document.addEventListener('preview-painted94',placeHint);addEventListener('resize',placeHint);placeHint();
+ const hint=$('writingHint100');function placeHint(){const f=A.paperFrame107();hint.style.setProperty('left',Math.max(12,f.x+12)+'px','important');hint.style.setProperty('top',Math.max(12,f.y+12)+'px','important')};document.addEventListener('preview-painted94',placeHint);addEventListener('resize',placeHint);placeHint();
  document.addEventListener('contextmenu',e=>{if(e.target.closest('#board,#topActions,#bottomIcons39,#previewEffects55,#dailyDialog,#writerModes53,#paperPen100'))e.preventDefault()},true);
  window.Features106={ready:true};
 })();

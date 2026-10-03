@@ -1,0 +1,34 @@
+body.tools107 #bottomDock,body.tools107 #bottomIcons39,body.tools107 #statusBar42,body.tools107 #positionBar{display:none!important}
+body.tools107 #writerLeft90{overflow-x:auto!important;overflow-y:hidden!important;flex-wrap:nowrap!important;scrollbar-width:none;touch-action:pan-x;gap:1px!important;min-width:0!important}
+body.tools107 #writerLeft90>button{flex:0 0 38px!important;min-width:38px!important;width:38px!important}
+body.tools107 #writerLeft90>#annotationHomeButton{flex-basis:42px!important;min-width:42px!important}
+body.tools107 #topActions{flex-wrap:nowrap!important;display:flex!important;height:46px!important}
+body.tools107 #writerRight90{flex:0 0 auto!important}
+body.tools107 .topStrip{min-height:46px!important}
+body.tools107 #dailyDialog.quoteBookmark73 .readerTitle90{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;word-break:break-word!important;line-height:1.5!important;height:auto!important;padding-right:8px!important;text-align:left!important}
+body.tools107 #dailyDialog.quoteBookmark73 .dialogHead{height:auto!important;min-height:34px!important;align-items:flex-start!important}
+body.tools107 #dailyDialog.quoteBookmark73 .readerJump90{inset:var(--readHead107,50px) 0 auto!important}
+#quick107{width:min(340px,calc(100vw - 16px));max-height:65vh;padding:0;border:1px solid #b6ad94;border-radius:14px;background:#f8f5ed}
+#quick107 .dialogBody{padding:14px;display:flex;flex-wrap:wrap;gap:10px}
+.choice107{display:flex;align-items:center;gap:5px;font-size:13px;min-width:45%}
+.colors107{display:flex;gap:9px;flex-wrap:wrap;width:100%;padding-top:8px}
+.colors107 button,.colors107 input[type=color]{width:30px;height:30px;min-height:30px;min-width:30px;border-radius:50%;padding:0;border:1px solid #a8987d}
+.colors107 input[type=color]{background:conic-gradient(red,yellow,lime,cyan,blue,magenta,red);padding:4px}
+.presets107{display:flex;overflow-x:auto;gap:7px;white-space:nowrap;padding:8px 0;touch-action:pan-x;scrollbar-width:none}
+.presets107 button{flex:0 0 auto;min-height:30px;font-size:12px;padding:4px 10px;background:#ece5d6}
+#photoPanel62 .photoChoices106 .upload107{background:#963f32!important;color:#fff9ef!important;font-weight:600}
+#photoPanel62 input[type=file]{display:none!important}
+body.tools107 #photoModeTools{position:absolute!important;top:auto!important;left:0!important;right:0!important;bottom:calc(var(--controls106,0px) + 34px)!important;height:44px!important;z-index:22;display:flex;align-items:center;justify-content:center;gap:5px;padding:4px;background:#f8f5ed}
+body.tools107 #photoModeTools[hidden]{display:none!important}
+body.tools107 #photoModeTools>*{min-height:30px!important;height:30px!important;padding:4px 8px!important;font-size:12px;white-space:nowrap}
+body.tools107 #board#board{bottom:calc(var(--controls106,0px) + 34px + var(--photo107,0px))!important;height:calc(100% - var(--controls106,0px) - 34px - var(--photo107,0px))!important}
+#previewActions{display:none!important}
+.copyFilters107{display:flex;gap:8px;margin:8px 0}
+.copyFilters107 select{flex:1;min-width:0;font-size:13px;padding:7px}
+#copyDialog .copyLibrary106{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-height:38vh;overflow-y:auto;touch-action:pan-y}
+#copyDialog .copyLibrary106 button{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:4px;padding:10px;min-height:58px;border:1px solid #d8cebc;border-radius:8px;background:#f3eee3;touch-action:pan-y}
+#copyDialog .copyLibrary106 strong{font-size:13px;font-weight:500}
+#copyDialog .copyLibrary106 small{font-size:10px;color:#897b68}
+@media(max-width:600px){body.tools107 #writerRight90 .tool90{width:26px!important;min-width:26px!important;font-size:9px!important}body.tools107 #writerRight90 .tool90 svg{width:17px!important;height:17px!important}body.tools107 #writerLeft90>button{flex-basis:34px!important;width:34px!important;min-width:34px!important}body.tools107 .topStrip{padding:0 2px!important}}
+body.tools107.hide-top97 .topStrip{height:0!important;min-height:0!important;flex-basis:0!important;visibility:hidden!important}
+body.tools107.hide-top97 #topActions{display:none!important}
