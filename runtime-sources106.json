@@ -107,7 +107,8 @@
     "revision108.js",
     "revision106.js",
     "revision109.js",
-    "revision110.js"
+    "revision110.js",
+    "revision111.js"
   ],
   "styles": [
     "style.css",
@@ -154,6 +155,7 @@
     "features106.css",
     "revision107.css",
     "revision108.css",
-    "revision109.css"
+    "revision109.css",
+    "revision111.css"
   ]
 }

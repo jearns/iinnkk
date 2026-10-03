@@ -1,0 +1,28 @@
+.homeIcon111{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:5px 7px;font-size:10px;background:transparent;border:0;color:inherit;white-space:nowrap}
+.homeIcon111 svg{width:23px;height:23px}
+.ui111 #homeActions90{flex-wrap:wrap;justify-content:flex-end}
+.workFilters111{display:flex;gap:8px;margin:10px 0}.visibility111{display:block;padding:4px 8px;font-size:11px;color:#765331}.visibility111[data-published=true]{color:#32734a}
+.ui111 .workCard[hidden],#cloudOnly111>[hidden]{display:none!important}
+#cloudOnly111{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.ui111 #previewEffects55 .styleRail111{display:flex!important;align-items:center!important;justify-content:center!important;gap:8px;flex-wrap:wrap;overflow:auto}
+.ui111 #previewEffects55 .styleRail111 button{display:flex;align-items:center;justify-content:center;text-align:center}
+.sealPresets111,.copyOptions111{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;width:100%;padding:6px;box-sizing:border-box}
+.sealPresets111 button{display:flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap;font-size:11px}.sealPresets111 canvas{width:34px;height:44px;object-fit:contain}
+.copyOptions111 small{flex-basis:100%;text-align:center;font-size:11px}.copyOptions111 label{font-size:12px;white-space:nowrap}
+.ui111 #previewEffects55#previewEffects55:has(.sealPresets111) .finalRail54,.ui111 #previewEffects55#previewEffects55:has(.copyOptions111) .finalRail54{height:auto!important;min-height:76px;max-height:170px;overflow:auto}
+#copyDock111{position:absolute;left:0;top:0;width:20%;height:100%;z-index:5;touch-action:none;background:transparent}
+#copyDock111[data-layout=top]{width:100%;height:25%;pointer-events:none}
+#copyTools111{position:absolute;left:0;top:0;width:20%;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:2px;z-index:6;background:#f5f0e9dd}
+#copyTools111 button{font-size:9px;padding:2px}#copyTools111 output{font-size:10px}
+#copyDock111[hidden],#copyTools111[hidden]{display:none!important}
+.ui111 #creationActions50{display:none!important}
+.ui111 .presets107{flex-wrap:wrap;max-height:160px;overflow:auto}
+.ui111 #previewEffects55#previewEffects55:has(.sealPresets111),.ui111 #previewEffects55#previewEffects55:has(.copyOptions111){max-height:min(42dvh,270px)!important}
+.ui111 #previewEffects55#previewEffects55:has(.sealPresets111) .finalRail54,.ui111 #previewEffects55#previewEffects55:has(.copyOptions111) .finalRail54{flex:0 0 176px!important;height:176px!important;min-height:0!important;max-height:176px!important;align-items:flex-start!important;overflow:auto!important;white-space:normal}
+@media(min-width:700px){.ui111 #previewEffects55#previewEffects55:has(.sealPresets111) .finalRail54,.ui111 #previewEffects55#previewEffects55:has(.copyOptions111) .finalRail54{flex-basis:112px!important;height:112px!important;max-height:112px!important}}
+
+#annotationHome #homeActions90 :is(#homeWorks111,#homeHall111){order:-2!important;flex:0 0 auto}
+.ui111 #previewEffects55#previewEffects55.customStyle109 .finalRail54{height:160px!important;max-height:160px!important;flex-basis:160px!important;overflow-y:auto!important}
+#annotationHome #homeActions90 :is(#homeWorks111,#homeHall111){width:auto!important;min-width:48px!important;max-width:none!important;height:42px!important;min-height:42px!important;border:0!important;border-radius:0!important;background:transparent!important;padding:2px 4px!important;box-shadow:none!important}
+@media(max-width:600px){.ui111 #annotationHome .annotationBrand{grid-template-columns:1fr!important}.ui111 #annotationHome #homeActions90{position:static!important;width:100%!important;flex-wrap:wrap!important;justify-content:flex-end!important}}
+@media(max-width:600px){.ui111 #annotationHome .annotationBrand>div:first-child{grid-column:1!important;grid-row:1!important}.ui111 #annotationHome #homeActions90{grid-column:1!important;grid-row:2!important}}
