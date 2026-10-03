@@ -44,11 +44,27 @@
   (c,p,i,s)=>`${i}墨行于${p}纸，让${s}呼应${c}。`,
   (c,p,i,s)=>`${c}启发${p}纸与${i}墨的疏密对照，${s}留下一点温度。`,
   (c,p,i,s)=>`将${c}留在${p}笺上，${i}墨与${s}相接成章。`,
-  (c,p,i,s)=>`${c}化入${p}纸与${i}墨，${s}收束余韵。`,
-  (c,p,i,s)=>`让${p}纸承接${c}，以${i}笔迹和${s}续写文脉。`,
-  (c,p,i,s)=>`取${c}之意，${p}纸留空，${i}墨流动，${s}定音。`
+  (c,p,i,s)=>`${c}化入${p}纸与${i}墨，${s}如画中一笔亮色。`,
+  (c,p,i,s)=>`让${p}纸承接${c}，以${i}笔迹和${s}留下自己的手迹。`,
+  (c,p,i,s)=>`取${c}之意，${p}纸留空，${i}墨流动，${s}映出岁月的暖意。`
+ ];
+ const portraits=[
+ (p,i,s)=>`${p}纸如洞窟里柔和的光，${i}墨沿壁画的衣带飞扬，${s}点出丹青历久的鲜妍。`,
+ (p,i,s)=>`${p}笺铺开山关的远意，${i}墨写出砖石相接的力度，${s}似夕阳停在城垣。`,
+ (p,i,s)=>`${p}纸留出庭院的深静，${i}墨取殿宇层叠的庄重，${s}让宫城的华彩落在手边。`,
+ (p,i,s)=>`${p}笺如漏窗外的一方天光，${i}墨疏密有致，${s}像曲径尽头的一枝花。`,
+ (p,i,s)=>`${p}纸敞开天地，${i}墨以清晰的笔势呼应坛宇几何，${s}带来礼乐的庄严。`,
+ (p,i,s)=>`${p}纸映出岩壁的微光，${i}墨辨出造像与凿痕的深浅，${s}留下穿越岁月的暖色。`,
+ (p,i,s)=>`${p}笺留住山石的朴素，${i}墨写出刻痕的锋棱，${s}让古老手迹与今日相遇。`,
+ (p,i,s)=>`${p}纸如回廊间的光隙，${i}墨交织石纹与树影，${s}唤起密林中古城的生机。`,
+ (p,i,s)=>`${p}笺取庭院水影的澄澈，${i}墨随建筑轮廓舒展，${s}如静水上一点霞光。`,
+ (p,i,s)=>`${p}纸衬出庭院的明暗，${i}墨借几何纹饰回旋，${s}为繁密花纹留一处光亮。`,
+ (p,i,s)=>`${p}笺铺开地平线，${i}墨勾出几何棱角，${s}如沙地上温热的日光。`,
+ (p,i,s)=>`${p}纸映着水城天光，${i}墨随桥影与水巷流转，${s}像倒影里的一扇亮窗。`,
+ (p,i,s)=>`${p}纸呈现山地的高低层次，${i}墨连接地形与人居，${s}如云隙中照进石墙的光。`,
+ (p,i,s)=>`${p}笺展开柱廊的空阔，${i}墨讲究比例与节律，${s}给古老石构添一分人的亲近。`
  ];
  function hash(str){let h=2166136261;for(const ch of str)h=Math.imul(h^ch.codePointAt(0),16777619);return h>>>0}
- function describe(p,state,colour){const catalogue=window.HeritagePalettes102||[],original=catalogue.find(q=>q.id===(p.heritageId113||p.id))||catalogue.find(q=>q.referencePlace===p.referencePlace)||{},place=String(p.referencePlace||p.place||original.referencePlace||p.name||'文化遗产').replace(/[\r\n]+/g,' '),full=(window.HeritageSites102||[]).find(q=>'heritage102-'+q[0]===(p.heritageId113||p.id||original.id))?.[1]||p.place||original.place||place,seed=hash((p.heritageId113||p.id||original.id||full)+'|'+state.values.papercolor+'|'+state.brush.color+'|'+state.values.headColor+'|'+state.values.tailColor),match=rules.find(([pattern])=>pattern.test(full)),kind=p.kind||original.kind||'',fallback=/Natural|Mixed/.test(kind)?['自然尺度的开阔','大地纹理的层次','生命与环境的相依']:['文化传承的温度','空间与时间的交织','人文匠心的分寸'],cues=match?match[1]:fallback,cue=cues[Math.floor(seed/8)%cues.length],v=state.values,paper=colour(v.papercolor),ink=colour(state.brush.color),seal=v.headColor===v.tailColor?colour(v.headColor)+'印色':colour(v.headColor)+'引首、'+colour(v.tailColor)+'落款';return (full+'：'+sentences[seed%sentences.length](cue,paper,ink,seal)).replace(/[\r\n]+/g,' ')}
+ function describe(p,state,colour){const catalogue=window.HeritagePalettes102||[],original=catalogue.find(q=>q.id===(p.heritageId113||p.id))||catalogue.find(q=>q.referencePlace===p.referencePlace)||{},place=String(p.referencePlace||p.place||original.referencePlace||p.name||'文化遗产').replace(/[\r\n]+/g,' '),full=(window.HeritageSites102||[]).find(q=>'heritage102-'+q[0]===(p.heritageId113||p.id||original.id))?.[1]||p.place||original.place||place,seed=hash((p.heritageId113||p.id||original.id||full)+'|'+state.values.papercolor+'|'+state.brush.color+'|'+state.values.headColor+'|'+state.values.tailColor),match=rules.find(([pattern])=>pattern.test(full)),kind=p.kind||original.kind||'',fallback=/Natural|Mixed/.test(kind)?['自然尺度的开阔','大地纹理的层次','生命与环境的相依']:['文化传承的温度','空间与时间的交织','人文匠心的分寸'],cues=match?match[1]:fallback,cue=cues[Math.floor(seed/8)%cues.length],v=state.values,paper=colour(v.papercolor),ink=colour(state.brush.color),seal=v.headColor===v.tailColor?colour(v.headColor)+'印色':colour(v.headColor)+'引首、'+colour(v.tailColor)+'落款';return (full+'：'+(portraits[rules.indexOf(match)]?portraits[rules.indexOf(match)](paper,ink,seal):sentences[seed%sentences.length](cue,paper,ink,seal))).replace(/[\r\n]+/g,' ')}
  window.HeritageStories113={describe,rules:rules.length,sentences:sentences.length};
 })();
