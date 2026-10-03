@@ -1,0 +1,10 @@
+body.ui111 #previewEffects55#previewEffects55.customStyle109{max-height:min(25dvh,132px)!important}
+body.ui111 #previewEffects55#previewEffects55.customStyle109 .finalRail54{height:70px!important;max-height:70px!important;flex-basis:70px!important;overflow:hidden!important}
+body.ui111 #customStyle109{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:2px!important;max-width:400px!important}
+body.ui111 #customStyle109 .lineStage108{display:block;order:-1;text-align:center;font-size:11px;line-height:16px;min-height:16px;color:#60493c}
+body.ui111 #customStyle109 .field108{display:grid!important;grid-template-columns:1fr auto!important;gap:0 4px!important;padding:2px 6px!important;min-height:0!important;line-height:16px!important;font-size:11px!important}
+body.ui111 #customStyle109 .stepper63{height:12px!important;min-height:0!important;margin:0!important;align-items:center!important}
+body.ui111 #customStyle109 input[type=range]{height:8px!important;min-height:0!important;max-height:8px!important;margin:0!important;padding:0!important}
+body.ui111 #customStyle109 .points108,body.ui111 #customStyle109>small{display:none!important}
+body.ui111 #customStyle109 .field108>input.number108{height:20px!important;padding:1px 3px!important}
+body.ui111 #customStyle109 .field108 input[type=number],body.ui111 #customStyle109 .field108 .rangeNumber63{display:none!important}body.ui111 #customStyle109 .field108 output{display:none!important}body.ui111 #customStyle109 .field108{grid-template-columns:1fr!important;grid-template-rows:14px 12px!important;padding:1px 6px!important;min-height:28px!important;height:28px!important;box-sizing:border-box!important;overflow:hidden!important}body.ui111 #customStyle109 .field108 .stepper63{grid-column:1!important;grid-row:2!important;height:12px!important}body.ui111 #customStyle109 .field108 .stepper63 input[type=range]{display:block!important;height:8px!important}
