@@ -32,3 +32,19 @@ test('whole work recolor changes all thousand strokes, preserves geometry and sk
  assert.strictEqual(context.flow.strokes[1].points,strokes[1].points);
  assert.strictEqual(origin.get(context.flow.strokes[1]),strokes[1]);
 });
+
+test('long-scroll zoom drag coalesces redraws and applies the released value',()=>{
+ const start=source.indexOf('let zoomRenderTimer=0;'),end=source.indexOf("$('followDirection').onchange",start);
+ const timers=new Map(),zoom={value:'200',addEventListener(type,fn){this[type]=fn}},calls=[];
+ let next=0;
+ const context=vm.createContext({flow:{strokes:Array(1000)},camera:{x:1,y:2},W:400,H:800,S:200,focused:false,overview:true,
+  $:()=>zoom,clearTimeout:id=>timers.delete(id),setTimeout:(fn)=>{timers.set(++next,fn);return next},finish(){},resize:center=>calls.push({value:zoom.value,center}),saveSoon(){}});
+ vm.runInContext(source.slice(start,end),context);
+ for(let i=201;i<=300;i++){zoom.value=String(i);zoom.oninput()}
+ assert.equal(calls.length,0);
+ assert.equal(timers.size,1);
+ zoom.change();
+ assert.equal(calls.length,1);
+ assert.equal(calls[0].value,'300');
+ assert.equal(timers.size,0);
+});
