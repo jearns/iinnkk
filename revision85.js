@@ -11,7 +11,7 @@
  const brand=home.querySelector('.annotationBrand'),brandBox=brand?.querySelector('div'),heroTitle=brandBox?.querySelector('h1');
  brandBox?.querySelector('.homeDomain44')?.remove();
  if(brandBox){
-   const sub=brandBox.querySelector('p');if(sub)sub.textContent='见墨·iinnkk.me·如我';
+   const sub=brandBox.querySelector('p');if(sub)sub.textContent='手写真迹·iinnkk.me·见墨如我';
  }
  const direct=$('continueWriting');if(direct){direct.textContent='我的作品';direct.onclick=e=>{e.preventDefault();$('myWorks')?.click()}}
 
@@ -46,7 +46,7 @@
  let lastTap=null,previewPointers85=new Map(),previewMulti85=false;
  $('board')?.addEventListener('pointerdown',e=>{if(!A.isOverview55?.()||e.target!==$('live'))return;previewPointers85.set(e.pointerId,{x:e.clientX,y:e.clientY,t:Date.now(),moved:false});if(previewPointers85.size>1){previewMulti85=true;lastTap=null}},true);
  $('board')?.addEventListener('pointermove',e=>{const p=previewPointers85.get(e.pointerId);if(p&&Math.hypot(e.clientX-p.x,e.clientY-p.y)>8)p.moved=true},true);
- const previewRelease85=e=>{const p=previewPointers85.get(e.pointerId);previewPointers85.delete(e.pointerId);const valid=p&&!p.moved&&!previewMulti85&&e.type==='pointerup'&&Date.now()-p.t<300&&A.isOverview55?.();if(!previewPointers85.size)previewMulti85=false;if(!valid){lastTap=null;return}if(A.previewPhotoAt106?.(e.clientX,e.clientY)){lastTap=null;return}const now=Date.now();if(lastTap&&now-lastTap.t<340&&Math.hypot(e.clientX-lastTap.x,e.clientY-lastTap.y)<28){A.writeAtPreview96?.(e.clientX,e.clientY);lastTap=null}else lastTap={x:e.clientX,y:e.clientY,t:now};previewHint.hidden=true};
+ const previewRelease85=e=>{const p=previewPointers85.get(e.pointerId);previewPointers85.delete(e.pointerId);const valid=p&&!p.moved&&!previewMulti85&&e.type==='pointerup'&&Date.now()-p.t<300&&A.isOverview55?.();if(!previewPointers85.size)previewMulti85=false;if(!valid){lastTap=null;return}if(A.previewPhotoAt106?.(e.clientX,e.clientY)){lastTap=null;return}A.writeAtPreview96?.(e.clientX,e.clientY);lastTap=null;previewHint.hidden=true};
  for(const type of ['pointerup','pointercancel'])$('board')?.addEventListener(type,previewRelease85,{passive:true});
  $('fitView')?.addEventListener('click',()=>setTimeout(()=>{if(!A.isOverview55?.())previewHint.hidden=true},0));
 
