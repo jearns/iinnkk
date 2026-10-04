@@ -120,7 +120,8 @@
     "revision118.js",
     "revision119.js",
     "vector125.js",
-    "revision125.js"
+    "revision125.js",
+    "revision126.js"
   ],
   "styles": [
     "style.css",
@@ -176,6 +177,7 @@
     "revision117.css",
     "revision118.css",
     "revision119.css",
-    "revision125.css"
+    "revision125.css",
+    "revision126.css"
   ]
 }
