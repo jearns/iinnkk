@@ -17,6 +17,7 @@
     "annotation-templates.js",
     "work-albums84.js",
     "work-meta84.js",
+    "longpaper125.js",
     "app.js",
     "heritage.js",
     "reading.js",
@@ -117,7 +118,9 @@
     "revision116.js",
     "revision117.js",
     "revision118.js",
-    "revision119.js"
+    "revision119.js",
+    "vector125.js",
+    "revision125.js"
   ],
   "styles": [
     "style.css",
@@ -172,6 +175,7 @@
     "revision116.css",
     "revision117.css",
     "revision118.css",
-    "revision119.css"
+    "revision119.css",
+    "revision125.css"
   ]
 }

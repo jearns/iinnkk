@@ -1,0 +1,6 @@
+#extendDialog125{max-width:min(420px,calc(100vw - 32px));width:100%;border:0;border-radius:16px;padding:0;color:#28251f;background:#f8f5ec;box-shadow:0 16px 60px #0005}
+#extendDialog125::backdrop{background:#14171199}
+#extendDialog125 .dialogBody{padding:20px;display:grid;gap:12px;line-height:1.55}
+#extendDialog125 .dialogBody p{margin:0}
+#extendDialog125 input{width:90px;padding:8px;border:1px solid #b8aea0;border-radius:7px;background:#fff}
+#extendDialog125 [data-apply]{padding:11px;border:0;border-radius:9px;background:#425c4e;color:white}
