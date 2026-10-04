@@ -114,7 +114,8 @@
     "revision114.js",
     "revision115.js",
     "heritage-location116.js",
-    "revision116.js"
+    "revision116.js",
+    "revision117.js"
   ],
   "styles": [
     "style.css",
@@ -166,6 +167,7 @@
     "revision112.css",
     "revision114.css",
     "revision115.css",
-    "revision116.css"
+    "revision116.css",
+    "revision117.css"
   ]
 }

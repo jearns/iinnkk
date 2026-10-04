@@ -1,7 +1,7 @@
 (function init106(){
  const required=['Revision87','Revision90','Revision94','Revision97','Revision100','Revision103','Revision104','Features106','Revision107','Revision108','Revision109','Revision110'];
  const missing=required.filter(k=>!window[k]?.ready),cover=document.getElementById('loading106');
- if(window.Revision90?.ready&&window.Revision94?.ready)cover?.remove();
+ if(window.AnnotationHome||document.getElementById('annotationHome'))cover?.remove();
  if(missing.length){if(cover&&performance.now()>15000){cover.querySelector('span').textContent='正在完成加载，请保持联网。本机作品仍保留。';cover.querySelector('button').hidden=false}setTimeout(init106,80);return}
  cover?.remove();document.title='今日亲笔';window.Revision106={ready:true,release:106};
 })();

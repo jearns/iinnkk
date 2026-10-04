@@ -24,7 +24,7 @@
  syncBookmark();
 
  // Start automatic city detection once, but keep timezone fallback instant and non-blocking.
- window.WorkMeta84?.detectCity?.().catch?.(()=>{});
+ // Location is requested only from the signed-in personal profile.
 
  // Remove only accidental duplicate/color-block menu placeholders; keep the real hamburger #menuToggle.
  document.querySelectorAll('.globalMenu85,.globalMenu86,.globalMenu87,.menuColorBlock,.writerColorBlock').forEach(e=>e.remove());
