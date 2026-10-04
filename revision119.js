@@ -1,6 +1,6 @@
 (function init119(){
  if(!window.Revision118?.ready||!window.InkCloud75){setTimeout(init119,50);return}
- const A=AnnotationApp,$=id=>document.getElementById(id),dialog=$('downloadDialog'),body=dialog.querySelector('.dialogBody')||dialog;
+ const A=AnnotationApp,$=id=>document.getElementById(id),dialog=$('downloadDialog'),body=dialog.querySelector('.dialogBody');
  const choice=document.createElement('fieldset');choice.id='saveChoice119';choice.innerHTML='<legend>保存方式</legend><label><input type="radio" name="saveKind119" value="single" checked> 单张作品</label><label><input type="radio" name="saveKind119" value="series"> 作为套作品的一页</label><label class="seriesName119">套作品名称<input id="seriesName119" maxlength="40" placeholder="例如：我的手书集"></label><label class="publish119"><input id="publish119" type="checkbox"> 公开发布到书法殿堂</label><small>未勾选时只保存为私藏；公开发布需要登录账号。</small>';
  body.append(choice);const name=$('seriesName119'),publish=$('publish119');let pendingSeries=null,lastSeries=null;
  function update(){choice.classList.toggle('series119',choice.querySelector(':checked[name="saveKind119"]')?.value==='series')}
@@ -18,6 +18,6 @@
  $('worksDialog').addEventListener('toggle',()=>{if($('worksDialog').open)decorate()});new MutationObserver(()=>{if($('worksDialog').open)decorate()}).observe($('worksGrid'),{childList:true});
  // A recent ink hue is not immediately repeated on the next new mode.
  let lastHue=-1;function hue(hex){const r=parseInt(hex.slice(1,3),16)/255,g=parseInt(hex.slice(3,5),16)/255,b=parseInt(hex.slice(5,7),16)/255,high=Math.max(r,g,b),low=Math.min(r,g,b),d=high-low;if(d<.1)return -1;return (high===r?((g-b)/d)%6:high===g?(b-r)/d+2:(r-g)/d+4)*60+360}
- document.addEventListener('mode-ready109',e=>{if(e.detail?.restored)return;const pool=HeritagePalettes102.filter(p=>p.paper&&p.ink&&Revision93.contrast(p.paper,p.ink)>=4.5),options=pool.filter(p=>{const h=hue(p.ink)%360;return h<0||lastHue<0||Math.min(Math.abs(h-lastHue),360-Math.abs(h-lastHue))>65});const p={...(options.length?options:pool)[Math.floor(Math.random()*(options.length||pool.length))]};if(!p)return;lastHue=hue(p.ink)%360;const seals=['#a82d29','#aa741d','#66509c','#2867b1','#267567'].filter(c=>Revision93.contrast(p.paper,c)>=2.5);p.seal=seals[Math.floor(Math.random()*seals.length)]||'#a82d29';Revision94.apply(p)});
+ document.addEventListener('mode-ready109',()=>{const pool=HeritagePalettes102.filter(p=>p.paper&&p.ink&&Revision93.contrast(p.paper,p.ink)>=4.5),options=pool.filter(p=>{const h=hue(p.ink)%360;return h<0||lastHue<0||Math.min(Math.abs(h-lastHue),360-Math.abs(h-lastHue))>65});const p={...(options.length?options:pool)[Math.floor(Math.random()*(options.length||pool.length))]};if(!p)return;lastHue=hue(p.ink)%360;const seals=['#a82d29','#aa741d','#66509c','#2867b1','#267567'].filter(c=>Revision93.contrast(p.paper,c)>=2.5);p.seal=seals[Math.floor(Math.random()*seals.length)]||'#a82d29';Revision94.apply(p)});
  window.Revision119={ready:true,start,decorate};
 })();
