@@ -50,17 +50,17 @@ async function cloudImage(blob){
  }throw Error('作品仍超过 500 KB，无法保存云端');
  }finally{URL.revokeObjectURL(url)}
 }
-async function save(record,published=false){if(window.OfflineSync101)return OfflineSync101.enqueue(record,published);return saveNow101(record,published)}
-async function saveNow101(record,published=false){if(!user){dialog.showModal();renderAccount();return}if(busy)return false;busy=true;const savingUser=user;try{
+async function save(record,published){if(window.OfflineSync101)return OfflineSync101.enqueue(record,published);return saveNow101(record,published)}
+async function saveNow101(record,published){if(!user){dialog.showModal();renderAccount();return}if(busy)return false;busy=true;const savingUser=user;try{
  if(!record?.blob)throw Error('本机作品无法读取');const id=String(record.id).replace(/[^a-zA-Z0-9_-]/g,'_'),path=savingUser.id+'/'+id+'.jpg',image=await cloudImage(record.blob);
  err((await db.storage.from('ink-works').upload(path,image,{upsert:true,contentType:'image/jpeg'})).error);
  const row={owner:savingUser.id,local_id:cloudLocalId(record.id),title:window.WorkMeta84?WorkMeta84.format(savingUser.user_metadata?.full_name||savingUser.email?.split('@')[0]||'亲笔书家',record.title,record.created,record.quoteAuthor,record.quoteTitle):record.title||'亲笔真迹',image_path:path,updated_at:new Date().toISOString()};
- row.published=!!published;
+ if(published===undefined){const existing=await db.from('ink_works').select('published').eq('owner',savingUser.id).eq('local_id',row.local_id).maybeSingle();err(existing.error);published=!!existing.data?.published}row.published=!!published;
  err((await db.from('ink_works').upsert(row,{onConflict:'owner,local_id'})).error);app.toast(published?'作品已发布':'作品已私藏');if(published){if(galleryDialog.open)await renderGallery();document.dispatchEvent(new Event('cloud-copies83'))}else document.dispatchEvent(new Event('cloud-copies83'));return true;
  }finally{busy=false}}
 const worksGrid=$('worksGrid');function attach(){for(const card of worksGrid?.querySelectorAll('.workCard[data-work-id]')||[]){card.querySelector('.publishPlaza60')?.remove();if(card.querySelector('.cloudSave75'))continue;const actions=node('div',null,'cloudSave75');btn('私藏',async()=>save(await DraftStore.get(card.dataset.workId)),actions);btn('发布',async()=>save(await DraftStore.get(card.dataset.workId),true),actions);card.append(actions)}}
 if(worksGrid){new MutationObserver(attach).observe(worksGrid,{childList:true,subtree:true});attach()}
-document.addEventListener('work-archived',async e=>{try{await save(await DraftStore.get(e.detail.id))}catch(error){toast(error)}});
+document.addEventListener('work-archived',async e=>{try{await save(await DraftStore.get(e.detail.id),e.detail.choice?.publish)}catch(error){toast(error)}});
 const galleryDialog=node('dialog',null,'cloud75-dialog');galleryDialog.id='cloudGallery75';const galleryHead=node('div',null,'cloud75-head');galleryHead.append(node('strong','书法殿堂'));btn('关闭',()=>galleryDialog.close(),galleryHead);const gallery=node('div',null,'cloud75-gallery');galleryDialog.append(galleryHead,gallery);document.body.append(galleryDialog);btn('我的作品',showGallery,$('worksDialog')?.querySelector('.dialogHead')||document.body);async function showGallery(){if(!galleryDialog.open)galleryDialog.showModal();gallery.replaceChildren(node('p','正在打开书法殿堂…'));try{await renderGallery()}catch(e){gallery.replaceChildren(node('p','作品暂未读取：'+e.message));btn('重试',showGallery,gallery)}}
 async function signed(path){const {data,error}=await db.storage.from('ink-works').createSignedUrl(path,1800);err(error);return data.signedUrl}
 let copiesCache=null,copiesFetched=0;document.addEventListener('cloud-copies83',()=>{copiesCache=null;copiesFetched=0});async function publishedCopies(){if(copiesCache&&Date.now()-copiesFetched<60000)return copiesCache;const {data,error}=await db.from('ink_works').select('id,title,owner,local_id,image_path,updated_at').eq('published',true).like('local_id','copy:%').order('updated_at',{ascending:false}).limit(150);err(error);copiesCache=await Promise.all((await labelWorks84(data||[])).map(async row=>({...row,chapterId:/^copy:([^|]+)\|/.exec(row.local_id)?.[1]||'',src:await signed(row.image_path)})));copiesFetched=Date.now();return copiesCache}
