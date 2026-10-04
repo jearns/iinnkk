@@ -24,7 +24,7 @@
   if(r<.08*scale)return;const clip=state.clip;if(clip&&(x+r*1.5<clip.x||y+r*1.5<clip.y||x-r*1.5>clip.x+clip.w||y-r*1.5>clip.y+clip.h))return;
   const twist=state.twist||0,rx=r*(.76+Math.abs(turn)*.14),ry=r*(1+Math.abs(turn)*.10);angle+=twist*.35;t.fillStyle=s.color;t.globalAlpha=1;
   if(dry<.08){t.beginPath();t.ellipse(x,y,rx,ry,angle,0,Math.PI*2);t.fill();return}
-  const level=Math.min(5,Math.max(1,Math.ceil(dry*5))),tile=mask(s,level);
+  const level=Math.min(5,Math.max(1,Math.ceil(dry*5))),tile=t.vectorInk123?null:mask(s,level);
   if(tile){const k=s.color+':'+s.particle+':'+level;let pattern=state.patterns?.get(k);if(!pattern){pattern=t.createPattern(tile,'repeat');if(!state.patterns)state.patterns=new Map();state.patterns.set(k,pattern)}t.save();t.scale(scale,scale);const shift=(state.seed%113);t.translate(shift,shift*.37);t.fillStyle=pattern;t.beginPath();t.ellipse(x/scale-shift,y/scale-shift*.37,rx/scale,ry/scale,angle,0,Math.PI*2);t.fill();t.restore();t.fillStyle=s.color;t.beginPath();t.ellipse(x-Math.sin(angle)*ry*dry*.22*(noise(x/scale/41,y/scale/37,state.seed+19)-.5),y+Math.cos(angle)*ry*dry*.22*(noise(x/scale/41,y/scale/37,state.seed+19)-.5),rx,ry*Math.max(.08,1-dry*(1.05+.48*noise(x/scale/19,y/scale/23,state.seed))),angle,0,Math.PI*2);t.fill();return}
   // Bounded work per dab: dense contact plus a few seeded, intermittent tufts.
   // No per-pixel noise loops, grain maps or semi-transparent grey coating.
