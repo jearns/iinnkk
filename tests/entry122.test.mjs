@@ -19,7 +19,7 @@ function setup(){
  vm.runInContext(logic,context);
  return {context,drafts,calls,state:()=>state};
 }
-test('four entries preserve creation and copy drafts, enforce single and 3:4 photo settings',async()=>{
+test('v124 preserves single/copy drafts but photo and creation open fresh templates',async()=>{
  const s=setup(),M=s.context.window.Modes53;
  s.drafts.set('mode53:single',{values:{rows:'8',columns:'8'},flow:{strokes:[{id:'single'}]}});
  await M.activate({id:'single',layout:'single'},async()=>assert.fail('saved single should resume'));
@@ -31,6 +31,7 @@ test('four entries preserve creation and copy drafts, enforce single and 3:4 pho
  s.drafts.set('mode53:copy',{values:{ratio:'.5',rows:'12'},flow:{strokes:[{id:'copy'}]}});
  await M.activate({id:'copy'},async()=>assert.fail('saved copy should resume'));
  assert.equal(s.state().flow.strokes[0].id,'copy');assert.equal(s.state().values.rows,'12');
- await M.activate({id:'letter'},async()=>assert.fail('creation should resume'));
- assert.equal(s.state().flow.strokes[0].id,'creation');assert.equal(s.state().values.ratio,'0.04');
+ await M.activate({id:'letter'},async()=>{});
+ assert.equal(s.state().flow.strokes.length,0);assert.equal(s.state().values.ratio,'0.538889');assert.equal(s.state().values.stationery,'scroll');
+ await M.activate({id:'photo'},async()=>{});assert.equal(s.state().flow.strokes.length,0);assert.equal(s.state().values.ratio,'0.75');
 });

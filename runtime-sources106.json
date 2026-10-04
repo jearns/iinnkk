@@ -91,6 +91,7 @@
     "palettes94.js",
     "palettes95.js",
     "heritage102-data.js",
+    "heritage-zh124.js",
     "heritage102.js",
     "heritage-stories113.js",
     "revision94.js",
@@ -119,7 +120,8 @@
     "revision118.js",
     "revision119.js",
     "revision120.js",
-    "vector123.js"
+    "vector123.js",
+    "revision124.js"
   ],
   "styles": [
     "style.css",

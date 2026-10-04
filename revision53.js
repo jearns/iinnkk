@@ -11,7 +11,7 @@ function status(){for(const[id,control,prefix]of [['statusRatio42','ratio',''],[
 window.drawYong53=(t,a)=>{let opts;try{opts=JSON.parse(localStorage.getItem('iinnkk.yong53')||'{}')}catch{opts={}}if(opts.enabled===false)return;const size=Math.min(a.w,a.h)*.69,x=a.x+a.w/2,y=a.y+a.h/2;t.save();t.globalAlpha=.10;t.fillStyle='#73523c';t.font=size+'px AnnotationHand,ZhenjiKai,"Kaiti SC",Caption38,serif';t.textAlign='center';t.textBaseline='middle';t.fillText(opts.text||'永',x,y);t.globalAlpha=.25;t.font=Math.min(a.w,a.h)*.037+'px Caption38,serif';const labels=opts.notes||['侧 · 点贵侧锋','勒 · 横须逆入','努 · 竖应挺劲','趯 · 钩先蹲锋','策 · 提须疾出','掠 · 长撇舒展','啄 · 短撇劲利','磔 · 捺渐开张'];labels.forEach((v,i)=>t.fillText(v,x+(i<4?-1:1)*a.w*.32,a.y+a.h*(.12+(i%4)*.25)));t.restore()};
 let current=localStorage.getItem('iinnkk.mode53')||'',switching=false;window.practiceMode53=U.config.nav.find(n=>n.id===current)?.layout==='single'?'single':'';const switcher=E('nav',{id:'writerModes53','aria-label':'书写模式'});$('bottomIcons39').before(switcher);
 function modeButtons(){switcher.replaceChildren();for(const n of U.config.nav){const b=E('button',{type:'button','aria-pressed':String(current===n.id)},n.title);b.onclick=()=>U.applyMode(n).catch(U.report);switcher.append(b)}}modeButtons();document.addEventListener('studio-config50',modeButtons);
-const loadImage=src=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>reject(Error('字帖图片未加载'));im.src=src});
+const loadImage=src=>new Promise((resolve,reject)=>{const im=new Image(),timer=setTimeout(()=>reject(Error('字帖图片加载超时')),8000);im.onload=()=>{clearTimeout(timer);resolve(im)};im.onerror=()=>{clearTimeout(timer);reject(Error('字帖图片未加载'))};im.src=src});
 if(current==='copy')DraftStore.get('copy-ref53').then(async src=>{if(!A.getReference()&&current==='copy'){const im=await loadImage(src||await DraftStore.get('default-reference53')||'practice/thousand-guide53.svg');if(current==='copy'&&!A.getReference())A.setReference(im)}}).catch(U.report);
 async function fitReference(im,focus=true){const boxes=Reference47.detect(im),b=boxes[0]||{x:.86,y:.1,w:.12,h:.1};const board=$('board').getBoundingClientRect(),ratio=im.width/im.height,pw=4,ph=4/ratio,base=Math.max(board.width/pw,board.height/ph),scale=Math.min(board.width/(pw*b.w*1.65),board.height/(ph*b.h*1.65)),zoom=Math.max(100,Math.min(2500,Math.round(scale/base*100)));$('zoom').max='2500';const oldLocked=window.writingLocked;window.writingLocked=false;await A.configure47({values:{stationery:'vermillion',paperExtent:'fixed',ratio:String(ratio),refFit:'contain',refX:'50',refY:'50',zoom:String(focus?zoom:+$('zoom').value||zoom),sceneChoice:'none',guideMode:'off',showLines:'no'},inkOpacity:1});A.setReference(im);if(focus)A.focusPoint({x:b.x*pw,y:b.y*ph});window.writingLocked=oldLocked;Revision39.syncLock();A.persist();}
 window.ModeEntry122=true;
@@ -21,7 +21,9 @@ async function entrySettings122(n){
   await A.configure47({values:{ratio:'1',rows:'1',columns:'1',letterLayout:'custom',paperExtent:'fixed',stationery:'vermillion',sceneChoice:'none',photoMode:'hero2',guideMode:'off',showLines:'yes',ruling:'mi',zoom:'100'},focus:'start'});
  }else if(n.id==='photo'){
   window.practiceMode53='';const choices=['split','left','right','bottom','editorial'].filter(v=>[...$('photoMode').options].some(o=>o.value===v));
-  await A.configure47({photoLayout114:true,values:{ratio:'0.75',paperExtent:'fixed',stationery:'plain',sceneChoice:'none',photoMode:choices[Math.floor(Math.random()*choices.length)]||'split',showLines:'no',guideMode:'off'},focus:'start'});
+  await A.configure47({photoLayout114:true,values:{ratio:'0.75',paperExtent:'fixed',stationery:'vermillion',sceneChoice:'none',photoMode:choices[Math.floor(Math.random()*choices.length)]||'split',showLines:'no',guideMode:'off'},focus:'start'});
+ }else if(n.id==='letter'){
+  window.practiceMode53='';await A.configure47({values:{ratio:'0.538889',stationery:'scroll',paperExtent:'fixed',sceneChoice:'none',photoMode:'none',followDirection:'vertical',rows:'8',columns:'4',letterLayout:'custom',guideMode:'off',showLines:'no',zoom:'200'},mountKey:'bare',focus:'start'});
  }
 }
 window.Modes53={async activate(n,apply){
@@ -29,7 +31,7 @@ window.Modes53={async activate(n,apply){
  document.body.classList.add('mode-loading109');A.showWriter();
  try{
   A.cancelGesture110();
-  if(current===n.id&&!A.getState().editingWork110){await entrySettings122(n);if(n.id==='photo')await window.Revision120?.ensurePhoto().catch(error=>A.toast(error.message));A.refresh();if(!A.isOverview55())$('fitView').click();return}
+  // Every click follows the same complete entry path; old early returns skipped reference setup.
   const outgoing=A.getState();
   if(current&&!outgoing.editingWork110){
    A.finish();await DraftStore.set('mode53:'+current,{...A.getState(),modeConfig53:JSON.stringify(U.config.nav.find(x=>x.id===current))});
@@ -37,18 +39,17 @@ window.Modes53={async activate(n,apply){
   }
   await CopyAlbums38.pause?.();
   await A.newBlank54();window.writingLocked=false;A.setReference(null);window.practiceMode53=n.layout==='single'?'single':'';
-  const saved=await DraftStore.get('mode53:'+n.id);
+  const saved=['photo','letter'].includes(n.id)?null:await DraftStore.get('mode53:'+n.id);
   if(saved)await A.resumeModeDraft120(saved);else await apply();
-  if(n.id==='copy'){
-   window.practiceMode53='';const resumed=await CopyAlbums38.resume?.();
-   if(!resumed){const src=await DraftStore.get('copy-ref53')||localStorage.getItem('iinnkk.defaultReference53')||await DraftStore.get('default-reference53')||'practice/thousand-guide53.svg';await fitReference(await loadImage(src),!saved)}
-   window.annotationInkOpacity=1;
-  }else A.setReference(null);
+  if(n.id==='copy'){window.practiceMode53='';window.annotationInkOpacity=1;}else A.setReference(null);
   await entrySettings122(n);
   current=n.id;localStorage.setItem('iinnkk.mode53',current);window.writingLocked=true;Revision39.syncLock();
   document.dispatchEvent(new CustomEvent('mode-changed54',{detail:n}));modeButtons();A.refresh();A.showWriter();
   if(!A.isOverview55())$('fitView').click();
-  if(n.id==='photo')await window.Revision120?.ensurePhoto().catch(error=>A.toast(error.message));
+  if(n.id==='photo')window.Revision120?.ensurePhoto().catch(error=>A.toast(error.message));
+  if(n.id==='copy'&&!A.getReference()){
+   (async()=>{const src=await DraftStore.get('copy-ref53')||localStorage.getItem('iinnkk.defaultReference53')||await DraftStore.get('default-reference53')||'practice/thousand-guide53.svg';let im;try{im=await loadImage(src)}catch{im=await loadImage('practice/thousand-guide53.svg')}if(current==='copy'){await fitReference(im,!saved);if(!A.isOverview55())$('fitView').click()}})().catch(error=>A.toast(error.message));
+  }
   document.dispatchEvent(new CustomEvent('mode-ready109',{detail:{restored:!!saved,mode:n.id}}));
  }catch(error){current=previous;console.error('书写入口',n.id,error);A.toast('打开未完成：'+(error.message||'请重试'));throw error}
  finally{switching=false;document.body.classList.remove('mode-loading109')}
