@@ -1,5 +1,5 @@
 (function init118(){
- if(!window.WritingRank117||!window.AnnotationApp?.ready){setTimeout(init118,60);return}
+ if(!window.WritingRank117||!window.AnnotationApp?.ready||!window.Revision111?.ready){setTimeout(init118,60);return}
  const A=AnnotationApp,$=id=>document.getElementById(id),rank=()=>WritingRank117.open();
  const icon=document.createElement('button');icon.id='homeRank118';icon.type='button';icon.className='homeIcon111';icon.title=icon.ariaLabel='写字排行榜';icon.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 20h18M5 18V9h4v9m2 0V4h4v14m2 0v-6h4v6M13 2l1 2"/></svg>';icon.onclick=rank;$('homeWorks111').before(icon);
  for(const id of ['homeWorks111','homeHall111'])$(id).querySelector('span')?.remove();
