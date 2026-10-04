@@ -1,4 +1,4 @@
-const CACHE='annotation-core117',ASSETS='annotation-assets',CORE=["dragon-paper.png","fonts/YiShanBeiZhuanTi.woff2","fonts/shuowen-core45.woff","index.html","favicon90.png","apple-touch-icon.png","hero-wide94.webp","hero-mobile94.webp","app-runtime.7dfdc5a204a9355a.css","app-runtime.f1ac7d1b9dec22fd.js"];
+const CACHE='annotation-core118',ASSETS='annotation-assets',CORE=["dragon-paper.png","fonts/YiShanBeiZhuanTi.woff2","fonts/shuowen-core45.woff","index.html","favicon90.png","apple-touch-icon.png","hero-wide94.webp","hero-mobile94.webp","app-runtime.05308d0aef730b0b.css","app-runtime.ac178e639e5da777.js"];
 const codeURL=u=>/\.(js|css|html|json)$/.test(u.pathname);
 async function fetchFresh(path){const response=await fetch(path,{cache:'reload'});if(!response.ok)throw Error('Offline resource unavailable');return response}
 self.addEventListener('install',e=>e.waitUntil((async()=>{const cache=await caches.open(CACHE);let index=0;async function run(){while(index<CORE.length){const path=CORE[index++],response=await fetchFresh(path);await cache.put(path,response)}}await Promise.all([run(),run(),run()]);await self.skipWaiting()})()));
