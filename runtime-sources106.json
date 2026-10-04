@@ -117,7 +117,8 @@
     "revision116.js",
     "revision117.js",
     "revision118.js",
-    "revision119.js"
+    "revision119.js",
+    "revision120preview.js"
   ],
   "styles": [
     "style.css",
@@ -172,6 +173,7 @@
     "revision116.css",
     "revision117.css",
     "revision118.css",
-    "revision119.css"
+    "revision119.css",
+    "revision120preview.css"
   ]
 }
