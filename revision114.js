@@ -3,7 +3,6 @@
  const A=AnnotationApp,$=id=>document.getElementById(id),ratio=$('ratio'),effects=$('previewEffects55'),rail=effects.querySelector('.finalRail54');
  // Square cover asset, with image and lettering in the central safe band.
  if(![...ratio.options].some(o=>o.value==='1.000000'))ratio.prepend(new Option('朋友圈封面 · 1:1','1.000000'));
- for(const id of ['photoMode','quickPhotoMode'])if(![...$(id).options].some(o=>o.value==='moments114'))$(id).add(new Option('朋友圈封面 · 个性手书','moments114'));
  const upload=document.createElement('input');upload.type='file';upload.accept='image/*';upload.hidden=true;upload.id='coverUpload114';document.body.append(upload);
  upload.onchange=async()=>{try{await A.replaceCoverPhoto114([...upload.files]);}catch(e){A.toast('照片未能读取，请重试')}finally{upload.value=''}};
  function button(label,action){const b=document.createElement('button');b.type='button';b.textContent=label;b.onclick=action;return b}
