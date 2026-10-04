@@ -24,7 +24,7 @@ test('a thousand glyphs: viewport index matches full scan across zoom, edits and
 
 test('whole work recolor changes all thousand strokes, preserves geometry and skips unchanged colors',()=>{
  const strokes=Array.from({length:1000},(_,i)=>({done:true,settings:{color:i%2?'#050505':'#2867b1'},points:[{x:.2,y:i*.1}]}));
- const origin=new WeakMap(),context=vm.createContext({flow:{strokes},brush:{color:'#2867b1'},recolorOrigins:origin,$:()=>({value:'all'}),finish(){},commitHistory(){},fullInkRefs:[],inkTiles:new Map(),tileRefs:[],redraw(){},saveSoon(){},toast(){}});
+ const origin=new WeakMap(),context=vm.createContext({flow:{strokes},brush:{color:'#2867b1'},recolorOrigins:origin,strokeRasters:new Map(),strokeBoundsCache:new WeakMap(),rasterJobs:new Map(),indexedStrokes:null,indexedCount:0,indexedLast:null,$:()=>({value:'all'}),finish(){},commitHistory(){},fullInkRefs:[],inkTiles:new Map(),tileRefs:[],redraw(){},saveSoon(){},toast(){}});
  vm.runInContext(recolor,context);context.recolorWork(true);
  assert.equal(context.flow.strokes.length,1000);
  assert(context.flow.strokes.every(st=>st.settings.color==='#2867b1'));

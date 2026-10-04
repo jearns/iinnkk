@@ -1,6 +1,6 @@
 (function init119(){
  if(!window.Revision118?.ready||!window.InkCloud75){setTimeout(init119,50);return}
- const A=AnnotationApp,$=id=>document.getElementById(id),dialog=$('downloadDialog'),body=dialog.querySelector('.dialogBody');
+ const A=AnnotationApp,$=id=>document.getElementById(id),dialog=$('downloadDialog'),body=dialog.querySelector('.dialogBody')||dialog;
  const choice=document.createElement('fieldset');choice.id='saveChoice119';choice.innerHTML='<legend>保存方式</legend><label><input type="radio" name="saveKind119" value="single" checked> 单张作品</label><label><input type="radio" name="saveKind119" value="series"> 作为套作品的一页</label><label class="seriesName119">套作品名称<input id="seriesName119" maxlength="40" placeholder="例如：我的手书集"></label><label class="publish119"><input id="publish119" type="checkbox"> 公开发布到书法殿堂</label><small>未勾选时只保存为私藏；公开发布需要登录账号。</small>';
  body.append(choice);const name=$('seriesName119'),publish=$('publish119');let pendingSeries=null,lastSeries=null;
  function update(){choice.classList.toggle('series119',choice.querySelector(':checked[name="saveKind119"]')?.value==='series')}
