@@ -17,7 +17,7 @@
   const draft=A.getState(),strokes=[],width=4,height=45,cols=10,rows=100;
   for(let i=0;i<1000;i++){const col=cols-1-i%cols,row=Math.floor(i/cols),x=.28+col*.35,y=.28+row*.44,seed=i*2;
    for(const [j,points] of [[0,[[x+.07,y+.06],[x+.23,y+.32]]],[1,[[x+.25,y+.08],[x+.06,y+.3]]]])strokes.push({points:points.map(([px,py],k)=>({x:px,y:py,t:k*18,pressure:.5})),settings:{...draft.brush,size:20},seed:seed+j,done:true,inkMode:'raw'})}
-  const next={...draft,flow:{strokes},signatureStrokes:[],values:{...draft.values,paperExtent:'infinite',ratio:String(width/height),columns:String(cols),rows:String(rows),zoom:'400',guideMode:'off',sceneChoice:'none'},infiniteExtent:{w:width,h:height},camera:{x:2.5,y:0},writingView110:{camera:{x:2.5,y:0},focused:true},editingWork110:null};
+  const next={...draft,flow:{strokes},signatureStrokes:[],values:{...draft.values,paperExtent:'manual',ratio:String(width/height),columns:String(cols),rows:String(rows),zoom:'400',guideMode:'off',sceneChoice:'none'},infiniteExtent:{w:width,h:height},camera:{x:2.5,y:0},writingView110:{camera:{x:2.5,y:0},focused:true},editingWork110:null};
   await A.restoreDraft(next);A.showWriter();A.persist();A.toast('已载入 1000 字位 / 2000 笔；可试缩放、变色与预览拖边')
  }catch(error){A.toast('样本未能载入：'+error.message)}finally{sample.disabled=false}};
  window.PreviewPaper120={expand,place,toggle:()=>{enabled=!enabled;const check=document.getElementById('paperEdgeEnabled120');if(check)check.checked=enabled;place();A.toast(enabled?'四向扩纸已开启':'四向扩纸已收起');return enabled}};
