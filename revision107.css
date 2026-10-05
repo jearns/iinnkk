@@ -32,3 +32,5 @@ body.tools107 #board#board{bottom:calc(var(--controls106,0px) + 34px + var(--pho
 @media(max-width:600px){body.tools107 #writerRight90 .tool90{width:26px!important;min-width:26px!important;font-size:9px!important}body.tools107 #writerRight90 .tool90 svg{width:17px!important;height:17px!important}body.tools107 #writerLeft90>button{flex-basis:34px!important;width:34px!important;min-width:34px!important}body.tools107 .topStrip{padding:0 2px!important}}
 body.tools107.hide-top97 .topStrip{height:0!important;min-height:0!important;flex-basis:0!important;visibility:hidden!important}
 body.tools107.hide-top97 #topActions{display:none!important}
+
+.colors107 button[aria-pressed="true"]{outline:3px solid #3e3125;outline-offset:3px;box-shadow:0 0 0 2px #fff inset}
