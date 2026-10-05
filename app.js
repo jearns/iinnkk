@@ -67,21 +67,25 @@ function fitPaper(){if(active)return;writingOnPhoto=false;cancelAutoMove();if(!o
 function focusAt(e){if(focused||window.writingLocked)return;focused=true;const base=Math.max(W/4,H/(4/(+$('ratio').value||.75)));$('zoom').value=String(Math.round(S/base*100));}
 
 function template(){return stationeryPresets[$('stationery').value]||stationeryPresets.vermillion}
-function infinite(){return $('paperExtent').value==='infinite'||$('stationery').value==='infinite'}
+function infinite(){return ['manual','infinite'].includes($('paperExtent').value)||$('stationery').value==='infinite'}
 function sheetBounds(){return{x:0,y:0,w:infinite()?infiniteExtent.w:4,h:infinite()?infiniteExtent.h:4/(+$('ratio').value||template().ratio),footer:.18}}
 function growPaper(p){if(!infinite()||infiniteExtent.manual)return;const next={...infiniteExtent};if(p.x>next.w-.1)next.w=Math.ceil(Math.max(next.w,p.x+.8)*4)/4;if(p.y>next.h-.1)next.h=Math.ceil(Math.max(next.h,p.y+.8)*4)/4;infiniteExtent=next;}
 function expandPaperEdge(edge,amount){
  if(active||!['left','right','top','bottom'].includes(edge)||!Number.isFinite(amount)||!amount)return false;
- const old=sheetBounds(),horizontal=edge==='left'||edge==='right',w=old.w+(horizontal?amount:0),h=old.h+(horizontal?0:amount);
+ const old=sheetBounds(),horizontal=edge==='left'||edge==='right';
+ // Shrink only the chosen edge, stopping at the nearest existing content.
+ // A whole grid step may cross content even though a smaller blank strip is safe.
+ if(amount<0){const area=writingArea();let available=Math.min((horizontal?old.w:old.h)-.6,(horizontal?area.w:area.h)-.02);
+  const protect=(x,y,w=0,h=0,pad=0)=>{const gap=edge==='left'?x-pad:edge==='right'?old.w-x-w-pad:edge==='top'?y-pad:old.h-y-h-pad;available=Math.min(available,Math.max(0,gap))};
+  const ink=inkBounds([...flow.strokes,...signatureStrokes]);if(ink)protect(ink.x,ink.y,ink.w,ink.h,.08);
+  for(const p of photos)if(p.frame)protect(p.frame.x,p.frame.y,p.frame.w,p.frame.h);
+  for(const p of Object.values(sealPositions))if(p)protect(p.x*old.w,p.y*old.h);
+  for(const p of extraSeals)protect(p.x*old.w,p.y*old.h);
+  if(available<.001)return false;amount=-Math.min(-amount,available);
+ }
+ const w=old.w+(horizontal?amount:0),h=old.h+(horizontal?0:amount);
  if(w<.6||h<.6||w>1000||h>1000)return false;
  const dx=edge==='left'?amount:0,dy=edge==='top'?amount:0;
- // A negative amount trims only blank paper. Keep every existing mark in its
- // original physical size; moving the left/top origin is translation only.
- if(amount<0){const ink=inkBounds([...flow.strokes,...signatureStrokes]);if(ink&&(ink.x+dx<.08||ink.y+dy<.08||ink.x+ink.w+dx>w-.08||ink.y+ink.h+dy>h-.08))return false;
-  if(photos.some(p=>p.frame&&(p.frame.x+dx<0||p.frame.y+dy<0||p.frame.x+p.frame.w+dx>w||p.frame.y+p.frame.h+dy>h)))return false;
-  if(Object.values(sealPositions).some(p=>p&&(p.x*old.w+dx<0||p.y*old.h+dy<0||p.x*old.w+dx>w||p.y*old.h+dy>h)))return false;
-  if(extraSeals.some(p=>p.x*old.w+dx<0||p.y*old.h+dy<0||p.x*old.w+dx>w||p.y*old.h+dy>h))return false;
- }
  finish();commitHistory();const beforeArea=writingArea(),beforeGrid=gridMetrics(beforeArea);
  const move=st=>dx||dy?{...st,geometry:{...st.geometry,x:(st.geometry?.x||0)+dx,y:(st.geometry?.y||0)+dy,k:st.geometry?.k??1,r:st.geometry?.r||0}}:st;
  flow.strokes=flow.strokes.map(move);signatureStrokes=signatureStrokes.map(move);
@@ -89,7 +93,7 @@ function expandPaperEdge(edge,amount){
  extraSeals=extraSeals.map(p=>({...p,x:(p.x*old.w+dx)/w,y:(p.y*old.h+dy)/h}));
  photos.forEach(p=>{if(p.frame)p.frame={...p.frame,x:p.frame.x+dx,y:p.frame.y+dy}});
  camera={x:camera.x+dx,y:camera.y+dy};if(lastWritingView)lastWritingView.camera={x:lastWritingView.camera.x+dx,y:lastWritingView.camera.y+dy};
- $('paperExtent').value='infinite';infiniteExtent={w,h,manual:true,area:{x:beforeArea.x,y:beforeArea.y,w:beforeArea.w+(horizontal?amount:0),h:beforeArea.h+(horizontal?0:amount)},dx:beforeGrid.dx,dy:beforeGrid.dy};const a=writingArea();
+ $('paperExtent').value='manual';infiniteExtent={w,h,manual:true,area:{x:beforeArea.x,y:beforeArea.y,w:beforeArea.w+(horizontal?amount:0),h:beforeArea.h+(horizontal?0:amount)},dx:beforeGrid.dx,dy:beforeGrid.dy};const a=writingArea();
  if(horizontal)$('columns').value=String(Math.min(1000,Math.max(1,Math.ceil(a.w/infiniteExtent.dx-1e-9))));
  else $('rows').value=String(Math.min(1000,Math.max(1,Math.ceil(a.h/infiniteExtent.dy-1e-9))));
  paperCacheKey='';overviewKey='';fullInkRefs=[];inkTiles.clear();tileRefs=[];cacheArea=null;miniRevision++;resize();saveSoon();return true
@@ -558,8 +562,8 @@ const originalChooseScene=chooseScene;chooseScene=value=>value.startsWith('annot
 function inkSource50(d){
  const prepare=st=>structuredClone(displayStroke({...st,inkMode:st.inkMode||d.values?.inkMode||'assist'})),strokes=(d.flow?.strokes||[]).map(prepare);
  const signatures=(d.signatureStrokes||[]).map(prepare),sb=inkBounds(signatures);
- if(sb){const w=d.values?.paperExtent==='infinite'?d.infiniteExtent?.w||4:4,h=d.values?.paperExtent==='infinite'?d.infiniteExtent?.h||4:4/(+d.values?.ratio||.75),fit=Math.min((w-.24)/sb.w,.22/sb.h),x=.12-sb.x*fit,y=h-Math.min(w,h)*((+d.values?.tailSize||8)/100+.035)-.28-sb.y*fit;for(const st of signatures){const g=st.geometry||{x:0,y:0,k:1,r:0};st.geometry={x:x+g.x*fit,y:y+g.y*fit,k:g.k*fit,r:g.r||0};strokes.push(st)}}
- const bw=d.values?.paperExtent==='infinite'?d.infiniteExtent?.w||4:4,bh=d.values?.paperExtent==='infinite'?d.infiniteExtent?.h||4:4/(+d.values?.ratio||.75);return {strokes,name:'亲笔真迹',values:{...d.values},seals:d.productionSeals53||sealItems53(d,bw,bh)};
+ if(sb){const w=['manual','infinite'].includes(d.values?.paperExtent)?d.infiniteExtent?.w||4:4,h=['manual','infinite'].includes(d.values?.paperExtent)?d.infiniteExtent?.h||4:4/(+d.values?.ratio||.75),fit=Math.min((w-.24)/sb.w,.22/sb.h),x=.12-sb.x*fit,y=h-Math.min(w,h)*((+d.values?.tailSize||8)/100+.035)-.28-sb.y*fit;for(const st of signatures){const g=st.geometry||{x:0,y:0,k:1,r:0};st.geometry={x:x+g.x*fit,y:y+g.y*fit,k:g.k*fit,r:g.r||0};strokes.push(st)}}
+ const bw=['manual','infinite'].includes(d.values?.paperExtent)?d.infiniteExtent?.w||4:4,bh=['manual','infinite'].includes(d.values?.paperExtent)?d.infiniteExtent?.h||4:4/(+d.values?.ratio||.75);return {strokes,name:'亲笔真迹',values:{...d.values},seals:d.productionSeals53||sealItems53(d,bw,bh)};
 }
 function sealItems53(d,w,h){const list=[],v=d.values||{},pos=d.sealPositions||{};for(const key of ['head','tail']){if(key==='head'?v.headMode==='none':v.sealMode==='none')continue;const text=v[key+'Text'];if(!text)continue;const size=Math.min(w,h)*Math.sqrt(.8)*(+v[key+'Size']||8)/100,p=pos[key]||{};list.push({x:(p.x??(key==='head'?.90:.05))*w,y:(p.y??(key==='head'?.015:.86))*h,size,angle:p.angle||0,config:{text,font:key==='head'?v.headFont:v.sealFont,type:v[key+'Type']||'yin',shape:v[key+'Shape']||'square',layout:v[key+'Layout']||'vertical',color:v[key+'Color']||'#b62118',fontScale:(+v[key+'LetterSize']||100)/100,rough:(+v.sealRough||10)/100,fontLoaded:true}})}for(const it of d.extraSeals||[])list.push({...it,x:it.x*w,y:it.y*h});return list}
 async function productionCanvas50(source,width=2400,includeSeals=false){
