@@ -177,9 +177,10 @@ const strokeRasters=new Map();let rasterPixels=0;
 const rawGeometryStrokes=new WeakMap();
 const rasterJobs=new Map();let rasterJobTimer=0,rasterRefreshTimer=0;
 function enqueueRaster(st,job){rasterJobs.set(st,job);if(rasterJobTimer)return;const run=()=>{rasterJobTimer=0;if(gesturing||active){rasterJobTimer=setTimeout(run,100);return}const start=performance.now();for(const [stroke,fn]of rasterJobs){rasterJobs.delete(stroke);fn();if(performance.now()-start>5)break}if(rasterJobs.size)rasterJobTimer=setTimeout(run,16);else{clearTimeout(rasterRefreshTimer);rasterRefreshTimer=setTimeout(()=>{if(!gesturing&&!active){cacheArea=null;background();if(!overview)ensureCache();presentInk()}},40)}};rasterJobTimer=setTimeout(run,80)}
+function exportInkColor126(color){if(!compositionOptions||compositionOptions.inkColor!==false&&compositionOptions.paperColor!==false)return color;const bg=compositionOptions.paperColor===false?'#ffffff':$('papercolor').value,light=value=>{let hex=value.replace('#','');if(hex.length===3)hex=[...hex].map(c=>c+c).join('');const n=parseInt(hex,16);return ((n>>16)&255)*.299+((n>>8)&255)*.587+(n&255)*.114};const ink=compositionOptions.inkColor===false?'#050505':color;return Math.abs(light(ink)-light(bg))<80?(light(bg)>128?'#050505':'#fffaf0'):ink}
 function renderInk(st,t,w,h,clip){
  if(st.geometry){let raw=rawGeometryStrokes.get(st);if(!raw){raw={...st};delete raw.geometry;rawGeometryStrokes.set(st,raw)}const g=st.geometry;t.save();t.translate(g.x*w,g.y*h);t.rotate(g.r||0);t.scale(g.k,g.k);renderInk(raw,t,w,h);t.restore();return}
- let shown=displayStroke(st);if(compositionOptions?.inkColor===false)shown={...shown,settings:{...shown.settings,color:'#050505'}};
+ let shown=displayStroke(st);if(compositionOptions&&(compositionOptions.inkColor===false||compositionOptions.paperColor===false))shown={...shown,settings:{...shown.settings,color:exportInkColor126(shown.settings.color)}};
  if(compositionOptions?.highResolution){t.save();t.globalAlpha*=window.annotationInkOpacity??1;try{return ParticleBrush.render(shown,t,w,h,clip)}finally{t.restore()}}
  if(!st.done)return ParticleBrush.render(shown,t,w,h,clip);const b=inkBounds([st]);if(!b)return;
  const interactive=[paper,ink,live,historySurface,strokeSurface].includes(t.canvas),maxSide=interactive?4096:8192,maxPixels=interactive?4000000:16000000;
