@@ -1,4 +1,4 @@
-const CACHE='annotation-core119.4',ASSETS='annotation-assets',CORE=["dragon-paper.png","fonts/YiShanBeiZhuanTi.woff2","fonts/shuowen-core45.woff","index.html","favicon90.png","apple-touch-icon.png","hero-wide94.webp","hero-mobile94.webp","app-runtime.1a8e5c2f51ea64b3.js","app-runtime.1cc7a0f4b07fe312.js","app-runtime.2afbe629025cecb6.js","app-runtime.86a6843ec3df36e0.js","app-runtime.9d39c3fef7373caf.css"];
+const CACHE='annotation-core119.4.5',ASSETS='annotation-assets',CORE=["dragon-paper.png","fonts/YiShanBeiZhuanTi.woff2","fonts/shuowen-core45.woff","index.html","favicon90.png","apple-touch-icon.png","hero-wide94.webp","hero-mobile94.webp","app-runtime.1a8e5c2f51ea64b3.js","app-runtime.1cc7a0f4b07fe312.js","app-runtime.2afbe629025cecb6.js","app-runtime.c01eadc7c259c702.js","app-runtime.264b16c8d5b81599.css"];
 const codeURL=u=>/\.(js|css|html|json)$/.test(u.pathname);
 async function fetchFresh(path){const response=await fetch(path,{cache:'reload'});if(!response.ok)throw Error('Offline resource unavailable');return response}
 self.addEventListener('install',e=>e.waitUntil((async()=>{const cache=await caches.open(CACHE);let index=0;async function run(){while(index<CORE.length){const path=CORE[index++],response=await fetchFresh(path);await cache.put(path,response)}}await Promise.all([run(),run(),run()]);await self.skipWaiting()})()));
@@ -17,3 +17,4 @@ self.addEventListener('fetch',e=>{
  try{return await load()}catch{return Response.error()}finally{complete()}
  }catch{complete();return Response.error()}})());
 });
+
