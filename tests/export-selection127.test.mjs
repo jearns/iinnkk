@@ -19,5 +19,5 @@ test('selection toolbar stays open across recolor and delete until manually clos
  button.onclick();const layer=board.children[0],toolbar=layer.children[0],mode=toolbar.children[0],color=toolbar.children[2];mode.value='all';mode.onchange();color.value='#ff0000';color.onchange();assert.equal(layer.hidden,false);assert.equal(strokes[0].settings.color,'#ff0000');color.value='#0000ff';color.onchange();assert.equal(strokes[0].settings.color,'#0000ff');assert.equal(layer.hidden,false);toolbar.children[6].onclick();assert.equal(strokes.length,0);assert.equal(layer.hidden,false);toolbar.children.at(-1).onclick();assert.equal(layer.hidden,true);
 });
 test('both writing watermark states include five-tap clear and six-tap undo',()=>{
- const s=fs.readFileSync('revision100.js','utf8');assert.equal(s.split('双指五击清屏').length-1,2);assert.equal(s.split('双指六击返回上一步（Undo）').length-1,2);
+ const s=fs.readFileSync('revision100.js','utf8');assert.equal(s.split('双指五击清空书写').length-1,2);assert.equal(s.split('双指六击返回操作').length-1,2);
 });
