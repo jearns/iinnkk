@@ -5,7 +5,7 @@ function create(api){
  const layer=document.createElement('div');layer.className='inkSelectionLayer';layer.hidden=true;
  const toolbar=document.createElement('div');toolbar.className='inkSelectionTools';
  const mode=document.createElement('select');mode.setAttribute('aria-label','笔迹选择范围');for(const [v,n]of [['char','单字框选'],['row','单行点选'],['col','单列点选'],['all','全部字']]){const o=document.createElement('option');o.value=v;o.textContent=n;mode.append(o)}
- const done=document.createElement('button');done.textContent='完成';const again=document.createElement('button');again.textContent='重新选';
+ const done=document.createElement('button');done.textContent='× 关闭';const again=document.createElement('button');again.textContent='重新选';
  const box=document.createElement('div');box.className='inkSelectionBox';box.hidden=true;const handle=document.createElement('button');handle.className='inkScaleHandle';handle.textContent='⤢';handle.setAttribute('aria-label','拖动等比缩放笔迹');box.append(handle);
  const remove=document.createElement('button');remove.className='inkDeleteX';remove.textContent='×';remove.setAttribute('aria-label','删除选中笔迹');box.append(remove);
  const style=document.createElement('select');style.setAttribute('aria-label','选中文字书风');const prompt=document.createElement('option');prompt.value='';prompt.textContent='更换书风';style.append(prompt);for(const [key,p]of Object.entries(api.presets||{})){const o=document.createElement('option');o.value=key;o.textContent=p.name;style.append(o)}

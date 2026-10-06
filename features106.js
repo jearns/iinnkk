@@ -1,7 +1,7 @@
 (function initFeatures106(){
  if(!window.Revision104?.ready||!window.Revision100?.ready){setTimeout(initFeatures106,60);return}
  const $=id=>document.getElementById(id),A=AnnotationApp;
- const layouts=[['上图下文','split'],['左图右文','left'],['右图左文','right'],['整图铺满','background'],['多图配文','hero2'],['无图模式','none'],['明信片','postcard']];
+ const layouts=[['上图下文','split'],['左图右文','left'],['右图左文','right'],['整图铺满','background'],['多图配文','hero2'],['无图模式','none'],['明信片','postcard'],['视频号封面','videoCover']];
  for(const id of ['photoMode','quickPhotoMode']){const select=$(id),old=select.value;select.replaceChildren(...layouts.map(([name,value])=>new Option(name,value)));select.value=layouts.some(x=>x[1]===old)?old:'split'}
  const panel=Revision62.photoPanel,file=panel.querySelector('input[type=file]');file.hidden=true;
  const choices=document.createElement('div');choices.className='photoChoices106';

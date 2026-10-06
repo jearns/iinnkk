@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import vm from 'node:vm';import {readFileSync} from 'node:fs';
+const source=readFileSync(new URL('../photo-effects125.js',import.meta.url),'utf8'),s={window:{}};vm.createContext(s);vm.runInContext(source.slice(0,source.indexOf('(function init()')),s);const blur=s.window.PhotoEffects125.blurPixels;
+test('Safari-compatible blur preserves flat colors and alpha',()=>{const a=new Uint8ClampedArray(5*3*4);for(let i=0;i<a.length;i+=4)a.set([12,90,200,255],i);assert.deepEqual(Array.from(blur(a,5,3,2)),Array.from(a))});
+test('blur softens an isolated pixel and keeps opaque alpha',()=>{const a=new Uint8ClampedArray(5*5*4);for(let i=3;i<a.length;i+=4)a[i]=255;a[(2*5+2)*4]=255;const b=blur(a,5,5,1);assert.ok(b[(2*5+2)*4]>0&&b[(2*5+2)*4]<255);assert.ok(b[(2*5+1)*4]>0);assert.equal(b[3],255);assert.equal(a[(2*5+2)*4],255)});
+test('images without filters reuse original source instead of resampling',()=>{const p={image:{width:10,height:10},effects:{opacity:.5}};assert.equal(s.window.PhotoEffects125.image(p),p.image)});

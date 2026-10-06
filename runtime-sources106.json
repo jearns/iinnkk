@@ -119,7 +119,9 @@
     "revision118.js",
     "revision119.js",
     "revision120preview.js",
-    "type3d122.js"
+    "type3d122.js",
+    "photo-effects125.js",
+    "dialogs125.js"
   ],
   "styles": [
     "style.css",
@@ -177,6 +179,7 @@
     "revision119.css",
     "revision120preview.css",
     "revision120music.css",
-    "type3d122.css"
+    "type3d122.css",
+    "revision125.css"
   ]
 }
