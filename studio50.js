@@ -39,7 +39,7 @@ async function applyMode(n,internal=false){
  if(n.layout==='single')Object.assign(values,{rows:'1',columns:'1',ruling:'mi',showLines:'yes',papercolor:'#e4d5b5',zoom:'100'});
  if(n.format==='couplet')Object.assign(values,{columns:'2',followDirection:'vertical'});
  const preset=app.presets[n.preset]?n.preset:'zhang';const patch={};for(const k of ['softness','smoothing','taper','fullness'])if(Number.isFinite(n.advanced.brush?.[k]))patch[k]=clamp(n.advanced.brush[k],0,k==='fullness'?2:1);
- await app.configure47({values,preset,size:n.id==='photo'?250:n.size,inkOpacity:n.opacity,mountKey:n.layout==='single'?'dark':n.advanced.mountKey||'paris',brushPatch:{...patch,dry:n.dry,dynamics:n.dynamics,color:n.ink},focus:'start'});
+ await app.configure47({values,preset,size:n.id==='photo'?250:n.size,inkOpacity:n.opacity,mountKey:n.layout==='single'?'dark':n.advanced.mountKey||'paris',brushPatch:{...patch,dry:n.layout==='single'&&preset==='yan'?.05:n.dry,dynamics:n.layout==='single'&&preset==='yan'?.50:n.dynamics,color:n.ink},focus:'start'});
  if(n.id==='photo')await app.videoCover125();else if(n.text)app.setGuide(n.text,'参考文字');window.writingLocked=true;window.Revision39?.syncLock();document.dispatchEvent(new Event('writing-scenario47'));app.showWriter();
  }finally{applying=false}
 }
@@ -95,3 +95,4 @@ async function init(){if(!window.Revision47?.ready||!window.AnnotationApp){setTi
 }
 window.InkStudio50={ready:false,get config(){return copy(config)},get isAdmin(){return unlocked&&(!window.IINNKK_SUPABASE?.url||window.InkCloud75?.role==='书仙')},saveConfig:next=>{requireAdmin();save(next)},formats,normalize,E,dialog,button,download,safeURL,openAdmin:()=>unlock(true),applyMode,report};init();
 })();
+
