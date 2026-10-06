@@ -6,6 +6,7 @@
       "place": "手稿版本待核",
       "museum": "请管理员指定所用手稿及收藏机构",
       "status": "作品原词与题写手迹须区分",
+      "parentId": "",
       "url": "",
       "style": "zhang",
       "size": 360,
@@ -20,6 +21,7 @@
       "place": "",
       "museum": "请管理员指定馆藏与具体墨迹",
       "status": "同词书写有不同作品",
+      "parentId": "",
       "url": "",
       "style": "zhang",
       "size": 340,
@@ -32,6 +34,30 @@
         "timeline/pages/yuyouren/mum854bu-4.jpg",
         "timeline/pages/yuyouren/mum855x0-5.jpg",
         "timeline/pages/yuyouren/mum857fk-6.jpg"
+      ]
+    },
+    "hanshi": {
+      "title": "苏轼·前赤壁赋",
+      "place": "中国·台北",
+      "museum": "国立故宫博物院",
+      "status": "传世墨迹",
+      "parentId": "",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail?id=882&dep=P",
+      "style": "su",
+      "size": 360,
+      "zoom": 159,
+      "pages": [
+        "timeline/pages/hanshi/muwiaz30-0.jpg",
+        "timeline/pages/hanshi/muwib0h4-1.jpg",
+        "timeline/pages/hanshi/muwib1zi-2.jpg",
+        "timeline/pages/hanshi/muwib3nm-3.jpg",
+        "timeline/pages/hanshi/muwib53g-4.jpg",
+        "timeline/pages/hanshi/muwib6kr-5.jpg",
+        "timeline/pages/hanshi/muwib806-6.jpg",
+        "timeline/pages/hanshi/muwib9ns-7.jpg",
+        "timeline/pages/hanshi/muwibazd-8.jpg",
+        "timeline/pages/hanshi/muwibc3h-9.jpg",
+        "timeline/pages/hanshi/muwibdm4-a.jpg"
       ]
     }
   }
