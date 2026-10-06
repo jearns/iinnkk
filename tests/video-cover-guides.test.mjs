@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import vm from 'node:vm';import {readFileSync} from 'node:fs';
+const src=readFileSync(new URL('../app.js',import.meta.url),'utf8'),code=src.slice(src.indexOf('function drawVideoCover125('),src.indexOf('\n',src.indexOf('function drawVideoCover125(')));
+function run(active=null,strokes=[]){const calls=[],s={active,flow:{strokes},composingArtwork:false,compositionOptions:null,brush:{color:'#000'},sealItem:()=>({x:.1,y:.9,size:.2}),sealAnchor45:()=>null};vm.createContext(s);vm.runInContext(code,s);s.drawVideoCover125({save(){},restore(){},fillText:(...a)=>calls.push(a)},{w:4,h:16/3});return calls}
+test('cover subtitle uses full text and aligns with lower stamp center',()=>{const c=run();assert.equal(c.slice(4).map(x=>x[0]).join(''),'视频号封面标题示意');for(const item of c.slice(4))assert.equal(item[1],.5);for(const item of c.slice(0,4))assert.equal(item[1],2)});
+test('cover guides disappear at pen-down and remain hidden after stroke',()=>{assert.equal(run({points:[]}).length,0);assert.equal(run(null,[{}]).length,0)});

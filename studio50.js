@@ -40,7 +40,7 @@ async function applyMode(n,internal=false){
  if(n.format==='couplet')Object.assign(values,{columns:'2',followDirection:'vertical'});
  const preset=app.presets[n.preset]?n.preset:'zhang';const patch={};for(const k of ['softness','smoothing','taper','fullness'])if(Number.isFinite(n.advanced.brush?.[k]))patch[k]=clamp(n.advanced.brush[k],0,k==='fullness'?2:1);
  await app.configure47({values,preset,size:n.id==='photo'?250:n.size,inkOpacity:n.opacity,mountKey:n.layout==='single'?'dark':n.advanced.mountKey||'paris',brushPatch:{...patch,dry:n.dry,dynamics:n.dynamics,color:n.ink},focus:'start'});
- if(n.text)app.setGuide(n.text,'参考文字');window.writingLocked=true;window.Revision39?.syncLock();document.dispatchEvent(new Event('writing-scenario47'));app.showWriter();
+ if(n.id==='photo')await app.videoCover125();else if(n.text)app.setGuide(n.text,'参考文字');window.writingLocked=true;window.Revision39?.syncLock();document.dispatchEvent(new Event('writing-scenario47'));app.showWriter();
  }finally{applying=false}
 }
 function dialog(id,title){document.getElementById(id)?.remove();const d=E('dialog',{id,class:'studioDialog50'}),head=E('header',{class:'dialogHead'}),body=E('div',{class:'dialogBody'});head.append(E('h2',{},title));const close=E('button',{type:'button','aria-label':'关闭'},'完成 ×');const parent=[...document.querySelectorAll('dialog[open]')].at(-1);close.onclick=()=>{d.close();if(parent?.isConnected&&!parent.open)parent.showModal();else if(id==='studioAdmin50'){if(managementParent53?.isConnected)app.openDialog(managementParent53.id);else app.openDialog('paperDialog')}};head.append(close);d.append(head,body);document.body.append(d);return {d,body};}
