@@ -16,7 +16,7 @@
  const icon=$('topSize');icon.dataset.caption90='纸笔';icon.title=icon.ariaLabel='书写参数';icon.querySelector('span').textContent='纸笔';$('topLines').hidden=true;$('topLines').setAttribute('aria-hidden','true');$('zoomQuick79').hidden=true;
  function sync(){check.checked=$('inkMode').value==='assist';for(const f of fields){f.number.value=f.range.value=f.value();f.output.textContent=f.value()+f.suffix}syncStatus()}
  const originalOpen=icon.onclick;icon.onclick=()=>{sync();originalOpen?.()};$('topLines').onclick=()=>icon.click();
- const hud=E('button','writingValues133');hud.type='button';hud.ariaLabel='调整书写参数';hud.onclick=()=>icon.click();$('board').append(hud);
+ const hud=E('button','writingValues133');hud.type='button';hud.ariaLabel='调整书写参数';hud.onclick=()=>icon.click();$('writingStatus74')?.remove();$('board').append(hud);
  function syncStatus(){const s=A.writingParameters133(),text='书风'+s.style+'·笔径'+s.size+'·纸张'+s.zoom+'%';if(hud.textContent!==text)hud.textContent=text}
  for(const type of ['input','change','ink-stroke','mode-changed54','preview-painted94','copy-cell128'])document.addEventListener(type,syncStatus);new MutationObserver(syncStatus).observe(document.body,{attributes:true,attributeFilter:['class']});setInterval(()=>{if(!document.hidden&&!document.body.classList.contains('home-open'))syncStatus()},1200);sync();
  const reader=$('dailyDialog'),resize=E('button','readerResize133');resize.type='button';resize.dataset.readerResize133='true';resize.ariaLabel=resize.title='调整文摘浮窗尺寸';resize.innerHTML=TouchOrder129.icon('M8 20l12-12M14 20l6-6');reader.append(resize);let drag;

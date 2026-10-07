@@ -41,6 +41,7 @@
     "revision38.js",
     "reading38.js",
     "reference-io129.js",
+    "reference-order134.js",
     "copy-albums38.js",
     "offline38.js",
     "revision39.js",
@@ -197,6 +198,7 @@
     "revision129.css",
     "revision131.css",
     "revision133.css",
-    "content133.css"
+    "content133.css",
+    "revision134.css"
   ]
 }
