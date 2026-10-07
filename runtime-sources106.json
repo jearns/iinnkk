@@ -68,6 +68,8 @@
     "timeline77-curation.js",
     "timeline78-data.js",
     "timeline94-data.js",
+    "reference-frames136.js",
+    "reference-gallery136.js",
     "timeline73.js",
     "revision73.js",
     "revision74.js",
@@ -135,7 +137,8 @@
     "revision131.js",
     "revision133.js",
     "content133.js",
-    "revision135.js"
+    "revision135.js",
+    "revision136.js"
   ],
   "styles": [
     "style.css",
@@ -201,6 +204,7 @@
     "revision133.css",
     "content133.css",
     "revision134.css",
-    "revision135.css"
+    "revision135.css",
+    "revision136.css"
   ]
 }

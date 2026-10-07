@@ -529,7 +529,7 @@ const actionBar=$('topActions');
 for(const [id,label] of [['topSize','输入笔径'],['topRatio','作品比例快切'],['topMount','装裱快切']]){const b=document.createElement('button');b.id=id;b.title=label;b.setAttribute('aria-label',label);actionBar.append(b)}
 for(const id of ['topReset','topParticle'])$('paperQuickRow').append($(id));
 $('topReset').setAttribute('aria-label','恢复已保存设置');
-const defaultOrder=['menuToggle','topQuotes','topRemove','topUpload','topLines','topDirection','topAuto','topOptimize','selectInk','topSize','topRatio','topMount','topInk','undo','redo','clear','topStart','fitView','export','myWorks','annotationHomeButton','calendarMoments','recordProcess'];
+const defaultOrder=['menuToggle','topQuotes','topRemove','topUpload','topDirection','topAuto','selectInk','topSize','topRatio','topMount','topInk','undo','redo','clear','topStart','fitView','export','myWorks','annotationHomeButton','calendarMoments','recordProcess'];
 window.toolbarOrder=()=>[...actionBar.children].map(b=>b.id).filter(id=>defaultOrder.includes(id));
 window.restoreToolbarOrder=order=>{window.pendingToolbarOrder43=order;for(const id of [...new Set([...(Array.isArray(order)?order:[]),...defaultOrder])])if(defaultOrder.includes(id)&&$(id))actionBar.append($(id))};
 window.restoreToolbarOrder(savedSettings?.toolbarOrder);
