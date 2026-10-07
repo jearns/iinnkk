@@ -28,6 +28,13 @@ test('selecting the leftmost of eight source columns is not clamped to a two-col
  vm.runInContext(lineFunction(ref,'sourceCell137')+'\n'+lineFunction(ref,'setCell')+'\n'+lineFunction(ref,'selectAt'),e);
  e.selectAt(50,960);assert.equal(e.current.col,7);assert.equal(e.current.row,1);assert.ok(Math.abs(e.focus.x-.25)<1e-8);assert.ok(Math.abs(e.focus.y-4.8)<1e-8);
  e.selectAt(750,320);assert.equal(e.current.col,0);assert.equal(e.current.row,0);
+ e.manuallyMoved140=false;e.floatSide140='left';e.selectAt(50,960);assert.equal(e.floatSide140,'left','reference selection keeps the window still');e.setCell(1,7,true);assert.equal(e.floatSide140,'right','body writing in left columns moves the window right');e.manuallyMoved140=true;e.setCell(0,0,true);assert.equal(e.floatSide140,'right','manual placement takes precedence');
+});
+
+test('double tap enlarges the first selected source cell without reselecting after recentering',()=>{
+ let selects=0,enlarges=0;const e={viewport:{},points:new Map([[1,{}]]),gesture:{time:0,multi:false,moved:false},lastTap:null,selectAt:()=>selects++,closeup:()=>enlarges++};
+ vm.createContext(e);vm.runInContext(ref.slice(ref.indexOf(' viewport.onpointerup='),ref.indexOf('viewport.onpointercancel=')),e);
+ e.viewport.onpointerup({pointerId:1,timeStamp:100,clientX:50,clientY:60});e.points.set(1,{});e.gesture={time:150,multi:false,moved:false};e.viewport.onpointerup({pointerId:1,timeStamp:200,clientX:50,clientY:60});assert.equal(selects,1);assert.equal(enlarges,1);
 });
 
 test('column height updates preserve a manually dragged right-side window; automatic placement can switch sides',()=>{
