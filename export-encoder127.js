@@ -1,6 +1,6 @@
 /* Keep artwork dimensions; choose the highest JPEG quality that fits the download budget. */
 (function(root){
- async function encode(canvas,budget=2000000){
+ async function encode(canvas,budget=1999000){
   if(!Number.isFinite(budget)||budget<=0)throw Error('图片大小限制无效');
   const ctx=canvas.getContext('2d');ctx.save();ctx.globalCompositeOperation='destination-over';ctx.fillStyle='#ffffff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.restore();
   const attempt=q=>new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(Error('图片编码失败')),'image/jpeg',q));

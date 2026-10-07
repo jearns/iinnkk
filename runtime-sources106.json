@@ -134,7 +134,8 @@
     "seals129.js",
     "revision131.js",
     "revision133.js",
-    "content133.js"
+    "content133.js",
+    "revision135.js"
   ],
   "styles": [
     "style.css",
@@ -199,6 +200,7 @@
     "revision131.css",
     "revision133.css",
     "content133.css",
-    "revision134.css"
+    "revision134.css",
+    "revision135.css"
   ]
 }

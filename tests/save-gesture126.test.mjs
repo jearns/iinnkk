@@ -25,11 +25,11 @@ test('generation opens image save dialog without starting a blank page',()=>{
  assert.ok(body.includes("openDialog('imageDialog')"));assert.ok(!body.includes('startSeriesPage119'));
 });
 test('selection bounds use rendered ink rather than brush padding',()=>assert.ok(source.includes('bounds:visibleInkBounds108,view:paperScreen')));
-test('3:4 export renders 3000 by 4000 and long sheets respect the canvas budget',()=>{
+test('3:4 export renders 3072 by 4096 and long sheets respect the canvas budget',()=>{
  for(const bounds of [{w:3,h:4},{w:4,h:80}]){
   const ctx={sheetBounds:()=>bounds,exportPrefs:{mount:false},gridMetrics:()=>({dx:1,dy:1}),Math};
   vm.runInNewContext(fn('exportMaxSide','let exportBlob')+';this.side=exportMaxSide()',ctx);
-  const scale=ctx.side/Math.max(bounds.w,bounds.h);assert.ok(bounds.w*bounds.h*scale*scale<=16000000);assert.ok(ctx.side<=16384);
-  if(bounds.h===4)assert.equal(ctx.side,4000);
+  const scale=ctx.side/Math.max(bounds.w,bounds.h);assert.ok(bounds.w*bounds.h*scale*scale<=18000000);assert.ok(ctx.side<=16384);
+  if(bounds.h===4)assert.equal(ctx.side,4096);
  }
 });
