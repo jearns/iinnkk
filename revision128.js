@@ -3,7 +3,7 @@
  if(!window.AnnotationApp?.ready||!window.CopyAlbums38||!window.Revision118?.ready){setTimeout(init128,80);return}
  const A=AnnotationApp,$=id=>document.getElementById(id),C=CopyAlbums38;
  let timer=0,saving=false,dirty=false,lastSaved=0,lastCloudSaved=0,cloudSaving=false;
- function queueAutosave(){dirty=true;clearTimeout(timer);timer=setTimeout(flush,Math.max(1800,8000-(Date.now()-lastSaved)))}
+ function queueAutosave(){dirty=true;clearTimeout(timer);timer=setTimeout(flush,Math.max(5000,8000-(Date.now()-lastSaved)))}
  function syncCloud(record){if(!record)return;const queue=window.OfflineSync101;if(queue){queue.enqueue(record,undefined,true).catch(e=>console.warn('Local sync queue pending',e));return}if(cloudSaving||!navigator.onLine||!window.InkCloud75?.user||Date.now()-lastCloudSaved<30000)return;cloudSaving=true;Promise.resolve().then(()=>InkCloud75.saveNow101(record,undefined,true)).then(ok=>{if(ok)lastCloudSaved=Date.now()}).catch(e=>{console.warn('Cloud autosave pending',e);dirty=true}).finally(()=>{cloudSaving=false})}
  async function flush(){if(!dirty)return;if(saving||A.isDrawing128()||document.querySelector('#imageDialog[open]')){timer=setTimeout(flush,1500);return}saving=true;dirty=false;try{const record=await A.autosave128();syncCloud(record);lastSaved=Date.now()}catch(e){dirty=true;console.warn('Autosave deferred',e);timer=setTimeout(flush,5000)}finally{saving=false}}
  document.addEventListener('ink-stroke',queueAutosave);document.addEventListener('visibilitychange',()=>{if(document.hidden)flush()});

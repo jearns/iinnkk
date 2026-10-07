@@ -1,0 +1,5 @@
+#topFold135#topFold135{top:max(-4px,calc(env(safe-area-inset-top) - 6px))!important;right:6px!important;background:transparent!important}
+#paperPen100.writingParameters133 .parameter133{grid-template-columns:1fr 132px;align-items:center}
+#paperPen100.writingParameters133 .parameterStepper140{display:flex;align-items:center;gap:3px;min-width:0}
+#paperPen100.writingParameters133 .parameterStepper140 input{width:66px;height:30px;min-height:30px;box-sizing:border-box;padding:2px;text-align:center;font-size:22px;color:#a6372d;font-weight:600}
+#paperPen100.writingParameters133 .parameterStepper140 button{width:30px;min-width:30px;height:32px;min-height:32px;padding:0;border:0;background:transparent;font-size:21px;line-height:1;color:inherit}

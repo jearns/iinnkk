@@ -50,5 +50,5 @@ test('reference controls have no plates in normal, pressed and hover states',()=
   for(const selector of ['header','footer','button:hover','button:active','button[aria-pressed=true]'])assert.ok(css.includes('.referenceFloat129.referenceFloat129 '+selector));
   assert.match(css,/background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important/);
   const styles=JSON.parse(fs.readFileSync(new URL('../runtime-sources106.json',import.meta.url),'utf8')).styles;
-  assert.equal(styles.at(-1),'revision139.css');
+  assert.ok(styles.indexOf('revision139.css')>styles.indexOf('revision133.css'));
 });
