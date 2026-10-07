@@ -129,7 +129,8 @@
     "touch-order129.js",
     "reference-analysis129.js",
     "revision129.js",
-    "seals129.js"
+    "seals129.js",
+    "revision131.js"
   ],
   "styles": [
     "style.css",
@@ -190,6 +191,7 @@
     "type3d122.css",
     "revision125.css",
     "revision128.css",
-    "revision129.css"
+    "revision129.css",
+    "revision131.css"
   ]
 }
