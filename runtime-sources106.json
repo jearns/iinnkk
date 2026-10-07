@@ -122,7 +122,9 @@
     "revision120preview.js",
     "type3d122.js",
     "photo-effects125.js",
-    "dialogs125.js"
+    "dialogs125.js",
+    "revision128.js",
+    "collaboration128.js"
   ],
   "styles": [
     "style.css",
@@ -181,6 +183,7 @@
     "revision120preview.css",
     "revision120music.css",
     "type3d122.css",
-    "revision125.css"
+    "revision125.css",
+    "revision128.css"
   ]
 }

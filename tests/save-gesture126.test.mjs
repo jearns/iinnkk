@@ -16,7 +16,7 @@ test('signature scroll advances camera without wrapping the body columns',()=>{
  assert.equal(context.result.wrap,false);assert.equal(context.result.camera.x,.5);assert.ok(context.result.camera.y>1);
 });
 test('saving twice retains the original ID and complete ink draft',async()=>{
- const saved=[],ctx={currentWork109:null,editSession:null,window:{},Date,Math,document:{createElement:()=>({getContext:()=>({drawImage(){}}),toBlob:cb=>cb(new Blob(['thumbnail']))}),dispatchEvent(){}},CustomEvent:class {},DraftStore:{saveWork:async work=>saved.push(work)},snapshot:()=>({flow:{strokes:[{points:[{x:1,y:1}]}]}}),persist(){},$:()=>({textContent:'',hidden:false}),toast(){},Blob};
+ const saved=[],ctx={currentWork109:null,editSession:null,window:{},Date,Math,document:{createElement:()=>({getContext:()=>({drawImage(){}}),toBlob:cb=>cb(new Blob(['thumbnail']))}),dispatchEvent(){}},CustomEvent:class {},DraftStore:{saveWork:async work=>saved.push(work)},snapshot:()=>({flow:{strokes:[{points:[{x:1,y:1}]}]}}),WorkMeta84:{format:(name,title)=>name+' 写 '+title},persist(){},$:()=>({textContent:'',hidden:false}),toast(){},Blob};
  vm.runInNewContext('async '+fn('archiveWork','function clearWorkURLs')+';this.save=archiveWork',ctx);
  await ctx.save({width:3000,height:4000},new Blob(['image-1']));await ctx.save({width:3000,height:4000},new Blob(['image-2']));assert.equal(saved[0].id,saved[1].id);assert.equal(saved[1].draft.flow.strokes.length,1);
 });

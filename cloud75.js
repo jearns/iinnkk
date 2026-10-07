@@ -53,12 +53,12 @@ async function cloudImage(blob){
  }finally{URL.revokeObjectURL(url)}
 }
 async function save(record,published){if(window.OfflineSync101)return OfflineSync101.enqueue(record,published);return saveNow101(record,published)}
-async function saveNow101(record,published){if(!user){dialog.showModal();renderAccount();return}if(busy)return false;busy=true;const savingUser=user;try{
+async function saveNow101(record,published,quiet128=false){if(!user){dialog.showModal();renderAccount();return}if(busy)return false;busy=true;const savingUser=user;try{
  if(!record?.blob)throw Error('本机作品无法读取');const id=String(record.id).replace(/[^a-zA-Z0-9_-]/g,'_'),path=savingUser.id+'/'+id+'.jpg',image=await cloudImage(record.blob);
  err((await db.storage.from('ink-works').upload(path,image,{upsert:true,contentType:'image/jpeg'})).error);
  const row={owner:savingUser.id,local_id:cloudLocalId(record.id),title:window.WorkMeta84?WorkMeta84.format(savingUser.user_metadata?.full_name||savingUser.email?.split('@')[0]||'亲笔书家',record.title,record.created,record.quoteAuthor,record.quoteTitle):record.title||'亲笔真迹',image_path:path,updated_at:new Date().toISOString()};
  if(published===undefined){const existing=await db.from('ink_works').select('published').eq('owner',savingUser.id).eq('local_id',row.local_id).maybeSingle();err(existing.error);published=!!existing.data?.published}row.published=!!published;
- err((await db.from('ink_works').upsert(row,{onConflict:'owner,local_id'})).error);app.toast(published?'作品已发布':'作品已私藏');if(published){if(galleryDialog.open)await renderGallery();document.dispatchEvent(new Event('cloud-copies83'))}else document.dispatchEvent(new Event('cloud-copies83'));return true;
+ err((await db.from('ink_works').upsert(row,{onConflict:'owner,local_id'})).error);if(!quiet128)app.toast(published?'作品已发布':'作品已私藏');if(!quiet128&&published){if(galleryDialog.open)await renderGallery();document.dispatchEvent(new Event('cloud-copies83'))}else if(!quiet128)document.dispatchEvent(new Event('cloud-copies83'));return true;
  }finally{busy=false}}
 const worksGrid=$('worksGrid');function attach(){for(const card of worksGrid?.querySelectorAll('.workCard[data-work-id]')||[]){card.querySelector('.publishPlaza60')?.remove();if(card.querySelector('.cloudSave75'))continue;const actions=node('div',null,'cloudSave75');btn('私藏',async()=>save(await DraftStore.get(card.dataset.workId)),actions);btn('发布',async()=>save(await DraftStore.get(card.dataset.workId),true),actions);card.append(actions)}}
 if(worksGrid){new MutationObserver(attach).observe(worksGrid,{childList:true,subtree:true});attach()}

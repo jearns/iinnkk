@@ -17,8 +17,8 @@ test('duplicate and reserved directory names cannot corrupt selection or storage
 });
 test('homepage attribution keeps the author and work, removes date/time and uses the detected city',()=>{
  const title=T.format('墨客','2026.09.29 17:48 写苏轼《定风波》','2026-10-01','','','杭州');
- assert.equal(title,'墨客 写《苏轼·定风波》于 杭州');
- assert.equal(T.format('新名字',title,'2026-10-02','','','杭州'),'新名字 写《苏轼·定风波》于 杭州');
+ assert.equal(title,'墨客 写 苏轼 《定风波》于杭州');
+ assert.equal(T.format('新名字',title,'2026-10-02','','','杭州'),'新名字 写 苏轼 《定风波》于杭州');
  assert.equal(T.owner(title),'墨客');
- assert.equal(T.format('墨客','亲笔真迹 · 2026.09.29 17:48','2026-09-29','','','杭州'),'墨客 写《随手书写》于 杭州');
+ assert.equal(T.format('墨客','亲笔真迹 · 2026.09.29 17:48','2026-09-29','','','杭州'),'墨客 写 《随手书写》于杭州');
 });
