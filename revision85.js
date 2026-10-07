@@ -48,7 +48,7 @@
  $('board')?.addEventListener('pointermove',e=>{const p=previewPointers85.get(e.pointerId);if(p&&Math.hypot(e.clientX-p.x,e.clientY-p.y)>8){p.moved=true;if(doubleTimer){clearTimeout(doubleTimer);doubleTimer=0;lastTap=null}}},true);
  const previewRelease85=e=>{const p=previewPointers85.get(e.pointerId);previewPointers85.delete(e.pointerId);const valid=p&&!p.moved&&!previewMulti85&&e.type==='pointerup'&&Date.now()-p.t<300&&A.isOverview55?.();if(!previewPointers85.size)previewMulti85=false;if(!valid){lastTap=null;clearTimeout(doubleTimer);doubleTimer=0;return}if(A.previewPhotoAt106?.(e.clientX,e.clientY)){lastTap=null;clearTimeout(doubleTimer);doubleTimer=0;return}const now=Date.now(),same=lastTap&&now-lastTap.t<420&&Math.hypot(e.clientX-lastTap.x,e.clientY-lastTap.y)<28;
   const count=same?lastTap.count+1:1;lastTap={x:e.clientX,y:e.clientY,t:now,count};clearTimeout(doubleTimer);
-  doubleTimer=setTimeout(()=>{doubleTimer=0;const tap=lastTap;lastTap=null;if(!tap||!A.isOverview55?.())return;if(tap.count===2)A.writeAtPreview96?.(tap.x,tap.y);else if(tap.count===3)window.PreviewPaper120?.toggle?.();else if(tap.count===4)A.toggleGrid128?.();previewTouched120=true;previewHint.hidden=true},420);
+  doubleTimer=setTimeout(()=>{doubleTimer=0;const tap=lastTap;lastTap=null;if(!tap||!A.isOverview55?.())return;if(tap.count===2)A.writeAtPreview96?.(tap.x,tap.y);else if(tap.count===3)window.PreviewPaper120?.toggle?.();else if(tap.count===4)window.Reference131?.editor?.();previewTouched120=true;previewHint.hidden=true},420);
  };
  for(const type of ['pointerup','pointercancel'])$('board')?.addEventListener(type,previewRelease85,{passive:true});
  $('fitView')?.addEventListener('click',()=>setTimeout(()=>{if(!A.isOverview55?.())previewHint.hidden=true},0));
