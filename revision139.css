@@ -1,0 +1,9 @@
+/* Keep controls directly on the reference, without decorative plates. */
+.referenceFloat129.referenceFloat129 header,
+.referenceFloat129.referenceFloat129 footer,
+.referenceFloat129.referenceFloat129 button,
+.referenceFloat129.referenceFloat129 button:hover,
+.referenceFloat129.referenceFloat129 button:active,
+.referenceFloat129.referenceFloat129 button[aria-pressed=true]{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+/* Session controls live in the top 共书 panel, never over the writing paper. */
+.collabBar128{display:none!important}
