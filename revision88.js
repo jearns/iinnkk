@@ -77,12 +77,12 @@
  title.onclick=()=>{jump.hidden=!jump.hidden;title.setAttribute('aria-expanded',String(!jump.hidden));if(!jump.hidden)renderList()};
  // Keep legacy IDs alive for corpus import/editor code; only the title and body are visible.
  for(const child of body.children)child.hidden=child!==text;text.hidden=false;
- function updateReader(q){q=q||window.currentQuote||{};title.textContent=label(q)||'好词好句';$('quoteSource').textContent=label(q);const raw=(q.cat==='theory'?q.paragraph||q.original:q.full||q.text)||q.q||'';text.textContent=['poetry','moon','dongpo'].includes(q.cat)&&!raw.includes('\n')?raw.replace(/([。！？])/g,'$1\n').trim():raw;text.scrollTop=0;if(!jump.hidden)renderList();syncInk()}
+ function updateReader(q){q=q||window.currentQuote||{};title.textContent=label(q)||'好词好句';$('quoteSource').textContent=label(q);const raw=(['theory','classics','literature','nobel'].includes(q.cat)?q.paragraph||q.original:q.full||q.text)||q.q||'';text.textContent=['poetry','moon','dongpo'].includes(q.cat)&&!raw.includes('\n')?raw.replace(/([。！？])/g,'$1\n').trim():raw;text.scrollTop=0;if(!jump.hidden)renderList();syncInk()}
  const showReader=()=>{syncInk();updateReader();if(!reader.open)reader.show()};$('readQuote').onclick=showReader;$('quoteDetails').onclick=showReader;
- // Drag immediately from the text, title, empty space or navigation buttons.
+ // Drag from the title or empty space; text remains independently scrollable.
  let drag=null,moved=false;
  reader.addEventListener('pointerdown',e=>{
-  if(e.button>0||e.target.closest('input,select,textarea,a,.readerJump90'))return;
+  if(e.button>0||e.target.closest('input,select,textarea,a,.readerJump90,[data-reader-resize133],#quoteExpanded'))return;
   if(drag)return;
   const r=reader.getBoundingClientRect();drag={id:e.pointerId,x:e.clientX,y:e.clientY,left:r.left,top:r.top};moved=false;
   if(!e.target.closest('button')){e.preventDefault();reader.setPointerCapture(e.pointerId)}

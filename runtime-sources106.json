@@ -128,9 +128,12 @@
     "collaboration128.js",
     "touch-order129.js",
     "reference-analysis129.js",
+    "reference-geometry133.js",
     "revision129.js",
     "seals129.js",
-    "revision131.js"
+    "revision131.js",
+    "revision133.js",
+    "content133.js"
   ],
   "styles": [
     "style.css",
@@ -192,6 +195,8 @@
     "revision125.css",
     "revision128.css",
     "revision129.css",
-    "revision131.css"
+    "revision131.css",
+    "revision133.css",
+    "content133.css"
   ]
 }
