@@ -131,6 +131,7 @@
     "photo-effects125.js",
     "dialogs125.js",
     "revision128.js",
+    "shared-service142.js",
     "collaboration128.js",
     "touch-order129.js",
     "reference-analysis129.js",
@@ -212,6 +213,7 @@
     "revision137.css",
     "revision139.css",
     "revision140.css",
-    "revision141.css"
+    "revision141.css",
+    "revision142.css"
   ]
 }

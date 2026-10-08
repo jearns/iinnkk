@@ -1,0 +1,4 @@
+.roomListing141{display:grid;grid-template-columns:72px 1fr;gap:7px 10px;align-items:center;margin:12px 0;padding:10px;border-bottom:1px solid #d8d0c4}
+.roomListing141>.sharedPreview142{grid-column:1;grid-row:1 / span 4;width:72px;height:96px;object-fit:contain;border-radius:4px;background:#f3eee4}
+.roomListing141>.roomHeading141{grid-column:2;margin:0;padding:0}
+.roomListing141>button{grid-column:2;min-height:30px}

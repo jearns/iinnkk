@@ -27,7 +27,7 @@
    const base=record.cloud141?.updatedAt;
    if(old?.draft_path&&old.updated_at!==base&&old.updated_at!==versions.get(uid+'|'+localId))throw Error('云端已有较新原笔迹，请先打开云端版本；本机修改未删除');
    const token=uuid(),folder=uid+'/'+encodeURIComponent(record.id)+'/'+token,imagePath=folder+'.jpg';
-   const copy=record.copySource141||null,payload={version:141,id:record.id,title:record.title,created:record.created,date:record.date,quoteAuthor:record.quoteAuthor,quoteTitle:record.quoteTitle,copySource141:copy,draft:record.draft};
+   const copy=record.copySource141||null,payload={version:141,id:record.id,title:record.title,created:record.created,date:record.date,quoteAuthor:record.quoteAuthor,quoteTitle:record.quoteTitle,copySource141:copy,sharedRoom142:record.sharedRoom142||null,draft:record.draft};
    const packed=record.draft?await codec.pack(payload):null;requireOwner(uid);const draftPath=packed?folder+'.'+packed.extension:null;
    const uploaded=[];let committed=false;
    try{
@@ -53,7 +53,7 @@
    if(previous?.cloud141?.id&&previous.cloud141.id!==fresh.id){id='cloud141:'+fresh.id;previous=await store.get(id)}
    const pending=(await store.entries('cloud-outbox101:')).some(([,job])=>job.id===id&&(!job.owner||job.owner===uid));if(pending&&previous?.draft){const error=Error('本机此作品尚有待同步修改，请先同步或备份本机版，避免覆盖');error.code='pending141';error.localId=id;throw error}
    const blob=check(await db.storage.from('ink-works').download(fresh.image_path));requireOwner(uid);
-   const meta={owner:uid,id:fresh.id,localId:fresh.local_id,updatedAt:fresh.updated_at};const record={id,title:fresh.title,date:payload?.date||new Date(fresh.updated_at).toLocaleString('zh-CN'),created:payload?.created||Date.parse(fresh.updated_at),updated:Date.parse(fresh.updated_at),blob,thumbnail:blob,draft:payload?.draft||previous?.draft||null,quoteAuthor:payload?.quoteAuthor||'',quoteTitle:payload?.quoteTitle||'',copySource141:payload?.copySource141||null,cloud141:meta};
+   const meta={owner:uid,id:fresh.id,localId:fresh.local_id,updatedAt:fresh.updated_at};const record={id,title:fresh.title,date:payload?.date||new Date(fresh.updated_at).toLocaleString('zh-CN'),created:payload?.created||Date.parse(fresh.updated_at),updated:Date.parse(fresh.updated_at),blob,thumbnail:blob,draft:payload?.draft||previous?.draft||null,quoteAuthor:payload?.quoteAuthor||'',quoteTitle:payload?.quoteTitle||'',copySource141:payload?.copySource141||null,sharedRoom142:payload?.sharedRoom142||null,cloud141:meta};
    if(record.draft)record.draft={...record.draft,editingWork110:{id,title:record.title,date:record.date,created:record.created,cloud141:meta}};
    await store.saveWork(record);return record;
   }
