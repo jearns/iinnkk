@@ -16,7 +16,7 @@ function harness(){
     persistCache133:async()=>calls.push('persist-cache'),clearInterval:()=>calls.push('stop-poll'),bar:{hidden:true},
     A:{persist:async()=>calls.push('persist'),restoreDraft:async state=>calls.push(['restore',state]),setWorkIdentity128:id=>calls.push(['identity',id]),toast:text=>calls.push(text)},
     dialog:{open:false,showModal(){this.open=true},close(){this.open=false;calls.push('close')}},
-    button:(host,label,run)=>actions.push({label,run}),pages:async()=>calls.push('pages')};
+    roomHeading141:async()=>calls.push('room-heading'),button:(host,label,run)=>actions.push({label,run}),pages:async()=>calls.push('pages')};
   vm.createContext(context);
   const start=source.indexOf(' async function open(){');
   const end=source.indexOf(' bar.querySelector',start);

@@ -76,7 +76,9 @@
     "revision74.js",
     "supabase-config.js",
     "supabase51.js",
+    "cloud-draft-codec141.js",
     "cloud75.js",
+    "cloud-drafts141.js",
     "revision75.js",
     "preview78.js",
     "revision79.js",
@@ -209,6 +211,7 @@
     "revision136.css",
     "revision137.css",
     "revision139.css",
-    "revision140.css"
+    "revision140.css",
+    "revision141.css"
   ]
 }
