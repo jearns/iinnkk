@@ -19,7 +19,7 @@
   }
   async function deleted(record,uid){return !!await store.get(key(uid,record.id))}
   async function upload(record,row){
-   const uid=owner();requireOwner(uid);if(record.cloud141?.owner&&record.cloud141.owner!==uid)throw Error('此作品原笔迹属于另一账号');
+   const uid=owner();requireOwner(uid);if(row.owner&&row.owner!==uid)throw Error('账号已切换，上传已暂停；本机笔迹保留');if(record.cloud141?.owner&&record.cloud141.owner!==uid)throw Error('此作品原笔迹属于另一账号');
    if(await deleted(record,uid))return{deleted:true};
    const localId=record.cloud141?.localId||row.local_id;
    const old=check(await db.from('ink_works').select('id,owner,image_path,draft_path,published,updated_at').eq('owner',uid).eq('local_id',localId).maybeSingle());requireOwner(uid);
@@ -57,7 +57,7 @@
    if(record.draft)record.draft={...record.draft,editingWork110:{id,title:record.title,date:record.date,created:record.created,cloud141:meta}};
    await store.saveWork(record);return record;
   }
-  async function edit(row){if(app.isDrawing128?.())throw Error('请先完成当前笔画');let record;try{record=await load(row)}catch(e){if(e.code!=='pending141'||!confirm('本机仍有未同步修改。是否先另存一份本机原笔迹备份，再读取云端版本？'))throw e;const uid=owner(),local=await store.get(e.localId);requireOwner(uid);if(!local?.draft)throw e;const id='work:'+uuid(),draft=JSON.parse(JSON.stringify(local.draft)),backup={...local,id,title:local.title+' · 本机备份',created:Date.now(),cloud141:null,draft};draft.editingWork110={id,title:backup.title,created:backup.created,date:backup.date,cloud141:null};await store.saveWork(backup);for(const [key,job]of await store.entries('cloud-outbox101:'))if(job.id===e.localId&&(!job.owner||job.owner===uid))await store.delete(key);record=await load(row)}const opened=await app.editSavedWork(record.id);if(opened!==false&&record.copySource141&&record.draft?.referenceData111)await root.CopyAlbums38?.resumeDraft141?.(record.copySource141,record.draft,record.id);notify();return record}
+  async function edit(row){const editingOwner141=owner();requireOwner(editingOwner141);if(app.isDrawing128?.())throw Error('请先完成当前笔画');let record;try{record=await load(row)}catch(e){requireOwner(editingOwner141);if(e.code!=='pending141'||!confirm('本机仍有未同步修改。是否先另存一份本机原笔迹备份，再读取云端版本？'))throw e;const uid=editingOwner141,local=await store.get(e.localId);requireOwner(uid);if(!local?.draft)throw e;const id='work:'+uuid(),draft=JSON.parse(JSON.stringify(local.draft)),backup={...local,id,title:local.title+' · 本机备份',created:Date.now(),cloud141:null,draft};draft.editingWork110={id,title:backup.title,created:backup.created,date:backup.date,cloud141:null};await store.saveWork(backup);for(const [key,job]of await store.entries('cloud-outbox101:'))if(job.id===e.localId&&(!job.owner||job.owner===uid))await store.delete(key);record=await load(row)}const opened=await app.editSavedWork(record.id);if(opened!==false&&record.copySource141&&record.draft?.referenceData111)await root.CopyAlbums38?.resumeDraft141?.(record.copySource141,record.draft,record.id);notify();return record}
   async function remove(row){
    const uid=owner();requireOwner(uid);if(!online())throw Error('删除云端作品需要联网；本机作品未删除');if(row.owner!==uid)throw Error('只能删除自己的作品');
    const fresh=check(await db.from('ink_works').select('id,owner,local_id,image_path,draft_path').eq('owner',uid).eq('id',row.id).maybeSingle());requireOwner(uid);if(!fresh)return;
