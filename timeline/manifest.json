@@ -15,11 +15,6 @@
       "size": 360,
       "zoom": 180,
       "cover143": "",
-      "coverCrop145": {
-        "zoom": 1,
-        "x": 50,
-        "y": 50
-      },
       "author": "",
       "pageNames": [],
       "pages": [
@@ -45,11 +40,6 @@
       "size": 340,
       "zoom": 178,
       "cover143": "timeline/pages/yuyouren/mum84xny-0.jpg",
-      "coverCrop145": {
-        "zoom": 1,
-        "x": 34.222208658854164,
-        "y": 52
-      },
       "author": "",
       "pageNames": [
         "mum84xny-0.jpg",
@@ -88,11 +78,6 @@
       "size": 359,
       "zoom": 200,
       "cover143": "timeline/pages/hanshi/muzjqxm1-3/IMG_3862.jpeg",
-      "coverCrop145": {
-        "zoom": 1,
-        "x": 50,
-        "y": 50
-      },
       "author": "",
       "pageNames": [
         "IMG_3859.jpeg",
@@ -168,11 +153,6 @@
       "size": 20,
       "zoom": 200,
       "cover143": "",
-      "coverCrop145": {
-        "zoom": 1,
-        "x": 50,
-        "y": 50
-      },
       "author": "",
       "pageNames": [
         " 前赤壁赋 01.jpg",
@@ -218,11 +198,6 @@
       "size": 40,
       "zoom": 200,
       "cover143": "",
-      "coverCrop145": {
-        "zoom": 1,
-        "x": 50,
-        "y": 50
-      },
       "author": "",
       "pageNames": [
         "千字文-六体-赵孟頫01.jpg",
@@ -449,11 +424,6 @@
       "size": 350,
       "zoom": 170,
       "cover143": "",
-      "coverCrop145": {
-        "zoom": 1,
-        "x": 50,
-        "y": 50
-      },
       "author": "",
       "pageNames": [
         "IMG_3790.jpeg",
@@ -546,11 +516,6 @@
       "size": 340,
       "zoom": 200,
       "cover143": "timeline/pages/lanting/mv04uqab-6/IMG_3891.jpeg",
-      "coverCrop145": {
-        "zoom": 1,
-        "x": 50,
-        "y": 50
-      },
       "author": "",
       "pageNames": [
         "IMG_3885.jpeg",
@@ -619,6 +584,84 @@
         "timeline/pages/lanting/mv04vrf3-t/IMG_3916.jpeg",
         "timeline/pages/lanting/mv04vtbd-u/IMG_3917.jpeg",
         "timeline/pages/lanting/mv04vv9x-v/IMG_3918.jpeg"
+      ]
+    },
+    "zhangbaoyi": {
+      "deleted": false,
+      "era": "清",
+      "script": "草书",
+      "year": 1643,
+      "dateLabel": "约公元1630—1650年·版本待核",
+      "glyph": "铎",
+      "order": 27,
+      "title": "赠郑公度草书诗卷",
+      "place": "馆藏待核",
+      "museum": "请以指定版本登记具体收藏",
+      "status": "同题材传本信息需按实物核对",
+      "parentId": "",
+      "url": "",
+      "style": "wangduo",
+      "size": 370,
+      "zoom": 200,
+      "cover143": "",
+      "author": "",
+      "pageNames": [
+        "IMG_3919.jpeg",
+        "IMG_3920.jpeg",
+        "IMG_3921.jpeg",
+        "IMG_3922.jpeg",
+        "IMG_3923.jpeg",
+        "IMG_3924.jpeg",
+        "IMG_3925.jpeg",
+        "IMG_3926.jpeg",
+        "IMG_3927.jpeg",
+        "IMG_3928.jpeg",
+        "IMG_3929.jpeg",
+        "IMG_3930.jpeg",
+        "IMG_3931.jpeg",
+        "IMG_3932.jpeg",
+        "IMG_3933.jpeg",
+        "IMG_3934.jpeg",
+        "IMG_3935.jpeg",
+        "IMG_3936.jpeg",
+        "IMG_3937.jpeg",
+        "IMG_3938.jpeg",
+        "IMG_3939.jpeg",
+        "IMG_3940.jpeg",
+        "IMG_3941.jpeg",
+        "IMG_3942.jpeg",
+        "IMG_3943.jpeg",
+        "IMG_3944.jpeg",
+        "IMG_3945.jpeg"
+      ],
+      "pages": [
+        "timeline/pages/zhangbaoyi/mv0flsta-0/IMG_3919.jpeg",
+        "timeline/pages/zhangbaoyi/mv0flumr-1/IMG_3920.jpeg",
+        "timeline/pages/zhangbaoyi/mv0flwv0-2/IMG_3921.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fly5w-3/IMG_3922.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fm0dv-4/IMG_3923.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fm1fs-5/IMG_3924.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fm3el-6/IMG_3925.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fm546-7/IMG_3926.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fm703-8/IMG_3927.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fm8zh-9/IMG_3928.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmast-a/IMG_3929.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmcf4-b/IMG_3930.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fme1i-c/IMG_3931.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmfuc-d/IMG_3932.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmhjc-e/IMG_3933.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmiga-f/IMG_3934.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmk7e-g/IMG_3935.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmm3k-h/IMG_3936.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmno4-i/IMG_3937.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmp5z-j/IMG_3938.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmqt8-k/IMG_3939.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmsao-l/IMG_3940.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmu15-m/IMG_3941.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmvby-n/IMG_3942.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmxgk-o/IMG_3943.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmz6a-p/IMG_3944.jpeg",
+        "timeline/pages/zhangbaoyi/mv0fmzvx-q/IMG_3945.jpeg"
       ]
     }
   },
