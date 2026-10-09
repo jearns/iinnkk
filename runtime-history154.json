@@ -1,19 +1,19 @@
 {
-  "release": "154",
+  "release": "155",
   "current": [
+    "app-runtime.1f2bef4e18ee48a6.js",
+    "app-runtime.9443ba05427b65c9.js",
+    "app-runtime.014b0f46a8b7b091.js",
+    "app-runtime.9c74d603d05957e9.js",
+    "app-runtime.9c3a64553205e54b.js",
+    "app-runtime.c77bc45a430aad8a.css"
+  ],
+  "previous": [
     "app-runtime.ba0b6132ffbd8c29.js",
     "app-runtime.56894e1a3d52d3c0.js",
     "app-runtime.00a45b3682559bb3.js",
     "app-runtime.70d2cc8a48498712.js",
     "app-runtime.fadd6b6b12872f3c.js",
     "app-runtime.148c10c2aa6f1039.css"
-  ],
-  "previous": [
-    "app-runtime.148c10c2aa6f1039.css",
-    "app-runtime.ba0b6132ffbd8c29.js",
-    "app-runtime.17a3c123ceb8627c.js",
-    "app-runtime.00a45b3682559bb3.js",
-    "app-runtime.70d2cc8a48498712.js",
-    "app-runtime.d6957282224989b8.js"
   ]
 }

@@ -1,0 +1,4 @@
+/* Copy preview keeps its page strip visible even when the controls fold away. */
+body.reference-group131.hide-config97:not(.home-open) .referenceStrip131{bottom:env(safe-area-inset-bottom,0px)!important;z-index:80!important}
+body.reference-group131.hide-config97:not(.home-open) #board#board{bottom:calc(106px + env(safe-area-inset-bottom,0px))!important;height:calc(100% - 106px - env(safe-area-inset-bottom,0px))!important}
+.referenceStrip131 .touchOrderItem129[aria-current=true],.referenceThumbs129 .touchOrderItem129[aria-current=true]{outline:1px solid #b44831;outline-offset:-1px}

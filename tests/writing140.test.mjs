@@ -54,7 +54,7 @@ test('paper-and-brush steppers adjust current values precisely and enforce bound
 });
 
 test('copy work title uses the book, never a stale quote; cloud formatting retains it',()=>{
- const e={window:{CopyAlbums38:{active:{title:'赵孟頫·赤壁赋'},paused129:false},currentQuote:{author:'泰戈尔',title:'飞鸟集'}},reference:{},localStorage:{getItem:()=> 'copy'}};
+ const e={currentWork109:null,window:{CopyAlbums38:{active:{title:'赵孟頫·赤壁赋'},paused129:false},currentQuote:{author:'泰戈尔',title:'飞鸟集'}},reference:{},localStorage:{getItem:()=> 'copy'}};
  vm.createContext(e);vm.runInContext(fs.readFileSync(new URL('../work-meta84.js',import.meta.url),'utf8'),e);
  e.WorkMeta84=e.window.WorkMeta84;vm.runInContext(app.slice(app.indexOf('function workSubject140()'),app.indexOf('async function archiveWork(')),e);
  assert.equal(e.workTitle140('敬源','旧标题',0),'敬源 临写 赵孟頫 赤壁赋');assert.equal(e.WorkMeta84.format('敬源','敬源 临写 赵孟頫 赤壁赋',0,'泰戈尔','飞鸟集'),'敬源 临写 赵孟頫 赤壁赋');
