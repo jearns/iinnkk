@@ -4,7 +4,7 @@ The homepage carousel, navigation and classic scroll share a 610px maximum conte
 
 Classic works are grouped horizontally by author, including different era labels for the same author, ordered by the first chronological occurrence of each author group. Each cover carries era/author metadata; multiple-work groups have three dots. Existing contemporary contributions and administrator catalog uploads are preserved.
 
-Original appreciation opens a dedicated large-image reader with unnamed thumbnail buttons. The left arrow advances and the right arrow goes back. Sources wider than 2.8:1 are represented by normalized, contiguous right-to-left segments; the source file and writing album remain intact. Stitching opens a separate wide panorama dialog, fits the complete scroll, and scales the rendering canvas to stay within its existing maximum dimensions.
+Original appreciation opens a dedicated large-image reader with unnamed thumbnail buttons. The left arrow advances and the right arrow goes back. Sources wider than 2.8:1 are represented by normalized, contiguous right-to-left segments; the source file and writing album remain intact. New wide uploads use a 16000px/8-megapixel ceiling rather than being reduced to 1800px across the entire scroll. Previously compressed files require re-uploading the original to recover detail. Stitching opens a separate wide panorama dialog, fits the complete scroll, and scales the rendering canvas to stay within its existing maximum dimensions.
 
 The reader shows maintained fullText148 metadata or a matching existing practice text, including common title variants. Unavailable transcripts are explicitly marked for administrator entry. Metadata maintenance adds full transcript and recommended WeChat/video introduction URL/title fields; round-trip tests verify long text and link persistence.
 
@@ -12,4 +12,4 @@ A magnifier opens a search box prefilled with the work title. It copies the titl
 
 The inline loader is revealed only after 700ms of waiting and is removed immediately once the app is ready. It imposes no minimum animation duration.
 
-202 automated regression checks passed. Shared UI/lifecycle tests were excluded as requested. Runtime and offline builds completed. Browser controls are unavailable in the Sites-managed container, so visual browser and physical-device compatibility QA were not performed.
+202 automated regression checks passed; the additional wide-upload scale check also passed. Shared UI/lifecycle tests were excluded as requested. Runtime and offline builds completed. Browser controls are unavailable in the Sites-managed container, so visual browser and physical-device compatibility QA were not performed.
