@@ -1,0 +1,5 @@
+/* Only browser primitives needed by home and its deferred reader; no editor boot. */
+(function(){if(!Element.prototype.replaceChildren)Element.prototype.replaceChildren=function(){while(this.firstChild)this.removeChild(this.firstChild);for(let i=0;i<arguments.length;i++)this.appendChild(typeof arguments[i]==='string'?document.createTextNode(arguments[i]):arguments[i])};
+for(const proto of [Array.prototype,String.prototype])if(!proto.at)Object.defineProperty(proto,'at',{configurable:true,writable:true,value:function(index){let k=Math.trunc(Number(index)||0);if(k<0)k+=this.length;return k>=0&&k<this.length?this[k]:undefined}});
+if(!Object.hasOwn)Object.hasOwn=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
+if(!HTMLImageElement.prototype.decode)HTMLImageElement.prototype.decode=function(){const im=this;return new Promise((resolve,reject)=>{if(im.complete){im.naturalWidth?resolve():reject(Error('图片读取失败'));return}im.addEventListener('load',resolve,{once:true});im.addEventListener('error',reject,{once:true})})};})();

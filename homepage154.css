@@ -3,3 +3,5 @@
 @font-face{font-family:HomeSeal154;src:url("fonts/YiShanBeiZhuanTi.woff2") format("woff2");font-display:swap}.avatar154[data-signed=true]{font-family:HomeSeal154,serif}.actions154{gap:clamp(4px,2vw,12px)}dialog{background:var(--paper);background:color-mix(in srgb,var(--paper) 85%,transparent);max-height:85vh;max-height:calc(100dvh - 36px)}
 
 dialog header{position:sticky;top:0;z-index:3;background:var(--paper)}.worldHeading154{position:absolute;left:0;top:-22px}.epoch154.worldShown154>.world154,.epoch154.worldShown154>.cardTrack154{grid-row:2}
+
+@supports not (aspect-ratio:1){.card154{height:0;padding-top:177.777777%;max-height:none}.card154>img,.card154>.placeholder154{position:absolute;inset:0;width:100%;height:100%}}
