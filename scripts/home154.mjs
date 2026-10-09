@@ -1,0 +1,15 @@
+import{readFile,writeFile,readdir,unlink}from'node:fs/promises';
+import vm from'node:vm';import{execFileSync}from'node:child_process';import{transform}from'esbuild';import{createHash}from'node:crypto';
+execFileSync('python',['scripts/home-covers154.py'],{stdio:'inherit'});
+const ctx={window:{},Intl,URL};vm.createContext(ctx);
+for(const path of ['timeline73-data.js','timeline77-curation.js','timeline78-data.js','timeline94-data.js','content133.js','revision149.js','poetry100.js','long-texts38.js'])vm.runInContext(await readFile(path,'utf8'),ctx,{filename:path});
+const feature=await readFile('features144.js','utf8');const start=feature.indexOf('const slides=['),end=feature.indexOf("const home=$('annotationHome')",start);vm.runInContext(feature.slice(start,end)+';window.homeSlides154=slides',ctx);
+const practiceSource=await readFile('practice.js','utf8');vm.runInContext(practiceSource.slice(0,practiceSource.indexOf('\n')>=0?practiceSource.indexOf('\n'):practiceSource.length),ctx);
+const w=ctx.window,data={chapters:w.CalligraphyTimeline73,world:w.TimelineWorld78,slides:w.homeSlides154,canon:w.Content133.canon.slice(0,20),covers:JSON.parse(await readFile('home-covers154.json','utf8'))};
+const normalize=s=>String(s).replace(/兰亭集序/g,'兰亭序').replace(/黄州寒食帖/g,'寒食帖').replace(/[\s《》]/g,'');const texts={};for(const c of data.chapters){const name=normalize(c.title.split('·').at(-1)).replace(/（[^）]*）/g,'');const text=[...(w.PracticeTexts||[]),...(w.Poetry100||[]),...(w.LongTexts38||[])].find(x=>normalize(String(x.title||x.name||'').split('·').at(-1))===name||name.includes('千字文')&&String(x.title||x.name).includes('千字文'));if(text)texts[c.id]=text.q||text.text||''}
+await writeFile('home-text154.json',JSON.stringify(texts));await writeFile('home-data154.json',JSON.stringify(data));
+const js=(await transform((await Promise.all(['home-model154.js','gallery-model148.js','cover-crop145.js','storage.js','homepage154.js'].map(p=>readFile(p,'utf8')))).join('\n;\n'),{minify:true,target:['safari13','chrome79'],charset:'utf8'})).code;
+const css=(await transform(await readFile('homepage154.css','utf8'),{loader:'css',minify:true,target:['safari13','chrome79'],charset:'utf8'})).code;
+const hash=s=>createHash('sha256').update(s).digest('hex').slice(0,16),jn='home-runtime.'+hash(js)+'.js',cn='home-runtime.'+hash(css)+'.css';
+for(const p of await readdir('.'))if(/^home-runtime\.[a-f0-9]+\.(js|css)$/.test(p)&&p!==jn&&p!==cn)await unlink(p);
+await writeFile(jn,js);await writeFile(cn,css);const first=data.slides[0];let html=await readFile('home-source154.html','utf8');html=html.replace('__HOME_JS__',jn).replace('__HOME_CSS__',cn).replace('__FIRST_TITLE__',first.title.replace(/\n/g,'<br>')).replace('__FIRST_SUB__',first.sub.replace(/\n/g,'<br>')).replace('__FIRST_CTA__',first.cta);await writeFile('index.html',html);console.log('Home runtime:',jn,cn);
