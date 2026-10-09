@@ -15,6 +15,11 @@
       "size": 360,
       "zoom": 180,
       "cover143": "",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
       "author": "",
       "pageNames": [],
       "pages": [
@@ -24,6 +29,10 @@
     },
     "yuyouren": {
       "deleted": false,
+      "era": "民国",
+      "script": "草书",
+      "year": 1940,
+      "dateLabel": "约公元1930—1950年·版本待核",
       "glyph": "筆",
       "order": 0,
       "title": "于右任·草书满江红",
@@ -35,9 +44,22 @@
       "style": "zhang",
       "size": 340,
       "zoom": 178,
-      "cover143": "",
+      "cover143": "timeline/pages/yuyouren/mum84xny-0.jpg",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 34.222208658854164,
+        "y": 52
+      },
       "author": "",
-      "pageNames": [],
+      "pageNames": [
+        "mum84xny-0.jpg",
+        "mum84ynf-1.jpg",
+        "mum850p0-2.jpg",
+        "mum852o9-3.jpg",
+        "mum854bu-4.jpg",
+        "mum855x0-5.jpg",
+        "mum857fk-6.jpg"
+      ],
       "pages": [
         "timeline/pages/yuyouren/mum84xny-0.jpg",
         "timeline/pages/yuyouren/mum84ynf-1.jpg",
@@ -66,6 +88,11 @@
       "size": 359,
       "zoom": 200,
       "cover143": "timeline/pages/hanshi/muzjqxm1-3/IMG_3862.jpeg",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
       "author": "",
       "pageNames": [
         "IMG_3859.jpeg",
@@ -141,6 +168,11 @@
       "size": 20,
       "zoom": 200,
       "cover143": "",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
       "author": "",
       "pageNames": [
         " 前赤壁赋 01.jpg",
@@ -186,6 +218,11 @@
       "size": 40,
       "zoom": 200,
       "cover143": "",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
       "author": "",
       "pageNames": [
         "千字文-六体-赵孟頫01.jpg",
@@ -412,6 +449,11 @@
       "size": 350,
       "zoom": 170,
       "cover143": "",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
       "author": "",
       "pageNames": [
         "IMG_3790.jpeg",
@@ -504,6 +546,11 @@
       "size": 340,
       "zoom": 200,
       "cover143": "timeline/pages/lanting/mv04uqab-6/IMG_3891.jpeg",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
       "author": "",
       "pageNames": [
         "IMG_3885.jpeg",
