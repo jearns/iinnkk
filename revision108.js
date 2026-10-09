@@ -25,7 +25,7 @@
  const aspect=$('photoAspect');aspect.setAttribute('aria-label','调整轮廓');aspect.replaceChildren(new Option('调整轮廓',''),...[['正方形','square'],['长方形','rectangle'],['圆形','circle'],['折扇形','fan'],['团窗形','window']].map(([n,v])=>new Option(n,v)));
  // Group existing work actions without replacing their handlers or cloud controls.
  function workLayout(){for(const card of document.querySelectorAll('.workCard,.cloudWork75')){let holder=card.querySelector(':scope>.workActions108');if(!holder){holder=document.createElement('div');holder.className='workActions108';card.append(holder)}for(const child of [...card.children])if(child!==holder&&!child.matches('.workView,input,label,img,span,strong,small,select')&&(child.matches('button')||child.querySelector('button')))holder.append(child)}}
- for(const host of [$('worksGrid'),$('cloudAccount75'),$('cloudGallery75')])if(host)new MutationObserver(workLayout).observe(host,{childList:true,subtree:true});workLayout();
+ let workFrame153=0;function scheduleWork153(){if(workFrame153)return;workFrame153=requestAnimationFrame(()=>{workFrame153=0;workLayout()})}for(const host of [$('worksGrid'),$('cloudAccount75'),$('cloudGallery75')])if(host)new MutationObserver(scheduleWork153).observe(host,{childList:true,subtree:true});workLayout();
  // Keep exact quantities editable: older decorators turn bare number inputs into sliders.
  function exactNumber(control,name,limit){
   const label=control.closest('.field108'),input=document.createElement('input');
