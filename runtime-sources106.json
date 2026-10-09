@@ -67,6 +67,7 @@
     "timeline73-data.js",
     "reference-upload138.js",
     "cover-crop145.js",
+    "gallery-model148.js",
     "timeline74-cloud.js",
     "timeline77-curation.js",
     "timeline78-data.js",
@@ -151,7 +152,9 @@
     "features144.js",
     "revision145.js",
     "dialog-viewport146.js",
-    "revision146.js"
+    "revision146.js",
+    "gallery148.js",
+    "revision148.js"
   ],
   "styles": [
     "style.css",
@@ -227,6 +230,7 @@
     "revision143.css",
     "revision144.css",
     "revision145.css",
-    "revision146.css"
+    "revision146.css",
+    "revision148.css"
   ]
 }

@@ -5,8 +5,8 @@
  const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
  const brand=home.querySelector('.annotationBrand'),brandBox=brand.querySelector('div'),hero=brandBox.querySelector('h1');
  // A single real seal in the hero; its counterpart appears only once the hero leaves view.
- hero.replaceChildren();const logo=el('img','heroSeal90');logo.src='favicon90.png';logo.alt='篆书筆字印章';hero.append(logo,el('span','','今日亲笔'));
- const sub=brandBox.querySelector('p');sub.textContent='见墨·iinnkk.me·如我';
+ hero.replaceChildren();const logo=el('img','heroSeal90');logo.src='brand148.svg';logo.alt='篆书手字印章';hero.append(logo,el('span','','手笔'));
+ const sub=brandBox.querySelector('p');sub.textContent='一手一笔·iinnkk.me·留下真迹';
  const syncHeroWidth=()=>{if(home.clientWidth>0)root.style.setProperty('--home-width91',home.clientWidth+'px')};new ResizeObserver(syncHeroWidth).observe(home);syncHeroWidth();
  const intro=home.querySelector('.annotationIntro');const constellation=el('img','heroConstellation91');constellation.loading='lazy';constellation.alt='';constellation.setAttribute('aria-hidden','true');constellation.decoding='async';intro.replaceChildren(constellation,el('strong','','人类群星闪耀时'),el('small','','一起结网记字，打造文字方舟！'));
  home.querySelectorAll('.homeLogo85,.homeLogo86,.homeLogo87,#homeTop86').forEach(e=>e.remove());
@@ -23,9 +23,9 @@
  // Use the browser's own timezone, with manual choice lasting until the next 06:00/18:00 boundary.
  let period='';function autoTheme(){const now=new Date(),zone=Intl.DateTimeFormat().resolvedOptions().timeZone;const hour=Number(new Intl.DateTimeFormat('en',{hour:'numeric',hourCycle:'h23',timeZone:zone}).format(now));const dark=hour>=18||hour<6;const day=new Intl.DateTimeFormat('en-CA',{timeZone:zone}).format(now),key=day+'|'+dark;if(key!==period){period=key;(dark?stars:river).click()}syncTheme()}
  autoTheme();setInterval(autoTheme,30000);addEventListener('focus',autoTheme);document.addEventListener('visibilitychange',()=>{if(!document.hidden)autoTheme()});
- function alignSubtitle(){const width=hero.getBoundingClientRect().width;sub.style.setProperty('width',width+'px');sub.style.setProperty('max-width',width+'px');sub.style.setProperty('font-size',Math.min(11,width/17)+'px');}
+ function alignSubtitle(){const width=hero.getBoundingClientRect().width;sub.style.setProperty('width',width+'px');sub.style.setProperty('max-width',width+'px');sub.style.setProperty('font-size',Math.min(9,width/23)+'px');}
  new ResizeObserver(alignSubtitle).observe(hero);document.fonts.ready.then(alignSubtitle);
- const nav=$('homeQuick47'),navBrand=$('homeBrand79');navBrand.replaceChildren();const navLogo=logo.cloneNode();navLogo.className='navSeal90';navBrand.append(navLogo,el('span','','今日亲笔'));navBrand.onclick=()=>home.scrollTo({top:0,behavior:'smooth'});
+ const nav=$('homeQuick47'),navBrand=$('homeBrand79');navBrand.replaceChildren();const navLogo=logo.cloneNode();navLogo.className='navSeal90';navBrand.append(navLogo,el('span','','手笔'));navBrand.onclick=()=>home.scrollTo({top:0,behavior:'smooth'});
  let scrollFrame=0;function sticky(){scrollFrame=0;const visible=hero.getBoundingClientRect().bottom<=home.getBoundingClientRect().top;navBrand.classList.toggle('visible85',visible);navBrand.setAttribute('aria-hidden',String(!visible));navBrand.tabIndex=visible?0:-1}
  home.addEventListener('scroll',()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(sticky)},{passive:true});addEventListener('scroll',sticky,{passive:true});document.addEventListener('scroll',sticky,{capture:true,passive:true});addEventListener('resize',sticky);sticky();
  const countries={
