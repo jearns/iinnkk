@@ -12,7 +12,7 @@
  // Mode selection remains outside the collapsible toolbars.
  const modes=$('writerModes53');$('board').after(modes);modes.dataset.persistent106='yes';
  const workspace=$('board').parentElement;let layoutFrame=0;
- function modeLayout(){layoutFrame=0;const home=document.body.classList.contains('home-open');if(home)return;const effects=$('previewEffects55'),dock=$('bottomDock'),configShown=A.isOverview55()&&getComputedStyle(effects).display!=='none',controls=configShown?effects.getBoundingClientRect().height:getComputedStyle(dock).display!=='none'?dock.getBoundingClientRect().height:0;const offset=Math.ceil(controls)+'px';if(workspace.style.getPropertyValue('--controls106')!==offset){workspace.style.setProperty('--controls106',offset);requestAnimationFrame(()=>A.refresh())}}
+ function modeLayout(){layoutFrame=0;const home=document.body.classList.contains('home-open');if(home)return;const effects=$('previewEffects55'),dock=$('bottomDock'),configShown=A.isOverview55()&&!effects.hidden&&getComputedStyle(effects).display!=='none',controls=configShown?effects.getBoundingClientRect().height:0;const offset=Math.ceil(controls)+'px';if(workspace.style.getPropertyValue('--controls106')!==offset){workspace.style.setProperty('--controls106',offset);requestAnimationFrame(()=>A.refresh())}}
  const scheduleLayout=()=>{if(!layoutFrame)layoutFrame=requestAnimationFrame(modeLayout)};
  new ResizeObserver(scheduleLayout).observe($('previewEffects55'));new ResizeObserver(scheduleLayout).observe($('bottomDock'));new MutationObserver(scheduleLayout).observe(document.body,{attributes:true,attributeFilter:['class']});document.addEventListener('preview-painted94',scheduleLayout);addEventListener('resize',scheduleLayout);scheduleLayout();
 
