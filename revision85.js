@@ -11,15 +11,15 @@
  const brand=home.querySelector('.annotationBrand'),brandBox=brand?.querySelector('div'),heroTitle=brandBox?.querySelector('h1');
  brandBox?.querySelector('.homeDomain44')?.remove();
  if(brandBox){
-   const sub=brandBox.querySelector('p');if(sub)sub.textContent='手写真迹·iinnkk.me·见墨如我';
+   const sub=brandBox.querySelector('p');if(sub)sub.textContent='以手为笔·iinnkk.me·留下真迹';
  }
  const direct=$('continueWriting');if(direct){direct.textContent='我的作品';direct.onclick=e=>{e.preventDefault();$('myWorks')?.click()}}
 
  // Navigation brand uses exactly the same rendered seal; only appears once the hero brand leaves view.
  const nav=$('homeQuick47'),navBrand=$('homeBrand79');
  if(navBrand){
-   navBrand.replaceChildren();const c=document.createElement('canvas');c.className='homeNavLogo85';c.width=c.height=256;const n=document.createElement('span');n.textContent='今日亲笔';navBrand.append(c,n);
-   const copy=()=>{const src=$('appLogo');if(!src?.width)return;const t=c.getContext('2d');t.clearRect(0,0,256,256);try{t.drawImage(src,0,0,256,256)}catch{}};copy();setTimeout(copy,450);
+   navBrand.replaceChildren();const c=document.createElement('img');c.className='homeNavLogo85';c.src='brand148.svg';c.width=c.height=34;c.alt='篆书手字印章';const n=document.createElement('span');n.textContent='手笔';navBrand.append(c,n);
+
    navBrand.classList.remove('visible85');
 
  }
