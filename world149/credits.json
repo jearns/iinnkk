@@ -1,0 +1,50 @@
+{
+  "oracle": {
+    "file": "oracle.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Papyrus_of_Ani.jpg",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "changes": "Resized JPEG for mobile display; no content changes."
+  },
+  "shigu": {
+    "file": "shigu.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cyrus_Cylinder.jpg",
+    "author": "Photograph by Mike Peel (www.mikepeel.net). Modifications by مانفی",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "changes": "Resized JPEG for mobile display; no content changes."
+  },
+  "mawangdui": {
+    "file": "mawangdui.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Rosetta_Stone.jpg",
+    "author": "Book: Sir Ernest Alfred Wallis (1857-1934)\n\nPhoto: Donald Macbeth",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "changes": "Resized JPEG for mobile display; no content changes."
+  },
+  "juyan": {
+    "file": "juyan.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Great_Isaiah_Scroll.jpg",
+    "author": "Photographs by Ardon Bar Hama, author of original document is unknown.",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "changes": "Resized JPEG for mobile display; no content changes."
+  },
+  "zixu": {
+    "file": "zixu.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Book_of_Kells_ChiRho_Folio_34R.png",
+    "author": "unknown Irish or Scottish monks",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "changes": "Resized JPEG for mobile display; no content changes."
+  },
+  "tengwang": {
+    "file": "tengwang.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gutenberg_bible.jpg",
+    "author": "Gutenberg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "changes": "Resized JPEG for mobile display; no content changes."
+  }
+}

@@ -14,18 +14,18 @@
  const theme=home.querySelector('.homeTheme78'),sources=[...theme.querySelectorAll('button')];
  const river=sources.find(b=>b.dataset.theme==='river'),stars=sources.find(b=>b.dataset.theme==='stars');
  for(const b of sources)b.hidden=true;
- const sw=el('button','themeSeal90');sw.id='themeSwitch90';sw.type='button';sw.innerHTML='<i aria-hidden="true"></i><span>深</span><span>浅</span>';theme.append(sw);
+ const sw=el('button','themeSeal90');sw.id='themeSwitch90';sw.type='button';sw.innerHTML='<span>浅</span>';theme.append(sw);
  const actions=el('div','homeActions90');actions.id='homeActions90';brand.append(actions);
  actions.append(theme);if(reminder)actions.append(reminder);$('continueWriting')?.remove();if(account)actions.append(account);
  account.classList.add('accountSeal90');
- const syncTheme=()=>{const dark=document.body.dataset.homeTheme==='stars';sw.dataset.mode=dark?'dark':'light';sw.setAttribute('aria-label',dark?'深色，点击切浅色':'浅色，点击切深色');sw.setAttribute('aria-pressed',String(dark))};
+ const syncTheme=()=>{const dark=document.body.dataset.homeTheme==='stars';sw.dataset.mode=dark?'dark':'light';sw.firstElementChild.textContent=dark?'深':'浅';sw.setAttribute('aria-label',dark?'深色，点击切浅色':'浅色，点击切深色');sw.setAttribute('aria-pressed',String(dark))};
  sw.onclick=()=>{(document.body.dataset.homeTheme==='stars'?river:stars).click();syncTheme()};
  // Use the browser's own timezone, with manual choice lasting until the next 06:00/18:00 boundary.
  let period='';function autoTheme(){const now=new Date(),zone=Intl.DateTimeFormat().resolvedOptions().timeZone;const hour=Number(new Intl.DateTimeFormat('en',{hour:'numeric',hourCycle:'h23',timeZone:zone}).format(now));const dark=hour>=18||hour<6;const day=new Intl.DateTimeFormat('en-CA',{timeZone:zone}).format(now),key=day+'|'+dark;if(key!==period){period=key;(dark?stars:river).click()}syncTheme()}
  autoTheme();setInterval(autoTheme,30000);addEventListener('focus',autoTheme);document.addEventListener('visibilitychange',()=>{if(!document.hidden)autoTheme()});
  function alignSubtitle(){const width=hero.getBoundingClientRect().width;sub.style.setProperty('width',width+'px');sub.style.setProperty('max-width',width+'px');sub.style.setProperty('font-size',Math.min(9,width/23)+'px');}
  new ResizeObserver(alignSubtitle).observe(hero);document.fonts.ready.then(alignSubtitle);
- const nav=$('homeQuick47'),navBrand=$('homeBrand79');navBrand.replaceChildren();const navLogo=logo.cloneNode();navLogo.className='navSeal90';navBrand.append(navLogo,el('span','','手笔'));navBrand.onclick=()=>home.scrollTo({top:0,behavior:'smooth'});
+ const nav=$('homeQuick47'),navBrand=$('homeBrand79');navBrand.replaceChildren();const navLogo=logo.cloneNode();navLogo.className='navSeal90';navBrand.append(navLogo);navBrand.onclick=()=>home.scrollTo({top:0,behavior:'smooth'});
  let scrollFrame=0;function sticky(){scrollFrame=0;const visible=hero.getBoundingClientRect().bottom<=home.getBoundingClientRect().top;navBrand.classList.toggle('visible85',visible);navBrand.setAttribute('aria-hidden',String(!visible));navBrand.tabIndex=visible?0:-1}
  home.addEventListener('scroll',()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(sticky)},{passive:true});addEventListener('scroll',sticky,{passive:true});document.addEventListener('scroll',sticky,{capture:true,passive:true});addEventListener('resize',sticky);sticky();
  const countries={
