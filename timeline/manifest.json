@@ -3,9 +3,13 @@
   "entries": {
     "qinling": {
       "deleted": false,
+      "era": "当代",
+      "script": "草书",
+      "year": 1957,
+      "dateLabel": "约公元1950—1960年·手稿待核",
       "glyph": "筆",
       "order": 0,
-      "title": "毛泽东·沁园春·雪",
+      "title": "沁园春·雪",
       "place": "手稿版本待核",
       "museum": "请管理员指定所用手稿及收藏机构",
       "status": "作品原词与题写手迹须区分",
@@ -13,19 +17,22 @@
       "url": "",
       "style": "zhang",
       "size": 360,
-      "zoom": 180,
-      "cover143": "",
+      "zoom": 200,
+      "cover143": "timeline/pages/qinling/mukxjm05-0.jpg",
       "coverCrop145": {
         "zoom": 1,
         "x": 50,
         "y": 50
       },
-      "author": "",
+      "author": "毛泽东",
       "authorPosition151": "",
       "fullText148": "",
       "videoUrl148": "",
       "videoTitle148": "",
-      "pageNames": [],
+      "pageNames": [
+        "mukxjm05-0.jpg",
+        "mukxjnjm-1.jpg"
+      ],
       "pages": [
         "timeline/pages/qinling/mukxjm05-0.jpg",
         "timeline/pages/qinling/mukxjnjm-1.jpg"
