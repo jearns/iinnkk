@@ -143,6 +143,7 @@
     "checkpoint151.js",
     "shared-pages156.js",
     "collaboration128.js",
+    "image-preview158.js",
     "touch-order129.js",
     "reference-analysis129.js",
     "reference-geometry133.js",
@@ -249,6 +250,7 @@
     "revision152.css",
     "revision153.css",
     "revision155.css",
-    "revision156.css"
+    "revision156.css",
+    "revision158.css"
   ]
 }
