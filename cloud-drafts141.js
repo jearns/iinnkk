@@ -26,7 +26,7 @@
    if(!old&&record.cloud141?.id)throw Error('此作品云端版本已被删除；本机笔迹保留，请另存为新作品');
    const base=record.cloud141?.updatedAt;
    if(old?.draft_path&&old.updated_at!==base&&old.updated_at!==versions.get(uid+'|'+localId))throw Error('云端已有较新原笔迹，请先打开云端版本；本机修改未删除');
-   const token=uuid(),folder=uid+'/'+encodeURIComponent(record.id)+'/'+token,imagePath=folder+'.jpg';
+   const token=uuid(),folder=uid+'/'+String(record.id).replace(/[^a-zA-Z0-9_-]/g,'_')+'/'+token,imagePath=folder+'.jpg';
    const copy=record.copySource141||null,payload={version:141,id:record.id,title:record.title,created:record.created,date:record.date,quoteAuthor:record.quoteAuthor,quoteTitle:record.quoteTitle,copySource141:copy,sharedRoom142:record.sharedRoom142||null,draft:record.draft};
    const packed=record.draft?await codec.pack(payload):null;requireOwner(uid);const draftPath=packed?folder+'.'+packed.extension:null;
    const uploaded=[];let committed=false;

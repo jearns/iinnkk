@@ -74,12 +74,14 @@
     "timeline94-data.js",
     "reference-frames136.js",
     "reference-gallery136.js",
+    "featured150.js",
     "timeline73.js",
     "revision73.js",
     "revision74.js",
     "supabase-config.js",
     "supabase51.js",
     "cloud-draft-codec141.js",
+    "storage-path150.js",
     "cloud75.js",
     "cloud-drafts141.js",
     "revision75.js",
@@ -156,7 +158,8 @@
     "revision146.js",
     "gallery148.js",
     "revision148.js",
-    "revision149.js"
+    "revision149.js",
+    "revision150.js"
   ],
   "styles": [
     "style.css",
@@ -234,6 +237,7 @@
     "revision145.css",
     "revision146.css",
     "revision148.css",
-    "revision149.css"
+    "revision149.css",
+    "revision150.css"
   ]
 }

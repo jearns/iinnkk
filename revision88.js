@@ -6,7 +6,7 @@
  const brand=home.querySelector('.annotationBrand'),brandBox=brand.querySelector('div'),hero=brandBox.querySelector('h1');
  // A single real seal in the hero; its counterpart appears only once the hero leaves view.
  hero.replaceChildren();const logo=el('img','heroSeal90');logo.src='brand148.svg';logo.alt='篆书手字印章';hero.append(logo,el('span','','手笔'));
- const sub=brandBox.querySelector('p');sub.textContent='一手一笔·iinnkk.me·留下真迹';
+ const sub=brandBox.querySelector('p');sub.textContent='以手为笔·iinnkk.me·留下真迹';
  const syncHeroWidth=()=>{if(home.clientWidth>0)root.style.setProperty('--home-width91',home.clientWidth+'px')};new ResizeObserver(syncHeroWidth).observe(home);syncHeroWidth();
  const intro=home.querySelector('.annotationIntro');const constellation=el('img','heroConstellation91');constellation.loading='lazy';constellation.alt='';constellation.setAttribute('aria-hidden','true');constellation.decoding='async';intro.replaceChildren(constellation,el('strong','','人类群星闪耀时'),el('small','','一起结网记字，打造文字方舟！'));
  home.querySelectorAll('.homeLogo85,.homeLogo86,.homeLogo87,#homeTop86').forEach(e=>e.remove());

@@ -1,0 +1,1 @@
+(function(root){async function load(getCloud,{wait=()=>new Promise(r=>setTimeout(r,100)),attempts=120}={}){for(let i=0;i<attempts;i++){const cloud=getCloud();if(cloud?.featured)return await cloud.featured();await wait()}throw Error('推荐服务尚未就绪')}root.Featured150={load};})(typeof window==='undefined'?globalThis:window);
