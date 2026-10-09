@@ -141,6 +141,7 @@
     "shared-service142.js",
     "context149.js",
     "checkpoint151.js",
+    "shared-pages156.js",
     "collaboration128.js",
     "touch-order129.js",
     "reference-analysis129.js",
@@ -247,6 +248,7 @@
     "revision151.css",
     "revision152.css",
     "revision153.css",
-    "revision155.css"
+    "revision155.css",
+    "revision156.css"
   ]
 }
