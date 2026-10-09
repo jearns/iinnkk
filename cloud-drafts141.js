@@ -6,23 +6,23 @@
   const key=(uid,id)=>'cloud-delete141:'+uid+':'+id;
   const validPath=(path,uid)=>typeof path==='string'&&path.split('/')[0]===uid&&!path.split('/').some(p=>p==='..');
   function requireOwner(uid){if(!uid||owner()!==uid)throw Error('账号已切换，操作已暂停；本机笔迹保留')}
-  async function cleanup(bucket,path,uid){if(!validPath(path,uid))return;try{const field=bucket==='ink-drafts'?'draft_path':'image_path',linked=check(await db.from('ink_works').select('id').eq('owner',uid).eq(field,path).limit(1).maybeSingle());requireOwner(uid);if(linked)return;const result=await db.storage.from(bucket).remove([path]);if(result.error)console.warn('旧版本文件待清理',result.error.message)}catch(e){console.warn('文件清理已暂停，未删除共享文件',e.message)}}
+  async function cleanup(bucket,path,uid){if(!validPath(path,uid))return;try{const field=bucket==='ink-drafts'?'draft_path':'image_path',linked=check(await db.from('ink_works').select('id').is('deleted_at144',null).eq('owner',uid).eq(field,path).limit(1).maybeSingle());requireOwner(uid);if(linked)return;const result=await db.storage.from(bucket).remove([path]);if(result.error)console.warn('旧版本文件待清理',result.error.message)}catch(e){console.warn('文件清理已暂停，未删除共享文件',e.message)}}
   async function findLocal(id,uid=owner()){
    if(!uid)return null;const local=await store.get(id),meta=local?.cloud141;requireOwner(uid);
    if(meta&&meta.owner!==uid)throw Error('此本机作品属于另一账号，请切回原账号');
-   let query=db.from('ink_works').select('id,title,owner,local_id,image_path,draft_path,published,updated_at').eq('owner',uid);
+   let query=db.from('ink_works').select('id,title,owner,local_id,image_path,draft_path,published,updated_at').is('deleted_at144',null).eq('owner',uid);
    if(meta?.id)query=query.eq('id',meta.id);else query=query.eq('local_id',cloud.cloudLocalId(id));
    let row=check(await query.maybeSingle());requireOwner(uid);
-   if(!row&&!meta&&cloud.cloudLocalId(id)!==String(id))row=check(await db.from('ink_works').select('*').eq('owner',uid).eq('local_id',String(id)).maybeSingle());
-   if(!row&&!meta&&/^[a-zA-Z0-9:-]+$/.test(String(id)))row=check(await db.from('ink_works').select('*').eq('owner',uid).like('local_id','%|'+id).order('updated_at',{ascending:false}).limit(1).maybeSingle());
+   if(!row&&!meta&&cloud.cloudLocalId(id)!==String(id))row=check(await db.from('ink_works').select('*').is('deleted_at144',null).eq('owner',uid).eq('local_id',String(id)).maybeSingle());
+   if(!row&&!meta&&/^[a-zA-Z0-9:-]+$/.test(String(id)))row=check(await db.from('ink_works').select('*').is('deleted_at144',null).eq('owner',uid).like('local_id','%|'+id).order('updated_at',{ascending:false}).limit(1).maybeSingle());
    requireOwner(uid);return row;
   }
   async function deleted(record,uid){return !!await store.get(key(uid,record.id))}
   async function upload(record,row){
    const uid=owner();requireOwner(uid);if(row.owner&&row.owner!==uid)throw Error('账号已切换，上传已暂停；本机笔迹保留');if(record.cloud141?.owner&&record.cloud141.owner!==uid)throw Error('此作品原笔迹属于另一账号');
    if(await deleted(record,uid))return{deleted:true};
-   const localId=record.cloud141?.localId||row.local_id;
-   const old=check(await db.from('ink_works').select('id,owner,image_path,draft_path,published,updated_at').eq('owner',uid).eq('local_id',localId).maybeSingle());requireOwner(uid);
+   const localId=record.cloud141?.localId||row.local_id;const tomb=check(await db.from('ink_works').select('deleted_at144').eq('owner',uid).eq('local_id',localId).maybeSingle());requireOwner(uid);if(tomb?.deleted_at144)throw Error('作品已在回收站，请先恢复再保存');
+   const old=check(await db.from('ink_works').select('id,owner,image_path,draft_path,published,updated_at').is('deleted_at144',null).eq('owner',uid).eq('local_id',localId).maybeSingle());requireOwner(uid);
    if(!old&&record.cloud141?.id)throw Error('此作品云端版本已被删除；本机笔迹保留，请另存为新作品');
    const base=record.cloud141?.updatedAt;
    if(old?.draft_path&&old.updated_at!==base&&old.updated_at!==versions.get(uid+'|'+localId))throw Error('云端已有较新原笔迹，请先打开云端版本；本机修改未删除');
@@ -46,7 +46,7 @@
   }
   async function load(row){
    const uid=owner();requireOwner(uid);if(row.owner!==uid)throw Error('只能继续编辑自己的作品');
-   const fresh=check(await db.from('ink_works').select('*').eq('owner',uid).eq('id',row.id).single());requireOwner(uid);
+   const fresh=check(await db.from('ink_works').select('*').is('deleted_at144',null).eq('owner',uid).eq('id',row.id).single());requireOwner(uid);
    if(!validPath(fresh.image_path,uid)||fresh.draft_path&&!validPath(fresh.draft_path,uid))throw Error('作品存储路径不符合账号权限');
    let payload=null;if(fresh.draft_path){const blob=check(await db.storage.from('ink-drafts').download(fresh.draft_path));payload=await codec.unpack(blob);requireOwner(uid)}
    let id=payload?.id||String(fresh.local_id).split('|').at(-1),previous=await store.get(id);if(previous?.cloud141?.owner&&previous.cloud141.owner!==uid)throw Error('本机同编号作品属于另一账号，未覆盖');
@@ -60,9 +60,9 @@
   async function edit(row){const editingOwner141=owner();requireOwner(editingOwner141);if(app.isDrawing128?.())throw Error('请先完成当前笔画');let record;try{record=await load(row)}catch(e){requireOwner(editingOwner141);if(e.code!=='pending141'||!confirm('本机仍有未同步修改。是否先另存一份本机原笔迹备份，再读取云端版本？'))throw e;const uid=editingOwner141,local=await store.get(e.localId);requireOwner(uid);if(!local?.draft)throw e;const id='work:'+uuid(),draft=JSON.parse(JSON.stringify(local.draft)),backup={...local,id,title:local.title+' · 本机备份',created:Date.now(),cloud141:null,draft};draft.editingWork110={id,title:backup.title,created:backup.created,date:backup.date,cloud141:null};await store.saveWork(backup);for(const [key,job]of await store.entries('cloud-outbox101:'))if(job.id===e.localId&&(!job.owner||job.owner===uid))await store.delete(key);record=await load(row)}const opened=await app.editSavedWork(record.id);if(opened!==false&&record.copySource141&&record.draft?.referenceData111)await root.CopyAlbums38?.resumeDraft141?.(record.copySource141,record.draft,record.id);notify();return record}
   async function remove(row){
    const uid=owner();requireOwner(uid);if(!online())throw Error('删除云端作品需要联网；本机作品未删除');if(row.owner!==uid)throw Error('只能删除自己的作品');
-   const fresh=check(await db.from('ink_works').select('id,owner,local_id,image_path,draft_path').eq('owner',uid).eq('id',row.id).maybeSingle());requireOwner(uid);if(!fresh)return;
+   const fresh=check(await db.from('ink_works').select('id,owner,local_id,image_path,draft_path').is('deleted_at144',null).eq('owner',uid).eq('id',row.id).maybeSingle());requireOwner(uid);if(!fresh)return;
    let localId=String(fresh.local_id).split('|').at(-1);const sameId=await store.get(localId);if(sameId?.cloud141?.id&&sameId.cloud141.id!==fresh.id)localId='cloud141:'+fresh.id;
-   if(sameId&&!sameId.cloud141){const shared=check(await db.from('ink_works').select('id').eq('owner',uid).eq('image_path',fresh.image_path).neq('id',fresh.id).limit(1).maybeSingle());if(shared)localId='cloud141:'+fresh.id}
+   if(sameId&&!sameId.cloud141){const shared=check(await db.from('ink_works').select('id').is('deleted_at144',null).eq('owner',uid).eq('image_path',fresh.image_path).neq('id',fresh.id).limit(1).maybeSingle());if(shared)localId='cloud141:'+fresh.id}
    for(const meta of await store.get('works-index')||[]){const local=await store.get(meta.id);if(local?.cloud141?.id===fresh.id&&local.cloud141.owner===uid){localId=meta.id;break}}
    await store.set(key(uid,localId),{at:Date.now(),cloudId:fresh.id});
    try{const removed=check(await db.from('ink_works').delete().eq('owner',uid).eq('id',fresh.id).select('id'));if(removed?.length!==1)throw Error('云端作品未删除，请刷新后重试')}catch(e){await store.delete(key(uid,localId));throw e}

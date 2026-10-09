@@ -14,7 +14,7 @@ function harness(){
     window:{Revision128:{saveOnSwitch129:async()=>calls.push('save-switch')}},
     uid:()=> 'user',flushLocal:async()=>calls.push('flush'),restoreCache133:async()=>calls.push('restore-cache'),
     persistCache133:async()=>calls.push('persist-cache'),clearInterval:()=>calls.push('stop-poll'),bar:{hidden:true},
-    A:{persist:async()=>calls.push('persist'),restoreDraft:async state=>calls.push(['restore',state]),showWriter:()=>calls.push('writer'),setWorkIdentity128:id=>calls.push(['identity',id]),toast:text=>calls.push(text)},
+    A:{finish(){},persist:async()=>calls.push('persist'),restoreDraft:async state=>calls.push(['restore',state]),showWriter:()=>calls.push('writer'),setWorkIdentity128:id=>calls.push(['identity',id]),toast:text=>calls.push(text)},
     dialog:{open:false,showModal(){this.open=true},close(){this.open=false;calls.push('close')}},
     mark:text=>calls.push(text),roomHeading141:async()=>calls.push('room-heading'),button:(host,label,run)=>actions.push({label,run}),pages:async()=>calls.push('pages')};
   vm.createContext(context);
@@ -26,7 +26,7 @@ function harness(){
 test('top 共书 entry exposes page book and leave without creating or querying rooms',async()=>{
   const {context,calls,actions}=harness();
   await context.open();
-  assert.deepEqual(actions.map(a=>a.label),['继续书写','共书页册','离开共书']);
+  assert.deepEqual(actions.map(a=>a.label),['交卷','题跋','钤印','继续书写','共书页册','离开共书']);
   assert.equal(context.dialog.open,true);
   assert.ok(calls.includes('flush'));
   await actions.find(a=>a.label==='共书页册').run();

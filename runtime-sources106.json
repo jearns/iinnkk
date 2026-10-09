@@ -131,6 +131,7 @@
     "photo-effects125.js",
     "dialogs125.js",
     "revision128.js",
+    "relay-model144.js",
     "shared-service142.js",
     "collaboration128.js",
     "touch-order129.js",
@@ -142,7 +143,10 @@
     "revision133.js",
     "content133.js",
     "revision135.js",
-    "revision136.js"
+    "revision136.js",
+    "trash144.js",
+    "passport144.js",
+    "features144.js"
   ],
   "styles": [
     "style.css",
@@ -215,6 +219,7 @@
     "revision140.css",
     "revision141.css",
     "revision142.css",
-    "revision143.css"
+    "revision143.css",
+    "revision144.css"
   ]
 }

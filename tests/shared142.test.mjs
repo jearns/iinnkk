@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 const env={Blob,Response,CompressionStream,DecompressionStream,Uint8Array};
-for(const file of ['cloud-draft-codec141.js','shared-service142.js','collaboration128.js'])vm.runInNewContext(fs.readFileSync(file,'utf8'),env);
+for(const file of ['cloud-draft-codec141.js','relay-model144.js','shared-service142.js','collaboration128.js'])vm.runInNewContext(fs.readFileSync(file,'utf8'),env);
 function harness(){
  const objects=new Map(),rooms=new Map(),pages=new Map(),ops=[],calls=[];let serial=0,failRPC=false,uncertain=false,failRead=false;
  const cloud={user:{id:'owner'},client:{}};
