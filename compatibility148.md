@@ -2,7 +2,7 @@
 
 The homepage carousel, navigation and classic scroll share a 610px maximum content width with mobile gutters. The hero and sticky navigation use an outlined Shuowen-font 手 seal and the compact 手笔 name. The subtitle is sized to the hero width. The passport retains its accessible name but has no visible caption in the top icon row.
 
-Classic works are grouped horizontally by author and era, ordered by the first chronological occurrence of each author group. Each cover carries era/author metadata; multiple-work groups have three dots. Existing contemporary contributions and administrator catalog uploads are preserved.
+Classic works are grouped horizontally by author, including different era labels for the same author, ordered by the first chronological occurrence of each author group. Each cover carries era/author metadata; multiple-work groups have three dots. Existing contemporary contributions and administrator catalog uploads are preserved.
 
 Original appreciation opens a dedicated large-image reader with unnamed thumbnail buttons. The left arrow advances and the right arrow goes back. Sources wider than 2.8:1 are represented by normalized, contiguous right-to-left segments; the source file and writing album remain intact. Stitching opens a separate wide panorama dialog, fits the complete scroll, and scales the rendering canvas to stay within its existing maximum dimensions.
 
