@@ -1,0 +1,3 @@
+/* One viewport rule for every modal, including keyboards and rotated phones. */
+(function(root){function bounds(viewport,preferred={}){const x=Number(viewport.left)||0,y=Number(viewport.top)||0,w=Math.max(80,Number(viewport.width)||320),h=Math.max(80,Number(viewport.height)||568),margin=Math.min(12,w*.04,h*.04),width=Math.min(Math.max(160,Number(preferred.width)||420),w-margin*2),maxHeight=Math.max(56,Math.min(h-margin*2,h*.86)),height=Math.min(Math.max(44,Number(preferred.height)||maxHeight),maxHeight);return{left:x+(w-width)/2,top:y+Math.max(margin,(h-height)/2),width,maxHeight,height}}
+root.DialogViewport146={bounds};})(typeof window==='undefined'?globalThis:window);

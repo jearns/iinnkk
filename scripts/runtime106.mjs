@@ -10,5 +10,5 @@ const css=(await transform((await Promise.all(styles.map(p=>readFile(p,'utf8')))
 const hash=s=>createHash('sha256').update(s).digest('hex').slice(0,16),names=chunks.map(js=>'app-runtime.'+hash(js)+'.js'),cn='app-runtime.'+hash(css)+'.css';
 for(const p of await readdir('.'))if(/^app-runtime\.[a-f0-9]+\.(js|css)$/.test(p)&&!names.includes(p)&&p!==cn)await unlink(p);
 for(let i=0;i<chunks.length;i++)await writeFile(names[i],chunks[i]);await writeFile(cn,css);
-await writeFile('index.html',(await readFile('index-source106.html','utf8')).replace('<script defer src="__RUNTIME_JS__"></script>',names.map(name=>'<script defer src="'+name+'"></script>').join('')).replace('__RUNTIME_CSS__',cn));
+await writeFile('index.html',(await readFile('index-source106.html','utf8')).replace('<script defer src="__RUNTIME_JS__"></script>','<script>InkBoot146.setTotal('+names.length+')</script>'+names.map(name=>'<script defer src="'+name+'" onload="InkBoot146.part()" onerror="InkBoot146.failed()"></script>').join('')).replace('__RUNTIME_CSS__',cn));
 console.log('Complete runtime:',names.join(' '),cn);

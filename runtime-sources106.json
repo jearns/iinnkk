@@ -18,6 +18,7 @@
     "work-albums84.js",
     "work-meta84.js",
     "export-encoder127.js",
+    "reference-alignment146.js",
     "app.js",
     "heritage.js",
     "reading.js",
@@ -148,7 +149,9 @@
     "trash144.js",
     "passport144.js",
     "features144.js",
-    "revision145.js"
+    "revision145.js",
+    "dialog-viewport146.js",
+    "revision146.js"
   ],
   "styles": [
     "style.css",
@@ -223,6 +226,7 @@
     "revision142.css",
     "revision143.css",
     "revision144.css",
-    "revision145.css"
+    "revision145.css",
+    "revision146.css"
   ]
 }

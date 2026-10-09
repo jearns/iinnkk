@@ -1,0 +1,10 @@
+/* Source-space geometry travels with raw ink, never with screen pixels. */
+(function(root){
+ const finite=(v,f)=>Number.isFinite(+v)?+v:f,limit=(v,a,b,f)=>Math.max(a,Math.min(b,finite(v,f)));
+ function config(v={}){v=v&&typeof v==='object'?v:{};const c=v.crop||{},x=limit(c.x,0,.95,0),y=limit(c.y,0,.95,0);return{enabled:v.enabled!==false,opacity:limit(v.opacity,0,100,20),crop:{x,y,w:limit(c.w,.05,1-x,1-x),h:limit(c.h,.05,1-y,1-y)}}}
+ function clean(v){if(!v||typeof v!=='object')return null;const r=v.rect;return{version:146,reference131:config(v.reference131),rect:r&&[r.x,r.y,r.w,r.h].every(Number.isFinite)&&r.w>0&&r.h>0?{x:r.x,y:r.y,w:r.w,h:r.h}:null,columns:Array.isArray(v.columns)?v.columns.slice(0,1000).filter(c=>Number.isFinite(c.x)&&Number.isFinite(c.w)).map(c=>({x:c.x,w:c.w,glyphs:Array.isArray(c.glyphs)?c.glyphs.slice(0,1000).filter(g=>Number.isFinite(g.y)&&Number.isFinite(g.h)).map(g=>({x:g.x,y:g.y,w:g.w,h:g.h})):[]})):null}}
+ function capture(value,ref,bounds,columns,existing){if(!ref||!bounds)return null;const c=config(value),rw=ref.naturalWidth||ref.width,rh=ref.naturalHeight||ref.height,k=Math.min(bounds.w/(rw*c.crop.w),bounds.h/(rh*c.crop.h)),w=rw*c.crop.w*k,h=rh*c.crop.h*k;return clean({reference131:c,columns,rect:existing?.rect||{x:(bounds.w-w)/2,y:(bounds.h-h)/2,w,h}})}
+ function move(value,dx,dy){const v=clean(value);if(v?.rect){v.rect.x+=dx;v.rect.y+=dy}return v}
+ function sharedDraft(base,local){if(!base?.referenceData111)return local;const values={...local.values};for(const k of ['ratio','paperExtent','stationery','rows','columns','refFit','refX','refY','copyLayout111','copyColumns111'])if(base.values?.[k]!==undefined)values[k]=base.values[k];return{...local,values,referenceData111:base.referenceData111,referenceAlignment146:clean(base.referenceAlignment146)||{version:146,reference131:config(),rect:null,columns:null},basicRatio:base.basicRatio,infiniteExtent:base.infiniteExtent?JSON.parse(JSON.stringify(base.infiniteExtent)):local.infiniteExtent}}
+ root.ReferenceAlignment146={clean,config,capture,move,sharedDraft};
+})(typeof window==='undefined'?globalThis:window);
