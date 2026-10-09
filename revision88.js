@@ -8,7 +8,7 @@
  hero.replaceChildren();const logo=el('img','heroSeal90');logo.src='favicon90.png';logo.alt='篆书筆字印章';hero.append(logo,el('span','','今日亲笔'));
  const sub=brandBox.querySelector('p');sub.textContent='见墨·iinnkk.me·如我';
  const syncHeroWidth=()=>{if(home.clientWidth>0)root.style.setProperty('--home-width91',home.clientWidth+'px')};new ResizeObserver(syncHeroWidth).observe(home);syncHeroWidth();
- const intro=home.querySelector('.annotationIntro');const constellation=el('img','heroConstellation91');constellation.src='hero-constellation91.png';constellation.alt='';constellation.setAttribute('aria-hidden','true');constellation.decoding='async';intro.replaceChildren(constellation,el('strong','','人类群星闪耀时'),el('small','','一起结网记字，打造文字方舟！'));
+ const intro=home.querySelector('.annotationIntro');const constellation=el('img','heroConstellation91');constellation.loading='lazy';constellation.alt='';constellation.setAttribute('aria-hidden','true');constellation.decoding='async';intro.replaceChildren(constellation,el('strong','','人类群星闪耀时'),el('small','','一起结网记字，打造文字方舟！'));
  home.querySelectorAll('.homeLogo85,.homeLogo86,.homeLogo87,#homeTop86').forEach(e=>e.remove());
  const account=$('account47'),reminder=$('homeMoments')||$('momentReminder')||$('homeMoment47')||brand.querySelector('[id*=Moment]')||[...brand.querySelectorAll('button')].find(b=>/提醒|日历|天后|今天|明天/.test(b.textContent+' '+b.title));
  const theme=home.querySelector('.homeTheme78'),sources=[...theme.querySelectorAll('button')];

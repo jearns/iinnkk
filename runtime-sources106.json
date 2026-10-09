@@ -65,6 +65,7 @@
     "revision72.js",
     "timeline73-data.js",
     "reference-upload138.js",
+    "cover-crop145.js",
     "timeline74-cloud.js",
     "timeline77-curation.js",
     "timeline78-data.js",
@@ -146,7 +147,8 @@
     "revision136.js",
     "trash144.js",
     "passport144.js",
-    "features144.js"
+    "features144.js",
+    "revision145.js"
   ],
   "styles": [
     "style.css",
@@ -220,6 +222,7 @@
     "revision141.css",
     "revision142.css",
     "revision143.css",
-    "revision144.css"
+    "revision144.css",
+    "revision145.css"
   ]
 }

@@ -16,21 +16,20 @@ function harness(){
     persistCache133:async()=>calls.push('persist-cache'),clearInterval:()=>calls.push('stop-poll'),bar:{hidden:true},
     A:{finish(){},persist:async()=>calls.push('persist'),restoreDraft:async state=>calls.push(['restore',state]),showWriter:()=>calls.push('writer'),setWorkIdentity128:id=>calls.push(['identity',id]),toast:text=>calls.push(text)},
     dialog:{open:false,showModal(){this.open=true},close(){this.open=false;calls.push('close')}},
-    mark:text=>calls.push(text),roomHeading141:async()=>calls.push('room-heading'),button:(host,label,run)=>actions.push({label,run}),pages:async()=>calls.push('pages')};
+    mark:text=>calls.push(text),roomHeading141:async()=>calls.push('room-heading'),button:(host,label,run)=>actions.push({label,run}),pages:async()=>calls.push('pages'),dashboard145:async()=>{calls.push('dashboard');context.activeActions139(context.body)}};
   vm.createContext(context);
   const start=source.indexOf(' async function open(){');
   const end=source.indexOf(' bar.querySelector',start);
   vm.runInContext(source.slice(start,end),context);
   return {context,calls,actions};
 }
-test('top 共书 entry exposes page book and leave without creating or querying rooms',async()=>{
+test('top 共书 entry opens one dashboard with writing and leave actions',async()=>{
   const {context,calls,actions}=harness();
   await context.open();
-  assert.deepEqual(actions.map(a=>a.label),['交卷','题跋','钤印','继续书写','共书页册','离开共书']);
+  assert.deepEqual(actions.map(a=>a.label),['交卷','题跋','钤印','继续书写','离开共书']);
   assert.equal(context.dialog.open,true);
   assert.ok(calls.includes('flush'));
-  await actions.find(a=>a.label==='共书页册').run();
-  assert.ok(calls.includes('pages'));
+  assert.ok(calls.includes('dashboard'));
 });
 test('leave through top entry saves shared ink and restores previous work',async()=>{
   const {context,calls,actions}=harness();
@@ -43,7 +42,7 @@ test('leave through top entry saves shared ink and restores previous work',async
 });
 test('writing never exposes lower co-writing bar and active page book retains exit',()=>{
   assert.equal(source.includes('bar.hidden=false'),false);
-  assert.match(source,/if\(page\)leaveAction139\(body\)/);
+  assert.match(source,/leaveAction139\(host\)/);
   assert.match(css,/\.collabBar128\{display:none!important\}/);
 });
 test('reference controls have no plates in normal, pressed and hover states',()=>{
