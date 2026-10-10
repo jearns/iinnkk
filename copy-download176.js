@@ -39,3 +39,4 @@ export function open(book,current){
  find('[data-share]').onclick=async()=>{const file=new File([blob],filename(),{type:blob.type});try{if(navigator.canShare?.({files:[file]}))await navigator.share({files:[file],title:book.title});else{status.textContent='此浏览器请使用下载图片，或长按预览保存到相册'}}catch(e){if(e.name!=='AbortError')status.textContent='系统分享未完成，请下载图片或长按预览保存'}};
  d.addEventListener('close',()=>{if(url)URL.revokeObjectURL(url);d.remove()},{once:true});d.showModal();
 }
+

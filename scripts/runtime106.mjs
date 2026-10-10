@@ -13,7 +13,7 @@ for(const p of await readdir('.'))if(/^app-runtime\.[a-f0-9]+\.(js|css)$/.test(p
 await writeFile('runtime-history154.json',JSON.stringify({release,current:[...names,cn],previous},null,2)+'\n');
 for(let i=0;i<chunks.length;i++)await writeFile(names[i],chunks[i]);await writeFile(cn,css);
 const bootCount=groups.findIndex(items=>items.some(source=>source.includes('window.WriterEntry154={ready:')))+1,bootNames=names.slice(0,bootCount),laterNames=names.slice(bootCount);
-const tags='<script>InkBoot146.setTotal('+bootCount+')</script>'+bootNames.map(name=>'<script defer src="'+name+'" onload="InkBoot146.part()" onerror="InkBoot146.failed()"></script>').join('')+'<script>document.addEventListener("DOMContentLoaded",function(){var names='+JSON.stringify(laterNames)+';window.WriterModules173=Promise.all(names.map(function(name){return new Promise(function(resolve,reject){var s=document.createElement("script");s.async=false;s.src=name;s.onload=resolve;s.onerror=function(){var error=new Error("书写模块未能加载："+name);window.WriterStartupFailure163=error.message;reject(error)};document.head.appendChild(s)})}));window.WriterModules173.catch(function(error){console.error(error)})},{once:true})</script>';
+const tags='<script>InkBoot146.setTotal('+bootCount+');(function(){var remaining='+names.length+',timers={};window.WriterModules173=new Promise(function(resolve,reject){window.WriterPart177=function(name,failed){clearTimeout(timers[name]);if(failed){window.WriterStartupFailure163="书写模块未能加载："+name;reject(new Error(window.WriterStartupFailure163));return}if(--remaining===0)resolve()};'+JSON.stringify(names)+'.forEach(function(name){timers[name]=setTimeout(function(){window.WriterPart177(name,true)},30000)});});window.WriterModules173.catch(function(error){console.error(error)})})();</script>'+names.map((name,i)=>'<script defer src="'+name+'" onload="'+(i<bootCount?'InkBoot146.part();':'')+"WriterPart177('"+name+"',false)"+'" onerror="InkBoot146.failed();'+"WriterPart177('"+name+"',true)"+'"></script>').join('');
 await writeFile('writer.html',(await readFile('index-source106.html','utf8')).replace('<script defer src="__RUNTIME_JS__"></script>',tags).replace('__RUNTIME_CSS__',cn));
 await writeFile('engine158.html',await readFile('writer.html','utf8'));
 await writeFile('engine159.html',await readFile('writer.html','utf8'));
@@ -33,6 +33,8 @@ await writeFile('engine173.html',await readFile('writer.html','utf8'));
 await writeFile('engine174.html',await readFile('writer.html','utf8'));
 await writeFile('engine175.html',await readFile('writer.html','utf8'));
 await writeFile('engine176.html',await readFile('writer.html','utf8'));
+await writeFile('engine177.html',await readFile('writer.html','utf8')); 
 console.log('Complete runtime:',names.join(' '),cn);
 
 await import('./home154.mjs');
+

@@ -4,3 +4,4 @@ test('legacy work blob precedes preview',async()=>{const full=new Blob(['full'])
 test('comparison places original on left and preserves aspect ratios',()=>{const p=layout([{width:100,height:200},{width:300,height:200}],'compare');assert.ok(p.boxes[0].x<p.boxes[1].x);assert.equal(p.boxes[0].width/p.boxes[0].height,.5);assert.equal(p.boxes[1].width/p.boxes[1].height,1.5)});
 test('101 page scroll stays within mobile canvas budget',()=>{const p=layout(Array.from({length:101},()=>({width:1200,height:1600})),'scroll');assert.ok(p.width<=16384);assert.ok(p.width*p.height<=16000000);assert.ok(p.boxes.at(-1).x+p.boxes.at(-1).width<=p.width+1)});
 test('single image retains original proportions and has no frame',()=>{assert.deepEqual(layout([{width:600,height:800}],'single'),{width:600,height:800,boxes:[{x:0,y:0,width:600,height:800}]})});
+
