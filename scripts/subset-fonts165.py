@@ -22,4 +22,4 @@ def build(src,dst,text,family,css):
     s=s[:end+1]+'/* subset165 start */\n'+rule+'\n/* subset165 end */\n'+s[end+1:];path.write_text(s)
     print(dst,Path(dst).stat().st_size,'bytes',len(points),'glyphs')
 build('fonts/interface39.woff2','fonts/interface-core165.woff2',ui,'Caption38','annotation.css')
-build('fonts/YiShanBeiZhuanTi.woff2','fonts/seal-core165.woff2',seals,'YiShanBeiSeal','revision65.css')
+# Seal subsets are owned by seal-font167.py, including traditional glyph aliases.

@@ -83,7 +83,7 @@ body:not(.home-open) #dailyDialog.quoteBookmark73 .readerList90 button[aria-curr
 @media(max-width:360px){#homeActions90 :is(#momentReminder,#homeMoments){max-width:56px!important}#annotationHome .annotationBrand h1{font-size:21px!important}.heroSeal90{width:28px;height:28px}#annotationHome #homeActions90{right:8px!important;gap:3px!important}#annotationHome #themeSwitch90{width:40px!important;min-width:40px!important}#topActions .tool90,#topActions #topQuotes{width:29px!important;min-width:29px!important}}
 @media(prefers-reduced-motion:reduce){#themeSwitch90 i,#homeBrand79{transition:none!important}}
 
-#annotationHome #account47.accountSeal90{font-family:YiShanBeiSeal,ShuowenSeal,serif!important;font-size:20px!important}
+#annotationHome #account47.accountSeal90{font-family:YiShanBeiSeal,serif!important;font-size:20px!important}
 
 #annotationHome #homeActions90>.homeTheme78{order:0!important}#annotationHome #homeMoments{order:1!important}#annotationHome #account47{order:3!important}
 #topActions>#extendPaper63{display:none!important}

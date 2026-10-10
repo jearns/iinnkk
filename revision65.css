@@ -1,9 +1,5 @@
-@font-face{font-family:ChongxiSeal;src:url("fonts/small-seal.woff2") format("woff2");font-display:swap}
-@font-face{font-family:YouLongSeal;src:url("fonts/ZiHunYouLongZhuanTi.woff2") format("woff2");font-display:swap}
-@font-face{font-family:YiShanBeiSeal;src:url("fonts/YiShanBeiZhuanTi.woff2") format("woff2");font-display:swap}
-/* subset165 start */
-@font-face{font-family:YiShanBeiSeal;src:url("fonts/seal-core165.woff2") format("woff2");font-display:swap;unicode-range:U+4E00,U+4E0B,U+4E3A,U+4E66,U+4EB2,U+4ECA,U+4EE5,U+5199,U+5370,U+58A8,U+5982,U+5B57,U+6211,U+624B,U+65B9,U+65E5,U+65F6,U+6D45,U+6DF1,U+7559,U+771F,U+7AE0,U+7B14,U+89C1,U+8FF9,U+968F,U+9762}
-/* subset165 end */
+@font-face{font-family:YiShanBeiSeal;src:url("fonts/yishan167.woff2") format("woff2");font-display:swap}
+@font-face{font-family:YiShanBeiSeal;src:url("fonts/seal-core167.woff2") format("woff2");font-display:swap;unicode-range:U+4E00,U+4E0B,U+4E3A,U+4E66,U+4EB2,U+4ECA,U+4EE5,U+5199,U+5370,U+58A8,U+5982,U+5B57,U+5BEB,U+6211,U+624B,U+65B9,U+65E5,U+65F6,U+6642,U+66F8,U+6D45,U+6DF1,U+6DFA,U+7559,U+771F,U+7AE0,U+7B14,U+7B46,U+898B,U+89AA,U+89C1,U+8DE1,U+8FF9,U+968F,U+96A8,U+9762}
 /* Preserve text editing inside forms while shielding the writing canvas from selection. */
 body:not(.home-open) #board,body:not(.home-open) #board canvas,body:not(.home-open) #board button{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:none}
 body:not(.home-open) #board input,body:not(.home-open) #board textarea,body:not(.home-open) #board [contenteditable="true"]{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default;touch-action:auto}
