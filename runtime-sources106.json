@@ -170,7 +170,8 @@
     "revision152.js",
     "revision159.js",
     "revision160.js",
-    "revision161.js"
+    "revision161.js",
+    "revision164.js"
   ],
   "styles": [
     "style.css",
@@ -258,6 +259,7 @@
     "revision158.css",
     "revision159.css",
     "revision160.css",
-    "revision161.css"
+    "revision161.css",
+    "revision164.css"
   ]
 }
