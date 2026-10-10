@@ -16,7 +16,7 @@ function harness(confirm=()=>false){
  return q}
  const cloud={user:{id:'owner'},cloudLocalId:id=>'copy:book|'+id,client:{storage,from:query}},app={editSavedWork:async id=>{app.edited=id;return true},toast(){}};
  const service=env.CloudDraftService141.create({cloud,store,codec,app,confirm,online:()=>true,uuid:()=> 'revision-'+(++serial)});
- const record={id:'work:1',title:'敬源 临写 赵孟頫 赤壁赋',created:1,draft:{flow:{strokes:[{settings:{size:15},points:[{x:.2,y:.3,p:.4,t:123}],geometry:{x:1,y:2,k:.5}}]},brush:{size:37},photos:[],values:{zoom:'500'}},blob:new Blob(['image'])};
+ const record={sharedRoom142:'test-room',id:'work:1',title:'敬源 临写 赵孟頫 赤壁赋',created:1,draft:{flow:{strokes:[{settings:{size:15},points:[{x:.2,y:.3,p:.4,t:123}],geometry:{x:1,y:2,k:.5}}]},brush:{size:37},photos:[],values:{zoom:'500'}},blob:new Blob(['image'])};
  const upload=r=>service.upload(r,{local_id:cloud.cloudLocalId(r.id),title:r.title,image:r.blob,published:false});
  return{records,objects,rows,store,cloud,service,record,upload,app,setDeleteError:v=>deleteError=v,setConflict:v=>conflict=v};
 }
@@ -40,3 +40,4 @@ test('group heading places the member names directly below the title without onl
 test('cloud uploads use URL-stable storage names for work IDs containing colons and separators',async()=>{const h=harness();h.record.id='copy:book|work:1';await h.upload(h.record);const row=[...h.rows.values()][0];assert.equal(row.image_path.includes('%'),false);assert.equal(row.image_path.includes('|'),false);assert.equal(row.image_path.split('/')[1],'copy_book_work_1');assert.ok(h.objects.has('ink-works:'+row.image_path));assert.ok(h.objects.has('ink-drafts:'+row.draft_path))});
 
 test('editable cloud checkpoints retain the group and page needed to resume the same shared work on another device',async()=>{const h=harness();h.record.sharedRoom142='same-room';h.record.sharedPage151='same-page';h.record.sharedWriter151='me';await h.upload(h.record);const row=[...h.rows.values()][0];h.records.clear();const loaded=await h.service.load(row);assert.equal(loaded.sharedRoom142,'same-room');assert.equal(loaded.sharedPage151,'same-page');assert.equal(loaded.sharedWriter151,'me');assert.equal(loaded.id,h.record.id);assert.equal(loaded.draft.flow.strokes.length,h.record.draft.flow.strokes.length)});
+test('ordinary publication uploads the display image without uploading editable strokes',async()=>{const h=harness();delete h.record.sharedRoom142;await h.upload(h.record);const row=[...h.rows.values()][0];assert.equal(row.draft_path,null);assert.ok([...h.objects.keys()].some(k=>k.startsWith('ink-works:')));assert.equal([...h.objects.keys()].some(k=>k.startsWith('ink-drafts:')),false);assert.equal(h.record.draft.flow.strokes.length,1)});

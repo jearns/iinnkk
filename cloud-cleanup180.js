@@ -1,0 +1,7 @@
+/* User-approved, authenticated founder cleanup. Ordinary drafts stay local. */
+(function init180(){if(!window.InkCloud75?.client||!window.AnnotationApp){setTimeout(init180,100);return}const C=InkCloud75,A=AnnotationApp;let running=false,button=null,attempted=false;
+ const key=()=> 'iinnkk.ordinary-drafts-cleaned180:'+C.user?.id;
+ async function cleanup(){if(running||attempted||!C.isFounder132||localStorage.getItem(key())==='done')return;running=true;attempted=true;if(button)button.disabled=true;try{const owner=C.user.id;const{data,error}=await C.client.functions.invoke('cleanup-ordinary-drafts180',{body:{operation:'delete-approved-ordinary-drafts-180'}});if(error||!data?.completed)throw Error(error?.message||data?.error||'云端清理未完成');if(C.user?.id!==owner)return;localStorage.setItem(key(),'done');A.toast('已清理 '+data.requested+' 个历史普通云端笔迹文件；共书已保留');document.dispatchEvent(new Event('cloud-copies83'))}catch(e){A.toast('历史云端笔迹尚未清理：'+e.message+'。可在我的作品中重试。')}finally{running=false;if(button)button.disabled=false;sync()}}
+ function sync(){const head=document.getElementById('worksDialog')?.querySelector('.dialogHead');if(!head)return;if(!button){button=document.createElement('button');button.type='button';button.textContent='清理旧云端笔迹';button.onclick=()=>{attempted=false;cleanup()};head.append(button)}button.hidden=!C.isFounder132||localStorage.getItem(key())==='done'}
+ document.addEventListener('cloud-user84',()=>{sync();cleanup()});document.addEventListener('cloud-copies83',sync);setTimeout(()=>{sync();cleanup()},3500);
+})();

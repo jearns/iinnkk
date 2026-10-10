@@ -28,14 +28,14 @@
    if(old?.draft_path&&old.updated_at!==base&&old.updated_at!==versions.get(uid+'|'+localId))throw Error('云端已有较新原笔迹，请先打开云端版本；本机修改未删除');
    const token=uuid(),folder=uid+'/'+String(record.id).replace(/[^a-zA-Z0-9_-]/g,'_')+'/'+token,imagePath=folder+'.jpg';
    const copy=record.copySource141||null,payload={version:141,id:record.id,title:record.title,created:record.created,date:record.date,quoteAuthor:record.quoteAuthor,quoteTitle:record.quoteTitle,copySource141:copy,copyBook158:record.copyBook158||null,sharedRoom142:record.sharedRoom142||null,sharedPage151:record.sharedPage151||null,sharedWriter151:record.sharedWriter151||null,draft:record.draft};
-   const packed=record.draft?await codec.pack(payload):null;requireOwner(uid);const draftPath=packed?folder+'.'+packed.extension:null;
+   const packed=record.sharedRoom142&&record.draft?await codec.pack(payload):null;requireOwner(uid);const draftPath=packed?folder+'.'+packed.extension:null;
    const uploaded=[];let committed=false;
    try{
     check(await db.storage.from('ink-works').upload(imagePath,row.image,{upsert:false,contentType:'image/jpeg'}));uploaded.push(['ink-works',imagePath]);requireOwner(uid);
     if(packed){check(await db.storage.from('ink-drafts').upload(draftPath,packed.blob,{upsert:false,contentType:packed.blob.type}));uploaded.push(['ink-drafts',draftPath]);requireOwner(uid)}
     if(await deleted(record,uid))return{deleted:true};
     const values={owner:uid,local_id:localId,title:row.title,image_path:imagePath,updated_at:new Date(Math.max(Date.now(),Date.parse(old?.updated_at||'1970-01-01')+1)).toISOString(),published:row.published??old?.published??false};
-    if(draftPath)values.draft_path=draftPath;
+    values.draft_path=draftPath;
     let query;if(old){query=db.from('ink_works').update(values).eq('owner',uid).eq('id',old.id).eq('updated_at',old.updated_at)}else query=db.from('ink_works').insert(values);
     const saved=check(await query.select('id,owner,local_id,updated_at').maybeSingle());if(!saved)throw Error('另一设备刚更新了本作品，请先读取云端版本；本机笔迹保留');committed=true;requireOwner(uid);
     const meta={owner:uid,id:saved.id,localId:saved.local_id,updatedAt:saved.updated_at,draftBytes:packed?.bytes||0};versions.set(uid+'|'+localId,saved.updated_at);
@@ -53,7 +53,7 @@
    if(previous?.cloud141?.id&&previous.cloud141.id!==fresh.id){id='cloud141:'+fresh.id;previous=await store.get(id)}
    const pending=(await store.entries('cloud-outbox101:')).some(([,job])=>job.id===id&&(!job.owner||job.owner===uid));if(pending&&previous?.draft){const error=Error('本机此作品尚有待同步修改，请先同步或备份本机版，避免覆盖');error.code='pending141';error.localId=id;throw error}
    const blob=check(await db.storage.from('ink-works').download(fresh.image_path));requireOwner(uid);
-   const meta={owner:uid,id:fresh.id,localId:fresh.local_id,updatedAt:fresh.updated_at};const record={id,title:fresh.title,date:payload?.date||new Date(fresh.updated_at).toLocaleString('zh-CN'),created:payload?.created||Date.parse(fresh.updated_at),updated:Date.parse(fresh.updated_at),blob,thumbnail:blob,draft:payload?.draft||previous?.draft||null,quoteAuthor:payload?.quoteAuthor||'',quoteTitle:payload?.quoteTitle||'',copySource141:payload?.copySource141||null,copyBook158:payload?.copyBook158||null,sharedRoom142:payload?.sharedRoom142||null,sharedPage151:payload?.sharedPage151||null,sharedWriter151:payload?.sharedWriter151||null,cloud141:meta};
+   const meta={owner:uid,id:fresh.id,localId:fresh.local_id,updatedAt:fresh.updated_at};const record={id,title:fresh.title,date:payload?.date||new Date(fresh.updated_at).toLocaleString('zh-CN'),created:payload?.created||Date.parse(fresh.updated_at),updated:Date.parse(fresh.updated_at),blob,thumbnail:blob,draft:payload?.draft||previous?.draft||null,quoteAuthor:payload?.quoteAuthor||'',quoteTitle:payload?.quoteTitle||'',copySource141:payload?.copySource141||previous?.copySource141||null,copyBook158:payload?.copyBook158||previous?.copyBook158||null,sharedRoom142:payload?.sharedRoom142||null,sharedPage151:payload?.sharedPage151||null,sharedWriter151:payload?.sharedWriter151||null,cloud141:meta};
    if(record.draft)record.draft={...record.draft,editingWork110:{id,title:record.title,date:record.date,created:record.created,cloud141:meta}};
    await store.saveWork(record);return record;
   }
@@ -76,9 +76,7 @@
  root.CloudDraftService141={create:service};
  if(!root.document)return;
  (function init(){if(!root.InkCloud75?.client||!root.DraftCodec141){setTimeout(init,80);return}const cloud=root.InkCloud75,app=root.AnnotationApp;const notify=()=>document.dispatchEvent(new Event('cloud-copies83'));root.CloudDraft141=service({cloud,app,store:root.DraftStore,codec:root.DraftCodec141,notify});
-  let migrating=false,migrationFailures141=0;
-  async function migrate(){if(migrating||!cloud.user||!navigator.onLine||!root.OfflineSync101)return;migrating=true;migrationFailures141=0;const uid=cloud.user.id;try{for(const meta of await DraftStore.get('works-index')||[]){if(cloud.user?.id!==uid)break;while(app.writing()&&cloud.user?.id===uid)await new Promise(r=>setTimeout(r,1000));if(cloud.user?.id!==uid)break;try{const record=await DraftStore.get(meta.id);if(!Array.isArray(record?.draft?.flow?.strokes)||record.cloud141)continue;const remote=await root.CloudDraft141.findLocal(record.id,uid);if(remote?.draft_path)continue;await root.OfflineSync101.enqueue(record,undefined,true)}catch(e){migrationFailures141++;console.warn('旧作品原笔迹等待补传',e.message)}await new Promise(r=>setTimeout(r,0))}}catch(e){migrationFailures141++;console.warn('旧作品原笔迹等待补传',e.message)}finally{migrating=false}}
-  document.addEventListener('cloud-user84',migrate);addEventListener('online',migrate);setTimeout(migrate,2500);
-  const head=document.getElementById('worksDialog')?.querySelector('.dialogHead');if(head){const button=document.createElement('button');button.type='button';button.textContent='同步原笔迹';button.onclick=async()=>{if(!cloud.user){app.toast('请先登录，再同步原笔迹');return}if(!navigator.onLine){app.toast('请联网后同步；本机原笔迹保留');return}if(migrating){app.toast('正在补传旧作品，请稍后查看同步状态');return}button.disabled=true;try{await migrate();await root.OfflineSync101?.flush();const jobs=(await root.OfflineSync101?.pending()||[]).filter(j=>!j.owner||j.owner===cloud.user?.id);app.toast(migrationFailures141?'部分原笔迹尚未补传，请保持联网后重试':jobs.length?'原笔迹仍在待同步队列，请保持联网':'可编辑原笔迹同步完成')}catch(e){app.toast(e.message)}finally{button.disabled=false}};head.append(button)}
+  // V180: ordinary drafts never migrate or backfill into the cloud.
+
  })();
 })(typeof window==='undefined'?globalThis:window);
