@@ -1,7 +1,7 @@
 {
   "scripts": [
-    "startup173.js",
     "compat106.js",
+    "startup173.js",
     "brush.js",
     "mount.js",
     "seal-map172.js",
