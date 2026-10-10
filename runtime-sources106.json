@@ -170,7 +170,8 @@
     "revision152.js",
     "revision159.js",
     "revision160.js",
-    "revision161.js"
+    "revision161.js",
+    "nobel-women175.js"
   ],
   "styles": [
     "style.css",
@@ -259,6 +260,7 @@
     "revision159.css",
     "revision160.css",
     "revision161.css",
-    "revision164.css"
+    "revision164.css",
+    "revision175.css"
   ]
 }

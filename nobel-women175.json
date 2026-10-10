@@ -1,0 +1,323 @@
+{
+  "updated": "2026-10-10",
+  "announcement": "2026-10-08",
+  "authors": [
+    {
+      "year": 2026,
+      "name": "安妮·卡森",
+      "url": "https://www.nobelprize.org/prizes/literature/2026/carson/facts/"
+    },
+    {
+      "year": 2024,
+      "name": "韩江",
+      "url": "https://www.nobelprize.org/prizes/literature/2024/han/facts/"
+    },
+    {
+      "year": 2022,
+      "name": "安妮·埃尔诺",
+      "url": "https://www.nobelprize.org/prizes/literature/2022/ernaux/facts/"
+    },
+    {
+      "year": 2020,
+      "name": "露易丝·格丽克",
+      "url": "https://www.nobelprize.org/prizes/literature/2020/gluck/facts/"
+    },
+    {
+      "year": 2018,
+      "name": "奥尔加·托卡尔丘克",
+      "url": "https://www.nobelprize.org/prizes/literature/2018/tokarczuk/facts/"
+    },
+    {
+      "year": 2015,
+      "name": "斯维特兰娜·阿列克谢耶维奇",
+      "url": "https://www.nobelprize.org/prizes/literature/2015/alexievich/facts/"
+    },
+    {
+      "year": 2013,
+      "name": "艾丽丝·门罗",
+      "url": "https://www.nobelprize.org/prizes/literature/2013/munro/facts/"
+    },
+    {
+      "year": 2009,
+      "name": "赫塔·米勒",
+      "url": "https://www.nobelprize.org/prizes/literature/2009/muller/facts/"
+    },
+    {
+      "year": 2007,
+      "name": "多丽丝·莱辛",
+      "url": "https://www.nobelprize.org/prizes/literature/2007/lessing/facts/"
+    },
+    {
+      "year": 2004,
+      "name": "埃尔弗里德·耶利内克",
+      "url": "https://www.nobelprize.org/prizes/literature/2004/jelinek/facts/"
+    },
+    {
+      "year": 1996,
+      "name": "维斯瓦娃·辛波斯卡",
+      "url": "https://www.nobelprize.org/prizes/literature/1996/szymborska/facts/"
+    },
+    {
+      "year": 1993,
+      "name": "托妮·莫里森",
+      "url": "https://www.nobelprize.org/prizes/literature/1993/morrison/facts/"
+    },
+    {
+      "year": 1991,
+      "name": "纳丁·戈迪默",
+      "url": "https://www.nobelprize.org/prizes/literature/1991/gordimer/facts/"
+    },
+    {
+      "year": 1966,
+      "name": "奈莉·萨克斯",
+      "url": "https://www.nobelprize.org/prizes/literature/1966/sachs/facts/"
+    },
+    {
+      "year": 1945,
+      "name": "加夫列拉·米斯特拉尔",
+      "url": "https://www.nobelprize.org/prizes/literature/1945/mistral/facts/"
+    },
+    {
+      "year": 1938,
+      "name": "赛珍珠",
+      "url": "https://www.nobelprize.org/prizes/literature/1938/buck/facts/"
+    },
+    {
+      "year": 1928,
+      "name": "西格丽德·温塞特",
+      "url": "https://www.nobelprize.org/prizes/literature/1928/undset/facts/"
+    },
+    {
+      "year": 1926,
+      "name": "格拉齐娅·黛莱达",
+      "url": "https://www.nobelprize.org/prizes/literature/1926/deledda/facts/"
+    },
+    {
+      "year": 1909,
+      "name": "塞尔玛·拉格洛夫",
+      "url": "https://www.nobelprize.org/prizes/literature/1909/lagerlof/facts/"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "nobelwomen175-1",
+      "cat": "nobel",
+      "q": "为了不无聊，我什么都愿意做。",
+      "author": "安妮·卡森",
+      "title": "短谈",
+      "source": "短谈",
+      "s": "2026·安妮·卡森《短谈》 · 作品短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://yalereview.org/article/carson-short-talks"
+    },
+    {
+      "id": "nobelwomen175-2",
+      "cat": "nobel",
+      "q": "这是一生的功课。",
+      "author": "安妮·卡森",
+      "title": "短谈",
+      "source": "短谈",
+      "s": "2026·安妮·卡森《短谈》 · 作品短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://yalereview.org/article/carson-short-talks"
+    },
+    {
+      "id": "nobelwomen175-3",
+      "cat": "nobel",
+      "q": "但芬芳不会消逝。",
+      "author": "安妮·卡森",
+      "title": "短谈",
+      "source": "短谈",
+      "s": "2026·安妮·卡森《短谈》 · 作品短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://yalereview.org/article/carson-short-talks"
+    },
+    {
+      "id": "nobelwomen175-4",
+      "cat": "nobel",
+      "q": "词语会跳跃。",
+      "author": "安妮·卡森",
+      "title": "红的自传",
+      "source": "红的自传",
+      "s": "2026·安妮·卡森《红的自传》 · 作品短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.goodreads.com/work/quotes/1396256-autobiography-of-red-a-novel-in-verse"
+    },
+    {
+      "id": "nobelwomen175-5",
+      "cat": "nobel",
+      "q": "欲望绝非轻盈之物。",
+      "author": "安妮·卡森",
+      "title": "红的自传",
+      "source": "红的自传",
+      "s": "2026·安妮·卡森《红的自传》 · 作品短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.goodreads.com/work/quotes/1396256-autobiography-of-red-a-novel-in-verse"
+    },
+    {
+      "id": "nobelwomen175-6",
+      "cat": "nobel",
+      "q": "有时，一场旅程自有其必要。",
+      "author": "安妮·卡森",
+      "title": "红的自传",
+      "source": "红的自传",
+      "s": "2026·安妮·卡森《红的自传》 · 作品短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.goodreads.com/work/quotes/1396256-autobiography-of-red-a-novel-in-verse"
+    },
+    {
+      "id": "nobelwomen175-7",
+      "cat": "nobel",
+      "q": "没有一个人不拥有自己的世界。",
+      "author": "安妮·卡森",
+      "title": "红的自传",
+      "source": "红的自传",
+      "s": "2026·安妮·卡森《红的自传》 · 作品短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.goodreads.com/work/quotes/1396256-autobiography-of-red-a-novel-in-verse"
+    },
+    {
+      "id": "nobelwomen175-8",
+      "cat": "nobel",
+      "q": "爱欲关乎边界。",
+      "author": "安妮·卡森",
+      "title": "爱欲：甜与苦",
+      "source": "爱欲：甜与苦",
+      "s": "2026·安妮·卡森《爱欲：甜与苦》 · 作品短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.goodreads.com/work/quotes/2599090-eros-the-bittersweet"
+    },
+    {
+      "id": "nobelwomen175-9",
+      "cat": "nobel",
+      "q": "所有恋人都相信，自己正在发明爱情。",
+      "author": "安妮·卡森",
+      "title": "爱欲：甜与苦",
+      "source": "爱欲：甜与苦",
+      "s": "2026·安妮·卡森《爱欲：甜与苦》 · 作品短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.goodreads.com/work/quotes/2599090-eros-the-bittersweet"
+    },
+    {
+      "id": "nobelwomen175-10",
+      "cat": "nobel",
+      "q": "爱欲就在两者之间。",
+      "author": "安妮·卡森",
+      "title": "爱欲：甜与苦",
+      "source": "爱欲：甜与苦",
+      "s": "2026·安妮·卡森《爱欲：甜与苦》 · 作品短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.goodreads.com/work/quotes/2599090-eros-the-bittersweet"
+    },
+    {
+      "id": "nobelwomen175-11",
+      "cat": "nobel",
+      "q": "过去能帮助现在吗？",
+      "author": "韩江",
+      "title": "光与线",
+      "source": "光与线",
+      "s": "2024·韩江《光与线》 · 演讲短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.nobelprize.org/uploads/2024/12/han-lecture-english.pdf"
+    },
+    {
+      "id": "nobelwomen175-12",
+      "cat": "nobel",
+      "q": "我要写作，为我的同胞复仇。",
+      "author": "安妮·埃尔诺",
+      "title": "我要为我的同胞复仇",
+      "source": "我要为我的同胞复仇",
+      "s": "2022·安妮·埃尔诺《我要为我的同胞复仇》 · 演讲短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.nobelprize.org/uploads/2022/12/ernaux-lecture-english.pdf"
+    },
+    {
+      "id": "nobelwomen175-13",
+      "cat": "nobel",
+      "q": "文学建立在对自身之外一切存在的温柔之上。",
+      "author": "奥尔加·托卡尔丘克",
+      "title": "温柔的叙述者",
+      "source": "温柔的叙述者",
+      "s": "2018·奥尔加·托卡尔丘克《温柔的叙述者》 · 演讲短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.nobelprize.org/uploads/2019/12/tokarczuk-lecture-english.pdf"
+    },
+    {
+      "id": "nobelwomen175-14",
+      "cat": "nobel",
+      "q": "但我们创造语言。",
+      "author": "托妮·莫里森",
+      "title": "诺贝尔演讲",
+      "source": "诺贝尔演讲",
+      "s": "1993·托妮·莫里森《诺贝尔演讲》 · 演讲短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.nobelprize.org/prizes/literature/1993/morrison/lecture/"
+    },
+    {
+      "id": "nobelwomen175-15",
+      "cat": "nobel",
+      "q": "无论灵感是什么，它都诞生于持续不断的“我不知道”。",
+      "author": "维斯瓦娃·辛波斯卡",
+      "title": "诗人与世界",
+      "source": "诗人与世界",
+      "s": "1996·维斯瓦娃·辛波斯卡《诗人与世界》 · 演讲短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.nobelprize.org/prizes/literature/1996/szymborska/lecture/"
+    },
+    {
+      "id": "nobelwomen175-16",
+      "cat": "nobel",
+      "q": "总有一个时刻，他们会被火焰触动。",
+      "author": "多丽丝·莱辛",
+      "title": "论没有获得诺贝尔奖",
+      "source": "论没有获得诺贝尔奖",
+      "s": "2007·多丽丝·莱辛《论没有获得诺贝尔奖》 · 演讲短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.nobelprize.org/prizes/literature/2007/lessing/lecture/"
+    },
+    {
+      "id": "nobelwomen175-17",
+      "cat": "nobel",
+      "q": "你带手帕了吗？",
+      "author": "赫塔·米勒",
+      "title": "每个词都知道恶性循环",
+      "source": "每个词都知道恶性循环",
+      "s": "2009·赫塔·米勒《每个词都知道恶性循环》 · 演讲短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.nobelprize.org/prizes/literature/2009/muller/lecture/"
+    },
+    {
+      "id": "nobelwomen175-18",
+      "cat": "nobel",
+      "q": "我愿说，自己是一只人的耳朵。",
+      "author": "斯维特兰娜·阿列克谢耶维奇",
+      "title": "诺贝尔演讲",
+      "source": "诺贝尔演讲",
+      "s": "2015·斯维特兰娜·阿列克谢耶维奇《诺贝尔演讲》 · 演讲短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.nobelprize.org/prizes/literature/2015/alexievich/lecture/"
+    },
+    {
+      "id": "nobelwomen175-19",
+      "cat": "nobel",
+      "q": "然而，学者从未跟上人民鲜活而变化的语言。",
+      "author": "赛珍珠",
+      "title": "中国小说",
+      "source": "中国小说",
+      "s": "1938·赛珍珠《中国小说》 · 演讲短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://www.nobelprize.org/prizes/literature/1938/buck/lecture/"
+    },
+    {
+      "id": "nobelwomen175-20",
+      "cat": "nobel",
+      "q": "给我你的手，我们便一起起舞。",
+      "author": "加夫列拉·米斯特拉尔",
+      "title": "给我你的手",
+      "source": "给我你的手",
+      "s": "1945·加夫列拉·米斯特拉尔《给我你的手》 · 作品短摘 · 本站译",
+      "sourceKind": "translated_excerpt",
+      "url": "https://gabrielamistral.uchile.cl/poesia/ternura/rondas/Dame.html"
+    }
+  ]
+}
