@@ -1,6 +1,6 @@
 /* One reference controller for the preview rail, main menu and floating panorama. */
 (function init129(){
- if(!window.Revision128?.ready||!window.TouchOrder129?.render||!window.ReferenceAnalysis129||!window.ReferenceIO129){setTimeout(init129,80);return}
+ if(!window.Revision111?.ready||!window.Revision128?.ready||!window.TouchOrder129?.render||!window.ReferenceAnalysis129||!window.ReferenceIO129){setTimeout(init129,80);return}
  const A=AnnotationApp,C=CopyAlbums38,$=id=>document.getElementById(id),T=TouchOrder129;
  const icon=T.icon,paths={close:'M6 6l12 12M18 6L6 18',prev:'M15 5l-7 7 7 7',next:'M9 5l7 7-7 7',target:'M12 2v4M12 18v4M2 12h4M18 12h4M7 7h10v10H7z',fit:'M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5',upload:'M12 16V3m-4 4 4-4 4 4M4 14v7h16v-7',book:'M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4zM12 6v14',edit:'M4 20l1-5L17 3l4 4L9 19z',settings:'M4 6h16M4 12h16M4 18h16M8 3v6M16 9v6M10 15v6',image:'M3 4h18v16H3zM3 16l6-6 5 5 3-3 4 4'};
  const E=(tag,text,cls)=>{const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e};

@@ -166,6 +166,7 @@
     "revision150.js",
     "revision151.js",
     "revision152.js",
+    "revision159.js",
     "writer-entry154.js"
   ],
   "styles": [
@@ -251,6 +252,7 @@
     "revision153.css",
     "revision155.css",
     "revision156.css",
-    "revision158.css"
+    "revision158.css",
+    "revision159.css"
   ]
 }
