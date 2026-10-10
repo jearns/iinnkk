@@ -1,6 +1,4 @@
 .foldArrow97{display:none!important}
-#writerModes53[data-persistent106]{display:flex!important;position:relative!important;inset:auto!important;flex:0 0 auto;justify-content:center;align-items:center;gap:18px;min-height:34px;width:100%;margin:0;padding:3px 8px;z-index:8;background:var(--panel,#f8f6f0)}
-body.home-open #writerModes53[data-persistent106]{display:none!important}
 #writerModes53 button{padding:4px 10px;min-height:28px}
 #bottomIcons39 .bottomTool106{display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:40px;height:42px;padding:2px 5px;font-size:11px;white-space:nowrap}
 #bottomIcons39 .bottomTool106 svg{width:22px;height:22px;flex:none}
@@ -18,9 +16,6 @@ body:not(.home-open) #dailyDialog.quoteBookmark73,body:not(.home-open) #dailyDia
 .copyLibrary106{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
 .copyLibrary106 button{font-size:12px;padding:5px 8px}
 #photoPanel62 .photoChoices106 button::before{display:none!important}
-
-body:not(.home-open) #writerModes53[data-persistent106]{display:flex!important;position:absolute!important;left:0!important;right:0!important;top:auto!important;bottom:var(--controls106,42px)!important;height:34px!important;min-height:34px!important;z-index:20!important;padding:2px 8px!important}
-body:not(.home-open) #board#board{bottom:calc(var(--controls106,42px) + 34px)!important;height:calc(100% - var(--controls106,42px) - 34px)!important}
 #bottomIconsToggle56,#previewToolsToggle56,#toggle-top97,#toggle-bottom97,#toggle-config97{display:none!important}
 #bottomIcons39{min-height:42px!important;max-height:42px!important}
 #dockToggle{display:none!important}

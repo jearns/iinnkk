@@ -17,7 +17,6 @@
 #copyDock111[hidden],#copyTools111[hidden]{display:none!important}
 .ui111 #creationActions50{display:none!important}
 .ui111 .presets107{flex-wrap:wrap;max-height:160px;overflow:auto}
-.ui111 #previewEffects55#previewEffects55:has(.sealPresets111),.ui111 #previewEffects55#previewEffects55:has(.copyOptions111){max-height:min(42dvh,270px)!important}
 .ui111 #previewEffects55#previewEffects55:has(.sealPresets111) .finalRail54,.ui111 #previewEffects55#previewEffects55:has(.copyOptions111) .finalRail54{flex:0 0 176px!important;height:176px!important;min-height:0!important;max-height:176px!important;align-items:flex-start!important;overflow:auto!important;white-space:normal}
 @media(min-width:700px){.ui111 #previewEffects55#previewEffects55:has(.sealPresets111) .finalRail54,.ui111 #previewEffects55#previewEffects55:has(.copyOptions111) .finalRail54{flex-basis:112px!important;height:112px!important;max-height:112px!important}}
 

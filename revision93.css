@@ -8,7 +8,7 @@ body.home-open[data-home-theme] #annotationHome .annotationIntro :is(strong,smal
 body:not(.home-open) #topActions{display:flex!important;align-items:center!important;flex-wrap:nowrap!important;gap:5px!important;grid-template-columns:none!important}
 #previewEffects55 .previewActions56.previewActions93{display:flex!important;justify-content:center!important;align-items:center!important;gap:8px!important;width:100%!important;height:auto!important;min-height:52px!important;margin:10px 0 0!important;padding:6px 8px calc(6px + env(safe-area-inset-bottom))!important;border:0!important;border-radius:0!important;box-sizing:border-box!important;background:transparent!important;flex:none!important}
 #previewEffects55 .previewActions93 button{display:grid!important;place-items:center!important;flex:0 1 78px!important;width:78px!important;min-width:0!important;height:38px!important;margin:0!important;padding:4px 10px!important;border:1px solid #43595355!important;border-radius:7px!important;background:#f8faf8!important;color:#203c38!important;font:500 14px/1.2 system-ui!important;box-shadow:none!important}
-#previewEffects55{padding-bottom:0!important;min-height:0!important;max-height:min(42dvh,260px)!important}
+#previewEffects55{padding-bottom:0!important;min-height:0!important;}
 #previewEffects55 .finalRail54{min-height:0!important}
 #previewEffects55 .previewActions56.previewActions93{position:static!important;inset:auto!important;transform:none!important;min-width:0!important;max-width:100%!important}
 .authFeedback93{font-size:14px;line-height:1.6;margin:8px 0;white-space:pre-wrap}.authFeedback93:empty{display:none}.authFeedback93[data-state=error]{color:#a12626}.authFeedback93[data-state=success]{color:#20583c}

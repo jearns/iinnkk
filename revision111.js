@@ -21,7 +21,7 @@
  document.addEventListener('work-autosaved128',e=>{pendingIds141.add(e.detail.id);paintWorks()});document.addEventListener('work-archived',e=>{pendingIds141.add(e.detail.id);paintWorks()});document.addEventListener('work-synced101',()=>refreshSyncMarks141().catch(()=>{}));
  $('worksDialog').addEventListener('toggle',()=>{if($('worksDialog').open)refreshMine()});let paintFrame153=0;new MutationObserver(()=>{if(paintFrame153)return;paintFrame153=requestAnimationFrame(()=>{paintFrame153=0;paintWorks()})}).observe($('worksGrid'),{childList:true,subtree:true});document.addEventListener('cloud-copies83',()=>{if($('worksDialog').open)refreshMine()});
  // Choose a source first. This capture precedes the old default-copy shortcut.
- window.addEventListener('click',e=>{const b=e.target.closest('#writerModes53 button,#homeQuick47 button');if(b?.textContent.trim()!=='临帖')return;e.preventDefault();e.stopImmediatePropagation();A.openDialog('copyDialog')},true);
+ window.addEventListener('click',e=>{const b=e.target.closest('#homeQuick47 button');if(b?.textContent.trim()!=='临帖')return;e.preventDefault();e.stopImmediatePropagation();A.openDialog('copyDialog')},true);
  // The three writing modes use their normal persisted mode configuration.
 
  // Native reference changes notify the settings without opening unrelated panels.

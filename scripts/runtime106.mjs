@@ -13,7 +13,7 @@ for(const p of await readdir('.'))if(/^app-runtime\.[a-f0-9]+\.(js|css)$/.test(p
 await writeFile('runtime-history154.json',JSON.stringify({release,current:[...names,cn],previous},null,2)+'\n');
 for(let i=0;i<chunks.length;i++)await writeFile(names[i],chunks[i]);await writeFile(cn,css);
 const bootCount=groups.findIndex(items=>items.some(source=>source.includes('window.WriterEntry154={ready:')))+1,bootNames=names.slice(0,bootCount),laterNames=names.slice(bootCount);
-const tags='<script>InkBoot146.setTotal('+bootCount+')</script>'+bootNames.map(name=>'<script defer src="'+name+'" onload="InkBoot146.part()" onerror="InkBoot146.failed()"></script>').join('')+laterNames.map((name,i)=>'<link rel="'+'prefetch'+'" as="script" href="'+name+'">').join('')+'<script>document.addEventListener("DOMContentLoaded",function(){var names='+JSON.stringify(laterNames)+';names.forEach(function(name){var link=document.createElement("link");link.rel="preload";link.as="script";link.href=name;link.setAttribute("fetchpriority","low");document.head.appendChild(link)});function next(){var name=names.shift();if(!name)return;var s=document.createElement("script");s.src=name;s.onload=function(){setTimeout(next,0)};s.onerror=function(){console.error("Optional writer module failed",name);setTimeout(next,0)};document.head.appendChild(s)}setTimeout(next,60)},{once:true})</script>';
+const tags='<script>InkBoot146.setTotal('+bootCount+')</script>'+bootNames.map(name=>'<script defer src="'+name+'" onload="InkBoot146.part()" onerror="InkBoot146.failed()"></script>').join('')+'<script>document.addEventListener("DOMContentLoaded",function(){var names='+JSON.stringify(laterNames)+';names.forEach(function(name){var link=document.createElement("link");link.rel="preload";link.as="script";link.href=name;link.setAttribute("fetchpriority","low");document.head.appendChild(link)});function next(){var name=names.shift();if(!name)return;var s=document.createElement("script");s.src=name;s.onload=function(){setTimeout(next,0)};s.onerror=function(){console.error("Optional writer module failed",name);setTimeout(next,0)};document.head.appendChild(s)}setTimeout(next,60)},{once:true})</script>';
 await writeFile('writer.html',(await readFile('index-source106.html','utf8')).replace('<script defer src="__RUNTIME_JS__"></script>',tags).replace('__RUNTIME_CSS__',cn));
 await writeFile('engine158.html',await readFile('writer.html','utf8'));
 await writeFile('engine159.html',await readFile('writer.html','utf8'));
@@ -21,6 +21,7 @@ await writeFile('engine160.html',await readFile('writer.html','utf8'));
 await writeFile('engine161.html',await readFile('writer.html','utf8'));
 await writeFile('engine163.html',await readFile('writer.html','utf8'));
 await writeFile('engine164.html',await readFile('writer.html','utf8'));
+await writeFile('engine165.html',await readFile('writer.html','utf8'));
 console.log('Complete runtime:',names.join(' '),cn);
 
 await import('./home154.mjs');

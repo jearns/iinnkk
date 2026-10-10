@@ -1,5 +1,5 @@
 /* Preview controls share one narrow row; the artwork owns the remaining viewport. */
-#previewEffects55{max-height:min(112px,20dvh)!important;padding:2px 4px max(3px,env(safe-area-inset-bottom))!important;gap:0!important;border-radius:12px 12px 0 0!important}
+#previewEffects55{padding:2px 4px max(3px,env(safe-area-inset-bottom))!important;gap:0!important;border-radius:12px 12px 0 0!important}
 #previewEffects55 .previewHeader75{display:flex;align-items:center;gap:3px;min-height:34px;flex:0 0 auto;overflow:hidden}
 #previewEffects55 .previewHeader75 .finalSteps54{flex:1 1 auto;min-width:0;height:34px;align-items:center;padding:1px 2px;gap:2px!important;overflow:auto hidden}
 #previewEffects55 .previewHeader75 .finalSteps54 button{font-size:11px;padding:5px 7px!important;min-height:28px;white-space:nowrap}

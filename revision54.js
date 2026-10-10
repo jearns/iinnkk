@@ -1,6 +1,6 @@
 /* Experience pass 54: final-look studio, compact status and local homepage curation. */
 (function init(){
-if(!window.AnnotationApp?.ready||!window.InkStudio50?.ready||!window.Revision47?.ready){setTimeout(init,40);return}
+if(!window.AnnotationApp?.ready||!window.InkStudio50?.ready||!window.Revision47?.ready||!window.Modes53){setTimeout(init,40);return}
 const A=AnnotationApp,U=InkStudio50,$=id=>document.getElementById(id),E=(tag,attrs={},text)=>{const e=document.createElement(tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,String(v));if(text!==undefined)e.textContent=text;return e};
 
 // Migrate the three original shortcuts once; custom administrator shortcuts are untouched.
@@ -45,7 +45,7 @@ function showGroup(name){current=name;[...steps.children].forEach(b=>b.setAttrib
 delete groups['文创'];for(const name of Object.keys(groups)){const b=E('button',{type:'button'},name);b.onclick=()=>showGroup(name);steps.append(b)}showGroup(current);
 close.onclick=()=>d.close();
 download.onclick=()=>{for(const id of ['download_seals','download_mount','download_material','download_inkColor','download_paperColor'])if($(id))$(id).checked=true;if($('download_guide'))$('download_guide').checked=false;if($('download_lines'))$('download_lines').checked=$('showLines').value==='yes';d.close();$('generateDownload').click()};
-const effects=E('section',{id:'previewEffects55',hidden:''});effects.append(steps,rail,note);$('board').parentElement.append(effects);d.remove();
+const effects=E('section',{id:'previewEffects55',hidden:''});effects.append($('writerModes53'),steps,rail,note);$('board').parentElement.append(effects);d.remove();
 async function render(){A.refresh();Status42.sync();}
 const originalFit=$('fitView').onclick;
 $('fitView').onclick=()=>{originalFit();effects.hidden=!A.isOverview55();};
