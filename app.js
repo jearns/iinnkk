@@ -614,5 +614,5 @@ setSealRetention:(kind,enabled)=>{commitHistory();if(kind==='waist'){if(enabled&
 
 document.documentElement.dataset.appReady='true';
 
-})().catch(error=>{console.error('真迹启动失败',error);const box=document.createElement('div');box.setAttribute('role','alert');box.style.cssText='position:fixed;inset:12px 12px auto;z-index:9999;padding:16px;background:#fff4df;color:#782d22;border:1px solid #b97245';box.textContent='页面未能完整启动，请刷新重试。请勿清除浏览器数据，以免丢失本机草稿。';document.body.append(box)});
+})().catch(error=>{window.WriterStartupFailure163='书写启动未完成：'+(error.message||String(error));console.error('真迹启动失败',error);const box=document.createElement('div');box.setAttribute('role','alert');box.style.cssText='position:fixed;inset:12px 12px auto;z-index:9999;padding:16px;background:#fff4df;color:#782d22;border:1px solid #b97245';box.textContent='页面未能完整启动，请刷新重试。请勿清除浏览器数据，以免丢失本机草稿。';document.body.append(box)});
 
