@@ -148,6 +148,7 @@
     "touch-order129.js",
     "reference-analysis129.js",
     "reference-geometry133.js",
+    "copy-preview-model161.js",
     "revision129.js",
     "seals129.js",
     "revision131.js",
@@ -168,7 +169,8 @@
     "revision151.js",
     "revision152.js",
     "revision159.js",
-    "revision160.js"
+    "revision160.js",
+    "revision161.js"
   ],
   "styles": [
     "style.css",
@@ -255,6 +257,7 @@
     "revision156.css",
     "revision158.css",
     "revision159.css",
-    "revision160.css"
+    "revision160.css",
+    "revision161.css"
   ]
 }
