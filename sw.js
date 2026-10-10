@@ -1,4 +1,4 @@
-const CACHE='annotation-core159',ASSETS='annotation-assets',CORE=["index.html","apple-touch-icon.png","banners146/hello-world.svg","brand148.svg","favicon151.svg","home-data154.json","home-runtime.15317817b0f2885d.js","home-runtime.c9450d0c69169708.css"];
+const CACHE='annotation-core160',ASSETS='annotation-assets',CORE=["index.html","apple-touch-icon.png","banners146/hello-world.svg","brand148.svg","favicon151.svg","home-data154.json","home-runtime.c9450d0c69169708.css","home-runtime.d6b4c6c0e54f3c29.js"];
 const publicReference133=u=>['https:','http:'].includes(u.protocol)&&(/\.(?:png|jpe?g|webp|gif|avif|svg)$/i.test(u.pathname))&&(/^(?:raw\.githubusercontent\.com|jearns\.github\.io)$/.test(u.hostname)||/\.supabase\.co$/.test(u.hostname)&&u.pathname.includes('/storage/v1/object/public/'));
 const codeURL=u=>/\.(js|css|html|json)$/.test(u.pathname);
 async function fetchFresh(path){const response=await fetch(path,{cache:'reload'});if(!response.ok)throw Error('Offline resource unavailable');return response}

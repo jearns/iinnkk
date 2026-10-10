@@ -53,6 +53,7 @@
     "revision47.js",
     "studio50.js",
     "revision53.js",
+    "writer-entry154.js",
     "revision54.js",
     "revision55.js",
     "production50.js",
@@ -167,7 +168,7 @@
     "revision151.js",
     "revision152.js",
     "revision159.js",
-    "writer-entry154.js"
+    "revision160.js"
   ],
   "styles": [
     "style.css",
@@ -253,6 +254,7 @@
     "revision155.css",
     "revision156.css",
     "revision158.css",
-    "revision159.css"
+    "revision159.css",
+    "revision160.css"
   ]
 }
