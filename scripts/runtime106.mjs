@@ -43,3 +43,7 @@ console.log('Complete runtime:',names.join(' '),cn);
 
 await import('./home154.mjs');
 
+
+// A changed release always gets a fresh code cache, including follow-up fixes within one round.
+const cacheFingerprint182=hash((await readFile('writer.html','utf8'))+(await readFile('index.html','utf8'))+(await readFile('brand.svg','utf8'))+(await readFile('favicon.svg','utf8')));
+const worker182=await readFile('sw.js','utf8');await writeFile('sw.js',worker182.replace(/annotation-core[\w.]+/g,'annotation-core'+release+'.'+cacheFingerprint182));
