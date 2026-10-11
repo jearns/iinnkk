@@ -1,4 +1,4 @@
-#momentReminder{display:none!important}
+
 #dailyDialog{width:min(510px,calc(100vw - 28px));max-height:min(65dvh,620px);background:rgba(248,245,234,.83)}
 #dailyDialog #quoteExpanded,#dailyDialog #quoteSource,#dailyDialog #quoteLink,#dailyDialog #quotePrompt,#dailyDialog #quoteImport,#dailyDialog .dialogBody>label,#dailyDialog .dialogBody>.note{display:none!important}
 #dailyDialog .dialogBody{padding:14px 20px 22px}#dailyDialog #quoteText{margin:0;font-size:clamp(16px,3vw,19px)}

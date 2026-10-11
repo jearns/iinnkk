@@ -6,14 +6,6 @@ html:not(.v90-ready) #annotationHome{visibility:hidden!important}
 .heroSeal90{width:36px;height:36px;flex:none;object-fit:contain}
 #annotationHome .annotationBrand>div:first-child p{margin:5px 0 0!important;box-sizing:border-box!important;display:block!important;white-space:nowrap!important;text-align:justify!important;text-align-last:justify!important;letter-spacing:0!important;overflow:hidden!important}
 #annotationHome #homeActions90{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:8px!important;flex-direction:row!important;flex-wrap:nowrap!important;width:100%!important;min-width:0!important;margin:0!important;position:static!important}
-#homeActions90>.homeTheme78{position:static!important;display:block!important;flex:none!important;margin:0!important;padding:0!important;border:0!important;background:none!important;transform:none!important}
-#homeActions90>.homeTheme78>button:not(#themeSwitch90){display:none!important}
-#annotationHome #themeSwitch90{position:relative!important;display:grid!important;grid-template-columns:1fr 1fr!important;place-items:center!important;width:52px!important;min-width:52px!important;height:28px!important;min-height:0!important;border:1px solid #171717!important;border-radius:5px!important;margin:0!important;padding:2px!important;background:#fff!important;color:#171717!important;font:600 11px/1 'YiShanBeiSeal',serif!important;box-shadow:none!important}
-#themeSwitch90 i{position:absolute;inset:2px auto 2px 2px;width:calc(50% - 2px);background:#171717;border-radius:3px;transition:transform .25s cubic-bezier(.2,.8,.2,1);box-shadow:inset 0 0 0 1px #fff5}
-#themeSwitch90[data-mode=light] i{transform:translateX(100%)}
-#themeSwitch90 span{position:relative;z-index:1;color:#171717!important;-webkit-text-fill-color:#171717!important}
-#themeSwitch90[data-mode=light] span:last-child,#themeSwitch90[data-mode=dark] span:nth-child(2){color:white!important;-webkit-text-fill-color:white!important}
-#homeActions90 :is(#momentReminder,#homeMoments){position:static!important;width:auto!important;min-width:0!important;max-width:145px!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;margin:0!important;padding:5px 7px!important;min-height:28px!important;height:28px!important;font-size:10px!important}
 #homeActions90 #continueWriting{position:static!important;padding:4px 6px!important;margin:0!important;min-height:28px!important;height:28px!important;white-space:nowrap!important;font-size:11px!important;flex:none!important}
 #annotationHome #account47{position:static!important;width:30px!important;min-width:30px!important;max-width:30px!important;height:30px!important;min-height:30px!important;flex:0 0 30px!important;aspect-ratio:1!important;border-radius:50%!important;background:#ae2f27!important;color:#fff!important;-webkit-text-fill-color:#fff!important;margin:0!important;padding:2px!important;overflow:hidden!important;display:grid!important;place-items:center!important}
 #account47 *{color:white!important;-webkit-text-fill-color:white!important}
@@ -70,8 +62,6 @@ body:not(.home-open) #dailyDialog.quoteBookmark73 .readerList90 button[aria-curr
  #annotationHome .annotationBrand h1{font-size:23px!important}.heroSeal90{width:32px;height:32px}
  #annotationHome #homeActions90{position:absolute!important;top:12px!important;right:12px!important;width:auto!important;gap:5px!important}
  #homeActions90 #continueWriting{position:absolute!important;right:0!important;top:39px!important;font-size:10px!important}
- #homeActions90 :is(#momentReminder,#homeMoments){max-width:82px!important;padding-inline:4px!important;font-size:9px!important}
- #annotationHome #themeSwitch90{width:44px!important;min-width:44px!important;height:25px!important;font-size:10px!important}
  #annotationHome #account47{width:26px!important;min-width:26px!important;max-width:26px!important;height:26px!important;min-height:26px!important;flex-basis:26px!important}
  #annotationHome .annotationIntro{margin:21px 12px 22px!important}
  #annotationHome #homeQuick47{gap:0!important;padding-inline:8px!important}
@@ -80,16 +70,11 @@ body:not(.home-open) #dailyDialog.quoteBookmark73 .readerList90 button[aria-curr
  #topActions .tool90,#topActions #topQuotes{width:30px!important;min-width:30px!important;height:40px!important}#writerLeft90,#writerRight90{gap:0!important}
  body:not(.home-open) #topActions{gap:8px!important}body:not(.home-open) .topStrip{padding-inline:5px!important}
 }
-@media(max-width:360px){#homeActions90 :is(#momentReminder,#homeMoments){max-width:56px!important}#annotationHome .annotationBrand h1{font-size:21px!important}.heroSeal90{width:28px;height:28px}#annotationHome #homeActions90{right:8px!important;gap:3px!important}#annotationHome #themeSwitch90{width:40px!important;min-width:40px!important}#topActions .tool90,#topActions #topQuotes{width:29px!important;min-width:29px!important}}
-@media(prefers-reduced-motion:reduce){#themeSwitch90 i,#homeBrand79{transition:none!important}}
+@media(max-width:360px){#annotationHome .annotationBrand h1{font-size:21px!important}.heroSeal90{width:28px;height:28px}#annotationHome #homeActions90{right:8px!important;gap:3px!important}#topActions .tool90,#topActions #topQuotes{width:29px!important;min-width:29px!important}}
+@media(prefers-reduced-motion:reduce){}
 
-#annotationHome #account47.accountSeal90{font-family:YiShanBeiSeal,serif!important;font-size:20px!important}
-
-#annotationHome #homeActions90>.homeTheme78{order:0!important}#annotationHome #homeMoments{order:1!important}#annotationHome #account47{order:3!important}
+#annotationHome #account47.accountSeal90{font-family:YiShanBeiSeal,serif!important;font-size:20px!important}#annotationHome #account47{order:3!important}
 #topActions>#extendPaper63{display:none!important}
-
-/* V91 extends the existing visual system. */
-body:not(.home-open) #dailyBar{display:none!important}
 #writerLeft90>#annotationHomeButton{display:grid!important}
 #writerLeft90>#annotationHomeButton img{width:26px!important;height:26px!important;object-fit:contain}
 #writerExtras90{display:none!important}
@@ -111,7 +96,6 @@ body:not(.home-open) #dailyDialog.quoteBookmark73 .readerCategory91{display:bloc
 
 #annotationHome .annotationIntro{position:relative!important;overflow:hidden!important;isolation:isolate!important;width:var(--home-width91,100vw)!important;max-width:none!important;align-self:center!important;flex:none!important;margin:0 0 18px!important;border-radius:0!important;min-height:clamp(190px,24vw,300px)!important;box-sizing:border-box!important;padding:clamp(20px,3vw,40px)!important;display:flex!important;flex-direction:column!important;justify-content:center!important;background:#dae5ea!important;color:#162e3b!important}
 #annotationHome .annotationIntro .heroConstellation91{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;z-index:-1!important;pointer-events:none!important}
-body.home-open[data-home-theme] #annotationHome .annotationIntro strong,body.home-open[data-home-theme] #annotationHome .annotationIntro small{color:#162e3b!important;-webkit-text-fill-color:#162e3b!important;text-shadow:0 1px 9px #ffffffe0!important}
 #annotationHome .annotationIntro strong,#annotationHome .annotationIntro small{max-width:49%!important}
 #annotationHome .annotationIntro strong{font-size:clamp(21px,3.3vw,38px)!important}
 @media(max-width:600px){

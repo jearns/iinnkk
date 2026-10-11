@@ -7,8 +7,6 @@
 #annotationHome .annotationIntro strong{font:500 clamp(24px,4vw,43px)/1.15 STKaiti,'Kaiti SC',serif;letter-spacing:.1em}
 #annotationHome .annotationIntro small{font:11px/1.5 system-ui,sans-serif;letter-spacing:.08em}
 #annotationHome .timelineHead73{display:none!important}
-#annotationHome .homeTheme78{padding:2px;margin:1px 20px 8px;border-radius:16px}
-#annotationHome .homeTheme78 button{padding:4px 9px;font-size:10px;letter-spacing:0}
 body.home-open #annotationHome #inkTimeline73{width:min(100%,980px)!important}
 #annotationHome .timelineEpoch76::after{left:149px}
 #annotationHome .timelineEpoch76::before{left:142px!important}

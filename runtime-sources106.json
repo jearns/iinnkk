@@ -22,9 +22,9 @@
     "reference-alignment146.js",
     "brand-credit180.js",
     "brand-credit182.js",
+    "paper-ink188.js",
     "app.js",
     "annotation-home.js",
-    "moments.js",
     "process-video.js",
     "writing-music.js",
     "revision38.js",
@@ -55,7 +55,6 @@
     "daily.js",
     "backup.js",
     "template-manager.js",
-    "poetry-reader.js",
     "revision61.js",
     "long-texts38.js",
     "reading38.js",
@@ -108,7 +107,6 @@
     "revision88.js",
     "quote-metadata93.js",
     "revision93.js",
-    "history93.js",
     "share93.js",
     "palettes94.js",
     "palettes95.js",
@@ -186,7 +184,8 @@
     "seal-panel183.js",
     "paper-photo184.js",
     "popup184.js",
-    "revision187.js"
+    "revision187.js",
+    "post-paper188.js"
   ],
   "styles": [
     "style.css",
@@ -214,7 +213,6 @@
     "revision74.css",
     "cloud75.css",
     "revision75.css",
-    "revision78.css",
     "revision79.css",
     "revision80.css",
     "revision81.css",
@@ -285,6 +283,6 @@
     "revision185.css",
     "revision186.css",
     "revision187.css",
-    "theme187.css"
+    "revision188.css"
   ]
 }

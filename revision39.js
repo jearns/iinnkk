@@ -1,6 +1,6 @@
-(function init(){if(!window.Revision38||!window.Moments||!window.CopyAlbums38||!document.getElementById('annotationHome')){setTimeout(init,40);return}const $=id=>document.getElementById(id),app=AnnotationApp,icon=Revision38.icon;
+(function init(){if(!window.Revision38||!window.CopyAlbums38||!document.getElementById('annotationHome')){setTimeout(init,40);return}const $=id=>document.getElementById(id),app=AnnotationApp,icon=Revision38.icon;
 const row=document.createElement('nav');row.id='bottomIcons39';row.setAttribute('aria-label','常用书写工具');$('bottomDock').prepend(row);
-const ids=['topPattern','topMusic','topRatio','topMount','topLines','topInk','calendarMoments','topReset'];
+const ids=['topPattern','topMusic','topRatio','topMount','topLines','topInk','topReset'];
 for(const id of ids)if($(id))row.append($(id));
 const make=(id,label,path,fn)=>{const b=icon(id,label,path);row.append(b);b.onclick=fn;return b};
 make('copyPagesQuick39','多图临帖：选择与排序','<rect x="3" y="6" width="14" height="15"/><path d="M7 2h14v15M6 14h8m-3-3 3 3-3 3"/>',()=>app.openDialog('copyDialog'));
@@ -20,7 +20,6 @@ const inspector=$('sealInspector');const rotate=document.createElement('label');
 const color=document.createElement('label');color.innerHTML='印色<input id="selectedSealColor" type="color" value="#b62118">';inspector.append(color);$('selectedSealColor').onchange=()=>{const key=app.selectedSealKey();if(key)app.editSeal(key,{config:{color:$('selectedSealColor').value}})};
 const copy=document.createElement('button');copy.id='copyCurrentSeal39';copy.textContent='复制此印';copy.onclick=app.copySeal;inspector.append(copy);
 // Homepage calendar is always visible, independent of the quote strip.
-const cal=$('homeMoments');$('continueWriting').before(cal);function remind(){const e=Moments.upcoming(366)[0];cal.textContent=e?(e.inDays?e.inDays+'天后 · ':'今天 · ')+e.title:'设置纪念日'}remind();new MutationObserver(remind).observe($('momentReminder'),{childList:true,subtree:true});
 const brand=document.createElement('canvas');brand.className='brandPen39';brand.width=brand.height=100;$('annotationHome').querySelector('h1').prepend(brand);function paintLogo(){brand.getContext('2d').clearRect(0,0,100,100);brand.getContext('2d').drawImage($('appLogo'),0,0,100,100)}paintLogo();document.fonts.ready.then(paintLogo);document.fonts.addEventListener('loadingdone',paintLogo);
 // New defaults only for a new or untouched old default sheet; existing custom stamps survive.
 app.updatePosition();window.Revision39={ready:true,syncLock:()=>{syncLock();syncScope()}};})();

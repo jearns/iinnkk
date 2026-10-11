@@ -1,18 +1,14 @@
 /* Contemporary ensemble, with readable text composed for each screen. */
 #annotationHome .annotationIntro{aspect-ratio:3/1!important;min-height:0!important;height:auto!important;padding:3vw!important;justify-content:center!important}
 #annotationHome .annotationIntro{justify-self:center!important}
-body.home-open[data-home-theme] #annotationHome .annotationIntro{margin:8px calc((100% - var(--home-width91,100vw))/2) 18px!important}
 #annotationHome .heroPicture94{position:absolute;inset:0;z-index:-2;display:block}
 #annotationHome .heroPicture94 img{width:100%;height:100%;object-fit:cover;display:block}
-body.home-open[data-home-theme] #annotationHome .annotationIntro::before{z-index:-1!important;background:linear-gradient(90deg,#f4f5ede8,#f4f5edbd 22%,transparent 34%)!important}
-body.home-open[data-home-theme] #annotationHome .annotationIntro :is(strong,small){color:#193a42!important;-webkit-text-fill-color:#193a42!important;text-shadow:none!important;max-width:24%!important}
 #annotationHome .annotationIntro strong{font-size:clamp(18px,2.2vw,38px)!important;line-height:1.25!important}
 #annotationHome .annotationIntro small{font-size:clamp(11px,1.05vw,17px)!important;line-height:1.6!important;margin-top:12px!important}
 .heroPeople94{position:absolute;inset:0;pointer-events:none}
 .heroPerson94{position:absolute;left:var(--hero-x94);top:49%;writing-mode:vertical-rl;text-orientation:upright;color:#f8f3e6;font:500 clamp(10px,.95vw,15px)/1.7 system-ui;letter-spacing:.05em;text-shadow:0 1px 5px #071e25;max-height:47%;padding:7px 4px;border-radius:2px;background:linear-gradient(#102a35b8,#102a3566);box-sizing:border-box}
 .heroPerson94 b{font-weight:650}.heroPerson94 span{font-size:.83em;opacity:.94}
 .heroPerson94 b,.heroPerson94 span{display:block}
-body.home-open[data-home-theme] #annotationHome .heroPerson94 :is(b,span){color:#fff7e9!important;-webkit-text-fill-color:#fff7e9!important}
 .heroPerson94{left:auto!important;right:calc(100% - var(--hero-x94))}
 #cloudAccount75 .accountExit94{order:8;flex:none;font-size:12px;padding:8px!important;background:transparent;color:#5e5547;border:1px solid #998c7355}
 #cloudAccount75 .accountExit94[hidden]{display:none!important}
@@ -32,8 +28,6 @@ body.preview-open56 #previewEffects55 .previewActions56.previewActions93 button:
 .paletteNote94[hidden]{display:none!important}
 @media(max-width:600px){
  #annotationHome .annotationIntro{aspect-ratio:3/4!important;padding:22px 20px!important;justify-content:flex-start!important}
- body.home-open[data-home-theme] #annotationHome .annotationIntro::before{background:linear-gradient(180deg,#092c3ae8,#092c3aaa 21%,transparent 39%)!important}
- body.home-open[data-home-theme] #annotationHome .annotationIntro :is(strong,small){color:#fff7e9!important;-webkit-text-fill-color:#fff7e9!important;max-width:100%!important}
  #annotationHome .annotationIntro strong{font-size:clamp(24px,6vw,34px)!important}
  #annotationHome .annotationIntro small{font-size:12px!important;margin-top:6px!important}
  .heroPerson94{left:auto!important;right:calc(100% - var(--mobile-x94));top:var(--mobile-y94);font-size:clamp(9px,2.3vw,13px);line-height:1.45;max-height:24%;padding:4px 2px;letter-spacing:0}

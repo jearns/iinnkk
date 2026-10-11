@@ -10,7 +10,7 @@
  // The two home entries reuse the authoritative local/cloud gallery services.
  function homeIcon(name,id,path,fn){const b=button('',fn,id);b.className='homeIcon111';b.title=name;b.setAttribute('aria-label',name);b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="'+path+'"/></svg><span>'+name+'</span>';return b}
  const mine=homeIcon('我的作品','homeWorks111','M4 3h16v18H4zM8 7h8M8 11h8M8 15h5',()=>$('myWorks').click()),hall=homeIcon('书法殿堂','homeHall111','m2 8 10-6 10 6H2Zm3 2v8m7-8v8m7-8v8M2 21h20',()=>window.InkCloud75?InkCloud75.showGallery().catch(e=>A.toast(e.message)):A.toast('作品服务正在连接，请稍后重试'));
- const calendar=$('homeMoments');calendar.before(mine,hall);
+ const homeAnchor188=$('homeTools188');homeAnchor188.before(mine,hall);
  for(const b of $('worksDialog').querySelectorAll('.dialogHead button'))if(b.textContent==='我的作品')b.textContent='书法殿堂';
  const cloudHost=document.createElement('section');cloudHost.id='cloudOnly111';$('worksGrid').after(cloudHost);let records=[],generation=0,filter='all',localBindings141=new Map(),pendingIds141=new Set();
  const filterRow=document.createElement('nav');filterRow.className='workFilters111';filterRow.setAttribute('aria-label','作品可见性');for(const [title,value]of [['全部','all'],['私藏','private'],['发布','published']]){const b=button(title,()=>{filter=value;paintWorks()});b.dataset.filter=value;filterRow.append(b)}$('worksSearch').closest('label').after(filterRow);
