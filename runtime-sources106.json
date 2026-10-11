@@ -16,6 +16,7 @@
     "zip.js",
     "annotation-templates.js",
     "work-albums84.js",
+    "work-time181.js",
     "work-meta84.js",
     "export-encoder127.js",
     "reference-alignment146.js",
@@ -28,6 +29,7 @@
     "revision38.js",
     "reference-io129.js",
     "reference-order134.js",
+    "copy-integrity181.js",
     "copy-albums38.js",
     "offline38.js",
     "revision39.js",
@@ -173,7 +175,9 @@
     "revision159.js",
     "revision160.js",
     "revision161.js",
-    "nobel-women175.js"
+    "nobel-women175.js",
+    "copy-float181.js",
+    "export-studio181.js"
   ],
   "styles": [
     "style.css",
@@ -263,6 +267,7 @@
     "revision160.css",
     "revision161.css",
     "revision164.css",
-    "revision175.css"
+    "revision175.css",
+    "revision181.css"
   ]
 }
