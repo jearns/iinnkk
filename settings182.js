@@ -1,6 +1,7 @@
 (function settings182(){if(!window.ExportStudio181?.ready){setTimeout(settings182,60);return}
  const A=AnnotationApp,steps=document.querySelector('#previewEffects55 .finalSteps54');
  // Category notes never carry over; choosing a category leaves descriptions collapsed.
+ const panel=document.getElementById('previewEffects55');function syncPreview182(){const hide=!A.isOverview55()||document.body.classList.contains('home-open');if(panel.hidden!==hide)panel.hidden=hide}document.addEventListener('ink-view-changed90',syncPreview182);syncPreview182();
  const copy=[...steps.children].find(b=>b.textContent.trim()==='临帖');if(copy){const original=copy.onclick;copy.onclick=function(e){original?.call(this,e);if(e?.isTrusted)Reference129.openPicker()}}
  let timer=0,interval=0,pressed=null,repeated=false,internal=false;
  function clear(){clearTimeout(timer);clearInterval(interval);timer=interval=0;pressed=null}
