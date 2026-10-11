@@ -120,6 +120,7 @@
     "cloud-tools95.js",
     "admin95.js",
     "revision97.js",
+    "glass-control186.js",
     "revision100.js",
     "offline-sync101.js",
     "revision102.js",
@@ -280,6 +281,7 @@
     "catalogue-picker183.css",
     "revision183.css",
     "revision184.css",
-    "revision185.css"
+    "revision185.css",
+    "revision186.css"
   ]
 }

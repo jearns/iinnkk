@@ -1,6 +1,6 @@
 /* V91 draft: extend the existing owner for toolbar and reader, without another override module. */
 (function init90(){
- if(!window.Revision87?.ready||!window.Revision62||!window.Revision43?.ready||!window.Revision47?.ready||!window.InkCloud75||!document.getElementById('homeBrand79')){setTimeout(init90,40);return}
+ if(!window.Revision87?.ready||!window.Revision62||!window.Revision43?.ready||!window.Revision47?.ready||!document.getElementById('homeBrand79')){setTimeout(init90,40);return}
  const $=id=>document.getElementById(id),A=AnnotationApp,D=DailyQuotes38,home=$('annotationHome'),root=document.documentElement;
  const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
  const brand=home.querySelector('.annotationBrand'),brandBox=brand.querySelector('div'),hero=brandBox.querySelector('h1');
