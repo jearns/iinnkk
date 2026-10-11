@@ -10,7 +10,7 @@
  const auto=$('topAuto');if(auto){auto.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 3h14v13H5zM9 7h6M9 10h6M12 16v6m-3-3 3 3 3-3"/></svg>';auto.title='自动走纸';auto.setAttribute('aria-label','自动走纸')}
  $('topSize').onclick=()=>{panel.hidden=false};$('zoomQuick79').onclick=()=>{panel.hidden=false};
  const effects=$('previewEffects55'),rail=effects.querySelector('.finalRail54'),note=effects.querySelector('.finalNote54');
- const ratioNote=()=>{const n=+$('ratio').value;note.textContent=n>1.3?'横幅舒展，宜长句与行气贯通。':n<.65?'立轴修长，宜纵势与上下呼应。':n===1?'方笺均衡，疏密相生，四面留白。':'竖幅从容，章法在虚实之间。'};effects.addEventListener('click',e=>{if(e.target.closest('#previewRatio79,.ratioRail80 button'))requestAnimationFrame(ratioNote)});
+ const ratioNote=()=>{const n=+$('ratio').value;note.textContent=n>1.3?'横幅舒展，宜长句与行气贯通。':n<.65?'立轴修长，宜纵势与上下呼应。':n===1?'方笺均衡，疏密相生，四面留白。':'竖幅从容，章法在虚实之间。'};effects.addEventListener('click',e=>{if(e.target.closest('.ratioRail80 button'))requestAnimationFrame(()=>{ratioNote();note.hidden=false;note.dataset.group='比例'})});
  effects.addEventListener('click',e=>{const b=e.target.closest('.finalRail54 button');if(!b)return;requestAnimationFrame(()=>{if(!note.textContent||b.closest('#photoPanel62'))return;note.title=note.textContent})});
  window.Revision100={ready:true};
 })();

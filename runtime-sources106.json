@@ -21,6 +21,7 @@
     "export-encoder127.js",
     "reference-alignment146.js",
     "brand-credit180.js",
+    "brand-credit182.js",
     "app.js",
     "annotation-home.js",
     "moments.js",
@@ -176,8 +177,9 @@
     "revision160.js",
     "revision161.js",
     "nobel-women175.js",
-    "copy-float181.js",
-    "export-studio181.js"
+    "copy-float182.js",
+    "export-studio182.js",
+    "settings182.js"
   ],
   "styles": [
     "style.css",
@@ -268,6 +270,7 @@
     "revision161.css",
     "revision164.css",
     "revision175.css",
-    "revision181.css"
+    "revision181.css",
+    "revision182.css"
   ]
 }
