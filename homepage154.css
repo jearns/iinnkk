@@ -37,3 +37,5 @@ dialog.reader154{width:100vw!important;max-width:none!important;max-height:100dv
 .card154 .placeholder154{background:#eee5d0 url('paper-cloud182.svg') center/cover;color:#8f7645;text-shadow:0 1px #fffbef}.card154:has(.placeholder154){background:#eee5d0}.homeFooter154 img,footer small img{vertical-align:middle;margin-right:3px;width:17px;height:17px}footer small a{color:inherit;text-decoration:none}
 
 .readerInfo183{padding:7px 13px;font-size:12px;line-height:1.7}.readerInfo183 p{margin:4px 0}.readerInfo183 small{display:block;color:#8a795f}.readerInfo183 a{color:#a13328}
+
+dialog[open]{background:rgba(247,241,228,.79)!important;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}dialog::backdrop{background:rgba(25,20,14,.08)!important}
