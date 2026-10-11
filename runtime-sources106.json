@@ -185,7 +185,8 @@
     "settings182.js",
     "seal-panel183.js",
     "paper-photo184.js",
-    "popup184.js"
+    "popup184.js",
+    "revision187.js"
   ],
   "styles": [
     "style.css",
@@ -282,6 +283,8 @@
     "revision183.css",
     "revision184.css",
     "revision185.css",
-    "revision186.css"
+    "revision186.css",
+    "revision187.css",
+    "theme187.css"
   ]
 }

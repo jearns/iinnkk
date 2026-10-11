@@ -1,0 +1,17 @@
+body.ui111 #paperPen100{width:120px!important;max-height:180px!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px!important}
+body.ui111 #paperPen100 header{grid-column:1/-1!important;display:flex!important;justify-content:space-between;font-size:9px!important;white-space:nowrap}
+body.ui111 #paperPen100 label{grid-column:auto!important;min-width:0!important;margin:0!important}
+body.ui111 #paperPen100 .glassMeter186{width:43px!important;height:92px!important;border-radius:13px!important;padding:5px 2px!important}
+body.ui111 #paperPen100 .glassMeter186 output{max-width:100%;font-size:9px!important;line-height:1.25;overflow-wrap:anywhere;text-align:center}
+body.ui111 #paperPen100 .glassLabel186{font-size:9px!important}
+body.ui111 .glassHorizontal187{width:92px!important;height:25px!important;border-radius:8px!important;display:inline-flex!important;flex-direction:row!important;justify-content:center!important;align-items:center!important;gap:3px!important;padding:2px 5px!important;cursor:ew-resize!important;margin:0!important;vertical-align:middle}
+body.ui111 .glassHorizontal187 .glassFill186{inset:0 auto 0 0!important;width:var(--glass-fill186);height:100%!important}
+body.ui111 .glassHorizontal187 .glassIcon186{font-size:12px!important;margin:0!important}
+body.ui111 .glassHorizontal187 .glassLabel186{font-size:9px!important}
+body.ui111 .glassHorizontal187 output{font-size:9px!important}
+body.ui111 .exportOpacity187{display:flex;justify-content:center;align-items:center;margin:4px 0}
+body.ui111 .exportChoices182{display:grid!important;grid-template-columns:repeat(10,minmax(0,1fr));gap:2px!important}
+body.ui111 .exportChoice182{min-width:0!important;height:23px!important;padding:1px!important;font-size:9px!important;gap:1px!important;justify-content:center!important;white-space:nowrap}
+body.ui111 .exportChoice182 .exportVisual182{display:none!important}
+body.ui111 .exportChoice182 input{width:10px!important;height:10px!important;margin:0!important;flex:none}
+@media(max-width:360px){body.ui111 .exportChoice182{font-size:8px!important}body.ui111 .exportChoice182 input{width:8px!important;height:8px!important}}

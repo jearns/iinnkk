@@ -13,8 +13,8 @@ assert.equal(w.Reference129,undefined);assert.equal(w.ExportStudio181,undefined)
 await w.WriterEntry154.navigate('?mode=single');assert.equal(w.localStorage.getItem('iinnkk.mode53'),'single');assert.equal(w.writingLocked,false);assert.equal(w.AnnotationApp.isOverview55(),false);
 await w.WriterEntry154.navigate('?mode=letter');assert.equal(w.localStorage.getItem('iinnkk.mode53'),'letter');assert.equal(w.writingLocked,false);
 for(const file of files.slice(split))run(file);
-await wait(()=>w.Reference129?.ready&&w.Revision161?.ready&&w.ExportStudio181?.ready);
-assert.equal(w.InkCloud75,undefined);assert.equal(w.WriterEntry154.ready,true);
+await wait(()=>w.Reference129?.ready&&w.Revision161?.ready&&w.ExportStudio181?.ready&&w.Revision187?.ready);
+const labels=[...w.document.querySelectorAll('#previewEffects55 .finalSteps54 button')].filter(b=>!b.hidden).map(b=>b.textContent.trim());assert.deepEqual(labels,['比例','书风','墨迹','纸色','印章','纹样','格线','图文','框架','临帖']);const pen=w.document.getElementById('paperPen100');w.document.dispatchEvent(new w.Event('writing-pinch100'));assert.equal(pen.hidden,false);w.document.body.dispatchEvent(new w.PointerEvent('pointerdown',{bubbles:true}));assert.equal(pen.hidden,false);assert.equal(pen.querySelectorAll('.glassMeter186').length,2);assert.equal(pen.querySelector('[data-source=zoom]'),null);pen.querySelector('header button').click();assert.equal(pen.hidden,true);assert.equal(w.InkCloud75,undefined);assert.equal(w.WriterEntry154.ready,true);
 await w.WriterEntry154.navigate('?mode=copy');assert.ok(w.document.querySelector('dialog[open]'));
 }finally{await w.happyDOM.abort()}
 });
