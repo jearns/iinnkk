@@ -24,10 +24,9 @@ const sign=E('button',{type:'button',id:'signatureShortcut55','aria-label':'落�
 const number=$('sizeNumber');if(number){const controls=E('span',{class:'sizeStepper55'});for(const [label,delta] of [['−',-1],['+',1]]){const b=E('button',{type:'button','aria-label':delta>0?'增大笔径':'减小笔径'},label);b.onclick=()=>{number.value=String(Math.max(6,Math.min(1000,Math.round(+number.value||35)+delta)));number.dispatchEvent(new Event('change',{bubbles:true}))};controls.append(b)}number.after(controls);$('brushDialog').addEventListener('close',()=>{window.writingLocked=true;Revision39.syncLock()})}
 const quote=$('quoteMenu'),quoteButton=$('nextQuote');if(quote&&quoteButton){document.body.append(quote);const place=()=>{const r=quoteButton.getBoundingClientRect();quote.style.top=Math.min(r.bottom+4,innerHeight-quote.offsetHeight-8)+'px';quote.style.left=Math.max(8,Math.min(r.right-quote.offsetWidth,innerWidth-quote.offsetWidth-8))+'px'};new MutationObserver(()=>{if(!quote.hidden)requestAnimationFrame(place)}).observe(quote,{attributes:true,attributeFilter:['hidden']});addEventListener('resize',place)}
 // A library record contains original pages, never cropped previews.
-let books=[];const library=E('section',{id:'copyLibrary55'});$('copyDialog').querySelector('.dialogBody').prepend(library);
+let books=[];const library=E('section');
 async function load(){books=await DraftStore.get('copy-library55')||[];drawLibrary()}
-function drawLibrary(){library.replaceChildren(E('h3',{},'经典字帖集'));for(const book of books.filter(b=>b.published)){const b=E('button',{type:'button'},book.title+' · '+book.pages.length+'页');b.onclick=()=>openBook(book).catch(U.report);library.append(b)}}
-async function openBook(book){await A.newBlank54();await CopyAlbums38.openPages55(book);A.showWriter();$('copyDialog').close()}
+function drawLibrary(){library.replaceChildren()}
 load().catch(U.report);
 document.addEventListener('admin-panel53',e=>{
  const box=E('details',{class:'copyAdmin55'});box.append(E('summary',{},'字帖集管理'));const title=E('input',{placeholder:'字帖名称，如 文徵明·小楷千字文','aria-label':'字帖名称'}),files=E('input',{type:'file',multiple:'',accept:'image/png,image/jpeg,image/webp','aria-label':'按顺序上传整帖或组图'}),list=E('div'),msg=E('p',{role:'status'},'可上传、改名、排序、发布和设为默认。本机发布仅此设备可见；导出字帖包可供其他设备导入。');
