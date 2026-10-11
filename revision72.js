@@ -1,9 +1,9 @@
 /* Release 72: streamline the quote bar and seal editor without replacing existing data. */
 (function init(){if(!window.AnnotationApp?.ready||!document.getElementById('previewEffects55')||!document.getElementById('sealInspector')){setTimeout(init,40);return}
 const $=id=>document.getElementById(id);
-// The calendar remains available in settings and its toolbar icon; the reading bar stays touch-safe.
-if($('momentReminder'))$('momentReminder').hidden=true;
-const reading=$('dailyDialog');reading.querySelector('h2').textContent='全文参照';$('readQuote').setAttribute('aria-label','阅读作品全文');
+// Excerpt reference opens only from an explicit reader action.
+
+const reading=$('dailyDialog');reading.querySelector('h2').textContent='全文参照';
 const inspector=$('sealInspector'),suggestions=document.createElement('select');suggestions.id='sealSuggestions72';suggestions.setAttribute('aria-label','选用常见印文');for(const name of ['常用印文','亲笔书写','见墨如我','今日亲笔','亲笔手书','日有寸进','学无止境','落纸云烟','一片冰心','岁月留痕','江海万里','心中念你','好好吃饭'])suggestions.add(new Option(name,name==='常用印文'?'':name));const label=document.createElement('label');label.textContent='选印文';label.append(suggestions);inspector.querySelector('label')?.after(label);suggestions.onchange=()=>{if(!suggestions.value)return;const field=$('selectedSealText');field.value=suggestions.value;field.dispatchEvent(new Event('change',{bubbles:true}))};
 // Preserve an artist's customized seals. Upgrade only old defaults, then make reset consistent.
 for(const [id,legacy,newValue] of [['headText',['今日亲笔','亲笔书写'],'亲笔手书'],['tailText',['手书真迹','留下真迹'],'见墨如我']]){const field=$(id);if(legacy.includes(field?.value))field.value=newValue}

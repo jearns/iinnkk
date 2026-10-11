@@ -1,6 +1,6 @@
 (function init(){if(!window.Revision42?.ready){setTimeout(init,30);return}const $=id=>document.getElementById(id);
 const top=['annotationHomeButton','myWorks','selectInk','undo','redo','clear','fitView','topQuotes','recordProcess'];
-const bottom=['menuToggle','topSize','export','topOptimize','copyPagesQuick39','photoSettingsQuick42','topLines','topInk','inkScope39','calendarMoments','topReset','lockWriting39','styleCycle39','topDirection','topAuto','topMusic','topStart'];
+const bottom=['menuToggle','topSize','export','topOptimize','copyPagesQuick39','photoSettingsQuick42','topLines','topInk','inkScope39','topReset','lockWriting39','styleCycle39','topDirection','topAuto','topMusic','topStart'];
 const extra=['topRemove','topGuide'];for(const id of ['topUpload','topPattern','topRatio','topMount']){$(id).hidden=true;$('paperQuickRow').append($(id))}
 for(const id of extra)$('paperQuickRow').append($(id));
 const orderRow=(row,defaults,order)=>{for(const id of [...new Set([...(Array.isArray(order)?order:[]),...defaults])])if(defaults.includes(id)&&$(id)){$(id).hidden=false;row.append($(id))}};

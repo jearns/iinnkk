@@ -10,19 +10,8 @@
  const syncHeroWidth=()=>{if(home.clientWidth>0)root.style.setProperty('--home-width91',home.clientWidth+'px')};new ResizeObserver(syncHeroWidth).observe(home);syncHeroWidth();
  const intro=home.querySelector('.annotationIntro');const constellation=el('img','heroConstellation91');constellation.loading='lazy';constellation.alt='';constellation.setAttribute('aria-hidden','true');constellation.decoding='async';intro.replaceChildren(constellation,el('strong','','人类群星闪耀时'),el('small','','一起结网记字，打造文字方舟！'));
  home.querySelectorAll('.homeLogo85,.homeLogo86,.homeLogo87,#homeTop86').forEach(e=>e.remove());
- const account=$('account47'),reminder=$('homeMoments')||$('momentReminder')||$('homeMoment47')||brand.querySelector('[id*=Moment]')||[...brand.querySelectorAll('button')].find(b=>/提醒|日历|天后|今天|明天/.test(b.textContent+' '+b.title));
- const theme=home.querySelector('.homeTheme78'),sources=[...theme.querySelectorAll('button')];
- const river=sources.find(b=>b.dataset.theme==='river'),stars=sources.find(b=>b.dataset.theme==='stars');
- for(const b of sources)b.hidden=true;
- const sw=el('button','themeSeal90');sw.id='themeSwitch90';sw.type='button';sw.innerHTML='<span>浅</span>';theme.append(sw);
- const actions=el('div','homeActions90');actions.id='homeActions90';brand.append(actions);
- actions.append(theme);if(reminder)actions.append(reminder);$('continueWriting')?.remove();if(account)actions.append(account);
- account.classList.add('accountSeal90');
- const syncTheme=()=>{const dark=document.body.dataset.homeTheme==='stars';sw.dataset.mode=dark?'dark':'light';sw.firstElementChild.textContent=dark?'深':'浅';sw.setAttribute('aria-label',dark?'深色，点击切浅色':'浅色，点击切深色');sw.setAttribute('aria-pressed',String(dark))};
- sw.onclick=()=>{(document.body.dataset.homeTheme==='stars'?river:stars).click();syncTheme()};
- // Use the browser's own timezone, with manual choice lasting until the next 06:00/18:00 boundary.
- let period='';function autoTheme(){const now=new Date(),zone=Intl.DateTimeFormat().resolvedOptions().timeZone;const hour=Number(new Intl.DateTimeFormat('en',{hour:'numeric',hourCycle:'h23',timeZone:zone}).format(now));const dark=hour>=18||hour<6;const day=new Intl.DateTimeFormat('en-CA',{timeZone:zone}).format(now),key=day+'|'+dark;if(key!==period){period=key;(dark?stars:river).click()}syncTheme()}
- autoTheme();setInterval(autoTheme,30000);addEventListener('focus',autoTheme);document.addEventListener('visibilitychange',()=>{if(!document.hidden)autoTheme()});
+ const account=$('account47');
+ const actions=el('div','homeActions90');actions.id='homeActions90';brand.append(actions);if(account){actions.append(account);account.classList.add('accountSeal90')}$('continueWriting')?.remove();
  function alignSubtitle(){const width=hero.getBoundingClientRect().width;sub.style.setProperty('width',width+'px');sub.style.setProperty('max-width',width+'px');sub.style.setProperty('font-size',Math.min(9,width/23)+'px');}
  new ResizeObserver(alignSubtitle).observe(hero);document.fonts.ready.then(alignSubtitle);
  const nav=$('homeQuick47'),navBrand=$('homeBrand79');navBrand.replaceChildren();const navLogo=logo.cloneNode();navLogo.className='navSeal90';navBrand.append(navLogo);navBrand.onclick=()=>home.scrollTo({top:0,behavior:'smooth'});
@@ -78,7 +67,7 @@
  // Keep legacy IDs alive for corpus import/editor code; only the title and body are visible.
  for(const child of body.children)child.hidden=child!==text;text.hidden=false;
  function updateReader(q){q=q||window.currentQuote||{};title.textContent=label(q)||'好词好句';$('quoteSource').textContent=label(q);const raw=(['theory','classics','literature','nobel'].includes(q.cat)?q.paragraph||q.original:q.full||q.text)||q.q||'';text.textContent=['poetry','moon','dongpo'].includes(q.cat)&&!raw.includes('\n')?raw.replace(/([。！？])/g,'$1\n').trim():raw;text.scrollTop=0;if(!jump.hidden)renderList();syncInk()}
- const showReader=()=>{syncInk();updateReader();if(!reader.open)reader.show()};$('readQuote').onclick=showReader;$('quoteDetails').onclick=showReader;
+ const showReader=()=>{syncInk();updateReader();if(!reader.open)reader.show()};
  // Drag from the title or empty space; text remains independently scrollable.
  let drag=null,moved=false;
  reader.addEventListener('pointerdown',e=>{
@@ -109,7 +98,7 @@
  const expand=el('button');expand.id='topAddPaper90';expand.type='button';decorate(expand,'扩展',paths.paper);
  expand.onclick=()=>{const d=$('bigDialog62');if(!d)return;if(!d.open)d.showModal();requestAnimationFrame(()=>{const n=d.querySelector('input[type=number]');n?.focus();n?.select()})};left.append(expand);
  const extras=el('div','writerExtras90');extras.id='writerExtras90';for(const b of [...bar.children])if(b.tagName==='BUTTON'&&!['annotationHomeButton','topRemove'].includes(b.id))extras.append(b);extras.hidden=true;
- for(const b of extras.querySelectorAll('button')){const label=({topQuotes:'好句',topUpload:'加图',topLines:'线条',topDirection:'方向',topAuto:'移纸',topOptimize:'润笔',selectInk:'选字',topSize:'笔径',topRatio:'比例',topMount:'装裱',topInk:'墨色',topStart:'起笔',myWorks:'作品',calendarMoments:'日历',recordProcess:'录制'})[b.id];if(label){b.title=label;const cap=el('span','',label);b.append(cap)}}
+ for(const b of extras.querySelectorAll('button')){const label=({topQuotes:'好句',topUpload:'加图',topLines:'线条',topDirection:'方向',topAuto:'移纸',topOptimize:'润笔',selectInk:'选字',topSize:'笔径',topRatio:'比例',topMount:'装裱',topInk:'墨色',topStart:'起笔',myWorks:'作品',recordProcess:'录制'})[b.id];if(label){b.title=label;const cap=el('span','',label);b.append(cap)}}
  // Good-quotes is always reachable, independent of whether the floating reader is open.
  const homeButton=$('annotationHomeButton');if(homeButton){homeButton.hidden=false;homeButton.classList.add('tool90');homeButton.innerHTML='<img src="brand.svg" width="26" height="26" alt="返回首页">';homeButton.onclick=()=>{reader.close();AnnotationHome.show()};left.prepend(homeButton)}
  const leftTools=[['myWorks','作品','M3 6h6l2 3h10v12H3zM7 13h10M7 17h6'],['selectInk','选字','M4 8V4h4M16 4h4v4M20 16v4h-4M8 20H4v-4M9 9h6v6H9z'],['recordProcess','录屏','M3 5h12v14H3zM15 9l6-3v12l-6-3'],['topQuotes','文摘','M5 4h14v16H5zM8 8h8M8 12h8M8 16h5']];
@@ -133,7 +122,7 @@
  document.addEventListener('click',e=>{if(e.target instanceof Element&&e.target.closest('#topQuotes')){if(window.Toolbar95?.suppressClick()){e.preventDefault();e.stopImmediatePropagation();return}e.preventDefault();e.stopImmediatePropagation();openExcerpts()}},true);
  document.addEventListener('pointerdown',e=>{if(!excerptMenu.hidden&&!excerptMenu.contains(e.target)&&!quotes?.contains(e.target))closeExcerpts()},true);
  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeExcerpts()});addEventListener('resize',placeExcerpts);reader.addEventListener('close',()=>{if(excerptMenu.hidden)closeExcerpts()});
- $('dailyBar').hidden=true;
+
 
  for(const id of ['writingQuick73','writerFixed85','topRemove']){const e=$(id);if(e){e.hidden=true;document.body.append(e)}}
  bar.replaceChildren(left,right);bar.after(extras);
@@ -149,12 +138,12 @@
  const random=$('previewRandom79'),reset=$('previewReset73');let savedPalette=null;random.onclick=()=>applyPalette(palette());
  random.addEventListener('pointerdown',()=>{if(!savedPalette){const s=A.getState();savedPalette={paper:s.values.papercolor,ink:s.brush.color,seal:s.values.headColor}}},true);
  reset.onclick=()=>{if(savedPalette){applyPalette(savedPalette);savedPalette=null}else $('resetSettings').click();syncView()};
- let mode='';document.addEventListener('mode-changed54',e=>{closeExcerpts();mode=e.detail.id;$('quotesVisibility').value='shown';$('quotesVisibility').dispatchEvent(new Event('change'));A.resetSealPosition('head');if(mode==='letter')showReader();else reader.close();requestAnimationFrame(syncView)});
+ let mode='';document.addEventListener('mode-changed54',e=>{closeExcerpts();mode=e.detail.id;$('quotesVisibility').value='shown';$('quotesVisibility').dispatchEvent(new Event('change'));A.resetSealPosition('head');reader.close();requestAnimationFrame(syncView)});
  document.addEventListener('quote-changed',e=>{if(!window.Revision94)applyPalette(palette());updateReader(e.detail)});
  for(const event of ['change','input'])document.addEventListener(event,e=>{if(/ink|color/i.test(e.target.id))syncInk()},true);
  // Core emits this after state changes, so mode labels/watermark/ink cannot drift.
  document.addEventListener('ink-view-changed90',()=>{syncView();syncInk()});
  new MutationObserver(()=>{if(reader.open){syncInk();updateReader()}}).observe(reader,{attributes:true,attributeFilter:['open']});
  root.classList.add('v88-ready','v89-ready','v90-ready');syncView();updateReader();
- window.Revision88={ready:true,palette,applyPalette};window.Revision89={ready:true};window.Revision90={ready:true,syncView,syncInk,normalize,autoTheme,openExcerpts};window.Revision91={ready:true};
+ window.Revision88={ready:true,palette,applyPalette};window.Revision89={ready:true};window.Revision90={ready:true,syncView,syncInk,normalize,openExcerpts,showReader};window.Revision91={ready:true};
 })();
