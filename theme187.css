@@ -1,0 +1,5 @@
+/* Both home theme containers share readable panel and field tokens. */
+:is([data-theme=dark],[data-home-theme=stars]){--p187:#182638ed;--f187:#233448;--i187:#f5efe4;--l187:#788a9d;color-scheme:dark}
+:is([data-theme=dark],[data-home-theme=stars]) :is(dialog[open],dialog header,dialog button){background:var(--p187)!important;color:var(--i187)!important;border-color:var(--l187)!important}
+:is([data-theme=dark],[data-home-theme=stars]) :is(select,option,optgroup,textarea,input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([type=file])){background:var(--f187)!important;color:var(--i187)!important}
+:is([data-theme=dark],[data-home-theme=stars]) dialog :is(p,small,strong,label,summary,a){color:var(--i187)!important}
