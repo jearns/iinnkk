@@ -34,6 +34,7 @@
     "copy-reference184.js",
     "copy-albums38.js",
     "offline38.js",
+    "offline189.js",
     "revision39.js",
     "revision41.js",
     "revision42.js",
@@ -89,6 +90,7 @@
     "supabase51.js",
     "cloud-draft-codec141.js",
     "storage-path150.js",
+    "auth-state189.js",
     "cloud75.js",
     "cloud-drafts141.js",
     "cloud-cleanup180.js",
@@ -283,6 +285,7 @@
     "revision185.css",
     "revision186.css",
     "revision187.css",
-    "revision188.css"
+    "revision188.css",
+    "revision189.css"
   ]
 }

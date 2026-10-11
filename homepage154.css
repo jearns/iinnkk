@@ -37,3 +37,5 @@ dialog.reader154{width:100vw!important;max-width:none!important;max-height:100dv
 .readerInfo183{padding:7px 13px;font-size:12px;line-height:1.7}.readerInfo183 p{margin:4px 0}.readerInfo183 small{display:block;color:#8a795f}.readerInfo183 a{color:#a13328}
 
 dialog[open]{background:rgba(247,241,228,.79)!important;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}dialog::backdrop{background:rgba(25,20,14,.08)!important}
+
+.worldCoverButton189{display:block;width:100%;padding:0;border:0;background:transparent;cursor:pointer}.worldCoverButton189 img{display:block;width:100%}
