@@ -31,6 +31,7 @@
     "reference-io129.js",
     "reference-order134.js",
     "copy-integrity181.js",
+    "copy-reference184.js",
     "copy-albums38.js",
     "offline38.js",
     "revision39.js",
@@ -181,7 +182,9 @@
     "copy-float182.js",
     "export-studio182.js",
     "settings182.js",
-    "seal-panel183.js"
+    "seal-panel183.js",
+    "paper-photo184.js",
+    "popup184.js"
   ],
   "styles": [
     "style.css",
@@ -275,6 +278,7 @@
     "revision181.css",
     "revision182.css",
     "catalogue-picker183.css",
-    "revision183.css"
+    "revision183.css",
+    "revision184.css"
   ]
 }
