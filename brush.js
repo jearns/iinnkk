@@ -50,10 +50,10 @@
    let da=state.travel?Math.atan2(Math.sin(a-state.angle),Math.cos(a-state.angle)):0;if(!state.travel)state.angle=a;
    state.turn=mix(state.turn,clamp(da,-1,1),.3);state.twist=mix(state.twist||0,clamp(da*1.7,-1.2,1.2),.22);const direction=s.kaishu127?(.70+.35*Math.abs(Math.sin(a)))*(1+.16*Math.min(1,Math.abs(state.turn))):1,loaded=radiusForSpeed(state.velocity,s,pressure),target=mix(state.r,(s.kaishu127?Math.max(s.size*.025,loaded):loaded)*direction,1-Math.exp(-dt/(18+s.softness*35))),distance=rawD/scale;
    // Opening and turns load the hairs along the path; a late pointer-up cannot stamp a bulb.
-   const turnLimit=tail?.hook&&tail.remaining[i]<s.size*.52?Math.max(s.size*.19,state.r*.65):Infinity;
+   const turnLimit=tail?.hook&&tail.remaining[i]<s.size*.52?Math.max(s.size*.19,state.r-Math.max(.08,distance*.35)):Infinity;
    const next=Math.min(turnLimit,state.r+clamp(target-state.r,-Math.max(.08,distance*.9),Math.max(.04,distance*.48)));
    state.dry=mix(state.dry,dryForSpeed(state.velocity,s,pressure),1-Math.exp(-dt/95));const dryness=clamp(state.dry*(.28+1.2*noise(state.travel/29,state.seed*.01,state.seed+91))*(1-Math.min(.7,Math.abs(state.turn)*.6)),0,.9),opacity=1;
-   const steps=Math.max(1,Math.ceil(d/(Math.max(.55,next*.11)*scale)));
+   const steps=Math.max(1,Math.ceil(d/(Math.max(.025,Math.min(state.r,next)*(tail?.sharp&&tail.remaining[i]<s.size*.52?.004:.04))*scale)));
    for(let j=1;j<=steps;j++){
     const f=j/steps,travel=state.travel+d/scale*f,startEnvelope=s.kaishu127?clamp(.16+travel/(s.size*.16),.16,1):clamp(.055+travel/(s.size*.29),.055,1);
     let envelope=startEnvelope,dry=dryness;

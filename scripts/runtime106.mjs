@@ -9,7 +9,7 @@ const chunks=await Promise.all(groups.map(async items=>(await transform(items.ma
 const css=(await transform((await Promise.all(styles.map(p=>readFile(p,'utf8')))).join('\n')+'\ndialog.fallbackDialog106{position:fixed!important;z-index:2000!important;max-height:85vh;overflow:auto}dialog.fallbackDialog106:not([open]){display:none!important}',{loader:'css',minify:true,target:['safari13','chrome79'],charset:'utf8'})).code;
 const hash=s=>createHash('sha256').update(s).digest('hex').slice(0,16),names=chunks.map(js=>'app-runtime.'+hash(js)+'.js'),cn='app-runtime.'+hash(css)+'.css';
 const release=(await readFile('VERSION.txt','utf8')).match(/网页版\s*(\d+(?:\.\d+)?)/)?.[1],history=JSON.parse(await readFile('runtime-history154.json','utf8').catch(()=>'{}')),previous=[];
-for(const p of await readdir('.'))if(/^app-runtime\.[a-f0-9]+\.(js|css)$/.test(p)&&!names.includes(p)&&p!==cn&&!previous.includes(p))await unlink(p);
+for(const p of await readdir('.'))if(/^app-runtime\.[a-f0-9]+\.(js|css)$/.test(p)&&!names.includes(p)&&p!==cn&&!previous.includes(p))previous.push(p);
 await writeFile('runtime-history154.json',JSON.stringify({release,current:[...names,cn],previous},null,2)+'\n');
 for(let i=0;i<chunks.length;i++)await writeFile(names[i],chunks[i]);await writeFile(cn,css);
 const bootCount=groups.findIndex(items=>items.some(source=>source.includes('window.WriterEntry154={ready:')))+1,bootNames=names.slice(0,bootCount),laterNames=names.slice(bootCount);
@@ -38,7 +38,9 @@ await writeFile('writer.html',(await readFile('index-source106.html','utf8')).re
 
 
 
-await writeFile('engine188.html',await readFile('writer.html','utf8'));
+// Historical home pages retain these URLs. Keep tiny aliases, never obsolete runtimes.
+const engineAlias189='<script>location.replace(new URL("writer.html"+location.search+location.hash,location.href).href)</script>';
+for(let version=154;version<=188;version++)await writeFile('engine'+version+'.html',engineAlias189);
 console.log('Complete runtime:',names.join(' '),cn);
 
 await import('./home154.mjs');
