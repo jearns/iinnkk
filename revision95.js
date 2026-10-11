@@ -1,5 +1,5 @@
 /* User preferences keep real buttons and their original actions intact. */
-(function init(){if(!window.Revision94?.ready||!window.InkCloud75){setTimeout(init,70);return}
+(function init(){if(!window.Revision94?.ready){setTimeout(init,70);return}
 const $=id=>document.getElementById(id);
 const names={female:['如梦令','一剪梅','蝶恋花','浣溪沙','醉花阴','点绛唇','玉楼春','满庭芳','菩萨蛮','鹊桥仙'],male:['江城子','满江红','念奴娇','水调歌头','破阵子','临江仙','定风波','望海潮','渔家傲','西江月'],any:['清平乐','青玉案','踏莎行','诉衷情','忆江南','采桑子','浪淘沙','长相思']};
 window.CiNames95={names,suggest:gender=>{const pool=names[gender]||names.any;return pool[Math.floor(Math.random()*pool.length)]}};
