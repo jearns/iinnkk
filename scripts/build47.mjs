@@ -31,7 +31,7 @@ await import('./runtime106.mjs');
 const listed=await assetFiles(),sourceAssets=await files(),assets=[...new Set([...listed,...sourceAssets.filter(x=>/\.(html|js|css|woff2?|png|webp|jpg|svg|mp3|json)$/.test(x)&&!x.startsWith('server/')&&!x.startsWith('scripts/')&&!x.startsWith('tests/')&&!x.startsWith('drizzle/'))])],core=assets.filter(x=>/^home-runtime\.[a-f0-9]+\.(js|css)$/.test(x)||['index.html','home-data154.json','banners146/hello-world.svg','brand.svg','favicon.svg','apple-touch-icon.png'].includes(x));
 await writeFile('offline-assets.json',JSON.stringify(assets));
 const worker=await readFile('sw.js','utf8');
-await writeFile('sw.js',worker.replace(/annotation-core[\d.]+/g,'annotation-core'+release).replace(/annotation-assets[\d.]+/g,'annotation-assets'+release).replace(/CORE=\[[^;]+;/,'CORE='+JSON.stringify(core)+';'));
+await writeFile('sw.js',worker.replace(/annotation-core[\w.]+/g,'annotation-core'+release+'.'+createHash('sha256').update((await readFile('writer.html','utf8'))+(await readFile('index.html','utf8'))+(await readFile('brand.svg','utf8'))+(await readFile('favicon.svg','utf8'))).digest('hex').slice(0,16)).replace(/annotation-assets[\d.]+/g,'annotation-assets'+release).replace(/CORE=\[[^;]+;/,'CORE='+JSON.stringify(core)+';'));
 const source=await files(),parts=[];
 for(const name of source){const data=await readFile(name);parts.push({name,url:name,bytes:data.length,sha256:createHash('sha256').update(data).digest('hex')});}
 const manifest={filename:'iinnkk-web-v'+release+'.zip',bytes:parts.reduce((n,p)=>n+p.bytes,0),parts};
