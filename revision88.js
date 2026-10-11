@@ -5,7 +5,7 @@
  const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
  const brand=home.querySelector('.annotationBrand'),brandBox=brand.querySelector('div'),hero=brandBox.querySelector('h1');
  // A single real seal in the hero; its counterpart appears only once the hero leaves view.
- hero.replaceChildren();const logo=el('img','heroSeal90');logo.src='brand148.svg';logo.alt='篆书手字印章';hero.append(logo,el('span','','手笔'));
+ hero.replaceChildren();const logo=el('img','heroSeal90');logo.src='brand.svg';logo.alt='篆书手字印章';hero.append(logo,el('span','','手笔'));
  const sub=brandBox.querySelector('p');sub.textContent='以手为笔·iinnkk.me·留下真迹';
  const syncHeroWidth=()=>{if(home.clientWidth>0)root.style.setProperty('--home-width91',home.clientWidth+'px')};new ResizeObserver(syncHeroWidth).observe(home);syncHeroWidth();
  const intro=home.querySelector('.annotationIntro');const constellation=el('img','heroConstellation91');constellation.loading='lazy';constellation.alt='';constellation.setAttribute('aria-hidden','true');constellation.decoding='async';intro.replaceChildren(constellation,el('strong','','人类群星闪耀时'),el('small','','一起结网记字，打造文字方舟！'));
@@ -111,7 +111,7 @@
  const extras=el('div','writerExtras90');extras.id='writerExtras90';for(const b of [...bar.children])if(b.tagName==='BUTTON'&&!['annotationHomeButton','topRemove'].includes(b.id))extras.append(b);extras.hidden=true;
  for(const b of extras.querySelectorAll('button')){const label=({topQuotes:'好句',topUpload:'加图',topLines:'线条',topDirection:'方向',topAuto:'移纸',topOptimize:'润笔',selectInk:'选字',topSize:'笔径',topRatio:'比例',topMount:'装裱',topInk:'墨色',topStart:'起笔',myWorks:'作品',calendarMoments:'日历',recordProcess:'录制'})[b.id];if(label){b.title=label;const cap=el('span','',label);b.append(cap)}}
  // Good-quotes is always reachable, independent of whether the floating reader is open.
- const homeButton=$('annotationHomeButton');if(homeButton){homeButton.hidden=false;homeButton.classList.add('tool90');homeButton.innerHTML='<img src="brand148.svg" width="26" height="26" alt="返回首页">';homeButton.onclick=()=>{reader.close();AnnotationHome.show()};left.prepend(homeButton)}
+ const homeButton=$('annotationHomeButton');if(homeButton){homeButton.hidden=false;homeButton.classList.add('tool90');homeButton.innerHTML='<img src="brand.svg" width="26" height="26" alt="返回首页">';homeButton.onclick=()=>{reader.close();AnnotationHome.show()};left.prepend(homeButton)}
  const leftTools=[['myWorks','作品','M3 6h6l2 3h10v12H3zM7 13h10M7 17h6'],['selectInk','选字','M4 8V4h4M16 4h4v4M20 16v4h-4M8 20H4v-4M9 9h6v6H9z'],['recordProcess','录屏','M3 5h12v14H3zM15 9l6-3v12l-6-3'],['topQuotes','文摘','M5 4h14v16H5zM8 8h8M8 12h8M8 16h5']];
  for(const [id,name,path]of leftTools){const button=$(id);if(button){button.hidden=false;decorate(button,name,path);left.insertBefore(button,expand)}}
  const excerptMenu=el('aside','excerptCategories91');excerptMenu.id='excerptCategories91';excerptMenu.hidden=true;excerptMenu.setAttribute('aria-label','好词好句类目');excerptMenu.setAttribute('role','menu');document.body.append(excerptMenu);

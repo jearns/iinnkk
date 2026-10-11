@@ -18,7 +18,7 @@
  // Navigation brand uses exactly the same rendered seal; only appears once the hero brand leaves view.
  const nav=$('homeQuick47'),navBrand=$('homeBrand79');
  if(navBrand){
-   navBrand.replaceChildren();const c=document.createElement('img');c.className='homeNavLogo85';c.src='brand148.svg';c.width=c.height=34;c.alt='篆书手字印章';const n=document.createElement('span');n.textContent='手笔';navBrand.append(c,n);
+   navBrand.replaceChildren();const c=document.createElement('img');c.className='homeNavLogo85';c.src='brand.svg';c.width=c.height=34;c.alt='篆书手字印章';const n=document.createElement('span');n.textContent='手笔';navBrand.append(c,n);
 
    navBrand.classList.remove('visible85');
 
