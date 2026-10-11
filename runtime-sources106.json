@@ -81,6 +81,7 @@
     "reference-gallery136.js",
     "featured150.js",
     "world-visibility151.js",
+    "catalogue-picker183.js",
     "timeline73.js",
     "revision73.js",
     "revision74.js",
@@ -179,7 +180,8 @@
     "nobel-women175.js",
     "copy-float182.js",
     "export-studio182.js",
-    "settings182.js"
+    "settings182.js",
+    "seal-panel183.js"
   ],
   "styles": [
     "style.css",
@@ -271,6 +273,8 @@
     "revision164.css",
     "revision175.css",
     "revision181.css",
-    "revision182.css"
+    "revision182.css",
+    "catalogue-picker183.css",
+    "revision183.css"
   ]
 }
