@@ -1,6 +1,6 @@
 /* One compact writing panel and resizable text reference. */
 (function init133(){
- if(!window.Reference129?.ready||!window.WritingRank117){setTimeout(init133,80);return}
+ if(!window.Reference129?.ready||!window.Revision100?.ready){setTimeout(init133,80);return}
  const A=AnnotationApp,$=id=>document.getElementById(id),panel=$('paperPen100'),E=(tag,cls)=>{const n=document.createElement(tag);if(cls)n.className=cls;return n};
  panel.classList.add('writingParameters133');panel.querySelector('header').firstChild.textContent='书写参数 ';panel.querySelectorAll(':scope>label').forEach(n=>n.remove());
  const toggle=E('label','assist133'),check=E('input');check.type='checkbox';toggle.append(check,document.createTextNode('线条优化'));panel.append(toggle);check.onchange=()=>{$('inkMode').value=check.checked?'assist':'raw';$('inkMode').dispatchEvent(new Event('change',{bubbles:true}));A.persist()};
@@ -10,14 +10,17 @@
   if(key!=='style')row.dataset.source=key;
   const output=E('output'),stepper=E('span','parameterStepper140'),minus=E('button'),plus=E('button');minus.type=plus.type='button';minus.textContent='−';plus.textContent='+';minus.ariaLabel='减小'+label;plus.ariaLabel='增大'+label;stepper.append(minus,number,plus);output.hidden=true;row.append(name,stepper,range,quick,output);panel.append(row);
   const value=()=>key==='style'?A.writingParameters133().style:Number($(key).value);
-  const apply=n=>{n=Math.max(min,Math.min(max,Math.round(Number(n))));if(!Number.isFinite(n))return;if(key==='style'){const profile=ParticleBrush.lineProfile108(n);A.configure47({brushPatch:{...profile,lineStrength108:n}})}else{$(key).value=n;$(key).dispatchEvent(new Event(key==='sizeNumber'?'change':'input',{bubbles:true}))}number.value=range.value=n;output.textContent=n+suffix;syncStatus()};
+  const apply=n=>{if(key==='zoom'&&window.writingLocked){sync();return}n=Math.max(min,Math.min(max,Math.round(Number(n))));if(!Number.isFinite(n))return;if(key==='style'){const profile=ParticleBrush.lineProfile108(n);A.configure47({brushPatch:{...profile,lineStrength108:n}})}else{$(key).value=n;$(key).dispatchEvent(new Event(key==='sizeNumber'?'change':'input',{bubbles:true}))}number.value=range.value=n;output.textContent=n+suffix;syncStatus()};
   const step=key==='zoom'?25:1;minus.onclick=()=>apply(value()-step);plus.onclick=()=>apply(value()+step);number.onchange=()=>apply(number.value);range.oninput=()=>apply(range.value);for(const n of points){const b=E('button');b.type='button';b.textContent=n+suffix;b.onclick=()=>apply(n);quick.append(b)}fields.push({number,range,output,value,suffix});
  }
  const icon=$('topSize');icon.dataset.caption90='纸笔';icon.title=icon.ariaLabel='书写参数';icon.querySelector('span').textContent='纸笔';$('topLines').hidden=true;$('topLines').setAttribute('aria-hidden','true');$('zoomQuick79').hidden=true;
  function sync(){check.checked=$('inkMode').value==='assist';for(const f of fields){f.number.value=f.range.value=f.value();f.output.textContent=f.value()+f.suffix}syncStatus()}
  const originalOpen=icon.onclick;icon.onclick=()=>{sync();originalOpen?.()};$('topLines').onclick=()=>icon.click();
- const hud=E('button','writingValues133');hud.type='button';hud.ariaLabel='调整书写参数';hud.onclick=()=>icon.click();$('writingStatus74')?.remove();$('board').append(hud);
- function syncStatus(){const s=A.writingParameters133(),text='书风'+s.style+'·笔径'+s.size+'·纸张'+s.zoom+'%';if(hud.textContent!==text)hud.textContent=text}
+ const hud=E('div','writingValues133');$('writingStatus74')?.remove();$('board').append(hud);
+ const valuesButton=E('button'),hudLock=E('button'),panelLock=E('button','paperLock191');valuesButton.type=hudLock.type=panelLock.type='button';valuesButton.ariaLabel='调整书风、笔径、纸张缩放';valuesButton.onclick=()=>icon.click();hudLock.className='zoomLock191';hud.append(valuesButton,hudLock);panel.append(panelLock);
+ function lockClick(){window.writingLocked=!window.writingLocked;window.Revision39?.syncLock?.();A.persist();syncStatus()}
+ hudLock.onclick=panelLock.onclick=lockClick;
+ function syncStatus(){const s=A.writingParameters133(),text='书风'+s.style+' · 笔径'+s.size+' · 纸张'+s.zoom+'%';if(valuesButton.textContent!==text)valuesButton.textContent=text;const locked=!!window.writingLocked;for(const b of [hudLock,panelLock]){const label=locked?'纸张已锁定，点击解锁缩放':'纸张可缩放，点击锁定';b.ariaLabel=b.title=label;b.setAttribute('aria-pressed',String(locked));b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="'+(locked?'M8 10V6a4 4 0 0 1 8 0v4':'M8 10V6a4 4 0 0 1 7-2')+'"/></svg>'+(b===panelLock?'<span>'+(locked?'纸张缩放已锁定':'纸张缩放已解锁')+'</span>':'')}for(const f of fields)if(f.suffix==='%'){f.number.disabled=f.range.disabled=locked;for(const b of f.number.closest('label').querySelectorAll('button'))b.disabled=locked;}}
  for(const type of ['input','change','ink-stroke','mode-changed54','preview-painted94','copy-cell128'])document.addEventListener(type,syncStatus);new MutationObserver(syncStatus).observe(document.body,{attributes:true,attributeFilter:['class']});setInterval(()=>{if(!document.hidden&&!document.body.classList.contains('home-open'))syncStatus()},1200);sync();
  const reader=$('dailyDialog'),resize=E('button','readerResize133');resize.type='button';resize.dataset.readerResize133='true';resize.ariaLabel=resize.title='调整文摘浮窗尺寸';resize.innerHTML=TouchOrder129.icon('M8 20l12-12M14 20l6-6');reader.append(resize);let drag;
  function fitSize152(width,height,rect=reader.getBoundingClientRect()){const v=window.visualViewport,b=ReaderBounds152.fit({left:v?.offsetLeft||0,top:v?.offsetTop||0,width:v?.width||innerWidth,height:v?.height||innerHeight},rect,width,height);reader.dataset.resized133='true';for(const[k,x]of Object.entries(b))reader.style.setProperty(k,x+'px','important')}
@@ -26,3 +29,4 @@
 
  window.Revision133={ready:true,syncParameters:sync};
 })();
+

@@ -1,0 +1,18 @@
+body.ui111 .writingValues133{display:flex!important;align-items:center!important;gap:2px!important;padding:2px!important;max-width:calc(100% - 12px);pointer-events:auto}
+body.ui111 .writingValues133>button{min-width:0!important;min-height:36px!important;height:auto!important;padding:5px!important;font-size:11px!important;white-space:nowrap;background:transparent!important;color:inherit!important;border:0!important}
+body.ui111 .writingValues133 svg,.paperLock191 svg{width:20px;height:20px;flex:none}
+body.ui111 #paperPen100 .paperLock191{grid-column:1/-1;display:flex!important;align-items:center;justify-content:center;gap:8px;min-height:44px!important;height:auto!important;font-size:14px!important;background:#fffaf0!important;border:1px solid #cdbfa5!important}
+body.ui111 #paperPen100 .parameter133{grid-column:1/-1!important;display:flex!important;flex-direction:column;gap:8px;padding:8px 0!important;font-size:15px!important}
+body.ui111 #paperPen100 .parameterStepper140{display:flex!important;align-items:center;justify-content:center;gap:12px}
+body.ui111 #paperPen100 .parameterStepper140 input{display:block!important;width:120px!important;min-height:44px!important;font-size:22px!important;text-align:center}
+body.ui111 #paperPen100 .parameter133 button{min-height:36px!important;height:auto!important;font-size:13px!important;padding:5px 9px!important}
+body.ui111 #paperPen100 .parameter133 input[type=range]{display:block!important;width:100%!important;height:30px!important}
+body.ui111 #paperPen100 .parameterPoints133{display:flex;flex-wrap:wrap;gap:5px;justify-content:center}
+body.ui111 #paperPen100 :disabled{opacity:.45}
+body.ui111 .exportSelects182{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;align-items:start;flex-wrap:nowrap!important}
+body.ui111 .exportSelects182 label{display:flex!important;flex-direction:column;min-width:0!important;gap:5px;white-space:nowrap;font-size:12px!important}
+body.ui111 .exportSelects182 select{width:100%!important;max-width:100%!important;min-width:0!important;min-height:36px!important;font-size:11px!important;text-overflow:ellipsis}
+body.ui111 .exportActions182{display:grid!important;grid-template-columns:86px minmax(0,1fr);align-items:center;gap:10px;width:100%}
+body.ui111 .exportActions182 [data-save]{min-width:0!important;width:100%!important;min-height:42px!important;white-space:nowrap}
+body.ui111 .exportActions182 [data-png]{grid-column:1/-1;justify-self:center}
+body.ui111 #offlineProgress189{display:none!important}
