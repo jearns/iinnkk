@@ -84,6 +84,7 @@
     "reference-gallery136.js",
     "featured150.js",
     "world-visibility151.js",
+    "calligraphy-rank-data183.js",
     "catalogue-picker183.js",
     "timeline73.js",
     "revision73.js",
@@ -186,6 +187,7 @@
     "copy-float182.js",
     "export-studio182.js",
     "settings182.js",
+    "custom-brush196.js",
     "seal-panel183.js",
     "paper-photo184.js",
     "popup184.js",
@@ -297,6 +299,7 @@
     "revision192.css",
     "revision193.css",
     "revision194.css",
-    "revision195.css"
+    "revision195.css",
+    "revision196.css"
   ]
 }

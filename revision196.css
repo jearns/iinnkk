@@ -1,0 +1,6 @@
+#customBrush196{width:min(440px,calc(100vw - 24px));max-width:calc(100vw - 24px)}
+#customBrush196 .dialogBody label{display:grid;grid-template-columns:minmax(0,1fr) 82px;gap:12px;align-items:center}
+#customBrush196 label span{grid-column:1/-1;font-size:13px}
+#customBrush196 input[type=range]{width:100%;min-width:0}
+#customBrush196 input[type=number]{width:100%;min-width:0;padding:8px;border-radius:10px}
+#offlineProgress189{overflow-wrap:anywhere;line-height:1.5;cursor:pointer}
