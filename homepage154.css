@@ -39,3 +39,8 @@ dialog.reader154{width:100vw!important;max-width:none!important;max-height:100dv
 dialog[open]{background:rgba(247,241,228,.79)!important;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}dialog::backdrop{background:rgba(25,20,14,.08)!important}
 
 .worldCoverButton189{display:block;width:100%;padding:0;border:0;background:transparent;cursor:pointer}.worldCoverButton189 img{display:block;width:100%}
+
+
+.world154{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)!important}.world154>strong{font-size:clamp(11px,1.3vw,15px)!important}.world154>small{font-size:clamp(8px,1vw,10px)!important}.worldCoverButton189{grid-column:1;grid-row:1/6;height:100%}.worldCoverButton189 img{height:100%;object-fit:cover}
+
+dialog{background:rgba(248,247,241,.82)!important;backdrop-filter:blur(26px) saturate(145%);-webkit-backdrop-filter:blur(26px) saturate(145%);border:1px solid #ffffffb3!important;border-radius:22px!important;box-shadow:0 14px 50px #23352b26,inset 0 1px 0 #fffc!important}dialog header{background:rgba(248,247,241,.66)!important;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}

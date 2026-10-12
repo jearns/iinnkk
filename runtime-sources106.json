@@ -30,6 +30,7 @@
     "revision38.js",
     "reference-io129.js",
     "reference-order134.js",
+    "written-pages192.js",
     "copy-integrity181.js",
     "copy-reference184.js",
     "copy-albums38.js",
@@ -91,6 +92,7 @@
     "cloud-draft-codec141.js",
     "storage-path150.js",
     "auth-state189.js",
+    "phone-auth192.js",
     "cloud75.js",
     "cloud-drafts141.js",
     "cloud-cleanup180.js",
@@ -187,7 +189,9 @@
     "paper-photo184.js",
     "popup184.js",
     "revision187.js",
-    "post-paper188.js"
+    "post-paper188.js",
+    "autumn192.js",
+    "revision192.js"
   ],
   "styles": [
     "style.css",
@@ -288,6 +292,7 @@
     "revision188.css",
     "revision189.css",
     "revision190.css",
-    "revision191.css"
+    "revision191.css",
+    "revision192.css"
   ]
 }
