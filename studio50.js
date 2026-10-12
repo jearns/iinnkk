@@ -27,6 +27,8 @@ try{const n=config.nav,single=n.find(x=>x.id==='single'),copyMode=n.find(x=>x.id
 // V129 migrates the four core entrances, including retained local configurations.
 for(const n of config.nav){if(n.id==='letter')n.title='独创';if(n.id==='photo'){n.id='shared';n.title='共书'}if(n.id==='copy'){n.size=35;n.zoom=200}}
 config.nav=coreNavigation129(config.nav);
+const entry195={single:{size:150,zoom:100,preset:'yan',style:50},copy:{size:75,zoom:300,preset:'wang',style:75},letter:{size:35,zoom:300,preset:'wang',style:75},shared:{size:20,zoom:300,preset:'yan',style:50}};
+for(const n of config.nav)if(entry195[n.id])Object.assign(n,entry195[n.id]);
 try{localStorage.setItem(KEY,JSON.stringify(config))}catch{}
 let app,unlocked=!!localStorage.getItem(AUTH)&&localStorage.getItem('iinnkk.remember55')==='yes',admin,selected=config.nav[0]?.id,status,applying=false,managementParent53=null;
 function save(next=config){const valid=normalize(next);try{localStorage.setItem(KEY,JSON.stringify(valid))}catch{throw Error('本机存储已满或被禁用，修改未保存；请先导出配置。')}if(next!==config)config=valid;else{config.nav.forEach((n,i)=>Object.assign(n,valid.nav[i]));config.brand=valid.brand;config.integrations=valid.integrations;}renderNav();applyBrand();if(status)status.textContent='已保存到此设备 · '+new Date().toLocaleTimeString();document.dispatchEvent(new Event('studio-config50'));}
@@ -37,7 +39,7 @@ function renderNav(){const nav=document.getElementById('homeQuick47');if(!nav)re
 function report(e){app?.toast(e.message||String(e));if(status)status.textContent=e.message||String(e)}
 function knownSelect(id,v,fallback){const el=document.getElementById(id);return el?.options&&[...el.options].some(o=>o.value===String(v))?String(v):fallback}
 async function applyMode(n,internal=false){
- if(n.id==='shared'||n.id==='photo'){if(!window.SharedInk128?.open)throw Error('共书服务正在准备，请稍后重试');return window.SharedInk128.open()}
+ if(n.id==='shared'||n.id==='photo'){if(!window.SharedInk128?.open)throw Error('共书服务正在准备，请稍后重试');if(!window.SharedInk128.active149)await app.configure47({values:{zoom:'300'},size:20,brushPatch:ParticleBrush.lineProfile108(50)});return window.SharedInk128.open()}
 
  if(window.Modes53&&!internal)return Modes53.activate(n,()=>applyMode(n,true));
  if(applying)return;applying=true;
@@ -46,7 +48,7 @@ async function applyMode(n,internal=false){
  if(n.layout==='single')Object.assign(values,{rows:'1',columns:'1',ruling:'mi',showLines:'yes',papercolor:'#e4d5b5',zoom:'100'});
  if(n.format==='couplet')Object.assign(values,{columns:'2',followDirection:'vertical'});
  const preset=app.presets[n.preset]?n.preset:'zhang';const patch={};for(const k of ['softness','smoothing','taper','fullness'])if(Number.isFinite(n.advanced.brush?.[k]))patch[k]=clamp(n.advanced.brush[k],0,k==='fullness'?2:1);
- await app.configure47({values,preset,size:n.id==='photo'?250:n.size,inkOpacity:n.opacity,mountKey:n.layout==='single'?'dark':n.advanced.mountKey||'paris',brushPatch:{...patch,dry:n.layout==='single'&&preset==='yan'?.05:n.dry,dynamics:n.layout==='single'&&preset==='yan'?.50:n.dynamics,color:n.ink},focus:n.id==='letter'?'top-right':'start'});
+ await app.configure47({values,preset,size:n.id==='photo'?250:n.size,inkOpacity:n.opacity,mountKey:n.layout==='single'?'dark':n.advanced.mountKey||'paris',brushPatch:{...patch,...ParticleBrush.lineProfile108(n.style??75),color:n.ink},focus:n.id==='letter'?'top-right':'start'});
  if(n.id==='photo')await app.videoCover125();else if(n.text)app.setGuide(n.text,'参考文字');window.writingLocked=false;window.Revision39?.syncLock();document.dispatchEvent(new Event('writing-scenario47'));app.showWriter();
  }finally{applying=false}
 }
@@ -102,4 +104,5 @@ async function init(){if(!window.Revision47?.ready||!window.AnnotationApp){setTi
 }
 window.InkStudio50={ready:false,get config(){return copy(config)},get isAdmin(){return !!window.InkCloud75?.isFounder132},saveConfig:next=>{requireAdmin();save(next)},formats,normalize,coreNavigation129,E,dialog,button,download,safeURL,openAdmin:()=>unlock(true),applyMode,report};init();
 })();
+
 

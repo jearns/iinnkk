@@ -19,15 +19,6 @@
    if(menu){menu.classList.add('writerMenu86');quick.parentElement.insertBefore(menu,quick.nextSibling)}
  }
 
- // Preview random changes only paper / ink / seal. It must not bubble to fitView or show “查看整张纸”.
- const random=$('previewRandom79');
- if(random){
-   random.addEventListener('click',e=>{
-     e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();
-     const p=Revision85.palette(Date.now()+'|'+Math.random()+'|preview');Revision85.applyPalette(p);
-     const hint=$('iconHint');if(hint){hint.hidden=true;try{hint.hidePopover?.()}catch{}}
-     const toast=$('toast');if(toast&&/查看整张纸/.test(toast.textContent||''))toast.style.display='none';
-   },true);
- }
+ // Palette toggle is owned by Revision94.
  window.Revision86={ready:true};
 })();
