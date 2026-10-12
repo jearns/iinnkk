@@ -7,7 +7,7 @@ body.ui111 #worksDialog>.dialogHead>[data-close]{grid-column:6!important;width:4
 body.ui111 .glassMeter186.glassWhite194{background:linear-gradient(90deg,#f1f1eb,#fff)!important;color:#34413a!important;border:1px solid #d1d7cd!important}
 body.ui111 .glassWhite194 .glassFill186{background:linear-gradient(90deg,#ffffff40,#fff)!important}
 body.ui111 .exportThumbs192 img,body.ui111 #worksDialog .workView img{background:#fff!important}
-body.ui111 #cloudGallery75[open]{width:calc(100vw - 16px)!important;max-width:1400px!important;height:calc(100dvh - 16px)!important;max-height:calc(100dvh - 16px)!important;padding:10px!important;min-width:0!important;aspect-ratio:auto!important;overflow:auto!important}
+body.ui111 #cloudGallery75[open]{width:calc(100vw - 16px)!important;max-width:calc(100vw - 16px)!important;height:calc(100dvh - 16px)!important;max-height:calc(100dvh - 16px)!important;padding:10px!important;min-width:0!important;aspect-ratio:auto!important;overflow:auto!important}
 body.ui111 #cloudGallery75>.cloud75-head{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#f6f5efe8;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);z-index:2;padding:8px!important;border-radius:12px}
 body.ui111 #cloudGallery75 .cloud75-gallery{display:flex!important;flex-direction:column!important;gap:14px!important;width:100%;max-width:900px;margin:auto}
 body.ui111 #cloudGallery75 .cloudWork75{display:grid!important;grid-template-columns:minmax(0,1fr);gap:6px;width:100%!important;min-width:0!important;padding:12px!important;background:#ffffff65;border:1px solid #fff9;border-radius:18px}
