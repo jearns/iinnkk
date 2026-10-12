@@ -23,6 +23,7 @@
     "brand-credit180.js",
     "brand-credit182.js",
     "paper-ink188.js",
+    "paper-preview194.js",
     "app.js",
     "annotation-home.js",
     "process-video.js",
@@ -294,6 +295,7 @@
     "revision190.css",
     "revision191.css",
     "revision192.css",
-    "revision193.css"
+    "revision193.css",
+    "revision194.css"
   ]
 }
