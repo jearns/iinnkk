@@ -1,0 +1,21 @@
+body.ui111 .modeRow193{display:grid!important;grid-template-columns:minmax(0,1fr) max-content minmax(0,1fr);align-items:center;width:100%;gap:4px;min-width:0;padding:3px 6px}
+body.ui111 .modeRow193 #writerModes53{grid-column:2;position:static!important;inset:auto!important;transform:none!important;margin:0!important;padding:2px 0!important;width:auto!important;max-width:none!important;gap:10px!important;justify-content:center!important;background:transparent!important;flex-wrap:nowrap!important}
+body.ui111 .modeRow193 #previewDock182{grid-column:3;justify-self:end;position:static!important;inset:auto!important;gap:3px}
+body.ui111 #previewDock182 button{padding:3px 5px!important;height:26px!important;min-height:26px!important;font-size:10px!important;gap:2px!important}
+body.ui111 #previewDock182 svg{width:12px;height:12px}
+body.ui111 #worksDialog .dialogHead{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:6px!important;flex-wrap:nowrap!important;padding:8px!important}
+body.ui111 #worksDialog .dialogHead h2{margin-right:auto!important;font-size:16px!important}
+body.ui111 #worksDialog .dialogHead button{flex:none!important;width:44px!important;min-width:44px!important;height:48px!important;min-height:48px!important;padding:4px!important;margin:0!important}
+body.ui111 #worksDialog .workTime181{grid-column:1/-1!important;width:100%!important;display:block!important;white-space:nowrap!important;line-height:18px!important;margin:2px 0 5px!important;font-size:11px!important}
+body.ui111 .exportOpacity187{height:42px!important;min-height:42px!important}
+body.ui111 .exportOpacity187 .glassMeter186{height:42px!important;min-height:42px!important;max-height:42px!important;padding:3px 5px!important}
+body.ui111 .visibilitySwitch182 i{left:2px!important;right:auto!important;top:2px!important;width:22px!important;height:22px!important;transform:none!important;transition:left .18s!important}
+body.ui111 .visibilitySwitch182[aria-checked=true] i{left:calc(100% - 24px)!important;transform:none!important}
+body.ui111 .copyFloatControls181{display:flex!important;align-items:center;justify-content:center;gap:6px;flex-wrap:nowrap!important;width:100%;padding:5px 0}
+body.ui111 .copyFloatControls181[hidden]{display:none!important}
+body.ui111 .copyFloatControls181 .floatDirection182{flex:none;min-width:0!important;padding:4px 7px!important;white-space:nowrap;font-size:11px!important}
+body.ui111 .copyFloatControls181 .floatDirection182[aria-pressed=true]{background:#bd30272b!important;border-color:#b8493a!important}
+body.ui111 .copyFloatControls181 .glassMeter186{flex:1;min-width:0!important;max-width:220px;height:36px!important;margin:0!important}
+.timelineWorld78 .worldCover149{float:none!important;display:block!important;width:100%!important;max-width:none!important;margin:0 0 6px!important}
+.timelineWorld78>span{display:block!important;font-size:10px!important;line-height:1.4!important}
+@media(max-width:420px){body.ui111 .modeRow193 #writerModes53{gap:5px!important}body.ui111 .modeRow193 #writerModes53 button{font-size:12px!important;padding:2px!important}body.ui111 #previewDock182 button{font-size:9px!important;padding:3px!important}}

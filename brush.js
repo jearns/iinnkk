@@ -34,15 +34,15 @@
   t.beginPath();t.ellipse(x,y,rx,ry*core,angle,0,Math.PI*2);t.fill();
   for(let k=0;k<9;k++){const u=hash(k,2,state.seed)*1.5-.75,v=hash(k,5,state.seed)*2-1,phase=noise(state.travel/(8+hash(k,4,state.seed)*19),k,state.seed+7);if(phase<dry*.48)continue;const width=.13+hash(k,8,state.seed)*.19,dx=u*rx*.6,dy=v*ry*(.7+dry*.18),px=x+dx*cs-dy*sn,py=y+dx*sn+dy*cs;t.beginPath();if(s.particle==='square'){t.save();t.translate(px,py);t.rotate(angle);t.fillRect(-rx*.26,-ry*width,rx*.52,ry*width*2);t.restore()}else{t.ellipse(px,py,Math.max(.15*scale,rx*.36),Math.max(.12*scale,ry*width),angle,0,Math.PI*2);t.fill()}}
  }
- function start(st,t,W,H){const s=settings(st.settings),p=st.points[0];return{index:1,last:p,pos:{x:p.x*W,y:p.y*H},r:s.size*.06,contact:s.size*.06,velocity:0,angle:0,travel:0,hold:0,turn:0,dry:0,seed:st.seed||1,ended:false}}
- function tailInfo(st,W,H){const pts=st.points;let length=0,remaining=Array(pts.length).fill(0);for(let i=pts.length-2;i>=0;i--){length+=Math.hypot((pts[i+1].x-pts[i].x)*W,(pts[i+1].y-pts[i].y)*H)/(W/390);remaining[i]=length}let end=pts.length-1;while(end>0&&Math.hypot(pts[end].x-pts[end-1].x,pts[end].y-pts[end-1].y)<.0003)end--;const lastHold=pts.at(-1).t-pts[end].t;const v=end?Math.hypot((pts[end].x-pts[end-1].x)*390,(pts[end].y-pts[end-1].y)*H/(W/390))/Math.max(1,pts[end].t-pts[end-1].t):0;let hook=false;for(let i=Math.max(1,end-9);i<end-1;i++){const a=pts[i-1],b=pts[i],c=pts[end],ux=(b.x-a.x)*W,uy=(b.y-a.y)*H,vx=(c.x-b.x)*W,vy=(c.y-b.y)*H,mag=Math.hypot(ux,uy)*Math.hypot(vx,vy);if(mag>1&&remaining[i]<st.settings.size*.85&&remaining[i]>st.settings.size*.08&&Math.acos(Math.max(-1,Math.min(1,(ux*vx+uy*vy)/mag)))>1.12){hook=true;break}}const lowPressure=st.hasPressure&&pts[end].pressure<.3,ex=end?Math.abs(pts[end].x-pts[end-1].x)*W:0,ey=end?Math.abs(pts[end].y-pts[end-1].y)*H:0,axisEnd=st.settings.kaishu127&&!hook&&!lowPressure&&v<.18&&Math.min(ex,ey)/Math.max(.001,ex,ey)<.35;return{remaining,length,hook,sharp:!axisEnd&&(v>.30||lowPressure||hook)&&lastHold<180}}
+ function start(st,t,W,H){const s=settings(st.settings),p=st.points[0];return{index:1,last:p,pos:{x:p.x*W,y:p.y*H},r:s.size*.025,contact:s.size*.025,velocity:0,angle:0,travel:0,hold:0,turn:0,dry:0,seed:st.seed||1,ended:false}}
+ function tailInfo(st,W,H){const pts=st.points;let length=0,remaining=Array(pts.length).fill(0);for(let i=pts.length-2;i>=0;i--){length+=Math.hypot((pts[i+1].x-pts[i].x)*W,(pts[i+1].y-pts[i].y)*H)/(W/390);remaining[i]=length}let end=pts.length-1;while(end>0&&Math.hypot(pts[end].x-pts[end-1].x,pts[end].y-pts[end-1].y)<.0003)end--;const v=end?Math.hypot((pts[end].x-pts[end-1].x)*390,(pts[end].y-pts[end-1].y)*H/(W/390))/Math.max(1,pts[end].t-pts[end-1].t):0;let hook=false;for(let i=Math.max(1,end-9);i<end-1;i++){const a=pts[i-1],b=pts[i],c=pts[end],ux=(b.x-a.x)*W,uy=(b.y-a.y)*H,vx=(c.x-b.x)*W,vy=(c.y-b.y)*H,mag=Math.hypot(ux,uy)*Math.hypot(vx,vy);if(mag>1&&remaining[i]<st.settings.size*.85&&remaining[i]>st.settings.size*.08&&Math.acos(Math.max(-1,Math.min(1,(ux*vx+uy*vy)/mag)))>1.12){hook=true;break}}const lowPressure=st.hasPressure&&pts[end].pressure<.3,ex=end?Math.abs(pts[end].x-pts[end-1].x)*W:0,ey=end?Math.abs(pts[end].y-pts[end-1].y)*H:0,axisEnd=st.settings.kaishu127&&!hook&&!lowPressure&&v<.18&&Math.min(ex,ey)/Math.max(.001,ex,ey)<.35;return{remaining,length,hook,sharp:!axisEnd&&(v>.24||lowPressure||hook||Math.min(ex,ey)/Math.max(.001,ex,ey)>.35&&length>st.settings.size*.35)}}
  // Swept contact: each segment is a connected ribbon, not thousands of stamps.
  function ribbon192(t,x0,y0,r0,x1,y1,r1,s,dry,state,scale){
-  const dx=x1-x0,dy=y1-y0,d=Math.hypot(dx,dy);if(d<.001)return;
+  const dx=x1-x0,dy=y1-y0,d=Math.hypot(dx,dy);if(d<.001)return;const clip=state.clip,r=Math.max(r0,r1);if(clip&&(Math.max(x0,x1)+r<clip.x||Math.min(x0,x1)-r>clip.x+clip.w||Math.max(y0,y1)+r<clip.y||Math.min(y0,y1)-r>clip.y+clip.h))return;
   const nx=-dy/d,ny=dx/d;t.fillStyle=s.color;t.globalAlpha=1;
   function shape(f=1){t.beginPath();t.moveTo(x0+nx*r0*f,y0+ny*r0*f);t.lineTo(x1+nx*r1*f,y1+ny*r1*f);t.lineTo(x1-nx*r1*f,y1-ny*r1*f);t.lineTo(x0-nx*r0*f,y0-ny*r0*f);t.closePath();t.fill();
-   if(r0>.02*scale){t.beginPath();t.ellipse(x0,y0,r0*f,r0*f,0,0,Math.PI*2);t.fill()}
-   if(r1>.02*scale){t.beginPath();t.ellipse(x1,y1,r1*f,r1*f,0,0,Math.PI*2);t.fill()}}
+   if(state.travel*scale>=r0&&r0>.02*scale){t.beginPath();t.ellipse(x0,y0,r0*f,r0*f,0,0,Math.PI*2);t.fill()}
+   if(state.travel*scale+d>=r1&&r1>.02*scale&&!state.tip193){t.beginPath();t.ellipse(x1,y1,r1*f,r1*f,0,0,Math.PI*2);t.fill()}}
   if(dry>.08){const tile=mask(s,Math.min(5,Math.max(1,Math.ceil(dry*5))));if(tile){const key=s.color+':'+s.particle+':'+Math.ceil(dry*5);state.patterns||=new Map();let pattern=state.patterns.get(key);if(!pattern){pattern=t.createPattern(tile,'repeat');state.patterns.set(key,pattern)}t.fillStyle=pattern;shape();t.fillStyle=s.color;shape(Math.max(.18,1-dry*.8));return}}
   shape();
  }
@@ -52,11 +52,12 @@
    if(d<.02*scale){state.last=p;continue}
    const pressure=st.hasPressure&&Number.isFinite(p.pressure)?p.pressure:null,speed=distance/dt;
    state.velocity=state.travel?mix(state.velocity,speed,1-Math.exp(-dt/40)):speed;
-   const loaded=radiusForSpeed(state.velocity,s,pressure),opening=clamp((state.travel+distance)/(Math.max(2,s.size*.16)),.12,1);
-   const target=loaded*opening,next=state.r+clamp(target-state.r,-distance*.22,distance*.30);
-   let envelope=1;if(tail&&tail.sharp){const len=Math.min(80,Math.max(3,s.size*.18),tail.length*.18),u=clamp(tail.remaining[i]/Math.max(.01,len),0,1);envelope=.012+.988*u*u*(3-2*u)}
-   const r0=Math.max(.02*scale,state.contact*scale),r1=Math.max(.006*scale,next*envelope*scale);
+   const loaded=radiusForSpeed(state.velocity,s,pressure),opening=clamp((state.travel+distance)/(Math.max(2,s.size*.10)),.45,1);
+   const target=loaded*opening,next=state.r+clamp(target-state.r,-distance*.22,distance*.65);
+   let envelope=1;if(tail&&tail.sharp){const len=Math.min(160,Math.max(8,s.size*.6),tail.length*.28),u=clamp(tail.remaining[i]/Math.max(.01,len),0,1);envelope=Math.min(u*u*(3-2*u),tail.remaining[i]/Math.max(.01,next)*.7)}
+   const r0=Math.max(.02*scale,state.contact*scale),r1=Math.max(0,next*envelope*scale);
    state.dry=mix(state.dry,dryForSpeed(state.velocity,s,pressure),1-Math.exp(-dt/95));
+   state.tip193=!!tail?.sharp&&tail.remaining[i]<.001;
    ribbon192(t,state.pos.x,state.pos.y,r0,x,y,r1,s,state.dry,state,scale);
    state.contact=next*envelope;state.r=next;state.pos={x,y};state.angle=Math.atan2(dy,dx);state.travel+=distance;state.last=p;
   }
