@@ -2,9 +2,7 @@
   "scripts": [
     "compat106.js",
     "startup173.js",
-    "perfect-freehand201.js",
     "brush.js",
-    "brush-contour201.js",
     "mount.js",
     "seal-map172.js",
     "seal.js",
@@ -306,6 +304,7 @@
     "revision195.css",
     "revision196.css",
     "revision199.css",
-    "revision200.css"
+    "revision200.css",
+    "passport203.css"
   ]
 }
