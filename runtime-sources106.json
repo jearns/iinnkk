@@ -8,6 +8,7 @@
     "seal.js",
     "paper-finish.js",
     "storage.js",
+    "storage-read204.js",
     "museum-scenes.js",
     "creative-legacy.js",
     "creative.js",
@@ -196,7 +197,8 @@
     "revision187.js",
     "post-paper188.js",
     "autumn192.js",
-    "revision192.js"
+    "revision192.js",
+    "revision204.js"
   ],
   "styles": [
     "style.css",
@@ -305,6 +307,7 @@
     "revision196.css",
     "revision199.css",
     "revision200.css",
-    "passport203.css"
+    "passport203.css",
+    "revision204.css"
   ]
 }
