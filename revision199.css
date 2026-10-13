@@ -1,0 +1,6 @@
+body:not(.home-open) .topStrip{flex-shrink:0!important;min-height:44px!important;position:relative!important;z-index:90!important;overflow:visible!important;transform:translateZ(0)}
+html.ui-ready body:not(.home-open) .topStrip,html.ui-ready body:not(.home-open) #topActions{visibility:visible!important;opacity:1!important}
+body:not(.home-open) #topActions{min-width:0;flex:1 1 0%;align-self:center;min-height:36px;justify-content:flex-start!important}
+body:not(.home-open) #writerFixed85,body:not(.home-open) .writerMenu85{flex-shrink:0!important}
+
+#copyLoadStatus199{position:fixed;right:10px;bottom:max(10px,env(safe-area-inset-bottom));z-index:91;max-width:80vw;padding:5px 9px;border-radius:8px;background:#f9f6eadd;color:#6a705f;font:11px/1.5 system-ui;pointer-events:none}#copyLoadStatus199[hidden]{display:none!important}

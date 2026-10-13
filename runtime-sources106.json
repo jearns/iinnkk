@@ -87,6 +87,7 @@
     "world-visibility151.js",
     "calligraphy-rank-data183.js",
     "catalogue-picker183.js",
+    "copy-load199.js",
     "timeline73.js",
     "revision73.js",
     "revision74.js",
@@ -301,6 +302,7 @@
     "revision193.css",
     "revision194.css",
     "revision195.css",
-    "revision196.css"
+    "revision196.css",
+    "revision199.css"
   ]
 }
