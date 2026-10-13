@@ -2,7 +2,9 @@
   "scripts": [
     "compat106.js",
     "startup173.js",
+    "perfect-freehand201.js",
     "brush.js",
+    "brush-contour201.js",
     "mount.js",
     "seal-map172.js",
     "seal.js",
