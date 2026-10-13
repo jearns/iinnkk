@@ -2216,12 +2216,12 @@
       "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1932?dep=P",
       "style": "wang",
       "size": 360,
-      "zoom": 170,
-      "cover143": "",
+      "zoom": 200,
+      "cover143": "timeline/pages/zhiyongqianzi/mv3z9y9c-0/IMG_4323.jpeg",
       "coverCrop145": {
-        "zoom": 1,
-        "x": 50,
-        "y": 50
+        "zoom": 1.37,
+        "x": 45,
+        "y": 34.72222222222222
       },
       "author": "",
       "authorPosition151": "",
