@@ -53,3 +53,11 @@ dialog[open]{background:rgba(247,241,228,.79)!important;backdrop-filter:blur(7px
 .world154:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#17251ee6,#17251e08 90%);pointer-events:none}
 .world154>time,.world154>strong,.world154>small,.world154>a{position:relative;color:#fff!important;margin:0!important;pointer-events:none}
 .world154>a{pointer-events:auto}.world154>strong{font-size:clamp(12px,1.7vw,18px)!important}.world154>small{font-size:clamp(8px,1vw,10px)!important;line-height:1.5!important}
+
+/* V197: companion covers use the exact China-card dimensions. */
+.epoch154.worldShown154{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.epoch154.worldShown154>.world154{height:var(--world-height)!important;max-height:var(--world-height)!important;min-height:0!important;aspect-ratio:4/3;width:100%;border:1px solid #bcc0bc;box-sizing:border-box!important}
+
+/* 198: one shared frame for both covers, independent of captions or image dimensions. */
+.releaseStatus198{display:flex;align-items:center;gap:4px;flex-wrap:wrap;font-size:10px;color:var(--muted);grid-column:1/-1;margin-top:10px}.releaseStatus198 small{font-size:inherit}
+.epoch154.worldShown154{grid-template-columns:repeat(2,minmax(0,1fr))!important;align-items:start}.epoch154.worldShown154>.cardTrack154{width:100%;min-width:0;aspect-ratio:4/3;height:auto;overflow-y:hidden}.epoch154.worldShown154 .card154{width:100%;height:100%;min-width:0;flex-basis:100%;aspect-ratio:4/3;box-sizing:border-box}.epoch154.worldShown154>.world154{width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;aspect-ratio:4/3;overflow:hidden!important;box-sizing:border-box!important}.epoch154.worldShown154 .worldCoverButton189 img{width:100%!important;height:100%!important;object-fit:cover!important}

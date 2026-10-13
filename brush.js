@@ -18,7 +18,7 @@
  const notes194=['泰山刻石：玉箸匀线，中锋圆转，藏头护尾；结体宜修长。','熹平石经：逆入蚕头，长横波磔，主笔燕尾；结体宜扁阔。','多宝塔碑：横轻竖重，折处顿按，捺脚拖刀；结体宜方正。','兰亭序：露锋入纸，提按映带，牵丝轻灵；欹正随手写取势。','古诗四帖：浓淡相间，提按悬殊，疾行飞白；连绵随真实轨迹。'];
  const presets194=Object.fromEntries(keys194.map((key,i)=>[key,{...profiles194[i],size:[150,250,150,1000,1000][i],name:names194[i],desc:notes194[i],lineStrength108:i*25,styleVersion194:194,...Object.fromEntries(channels194.map((name,j)=>[name,i===j?1:0])),kaishu127:i===2}]));
  function lineProfile108(value){const level=clamp(Number(value)||0,0,100),i=Math.min(3,Math.floor(level/25)),f=(level-i*25)/25,out={lineStrength108:level,styleVersion194:194,kaishu127:false};for(const name of Object.keys(profiles194[0]))out[name]=mix(profiles194[i][name],profiles194[i+1][name],f);for(let j=0;j<5;j++)out[channels194[j]]=j===i?1-f:j===i+1?f:0;return out}
- function radiusForSpeed(v,s,p=null){s=settings(s);v*=s.speedResponse||1;const slow=1/(1+Math.pow(Math.max(v,0)/.24,1.85));let load=mix(.85,.025+slow*.98,Math.pow(clamp(s.dynamics,0,1),.20));if(p!==null)load=mix(load,.018+Math.pow(clamp(p,0,1),1.25)*1.04,.88);const expressive=(s.running194||0)+(s.cursive194||0);load=Math.max(load,.15*expressive);if((s.cursive194||0)>.98)load=Math.min(load,.56);return s.size*.5*s.fullness*load}
+ function radiusForSpeed(v,s,p=null){s=settings(s);v*=s.speedResponse||1;const slow=1/(1+Math.pow(Math.max(v,0)/.24,1.85));let load=mix(.85,.025+slow*.98,Math.pow(clamp(s.dynamics,0,1),.20));if(p!==null)load=mix(load,.018+Math.pow(clamp(p,0,1),1.25)*1.04,.88);const expressive=(s.running194||0)+(s.cursive194||0);const release=clamp((v-.65)/1.9,0,1)*(s.cursive194||0),floor=mix(.15,.012,release);load=Math.max(load,floor*expressive);if((s.cursive194||0)>.98)load=Math.min(load,.56);return s.size*.5*s.fullness*load}
  function dryForSpeed(v,s,p=null){v*=s.speedResponse||1;let d=s.dry*Math.pow(clamp((v-.20)/.80,0,1),.70);if(p!==null)d=Math.max(d,s.dry*Math.pow(1-p,2)*.7);return Math.min(.85,d)}
  let canvasFactory=null;const masks=new Map(),grains194=new Map();
  function setCanvasFactory(factory){canvasFactory=factory}
@@ -49,7 +49,9 @@
   // Adjacent strips share exactly the same cross-section. No overlapping round dabs
   // and no mismatched perpendicular ends that leave spikes on broad strokes.
   const overlap=Math.min(.8,d*.4),startOverlap=state.travel?overlap:0,endOverlap=state.tip193||state.final195?0:overlap,ax=x0-dx/d*startOverlap,ay=y0-dy/d*startOverlap,bx=x1+dx/d*endOverlap,by=y1+dy/d*endOverlap;
-  function strip(a,b,a1=a,b1=b){t.beginPath();t.moveTo(ax+previous.x*r0*a,ay+previous.y*r0*a);t.lineTo(bx+next.x*r1*a1,by+next.y*r1*a1);t.lineTo(bx+next.x*r1*b1,by+next.y*r1*b1);t.lineTo(ax+previous.x*r0*b,ay+previous.y*r0*b);t.closePath();t.fill()}
+  function strip(a,b,a1=a,b1=b){const px=previous.y,py=-previous.x,qx=next.y,qy=-next.x,k=d*(.12+.25*(s.softness||0));t.beginPath();t.moveTo(ax+previous.x*r0*a,ay+previous.y*r0*a);
+   if(t.bezierCurveTo){t.bezierCurveTo(ax+previous.x*r0*a+px*k,ay+previous.y*r0*a+py*k,bx+next.x*r1*a1-qx*k,by+next.y*r1*a1-qy*k,bx+next.x*r1*a1,by+next.y*r1*a1);t.lineTo(bx+next.x*r1*b1,by+next.y*r1*b1);t.bezierCurveTo(bx+next.x*r1*b1-qx*k,by+next.y*r1*b1-qy*k,ax+previous.x*r0*b+px*k,ay+previous.y*r0*b+py*k,ax+previous.x*r0*b,ay+previous.y*r0*b)}else{t.lineTo(bx+next.x*r1*a1,by+next.y*r1*a1);t.lineTo(bx+next.x*r1*b1,by+next.y*r1*b1);t.lineTo(ax+previous.x*r0*b,ay+previous.y*r0*b)}t.closePath();t.fill()}
+
   if((s.cursive194||0)>.2){
    // An uneven contact patch and travelling bristle tufts: wet ink has a dense
    // centre, dry ink exposes irregular paper channels along the actual path.
@@ -67,7 +69,8 @@
     t.fillStyle=state.inkPattern196||inkTone194(s.color,clamp(dry*(.15+hash(k,8,state.seed)*.6),0,.65));strip(a0*(a0<0?left0:right0),b0*(b0<0?left0:right0),a1*(a1<0?left1:right1),b1*(b1<0?left1:right1));
    }
    t.fillStyle=state.color194||s.color;
-  }else strip(-1,1);
+  }else{const rough=(s.regular194||s.running194)?(.012+.015*(s.running194||0)):0,u=state.travel/Math.max(8,s.size*.04),v=u+d/scale/Math.max(8,s.size*.04);strip(-1+(noise(u,0,state.seed)-.5)*rough,1+(noise(u,1,state.seed)-.5)*rough,-1+(noise(v,0,state.seed)-.5)*rough,1+(noise(v,1,state.seed)-.5)*rough)}
+  if(state.travel&&state.turn197>.9&&((s.running194||0)+(s.cursive194||0))>.5){t.beginPath();t.ellipse(x0,y0,r0*.88,r0*.88,0,0,Math.PI*2);t.fill()}
   // Only actual stroke ends get caps, never every sampling boundary.
   if(!state.travel&&((s.clerical194||0)>.5||(s.cursive194||0)>.98)){t.beginPath();t.ellipse(x0,y0,r0*.78,r0,Math.atan2(dy,dx),0,Math.PI*2);t.fill()}
   if(state.final195&&!state.tip193&&r1>.02*scale){t.beginPath();t.ellipse(x1,y1,r1*(1-.18*(s.regular194||0)),r1,Math.atan2(dy,dx),0,Math.PI*2);t.fill()}
@@ -89,7 +92,7 @@
    if(tail&&(s.cursive194||0)>.98){const u=clamp(tail.remaining[i]/Math.max(8,s.size*.10),0,1);envelope=.45+.55*(u*u*(3-2*u))}const r0=Math.max(.02*scale,state.contact*scale),r1=Math.max(0,next*envelope*scale);
    const depletion=clamp((state.travel+(st.inkTravel195||0))/Math.max(240,s.size*.5),0,1)*(s.cursive194||0),dryTarget=(s.cursive194||0)>.2?clamp(.16+depletion*.64+dryForSpeed(state.velocity,s,pressure)*.04,0,.84):dryForSpeed(state.velocity,s,pressure)*.35;state.dry=mix(state.dry,dryTarget,1-Math.exp(-dt/95));state.color194=inkTone194(s.color,(s.cursive194||0)*clamp(depletion*.55+noise(state.travel/95,2,state.seed)*state.dry*.45,0,1));
    state.tip193=sharp194&&tail.remaining[i]<.001;
-   const following=st.points[i+1];let tangent=angle;if(following){const fx=following.x*W-x,fy=following.y*H-y;if(Math.hypot(fx,fy)>.02*scale)tangent=angle+Math.atan2(Math.sin(Math.atan2(fy,fx)-angle),Math.cos(Math.atan2(fy,fx)-angle))*.5}state.nextNormal195={x:-Math.sin(tangent),y:Math.cos(tangent)};state.final195=st.done&&(i===st.points.length-1||tail.remaining[i]<.001);
+   state.turn197=turn;const following=st.points[i+1];let tangent=angle;if(following){const fx=following.x*W-x,fy=following.y*H-y;if(Math.hypot(fx,fy)>.02*scale)tangent=angle+Math.atan2(Math.sin(Math.atan2(fy,fx)-angle),Math.cos(Math.atan2(fy,fx)-angle))*.5}state.nextNormal195={x:-Math.sin(tangent),y:Math.cos(tangent)};state.final195=st.done&&(i===st.points.length-1||tail.remaining[i]<.001);
    ribbon192(t,state.pos.x,state.pos.y,r0,x+(state.tip193&&clerical?next*scale*.12:0),y-(state.tip193&&clerical?next*scale*.6:0),r1,s,state.dry,state,scale);
    state.contact=next*envelope;state.r=next;state.pos={x,y};state.angle=Math.atan2(dy,dx);state.travel+=distance;state.last=p;
   }

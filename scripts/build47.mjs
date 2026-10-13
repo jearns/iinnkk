@@ -33,6 +33,7 @@ const current=JSON.parse(await readFile('runtime-history154.json','utf8')).curre
 await writeFile('offline-assets.json',JSON.stringify(assets.filter(x=>!/^app-runtime\./.test(x)||current.includes(x))));
 const worker=await readFile('sw.js','utf8');
 await writeFile('sw.js',worker.replace(/annotation-core[\w.]+/g,'annotation-core'+release+'.'+createHash('sha256').update((await readFile('writer.html','utf8'))+(await readFile('index.html','utf8'))+(await readFile('brand.svg','utf8'))+(await readFile('favicon.svg','utf8'))).digest('hex').slice(0,16)).replace(/annotation-assets[\d.]+/g,'annotation-assets'+release).replace(/CORE=\[[^;]+;/,'CORE='+JSON.stringify(core)+';'));
+await import('./offline198.mjs');
 const source=await files(),parts=[];
 for(const name of source){const data=await readFile(name);parts.push({name,url:name,bytes:data.length,sha256:createHash('sha256').update(data).digest('hex')});}
 const manifest={filename:'iinnkk-web-v'+release+'.zip',bytes:parts.reduce((n,p)=>n+p.bytes,0),parts};
@@ -42,3 +43,4 @@ for(const name of [...source,'downloads/manifest.json']){const dest=path.join('d
 await build({entryPoints:['server/worker47.mjs'],outfile:'dist/server/index.js',bundle:true,minify:false,platform:'browser',format:'esm',target:'es2022'});
 await mkdir('dist/.openai',{recursive:true});await writeFile('dist/.openai/hosting.json',await readFile('.openai/hosting.json','utf8').catch(()=>JSON.stringify({d1:'DB',r2:'BUCKET'})));await cp('drizzle','dist/.openai/drizzle',{recursive:true});
 console.log('Web + online service build complete');
+
