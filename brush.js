@@ -47,7 +47,15 @@
  function ribbon192(t,x0,y0,r0,x1,y1,r1,s,dry,state,scale){
   const dx=x1-x0,dy=y1-y0,d=Math.hypot(dx,dy);if(d<.001)return;const clip=state.clip,r=Math.max(r0,r1);if(clip&&(Math.max(x0,x1)+r<clip.x||Math.min(x0,x1)-r>clip.x+clip.w||Math.max(y0,y1)+r<clip.y||Math.min(y0,y1)-r>clip.y+clip.h))return;
   const heading=((s.regular194||0)>.5&&(state.turn204||0)<.95)||((s.running194||0)+(s.cursive194||0)>.5&&(state.turn204||0)<.45)?state.heading203:Math.atan2(dy,dx),nx=-Math.sin(heading),ny=Math.cos(heading),previous=state.normal204||{x:nx,y:ny};t.fillStyle=state.color194||s.color;t.globalAlpha=state.opacity??1;
-  function shape(f=1){const overlap=.85*scale,start=state.travel?overlap:0,end=state.final204||state.tip193?0:overlap,ax=x0-dx/d*start,ay=y0-dy/d*start,bx=x1+dx/d*end,by=y1+dy/d*end;const a=[ax+previous.x*r0*f,ay+previous.y*r0*f],b=[ax-previous.x*r0*f,ay-previous.y*r0*f],c=[bx+nx*r1*f,by+ny*r1*f],cornerD=[bx-nx*r1*f,by-ny*r1*f];
+  // True common tangents between circular contacts. Longitudinal overlap of
+  // rotated rectangles creates teeth at every sampled edge, especially at high zoom.
+  function roundSweep208(f){const a=r0*f,b=r1*f,ux=dx/d,uy=dy/d;
+   t.beginPath();if(Math.abs(a-b)>=d){const first=a>=b;t.arc(first?x0:x1,first?y0:y1,Math.max(a,b),0,Math.PI*2);t.fill();return}
+   const q=(a-b)/d,k=Math.sqrt(Math.max(0,1-q*q)),lx=ux*q-uy*k,ly=uy*q+ux*k,rx=ux*q+uy*k,ry=uy*q-ux*k;
+   t.moveTo(x0+lx*a,y0+ly*a);t.lineTo(x1+lx*b,y1+ly*b);t.lineTo(x1+rx*b,y1+ry*b);t.lineTo(x0+rx*a,y0+ry*a);t.closePath();t.fill();
+   for(const [x,y,radius] of [[x0,y0,a],[x1,y1,b]])if(radius>.001){t.beginPath();t.arc(x,y,radius,0,Math.PI*2);t.fill()}
+  }
+  function shape(f=1){if((s.clerical194||0)<.5){roundSweep208(f);return}const overlap=.85*scale,start=state.travel?overlap:0,end=state.final204||state.tip193?0:overlap,ax=x0-dx/d*start,ay=y0-dy/d*start,bx=x1+dx/d*end,by=y1+dy/d*end;const a=[ax+previous.x*r0*f,ay+previous.y*r0*f],b=[ax-previous.x*r0*f,ay-previous.y*r0*f],c=[bx+nx*r1*f,by+ny*r1*f],cornerD=[bx-nx*r1*f,by-ny*r1*f];
    function triangle(a,b,c){if((b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0])<0)[b,c]=[c,b];t.moveTo(a[0],a[1]);t.lineTo(b[0],b[1]);t.lineTo(c[0],c[1]);t.closePath()}
    // Small turns can invert a ribbon's inner edge. Positive local triangles
    // prevent cancellation without changing 194's pressure or end model.
