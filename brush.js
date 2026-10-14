@@ -52,7 +52,7 @@
    // Small turns can invert a ribbon's inner edge. Positive local triangles
    // prevent cancellation without changing 194's pressure or end model.
    t.beginPath();triangle(a,b,c);triangle(b,cornerD,c);t.fill();
-   if((!state.travel||(state.travel>s.size*.12&&(state.turn204||0)>.9)||(s.clerical194||0)>.5)&&r0>.02*scale){t.beginPath();t.ellipse(x0,y0,r0*f*(state.hook206?1-.18*(s.regular194||0):1),r0*f,Math.atan2(dy,dx),0,Math.PI*2);t.fill()}
+   if((!state.travel||(state.travel>s.size*.12&&(state.turn204||0)>(state.hook206?.9:.12))||(s.clerical194||0)>.5)&&r0>.02*scale){t.beginPath();t.ellipse(x0,y0,r0*f*(state.hook206?1-.18*(s.regular194||0):1),r0*f,Math.atan2(dy,dx),0,Math.PI*2);t.fill()}
    if((state.final204||!state.hook206&&state.travel<s.size*.12&&d<r1*.25)&&r1>.02*scale&&!state.tip193){t.beginPath();t.ellipse(x1,y1,r1*f*(state.hook206?1-.18*(s.regular194||0):1),r1*f,Math.atan2(dy,dx),0,Math.PI*2);t.fill()}}
   if(dry>.08){const tile=(s.cursive194||0)>.2?tailMask205(s,state,heading):mask(s,Math.min(5,Math.max(1,Math.ceil(dry*5))));if(tile){const key=s.color+':'+s.particle+':'+Math.ceil(dry*5)+':'+((s.cursive194||0)>.2?Math.round(heading*8/Math.PI):'');state.patterns||=new Map();let pattern=state.patterns.get(key);if(!pattern){pattern=t.createPattern(tile,'repeat');state.patterns.set(key,pattern)}t.fillStyle=pattern;shape();t.fillStyle=state.color194||s.color;shape(Math.max(.72,1-dry*.35));state.normal204={x:nx,y:ny};return}}
   shape();state.normal204={x:nx,y:ny};
@@ -72,7 +72,7 @@
    // Sand resistance and wall traces modulate contact only, never move the user's path.
    const grain205=noise((state.travel+distance)/Math.max(6,s.size*.18),11,state.seed+205)-.5;
    const vertical205=Math.abs(Math.sin(heading)),hold205=clamp((dt-18)/90,0,1);
-   loaded*=1+grain205*((tail?.hook?.025:.008)*regular+.006*((s.running194||0)+(s.cursive194||0)))+regular*vertical205*hold205*.018;
+   loaded*=1+(tail?.hook?grain205*(.025*regular+.006*((s.running194||0)+(s.cursive194||0))):0)+regular*vertical205*hold205*.018;
    const target=loaded*mix(opening,1,seal),next=state.r+clamp(target-state.r,-distance*.22,distance*.65);
    let envelope=1;if(sharp194&&(s.seal194||0)<.98){const len=Math.min(160,Math.max(8,s.size*.6),tail.length*.28),u=clamp(tail.remaining[i]/Math.max(.01,len),0,1);envelope=mix(Math.min(u*u*(3-2*u),tail.remaining[i]/Math.max(.01,next)*.7),1,s.seal194||0)}
    const r0=Math.max(.02*scale,state.contact*scale),r1=Math.max(0,next*envelope*scale)*(tail?.hook?1+(noise((state.travel+distance)/Math.max(1,s.size*.025),3,state.seed)-.5)*.018:1);

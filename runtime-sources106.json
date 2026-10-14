@@ -127,7 +127,7 @@
     "revision94.js",
     "revision95.js",
     "cloud-tools95.js",
-    "admin95.js",
+    "admin207.js",
     "revision97.js",
     "glass-control186.js",
     "revision100.js",
@@ -201,7 +201,8 @@
     "autumn192.js",
     "revision192.js",
     "revision204.js",
-    "revision206.js"
+    "revision206.js",
+    "revision207.js"
   ],
   "styles": [
     "style.css",
@@ -313,6 +314,7 @@
     "passport203.css",
     "revision204.css",
     "revision205.css",
-    "revision206.css"
+    "revision206.css",
+    "revision207.css"
   ]
 }
