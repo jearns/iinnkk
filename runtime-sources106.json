@@ -31,6 +31,8 @@
     "process-video.js",
     "writing-music.js",
     "revision38.js",
+    "reference-segments206.js",
+    "preview206.js",
     "reference-io129.js",
     "reference-order134.js",
     "written-pages192.js",
@@ -198,7 +200,8 @@
     "post-paper188.js",
     "autumn192.js",
     "revision192.js",
-    "revision204.js"
+    "revision204.js",
+    "revision206.js"
   ],
   "styles": [
     "style.css",
@@ -309,6 +312,7 @@
     "revision200.css",
     "passport203.css",
     "revision204.css",
-    "revision205.css"
+    "revision205.css",
+    "revision206.css"
   ]
 }

@@ -45,7 +45,7 @@ async function applyMode(n,internal=false){
  if(applying)return;applying=true;
  try{const [label,ratio,stationery]=formats[n.format];const allowed=app.settingsSnapshot().values,values={};for(const [k,v]of Object.entries(n.advanced.values||{}))if(k in allowed&&document.getElementById(k)&&typeof v!=='object')values[k]=String(v);
  Object.assign(values,{stationery,ratio:String(ratio),paperExtent:'fixed',sceneChoice:'none',photoMode:n.format==='postcard'?'postcard':'hero2',letterLayout:'custom',followDirection:n.direction,rows:String(n.rows),columns:String(n.columns),ruling:knownSelect('ruling',n.ruling,'none'),showLines:n.ruling==='none'?'no':'yes',papercolor:n.paper,material:knownSelect('material',n.material,'plain'),paperPattern:knownSelect('paperPattern',n.pattern,'none'),zoom:String(n.id==='photo'?100:n.zoom),inkMode:'assist',guideMode:n.text?'custom38':'off'});
- if(n.layout==='single')Object.assign(values,{rows:'1',columns:'1',ruling:'mi',showLines:'yes',papercolor:'#e4d5b5',zoom:'100'});
+ values.headMode='none';if(n.layout==='single')Object.assign(values,{rows:'1',columns:'1',ruling:'mi',showLines:'yes',papercolor:'#e4d5b5',zoom:'100'});
  if(n.format==='couplet')Object.assign(values,{columns:'2',followDirection:'vertical'});
  const preset=app.presets[n.preset]?n.preset:'zhang';const patch={};for(const k of ['softness','smoothing','taper','fullness'])if(Number.isFinite(n.advanced.brush?.[k]))patch[k]=clamp(n.advanced.brush[k],0,k==='fullness'?2:1);
  await app.configure47({values,preset,size:n.id==='photo'?250:n.size,inkOpacity:n.opacity,mountKey:n.layout==='single'?'dark':n.advanced.mountKey||'paris',brushPatch:{...patch,...ParticleBrush.lineProfile108(n.style??75),color:n.ink},focus:n.id==='letter'?'top-right':'start'});

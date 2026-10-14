@@ -74,7 +74,7 @@
   return{upload,load,edit,remove,deleteLocal,findLocal,deleted};
  }
  root.CloudDraftService141={create:service};
- if(!root.document)return;
+ if(!root.document||root.StandaloneWorks203)return;
  (function init(){if(!root.InkCloud75?.client||!root.DraftCodec141){setTimeout(init,80);return}const cloud=root.InkCloud75,app=root.AnnotationApp;const notify=()=>document.dispatchEvent(new Event('cloud-copies83'));root.CloudDraft141=service({cloud,app,store:root.DraftStore,codec:root.DraftCodec141,notify});
   // V180: ordinary drafts never migrate or backfill into the cloud.
 
