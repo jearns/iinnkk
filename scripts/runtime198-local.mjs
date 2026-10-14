@@ -39,11 +39,11 @@ await writeFile('writer.html',(await readFile('index-source106.html','utf8')).re
 
 
 // Historical home pages retain these URLs. Keep tiny aliases, never obsolete runtimes.
-const engineAlias189='<script>location.replace(new URL("writer204.html"+location.search+location.hash,location.href).href)</script>';
+const engineAlias189='<script>location.replace(new URL("writer205.html"+location.search+location.hash,location.href).href)</script>';
 for(let version=154;version<=188;version++)await writeFile('engine'+version+'.html',engineAlias189);
 console.log('Complete runtime:',names.join(' '),cn);
 
-await writeFile('writer204.html',await readFile('writer.html','utf8'));
+await writeFile('writer205.html',await readFile('writer.html','utf8'));
 await writeFile('writer200.html',engineAlias189);
 await writeFile('writer201.html',engineAlias189);
 await writeFile('writer202.html',engineAlias189);
@@ -55,3 +55,5 @@ await import('./home198-local.mjs');
 const cacheFingerprint182=hash((await readFile('writer.html','utf8'))+(await readFile('index.html','utf8'))+(await readFile('brand.svg','utf8'))+(await readFile('favicon.svg','utf8')));
 const worker182=await readFile('sw.js','utf8');await writeFile('sw.js',worker182.replace(/annotation-core[\w.]+/g,'annotation-core'+release+'.'+cacheFingerprint182));
 
+
+await writeFile('writer204.html',engineAlias189);
