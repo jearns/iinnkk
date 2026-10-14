@@ -3112,6 +3112,44 @@
         "timeline/pages/pingfu/mv4pu72o-f/IMG_7275.jpeg",
         "timeline/pages/pingfu/mv4pu93q-g/IMG_7276.jpeg"
       ]
+    },
+    "post-dce8216d-2ad0-44c2-b2e6-a6374b276582": {
+      "deleted": false,
+      "era": "明",
+      "script": "草书",
+      "year": 0,
+      "dateLabel": "明代（15世纪末—16世纪初）",
+      "glyph": "手",
+      "order": 41,
+      "title": "草书诗卷",
+      "place": "台北",
+      "museum": "国立故宫博物院",
+      "status": "馆藏题名《明祝允明杂书诗帖》卷；墨迹",
+      "milestone": "把曹植乐府的情绪推入狂草起伏，体现明代草书对晋唐传统的再创造。",
+      "description": "用户榜单沿用《草书诗帖》名称，常指书曹植《箜篌引》《美女篇》《白马篇》《名都篇》四首的长卷；同题作品很多，上传前须明确本卷馆藏与题款，不能拿另一件诗帖代替。",
+      "textStatus183": "尚未取得可核对的本帖完整释文；管理员上传时逐页校录，不以同名文章代替本帖全文",
+      "parentId": "",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/2517?dep=P",
+      "style": "zhang",
+      "size": 40,
+      "zoom": 200,
+      "cover143": "",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
+      "author": "祝允明书；曹植诗",
+      "authorPosition151": "",
+      "fullText148": "",
+      "videoUrl148": "",
+      "videoTitle148": "",
+      "pageNames": [
+        "IMG_4779.jpeg"
+      ],
+      "pages": [
+        "timeline/pages/post-dce8216d-2ad0-44c2-b2e6-a6374b276582/mv7fcpz1-0/IMG_4779.jpeg"
+      ]
     }
   },
   "order129": []
