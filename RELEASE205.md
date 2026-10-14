@@ -23,6 +23,8 @@ Era and script values are canonicalized for both options and matching. Author ch
 
 Passport gates use the exact `masterpieces10` list. Three Rarities count as one group while recognizing the saved source identity of its individual pieces. Ten equal-width pairs show originals alongside saved user ink. Saved album pages can be selected; the original switches with the chosen page. Export uses archived artwork when available rather than the 240px preview. The share button generates one 1200px-wide PNG containing all ten gates, invokes native file sharing when supported, and otherwise downloads it. Unavailable images retain an explicit placeholder rather than deleting a gate.
 
-Validation: 52 targeted checks, including generated writer initialization with stalled reads, save/delete concurrency, group completion, author normalization, overlapping loader lifetimes, paired page selection and a real canvas 1200×6080 PNG export. Canvas comparison inspected for dense horizontal joins, sweeping strokes and running turns. Native iOS/Harmony touch response and system share sheets have not been verified.
+Validation: 53 targeted checks, including generated writer initialization with stalled reads, save/delete concurrency, group completion, author normalization, overlapping loader lifetimes, paired page selection and a real canvas 1200×6080 PNG export. Canvas comparison inspected for dense horizontal joins, sweeping strokes and running turns. Native iOS/Harmony touch response and system share sheets have not been verified.
 
 Incoming catalogue upload commits are retained. Alternate titles match an exact institutional object URL when it identifies a specific object, preventing unrelated poems from being substituted.
+
+The common modal normalizer excludes waiting205, so it cannot add an unrelated settings heading to the globe. Collapsing a wait surface is labelled accurately and does not claim to navigate home.
