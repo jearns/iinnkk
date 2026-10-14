@@ -6,10 +6,10 @@ const source=fs.readFileSync(new URL('../collaboration128.js',import.meta.url),'
 function harness(owner='me'){
  const actions=[],calls=[],room={id:'room',owner,title:'墨缘'},page={id:'page',title:'纸页'};
  const node=()=>({append(){},replaceChildren(){},setAttribute(){},add(){}});
- const c={room,page,cached:{pages:{room:[page]}},uid:()=> 'me',navigator:{onLine:false},body:node(),document:{createElement:node},Option:function(text,value){this.value=value},roomHeading141:async()=>{},button:(host,label,run)=>actions.push({label,run}),lifecycle142:async r=>calls.push(['dissolve',r.id]),handoff144:async()=>calls.push('handoff'),dialog:{open:false,showModal(){this.open=true},close(){this.open=false;calls.push('close')}},A:{showWriter:()=>calls.push('writer')},persistCache133:async()=>{},mark:()=>{},openPage:async p=>calls.push(['page',p.id])};
+ const c={exitFlight151:null,baseDraft144:null,room,page,cached:{pages:{room:[page]}},uid:()=> 'me',navigator:{onLine:false},body:node(),document:{createElement:node},Option:function(text,value){this.value=value},roomHeading141:async()=>{},button:(host,label,run)=>actions.push({label,run}),lifecycle142:async r=>calls.push(['dissolve',r.id]),handoff144:async()=>calls.push('handoff'),dialog:{open:false,showModal(){this.open=true},close(){this.open=false;calls.push('close')}},A:{showWriter:()=>calls.push('writer')},persistCache133:async()=>{},mark:()=>{},openPage:async p=>calls.push(['page',p.id])};
  vm.createContext(c);
  vm.runInContext(source.slice(source.indexOf(' function lifecycleButtons142('),source.indexOf('\n',source.indexOf(' function lifecycleButtons142('))),c);
- vm.runInContext(source.slice(source.indexOf(' async function dashboard145('),source.indexOf(' async function open(){')),c);
+ vm.runInContext(source.slice(source.indexOf(' async function dashboard145('),source.indexOf(' async function open(')),c);
  return {c,actions,calls};
 }
 test('shared owner dashboard has Enter and Dissolve; Enter hands off before returning to paper',async()=>{

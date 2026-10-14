@@ -2,3 +2,5 @@
 
 /* The toolbar owns the home seal; a second fixed seal overlaps it on narrow Safari. */
 #writerSwitch160{display:none!important}#writerLeft90>#annotationHomeButton{flex:none;width:36px!important;min-width:36px!important}#writerLeft90>#annotationHomeButton img{width:30px!important;height:30px!important}
+
+#copyPreviewStrip161 [data-more209]{flex:0 0 44px;min-width:44px;height:52px;font-size:25px;color:#a44d36;background:transparent;border:1px solid #b6aaa0;border-radius:5px}
