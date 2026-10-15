@@ -1,0 +1,21 @@
+body.ui111 #paperPen100.writingParameters133.paper216{box-sizing:border-box!important;width:min(540px,calc(100vw - 16px))!important;max-width:calc(100vw - 16px)!important;max-height:calc(100dvh - 24px)!important;padding:10px!important;overflow:auto!important}
+body.ui111 #paperPen100.paper216:not([hidden]){display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}
+body.ui111 #paperPen100.paper216[hidden]{display:none!important}
+body.ui111 #paperPen100.paper216>header,body.ui111 #paperPen100.paper216>.assist133,body.ui111 #paperPen100.paper216>.paperLock191,.paperStyles216{grid-column:1/-1!important}
+body.ui111 #paperPen100.paper216>header{margin:0!important;font-size:12px!important}
+body.ui111 #paperPen100.paper216>header button{width:30px!important;min-width:30px!important;height:30px!important;min-height:30px!important;font-size:23px!important}
+body.ui111 #paperPen100.paper216 .parameter133{display:flex!important;flex-direction:column!important;grid-column:auto!important;margin:0!important;padding:5px!important;width:auto!important;min-width:0!important;gap:5px!important;border-radius:8px;background:#e9e2d43d}
+body.ui111 #paperPen100.paper216 .parameter133>span:first-child{font-size:12px!important;white-space:nowrap}
+body.ui111 #paperPen100.paper216 .parameterStepper140{display:grid!important;grid-template-columns:26px minmax(0,1fr) 26px!important;gap:2px!important;width:100%!important;min-width:0!important}
+body.ui111 #paperPen100.paper216 .parameterStepper140 input{display:block!important;width:100%!important;min-width:0!important;max-width:100%!important;height:36px!important;min-height:36px!important;padding:2px 0!important;font:600 25px/1.2 system-ui!important;color:#a6372d!important;background:transparent!important;border:0!important;appearance:textfield!important}
+body.ui111 #paperPen100.paper216 .parameterStepper140 button{width:26px!important;min-width:26px!important;height:32px!important;min-height:32px!important;padding:0!important;font-size:20px!important}
+body.ui111 #paperPen100.paper216 .parameter133 input[type=range]{height:22px!important;min-height:22px!important;flex:none!important}
+body.ui111 #paperPen100.paper216 .parameterPoints133{display:flex!important;flex-wrap:wrap!important;gap:2px!important;overflow:visible!important;justify-content:flex-start!important}
+body.ui111 #paperPen100.paper216 .parameterPoints133 button{font-size:10px!important;min-height:22px!important;padding:2px 3px!important}
+body.ui111 #paperPen100.paper216 .assist133{display:flex!important;margin:0!important;align-items:center!important}
+body.ui111 #paperPen100.paper216 .paperLock191{min-height:30px!important;font-size:11px!important}
+.paperStyles216{display:flex;flex-wrap:wrap;gap:4px}body.ui111 #paperPen100.paper216 .paperStyles216 button{flex:1;min-width:70px;min-height:28px;font-size:11px;padding:3px;border:1px solid #83796530;border-radius:5px;background:#fff8;white-space:nowrap}
+body.ui111 .writingValues133{right:12px!important;bottom:10px!important;left:auto!important;top:auto!important;max-width:calc(100% - 24px)!important}
+body.ui111:is(.overview55,.preview-open56,.hide-top97,.home-open) .writingValues133,body.ui111 .writingValues133[hidden]{display:none!important}
+.selectionStrength216{display:flex;align-items:center;gap:4px;font:11px system-ui;max-width:100%;flex-wrap:wrap}.selectionStrength216 input[type=range]{width:110px;min-width:70px;accent-color:#a6372d}.selectionStrength216 input[type=number]{width:46px!important;min-width:46px!important;text-align:center;font-size:16px}.selectionStrength216 button{min-width:26px;padding:3px!important;font-size:18px}
+@media(max-width:480px){body.ui111 #paperPen100.paper216:not([hidden]){grid-template-columns:minmax(0,1fr)!important;width:min(310px,calc(100vw - 16px))!important}body.ui111 #paperPen100.paper216 .parameter133{display:grid!important;grid-template-columns:minmax(0,1fr) 160px!important;align-items:center}body.ui111 #paperPen100.paper216 .parameter133>input[type=range],body.ui111 #paperPen100.paper216 .parameterPoints133{grid-column:1/-1!important}}

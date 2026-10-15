@@ -36,7 +36,7 @@
  function invalidatePreview186(){revision++;clearBlob();if(dialog?.open){dialog.querySelector('[data-png]').removeAttribute('href');dialog.querySelector('[data-save]').disabled=true;refreshPreview(true);dialog.querySelector('[data-status]').textContent='设置已更改，预览尚未更新 · 点导出生成高清图片'}}
  function visible(){dock.hidden=!A.isOverview55()||document.body.classList.contains('home-open')}
  for(const type of ['ink-view-changed90','mode-ready109'])document.addEventListener(type,visible);visible();
- $('export').ariaLabel='保存作品';$('export').onclick=async()=>{if(manualBusy)return;manualBusy=true;try{if(compositing183){A.toast(dialog?.open?'导出图片正在生成，请先关闭下载窗口再保存':'导出任务正在结束，请稍后保存，笔迹仍保留');return}const result=await A.manualSave182();A.toast('作品已存入我的作品；需要导出时，可从作品中点下载')}catch(e){A.toast(e?.message||'操作未完成，请重试；当前笔迹已保留')}finally{manualBusy=false}};
+ $('export').ariaLabel='保存作品';$('export').onclick=async()=>{if(manualBusy)return;manualBusy=true;try{if(compositing183){A.toast(dialog?.open?'导出图片正在生成，请先关闭下载窗口再保存':'导出任务正在结束，请稍后保存，笔迹仍保留');return}const result=await A.manualSave182();await window.CopyAlbums38?.bookReady158?.();A.toast('作品已存入我的作品；需要导出时，可从作品中点下载')}catch(e){A.toast(e?.message||'操作未完成，请重试；当前笔迹已保留')}finally{manualBusy=false}};
  remember();window.ExportStudio181=window.DownloadStudio182={ready:true,manualSave:()=>$('export').onclick(),idle:()=>queue.catch(()=>{}),openSaved,showSettings,refreshPreview,get settings(){return{...settings}}};
 })();
 
