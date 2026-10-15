@@ -39,11 +39,11 @@ await writeFile('writer.html',(await readFile('index-source106.html','utf8')).re
 
 
 // Historical home pages retain these URLs. Keep tiny aliases, never obsolete runtimes.
-const engineAlias189='<script>location.replace(new URL("writer211.html"+location.search+location.hash,location.href).href)</script>';
+const engineAlias189='<script>location.replace(new URL("writer212.html"+location.search+location.hash,location.href).href)</script>';
 for(let version=154;version<=188;version++)await writeFile('engine'+version+'.html',engineAlias189);
 console.log('Complete runtime:',names.join(' '),cn);
 
-await writeFile('writer211.html',await readFile('writer.html','utf8'));
+await writeFile('writer212.html',await readFile('writer.html','utf8'));
 await writeFile('writer208.html',engineAlias189);
 await writeFile('writer209.html',engineAlias189);
 await writeFile('writer210.html',engineAlias189);
@@ -68,3 +68,5 @@ await writeFile('writer206.html',engineAlias189);
 await writeFile('writer207.html',engineAlias189);
 
 await writeFile('writer207-fix1.html',engineAlias189);
+
+await writeFile('writer211.html',engineAlias189);

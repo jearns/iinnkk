@@ -205,7 +205,8 @@
     "revision192.js",
     "revision204.js",
     "revision206.js",
-    "revision207.js"
+    "revision207.js",
+    "floating-post212.js"
   ],
   "styles": [
     "style.css",
@@ -321,6 +322,7 @@
     "revision207.css",
     "revision208.css",
     "revision210.css",
-    "revision211.css"
+    "revision211.css",
+    "revision212.css"
   ]
 }
