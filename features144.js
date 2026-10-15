@@ -2,21 +2,178 @@
 (function init(){if(!window.AnnotationHome||!window.Revision90?.ready&&!window.Revision88?.ready){setTimeout(init,100);return}
 const A=AnnotationApp,$=id=>document.getElementById(id),E=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text)e.textContent=text;return e};
 const slides=[
- {"id": "single-scene", "k": "手笔 · 大字反复练", "title": "永字八法走起来，\n大字先拿下。", "sub": "抹掉，再来一遍。\n等你驾驭好了大字，\n小字终于也可以……重新学了。", "cta": "写一个大字", "ink": "#263e35", "paper": "#eee7d5", "accent": "#a74732"},
- {"id": "nobel-scene", "k": "手笔 · 诺奖句子亲笔摘抄", "title": "写不出诺奖，\n还不能抄几句？", "sub": "诺奖又要来了，先亲手摘抄几句。\n靠抄成为诺奖第一人？想得挺美。\n评委没空读？这事咱可不敢赌。", "cta": "摘抄诺奖作品", "ink": "#263e35", "paper": "#eee7d5", "accent": "#a74732"},
- {"id": "copy-scene", "k": "手笔 · 喜欢的帖子统统临", "title": "大神的帖子，\n这辈子统统临一遍。", "sub": "踩着千年笔墨，一笔一划往前走。\n最后大神都会写了，\n自己怎么走？明天再研究。", "cta": "去临喜欢的帖", "ink": "#263e35", "paper": "#eee7d5", "accent": "#a74732"},
- {"id": "relay-scene", "k": "手笔 · 亲友接力共书", "title": "文字方舟都开工了，\n你怎么又去追剧？", "sub": "孩子、家人、朋友、老外，一起接力。\n学汉字、成语接龙、手写留言。\n说好一起写，别只负责已读。", "cta": "邀大家一起写", "ink": "#263e35", "paper": "#eee7d5", "accent": "#a74732"},
- {id:'hello-world',n:'00',k:'亲笔 · 问好世界',title:'在世界的每个角落，\n写下你的问好。',sub:'山村、海岛、街巷与远方。\n无论你在哪里，亲笔都能让世界听见。',cta:'亲笔向世界问好',ink:'#314b3e',paper:'#f1ecdf',accent:'#a44d36',glyph:'世'},
- {id:'civilization',n:'01',k:'文字 · 人类共同的长卷',title:'从世界各处，\n写向同一个人类。',sub:'甲骨、泥板、纸莎草与羊皮卷。\n不同文明留下不同笔迹，我们在这里相遇。',cta:'沿文明长卷漫游',ink:'#eae4cf',paper:'#273b42',accent:'#dbb47b',glyph:'文'},
- {id:'handwriting',n:'02',k:'亲笔 · 穿越千年的共鸣',title:'一笔落下，\n千年后仍有人懂。',sub:'书写，是文明、思想与表达最直觉的印记。\n纸上留下的，是一个人曾经鲜活的心跳。',cta:'留下今天的亲笔',ink:'#42382e',paper:'#eee3cc',accent:'#a44d35',glyph:'心'},
- {id:'constellation',n:'03',k:'手笔 · 文字方舟',title:'人类群星闪耀时',sub:'一起结网记字，打造文字方舟！',cta:'加入这一卷星光',ink:'#eee9da',paper:'#29352f',accent:'#d6b779',glyph:'星'},
- {id:'reference',n:'01',k:'临帖浮窗',title:'古人的帖，\n就在你的笔边。',sub:'看原帖、翻组图、定位字格。\n浮窗相伴，让每一笔都有来处。',cta:'去临兰亭序',ink:'#243e38',paper:'#f0ead9',accent:'#c3603b',glyph:'永'},
- {id:'passport',n:'02',k:'我的书法通关文牒',title:'二十帖。\n把千年，亲笔走一遍。',sub:'古人原帖在左，你的临写在右。\n一站一印，认真写过的今天都会留下。',cta:'展开我的文牒',ink:'#faf0d6',paper:'#283e36',accent:'#d9ae67',glyph:'牒'},
- {id:'reader',n:'03',k:'文摘浮窗',title:'好文章，\n写一点就近一点。',sub:'全文就在笔边，边读边写。\n从前赤壁赋，写到你自己的江山。',cta:'亲笔写前赤壁赋',ink:'#3b414b',paper:'#e9edf0',accent:'#af533d',glyph:'赋'},
- {id:'relay',n:'04',k:'接力共书',title:'同一卷纸。\n不同时光的相逢。',sub:'朋友接力题跋，各自钤印。\n今天落笔，明天有人接续。',cta:'发起一卷墨缘',ink:'#442e28',paper:'#f1e1ce',accent:'#b23326',glyph:'缘'},
- {id:'expand',n:'05',k:'四向拓纸',title:'灵感还没写完？\n纸，跟你走。',sub:'预览三击显示拓纸箭头。\n点击或外拉加纸，向内收回。',cta:'试试四向拓纸',ink:'#e8e9df',paper:'#34464a',accent:'#d5a174',glyph:'展'},
- {id:'heritage',n:'06',k:'印 · 墨 · 纸',title:'把世界的颜色，\n写进自己的字。',sub:'印墨纸三色，取意世界遗产。\n读一段设计理念，写一张远方来信。',cta:'遇见一组世界遗产配色',ink:'#294943',paper:'#e3e8d9',accent:'#b36041',glyph:'境'},
- {id:'gestures',n:'07',k:'手势书写',title:'指尖一动。\n纸上有天地。',sub:'双击定位，三击拓纸，滑动换景。\n正文与题跋，也可以双指三击切换。',cta:'打开手势体验',ink:'#4b3847',paper:'#efe6ea',accent:'#a14b4b',glyph:'指'}
+ {
+  "id": "single-scene",
+  "k": "手笔 · 大字练习",
+  "title": "大字起笔，\n练出自己的手笔。",
+  "sub": "从一个字开始，感受提按与转折。\n写一遍，再写一遍，每一笔都算数。",
+  "cta": "从手笔大字开始",
+  "ink": "#263e35",
+  "paper": "#eee7d5",
+  "accent": "#a74732"
+ },
+ {
+  "id": "nobel-scene",
+  "k": "手笔 · 文学摘抄",
+  "title": "把文学的光，\n写成自己的手笔。",
+  "sub": "读一句打动你的话，亲手把它留下。\n让经典走过指尖，也走进日常。",
+  "cta": "用手笔摘抄经典",
+  "ink": "#263e35",
+  "paper": "#eee7d5",
+  "accent": "#a74732"
+ },
+ {
+  "id": "copy-scene",
+  "k": "手笔 · 经典临写",
+  "title": "临千年名帖，\n见自己的手笔。",
+  "sub": "兰亭的流转，颜体的风骨。\n一笔一划相遇，慢慢写出自己的理解。",
+  "cta": "用手笔临一帖",
+  "ink": "#263e35",
+  "paper": "#eee7d5",
+  "accent": "#a74732"
+ },
+ {
+  "id": "relay-scene",
+  "k": "手笔 · 亲友共书",
+  "title": "这一纸手笔，\n等你一起接着写。",
+  "sub": "孩子、家人、朋友，各自写下一笔。\n把问候与心意，留在同一张纸上。",
+  "cta": "邀请大家共留手笔",
+  "ink": "#263e35",
+  "paper": "#eee7d5",
+  "accent": "#a74732"
+ },
+ {
+  "id": "hello-world",
+  "n": "00",
+  "k": "手笔 · 问好世界",
+  "title": "让世界，\n看见你的手笔。",
+  "sub": "山村、海岛、街巷与远方。\n以手为笔，把今天的心意写给世界。",
+  "cta": "留下我的手笔",
+  "ink": "#314b3e",
+  "paper": "#f1ecdf",
+  "accent": "#a44d36",
+  "glyph": "世"
+ },
+ {
+  "id": "civilization",
+  "n": "01",
+  "k": "手笔 · 文明长卷",
+  "title": "一方手笔，\n相遇万千文明。",
+  "sub": "从甲骨到纸笺，从东方到远方。\n循着文字，读懂人类留下的印记。",
+  "cta": "随手笔漫游文明",
+  "ink": "#eae4cf",
+  "paper": "#273b42",
+  "accent": "#dbb47b",
+  "glyph": "文"
+ },
+ {
+  "id": "handwriting",
+  "n": "02",
+  "k": "手笔 · 见字如面",
+  "title": "千年之后，\n仍认得你的手笔。",
+  "sub": "落笔的轻重，藏着独一无二的你。\n让今天的心跳，在纸上留下回声。",
+  "cta": "写下今天的手笔",
+  "ink": "#42382e",
+  "paper": "#eee3cc",
+  "accent": "#a44d35",
+  "glyph": "心"
+ },
+ {
+  "id": "constellation",
+  "n": "03",
+  "k": "手笔 · 文字方舟",
+  "title": "以每个人的手笔，\n续写人类的星光。",
+  "sub": "一起结网记字，打造文字方舟。\n让平凡的一笔，也有被看见的位置。",
+  "cta": "加入手笔文字方舟",
+  "ink": "#eee9da",
+  "paper": "#29352f",
+  "accent": "#d6b779",
+  "glyph": "星"
+ },
+ {
+  "id": "reference",
+  "n": "01",
+  "k": "手笔 · 浮帖参考",
+  "title": "名帖在旁，\n手笔更有来处。",
+  "sub": "浮帖可移动、缩放、翻页。\n原帖就在笔边，边看边写，从容落笔。",
+  "cta": "打开手笔浮帖",
+  "ink": "#243e38",
+  "paper": "#f0ead9",
+  "accent": "#c3603b",
+  "glyph": "永"
+ },
+ {
+  "id": "passport",
+  "n": "02",
+  "k": "手笔 · 书法文牒",
+  "title": "以一路手笔，\n走过千年名帖。",
+  "sub": "一帖一站，一笔一印。\n把认真临写的时光，收进自己的文牒。",
+  "cta": "展开手笔文牒",
+  "ink": "#faf0d6",
+  "paper": "#283e36",
+  "accent": "#d9ae67",
+  "glyph": "牒"
+ },
+ {
+  "id": "reader",
+  "n": "03",
+  "k": "手笔 · 随读随写",
+  "title": "读到心动，\n就用手笔记下。",
+  "sub": "好文章放在笔边，全文随时翻阅。\n读懂一段，亲手写下，留给日后的自己。",
+  "cta": "随手笔读写好文章",
+  "ink": "#3b414b",
+  "paper": "#e9edf0",
+  "accent": "#af533d",
+  "glyph": "赋"
+ },
+ {
+  "id": "relay",
+  "n": "04",
+  "k": "手笔 · 接力共书",
+  "title": "你一笔，我一笔，\n共成一卷手笔。",
+  "sub": "朋友接力题跋，各自钤印。\n今天留下的心意，明天有人接续。",
+  "cta": "发起手笔共书",
+  "ink": "#442e28",
+  "paper": "#f1e1ce",
+  "accent": "#b23326",
+  "glyph": "缘"
+ },
+ {
+  "id": "expand",
+  "n": "05",
+  "k": "手笔 · 四向拓纸",
+  "title": "手笔未尽，\n纸上自有远方。",
+  "sub": "预览三击，展开四向拓纸。\n点击或拖动加纸，让灵感接着往下写。",
+  "cta": "延展我的手笔",
+  "ink": "#e8e9df",
+  "paper": "#34464a",
+  "accent": "#d5a174",
+  "glyph": "展"
+ },
+ {
+  "id": "heritage",
+  "n": "06",
+  "k": "手笔 · 山河配色",
+  "title": "山河入色，\n万象落于手笔。",
+  "sub": "墨、纸、印的颜色，取意世界遗产。\n读一段设计理念，写一张远方来信。",
+  "cta": "遇见手笔山河配色",
+  "ink": "#294943",
+  "paper": "#e3e8d9",
+  "accent": "#b36041",
+  "glyph": "境"
+ },
+ {
+  "id": "gestures",
+  "n": "07",
+  "k": "手笔 · 指尖书写",
+  "title": "指尖就是笔，\n随时留下手笔。",
+  "sub": "双击定位，上滑换色，三击拓纸。\n从正文到落款，让表达跟着手指走。",
+  "cta": "体验手笔书写",
+  "ink": "#4b3847",
+  "paper": "#efe6ea",
+  "accent": "#a14b4b",
+  "glyph": "指"
+ }
 ];
 const culture=['hello-world','civilization','handwriting','constellation'];slides.sort((a,b)=>{const rank=s=>culture.includes(s.id)?culture.indexOf(s.id):s.id.endsWith('-scene')?4:5;return rank(a)-rank(b)});
 if(!window.WriterOnly157){
@@ -29,3 +186,4 @@ async function launch(id){if(id==='single-scene'){const mode=InkStudio50.config.
 function gestureGuide(){let d=$('gestureGuide144');if(!d){d=E('dialog','gestureGuide144');d.id='gestureGuide144';const h=E('header','dialogHead'),x=E('button','','×');x.type='button';x.onclick=()=>d.close();h.append(E('h2','','指尖书写指南'),x);d.append(h);for(const [gesture,action]of [['预览 · 单指双击','定位到落点，进入书写'],['预览 · 单指三击','显示或隐藏四向拓纸箭头'],['预览 · 上滑','全屏并切换色彩'],['全屏 · 左右滑','切换装裱框架'],['全屏 · 下滑','退出全屏并展开配置'],['书写 · 双指拖动','移动纸张'],['双指三击','正文 ↔ 落款题跋'],['四击','切换格线'],['五击','清空当前书写区'],['六击','撤销上一步']]){const row=E('p');row.append(E('strong','',gesture),E('span','',action));d.append(row)}d.append(E('small','','清空前先保存作品；可用撤销找回当前步骤。'));document.body.append(d)}d.showModal()}
 window.Features144={slides,launch,gestureGuide};
 })();
+

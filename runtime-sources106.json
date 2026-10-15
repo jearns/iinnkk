@@ -28,6 +28,7 @@
     "paper-ink188.js",
     "paper-preview194.js",
     "paper-end197.js",
+    "writing-presets215.js",
     "app.js",
     "annotation-home.js",
     "process-video.js",
@@ -193,6 +194,7 @@
     "revision161.js",
     "nobel-women175.js",
     "copy-float182.js",
+    "background-export215.js",
     "export-studio182.js",
     "settings182.js",
     "custom-brush196.js",
@@ -207,7 +209,8 @@
     "revision206.js",
     "revision207.js",
     "floating-post212.js",
-    "revision214.js"
+    "revision214.js",
+    "revision215.js"
   ],
   "styles": [
     "style.css",
@@ -325,6 +328,7 @@
     "revision210.css",
     "revision211.css",
     "revision212.css",
-    "revision214.css"
+    "revision214.css",
+    "revision215.css"
   ]
 }
