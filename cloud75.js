@@ -2,7 +2,7 @@
 (function init(){if(!window.AnnotationApp?.ready||!window.Community47?.ready||!window.IInkSupabaseSDK||!window.IINNKK_SUPABASE){setTimeout(init,90);return}
 const {url,anonKey}=window.IINNKK_SUPABASE;
 if(!url||!anonKey)return;
-const db=window.IInkSupabaseSDK.createClient(url,anonKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true,flowType:'implicit'}}),$=id=>document.getElementById(id),app=AnnotationApp;
+const db=window.IInkSupabaseSDK.createClient(url,anonKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true,flowType:'implicit'},global:{fetch:window.Gallery210.fetch}}),$=id=>document.getElementById(id),app=AnnotationApp;
 let pendingSignup126=false,resumeAuthBusy126=false,lastResumeAuth126=0;let founder132=AuthState189.cached().founder;let user=AuthState189.cached().user,role=AuthState189.cached().role,busy=false,availableOAuth={},authDraft93={email:'',password:''},profileRequested93=new URLSearchParams(location.search).get('account')==='profile';
 try{authDraft93.email=localStorage.getItem('ink.email93')||''}catch{}
 const authReturn93=()=>location.origin+location.pathname+'?account=profile';

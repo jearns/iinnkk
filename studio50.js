@@ -27,7 +27,7 @@ try{const n=config.nav,single=n.find(x=>x.id==='single'),copyMode=n.find(x=>x.id
 // V129 migrates the four core entrances, including retained local configurations.
 for(const n of config.nav){if(n.id==='letter')n.title='独创';if(n.id==='photo'){n.id='shared';n.title='共书'}if(n.id==='copy'){n.size=35;n.zoom=200}}
 config.nav=coreNavigation129(config.nav);
-const entry195={single:{size:150,zoom:100,preset:'yan',style:50},copy:{size:75,zoom:300,preset:'wang',style:75},letter:{size:35,zoom:300,preset:'wang',style:75},shared:{size:20,zoom:300,preset:'yan',style:50}};
+const entry195={single:{size:150,zoom:100,preset:'yan',style:50},copy:{size:30,zoom:350,preset:'wang',style:70},letter:{size:15,zoom:350,preset:'zhang',style:100},shared:{size:20,zoom:300,preset:'yan',style:50}};
 for(const n of config.nav)if(entry195[n.id])Object.assign(n,entry195[n.id]);
 try{localStorage.setItem(KEY,JSON.stringify(config))}catch{}
 let app,unlocked=!!localStorage.getItem(AUTH)&&localStorage.getItem('iinnkk.remember55')==='yes',admin,selected=config.nav[0]?.id,status,applying=false,managementParent53=null;

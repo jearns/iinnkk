@@ -1,6 +1,7 @@
 {
   "scripts": [
     "compat106.js",
+    "gallery210.js",
     "startup173.js",
     "brush.js",
     "mount.js",
@@ -316,6 +317,7 @@
     "revision205.css",
     "revision206.css",
     "revision207.css",
-    "revision208.css"
+    "revision208.css",
+    "revision210.css"
   ]
 }
