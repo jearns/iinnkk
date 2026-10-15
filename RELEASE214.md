@@ -1,0 +1,13 @@
+# 214 — Unified 浮帖 and writing controls
+
+The toolbar 浮帖, preview 临帖 → 一键浮帖, and 纸色 → 帖纸 use one FloatingPost214 surface. The toolbar starts the catalogue picker; copy preview opens the current reference image. Its image fills the window, with overlaid pick/previous/next/fill/float/clean/close icons and an opacity icon at the top right. Opacity opens a horizontal glass touch slider. Drag the title to move, drag the resize handle to resize, and use two pointers to zoom/pan the image. Processing never overwrites original pixels.
+
+Fill adopts the source image ratio without transforming existing strokes and stores the original paper ratio/extent/view. Closing the floating window retains its background. Only cancel-fill restores the previous paper dimensions and camera. The paper entry defaults to clean + fill and includes that background in saved/exported work; ordinary floating references retain the prior reference-only export behavior. Saved drafts retain filled image data and the paper state needed for cancellation. Copy preview begins with 一键浮帖、 一键浮字、 一键去字; export 悬浮 is renamed 一键浮字. The former reference window is retired from the active UI.
+
+Downward full-screen exit reveals controls without changing colours; upward palette changes obey 换色/定色. Autumn remains a selectable excerpt category and no longer forces selection. Automatic paper movement starts around mid-screen, including signature writing. Signature defaults are strength 75, pen 8, zoom 350%; exit restores the complete prior brush and view.
+
+Toolbar order: left logo, 纸笔、墨色、文摘、浮帖、扩展、走纸、落款、选字、音乐、录屏; right 撤销、返回、换色/定色、清屏、预览/书写、保存、作品. The logo stays pinned and cannot be reordered. The menu is accessed through the avatar's 后台管理 → 工具菜单. Late settings restoration reapplies the new toolbar structure.
+
+Waiting recommendations open the chosen work directly in image-browse mode. The home carousel's first artwork reuses the animated 3D multilingual globe. The image cache and quota circuit from 213 remain intact.
+
+Validation: 42 targeted executable checks pass, covering the floating surface, reversible controls, paper restoration, drag/pinch, toolbar, earlier paper movement, signature restoration, background checkpoint isolation, local work startup, image processing, exports, and 213 duplicate-download/quota protections. Runtime scripts and styles are transformed with the established Safari 13/Chrome 79 target; current runtime manifests and offline core are regenerated. No real iPad/iPhone visual or touch acceptance was performed; managed preview has no supported control-browser skill. No real Supabase image downloads were used for testing.
