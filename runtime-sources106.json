@@ -1,6 +1,7 @@
 {
   "scripts": [
     "compat106.js",
+    "catalogue-notes211.js",
     "gallery210.js",
     "startup173.js",
     "brush.js",
@@ -51,6 +52,7 @@
     "studio50.js",
     "revision53.js",
     "writer-entry154.js",
+    "writer-styles211.js",
     "heritage.js",
     "reading.js",
     "quotes-refresh.js",
@@ -318,6 +320,7 @@
     "revision206.css",
     "revision207.css",
     "revision208.css",
-    "revision210.css"
+    "revision210.css",
+    "revision211.css"
   ]
 }

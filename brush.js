@@ -16,9 +16,9 @@
  ];
  const names194=['李斯·篆书','蔡邕·隶书','颜真卿·楷书','王羲之·行书','张旭·草书'],keys194=['lisi','cai','yan','wang','zhang'];
  const notes194=['泰山刻石：玉箸匀线，中锋圆转，藏头护尾；结体宜修长。','熹平石经：逆入蚕头，长横波磔，主笔燕尾；结体宜扁阔。','多宝塔碑：横轻竖重，折处顿按，捺脚拖刀；结体宜方正。','兰亭序：露锋入纸，提按映带，牵丝轻灵；欹正随手写取势。','古诗四帖：提按悬殊，连绵绞转，收锋自然；随真实轨迹。'];
- const presets194=Object.fromEntries(keys194.map((key,i)=>[key,{...profiles194[i],size:[150,250,150,30,15][i],name:names194[i],desc:notes194[i],lineStrength108:[0,25,50,70,100][i],styleVersion194:194,...Object.fromEntries(channels194.map((name,j)=>[name,i===j?1:0])),kaishu127:i===2}]));
+ const presets194=Object.fromEntries(keys194.map((key,i)=>[key,{...profiles194[i],size:[150,200,150,25,75][i],name:names194[i],desc:notes194[i],lineStrength108:[0,25,50,75,80][i],styleVersion194:194,...Object.fromEntries(channels194.map((name,j)=>[name,i===j?1:0])),kaishu127:i===2}]));
  function lineProfile108(value){const level=clamp(Number(value)||0,0,100),i=Math.min(3,Math.floor(level/25)),f=(level-i*25)/25,out={lineStrength108:level,styleVersion194:194,kaishu127:false};for(const name of Object.keys(profiles194[0]))out[name]=mix(profiles194[i][name],profiles194[i+1][name],f);for(let j=0;j<5;j++)out[channels194[j]]=j===i?1-f:j===i+1?f:0;return out}
- Object.assign(presets194.zhang,lineProfile108(100),{size:15});Object.assign(presets194.wang,lineProfile108(70),{size:30});
+ Object.assign(presets194.zhang,lineProfile108(80),{size:75});Object.assign(presets194.wang,lineProfile108(75),{size:25});
  function radiusForSpeed(v,s,p=null){s=settings(s);v*=s.speedResponse||1;const slow=1/(1+Math.pow(Math.max(v,0)/.24,1.85));let load=mix(.85,.025+slow*.98,Math.pow(clamp(s.dynamics,0,1),.20));if(p!==null)load=mix(load,.018+Math.pow(clamp(p,0,1),1.25)*1.04,.88);return s.size*.5*s.fullness*load}
  function dryForSpeed(v,s,p=null){v*=s.speedResponse||1;let d=s.dry*Math.pow(clamp((v-.20)/.80,0,1),.70);if(p!==null)d=Math.max(d,s.dry*Math.pow(1-p,2)*.7);return Math.min(.85,d)}
  let canvasFactory=null;const masks=new Map(),grains194=new Map();
