@@ -57,7 +57,7 @@
   "app-runtime.479f9d3158e2c7fb.js",
   "app-runtime.13922b873fa76359.css",
   "home-runtime.ebfacaee122ba775.css",
-  "home-runtime.869aae53ddc80034.js",
+  "home-runtime.87bf4cbcb2eadf6f.js",
   "catalogue-picker183.js",
   "copy-download212.js",
   "calligraphy-rank-data183.js",
@@ -70,5 +70,6 @@
   "fonts/interface-core165.woff2",
   "fonts/annotation-hand.woff2",
   "fonts/yishan167.woff2",
-  "fonts/seal-core167.woff2"
+  "fonts/seal-core167.woff2",
+  "featured-images213.js"
 ]

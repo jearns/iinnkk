@@ -1,0 +1,18 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import vm from 'node:vm';
+import {readFile} from 'node:fs/promises';
+const source=await readFile('featured-images213.js','utf8');
+function images(){const window={};vm.runInNewContext(source,{window,Blob});return window.FeaturedImages213}
+const work={id:'1',image_path:'owner/one.jpg',updated_at:'2026-10-15'};
+function fixture(){let cached=null,signs=0,downloads=0,writes=0;return {get cached(){return cached},get counts(){return{signs,downloads,writes}},options:{read:async()=>cached,write:async(k,v)=>{cached=v;writes++},sign:async()=>{signs++;return 'https://example.test/img?token='+signs},fetch:async()=>{downloads++;return new Response(new Blob(['picture']))},thumbnail:async blob=>blob}}}
+test('first display downloads once; later visits reuse bytes without signing or network',async()=>{const f=fixture(),api=images();const first=await api.load([work],f.options);assert.ok(first[0].thumb instanceof Blob);await api.load([work],f.options);assert.deepEqual(f.counts,{signs:1,downloads:1,writes:2});assert.equal(f.cached.rows[0].src,undefined)});
+test('version change invalidates only changed work',async()=>{const f=fixture(),api=images();await api.load([work,{...work,id:'2'}],f.options);await api.load([{...work,updated_at:'new'},{...work,id:'2'}],f.options);assert.equal(f.counts.downloads,3)});
+test('removed recommendations do not remain in persistent cache',async()=>{const f=fixture(),api=images();await api.load([work],f.options);await api.load([],f.options);assert.equal(f.cached.rows.length,0)});
+test('network failure has no automatic retry',async()=>{let calls=0;const f=fixture();f.options.fetch=async()=>{calls++;throw Error('offline')};assert.equal((await images().load([work],f.options)).length,0);assert.equal(calls,1)});
+test('local persistence failure still returns displayable image',async()=>{const f=fixture();f.options.write=async()=>{throw Error('quota')};assert.equal((await images().load([work],f.options)).length,1)});
+const monitor=await readFile('monitor207.js','utf8');
+function page(storage,network,clock){const listeners={},window={fetch:network,IINNKK_SUPABASE:{url:'https://project.supabase.co'}};const ctx={window,Blob,Response,URL,crypto:{randomUUID:()=> 'session'},performance:{now:()=>1000},Date:{now:()=>clock.time},location:{href:'https://iinnkk.me',pathname:'/'},localStorage:storage,setTimeout:()=>1,clearTimeout(){},addEventListener:(type,fn)=>{listeners[type]=fn},document:{addEventListener(){},visibilityState:'visible'},requestAnimationFrame(){}};vm.runInNewContext(monitor,ctx);return window}
+function storage(){const data=new Map();return{getItem:k=>data.get(k),setItem:(k,v)=>data.set(k,v)}}
+test('402 opens circuit in same page and other tabs; unrelated fetch passes through',async()=>{let calls=0;const s=storage(),clock={time:100};const network=async()=>{calls++;return new Response('{}',{status:402})};const a=page(s,network,clock);await a.fetch('https://project.supabase.co/storage/v1/object/sign/x');await a.fetch('https://project.supabase.co/rest/v1/ink_works');const b=page(s,network,clock);await b.fetch('https://project.supabase.co/auth/v1/user');assert.equal(calls,1);await b.fetch('https://iinnkk.me/home-data154.json');assert.equal(calls,2);clock.time+=1800001;await a.fetch('https://project.supabase.co/auth/v1/user');assert.equal(calls,3)});
+test('monitor flush never uploads diagnostics',async()=>{let calls=0;const p=page(storage(),async()=>{calls++;return new Response('{}')},{time:1});p.Monitor207.record('error','test');await p.Monitor207.flush();assert.equal(calls,0)});
