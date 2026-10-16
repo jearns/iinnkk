@@ -22,7 +22,7 @@ async function syncWork(record,makePublic=false){if(!requireLogin())return;if(pu
 // Legacy /api sync shortcuts retired in 192; Supabase handles work actions.
 
 // The retired /api/ publishing button must not compete with the Supabase work actions.
-document.addEventListener('work-archived',async e=>{if(me){try{await syncWork(await DraftStore.get(e.detail.id))}catch(err){app.toast('本机已保存，云端同步未完成：'+err.message)}}});
+document.addEventListener('work-archived',async e=>{if(me&&e.detail.choice?.publish===true){try{await syncWork(await DraftStore.get(e.detail.id),true)}catch(err){app.toast('本机已保存，云端同步未完成：'+err.message)}}});
 // Inking activity: only active writing plus short inter-stroke gaps; no time while browsing or idle.
 let activity={id:crypto.randomUUID(),day:new Date().toLocaleDateString('sv-SE'),seconds:0,characters:0,strokes:0},lastStroke=0,lastBox=null,activityTimer;
 document.addEventListener('ink-stroke',e=>{if(!me)return;const p=e.detail.points;if(!p.length)return;const duration=Math.max(.05,(p.at(-1).t-p[0].t)/1000),now=Date.now(),xs=p.map(p=>p.x),ys=p.map(p=>p.y),box={x:(Math.min(...xs)+Math.max(...xs))/2,y:(Math.min(...ys)+Math.max(...ys))/2};activity.seconds+=duration+(lastStroke?Math.min(2,Math.max(0,(now-lastStroke)/1000-duration)):0);activity.strokes++;if(!lastBox||Math.hypot(box.x-lastBox.x,box.y-lastBox.y)>.32){activity.characters++;lastBox=box}lastStroke=now;clearTimeout(activityTimer);activityTimer=setTimeout(flushActivity,12000)});
@@ -61,4 +61,5 @@ try{await loadSession();site=await api('/api/site');registerCMS();applySceneOrde
 await loadGallery();const shared=new URLSearchParams(location.search).get('work');if(shared)openWork(shared).catch(report);
 window.Community47={ready:true,api,openAdmin,openWork,saveCloudSettings,startReference,get user(){return me},get site(){return site}};
 })();
+
 

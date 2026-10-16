@@ -1,6 +1,8 @@
 {
   "scripts": [
     "compat106.js",
+    "context-guard217.js",
+    "paper-motion217.js",
     "catalogue-notes211.js",
     "gallery210.js",
     "startup173.js",
@@ -211,7 +213,8 @@
     "floating-post212.js",
     "revision214.js",
     "revision215.js",
-    "revision216.js"
+    "revision216.js",
+    "revision217.js"
   ],
   "styles": [
     "style.css",
@@ -331,6 +334,7 @@
     "revision212.css",
     "revision214.css",
     "revision215.css",
-    "revision216.css"
+    "revision216.css",
+    "revision217.css"
   ]
 }
