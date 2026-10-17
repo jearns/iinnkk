@@ -8,10 +8,11 @@
    const legacy=page.draft;if(book.version192===192&&page.draftRef192&&!legacy){page.invalid179=false;page.owned181=true;continue}if(!legacy&&!page.owned181&&!page.preview159&&!page.workIds?.length){page.invalid179=true;page.owned181=false;continue}const cached=await store.get(key);let draft=draftOwned(cached,book,page)?cached:draftOwned(legacy,book,page)?legacy:null,ownedWork=null;const ids=[];
    for(const id of [...new Set(page.workIds||[])]){const work=await store.get(id);if(!tag(work?.copySource141,book,page))continue;ids.push(id);if(work.draft?.writingMode149==='copy'&&!draft){draft=work.draft;ownedWork=work}}
    if(!draft&&!ownedWork){if(page.preview159||legacy||cached)await store.set('copy-quarantine181:'+book.id+':'+page.id128,{draft:legacy,cached,preview159:page.preview159,workIds:page.workIds});page.preview159='';page.draft=null;page.invalid179=true;page.owned181=false;await store.delete(book.id+':art161:'+page.id128)}
-   else{page.draft={...draft,copyPage181:{albumId179:book.id,pageId179:page.id128},copyFloat181:page.copyFloat181||draft.copyFloat181};page.invalid179=false;page.owned181=true;await store.set(key,page.draft);if(ownedWork?.thumbnail&&!page.preview159){page.preview159=await new Promise(resolve=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=()=>resolve('');r.readAsDataURL(ownedWork.thumbnail)})}}
+   else{page.draft={...draft,copyPage181:{albumId179:book.id,pageId179:page.id128},copyFloat181:page.copyFloat181||draft.copyFloat181};page.invalid179=false;page.owned181=true;if(root.ReferenceAssets222)page.draft=root.ReferenceAssets222.thin(page.draft,book,page);await store.set(key,page.draft);if(ownedWork?.thumbnail&&!page.preview159){page.preview159=await new Promise(resolve=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=()=>resolve('');r.readAsDataURL(ownedWork.thumbnail)})}}
    if(!tag(page.previewPage181,book,page))page.preview159='';if(!tag(page.artPage181,book,page))await store.delete(book.id+':art161:'+page.id128);page.workIds=ids;
   }return book;
  }
  root.CopyIntegrity181={clean,draftOwned,tag};
 })(typeof window==='undefined'?globalThis:window);
+
 
