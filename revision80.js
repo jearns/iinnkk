@@ -2,7 +2,7 @@
 (function init(){
  if(!window.AnnotationApp?.ready||!window.DailyQuotes38||!window.Revision62||!window.Timeline73||!document.getElementById('previewRatio79')){setTimeout(init,80);return}
  const $=id=>document.getElementById(id),A=AnnotationApp;
- for(const nav of [$('homeQuick47'),$('writerModes53')]){const buttons=[...nav?.querySelectorAll('button')||[]],photo=buttons.find(b=>b.textContent.trim()==='图文'),create=buttons.find(b=>b.textContent.trim()==='创作');if(photo&&create)nav.insertBefore(photo,create)}
+ for(const nav of [$('homeQuick47'),$('writerModes53')]){const buttons=[...nav?.querySelectorAll('button')||[]],photo=buttons.find(b=>(window.I18n218?.matches?.(b,"图文")||b.textContent.trim()==='图文')),create=buttons.find(b=>(window.I18n218?.matches?.(b,"创作")||b.textContent.trim()==='创作'));if(photo&&create)nav.insertBefore(photo,create)}
  // A bookmark is a reference sheet. Reading it never changes the selected work.
  const bookmark=$('dailyDialog'),quoteText=$('quoteText'),source=bookmark?.querySelector('.bookmarkSource79'),picker=bookmark?.querySelector('.bookmarkPicker79');
  quoteText?.addEventListener('click',e=>e.stopImmediatePropagation(),true);
@@ -16,4 +16,5 @@
  // Page controls remain within reach while a long model book is being traced.
  const float=document.createElement('div');float.id='copyNav80';float.innerHTML='<button type="button" data-copy="prev" aria-label="临帖上一页">‹</button><button type="button" data-copy="view" aria-label="拼帖预览">▤</button><button type="button" data-copy="next" aria-label="临帖下一页">›</button>';document.body.append(float);const sync=()=>{const quick=$('copyPageQuick38');const hidden=(!window.SharedInk128?.active149&&(!quick||quick.hidden))||document.body.classList.contains('home-open');if(float.hidden!==hidden)float.hidden=hidden;for(const [key,id] of [['prev','copyPrev38'],['next','copyNext38']]){const target=float.querySelector('[data-copy="'+key+'"]'),disabled=!!$(id)?.disabled;if(target.disabled!==disabled)target.disabled=disabled}};for(const [key,id] of [['prev','copyPrev38'],['next','copyNext38'],['view','copyPageQuick38']])float.querySelector('[data-copy="'+key+'"]').onclick=()=>$(id)?.click();new MutationObserver(sync).observe($('copyPageQuick38'),{attributes:true,attributeFilter:['hidden']});new MutationObserver(sync).observe($('copyPrev38').parentElement,{subtree:true,attributes:true,attributeFilter:['disabled']});sync();
 })();
+
 

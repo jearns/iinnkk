@@ -5,7 +5,7 @@
  const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
  const brand=home.querySelector('.annotationBrand'),brandBox=brand.querySelector('div'),hero=brandBox.querySelector('h1');
  // A single real seal in the hero; its counterpart appears only once the hero leaves view.
- hero.replaceChildren();const logo=el('img','heroSeal90');logo.src='brand.svg';logo.alt='篆书手字印章';hero.append(logo,el('span','','手笔'));
+ hero.replaceChildren();const logo=el('img','heroSeal90');logo.src='brand.svg';logo.alt='篆书手字印章';hero.append(logo,el('span','','手筆'));
  const sub=brandBox.querySelector('p');sub.textContent='以手为笔·iinnkk.me·留下真迹';
  const syncHeroWidth=()=>{if(home.clientWidth>0)root.style.setProperty('--home-width91',home.clientWidth+'px')};new ResizeObserver(syncHeroWidth).observe(home);syncHeroWidth();
  const intro=home.querySelector('.annotationIntro');const constellation=el('img','heroConstellation91');constellation.loading='lazy';constellation.alt='';constellation.setAttribute('aria-hidden','true');constellation.decoding='async';intro.replaceChildren(constellation,el('strong','','人类群星闪耀时'),el('small','','一起结网记字，打造文字方舟！'));
@@ -147,3 +147,4 @@
  root.classList.add('v88-ready','v89-ready','v90-ready');syncView();updateReader();
  window.Revision88={ready:true,palette,applyPalette};window.Revision89={ready:true};window.Revision90={ready:true,syncView,syncInk,normalize,openExcerpts,showReader};window.Revision91={ready:true};
 })();
+

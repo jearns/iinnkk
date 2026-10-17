@@ -24,9 +24,9 @@
  function gridForRatio(){const square=Math.abs(+ratio.value-1)<.000001;$('showLines').value=square?'yes':'no';if(square)$('ruling').value='mi';A.refreshPaper();}
  ratio.addEventListener('change',gridForRatio);
  $('previewRatio79').onclick=()=>{const steps=effects.querySelector('.finalSteps54'),rail=effects.querySelector('.finalRail54');for(const b of steps.children)b.setAttribute('aria-current',String(b===$('previewRatio79')));const row=document.createElement('div');row.className='ratioRail80';for(const o of [...ratio.options].filter(o=>! /自定义/.test(o.textContent))){const b=document.createElement('button');b.textContent=o.textContent.replace(/ ·.*/,'');b.setAttribute('aria-pressed',String(o.value===ratio.value));b.onclick=()=>{const overview=A.isOverview55();ratio.value=o.value;ratio.dispatchEvent(new Event('change',{bubbles:true}));if(overview&&!A.isOverview55())$('fitView').click();for(const other of row.children)other.setAttribute('aria-pressed',String(other===b))};row.append(b)}const custom=document.createElement('button');custom.textContent='自定义比例';custom.onclick=()=>{big.showModal();common.scrollLeft=0};row.append(custom);rail.replaceChildren(row)};
- for(const b of effects.querySelectorAll('.finalSteps54 button'))if(b.textContent.trim()==='线条')b.textContent='格线';
+ for(const b of effects.querySelectorAll('.finalSteps54 button'))if((window.I18n218?.matches?.(b,"线条")||b.textContent.trim()==='线条'))b.textContent='格线';
  // Enter photo layout directly from the mode bar and keep upload as the first accent action.
- const choices=Revision62.photoPanel.querySelector('.photoChoices106'),upload=[...choices.children].find(b=>b.textContent==='添加图片');choices.prepend(upload);upload.classList.add('upload107');
+ const choices=Revision62.photoPanel.querySelector('.photoChoices106'),upload=[...choices.children].find(b=>(window.I18n218?.matches?.(b,"添加图片")||b.textContent==='添加图片'));choices.prepend(upload);upload.classList.add('upload107');
  document.addEventListener('click',e=>{const b=e.target.closest('#writerModes53 button,#homeQuick47 button');if(b?.textContent.trim()!=='图文')return;e.preventDefault();e.stopImmediatePropagation();InkStudio50.applyMode(InkStudio50.config.nav.find(n=>n.id==='photo')||{...InkStudio50.config.nav.find(n=>n.id==='letter'),id:'photo',title:'图文'}).catch(InkStudio50.report)},true);
  const photo=$('photoModeTools'),aspect=$('photoAspect');$('board').parentElement.append(photo);photo.prepend(aspect);$('photoCropMode').textContent='调整图片';const replace=document.createElement('button');replace.type='button';replace.textContent='替换图片';replace.onclick=()=>$('photoReplace').click();photo.append(replace);
  const workspace=$('board').parentElement;let photoFrame=0;function photoLayout(){photoFrame=0;const height=photo.hidden?0:44;workspace.style.setProperty('--photo107',height+'px');A.refresh()};new MutationObserver(()=>{if(!photoFrame)photoFrame=requestAnimationFrame(photoLayout)}).observe(photo,{attributes:true,attributeFilter:['hidden']});workspace.style.setProperty('--photo107','0px');
@@ -39,4 +39,5 @@
  const credit=A.getState().paletteCredit96;if(credit)A.setPaletteCredit96({...credit,idea:Revision94.designIdea104(credit.idea)});
  window.Revision107={ready:true,templates};
 })();
+
 

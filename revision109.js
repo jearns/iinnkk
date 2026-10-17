@@ -2,7 +2,7 @@
  if(!window.Revision108?.ready){setTimeout(init109,40);return}
  const A=AnnotationApp,$=id=>document.getElementById(id),effects=$('previewEffects55'),steps=effects.querySelector('.finalSteps54'),rail=effects.querySelector('.finalRail54');document.body.classList.add('ui109');
  const lineBody109=$('lineDialog108').querySelector('.dialogBody');steps.addEventListener('click',()=>{if(lineBody109.parentElement!==$('lineDialog108'))$('lineDialog108').append(lineBody109);effects.classList.remove('customStyle109')},true);
- const choices=Revision62.photoPanel.querySelector('.photoChoices106'),postcard=[...choices.children].find(b=>b.textContent==='明信片');choices.children[0].after(postcard);
+ const choices=Revision62.photoPanel.querySelector('.photoChoices106'),postcard=[...choices.children].find(b=>(window.I18n218?.matches?.(b,"明信片")||b.textContent==='明信片'));choices.children[0].after(postcard);
  function button(name,fn){const b=document.createElement('button');b.type='button';b.textContent=name;b.onclick=fn;return b}
  function configuration(name,ids,dialog){let tab=[...steps.children].find(b=>b.textContent.trim()===name);if(!tab){tab=button(name,()=>{});steps.append(tab)}tab.onclick=()=>{for(const b of steps.children)b.setAttribute('aria-current',String(b===tab));effects.classList.remove('photoActive63');const group=document.createElement('div');group.className='settings109';for(const id of ids){const source=$(id);if(!source)continue;const label=document.createElement('label');label.textContent=(source.closest('label')?.childNodes[0]?.textContent||id).trim();const input=source.cloneNode(true);input.removeAttribute('id');input.value=source.value;input.dataset.slider100='yes';input.dataset.stepper63='yes';input.setAttribute('aria-label',label.textContent);const update=()=>{source.value=input.value;source.dispatchEvent(new Event(source.type==='range'?'input':'change',{bubbles:true}));A.refreshPaper();A.persist()};input.onchange=update;if(input.type==='range')input.oninput=update;label.append(input);group.append(label)}group.append(button('更多设置',()=>A.openDialog(dialog)));rail.replaceChildren(group)}}
  configuration('印章',['headMode','headText','headType','headSize','sealMode','tailText','tailType','tailSize'],'sealDialog');
@@ -16,4 +16,5 @@
  function quoteGroup(q){let era=String(q.dynasty||q.era||'').trim();const aliases={'唐代':'唐','唐朝':'唐','初唐':'唐','盛唐':'唐','中唐':'唐','晚唐':'唐','北宋':'宋','南宋':'宋','两宋之际':'宋','宋代':'宋','宋朝':'宋','元代':'元','明代':'明','清代':'清'};era=aliases[era]||era;return (q.country==='中国'||!q.country)&&era?era:q.country||era||'其他'}
  window.Revision109={ready:true,status,quoteGroup};
 })();
+
 

@@ -20,7 +20,7 @@
  function syncGrid(){busy=true;for(const [r,id]of [[rows,'rows'],[cols,'columns']]){r.max=String(Math.max(+r.max,+$(id).value));r.value=$(id).value}const total=+rows.value* +cols.value;for(const r of [chars,cells]){r.max=String(Math.max(+r.max,total));r.value=total};for(const r of [rows,cols,chars,cells])r.parentElement.querySelector('output').textContent=r.value;busy=false}
  function updateGrid(key,v){if(busy)return;if(key==='rows'||key==='columns'){$(key).max=String(Math.max(1000,v*2));$(key).value=v}else{const n=Math.ceil(v/Math.max(1,+$('columns').value));$('rows').max=String(Math.max(10000,n));$('rows').value=n}$('letterLayout').value='custom';A.refreshPaper();A.persist();syncGrid()}
  rows=slider(gb,'行数','gridRows108',1,1000,v=>updateGrid('rows',v));cols=slider(gb,'列数','gridCols108',1,1000,v=>updateGrid('columns',v));chars=slider(gb,'字数','gridChars108',1,10000,v=>updateGrid('total',v),[1,2,3,4,5,7,10,16]);cells=slider(gb,'格数','gridCells108',1,10000,v=>updateGrid('total',v),[1,2,4,9,16,25]);const note=document.createElement('small');note.textContent='字数与格数按当前列数补齐整行；改行列不改变已有笔迹。';gb.append(note);
- const tabs=$('previewEffects55').querySelector('.finalSteps54');const gridTab=[...tabs.children].find(b=>b.textContent.trim()==='格线'),oldGrid=gridTab.onclick;gridTab.onclick=()=>{oldGrid.call(gridTab);const rail=$('previewEffects55').querySelector('.finalRail54'),b=document.createElement('button');b.id='gridCounts108';b.textContent='行列字格';b.onclick=()=>{syncGrid();select.value=$('showLines').value==='no'?'none':$('ruling').value;grid.showModal()};rail.append(b)};
+ const tabs=$('previewEffects55').querySelector('.finalSteps54');const gridTab=[...tabs.children].find(b=>(window.I18n218?.matches?.(b,"格线")||b.textContent.trim()==='格线')),oldGrid=gridTab.onclick;gridTab.onclick=()=>{oldGrid.call(gridTab);const rail=$('previewEffects55').querySelector('.finalRail54'),b=document.createElement('button');b.id='gridCounts108';b.textContent='行列字格';b.onclick=()=>{syncGrid();select.value=$('showLines').value==='no'?'none':$('ruling').value;grid.showModal()};rail.append(b)};
  // Photo contours are shared by live paper, editor mask, saved drafts and export.
  const aspect=$('photoAspect');aspect.setAttribute('aria-label','调整轮廓');aspect.replaceChildren(new Option('调整轮廓',''),...[['正方形','square'],['长方形','rectangle'],['圆形','circle'],['折扇形','fan'],['团窗形','window']].map(([n,v])=>new Option(n,v)));
  // Group existing work actions without replacing their handlers or cloud controls.
@@ -45,4 +45,5 @@
  const originalSyncGrid=syncGrid;syncGrid=()=>{originalSyncGrid();for(const r of [rows,cols,chars,cells]){$(r.id+'Number').value=r.value}};
  window.Revision108={ready:true};
 })();
+
 
