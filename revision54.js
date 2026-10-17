@@ -9,7 +9,7 @@ try{if(!localStorage.getItem('iinnkk.nav54')){const key='iinnkk.studio.v1',c=JSO
 // Branding and default seals.
 
 const brand=document.querySelector('.annotationBrand');if(brand){brand.querySelector('p').textContent='见墨如我·iinnkk.me';brand.querySelectorAll('.homeDomain44').forEach(e=>e.hidden=true)}
-if(['亲笔手书','亲笔书写'].includes($('headText').value))$('headText').value='今日亲笔';
+if(['亲笔手书','亲笔书写'].includes($('headText').value))$('headText').value='今日手笔';
 document.querySelectorAll('[data-save-settings],#saveSettings').forEach(b=>b.textContent='保存设置');
 
 // Keep the status centered and factual.
@@ -29,7 +29,7 @@ let url='',renderToken=0,craft='';
 // https://www.dpm.org.cn/collection/handwriting/231809.html
 // https://www.dpm.org.cn/study_detail/98489.html
 const groups={
- '书风':[...Object.entries(A.presets).flatMap(([key,p])=>key==='yan'?[[p.name,key,p.desc],['行书 · 颜真卿','yanxing','宽博行气，纸张350% · 书风50 · 笔径20']]:[[p.name,key,p.desc]]),['自定义','custom195','融合五套书风，自由调节']],
+ '书风':[...Object.entries(A.presets).flatMap(([key,p])=>key==='yan'?[[p.name,key,p.desc],['行书 · 颜真卿','yanxing','宽博行气，纸张350% · 书风50 · 笔径15']]:[[p.name,key,p.desc]]),['自定义','custom195','融合五套书风，自由调节']],
  '墨迹':[['玄黑','#050505','玄墨沉静，浓淡枯润皆有余地。'],['雪白','#fffaf0','白墨映深笺，留出清醒的光。'],['朱红','#c62820','朱砂醒目，适合题签与祝愿。'],['靛蓝','#245782','靛蓝沉着，如青花落在纸上。'],['藤黄','#dab636','藤黄明亮，深笺上如金光。'],['烟紫','#78518e','烟紫含蓄，兼有古意与现代气息。'],['自定','custom','自定墨色，留住个人的气息。']],
  '纸色':[['本色宣','#f5f1e6','温润自然，最接近日常宣纸观感'],['仿古笺','#e4d5b5','岁月感温厚，适合古文诗词'],['淡红笺','#efded6','含蓄喜庆，适合书信与祝愿'],['墨黑','#161918','深邃醒目，宜白墨与朱砂'],['朱红','#b12722','正红笺，适合书写春联'],['地黄','#f4c430','温暖明亮的地黄'],['天蓝','#0055a4','鲜明深蓝的法式纸色'],['无色透明','transparent','保留笔迹，纸色透明'],['帖纸','post188','从名帖中提取纸张和朱印作为背景'],['相机','photo184','拍照或上传图片铺满背景纸'],['自定','custom','自定义纸色']],
  '线条':[['竖线','vertical','竖写行气清晰'],['横线','horizontal','现代横写更易阅读'],['米字格','mi','八向参照，适合单字结构'],['回宫格','hui','内外宫位帮助收放'],['米字叠回宫','mi-hui','八向参照叠加内外宫位'],['无格线','none','只留纸墨呼吸']],

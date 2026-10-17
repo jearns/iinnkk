@@ -1,0 +1,37 @@
+{
+  "images": [
+    {
+      "id": "world-sumerian218",
+      "pages": [
+        "timeline/pages/world-sumerian218/inventory.jpg"
+      ],
+      "url": "https://www.metmuseum.org/art/collection/search/322464",
+      "imageCredit218": "The Metropolitan Museum of Art · Public Domain / CC0 · 缩小展示",
+      "imageLicense218": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "id": "world-gilgamesh218",
+      "pages": [
+        "timeline/pages/world-gilgamesh218/sumerian-poem.jpg",
+        "timeline/pages/world-gilgamesh218/akkadian-flood.jpg"
+      ],
+      "url": "https://collections.ashmolean.org/object/462299",
+      "imageCredit218": "图1：Zunkir · CC BY-SA 4.0；图2：BabelStone · CC0；均缩小展示",
+      "imageLicense218": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "world-hammurabi218",
+      "pages": [
+        "timeline/pages/world-hammurabi218/stele.jpg"
+      ],
+      "url": "https://collections.louvre.fr/en/ark:/53355/cl010174436",
+      "imageCredit218": "图：Rlunaro · Public Domain · 缩小展示",
+      "imageLicense218": "https://creativecommons.org/publicdomain/mark/1.0/"
+    }
+  ],
+  "upstreamFiles": [
+    "https://commons.wikimedia.org/wiki/File:Gilgamesh_and_Huwawa_Ashmolean.jpg",
+    "https://commons.wikimedia.org/wiki/File:British_Museum_Flood_Tablet.jpg",
+    "https://commons.wikimedia.org/wiki/File:Hammurabi_code.jpg"
+  ]
+}

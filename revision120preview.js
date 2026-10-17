@@ -20,5 +20,6 @@
   const next={...draft,flow:{strokes},signatureStrokes:[],values:{...draft.values,paperExtent:'manual',ratio:String(width/height),columns:String(cols),rows:String(rows),zoom:'400',guideMode:'off',sceneChoice:'none'},infiniteExtent:{w:width,h:height},camera:{x:2.5,y:0},writingView110:{camera:{x:2.5,y:0},focused:true},editingWork110:null};
   await A.restoreDraft(next);A.showWriter();A.persist();A.toast('已载入 1000 字位 / 2000 笔；可试缩放、变色与预览拖边')
  }catch(error){A.toast('样本未能载入：'+error.message)}finally{sample.disabled=false}};
- window.PreviewPaper120={expand,place,toggle:()=>{enabled=!enabled;const check=document.getElementById('paperEdgeEnabled120');if(check)check.checked=enabled;place();A.toast(enabled?'四向扩纸已开启':'四向扩纸已收起');return enabled}};
+ window.PreviewPaper120={expand,place,open218:()=>{enabled=true;const check=document.getElementById('paperEdgeEnabled120');if(check)check.checked=true;place();return true},toggle:()=>{enabled=!enabled;const check=document.getElementById('paperEdgeEnabled120');if(check)check.checked=enabled;place();A.toast(enabled?'四向扩纸已开启':'四向扩纸已收起');return enabled}};
 })();
+

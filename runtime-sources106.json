@@ -43,6 +43,7 @@
     "written-pages192.js",
     "copy-integrity181.js",
     "copy-reference184.js",
+    "group-settings218.js",
     "copy-albums38.js",
     "offline38.js",
     "offline189.js",
@@ -89,6 +90,7 @@
     "timeline74-cloud.js",
     "timeline77-curation.js",
     "timeline78-data.js",
+    "world-content218.js",
     "timeline94-data.js",
     "reference-frames136.js",
     "reference-gallery136.js",
@@ -214,7 +216,9 @@
     "revision214.js",
     "revision215.js",
     "revision216.js",
-    "revision217.js"
+    "revision217.js",
+    "media-editor218.js",
+    "revision218.js"
   ],
   "styles": [
     "style.css",
@@ -335,6 +339,7 @@
     "revision214.css",
     "revision215.css",
     "revision216.css",
-    "revision217.css"
+    "revision217.css",
+    "revision218.css"
   ]
 }
