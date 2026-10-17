@@ -3,6 +3,7 @@
     "compat106.js",
     "context-guard217.js",
     "paper-motion217.js",
+    "art-locations223.js",
     "catalogue-notes211.js",
     "gallery210.js",
     "startup173.js",
@@ -17,6 +18,7 @@
     "creative-legacy.js",
     "creative.js",
     "practice.js",
+    "preview-selection223.js",
     "ink-selection.js",
     "zip.js",
     "annotation-templates.js",
@@ -219,7 +221,8 @@
     "revision216.js",
     "revision217.js",
     "media-editor218.js",
-    "revision218.js"
+    "revision218.js",
+    "camera223.js"
   ],
   "styles": [
     "style.css",
@@ -343,6 +346,7 @@
     "revision217.css",
     "revision218.css",
     "revision219.css",
-    "revision220.css"
+    "revision220.css",
+    "revision223.css"
   ]
 }
