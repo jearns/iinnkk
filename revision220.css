@@ -10,3 +10,8 @@
 .worldTile219>.worldDots219{position:absolute;z-index:3;bottom:7px;left:50%;transform:translateX(-50%);background:none;color:#fff;pointer-events:none;font:18px/18px system-ui;letter-spacing:4px;text-shadow:0 1px 5px #000}
 @media(max-width:600px){.worldTile219>.worldInfo220{padding:28px 10px 23px}.worldInfo220>strong{font-size:17px;line-height:1.4}.worldInfo220>time,.worldInfo220>small{font-size:9px;line-height:1.4}.worldInfo220>small{-webkit-line-clamp:2}.worldInfo220>a{font-size:7px}}
 @media(max-width:380px){.worldInfo220>strong{font-size:14px}.worldInfo220>small{-webkit-line-clamp:1}.worldInfo220>time,.worldInfo220>strong,.worldInfo220>small,.worldInfo220>a{margin-top:3px}}
+/* Keep flags inside the selector only; match the neighboring toolbar glyphs. */
+.language218 .languageFlag220{display:none!important}
+#home154 .actions154 #account154.avatar154{width:23px!important;height:23px!important;min-width:23px!important;min-height:23px!important;max-width:23px!important;max-height:23px!important;flex:0 0 23px!important;padding:0!important;box-sizing:border-box;font-size:14px!important;line-height:23px!important;overflow:hidden}
+#home154 .actions154 #account154.avatar154 img{display:block;width:100%!important;height:100%!important;object-fit:cover}
+@media(max-width:600px){#home154 .actions154 #account154.avatar154{width:21px!important;height:21px!important;min-width:21px!important;min-height:21px!important;max-width:21px!important;max-height:21px!important;flex-basis:21px!important;line-height:21px!important;font-size:13px!important}}
