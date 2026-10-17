@@ -9,3 +9,11 @@
 .sceneFeed225{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important;inset:0!important}
 
 #engineStatus158>button,[data-loading-home225]{border:0!important;background:transparent!important;box-shadow:none!important;font-size:11px!important;padding:5px 9px!important;color:inherit;opacity:.65}.releaseStatus198 #offlineProgress189{min-width:0;overflow:hidden;text-overflow:ellipsis}
+
+body.liveScene225 [id*=expandHandle],body.liveScene225 #paperExpansion123,body.liveScene225 .paperEdgeHandle123{display:none!important}
+#nearby223 .nearbyPlaces224{display:inline-flex;gap:14px;max-width:85vw;overflow-x:auto;vertical-align:middle} .modes154{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+
+body.liveScene225 #previewEdges120{display:none!important}
+#writerModes53{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+
+#homeQuick47{grid-template-columns:repeat(5,minmax(0,1fr))!important}body.home-open #annotationHome #homeQuick47.scrolled148{grid-template-columns:44px repeat(5,minmax(0,1fr))!important}
