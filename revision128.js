@@ -8,5 +8,6 @@
  async function flush(){if(!dirty)return;if(saving||A.isDrawing128()||document.querySelector('#imageDialog[open]')){timer=setTimeout(flush,1500);return}saving=true;dirty=false;try{const record=await A.autosave128();syncCloud(record);lastSaved=Date.now()}catch(e){dirty=true;console.warn('Autosave deferred',e);timer=setTimeout(flush,5000)}finally{saving=false}}
  document.addEventListener('ink-stroke',queueAutosave);document.addEventListener('visibilitychange',()=>{if(document.hidden)flush()});
  document.addEventListener('contextmenu',e=>{if(e.target.closest('#copyDock111,#copyPages38,#copyAlbumViewer38,.timelineArrow73,.copyReference128,.referenceThumbs128'))e.preventDefault()},true);
- window.Revision128={ready:true,queueAutosave,flush,saveOnSwitch129:async()=>{if(window.SharedInk128?.active149){A.finish();await SharedInk128.persist149();return null}A.finish();clearTimeout(timer);dirty=false;const task=A.captureTransition212?.();task?.then(syncCloud).catch(()=>{});await C.saveCurrent?.();return null}};
+ window.Revision128={ready:true,queueAutosave,flush,saveOnSwitch129:async()=>{if(window.SharedInk128?.active149){A.finish();await SharedInk128.persist149();return null}A.finish();clearTimeout(timer);dirty=false;if(C.active&&!C.paused129){await C.saveCurrent?.();return null}const task=A.captureTransition212?.();task?.then(syncCloud).catch(()=>{});await C.saveCurrent?.();return null}};
 })();
+

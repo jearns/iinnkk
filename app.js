@@ -493,7 +493,7 @@ CreativePaper.onReady=()=>{paperCacheKey='';miniRevision++;overviewKey='';backgr
 
 resize();
 
-$('fitView').onclick=()=>{if(active)return;if(photoEditing)endPhotoEdit();cancelAutoMove();if(overview&&lastWritingView){overview=false;focused=true;resize();const a=writingArea(),m=gridMetrics(),old=lastWritingView.camera,q=vertical()?{x:Math.min(a.x+a.w-m.dx/2,old.x+W/(2*S)),y:a.y+m.dy/2}:{x:a.x+m.dx/2,y:Math.min(a.y+a.h-m.dy/2,old.y+H/(2*S))};wrapFocus=q;locate(q.x,q.y);updateGuide()}else fitPaper()};
+$('fitView').onclick=()=>{if(active)return;if(photoEditing)endPhotoEdit();cancelAutoMove();if(overview&&lastWritingView){overview=false;focused=true;resize();const a=writingArea(),m=gridMetrics(),old=lastWritingView.camera,q=vertical()?{x:Math.min(a.x+a.w-m.dx/2,old.x+W/(2*S)),y:a.y+m.dy/2}:{x:a.x+m.dx/2,y:Math.min(a.y+a.h-m.dy/2,old.y+H/(2*S))};wrapFocus=q;locate(q.x,q.y);updateGuide()}else{fitPaper();window.PreviewPaper120?.open218?.()}};
 
 
 function drawBrand(t,b){const item=sealItem('head');if(item&&item.config.text.trim())stamp39(t,item.config,item.x*b.w,item.y*b.h,item.size,item.angle)}
