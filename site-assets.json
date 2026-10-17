@@ -478,5 +478,17 @@
   "scripts/build224.mjs",
   "tests/release224.test.mjs",
   "tests/release215.test.mjs",
-  "RELEASE224.md"
+  "RELEASE224.md",
+  "revision225.css",
+  "home-runtime.4656a81c20ef2724.js",
+  "app-runtime.6c223b72de7475cc.css",
+  "app-runtime.9bf30be7827bad18.js",
+  "writer225.html",
+  "app-runtime.f3358b76a3bba9c1.js",
+  "app-runtime.85bdb93290472d4f.js",
+  "RELEASE225.md",
+  "app-runtime.00fe7fa9d9e27f73.js",
+  "paper-photo184.js",
+  "tests/release225.test.mjs",
+  "tests/release210.test.mjs"
 ]
