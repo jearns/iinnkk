@@ -224,7 +224,9 @@
     "media-editor218.js",
     "revision218.js",
     "camera223.js",
-    "revision228.js"
+    "revision228.js",
+    "scene-video232.js",
+    "photo-overlay232.js"
   ],
   "styles": [
     "style.css",
@@ -354,6 +356,7 @@
     "revision225.css",
     "revision228.css",
     "revision229.css",
-    "revision230.css"
+    "revision230.css",
+    "revision232.css"
   ]
 }

@@ -27,7 +27,7 @@ test('uploaded video plays as the drawing background without camera permission, 
  const s=scene(t),{w,d}=s;
  const pending=w.LiveScene225.installMedia231(new w.File(['video'],'scene.mp4',{type:'video/mp4'}));
  const video=d.querySelector('video');Object.defineProperty(video,'videoWidth',{value:1920});Object.defineProperty(video,'videoHeight',{value:1080});video.dispatchEvent(new w.Event('loadedmetadata'));
- assert.equal(await pending,true);assert.equal(s.requests,0);assert.equal(s.prepares,1);assert.equal(video.loop,true);assert.equal(video.muted,true);
+ assert.equal(await pending,true);assert.equal(s.requests,0);assert.equal(s.prepares,1);assert.equal(video.loop,false);assert.equal(video.muted,true);
  assert.ok(Math.abs(w.LiveScene225.aspect228-16/9)<1e-9);w.LiveScene225.draw(s.context,390,220,{});assert.equal(s.draws,1);
  assert.equal(await w.LiveScene225.enable(),true);assert.equal(s.requests,0);
  w.LiveScene225.stop();assert.equal(s.revoked,1);assert.equal(video.getAttribute('src'),null);
@@ -40,7 +40,7 @@ test('scene readiness cannot invoke the late random palette handler',()=>{
 test('recording asks for microphone only when selected and samples refreshed scene frames',async t=>{
  const w=new Window(),d=w.document;t.after(()=>w.happyDOM.abort());d.body.innerHTML='<div id="topActions"></div>';
  w.AnnotationApp={ready:true,toast(){}};w.WritingMusic={};w.eval(read('process-video.js'));
- assert.equal(d.getElementById('recordMic39').checked,false);assert.equal(d.getElementById('sceneUpload230').accept,'image/*,video/*');
+ assert.equal(d.getElementById('recordMic39').checked,false);assert.equal(d.getElementById('sceneUpload230').accept,'image/*');assert.equal(d.getElementById('sceneVideo232').accept,'video/*');
  assert.match(read('process-video.js'),/if\(window.LiveScene225\?\.active\)app.liveSceneFrame225\(\)/);
 });
 
@@ -62,3 +62,4 @@ test('failed camera preparation releases its stream and exits scene layout inste
  const s=scene(t),{w,d}=s;w.AnnotationApp.prepareScene225=async()=>{throw Error('preparation failed')};
  assert.equal(await w.LiveScene225.enable(),false);assert.equal(w.LiveScene225.active,false);assert.equal(d.body.classList.contains('liveScene225'),false);assert.equal(s.stops,1);
 });
+test('a selected photo follows photo composition and leaves no live-video controls or camera request',async t=>{const s=scene(t),{w,d}=s;let asset,opened=0;w.HTMLImageElement.prototype.decode=async()=>{};Object.defineProperty(w.HTMLImageElement.prototype,'naturalWidth',{get:()=>1600});Object.defineProperty(w.HTMLImageElement.prototype,'naturalHeight',{get:()=>900});w.HTMLCanvasElement.prototype.getContext=()=>({drawImage(){}});w.HTMLCanvasElement.prototype.toDataURL=()=> 'data:image/jpeg;base64,AA==';w.AnnotationApp.installPhoto223=async a=>asset=a;w.PhotoOverlay232={open(){opened++}};assert.equal(await w.LiveScene225.installImage230(new w.File(['photo'],'photo.jpg',{type:'image/jpeg'})),true);assert.equal(s.requests,0);assert.equal(w.LiveScene225.active,false);assert.equal(d.body.classList.contains('liveScene225'),false);assert.equal(asset.width,1600);assert.equal(opened,1);assert.equal(d.getElementById('sceneActions225').hidden,true)});
