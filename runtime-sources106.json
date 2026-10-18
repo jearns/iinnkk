@@ -222,7 +222,8 @@
     "revision217.js",
     "media-editor218.js",
     "revision218.js",
-    "camera223.js"
+    "camera223.js",
+    "revision228.js"
   ],
   "styles": [
     "style.css",
@@ -349,6 +350,7 @@
     "revision220.css",
     "revision223.css",
     "revision224.css",
-    "revision225.css"
+    "revision225.css",
+    "revision228.css"
   ]
 }

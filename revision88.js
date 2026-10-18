@@ -67,7 +67,7 @@
  // Keep legacy IDs alive for corpus import/editor code; only the title and body are visible.
  for(const child of body.children)child.hidden=child!==text;text.hidden=false;
  function updateReader(q){q=q||window.currentQuote||{};title.textContent=label(q)||'好词好句';$('quoteSource').textContent=label(q);const raw=(['theory','classics','literature','nobel'].includes(q.cat)?q.paragraph||q.original:q.full||q.text)||q.q||'';text.textContent=['poetry','moon','dongpo'].includes(q.cat)&&!raw.includes('\n')?raw.replace(/([。！？])/g,'$1\n').trim():raw;text.scrollTop=0;if(!jump.hidden)renderList();syncInk()}
- const showReader=()=>{syncInk();updateReader();if(!reader.open)reader.show()};
+ const showReader=()=>{A.markExcerpt228?.();syncInk();updateReader();if(!reader.open)reader.show()};
  // Drag from the title or empty space; text remains independently scrollable.
  let drag=null,moved=false;
  reader.addEventListener('pointerdown',e=>{
@@ -139,7 +139,7 @@
  random.addEventListener('pointerdown',()=>{if(!savedPalette){const s=A.getState();savedPalette={paper:s.values.papercolor,ink:s.brush.color,seal:s.values.headColor}}},true);
  reset.onclick=()=>{if(savedPalette){applyPalette(savedPalette);savedPalette=null}else $('resetSettings').click();syncView()};
  let mode='';document.addEventListener('mode-changed54',e=>{closeExcerpts();mode=e.detail.id;$('quotesVisibility').value='shown';$('quotesVisibility').dispatchEvent(new Event('change'));A.resetSealPosition('head');reader.close();requestAnimationFrame(syncView)});
- document.addEventListener('quote-changed',e=>{if(!window.Revision94)applyPalette(palette());updateReader(e.detail)});
+ document.addEventListener('quote-changed',e=>{if(reader.open)A.markExcerpt228?.();if(!window.Revision94)applyPalette(palette());updateReader(e.detail)});
  for(const event of ['change','input'])document.addEventListener(event,e=>{if(/ink|color/i.test(e.target.id))syncInk()},true);
  // Core emits this after state changes, so mode labels/watermark/ink cannot drift.
  document.addEventListener('ink-view-changed90',()=>{syncView();syncInk()});
