@@ -226,7 +226,8 @@
     "camera223.js",
     "revision228.js",
     "scene-video232.js",
-    "photo-overlay232.js"
+    "photo-overlay232.js",
+    "revision234.js"
   ],
   "styles": [
     "style.css",
@@ -357,6 +358,7 @@
     "revision228.css",
     "revision229.css",
     "revision230.css",
-    "revision232.css"
+    "revision232.css",
+    "revision234.css"
   ]
 }
