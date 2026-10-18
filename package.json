@@ -1,7 +1,7 @@
 {
   "name": "iinnkk",
   "private": true,
-  "version": "229.0.0",
+  "version": "230.0.0",
   "type": "module",
   "scripts": {
     "build": "node scripts/build47.mjs",

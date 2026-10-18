@@ -835,5 +835,16 @@
   "点击全景定位书写位置": "Toca la vista completa para situar la escritura",
   "调整全景导航大小": "Cambiar el tamaño de la navegación panorámica",
   "两字横幅": "Dos caracteres horizontales",
-  "录制中 · 实景设置": "Grabando · Ajustes de escena"
+  "录制中 · 实景设置": "Grabando · Ajustes de escena",
+  "上传实景图片": "Subir imagen de escena",
+  "1字横排": "Horizontal · 1 caracteres",
+  "1字竖排": "Vertical · 1 caracteres",
+  "2字横排": "Horizontal · 2 caracteres",
+  "2字竖排": "Vertical · 2 caracteres",
+  "3字横排": "Horizontal · 3 caracteres",
+  "3字竖排": "Vertical · 3 caracteres",
+  "4字横排": "Horizontal · 4 caracteres",
+  "4字竖排": "Vertical · 4 caracteres",
+  "5字横排": "Horizontal · 5 caracteres",
+  "5字竖排": "Vertical · 5 caracteres"
 }

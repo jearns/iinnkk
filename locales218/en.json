@@ -835,5 +835,16 @@
   "点击全景定位书写位置": "Tap panorama to position writing",
   "调整全景导航大小": "Resize panorama navigator",
   "两字横幅": "Two characters horizontally",
-  "录制中 · 实景设置": "Recording · Scene settings"
+  "录制中 · 实景设置": "Recording · Scene settings",
+  "上传实景图片": "Upload scene image",
+  "1字横排": "Horizontal · 1 character",
+  "1字竖排": "Vertical · 1 character",
+  "2字横排": "Horizontal · 2 character",
+  "2字竖排": "Vertical · 2 character",
+  "3字横排": "Horizontal · 3 character",
+  "3字竖排": "Vertical · 3 character",
+  "4字横排": "Horizontal · 4 character",
+  "4字竖排": "Vertical · 4 character",
+  "5字横排": "Horizontal · 5 character",
+  "5字竖排": "Vertical · 5 character"
 }
