@@ -33,6 +33,7 @@
     "paper-end197.js",
     "writing-presets215.js",
     "reference-assets222.js",
+    "writing-layout229.js",
     "app.js",
     "annotation-home.js",
     "process-video.js",
@@ -351,6 +352,7 @@
     "revision223.css",
     "revision224.css",
     "revision225.css",
-    "revision228.css"
+    "revision228.css",
+    "revision229.css"
   ]
 }

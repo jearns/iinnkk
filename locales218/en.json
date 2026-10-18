@@ -827,5 +827,13 @@
   "当前地点": "Current place",
   "地址待核": "Address unverified",
   "图片尺寸无效": "Invalid image dimensions",
-  "图片未能打开": "Could not open image"
+  "图片未能打开": "Could not open image",
+  "全景书写导航": "Panoramic writing navigator",
+  "全景": "Overview",
+  "拖动全景导航": "Drag panorama navigator",
+  "关闭全景导航": "Close panorama navigator",
+  "点击全景定位书写位置": "Tap panorama to position writing",
+  "调整全景导航大小": "Resize panorama navigator",
+  "两字横幅": "Two characters horizontally",
+  "录制中 · 实景设置": "Recording · Scene settings"
 }

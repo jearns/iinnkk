@@ -827,5 +827,13 @@
   "当前地点": "Lieu actuel",
   "地址待核": "Adresse à vérifier",
   "图片尺寸无效": "Dimensions d’image invalides",
-  "图片未能打开": "Impossible d’ouvrir l’image"
+  "图片未能打开": "Impossible d’ouvrir l’image",
+  "全景书写导航": "Navigation panoramique de l’écriture",
+  "全景": "Vue entière",
+  "拖动全景导航": "Déplacer la navigation panoramique",
+  "关闭全景导航": "Fermer la navigation panoramique",
+  "点击全景定位书写位置": "Touchez la vue entière pour positionner l’écriture",
+  "调整全景导航大小": "Redimensionner la navigation panoramique",
+  "两字横幅": "Deux caractères horizontaux",
+  "录制中 · 实景设置": "Enregistrement · Réglages de la scène"
 }
