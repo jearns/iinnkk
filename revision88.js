@@ -115,7 +115,7 @@
    button.onclick=()=>{D.select(button.dataset.quoteCategory91);showReader();closeExcerpts()};excerptMenu.append(button);
   }
   if(window.UserExcerpts112){const entry=el('button','','自己录入');entry.id='ownExcerpt112';entry.type='button';entry.setAttribute('role','menuitem');entry.onclick=()=>{closeExcerpts();UserExcerpts112.open()};excerptMenu.append(entry)}
-  excerptMenu.hidden=false;quotes?.setAttribute('aria-expanded','true');placeExcerpts();
+  document.dispatchEvent(new Event('excerpt-menu237'));excerptMenu.hidden=false;quotes?.setAttribute('aria-expanded','true');placeExcerpts();
  }
  if(quotes){quotes.type='button';quotes.onclick=openExcerpts;quotes.setAttribute('aria-pressed','true');quotes.setAttribute('aria-haspopup','menu');quotes.setAttribute('aria-controls',excerptMenu.id);quotes.setAttribute('aria-expanded','false')}
  // One capture handler owns this action, so legacy toolbar click handlers cannot toggle it back off.

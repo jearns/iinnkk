@@ -1,0 +1,21 @@
+/* One row with equal breathing room at the navigation edges. */
+#home154 .modes154{padding-inline:clamp(14px,4vw,28px)!important;box-sizing:border-box}
+/* Media tools stay on the writing surface; templates belong to preview only. */
+body.ui111.mediaMode235:not(.preview-open56) #mediaTools235{display:flex!important}
+body.ui111.mediaMode235:not(.preview-open56) #mediaTemplates235,body.ui111:not(.preview-open56) #singleQuick228{display:none!important}
+body.ui111.mediaMode235:not(.preview-open56) .mediaPopover235:not([hidden]),body.ui111.mediaMode235:not(.preview-open56) .freeCrop235:not([hidden]){display:block!important}
+body.ui111.mediaMode235.reveal-config104 #previewEffects55{display:flex!important}
+body.ui111.mediaMode235.reveal-config104 #previewEffects55 .finalSteps54{display:flex!important;flex-wrap:nowrap;overflow-x:auto}
+body.ui111.mediaMode235.reveal-config104 #previewEffects55 .finalRail54{display:block!important}
+.mediaTracks235{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px 10px!important;width:100%;margin-top:6px}
+.mediaTracks235[hidden]{display:none!important}.mediaTracks235 label{display:flex!important;align-items:center;min-width:0;white-space:normal!important;overflow-wrap:anywhere;font:10px/1.4 system-ui!important;margin:0!important;padding:3px 0!important;color:inherit}
+.mediaTracks235 input{flex:0 0 13px!important;min-width:13px!important;min-height:13px!important;width:13px!important;height:13px!important;margin:0 4px 0 0!important}
+.mediaPopover235 .rangeStepper140 button,.mediaPopover235 .parameterStepper140 button,.mediaPopover235 .numberStepper button{display:none!important}
+.mediaPopover235 input[type=range]{width:100%!important;min-width:0;accent-color:#8b6b46}
+body.ui111 #dailyDialog.quoteBookmark73{background:var(--reader-bg91)!important;color:var(--reader-text90)!important;border-color:var(--reader-ink90)!important}
+body.ui111 #dailyDialog.quoteBookmark73 :is(.dialogHead,.dialogBody,#quoteExpanded,.readerJump90){background:transparent!important;color:inherit!important}
+#excerptCategories91{max-height:75dvh!important;overflow:auto!important;min-width:240px;max-width:calc(100vw - 16px)}
+#excerptCategories91 .quoteSearch235{display:block;width:calc(100% - 12px);margin:6px;padding:8px;font-size:14px}
+#excerptCategories91 .quoteResults235{max-height:42dvh;overflow:auto;padding:0 6px}#excerptCategories91 .quoteResults235 button{width:100%;font-size:11px;white-space:normal;line-height:1.5}
+.selectionSize237{display:flex;align-items:center;gap:4px;min-width:0;font-size:11px}.selectionSize237 input[type=range]{width:90px;min-width:0}.selectionSize237 input[type=number]{width:55px;min-width:0;padding:3px;font-size:13px}
+html,body,body *{-webkit-touch-callout:none}canvas,svg,button,nav{-webkit-user-select:none;user-select:none}
