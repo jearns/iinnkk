@@ -10,3 +10,5 @@ body:not(.home-open) #dailyDialog.quoteBookmark73.searching235{width:min(360px,9
 .exportFooter235{display:flex!important;align-items:center;gap:8px;font-size:11px;margin:8px 0}.exportFooter235 input{min-width:0;flex:1;font-size:12px;padding:5px;background:transparent;border:1px solid #8884;border-radius:4px;color:inherit}
 
 body.ui111.mediaMode235 #previewEffects55,body.ui111.mediaMode235.preview-open56 #previewEffects55,body.ui111.mediaMode235.reveal-config104 #previewEffects55{display:none!important}body.ui111.mediaMode235 .modeRow193{padding-bottom:0!important}body.ui111.mediaMode235 #bottomDock{min-height:45px!important}
+
+body.ui111 .modeRow193[hidden]{display:none!important}body.ui111.mediaMode235 .workspace>.modeRow193{position:absolute!important;bottom:0!important;left:0!important;right:0!important;height:40px!important;z-index:140!important;background:#f7f3e9ed!important;backdrop-filter:blur(12px);padding:2px 6px!important}body.ui111.mediaMode235.preview-open56:not(.liveScene225) #board{bottom:40px!important;height:calc(100% - 40px)!important}.mediaMode235 #previewDock182 button{font-size:9px!important;padding:3px!important;min-height:24px!important}
