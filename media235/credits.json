@@ -1,0 +1,23 @@
+[
+  {
+    "asset": "travel.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:1_zhujiajiao_2023_aerial.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/8/80/1_zhujiajiao_2023_aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "\nChensiyuan",
+    "license": "CC BY-SA 4.0 "
+  },
+  {
+    "asset": "hepburn.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:AudreyKHepburn.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/7/74/AudreyKHepburn.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "\n Bud Fraker  (1916-2002)  [1]",
+    "license": "Public domain"
+  },
+  {
+    "asset": "signature.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Audrey_Hepburn_signature.svg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Audrey_Hepburn_signature.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "\nAudrey Hepburn   Created in vector format by  Scewing",
+    "license": "Public domain"
+  }
+]

@@ -12,7 +12,7 @@ const defaults={version:1,brand:{name:'手筆',slogan:'以手为笔·iinnkk.me·
  ]};
 const formats={square:['斗方',1,'vermillion'],letter:['书信 · 3:4',.75,'letter'],couplet:['对联',.544444,'vermillion'],horizontal:['横幅',1.85567,'vermillion'],middle:['中堂',.538889,'scroll'],plaque:['匾额',3,'plaque'],postcard:['明信片',.75,'postcard'],fan:['扇面',1.8,'studioFan']};
 const E=(tag,attrs={},text)=>{const e=document.createElement(tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,String(v));if(text!==undefined)e.textContent=text;return e};
-function coreNavigation129(nav){const shared=nav.find(n=>n.id==='shared')||nav.find(n=>n.id==='photo'||n.title==='共书'||n.title==='共写');const regular=nav.filter(n=>!['shared','photo'].includes(n.id)&&!['共书','共写'].includes(n.title)).map(n=>n.id==='letter'?{...n,title:'独创'}:n);if(shared)regular.push({...shared,id:'shared',title:'共创'});if(!regular.some(n=>n.id==='scene'))regular.push({...copy(defaults.nav[1]),id:'scene',title:'实景'});const order=['single','copy','letter','shared','scene'];return regular.sort((a,b)=>(order.includes(a.id)?order.indexOf(a.id):4)-(order.includes(b.id)?order.indexOf(b.id):4))}
+function coreNavigation129(nav){const order=['single','copy','letter','photo','scene','shared'];return order.map(id=>{const found=nav.find(n=>n.id===id);return {...copy(defaults.nav.find(n=>n.id===id)||defaults.nav[1]),...found,id,title:({single:'大字',copy:'临帖',letter:'独创',photo:'图文',scene:'实景',shared:'共创'})[id]}})}
 function normalize(raw){
  if(!raw||raw.version!==1||!Array.isArray(raw.nav)||raw.nav.length>24)throw Error('配置格式不正确：最多 24 个入口');
  const c=copy(defaults),ids=new Set();
@@ -25,7 +25,7 @@ let config=copy(defaults),loadError='';try{const raw=localStorage.getItem(KEY);i
 // Upgrade the core entrances for every visitor while preserving administrator custom layouts.
 try{const n=config.nav,single=n.find(x=>x.id==='single'),copyMode=n.find(x=>x.id==='copy'),photo=n.find(x=>x.id==='photo'),letter=n.find(x=>x.id==='letter');if(single){single.title='大字';if((single.size===400||single.size===800)&&single.preset==='ouyang'&&!Object.keys(single.advanced||{}).length){single.size=600;single.preset='yan';single.dry=.15;single.dynamics=.64;single.zoom=100}if(single.size===800&&single.preset==='yan'&&single.zoom===100&&!Object.keys(single.advanced||{}).length&&!localStorage.getItem('iinnkk.bigDefault74')){single.size=600;localStorage.setItem('iinnkk.bigDefault74','1')}}if(copyMode&&letter&&!photo&&!n.find(x=>x.id==='shared'))n.splice(n.indexOf(letter),0,{...copy(letter),id:'photo',title:'图文',ruling:'none',pattern:'none'});localStorage.setItem(KEY,JSON.stringify(config))}catch{}
 // V129 migrates the four core entrances, including retained local configurations.
-config.nav=coreNavigation129(config.nav);for(const n of config.nav){if(n.id==='letter')n.title='独创';if(n.id==='photo'){n.id='shared';n.title='共书'}if(n.id==='copy'){n.size=35;n.zoom=200}}
+config.nav=coreNavigation129(config.nav);for(const n of config.nav){if(n.id==='letter')n.title='独创';if(n.id==='copy'){n.size=35;n.zoom=200}}
 config.nav=coreNavigation129(config.nav);
 const entry195={single:{size:150,zoom:100,preset:'yan',style:50},copy:{size:25,zoom:250,preset:'wang',style:75},letter:{size:75,zoom:250,preset:'zhang',style:80},shared:{size:20,zoom:300,preset:'yan',style:50}};
 for(const n of config.nav)if(entry195[n.id])Object.assign(n,entry195[n.id]);
@@ -39,7 +39,7 @@ function renderNav(){const nav=document.getElementById('homeQuick47');if(!nav)re
 function report(e){app?.toast(e.message||String(e));if(status)status.textContent=e.message||String(e)}
 function knownSelect(id,v,fallback){const el=document.getElementById(id);return el?.options&&[...el.options].some(o=>o.value===String(v))?String(v):fallback}
 async function applyMode(n,internal=false){
- if(n.id==='shared'||n.id==='photo'){if(!window.SharedInk128?.open)throw Error('共书服务正在准备，请稍后重试');if(!window.SharedInk128.active149)await app.configure47({values:{zoom:'300'},size:20,brushPatch:ParticleBrush.lineProfile108(50)});return window.SharedInk128.open()}
+ if(n.id==='shared'){if(!window.SharedInk128?.open)throw Error('共书服务正在准备，请稍后重试');if(!window.SharedInk128.active149)await app.configure47({values:{zoom:'300'},size:20,brushPatch:ParticleBrush.lineProfile108(50)});return window.SharedInk128.open()}
 
  if(window.Modes53&&!internal)return Modes53.activate(n,()=>applyMode(n,true));
  if(n.id==='scene'){await app.showWriter();return window.LiveScene225.enable()}
@@ -50,7 +50,7 @@ async function applyMode(n,internal=false){
  if(n.format==='couplet')Object.assign(values,{columns:'2',followDirection:'vertical'});
  const preset=app.presets[n.preset]?n.preset:'zhang';const patch={};for(const k of ['softness','smoothing','taper','fullness'])if(Number.isFinite(n.advanced.brush?.[k]))patch[k]=clamp(n.advanced.brush[k],0,k==='fullness'?2:1);
  await app.configure47({values,preset,size:n.id==='photo'?250:n.size,inkOpacity:n.opacity,mountKey:n.layout==='single'?'dark':n.advanced.mountKey||'paris',brushPatch:{...patch,...ParticleBrush.lineProfile108(n.style??75),color:n.ink},focus:n.id==='letter'?'top-right':'start'});
- if(n.id==='photo')await app.videoCover125();else if(n.text)app.setGuide(n.text,'参考文字');window.writingLocked=false;window.Revision39?.syncLock();document.dispatchEvent(new Event('writing-scenario47'));app.showWriter();
+ if(n.id==='photo')await window.MediaStudio235.open();else if(n.text)app.setGuide(n.text,'参考文字');window.writingLocked=false;window.Revision39?.syncLock();document.dispatchEvent(new Event('writing-scenario47'));app.showWriter();
  }finally{applying=false}
 }
 function dialog(id,title){document.getElementById(id)?.remove();const d=E('dialog',{id,class:'studioDialog50'}),head=E('header',{class:'dialogHead'}),body=E('div',{class:'dialogBody'});head.append(E('h2',{},title));const close=E('button',{type:'button','aria-label':'关闭'},'完成 ×');const parent=[...document.querySelectorAll('dialog[open]')].at(-1);close.onclick=()=>{d.close();if(parent?.isConnected&&!parent.open)parent.showModal();else if(id==='studioAdmin50'){if(managementParent53?.isConnected)app.openDialog(managementParent53.id);else app.openDialog('paperDialog')}};head.append(close);d.append(head,body);document.body.append(d);return {d,body};}

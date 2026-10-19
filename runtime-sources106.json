@@ -34,6 +34,7 @@
     "writing-presets215.js",
     "reference-assets222.js",
     "writing-layout229.js",
+    "grid-guides235.js",
     "app.js",
     "annotation-home.js",
     "process-video.js",
@@ -227,7 +228,9 @@
     "revision228.js",
     "scene-video232.js",
     "photo-overlay232.js",
-    "revision234.js"
+    "revision234.js",
+    "media-studio235.js",
+    "revision235.js"
   ],
   "styles": [
     "style.css",
@@ -359,6 +362,7 @@
     "revision229.css",
     "revision230.css",
     "revision232.css",
-    "revision234.css"
+    "revision234.css",
+    "revision235.css"
   ]
 }
