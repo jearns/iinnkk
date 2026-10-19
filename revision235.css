@@ -8,3 +8,5 @@
 body:not(.home-open) #dailyDialog.quoteBookmark73.searching235{width:min(360px,90vw)!important}#mediaTemplates235{gap:clamp(5px,2vw,16px)}#mediaTemplates235 button{font-size:clamp(9px,2.5vw,11px)!important}.mediaPopover235 a{color:#d8c097;font-size:10px}.mediaTracks235[hidden]{display:none}
 
 .exportFooter235{display:flex!important;align-items:center;gap:8px;font-size:11px;margin:8px 0}.exportFooter235 input{min-width:0;flex:1;font-size:12px;padding:5px;background:transparent;border:1px solid #8884;border-radius:4px;color:inherit}
+
+body.ui111.mediaMode235 #previewEffects55,body.ui111.mediaMode235.preview-open56 #previewEffects55,body.ui111.mediaMode235.reveal-config104 #previewEffects55{display:none!important}body.ui111.mediaMode235 .modeRow193{padding-bottom:0!important}body.ui111.mediaMode235 #bottomDock{min-height:45px!important}
