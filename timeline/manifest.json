@@ -3584,6 +3584,35 @@
       "zoom": 350,
       "cover143": "timeline/pages/world-hammurabi218/stele.jpg",
       "summary211": "汉谟拉比法典石碑约作于公元前18世纪，以阿卡德语楔形文字刻写。碑首是国王与神祇的浮雕，下方排列长篇法律文字，现藏卢浮宫。它是古代法律文字的重要见证，并非苏美尔语文本。"
+    },
+    "yuanshe": {
+      "id": "yuanshe",
+      "era": "三国·蜀",
+      "title": "远涉帖",
+      "script": "行草",
+      "place": "原迹不存",
+      "museum": "传本版本待核",
+      "status": "",
+      "url": "",
+      "style": "zhang",
+      "size": 310,
+      "zoom": 175,
+      "glyph": "涉",
+      "order": 13,
+      "milestone": "尺牍书写的古雅意趣，在简短文字间呈现含蓄从容的文人风度。",
+      "portraitLabel": "诸葛亮",
+      "year": 230,
+      "dateLabel": "约公元220—280年·传本归属待考",
+      "summary211": "尺牍书写的古雅意趣，在简短文字间呈现含蓄从容的文人风度。",
+      "author": "诸葛亮",
+      "description": "",
+      "fullText148": "",
+      "pages": [
+        "timeline/pages/yuanshe/06222ce7-c56d-4b1c-83ef-b62b7c452490.jpg",
+        "timeline/pages/yuanshe/d6e85cfd-716e-4964-8c11-47ea2194e0a0.jpg"
+      ],
+      "deleted": false,
+      "cover143": "timeline/pages/yuanshe/06222ce7-c56d-4b1c-83ef-b62b7c452490.jpg"
     }
   },
   "order129": []
