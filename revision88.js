@@ -71,7 +71,7 @@
  // Drag from the title or empty space; text remains independently scrollable.
  let drag=null,moved=false;
  reader.addEventListener('pointerdown',e=>{
-  if(e.button>0||e.target.closest('input,select,textarea,a,.readerJump90,[data-reader-resize133],#quoteExpanded'))return;
+  if(e.button>0||e.target.closest('input,select,textarea,a,.readerJump90,[data-reader-resize133]'))return;
   if(drag)return;
   const r=reader.getBoundingClientRect();drag={id:e.pointerId,x:e.clientX,y:e.clientY,left:r.left,top:r.top};moved=false;
   if(!e.target.closest('button')){e.preventDefault();reader.setPointerCapture(e.pointerId)}
