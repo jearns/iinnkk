@@ -239,8 +239,10 @@
     "revision241.js",
     "children242/education.js",
     "children242/pictures.js",
+    "oracle244.js",
     "children242/preview.js",
-    "video-editor242.js"
+    "video-editor242.js",
+    "game-writing244.js"
   ],
   "styles": [
     "style.css",
@@ -381,6 +383,7 @@
     "revision240.css",
     "revision241.css",
     "revision242.css",
-    "revision243.css"
+    "revision243.css",
+    "revision244.css"
   ]
 }
