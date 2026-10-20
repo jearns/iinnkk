@@ -1,0 +1,18 @@
+{
+  "version": 241,
+  "english": {
+    "name": "CC-CEDICT / MDBG",
+    "source": "https://www.mdbg.net/chinese/dictionary?page=cc-cedict",
+    "license": "CC BY-SA 4.0",
+    "changes": "Single-character educational English senses extracted, shortened and supplemented with authored common-word glosses."
+  },
+  "words": {
+    "source": "https://github.com/fxsjy/jieba",
+    "license": "MIT"
+  },
+  "idioms": {
+    "source": "https://github.com/pwxcoo/chinese-xinhua",
+    "license": "MIT"
+  },
+  "entries": 4103
+}

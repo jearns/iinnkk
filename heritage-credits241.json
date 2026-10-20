@@ -1,0 +1,20 @@
+{
+  "version": 241,
+  "governmentList": {
+    "name": "第一批古代名碑名刻文物名录",
+    "authority": "国家文物局",
+    "issued": "2023-01-03",
+    "source": "https://www.ncha.gov.cn/art/2023/7/14/art_2318_46224.html",
+    "publicTextTranscription": "https://zh.wikisource.org/wiki/第一批古代名碑名刻文物名录",
+    "items": 1658,
+    "units": 544,
+    "provinces": 31
+  },
+  "coordinates": {
+    "source": "https://www.geonames.org/export/",
+    "license": "CC BY 4.0",
+    "scope": "City centres are approximate discovery locations, labelled separately; existing curated venue coordinates retain their stated accuracy."
+  },
+  "matchedExisting": 40,
+  "coordinateReady": 152
+}

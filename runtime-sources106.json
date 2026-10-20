@@ -164,6 +164,7 @@
     "revision119.js",
     "revision120preview.js",
     "type3d122.js",
+    "media-effects241.js",
     "photo-effects125.js",
     "dialogs125.js",
     "revision128.js",
@@ -234,7 +235,8 @@
     "revision235.js",
     "children239.js",
     "reading239.js",
-    "revision239.js"
+    "revision239.js",
+    "revision241.js"
   ],
   "styles": [
     "style.css",
@@ -372,6 +374,7 @@
     "revision237.css",
     "revision238.css",
     "revision239.css",
-    "revision240.css"
+    "revision240.css",
+    "revision241.css"
   ]
 }
