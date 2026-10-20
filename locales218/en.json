@@ -1577,5 +1577,12 @@
   "默认时间落款": "Automatic date attribution",
   "换图": "Replace",
   "手笔寄语": "Handwritten message",
-  "选字笔径": "Selected pen size"
+  "选字笔径": "Selected pen size",
+  "大字/小字": "Size",
+  "关闭选字": "Close selection",
+  "关闭印章编辑": "Close seal editor",
+  "编辑邮戳日期地点": "Edit postmark date and place",
+  "邮戳": "Postmark",
+  "日期": "Date",
+  "地点": "Place"
 }

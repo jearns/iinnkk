@@ -1577,5 +1577,12 @@
   "默认时间落款": "Mention de date automatique",
   "换图": "Changer",
   "手笔寄语": "Message manuscrit",
-  "选字笔径": "Taille du trait sélectionné"
+  "选字笔径": "Taille du trait sélectionné",
+  "大字/小字": "Taille",
+  "关闭选字": "Fermer la sélection",
+  "关闭印章编辑": "Fermer le sceau",
+  "编辑邮戳日期地点": "Modifier la date et le lieu du cachet",
+  "邮戳": "Cachet postal",
+  "日期": "Date",
+  "地点": "Lieu"
 }

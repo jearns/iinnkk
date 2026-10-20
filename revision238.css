@@ -1,0 +1,15 @@
+/* Sticky navigation reserves a complete independent slot for its seal. */
+#home154 .modes154.stuck154{padding-inline-start:58px!important;padding-inline-end:16px!important;gap:clamp(3px,1vw,10px)!important}
+#home154 .modes154.stuck154 .stickySeal154{inset-inline-start:10px!important;left:auto;right:auto;width:30px!important;height:30px!important;flex:none}
+/* Every writing panel is usable above the canvas, including outside overview. */
+body.ui111.mediaMode235 #board>.mediaPopover235:not([hidden]),body.ui111.mediaMode235:not(.preview-open56) #board>.mediaPopover235:not([hidden]){display:block!important;z-index:1600!important;pointer-events:auto!important;touch-action:pan-y}
+#mediaTools235{z-index:1500!important;pointer-events:auto!important}#mediaTools235 button{pointer-events:auto!important}#mediaTools235 button[data-tool235=write]{min-width:44px!important}
+.mediaPopover235{max-height:calc(100% - 75px)!important}.mediaPopover235 input:not([type=checkbox]):not([type=radio]):not([type=range]){width:100%;min-width:0;font-size:14px;padding:6px}
+body.ui111 input[type=file].nativePicker238{position:fixed!important;left:-10000px!important;top:-10000px!important;width:1px!important;height:1px!important;min-width:0!important;min-height:0!important;opacity:0!important;pointer-events:none!important}
+.inkSelectionTools{position:absolute;padding:32px 10px 10px!important;box-sizing:border-box;max-width:calc(100% - 16px)}.inkSelectionTools .selectionClose238{position:absolute!important;inset:3px 4px auto auto!important;min-height:26px!important;min-width:26px!important;width:26px!important;height:26px!important;padding:0!important;font-size:20px!important}
+#sealInspector{padding-top:6px!important}.sealInspectorTitle{display:flex;justify-content:space-between;align-items:center;cursor:move;touch-action:none;min-height:28px;font-size:12px;user-select:none}.sealInspectorTitle #finishSealSelection{margin:0 0 0 auto!important;min-width:26px!important;width:26px!important;min-height:26px!important;height:26px!important;padding:0!important;font-size:20px!important;border:0!important;background:none!important}
+.postmarkHit238{position:absolute;z-index:125;min-height:0!important;min-width:0!important;background:transparent!important;border:0!important;padding:0!important;cursor:pointer;touch-action:manipulation}.postmarkHit238[hidden]{display:none!important}.postmarkEditor238{z-index:1700!important}
+/* Upward fullscreen is composition-only across every mode. */
+body.ui111.hide-top97.hide-bottom97.hide-config97 :is(#mediaTemplates235,#singleQuick228,#previewDock182,#annotationHomeButton,.modeRow193,#toggle-bottom97,#toggle-config97){display:none!important}
+body.ui111.hide-top97.hide-bottom97.hide-config97 #board{height:100%!important;bottom:0!important}
+@media(max-width:420px){#home154 .modes154.stuck154>a:not(.stickySeal154){font-size:10px!important}.mediaPopover235{max-width:calc(100% - 16px)}.inkSelectionTools .selectionStrength216{flex-wrap:wrap}}

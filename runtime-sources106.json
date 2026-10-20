@@ -229,6 +229,7 @@
     "scene-video232.js",
     "photo-overlay232.js",
     "revision234.js",
+    "stamp-rules238.js",
     "media-studio235.js",
     "revision235.js"
   ],
@@ -365,6 +366,7 @@
     "revision234.css",
     "revision235.css",
     "revision236.css",
-    "revision237.css"
+    "revision237.css",
+    "revision238.css"
   ]
 }

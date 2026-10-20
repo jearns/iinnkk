@@ -1577,5 +1577,12 @@
   "默认时间落款": "Fecha automática",
   "换图": "Cambiar",
   "手笔寄语": "Mensaje manuscrito",
-  "选字笔径": "Tamaño del trazo seleccionado"
+  "选字笔径": "Tamaño del trazo seleccionado",
+  "大字/小字": "Tamaño",
+  "关闭选字": "Cerrar selección",
+  "关闭印章编辑": "Cerrar editor de sello",
+  "编辑邮戳日期地点": "Editar fecha y lugar del matasellos",
+  "邮戳": "Matasellos",
+  "日期": "Fecha",
+  "地点": "Lugar"
 }
