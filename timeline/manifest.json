@@ -3612,7 +3612,12 @@
         "timeline/pages/yuanshe/d6e85cfd-716e-4964-8c11-47ea2194e0a0.jpg"
       ],
       "deleted": false,
-      "cover143": "timeline/pages/yuanshe/06222ce7-c56d-4b1c-83ef-b62b7c452490.jpg"
+      "cover143": "timeline/pages/yuanshe/d6e85cfd-716e-4964-8c11-47ea2194e0a0.jpg",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     }
   },
   "order129": []
