@@ -50,5 +50,119 @@
       "书法艺术"
     ],
     "coordinateStatus": "未核坐标"
+  },
+  {
+    "id": "sh240-songze",
+    "name": "崧泽遗址博物馆",
+    "institution": "崧泽遗址博物馆",
+    "country": "中国",
+    "city": "上海",
+    "district": "青浦区",
+    "address": "上海市青浦区赵巷镇沪青平公路3993号",
+    "lon": 121.159,
+    "lat": 31.149,
+    "source": "https://www.shqp.gov.cn/tv/wwgj/20201208/807544.html",
+    "coordinateSource": "https://www.amap.com/place/B0FFF4B6V4",
+    "coordinateSystem": "WGS84",
+    "coordinateAccuracyM": 800,
+    "coordinateStatus": "区域近似坐标，非精确入口",
+    "note": "崧泽文化遗址与出土文物展示，认识上海早期聚落的考古线索。 地图点位仅供附近发现，具体入口及开放信息请查官方来源。",
+    "keywords": [
+      "崧泽",
+      "考古遗址",
+      "上海文明"
+    ]
+  },
+  {
+    "id": "sh240-guangfulin",
+    "name": "广富林文化遗址",
+    "institution": "广富林文化遗址",
+    "country": "中国",
+    "city": "上海",
+    "district": "松江区",
+    "address": "上海市松江区广富林路3206弄",
+    "lon": 121.192,
+    "lat": 31.065,
+    "source": "https://whlyj.sh.gov.cn/4ajjq/20201124/5a9bf49a8b504160b86ee4b817e4ecc0.html",
+    "coordinateSource": "https://ditu.amap.com/place/B0FFF0JR9H",
+    "coordinateSystem": "WGS84",
+    "coordinateAccuracyM": 800,
+    "coordinateStatus": "区域近似坐标，非精确入口",
+    "note": "遗址文化展示与考古遗址展示馆所在区域，展示上海史前文化与聚落演变。 地图点位仅供附近发现，具体入口及开放信息请查官方来源。",
+    "keywords": [
+      "广富林",
+      "考古遗址",
+      "上海文明"
+    ]
+  },
+  {
+    "id": "sh240-erlu",
+    "name": "小昆山园·二陆读书台",
+    "institution": "小昆山园·二陆读书台",
+    "country": "中国",
+    "city": "上海",
+    "district": "松江区",
+    "address": "上海市松江区小昆山镇山西路4号小昆山园内",
+    "lon": 121.129,
+    "lat": 31.04,
+    "source": "https://www.songjiang.gov.cn/shsj_xiaokunshan/sqfw/002001/20240425/0d8935ff-862d-4970-941c-324197d4b80a.html",
+    "coordinateSource": "https://www.amap.com/place/B00155PWBM",
+    "coordinateSystem": "WGS84",
+    "coordinateAccuracyM": 800,
+    "coordinateStatus": "区域近似坐标，非精确入口",
+    "note": "陆机、陆云读书故事相关纪念地；园内有二陆草堂、读书台。陆机《平复帖》原作不在此处。 地图点位仅供附近发现，具体入口及开放信息请查官方来源。",
+    "keywords": [
+      "陆机",
+      "陆云",
+      "二陆",
+      "平复帖",
+      "书法艺术",
+      "纪念地"
+    ]
+  },
+  {
+    "id": "sh240-dong",
+    "name": "董其昌书画艺术博物馆",
+    "institution": "董其昌书画艺术博物馆",
+    "country": "中国",
+    "city": "上海",
+    "district": "松江区",
+    "address": "上海市松江区人民南路64号醉白池公园内",
+    "lon": 121.226,
+    "lat": 31.004,
+    "source": "https://www.songjiang.gov.cn/xwzx/001001/20251120/accd7116-ef32-4267-92cf-55f4a7efcba4.html",
+    "coordinateSource": "https://www.amap.com/place/B00151CDD0",
+    "coordinateSystem": "WGS84",
+    "coordinateAccuracyM": 800,
+    "coordinateStatus": "区域近似坐标，非精确入口",
+    "note": "以董其昌及松江书画文脉为主题的博物馆；实际展品与开放安排以馆方公告为准。 地图点位仅供附近发现，具体入口及开放信息请查官方来源。",
+    "keywords": [
+      "董其昌",
+      "书法艺术",
+      "书画博物馆"
+    ]
+  },
+  {
+    "id": "sh240-zuibaichi",
+    "name": "醉白池",
+    "institution": "醉白池",
+    "country": "中国",
+    "city": "上海",
+    "district": "松江区",
+    "address": "上海市松江区人民南路64号",
+    "lon": 121.227,
+    "lat": 31.004,
+    "source": "https://www.songjiang.gov.cn/xwzx/001002/001002025/20230919/b3fb952a-70b6-49eb-910c-a9b2a4d93b13.html",
+    "coordinateSource": "https://www.amap.com/place/B00151CDD0",
+    "coordinateSystem": "WGS84",
+    "coordinateAccuracyM": 800,
+    "coordinateStatus": "区域近似坐标，非精确入口",
+    "note": "松江古典园林，包含书画题刻与文人文化线索，可结合园内董其昌书画艺术博物馆探访。 地图点位仅供附近发现，具体入口及开放信息请查官方来源。",
+    "keywords": [
+      "醉白池",
+      "碑刻",
+      "董其昌",
+      "书法艺术"
+    ]
   }
 ]

@@ -5,7 +5,7 @@ import vm from 'node:vm';
 import {Window} from 'happy-dom';
 const read=p=>fs.readFileSync(p,'utf8');
 function scene(t){
- const w=new Window({url:'https://iinnkk.me/writer.html'}),d=w.document;
+ const w=new Window({url:'https://iinnkk.me/writer.html'}),d=w.document;w.structuredClone=structuredClone;
  t.after(()=>w.happyDOM.abort());d.body.innerHTML='<main><div id="board"></div></main>';
  const board=d.getElementById('board');board.parentElement.getBoundingClientRect=()=>({width:390,height:700,top:60});board.getBoundingClientRect=()=>({width:390,height:520,top:60,bottom:580});
  let requests=0,stops=0,prepares=0,draws=0,revoked=0;
@@ -15,7 +15,7 @@ function scene(t){
  w.URL.createObjectURL=()=> 'blob:scene231';w.URL.revokeObjectURL=()=>revoked++;
  w.AnnotationApp={ready:true,refresh(){},prepareScene225:async()=>prepares++,sceneView225:()=>({width:390,height:520,scale:100}),clearScenePhoto225(){},liveSceneFrame225(){},toast(){}};
  w.eval(read('camera223.js'));
- return {w,d,get requests(){return requests},get stops(){return stops},get prepares(){return prepares},get revoked(){return revoked},context:{save(){},restore(){},beginPath(){},rect(){},clip(){},drawImage(){draws++},createLinearGradient:()=>({addColorStop(){}}),fillRect(){}},get draws(){return draws}};
+ return {w,d,get requests(){return requests},get stops(){return stops},get prepares(){return prepares},get revoked(){return revoked},context:{translate(){},rotate(){},scale(){},save(){},restore(){},beginPath(){},rect(){},clip(){},drawImage(){draws++},createLinearGradient:()=>({addColorStop(){}}),fillRect(){}},get draws(){return draws}};
 }
 test('camera enable shares one pending request and reuses the active camera',async t=>{
  const s=scene(t),{w}=s;
@@ -69,3 +69,4 @@ test('replacing a template background preserves its aspect instead of resizing t
 test('390px phone scene uses full viewport without stretching its optical source',async t=>{const s=scene(t),{w}=s;w.localStorage.setItem('iinnkk.mode53','scene');let config;w.AnnotationApp.prepareScene225=async c=>config=c;await w.LiveScene225.enable();const board=w.document.getElementById('board');assert.equal(board.style.getPropertyValue('--scene-width227'),'390px');assert.equal(board.style.getPropertyValue('--scene-height227'),'700px');assert.equal(config.ratio,'9:16');assert.equal(w.LiveScene225.aspect228,9/16);w.AnnotationApp.isOverview55=()=>true;w.LiveScene225.sync();assert.equal(board.style.getPropertyValue('--scene-height227'),'660px')});
 
 test('237 camera and mask follow the paper transform and clip before painting the frame',async t=>{const s=scene(t),{w}=s;await w.LiveScene225.enable();w.AnnotationApp.sceneNavigator228=()=>({bounds:{w:4,h:4/(9/16)}});const a=w.LiveScene225.metrics({x:20,y:30,scale:100},900,900,1000,1000),b=w.LiveScene225.metrics({x:0,y:0,scale:50},200,356,1000,1000);assert.ok(Math.abs((a.w/b.w)-2)<1e-9);assert.ok(Math.abs((a.x-20)-b.x*2)<1e-9);let clips=0,rect;const ctx={save(){},restore(){},beginPath(){},rect(...v){rect=v},clip(){clips++},fillRect(){},createLinearGradient:()=>({addColorStop(){}})};w.LiveScene225.draw(ctx,900,900,{x:20,y:30,scale:100});assert.equal(clips,1);assert.deepEqual(rect,[20,30,400,4/(9/16)*100])});
+test('240 live crop uses paper-space frame, mask coverage and writing guide, then hides guide on ink',async t=>{const s=scene(t),{w,d}=s;w.localStorage.setItem('iinnkk.mode53','scene');w.AnnotationApp.sceneNavigator228=()=>({bounds:{w:4,h:8}});w.AnnotationApp.sceneView225=()=>({x:10,y:20,scale:50,width:390,height:700});w.AnnotationApp.mediaCheckpoint237=()=>{};w.AnnotationApp.persist=()=>{};const live=d.createElement('canvas');live.id='live';d.getElementById('board').append(live);await w.LiveScene225.enable();w.LiveScene225.editMedia240({frame:{x:1,y:2,w:2,h:4},crop:{zoom:2}});const rects=[],fills=[],texts=[];const c={...s.context,rect:(...x)=>rects.push(x),fillRect:(...x)=>fills.push(x),fillText:(...x)=>texts.push(x)};w.LiveScene225.draw(c,390,700,{x:10,y:20,scale:50});assert.deepEqual(rects[0],[60,120,100,200]);assert.ok(fills.every(x=>JSON.stringify(x)===JSON.stringify([60,120,100,200])));assert.equal(texts.map(x=>x[0]).join(''),'今日手筆');assert.equal(texts[0][1],110);live.dispatchEvent(new w.PointerEvent('pointerdown',{isPrimary:true,bubbles:true}));texts.length=0;w.LiveScene225.draw(c,390,700,{x:10,y:20,scale:50});assert.equal(texts.length,0);assert.equal(w.LiveScene225.history237().media240.crop.zoom,2)});
