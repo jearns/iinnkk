@@ -6,3 +6,8 @@
 - Camera and photo editor are fixed, frameless viewport dialogs; generic dialog dragging and fitting must skip `data-fixed224`.
 - Keep source URLs and approximate-coordinate labels for geographical data. Do not represent cultural places as live exhibitions or promise exact entrances from approximate coordinates.
 - Build current immutable runtime bundles, retain published historical assets, run relevant regression tests and verify deployment before reporting a release as live.
+
+## Standing user authorization (2026-10-20)
+
+- The user explicitly approved automatic execution of this project's requested development, validation, GitHub synchronization and publishing. Continue without asking for the same authorization each release.
+- The user explicitly approved sending the project's public new UI, topic, clue, answer and chapter text to the Microsoft Edge translation endpoint to complete English, French, Russian, Arabic and Spanish localization. This approval does not require sending source code or private user content.
