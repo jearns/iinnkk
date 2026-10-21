@@ -3862,7 +3862,7 @@
       "museum": "中国第一历史档案馆等",
       "dateLabel": "明清时期；清内阁大库档案的发现与整理",
       "milestone": "诏令、奏折与制度文书保存国家运行的原始记录，拓展明清史研究。",
-      "description": "明清内阁大库档案是四大发现所指的重要档案群，现存明清档案的范围更广。它们提供政治、经济、边疆与宫廷史的原始证据；不同文种的用途和书写规范各有差别。",
+      "description": "明清内阁大库档案是四大发现所指的重要档案群，现存明清档案的范围更广。它们提供政治、经济、边疆与宫廷史的原始证据；不同文种的用途和书写规范各有差别。\n本站上传代表档案为明明朝万历年间赵秉忠状元卷真迹，现存于山东省青州市博物馆，是现存海内外的孤本，为国家一级文物。全文内容宏富，才情横厉，文辞华赡，精辟阐述了改善吏治、兴邦治国的对策。",
       "url": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/",
       "aliases183": [
         "明清档案"
@@ -3873,9 +3873,25 @@
       "style": "ouyang",
       "size": 340,
       "zoom": 160,
-      "pages": [],
+      "pages": [
+        "timeline/pages/mingqing/8c83f549-46e5-405e-84f1-8887bae24359.jpg",
+        "timeline/pages/mingqing/70c5b8d3-2632-4bcb-846a-b4127cb30562.jpg",
+        "timeline/pages/mingqing/b73e3fbf-d39b-42f4-9aff-2d808a8f9d31.jpg",
+        "timeline/pages/mingqing/4dca8b69-63ff-4e16-9a9d-62b1f417ef76.jpg",
+        "timeline/pages/mingqing/322bb680-deaa-4df6-8a5a-b506bbdc2016.jpg",
+        "timeline/pages/mingqing/e6261010-9850-471b-b593-7be6c542ce1c.jpg",
+        "timeline/pages/mingqing/3ad44791-d1c9-4fff-aefa-06ff6193de8d.jpg",
+        "timeline/pages/mingqing/75b92b35-cac9-4422-8831-8953f510457d.jpg"
+      ],
       "deleted": false,
-      "order": 10.2
+      "order": 10.2,
+      "fullText148": "",
+      "cover143": "timeline/pages/mingqing/8c83f549-46e5-405e-84f1-8887bae24359.jpg",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "shigu": {
       "id": "shigu",
