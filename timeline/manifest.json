@@ -4043,6 +4043,43 @@
         "x": 38.07047079684972,
         "y": 17.209826152584853
       }
+    },
+    "wangziwu": {
+      "id": "wangziwu",
+      "era": "东周·春秋",
+      "title": "王子午鼎",
+      "script": "楚系金文",
+      "place": "中国·河南",
+      "museum": "出土一组七鼎；具体器物藏地待核",
+      "status": "",
+      "url": "",
+      "style": "yan",
+      "size": 390,
+      "zoom": 150,
+      "glyph": "楚",
+      "order": 5,
+      "milestone": "楚系金文的华美代表，以修长结体与装饰意趣映照南方书写风貌。",
+      "portraitLabel": "",
+      "year": -550,
+      "dateLabel": "约公元前575—525年",
+      "summary211": "楚系金文的华美代表，以修长结体与装饰意趣映照南方书写风貌。",
+      "author": "",
+      "description": "",
+      "fullText148": "释文：唯正月初吉丁亥，王子午择其吉金，自作彝、载鼎，用享以孝于我皇祖文考，用祈眉寿。乃恭舒迟。畏忌翼翼，敬厥盟祀，永受其福。余不畏不差，惠于政德，淑于威仪，简简优优。令尹子庚，繄民之所亟，万年无期，子孙是利。倗之载鼎。\n\n译文：在正月初的丁亥之日，王子午选择上好之铜，自作煮器、盛鼎，用于祭祀献享，以敬我光荣先祖、文德先父。用以祈祷长寿，又能恭敬闲雅。敬畏翼翼，遵守其盟祀，永受其福。我保持国家威信、慎重选择结盟，施恩于德政，时刻想着礼法，国家政事宽和平安。令尹子庚，惟民之所需，万年无期，保障子孙利益。倗之盛食祭鼎。",
+      "pages": [
+        "timeline/pages/wangziwu/6c386050-df2e-40c9-a4cc-94f8eb62b368.jpg",
+        "timeline/pages/wangziwu/7be03e70-dfea-4cbe-a861-6ae91b20a38b.jpg",
+        "timeline/pages/wangziwu/bcaaa512-ccd9-4edd-8f67-9d4bf6304818.jpg",
+        "timeline/pages/wangziwu/c5cae318-a791-4937-944f-144ef4821b99.jpg",
+        "timeline/pages/wangziwu/9e8d4e39-ae05-4c41-94c1-27a964cc0c52.jpg"
+      ],
+      "deleted": false,
+      "cover143": "timeline/pages/wangziwu/bcaaa512-ccd9-4edd-8f67-9d4bf6304818.jpg",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 0,
+        "y": 0
+      }
     }
   },
   "order129": []
