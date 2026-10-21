@@ -241,6 +241,7 @@
     "children242/pictures.js",
     "oracle244.js",
     "children245/notes.js",
+    "character-lookup246.js",
     "children242/preview.js",
     "video-editor242.js",
     "game-writing244.js"
@@ -386,6 +387,7 @@
     "revision242.css",
     "revision243.css",
     "revision244.css",
-    "revision245.css"
+    "revision245.css",
+    "revision246.css"
   ]
 }
