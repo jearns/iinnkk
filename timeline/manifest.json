@@ -4007,6 +4007,42 @@
         "x": 50,
         "y": 50
       }
+    },
+    "hezun": {
+      "id": "hezun",
+      "era": "西周",
+      "title": "何尊",
+      "script": "金文",
+      "place": "中国·宝鸡",
+      "museum": "宝鸡青铜器博物院",
+      "status": "",
+      "url": "https://wwj.baoji.gov.cn/col1892/col17273/202505/t20250512_1147496.html",
+      "style": "yan",
+      "size": 420,
+      "zoom": 145,
+      "glyph": "中",
+      "order": 3,
+      "milestone": "铭文中的“中国”见证早期国家观念，凝铸西周礼制与文字的庄严气象。",
+      "portraitLabel": "",
+      "year": -1038,
+      "dateLabel": "约公元前1050—1000年",
+      "summary211": "铭文中的“中国”见证早期国家观念，凝铸西周礼制与文字的庄严气象。",
+      "author": "",
+      "description": "",
+      "fullText148": "",
+      "pages": [
+        "timeline/pages/hezun/28c07379-6e72-48fd-a996-cbde05111f5b.jpg",
+        "timeline/pages/hezun/33f91c01-f439-4468-bba8-30e23920167a.jpg",
+        "timeline/pages/hezun/9f3cdd19-276c-4d3d-a872-388f40c0a868.jpg",
+        "timeline/pages/hezun/5ecf53da-fbfe-47dd-9a70-42fa1a192682.jpg"
+      ],
+      "deleted": false,
+      "cover143": "timeline/pages/hezun/9f3cdd19-276c-4d3d-a872-388f40c0a868.jpg",
+      "coverCrop145": {
+        "zoom": 1.6035485463739887,
+        "x": 38.07047079684972,
+        "y": 17.209826152584853
+      }
     }
   },
   "order129": []
