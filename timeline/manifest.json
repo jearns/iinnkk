@@ -3976,6 +3976,37 @@
         "x": 81.33030488509344,
         "y": 3.6461325313418733
       }
+    },
+    "shizhoupian": {
+      "id": "shizhoupian",
+      "era": "西周",
+      "title": "史籀篇",
+      "script": "古籀",
+      "place": "原书亡佚",
+      "museum": "无原件馆藏",
+      "status": "",
+      "url": "",
+      "style": "ouyang",
+      "size": 360,
+      "zoom": 150,
+      "glyph": "籀",
+      "order": 4,
+      "milestone": "大篆传统的重要标识，连接早期古文字与秦代规范文字的演进。",
+      "portraitLabel": "",
+      "year": -800,
+      "dateLabel": "约公元前800—700年·原书佚",
+      "summary211": "大篆传统的重要标识，连接早期古文字与秦代规范文字的演进。",
+      "author": "",
+      "description": "",
+      "fullText148": "",
+      "pages": [],
+      "deleted": true,
+      "cover143": "",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     }
   },
   "order129": []
