@@ -25,7 +25,7 @@ export async function handler(request:Request){try{
  if(action==='userinfo'&&request.method==='GET'){
   const token=(request.headers.get('Authorization')||'').replace(/^Bearer /i,'');const [iv,encrypted]=token.split('.');if(!iv||!encrypted||token.length>8000)return fail('invalid_token',401);let data;try{data=JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:unb64(iv)},await key(),unb64(encrypted))))}catch{return fail('invalid_token',401)}if(data.exp<Math.floor(Date.now()/1000))return fail('invalid_token',401);
   const target=new URL('https://api.weixin.qq.com/sns/userinfo');target.search=new URLSearchParams({access_token:data.access,openid:data.openid,lang:'zh_CN'}).toString();const r=await fetch(target),wx=await r.json();if(!r.ok||wx.errcode||wx.openid!==data.openid)return fail('invalid_token',401);
-  return json({id:wx.unionid||wx.openid,sub:wx.unionid||wx.openid,name:wx.nickname||'亲笔书家',full_name:wx.nickname||'亲笔书家',avatar_url:wx.headimgurl||'',email_verified:false});
+  return json({id:wx.unionid||wx.openid,sub:wx.unionid||wx.openid,name:wx.nickname||'手笔书友',full_name:wx.nickname||'手笔书友',avatar_url:wx.headimgurl||'',email_verified:false});
  }
  return fail('not_found',404);
  }catch{return fail('provider_error',502)}}
