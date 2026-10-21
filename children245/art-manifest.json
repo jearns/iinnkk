@@ -1,0 +1,187 @@
+{
+  "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/",
+  "author": "Twitter, Inc. and other contributors; Twemoji project",
+  "license": "CC-BY-4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "usage": "Unmodified object illustrations, not reconstructions of ancient writing",
+  "characters": {
+    "日": [
+      "2600"
+    ],
+    "旦": [
+      "1f305"
+    ],
+    "天": [
+      "1f324",
+      "1f9cd"
+    ],
+    "大": [
+      "1f9cd"
+    ],
+    "手": [
+      "270b"
+    ],
+    "人": [
+      "1f6b6"
+    ],
+    "木": [
+      "1f333"
+    ],
+    "山": [
+      "26f0"
+    ],
+    "水": [
+      "1f4a7"
+    ],
+    "火": [
+      "1f525"
+    ],
+    "月": [
+      "1f319"
+    ],
+    "口": [
+      "1f444"
+    ],
+    "目": [
+      "1f441"
+    ],
+    "耳": [
+      "1f442"
+    ],
+    "田": [
+      "1f33e"
+    ],
+    "雨": [
+      "1f327"
+    ],
+    "門": [
+      "1f6aa"
+    ],
+    "魚": [
+      "1f41f"
+    ],
+    "鳥": [
+      "1f426"
+    ],
+    "車": [
+      "1f6de"
+    ],
+    "舟": [
+      "1f6f6"
+    ],
+    "竹": [
+      "1f38d"
+    ],
+    "上": [
+      "2b06"
+    ],
+    "下": [
+      "2b07"
+    ],
+    "本": [
+      "1f333"
+    ],
+    "末": [
+      "1f333"
+    ],
+    "一": [
+      "31-20e3"
+    ],
+    "二": [
+      "32-20e3"
+    ],
+    "三": [
+      "33-20e3"
+    ],
+    "女": [
+      "1f469"
+    ],
+    "子": [
+      "1f476"
+    ],
+    "牛": [
+      "1f402"
+    ],
+    "羊": [
+      "1f411"
+    ],
+    "馬": [
+      "1f40e"
+    ],
+    "心": [
+      "1fac0"
+    ],
+    "足": [
+      "1f9b6"
+    ],
+    "弓": [
+      "1f3f9"
+    ],
+    "土": [
+      "1f30f"
+    ],
+    "明": [
+      "2600",
+      "1f319"
+    ],
+    "休": [
+      "1f6b6",
+      "1f333"
+    ],
+    "林": [
+      "1f333",
+      "1f333"
+    ],
+    "森": [
+      "1f332",
+      "1f333"
+    ],
+    "石": [
+      "1faa8"
+    ],
+    "筆": [
+      "1f58c"
+    ]
+  },
+  "sha256": {
+    "1f305": "5ff11b90a573d200c5b945eb2e330bc25431356ad91e31bc9a6935483bad02d5",
+    "1f30f": "0d2d0108dccd06c7b3a250f32dc91986852cdf02eb9c5136db81d888091aa7aa",
+    "1f319": "aafb5b77ba9325aa6139eb5229ed862fd93b44bfc91e34801998c1dd9fde72d8",
+    "1f324": "1bf51f9c7c03a73f367d7ce175029e47c1e247c2b33e9742eb157d263b59af9d",
+    "1f327": "d799b3d98276a4a3f0431c9b8bf83733bc4012ba82afe1cded8bf6a3ceb9ac60",
+    "1f332": "d106c455960971b48009ff38cb0d4c69d520c930abc532ddbeb25525910bda7a",
+    "1f333": "28b0601f687f84e5fd61d3bd9637d30db7c280967a4518e85bba9f4b24671f57",
+    "1f33e": "42f1fc34efd5b3ac98ab688ec7e2dc6d6b4eef4ec5f14901da37b969edceddcb",
+    "1f38d": "23cc5aaa09c2db463ab0a53d9124926b9beafcfef4dce8922a8913c9f2f468da",
+    "1f3f9": "fd7d41bbe04695c3142a0b70e621e3455960a9c4438a5707d9aea739815d1c09",
+    "1f402": "9947bfcc98da440c447886ef433af3064ac224a9a06429b5b678b33e92bc6670",
+    "1f40e": "a61f892c6c36484a9477978c2fe5ba0b7ee0c0c63da5a5f2cf4ee6884c18db59",
+    "1f411": "23d57bfbd45dd5c58a6762db275b4eade1a98b613b34f04877128ad2dfecf36b",
+    "1f41f": "caa8008ee6dbae76478943d4d233519d362e75858f9c9928090b5928cda3b2d8",
+    "1f426": "ea01099badc833d30fdf08ea3a117b2e5e3cc270a31c6be89abdce42c2a69322",
+    "1f441": "4cb5bebe92bb24bcc94a8d70d30872651c6b33e146c839e746927e3ce4a5d532",
+    "1f442": "04eb0ebe1848d9b628fbc435f45e15dab6f01422fd064b798d447a8908c9c322",
+    "1f444": "033caa64a2f2dbe91f16210f2d9912949d30eb0cd097dc52cdf90d6ff63bdd8c",
+    "1f469": "b143c8e5cabc429a432363bad32b48c7c8fc1814e2722281e50442e0d8402067",
+    "1f476": "e18540ccd6f284d09bbf2e962050426d24cce29915df32f57801ae7b624c5298",
+    "1f4a7": "9ec35e46c27db799e43a08bd2a3c4353d51a0c037f8bdbbc63684f7fefbb0cc0",
+    "1f525": "4fa646a4dbc10513ddeb70561789483638faf456e15186f4eb7291c5c455cbb6",
+    "1f58c": "8fd6761aa411e999f414487ca62b585c39d88dffa8ecee3f27bc98628af720d6",
+    "1f6aa": "19e3a07fb16d79e5ff225ce303bc5ac1343a2aa0188edc1795b1edbf9c566dfe",
+    "1f6b6": "72b7996d8b3221f1ac86de7e1ec3b95cb16dfc15bb10ef8454df529d110c25c0",
+    "1f6de": "c028f5f2b89bc4c3c6bdaf297926abbe70b94f5f8bbe885d7a01c52025a7276d",
+    "1f6f6": "2d7a584b699715c864fe63fd2deda35fad6438281700074006f87b0f0ba3a0e1",
+    "1f9b6": "5e1ccee0e5ef0c0cac343fe9368c0fe8fac5eae7cfc2a22aabdb080cf4bda161",
+    "1f9cd": "cd19f1c46ad2c70c404b80eabbd823c7ac5811f51c76d82ac2e23cc5f5c17e9b",
+    "1faa8": "9abdc4bb80a5473a6ad3e23cc401ed5995453ec457c30adf552ff10e9f80bc1c",
+    "1fac0": "20200c5fb9e4d036204354795aed64b4f2eb9cb82242341adf2e1b222475b35a",
+    "2600": "8f08ac47cae81db8f28d8845c09d0dade8c42d152449a0e11de302e6b2f17661",
+    "26f0": "0ba82e9c31250e64b3c9243f5bd9801cfe43c0b7a63c073036df8a33abd6b10c",
+    "270b": "76637c8dd1c4dbfb6ead5b20a79244fd94e38b7ce90a1f728ff647ac46d88ec9",
+    "2b06": "97afabeea9afb61024ffc1e58b49fd72d2a89304340e6f96204f7dc8f88279c6",
+    "2b07": "f534b7b1961a07619a8e1466ee3ac41144e416a276b521ba453ed7b5416ca53e",
+    "31-20e3": "eb87966d6bb5e4869b7605181665130326730e86a82aef4591371fe6dc57f42a",
+    "32-20e3": "4fcefc30ccef0288ff52fdb3b45219eeac803bb2d9b3d245a11abd1051d86777",
+    "33-20e3": "19127cfc50dbe86b0cd8d00ab7003612aac803aa30ef966582d260d1224dcd04"
+  }
+}

@@ -1,0 +1,16 @@
+/* The focused cell owns both teaching corners; isolate them from generic nav/canvas rules. */
+#characterRail242{display:flex!important;flex-flow:row nowrap!important;justify-content:flex-start!important;align-items:center!important;direction:ltr!important;gap:3px!important;width:var(--rail-width245,285px)!important;max-width:none!important;inset:auto;right:auto!important;bottom:auto!important;transform:none!important;box-sizing:border-box!important;writing-mode:horizontal-tb!important;overflow:hidden!important}
+#characterRail242[hidden]{display:none!important}
+#characterRail242>button{position:relative!important;display:grid!important;place-items:center!important;flex:0 0 var(--form-size245,29px)!important;width:var(--form-size245,29px)!important;height:var(--form-size245,29px)!important;min-width:0!important;min-height:0!important;max-width:none!important;margin:0!important;padding:0!important;transform:none!important;overflow:hidden!important}
+#characterRail242>button>span{position:static!important;display:grid!important;place-items:center!important;width:100%!important;height:100%!important;transform:none!important;margin:0!important;padding:0!important;line-height:1!important}
+#characterRail242 svg,#characterRail242 canvas,#characterRail242 img{position:static!important;inset:auto!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;transform:none!important;object-fit:contain;display:block!important}
+#characterInfo242{box-sizing:border-box!important;right:auto!important;bottom:auto!important;transform:none!important;overflow:auto!important;direction:ltr}
+#characterInfo242 .englishVoice245{display:flex!important;align-items:center;gap:5px;max-width:100%;text-align:left}#characterInfo242 .englishVoice245 svg{flex:none;width:13px;height:13px}
+#characterCard242 .formGlyph242{position:relative!important;isolation:isolate;transform:none!important;align-self:center;justify-self:center;overflow:hidden!important}
+#characterCard242 .formGlyph242 svg,#characterCard242 .formGlyph242 canvas{position:static!important;inset:auto!important;transform:none!important;object-fit:contain;max-width:100%!important;max-height:100%!important}
+#characterCard242 .originDrawing242{display:flex;gap:8px;justify-content:center;align-items:center;min-height:80px}
+#characterCard242 .originDrawing242 img{display:block;width:min(100%,280px);height:35dvh;max-height:350px;object-fit:contain}
+#characterCard242 .originDrawing242:has(img:nth-child(2)) img{width:42%}
+#characterRail242 img{object-fit:contain}
+#board,#characterCard242{-webkit-touch-callout:none;user-select:none;-webkit-user-select:none}
+#board input,#board textarea,#characterCard242 input,#characterCard242 textarea{user-select:text;-webkit-user-select:text}
