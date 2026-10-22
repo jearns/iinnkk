@@ -4206,6 +4206,33 @@
         "x": 20.194253662189666,
         "y": 5.068759591444765
       }
+    },
+    "mao-changzheng257": {
+      "id": "mao-changzheng257",
+      "title": "七律·长征",
+      "author": "毛泽东",
+      "era": "当代",
+      "script": "草书",
+      "year": 1935,
+      "dateLabel": "1935年作诗 · 手迹题写年代待核",
+      "place": "网络文献照片",
+      "museum": "题写版本与原藏待考",
+      "status": "此文献照片为550×144像素，可在名帖维护中替换高清原图。作诗时间与手迹题写时间应区分。",
+      "url": "https://cpc.people.com.cn/GB/143527/143544/8851330.html",
+      "description": "循长征纪念日临写此诗，感受纵向行气与横向铺陈。图片来自中国共产党新闻网文献照片，原藏与手迹题写年份待考。",
+      "summary211": "在飞动的笔势中回望长征，把坚韧与向前的心意写入此日。",
+      "glyph": "征",
+      "style": "zhang",
+      "size": 35,
+      "zoom": 200,
+      "pages": [
+        "timeline/pages/mao-changzheng257/longmarch.jpg"
+      ],
+      "cover143": "timeline/pages/mao-changzheng257/longmarch.jpg",
+      "pageNames": [
+        "七律·长征文献照片"
+      ],
+      "deleted": false
     }
   },
   "order129": []
