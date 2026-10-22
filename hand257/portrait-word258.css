@@ -1,0 +1,2 @@
+/* Thirty two-character choices: three fixed columns, at most ten rows. */
+#portraitWords255{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;max-height:none;overflow:visible}#portraitWords255 button{width:100%;min-width:0;white-space:nowrap;font-size:13px;padding:6px 3px;line-height:1.6}
