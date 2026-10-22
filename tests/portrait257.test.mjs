@@ -1,0 +1,5 @@
+import test from'node:test';import assert from'node:assert/strict';import{readFileSync}from'node:fs';
+const source=readFileSync('hand255/photo.js','utf8'),html=readFileSync('self-portrait257.html','utf8');
+test('portrait starts at previous readable density and keeps 100 times the previous maximum area',()=>{assert.match(html,/min="12" max="320" step="1" value="22"/);assert.equal((320/32)**2,100);assert.match(source,/cols=Math.round\(\+\$\('photoDensity'\).value\)/)});
+test('actual glyph sizing keeps whole words inside their horizontal and vertical tiles at every density',()=>{const expression=source.match(/,size=(.*?),start=cx/)[1],size=new Function('th','tw','word','return '+expression);for(let cols=12;cols<=320;cols++)for(let length=1;length<=12;length++){const tw=1200*.85/cols,th=tw*.55,s=size(th,tw,Array(length));assert.ok(s>0);assert.ok(s*length<=tw*.89);assert.ok(s<=th*.89)}assert.ok(size(1200*.85/22*.55,1200*.85/22,Array(2))>20)});
+test('photo shading uses opacity without shrinking or oversizing handwriting',()=>{assert.match(source,/c.globalAlpha=\.18\+\.82\*Math.pow\(1-light,\.7\)/);assert.match(source,/c.globalAlpha=1;cancelled\(token\)/)});
