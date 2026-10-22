@@ -1,0 +1,13 @@
+{
+  "version": 254,
+  "mode": "local-public",
+  "notBefore": "2026-10-28T00:00:00+08:00",
+  "quotaRestoreVerified": false,
+  "autoEnableByDate": false,
+  "newCloudReadsEnabled": false,
+  "newCloudWritesEnabled": false,
+  "profileBinding": "explicit-guest-to-authenticated-owner",
+  "requiredIsolation": "owner-rls-and-local-profile-partition",
+  "syncPolicy": "incremental-idempotent-no-image-prefetch",
+  "anonymousDataMigration": "backup-first-with-explicit-local-data-ownership-choice"
+}

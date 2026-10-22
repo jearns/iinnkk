@@ -1,0 +1,6 @@
+PP-OCRv5 mobile recognition, PaddlePaddle, Apache-2.0.
+Model: https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_rec_onnx
+Code and license: https://github.com/PaddlePaddle/PaddleOCR
+Downloaded SHA-256: da72dc72ca4dc220df0dfde68c1dedc31c58d3e76a25871122e5056227d50092
+
+Static files are losslessly split into numbered parts. ocr-assets254.json records complete lengths and SHA-256; the local worker verifies reconstructed bytes before inference.
