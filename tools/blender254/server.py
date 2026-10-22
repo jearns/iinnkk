@@ -22,8 +22,12 @@ def validate(data):
     for key in ['width','height','base','depth']:
         n=mm.get(key)
         if not isinstance(n,(float,int))or isinstance(n,bool)or not math.isfinite(n)or not 0<n<=1000:raise ValueError('Invalid dimensions')
+    materials=mesh.get('materials255');indices=mesh.get('triangleMaterials255')
+    if materials is not None:
+        if not isinstance(materials,list)or len(materials)!=3 or any(not isinstance(c,str)or not re.fullmatch(r'#[0-9a-fA-F]{6}',c)for c in materials):raise ValueError('Invalid materials')
+        if not isinstance(indices,list)or len(indices)!=len(faces)//3 or any(type(i)is not int or not 0<=i<3 for i in indices):raise ValueError('Invalid material indices')
     name=str(data.get('name','Handwriting'))[:120]
-    return {'name':name,'mesh':{'vertices':v,'triangles':faces,'mm':mm},'action':data['action']}
+    return {'name':name,'mesh':{'vertices':v,'triangles':faces,'mm':mm,**({'materials255':materials,'triangleMaterials255':indices}if materials is not None else {})},'action':data['action']}
 
 def run(job,data):
     try:
