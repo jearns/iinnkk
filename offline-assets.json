@@ -1,4 +1,5 @@
 [
+  "hand256/studio.css",
   "revision255.css",
   "portrait255.css",
   "hand255/photo.js",
@@ -247,7 +248,7 @@
   "app-runtime.92e574ff0d05a1f2.js",
   "app-runtime.1392d54a7d813572.css",
   "home-runtime.ebfacaee122ba775.css",
-  "home-runtime.1004e8039f403de0.js",
+  "home-runtime.503c43bd098783a0.js",
   "vendor/mediabunny232.js",
   "catalogue-picker183.js",
   "copy-download218.js",
