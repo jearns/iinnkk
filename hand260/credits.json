@@ -1,0 +1,8 @@
+{
+  "title": "仓颉四词轮廓示意",
+  "sourceAsset": "hand260/cangjie-source.jpg",
+  "source": "User-provided IMG_5361.jpeg, used as requested for the default portrait. Original bytes are preserved; no claim of authorship or historical likeness is made.",
+  "words": ["仓颉", "造字", "人文", "始祖"],
+  "composition": "Words are shuffled on entry and chosen randomly per occupied tile. Example letters use the existing LXGW WenKai font, with platform fallback for missing glyphs. Demo letters are not submitted to the personal handwriting ledger. Uploading a personal image switches back to personal glyphs.",
+  "fontLicense": "fonts/lxgw-wenkai-LICENSE.txt"
+}
