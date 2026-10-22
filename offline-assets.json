@@ -1,4 +1,6 @@
 [
+  "hand259/portrait.css",
+  "hand259/portrait-render.js",
   "lab257.html",
   "self-portrait257.html",
   "print257.html",
@@ -28,7 +30,7 @@
   "hand256/studio.css",
   "revision255.css",
   "portrait255.css",
-  "lazy-photo.463c7c7652b5433b.js",
+  "lazy-photo.f28a472f9e2151af.js",
   "lazy-host.5a8a3fcb4eea22af.js",
   "export-host255.css",
   "handwriting-ledger254.js",

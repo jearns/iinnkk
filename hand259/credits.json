@@ -1,0 +1,10 @@
+{
+  "title": "仓颉字迹肖像示意",
+  "source": "AI illustration generated for this project using the built-in image generation tool; a modern artistic interpretation of the legendary Cangjie, not a historical likeness.",
+  "prompt": "Front-facing head-and-shoulders ink-wash portrait of Cangjie, the legendary inventor of Chinese writing; traditional four-eyed sage, broad forehead, long beard, simple ancient robe, white background, clear facial planes, no text, seals or frames; vertical 3:4 composition.",
+  "sourceAsset": "hand259/cangjie-source.webp",
+  "previewAsset": "hand259/cangjie-demo.webp",
+  "dimensions": [3072,4096],
+  "composition": "Rendered with the site's PortraitRender259 at density 30. Example glyphs use the existing LXGW WenKai font (fonts/annotation-hand.woff2, SIL Open Font License); they are not user handwriting and are never added to the handwriting ledger.",
+  "fontLicense": "fonts/lxgw-wenkai-LICENSE.txt"
+}
