@@ -1,15 +1,15 @@
 [
   {
     "source": "copy-download218.js",
-    "name": "lazy-copy.f51abdbfb3f963eb.js"
+    "name": "lazy-copy.c879761eb37e4ad5.js"
   },
   {
     "source": "export-studio182.js",
-    "name": "lazy-export.47f2c9ec16276e0f.js"
+    "name": "lazy-export.18cefaef1f0d44fa.js"
   },
   {
     "source": "export-host255.js",
-    "name": "lazy-host.114255cbfed6ca9a.js"
+    "name": "lazy-host.4bf837eeda7c8298.js"
   },
   {
     "source": "hand254/print-runtime254.js",
@@ -29,7 +29,7 @@
   },
   {
     "source": "hand254/workshop.js",
-    "name": "lazy-workshop.bf280a7ec3c63f90.js"
+    "name": "lazy-workshop.b9072dcb71b806ed.js"
   },
   {
     "source": "works206.js",
@@ -49,6 +49,6 @@
   },
   {
     "source": "i18n218.js",
-    "name": "lazy-i18n.491852de87b10a4b.js"
+    "name": "lazy-i18n.d6dff20c1dd902b7.js"
   }
 ]
