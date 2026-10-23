@@ -105,6 +105,7 @@
     "calligraphy-rank-data183.js",
     "catalogue-picker183.js",
     "copy-load199.js",
+    "release260/catalogue-model.js",
     "timeline73.js",
     "revision73.js",
     "revision74.js",
@@ -401,6 +402,7 @@
     "revision251.css",
     "revision252.css",
     "hand254/shared.css",
-    "revision255.css"
+    "revision255.css",
+    "release260/relations.css"
   ]
 }
