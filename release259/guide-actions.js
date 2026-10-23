@@ -1,0 +1,1 @@
+(()=>{const id=new URLSearchParams(location.search).get('guide259');if(!id||id==='palette259')return;if(!/^[A-Za-z0-9]+$/.test(id))return;let n=0;const run=()=>{const b=document.getElementById(id);if(b&&(!window.WriterEntry154||WriterEntry154.ready)){b.scrollIntoView({block:'center'});if(b.matches('button'))b.click();return}if(++n<100)setTimeout(run,100)};run()})();
