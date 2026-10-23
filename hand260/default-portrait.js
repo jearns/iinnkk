@@ -1,2 +1,3 @@
-/* Demonstration letters stay separate from personal glyphs and writing statistics. */
-(function(root){const words=['仓颉','造字','人文','始祖'],characters=new Set(words.join(''));let font;root.PortraitDefault260={words,characters,prepare(){return font||=(async()=>{const face=new FontFace('PortraitExample260',"url('fonts/annotation-hand.woff2')");await face.load();document.fonts.add(face)})()},sprite(character,color){const canvas=document.createElement('canvas');canvas.width=canvas.height=384;const c=canvas.getContext('2d');c.fillStyle=color;c.font='bold 330px PortraitExample260';c.textAlign='center';c.textBaseline='middle';c.fillText(character,192,198);return canvas}}})(window);
+/* The Cangjie example uses confirmed local handwriting only. */
+(function(root){const words=['仓颉','造字','人文','始祖'],characters=new Set(words.join(''));
+root.PortraitDefault260={words,characters,prepare:async()=>{},sprite(sample,color){return PortraitRender259.sprite(sample,color)}}})(window);
