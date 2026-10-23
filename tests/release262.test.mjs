@@ -13,15 +13,15 @@ test('a copy QR carries the exact catalogue entry and bounded saved brush settin
  assert.equal(writingPreset262({id:'unrelated-local-book'},{values:{zoom:'350'}}),null);
 });
 
-test('only the one-cell rice grid is admitted to the Ark, while other modes retain separate statistics',()=>{
+test('enlarged rice grid remains in the Ark, while other modes retain separate statistics',()=>{
  const s=fs.readFileSync('handwriting-ledger254.js','utf8'),part=s.slice(s.indexOf('function source(){'),s.indexOf('function groupStrokes('));
  const c={localStorage:{getItem:()=>c.mode},root:{bigPaperLayout63:{active:true,rows:1,cols:1}},document:{getElementById:()=>({value:c.ruling})}};
  vm.runInNewContext(part,c);
  c.mode='single';c.ruling='mi';assert.equal(c.source(),'large');
  c.ruling='tian';assert.equal(c.source(),'creation');
- c.ruling='mi';c.root.bigPaperLayout63.cols=2;assert.equal(c.source(),'creation');
+ c.ruling='mi';c.root.bigPaperLayout63.cols=2;assert.equal(c.source(),'large');
  c.mode='copy';assert.equal(c.source(),'copy');
- assert.match(s,/s\.source==='large'&&\(!old\|\|s\.vectors\.length>=old\.strokes\).*store\.put\(s\)/);
+ assert.match(s,/\['large','crossword','input'\]\.includes\(s\.source\).*store\.put\(s\)/);
  assert.match(s,/summary\.sources\[s\.source\]/);
 });
 
