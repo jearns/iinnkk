@@ -11,3 +11,4 @@
 
 - The user explicitly approved automatic execution of this project's requested development, validation, GitHub synchronization and publishing. Continue without asking for the same authorization each release.
 - The user explicitly approved sending the project's public new UI, topic, clue, answer and chapter text to the Microsoft Edge translation endpoint to complete English, French, Russian, Arabic and Spanish localization. This approval does not require sending source code or private user content.
+- Before every synchronization/release, run `npm run check:release`, including `scripts/check-context269.mjs`. All writing pages and overlays must keep right-click, native touch callouts, copying and non-input text selection disabled; use a new resource path when changing this guard so older offline caches cannot restore it.
