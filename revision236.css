@@ -3,7 +3,7 @@
 #home154 .modes154>a:not(.stickySeal154){font-size:clamp(11px,2.9vw,16px)!important;letter-spacing:0!important;white-space:nowrap;min-width:0;padding-inline:0!important}
 body.ui111.mediaMode235 #board{left:0!important;top:0!important;right:0!important;bottom:0!important;width:100%!important;height:100%!important;min-height:0!important}
 body.ui111.mediaMode235.preview-open56 #board{bottom:40px!important;height:calc(100% - 40px)!important}
-body.ui111.mediaMode235:not(.preview-open56) :is(#mediaTools235,#mediaTemplates235,.mediaPopover235,.freeCrop235){display:none!important}
+body.ui111.mediaMode235:not(.preview-open56) #mediaTemplates235{display:none!important}
 /* Translucent system material with stable, undistorted glyphs and controls. */
 body.ui111 :is(.mediaPopover235,#paperPen100,.popup184,.toolPopover,.brushPopover,#recordingOptions39),body.ui111 dialog:not(.mediaEditor218):not(#waiting205){background:rgba(245,245,247,.74)!important;color:#292b2f!important;border:1px solid rgba(255,255,255,.65)!important;backdrop-filter:blur(26px) saturate(1.5)!important;-webkit-backdrop-filter:blur(26px) saturate(1.5)!important;box-shadow:0 12px 36px #0002!important}
 body.ui111 dialog .dialogHead,.mediaPopover235 header{background:transparent!important;color:inherit!important}
