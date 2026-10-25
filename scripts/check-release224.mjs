@@ -1,3 +1,4 @@
+import './check-startup270.mjs';
 import './check-context269.mjs';
 import fs from 'node:fs';import assert from 'node:assert/strict';
 const read=p=>fs.readFileSync(p,'utf8'),places=JSON.parse(read('calligraphy-places224.json'));let keys;

@@ -1,7 +1,7 @@
 {
   "scripts": [
     "compat106.js",
-    "context-guard217.js",
+    "context-guard269.js",
     "paper-motion217.js",
     "art-locations223.js",
     "catalogue-notes211.js",
@@ -36,6 +36,7 @@
     "writing-layout229.js",
     "grid-guides235.js",
     "handwriting-ledger254.js",
+    "subject-layers270.js",
     "app.js",
     "annotation-home.js",
     "process-video.js",
@@ -250,7 +251,8 @@
     "video-editor242.js",
     "game-writing244.js",
     "handwriting-input254.js",
-    "revision254.js"
+    "revision254.js",
+    "subject-controls270.js"
   ],
   "styles": [
     "style.css",

@@ -2,9 +2,7 @@ import{readFile,writeFile,readdir,unlink}from'node:fs/promises';
 import{createHash}from'node:crypto';
 import{transform}from'esbuild';
 const{scripts,styles}=JSON.parse(await readFile('runtime-sources106.json','utf8'));
-const sources=await Promise.all(scripts.map(p=>readFile(p,'utf8'))),groups=[];let group=[],size=0;
-for(const [index,source] of sources.entries()){if(group.length&&(scripts[index-1]==='writer-entry154.js'||size+source.length>120000)){groups.push(group);group=[];size=0}group.push(source);size+=source.length}
-if(group.length)groups.push(group);
+const sources=await Promise.all(scripts.map(p=>readFile(p,'utf8'))),groups=[sources];
 const chunks=await Promise.all(groups.map(async items=>(await transform(items.map(source=>'{const started173=performance.now();try {\n'+source+'\n} catch(error) { window.StartupErrors106?.push(String(error?.message||error)); console.error("Startup module",error); }finally{window.WriterStartup173?.module('+JSON.stringify(scripts[sources.indexOf(source)])+',performance.now()-started173)}}').join('\n;\n'),{minify:true,target:['safari13','chrome79'],charset:'utf8',legalComments:'none'})).code));
 const css=(await transform((await Promise.all(styles.map(p=>readFile(p,'utf8')))).join('\n')+'\ndialog.fallbackDialog106{position:fixed!important;z-index:2000!important;max-height:85vh;overflow:auto}dialog.fallbackDialog106:not([open]){display:none!important}',{loader:'css',minify:true,target:['safari13','chrome79'],charset:'utf8'})).code;
 const hash=s=>createHash('sha256').update(s).digest('hex').slice(0,16),names=chunks.map(js=>'app-runtime.'+hash(js)+'.js'),cn='app-runtime.'+hash(css)+'.css';
