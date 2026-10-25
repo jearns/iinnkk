@@ -8,3 +8,7 @@ Runtime and models are fetched only after choosing 去景. Images are processed 
 Release 272 photo/video occlusion uses DeepLab-v3 (PASCAL VOC person class 15), official MediaPipe model, Apache-2.0.
 https://storage.googleapis.com/mediapipe-models/image_segmenter/deeplab_v3/float32/1/deeplab_v3.tflite
 Stored as release272/person.tflite. Lazy local-only inference; no photo upload. User-painted scenery masks are stored with each media item.
+
+Release 274 uses the legacy MediaPipe MagicTouch point-prompted interactive segmenter, Apache-2.0, only after tapping an object in the depth editor.
+https://storage.googleapis.com/mediapipe-models/interactive_segmenter/magic_touch/float32/1/magic_touch.tflite
+Stored in release274/magic-touch.tflite. Images stay local; contour masks are derived local data. Model results may require manual boundary refinement.
