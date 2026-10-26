@@ -4530,15 +4530,53 @@
       "description": "《祭伯父稿》又称《祭伯文稿》，是颜真卿于唐乾元元年（758）为伯父颜元孙所作的祭文草稿。山东地方志资料记载，他赴饶州途中经洛阳祭墓，寄托对长辈与家族的追念。与《祭侄文稿》相参，可观察祭文草稿中较为从容的铺叙、圆转笔势与凝重行气。临写时宜连读文意，把握停顿和字组之间的呼应。现以传本研习，本站上传版本与递藏信息待进一步核定。",
       "url": "https://shandong-chorography.org/database/a/section/85/article/25/",
       "fullText148": "",
-      "pages": [],
+      "pages": [
+        "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/b7aa098d-3d4b-47d5-869a-feb94c8f3197.jpg",
+        "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/2a941a93-da99-4c7f-962d-47c8b4b707c4.jpg",
+        "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/37c3252c-b48e-4bbf-ad43-c31de53a3020.jpg",
+        "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/83b1f89d-34e0-4a43-a04a-3a027afb3078.jpg",
+        "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/868e0a7f-4480-464b-b1ec-a082f469279e.jpg",
+        "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/6eb495e3-9c00-4ed9-bf81-04e90e887b2c.jpg"
+      ],
       "deleted": false,
-      "cover143": "",
+      "cover143": "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/2a941a93-da99-4c7f-962d-47c8b4b707c4.jpg",
       "coverCrop145": {
         "zoom": 1,
-        "x": 50,
-        "y": 50
+        "x": 60.833333333333286,
+        "y": 0
       },
-      "status": "传本；上传版本待核"
+      "status": "传本；上传版本待核",
+      "authorPosition151": "",
+      "videoUrl148": "",
+      "videoTitle148": "",
+      "style": "",
+      "size": 0,
+      "zoom": 0,
+      "parentId": "",
+      "readingDirection260": "rtl",
+      "pageNames": [
+        "IMG_8813.jpeg",
+        "IMG_8814.jpeg",
+        "IMG_8817.jpeg",
+        "IMG_8816.jpeg",
+        "IMG_8815.jpeg",
+        "IMG_8818.jpeg"
+      ],
+      "pageGroups260": [
+        {
+          "id": "group260-default",
+          "title": "组图一",
+          "pages": [
+            "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/b7aa098d-3d4b-47d5-869a-feb94c8f3197.jpg",
+            "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/2a941a93-da99-4c7f-962d-47c8b4b707c4.jpg",
+            "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/37c3252c-b48e-4bbf-ad43-c31de53a3020.jpg",
+            "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/83b1f89d-34e0-4a43-a04a-3a027afb3078.jpg",
+            "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/868e0a7f-4480-464b-b1ec-a082f469279e.jpg",
+            "timeline/pages/post-8399fc62-466e-44f8-b655-a36464c55d6a/6eb495e3-9c00-4ed9-bf81-04e90e887b2c.jpg"
+          ]
+        }
+      ],
+      "featuredCopies260": []
     },
     "post-f497fff1-5dbb-45aa-9b5e-4aa32b2501bd": {
       "title": "松风阁帖",
