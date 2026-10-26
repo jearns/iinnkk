@@ -1,0 +1,8 @@
+/* Keep maintenance links at the same scale as adjacent actions. */
+.catalogueMaintain276,.catalogueAdmin183>a,.catalogueAdmin183>button{font:inherit;font-size:11px;line-height:1.4}
+body #dailyDialog{background:var(--reader-bg91)!important;color:var(--reader-text90)!important;backdrop-filter:blur(24px)}
+body #dailyDialog :is(button,a,summary,#quoteExpanded){color:inherit}
+.breadcrumb277{display:flex;gap:5px;align-items:center;flex-wrap:wrap;flex-basis:100%;font:12px/1.5 system-ui;padding:4px 0}
+.breadcrumb277 button{font:inherit;background:transparent;border:0;padding:3px;text-decoration:underline;text-underline-offset:3px;min-height:28px}
+
+#dailyDialog .dialogHead{flex-wrap:wrap}#dailyDialog #readerTitle90{flex:1;min-width:0}#dailyDialog .breadcrumb277{width:100%;box-sizing:border-box}

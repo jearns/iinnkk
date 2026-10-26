@@ -35,6 +35,7 @@
     "reference-assets222.js",
     "writing-layout229.js",
     "grid-guides235.js",
+    "grid-first277.js",
     "handwriting-ledger254.js",
     "subject-layers270.js",
     "app.js",
@@ -257,7 +258,8 @@
     "revision254.js",
     "region-selection274.js",
     "subject-controls270.js",
-    "rank-excerpts276.js"
+    "rank-excerpts276.js",
+    "release277/reader.js"
   ],
   "styles": [
     "style.css",
@@ -411,6 +413,7 @@
     "hand254/shared.css",
     "revision255.css",
     "release260/relations.css",
-    "release276/excerpts.css"
+    "release276/excerpts.css",
+    "release277/ui.css"
   ]
 }
