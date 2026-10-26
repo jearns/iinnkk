@@ -14,3 +14,6 @@ window.CalligraphyRanks183={"works":[{"id":"taishan","title":"泰山刻石","aut
 ];for(const w of works)if(!d.works.some(x=>x.id===w.id))d.works.push(w);if(!d.lists.some(l=>l.id==='national275'))d.lists.splice(1,0,{id:'national275',title:'国图四宝',works:['dunhuang','zhaocheng275','yongle275','wenjinge275'],institutional245:true,note186:'中国国家图书馆四大专藏，并列呈现，非高下排名。敦煌遗书按具体卷号与藏所核对；《四库全书》特指文津阁本。'});const dunhuang=d.works.find(w=>w.id==='dunhuang');dunhuang.sources247=[...(dunhuang.sources247||[]),{label:'国图四大专藏说明',url:source}];})(window);
 
 (function(root){const d=root.CalligraphyRanks183;d.release276=true;const refs={'song-cai':['caishi247','wanan'],'song-su':['hanshi','gongfu','lizi','zuiweng'],'song-huang':['songfeng','zhushang','dizhu'],'song-mi':['shusu']};for(const p of d.people246)if(refs[p.id]){p.relatedIds246=refs[p.id];p.representative247=refs[p.id][0]}const songfeng=d.works.find(w=>w.id==='songfeng');songfeng.aliases183=[...(songfeng.aliases183||[]),'松风阁帖'];})(window);
+
+/* Correct an inherited duplicate title: this is the late Yan Qinli stele, not Duobao. */
+(()=>{const d=window.CalligraphyRanks183,w=d.works.find(w=>w.id==='yanqinli');if(w)Object.assign(w,{title:'颜勤礼碑',year:779,dateLabel:'唐大历十四年（779年）',milestone:'以雄浑开张、外拓筋骨呈现颜真卿晚年成熟楷法，是学习颜体与理解盛唐书风的重要典范。'});d.release279=true})();

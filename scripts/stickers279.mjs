@@ -1,0 +1,1 @@
+import{build}from'esbuild';import{copyFile}from'node:fs/promises';await build({entryPoints:['release279/gif-worker-source.mjs'],outfile:'release279/gif-worker.js',bundle:true,minify:true,format:'iife',target:['safari15','chrome90'],legalComments:'none'});await copyFile('node_modules/gifenc/LICENSE.md','release279/gifenc-LICENSE.md');
