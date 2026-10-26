@@ -3751,7 +3751,7 @@
       "museum": "多馆分藏；安阳殷墟博物馆展示出土甲骨",
       "status": "",
       "url": "https://www.anyang.gov.cn/",
-      "style": "ouyang",
+      "style": "",
       "size": 320,
       "zoom": 170,
       "glyph": "甲",
@@ -3762,15 +3762,69 @@
       "dateLabel": "约公元前1300—1200年",
       "summary211": "汉字最早的成熟形态，在契刻与占卜中留下中华文明的文字源头。",
       "description": "殷墟出土的晚商甲骨刻辞，保存占卜、祭祀与王室活动记录，是研究商代历史与早期成熟汉字的直接材料。与居延汉简、敦煌遗书、明清档案并列为二十世纪初中国古文献四大发现。",
-      "pages": [],
-      "cover143": "",
+      "pages": [
+        "timeline/pages/oracle/54b6f7fc-f720-4232-be75-d60ca9b078b5.jpg",
+        "timeline/pages/oracle/0c9be97c-9c12-4087-b803-829fd7ef127c.jpg",
+        "timeline/pages/oracle/9c887a43-a160-4403-854f-1ef65ff3b911.jpg",
+        "timeline/pages/oracle/9fb628ad-a3f0-4d33-94bb-e98f4cc00831.jpg",
+        "timeline/pages/oracle/5d9aa206-85a4-4d44-aa2f-e07155f36d57.jpg",
+        "timeline/pages/oracle/efba8a68-4e3b-4e7d-837f-988771033e7c.jpg",
+        "timeline/pages/oracle/22c0e653-407f-4c78-887f-a3f32e71c31f.jpg",
+        "timeline/pages/oracle/b7dad21d-44a7-4a10-a0aa-8d96d1f0022a.jpg",
+        "timeline/pages/oracle/06b81436-6adb-40af-8637-653b83852e0f.jpg",
+        "timeline/pages/oracle/32d25d9d-82fc-46cb-ad6f-5ba8b6c35c28.jpg",
+        "timeline/pages/oracle/5bc4696e-03fe-4825-94e6-35ac6755c5e1.jpg",
+        "timeline/pages/oracle/139bca65-1b89-4516-bff7-df249204834c.jpg"
+      ],
+      "cover143": "timeline/pages/oracle/5d9aa206-85a4-4d44-aa2f-e07155f36d57.jpg",
       "coverCrop145": {
-        "zoom": 1,
-        "x": 50,
-        "y": 50
+        "zoom": 1.7557493217814928,
+        "x": 53.37756527094038,
+        "y": 44.85882475526316
       },
       "fullText148": "",
-      "deleted": false
+      "deleted": false,
+      "author": "",
+      "authorPosition151": "",
+      "videoUrl148": "",
+      "videoTitle148": "",
+      "parentId": "",
+      "readingDirection260": "rtl",
+      "pageNames": [
+        "IMG_8714.jpeg",
+        "IMG_8715.jpeg",
+        "IMG_8719.jpeg",
+        "IMG_8718.jpeg",
+        "IMG_8710.jpeg",
+        "IMG_8711.jpeg",
+        "IMG_8716.jpeg",
+        "IMG_8717.jpeg",
+        "IMG_8720.jpeg",
+        "IMG_8721.jpeg",
+        "IMG_8712.jpeg",
+        "IMG_8713.jpeg"
+      ],
+      "pageGroups260": [
+        {
+          "id": "group260-default",
+          "title": "组图一",
+          "pages": [
+            "timeline/pages/oracle/54b6f7fc-f720-4232-be75-d60ca9b078b5.jpg",
+            "timeline/pages/oracle/0c9be97c-9c12-4087-b803-829fd7ef127c.jpg",
+            "timeline/pages/oracle/9c887a43-a160-4403-854f-1ef65ff3b911.jpg",
+            "timeline/pages/oracle/9fb628ad-a3f0-4d33-94bb-e98f4cc00831.jpg",
+            "timeline/pages/oracle/5d9aa206-85a4-4d44-aa2f-e07155f36d57.jpg",
+            "timeline/pages/oracle/efba8a68-4e3b-4e7d-837f-988771033e7c.jpg",
+            "timeline/pages/oracle/22c0e653-407f-4c78-887f-a3f32e71c31f.jpg",
+            "timeline/pages/oracle/b7dad21d-44a7-4a10-a0aa-8d96d1f0022a.jpg",
+            "timeline/pages/oracle/06b81436-6adb-40af-8637-653b83852e0f.jpg",
+            "timeline/pages/oracle/32d25d9d-82fc-46cb-ad6f-5ba8b6c35c28.jpg",
+            "timeline/pages/oracle/5bc4696e-03fe-4825-94e6-35ac6755c5e1.jpg",
+            "timeline/pages/oracle/139bca65-1b89-4516-bff7-df249204834c.jpg"
+          ]
+        }
+      ],
+      "featuredCopies260": []
     },
     "mawangdui": {
       "id": "mawangdui",
