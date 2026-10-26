@@ -1,10 +1,11 @@
 {
-  "release": "277",
+  "release": "278",
   "current": [
-    "app-runtime.556e0b28676205c7.js",
+    "app-runtime.9d51b113296aeb0e.js",
     "app-runtime.463483619344788a.css"
   ],
   "previous": [
+    "app-runtime.556e0b28676205c7.js",
     "app-runtime.f996644fcf6320d4.js",
     "app-runtime.911d9927f839d580.js",
     "app-runtime.2f39d8a38e2e02f2.js",

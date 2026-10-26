@@ -1,0 +1,2 @@
+/* Large corpora retain their catalogue cards, without whole-collection excerpt tasks. */
+(function(root){const ids=new Set(['sishan','xiping','zhengshi','kaicheng','shamenghai-bangshu','oracle','juyan','dunhuang','mingqing','yingguang247','zhaocheng275','yongle275','wenjinge275']);const titles=/四[库庫]全[书書]|永[乐樂]大典|敦煌[遗遺][书書]|[赵趙]城金藏|居延[汉漢][简簡]|殷[墟虚]甲骨|明清[档檔]案|四山摩崖刻[经經]|(?:熹平|正始|[开開]成)石[经經]|英光堂帖|榜[书書][选選][赏賞]/;root.TranscriptScope278={individual(work){return!!work&&!ids.has(work.rankId183||work.work276||work.id)&&!titles.test(work.title||'')}}})(window);

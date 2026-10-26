@@ -50,7 +50,7 @@
  const label=q=>q.cat==='heritage'?String(q.source||q.s||'').split(' · ')[0].replace(/\s*·\s*/g,'·'):[q.country||'',q.dynasty||q.era||'',q.author||(q.cat==='film'?'编剧信息待核':q.cat==='heritage'?'文化地标介绍':''),q.title||String(q.source||q.s||'').match(/《([^》]+)》/)?.[1]||(q.cat==='heritage'?q.source||q.s:'')||''].filter((v,i,a)=>v&&a.indexOf(v)===i).join('·');
  const luma=hex=>{const c=hex.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);return .2126*c[0]+.7152*c[1]+.0722*c[2]};
  const fg=ink=>luma(ink)>.3?'#111111':'#fffaf0';
- function syncInk(){const ink=A.getState().brush.color;if(!/^#[0-9a-f]{6}$/i.test(ink))return;root.style.setProperty('--reader-ink90',ink);root.style.setProperty('--reader-text90',fg(ink));const rgb=ink.slice(1).match(/../g).map(x=>parseInt(x,16));root.style.setProperty('--reader-bg91','rgba('+rgb.join(',')+',.66)');}
+ function syncInk(){const ink=A.getState().brush.color;if(!/^#[0-9a-f]{6}$/i.test(ink))return;root.style.setProperty('--reader-ink90',ink);root.style.setProperty('--reader-text90',fg(ink));const rgb=ink.slice(1).match(/../g).map(x=>parseInt(x,16));root.style.setProperty('--reader-bg91','rgba('+rgb.join(',')+',.82)');const panel=$('dailyDialog');if(!panel)return;panel.style.setProperty('background','rgba('+rgb.join(',')+',.82)','important');panel.style.setProperty('color',fg(ink),'important');panel.querySelectorAll('.dialogHead,.dialogBody,#quoteExpanded,.bookmarkNav81,.breadcrumb277').forEach(n=>{n.style.setProperty('background','transparent','important');n.style.setProperty('color','inherit','important')});}
  // A continuous palette space, with paper/ink contrast enforced rather than preset counts.
  function hsl(h,s,l){const a=s*Math.min(l,100-l)/100,f=n=>{const k=(n+h/30)%12;return l-a*Math.max(-1,Math.min(k-3,9-k,1))};return '#'+[0,8,4].map(n=>Math.round(255*f(n)/100).toString(16).padStart(2,'0')).join('')}
  function palette(){const h=Math.random()*360,dark=Math.random()<.3;const paper=hsl(h,8+Math.random()*22,dark?10+Math.random()*9:89+Math.random()*8),ink=hsl((h+120+Math.random()*180)%360,20+Math.random()*48,dark?87+Math.random()*9:8+Math.random()*17),seal=hsl((h+15+Math.random()*75)%360,50+Math.random()*32,dark?65+Math.random()*14:25+Math.random()*17);return {paper,ink,seal}}
@@ -140,9 +140,9 @@
  reset.onclick=()=>{if(savedPalette){applyPalette(savedPalette);savedPalette=null}else $('resetSettings').click();syncView()};
  let mode='';document.addEventListener('mode-changed54',e=>{closeExcerpts();mode=e.detail.id;$('quotesVisibility').value='shown';$('quotesVisibility').dispatchEvent(new Event('change'));A.resetSealPosition('head');reader.close();requestAnimationFrame(syncView)});
  document.addEventListener('quote-changed',e=>{if(reader.open)A.markExcerpt228?.();if(!window.Revision94)applyPalette(palette());updateReader(e.detail)});
- for(const event of ['change','input'])document.addEventListener(event,e=>{if(/ink|color/i.test(e.target.id))syncInk()},true);
+ for(const event of ['change','input'])document.addEventListener(event,e=>{if(/ink|color/i.test(e.target.id))queueMicrotask(syncInk)},true);
  // Core emits this after state changes, so mode labels/watermark/ink cannot drift.
- document.addEventListener('ink-view-changed90',()=>{syncView();syncInk()});
+ document.addEventListener('ink-color278',syncInk);document.addEventListener('ink-view-changed90',()=>{syncView();syncInk()});
  new MutationObserver(()=>{if(reader.open){syncInk();updateReader()}}).observe(reader,{attributes:true,attributeFilter:['open']});
  root.classList.add('v88-ready','v89-ready','v90-ready');syncView();updateReader();
  window.Revision88={ready:true,palette,applyPalette};window.Revision89={ready:true};window.Revision90={ready:true,syncView,syncInk,normalize,openExcerpts,showReader};window.Revision91={ready:true};

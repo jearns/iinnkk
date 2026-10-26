@@ -14,3 +14,6 @@
 - Before every synchronization/release, run `npm run check:release`, including `scripts/check-context269.mjs`. All writing pages and overlays must keep right-click, native touch callouts, copying and non-input text selection disabled; use a new resource path when changing this guard so older offline caches cannot restore it.
 
 - Keep first writing under the 5-second target: run `tests/startup270.test.mjs` and the startup budgets in `check:release`. Cache only resources actually used after first writing is ready; never restore full-manifest caching at installation or make camera/account/cache readiness a prerequisite for a writable canvas. Human foreground models remain lazy and off the writing thread.
+
+- Transcript supplementation covers individual works only. Do not compile or fill texts for large corpora/collections, including 四库全书、永乐大典、敦煌遗书、赵城金藏、居延汉简、殷墟甲骨、明清档案, or similar multi-work archives.
+- Portrait missing-glyph capture must use the actual handwriting canvas; ordinary text fields continue using the system IME.
