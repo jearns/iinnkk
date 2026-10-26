@@ -1,7 +1,7 @@
 {
   "name": "iinnkk",
   "private": true,
-  "version": "278.0.0",
+  "version": "279.0.0",
   "type": "module",
   "scripts": {
     "build": "node scripts/build47.mjs",
@@ -22,6 +22,7 @@
     "esbuild": "^0.25.10",
     "fake-indexeddb": "^6.2.4",
     "fflate": "^0.8.3",
+    "gifenc": "^1.0.3",
     "happy-dom": "^20.0.8",
     "miniflare": "^4.20250917.0",
     "onnxruntime-web": "^1.30.0",

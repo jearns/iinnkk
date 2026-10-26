@@ -17,3 +17,4 @@
 
 - Transcript supplementation covers individual works only. Do not compile or fill texts for large corpora/collections, including 四库全书、永乐大典、敦煌遗书、赵城金藏、居延汉简、殷墟甲骨、明清档案, or similar multi-work archives.
 - Portrait missing-glyph capture must use the actual handwriting canvas; ordinary text fields continue using the system IME.
+- Rank share images must include a substantive one-sentence milestone/cultural significance for every work; price alone is insufficient. Preview, full export and paginated export share one renderer. Original and personal-practice image choices stay independent.

@@ -1,0 +1,512 @@
+{
+  "taishan": {
+    "title": "泰山刻石",
+    "summary": "秦统一文字后的小篆典范，把“书同文”写成可见的国家形象。",
+    "source": "https://tsgw.taian.gov.cn/art/2021/6/16/art_162237_10286435.html"
+  },
+  "longcang": {
+    "title": "龙藏寺碑",
+    "summary": "保留六朝隶意而开启唐楷法度，是南北书风汇流的桥梁。",
+    "source": "https://www.dpm.org.cn/journal_detail/112103.html"
+  },
+  "caoquan": {
+    "title": "曹全碑",
+    "summary": "以舒展波磔与匀净结体确立汉隶秀逸一路，成为后世学习成熟汉隶的重要范本。",
+    "source": "https://www.beilin-museum.com/index.php?a=index&aid=145&c=View&m=home"
+  },
+  "jiucheng": {
+    "title": "九成宫醴泉铭",
+    "summary": "以险劲而严密的结构，把初唐楷书的法度推至典范。",
+    "source": "https://www.dpm.org.cn/collection/impres/234546.html"
+  },
+  "luoshen13": {
+    "title": "洛神赋十三行",
+    "summary": "以疏朗舒展的小楷承续晋人风神，成为后世学习王献之小楷与理解晋代楷法的重要范本。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/228244.html"
+  },
+  "lanting": {
+    "title": "兰亭集序",
+    "summary": "把文人雅集、人生感怀与自然运笔融成一体，成为行书的长期范式。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/228277.html"
+  },
+  "zixu": {
+    "title": "自叙帖",
+    "summary": "将连绵狂草与自述、赞诗汇成抒情长卷，是唐代狂草艺术及其自我表达意识的代表名迹。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/14890?dep=P"
+  },
+  "shusu": {
+    "title": "蜀素帖",
+    "summary": "在绢本上呈现纵横自如的行书笔势，见证米芾由取法古人走向自家面目，是宋代尚意书风的代表。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/912?dep=P"
+  },
+  "jizhi": {
+    "title": "祭侄文稿",
+    "summary": "以不加修饰的悲愤草稿突破整齐法度，成为真情书写与中国行书艺术的标志性名迹。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P"
+  },
+  "hanshi": {
+    "title": "黄州寒食帖",
+    "summary": "字势随诗情渐次放大，将贬谪困顿转成宋人尚意书法的典型。",
+    "source": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/14714?dep=P&mode=full"
+  },
+  "boyuan": {
+    "title": "伯远帖",
+    "summary": "以短札保留东晋名人真实书写，是认识晋人行书不可替代的实物。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/228199.html"
+  },
+  "zhanghan": {
+    "title": "张翰思鲈帖",
+    "summary": "以瘦劲险绝的行书写张翰思鲈故事，展现欧阳询楷法之外的行书成就与初唐对晋人笔意的转化。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/234567.html"
+  },
+  "jiuhua": {
+    "title": "韭花帖",
+    "summary": "以疏朗留白和欹正相生，连接晋唐传统与宋人尚意。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/22623?dep=P"
+  },
+  "mengzhao": {
+    "title": "蒙诏帖",
+    "summary": "以旧题杨凝式的书风与仿写争议，呈现名家归属如何接受版本检验，是书法鉴定史的观察个案。",
+    "source": "https://intl.dpm.org.cn/Calligraphy_collection/25607.html"
+  },
+  "songfeng": {
+    "title": "松风阁诗帖",
+    "summary": "以长画舒展、中宫收束开创欹侧开张的空间节奏，是黄庭坚行书与宋人尚意书风的代表名迹。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/43?dep=P"
+  },
+  "tumu": {
+    "title": "土母帖",
+    "summary": "以丰腴而严谨的日常书札承接颜、杨之法，保存五代至宋初的转折。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/14903?dep=P"
+  },
+  "kuaixue": {
+    "title": "快雪时晴帖",
+    "summary": "以短札凝缩晋人书札的清雅风神，后列清宫三希之首，成为二王书风传承与宫廷鉴藏的文化标识。",
+    "source": "https://www.npm.gov.tw/"
+  },
+  "zhongqiu": {
+    "title": "中秋帖",
+    "summary": "以连绵一笔书意传承王献之书风，作为三希名帖之一，其宋人临写与旧题归属须结合版本理解。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/228204.html"
+  },
+  "sanxi": {
+    "title": "三希宝帖",
+    "summary": "三件晋人书风名迹汇成清宫三希鉴藏体系，是中国书札艺术与宫廷收藏史的重要文化标识。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/228199.html"
+  },
+  "mengdian": {
+    "title": "仲尼梦奠帖",
+    "summary": "以瘦劲险绝的结体展示初唐行书筋骨，是认识欧阳询行书成就及晋唐书风转化的重要名迹。",
+    "source": "https://zhuanti.mct.gov.cn/lnsbwg2022.html"
+  },
+  "caoshuqianzi": {
+    "title": "草书千字文",
+    "summary": "以狂草长卷与泥金云龙纸相映，融合皇家笺纸工艺和宋代草书表现，是赵佶草书的代表作。",
+    "source": "https://zhuanti.mct.gov.cn/lnsbwg2022.html"
+  },
+  "chibi": {
+    "title": "前后赤壁赋",
+    "summary": "以复古的二王笔法融入苏轼名篇，使元代行书重建温润流美的规范。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/373?dep=P"
+  },
+  "zhupoems": {
+    "title": "草书诗帖",
+    "summary": "以狂草重写曹植乐府，将文学情绪转成笔墨节奏，体现明代草书对晋唐传统的继承与再创造。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/2517?dep=P"
+  },
+  "shigu": {
+    "title": "石鼓文",
+    "summary": "从铸铭走向刻石的诗文，留下秦系大篆雄浑而圆转的基准。",
+    "source": "https://www.dpm.org.cn/collection/impres/234438.html"
+  },
+  "yishan": {
+    "title": "峄山碑",
+    "summary": "以匀整圆转的小篆成为后代入门范本，显示秦篆如何经摹刻延续。",
+    "source": "https://www.beilin-museum.com/"
+  },
+  "langya": {
+    "title": "琅琊台刻石",
+    "summary": "秦刻石残文把统一制度与小篆规范留在同一件实物之上。",
+    "source": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202010/t20201028_247940.shtml"
+  },
+  "kuaiji": {
+    "title": "会稽刻石",
+    "summary": "把秦代教化宣言纳入小篆刻石体系，补充统一文字的南方见证。",
+    "source": "https://www.dpm.org.cn/collection/impres/234107.html"
+  },
+  "yuanan": {
+    "title": "袁安碑",
+    "summary": "以汉代宽博结体和秦篆圆劲笔线，让小篆在隶书时代延续生命。",
+    "source": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/dzjp/mzyp/articlec484963b76bb4ed7be38b0295575efc0.html"
+  },
+  "yuanchang": {
+    "title": "袁敞碑",
+    "summary": "与袁安碑共同保存汉代篆书的实物面貌，为研究小篆在隶书盛行时代的延续提供重要依据。",
+    "source": "https://www.chnmus.net/ch/collection/appraise/details.html?id=512155561935985314"
+  },
+  "tianfa": {
+    "title": "天发神谶碑",
+    "summary": "以方折、垂锋与奇崛字形改造圆转篆法，启发后世金石书写。",
+    "source": "https://www.dpm.org.cn/"
+  },
+  "biluo": {
+    "title": "碧落碑",
+    "summary": "以古文与篆体交织的复杂构形保存唐人重构古文字的尝试，是篆书传承与文字考释的重要碑刻。",
+    "source": "https://www.dpm.org.cn/historical/talk/210376.html"
+  },
+  "sanfen": {
+    "title": "三坟记",
+    "summary": "以唐代中锋篆法继承秦篆，使小篆在楷行兴盛时代重新成为艺术语言。",
+    "source": "https://www.beilin-museum.com/"
+  },
+  "mengying": {
+    "title": "篆书千字文碑",
+    "summary": "以宋代篆书刊刻千字文，把篆体教育与碑林传承连接起来。",
+    "source": "https://www.beilin-museum.com/index.php?a=index&c=Lists&m=home&tid=86"
+  },
+  "liqi": {
+    "title": "礼器碑",
+    "summary": "以瘦劲线条和鲜明波磔形成汉隶典范，是孔庙礼制文献与后世隶书取法的重要碑刻。",
+    "source": "https://www.dpm.org.cn/collection/impres/234635.html"
+  },
+  "yiying": {
+    "title": "乙瑛碑",
+    "summary": "以方整平正、骨肉匀停的汉隶，将行政文书刻成庙堂典范。",
+    "source": "https://www.dpm.org.cn/journal_detail/112088.html"
+  },
+  "shichen": {
+    "title": "史晨碑",
+    "summary": "把整饬章法、厚重笔画与孔庙祭祀记录汇成汉隶正宗一路。",
+    "source": "https://kongziyjy.org/nd.jsp?id=2498"
+  },
+  "zhangqian": {
+    "title": "张迁碑",
+    "summary": "以方笔、古拙结体与错落章法，开出汉隶雄强朴厚的一路。",
+    "source": "https://tsgw.taian.gov.cn/art/2021/6/13/art_198322_10286362.html"
+  },
+  "shimen": {
+    "title": "石门颂",
+    "summary": "以舒展长画与草意突破整饬碑版的拘束，成为汉代摩崖隶书及后世追求自然书风的重要典范。",
+    "source": "https://www.htq.gov.cn/hzshtqzf/zjht/lswh/201004/b3532f0f77b3420a8a772d419a16684c.shtml"
+  },
+  "huashan": {
+    "title": "西岳华山庙碑",
+    "summary": "在严整汉隶中容纳圆劲与波磔，成为后世取法汉碑的重要源头。",
+    "source": "https://ggzl.dpm.org.cn/app/api/app/exhibitionListPc/165"
+  },
+  "xixia": {
+    "title": "西狭颂",
+    "summary": "雄强汉隶与五瑞图同刻，形成兼具图像与交通史的摩崖叙事。",
+    "source": "https://www.cdmuseum.com/xinwen/202402/3485.html"
+  },
+  "hengfang": {
+    "title": "衡方碑",
+    "summary": "以茂密布白和厚重方整结体确立汉隶沉雄一路，为后世学习汉碑提供区别于秀逸风格的重要范本。",
+    "source": "https://www.dpm.org.cn/"
+  },
+  "xianyuhuang": {
+    "title": "鲜于璜碑",
+    "summary": "以出土原碑的清晰刻痕，为汉隶雄强方整风格补上实物证据。",
+    "source": "https://www.tjbwg.com/"
+  },
+  "xuanshi": {
+    "title": "宣示表",
+    "summary": "在隶楷转变中建立质朴而秩序清晰的楷书雏形。",
+    "source": "https://www.dpm.org.cn/"
+  },
+  "huangting": {
+    "title": "黄庭经",
+    "summary": "以小楷的均衡点画与内在气韵，成为晋人小字法度的重要范本。",
+    "source": "https://www.dpm.org.cn/"
+  },
+  "leyi": {
+    "title": "乐毅论",
+    "summary": "以精密而不板滞的小楷承载论述，影响后世小楷的取法。",
+    "source": "https://www.dpm.org.cn/"
+  },
+  "nikuan": {
+    "title": "倪宽赞",
+    "summary": "以细劲丰润的小楷承传褚遂良书风，是后世学习唐人小楷的著名法帖，旧题归属须依馆方说明辨识。",
+    "source": "https://www.npm.gov.tw/"
+  },
+  "yanta": {
+    "title": "雁塔圣教序",
+    "summary": "以细劲秀润的楷法贯通南朝笔意与唐代法度，是褚遂良楷书成熟面貌及初唐楷法发展的代表碑刻。",
+    "source": "https://www.dpm.org.cn/collection/impres/234134.html"
+  },
+  "duobao": {
+    "title": "多宝塔碑",
+    "summary": "以精整饱满的早期楷法展现颜体形成过程，是认识颜真卿书风演变与学习唐楷的重要范本。",
+    "source": "https://www.dpm.org.cn/collection/impres/261924.html"
+  },
+  "yanqinli": {
+    "title": "颜勤礼碑",
+    "summary": "以雄浑开张、外拓筋骨呈现颜真卿晚年成熟楷法，是学习颜体与理解盛唐书风的重要典范。",
+    "source": "https://www.dpm.org.cn/collection/impres/234175.html"
+  },
+  "xuanmi": {
+    "title": "玄秘塔碑",
+    "summary": "以骨力、方整结构与劲健转折，树立晚唐柳体的规范。",
+    "source": "https://www.dpm.org.cn/collection/impres/261926.html"
+  },
+  "shupu": {
+    "title": "书谱",
+    "summary": "让草书笔法与书学理论同处一卷，成为可读、可临、可论的双重经典。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/14900?dep=P"
+  },
+  "gushi": {
+    "title": "古诗四帖",
+    "summary": "以大开大合的连绵长卷呈现狂草的速度与空间张力，是研究传世张旭书风及其摹传版本的重要材料。",
+    "source": "https://zhuanti.mct.gov.cn/lnsbwg2022.html"
+  },
+  "pingfu": {
+    "title": "平复帖",
+    "summary": "以保留隶意的质朴章草保存西晋名人书写，是研究早期墨迹与隶草向今草演变的珍贵实物。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/234553.html"
+  },
+  "shiqi": {
+    "title": "十七帖",
+    "summary": "以多通尺牍展示今草的结构法与连贯节奏，成为草书教学的长期范本。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/1986?dep=P"
+  },
+  "guanjun": {
+    "title": "冠军帖",
+    "summary": "以旧题草圣的奔逸草势传承早期草书理想，是理解汉晋书风如何经后世法帖重构的材料。",
+    "source": "https://www.dpm.org.cn/"
+  },
+  "zhushang": {
+    "title": "诸上座帖",
+    "summary": "以长线条、顿挫与纠结交替将禅语化为草书节奏，是黄庭坚大草及宋代尚意书风的重要代表。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/228218.html"
+  },
+  "fuge": {
+    "title": "郙阁颂",
+    "summary": "以古朴茂密的汉隶记录栈道工程，与石门、西狭并列汉三颂。",
+    "source": "https://www.dpm.org.cn/collection/impres/231823.html"
+  },
+  "zhengwengong": {
+    "title": "郑文公下碑",
+    "summary": "以篆隶气息融入宽博楷法，成为北朝摩崖书法的代表，并为后世碑学取法提供重要源头。",
+    "source": "https://www.laizhou.gov.cn/art/2021/11/12/art_23203_2932809.html"
+  },
+  "yihe": {
+    "title": "瘗鹤铭",
+    "summary": "大字中的隶意、草情与舒朗气度，启发后世榜书并获“大字之祖”赞誉。",
+    "source": "https://jssdfz.jiangsu.gov.cn/n96/20221114/i22004.html"
+  },
+  "jingshiyu": {
+    "title": "经石峪金刚经",
+    "summary": "以巨幅刻经将大字书法融入山体空间，是北朝佛教刻经与摩崖书法相结合的代表遗存。",
+    "source": "https://www.dpm.org.cn/lemmas/241211.html"
+  },
+  "sishan": {
+    "title": "四山摩崖刻经",
+    "summary": "以大字摩崖传播佛经，使北朝书法、信仰与山体空间相融。",
+    "source": "https://www.mencius.gov.cn/index.php/cms/item-list-category-1398-page-5.shtml"
+  },
+  "zhongxing": {
+    "title": "大唐中兴颂",
+    "summary": "以雄伟颜楷、诗文与天然崖面合成“摩崖三绝”，铭刻时代转折。",
+    "source": "https://www.hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html"
+  },
+  "shimenming": {
+    "title": "石门铭",
+    "summary": "以跌宕结体和开张空间承接汉代摩崖遗韵，是北魏楷书及后世碑学探索的重要取法对象。",
+    "source": "https://www.dpm.org.cn/lemmas/241188.html"
+  },
+  "jitaishan": {
+    "title": "纪泰山铭",
+    "summary": "以帝王御书的大字八分书，形成山岳、封禅与唐隶相交的宏大景观。",
+    "source": "https://tsgw.taian.gov.cn/art/2021/6/16/art_162237_10286435.html"
+  },
+  "shengjiao": {
+    "title": "集王圣教序",
+    "summary": "以集字把王羲之行书带入大型碑刻，推动二王书风广泛传播。",
+    "source": "https://www.beilin-museum.com/"
+  },
+  "xiping": {
+    "title": "熹平石经",
+    "summary": "用标准汉隶固定官定经文，成为文字规范与经学传播的实物标准。",
+    "source": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202008/t20200824_247256.shtml"
+  },
+  "zhengshi": {
+    "title": "正始石经",
+    "summary": "以三体并列同一经字，建立古文、篆书与隶书互证的视觉字典。",
+    "source": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33105.shtml"
+  },
+  "kaicheng": {
+    "title": "开成石经",
+    "summary": "把十二部儒家经典刻成庞大石上文库，使唐楷成为公共校读标准。",
+    "source": "https://www.beilin-museum.com/index.php?a=index&c=Lists&m=home&tid=86"
+  },
+  "dizhu": {
+    "title": "砥柱铭",
+    "summary": "以长画舒展、结体欹侧写魏征《砥柱铭》，是黄庭坚大字行书与宋代尚意书风的重要代表。",
+    "source": "https://jw.beijing.gov.cn/language/ywsh/201606/t20160623_1056379.html"
+  },
+  "shamenghai-bangshu": {
+    "title": "榜书选赏",
+    "summary": "以碑帖融会的雄强大字拓展现代榜书表现，呈现传统金石笔意在近现代公共书写中的延续。",
+    "source": "https://www.zhejiangmuseum.com/"
+  },
+  "wuchangshuo-shigu": {
+    "title": "临石鼓文",
+    "summary": "将石鼓古籀融入苍劲笔势，成为近现代金石书风的重要范式。",
+    "source": "https://www.shenzhenmuseum.com/webCollection/collectionDetail?exId=bf7b7740f34c4fcdaa7d46fbc3167d2e&resId=1e8bbc06013449d4b2e5b4841c728b66"
+  },
+  "wuhou": {
+    "title": "蜀丞相诸葛武侯祠堂碑",
+    "summary": "以名相之文、名家之书和武侯功德汇成纪念碑典范。",
+    "source": "https://www.ccdi.gov.cn/special/jtsj/jt_jtsj/201706/t20170612_100891.html"
+  },
+  "lizi": {
+    "title": "苏轼荔子碑",
+    "summary": "以韩愈文章、苏轼书迹与柳宗元事迹汇成名碑，成为连接唐宋文脉与地方文化记忆的重要载体。",
+    "source": "https://www.yzcity.gov.cn/"
+  },
+  "baozhi": {
+    "title": "宝志公像赞诗碑",
+    "summary": "以诗、画、书合璧纪念宝志，呈现文学、人物图像与碑刻书法共同建构文化记忆的传统。",
+    "source": "https://www.nanjing.gov.cn/"
+  },
+  "suxian": {
+    "title": "苏仙岭三绝碑",
+    "summary": "以词、书、跋相互回应保存宋人贬谪文学的共鸣，是文学名篇与书法碑刻共同流传的文化名迹。",
+    "source": "https://www.hunantoday.cn/news/xhn/201602/14454833.html"
+  },
+  "zuiweng": {
+    "title": "苏轼书醉翁亭记碑",
+    "summary": "欧文的山水意境与苏书的丰润气象，成为文章书法合璧的名碑。",
+    "source": "https://www.zzmuseum.com/"
+  },
+  "lisheng": {
+    "title": "李晟墓碑",
+    "summary": "柳体严整笔法与裴度文章共同铭刻中兴名将功绩。",
+    "source": "https://sn.cri.cn/2018-10-10/a9d320c0-dd8c-b673-5dc6-39eb447ea7c7.html"
+  },
+  "chenghuang": {
+    "title": "新修城隍庙碑",
+    "summary": "官员亲撰亲书与精工刻石结合，使地方公共记忆化为艺术。",
+    "source": "https://dao.china.com.cn/2026-07/20/content_43463943.shtml"
+  },
+  "wanan": {
+    "title": "万安桥记大字碑",
+    "summary": "以简练记文和雄健楷书记录万安桥营建，使公共工程史与宋代书法相互见证，成为蔡襄书艺的代表碑刻。",
+    "source": "https://www.quanzhou.gov.cn/lyb/lswh/zdww/201609/t20160913_372301.htm"
+  },
+  "shouchan": {
+    "title": "上尊号与受禅碑",
+    "summary": "两通碑以成熟隶书记录汉魏政权更替，兼具史料与艺术价值。",
+    "source": "https://www.xuchang.gov.cn/zjxc/005010/20211110/8a942bfd-b4a8-4304-b3f9-0d793364ad60.html"
+  },
+  "auction-pingan": {
+    "title": "平安帖（拍卖本）",
+    "summary": "以短札传递平安问候，保存二王书风在后世摹传中的面貌，其版本与真伪须结合著录审慎辨识。",
+    "source": "https://amma.artron.net/observation_shownews.php?newid=837914"
+  },
+  "guoyouzhi": {
+    "title": "致郭右之二帖卷",
+    "summary": "两通信札将仕隐心事化入流转行草，是理解赵孟頫早期帖学与元代文人交游的重要作品。",
+    "source": "https://www.trueart.com/news/359245.html"
+  },
+  "rao-hanliu": {
+    "title": "草书韩愈柳宗元文",
+    "summary": "以纵逸草书重写韩愈、柳宗元名篇，呈现元末文人以书法承续唐代文章传统的艺术实践。",
+    "source": "https://companies.caixin.com/2025-04-11/102308294.html"
+  },
+  "jushi": {
+    "title": "局事帖",
+    "summary": "以端雅沉静的书札留下曾巩日常往来，是研究北宋文人书写与唐宋八大家文化网络的珍贵材料。",
+    "source": "https://art.people.com.cn/n1/2016/0519/c206244-28362025.html"
+  },
+  "zhao-xinjing": {
+    "title": "般若波罗蜜多心经",
+    "summary": "以圆润精严的楷法书写《心经》，将赵孟頫复古书风与元代写经传统结合，体现经文与书艺相融。",
+    "source": "https://www.thepaper.cn/newsDetail_forward_1910000"
+  },
+  "zhao-huangting": {
+    "title": "临黄庭经（保利本）",
+    "summary": "以临写《黄庭经》追摹晋人小楷，是观察赵孟頫取法二王、重建元代小楷规范的实物线索。",
+    "source": "https://www.trueart.com/news/638899.html"
+  },
+  "gongfu": {
+    "title": "功甫帖（拍卖本）",
+    "summary": "以极简尺牍留下宋人交游的书写痕迹，拍卖本的归属存在争论，提示鉴藏判断必须结合版本与证据。",
+    "source": "https://www.chinanews.com/cul/2013/12-21/5647683.shtml"
+  },
+  "songke-zhuangyou": {
+    "title": "草书杜子美壮游诗卷",
+    "summary": "以章草、今草相融的笔势书写杜甫《壮游》，展现宋克承晋接元、推动明初草书复兴的实践。",
+    "source": "https://collection.sina.com.cn/zgsh/20091123/16397003637.shtml"
+  },
+  "dong-longshen": {
+    "title": "龙神感应记",
+    "summary": "以疏朗章法和流动行书书写记文，体现董其昌以晋唐帖学建构晚明文人书风的艺术取向。",
+    "source": "https://collection.sina.com.cn/zgsh/20091123/16397003637.shtml"
+  },
+  "oracle": {
+    "title": "殷墟甲骨",
+    "summary": "刻辞让商王世系、祭祀与占卜可与传世文献互证，开启甲骨学。",
+    "source": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/"
+  },
+  "juyan": {
+    "title": "居延汉简",
+    "summary": "边塞簿籍、书信与文书留下普通人的手迹，推动简牍学与汉代制度史研究。",
+    "source": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/"
+  },
+  "dunhuang": {
+    "title": "敦煌遗书",
+    "summary": "宗教典籍与世俗文书同存，开辟跨语言、跨地域的敦煌学。",
+    "source": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/"
+  },
+  "mingqing": {
+    "title": "明清档案",
+    "summary": "诏令、奏折与制度文书保存国家运行的原始记录，拓展明清史研究。",
+    "source": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/"
+  },
+  "milan247": {
+    "title": "米芾题兰亭序卷",
+    "summary": "米芾题跋保存宋人鉴赏兰亭的眼光，现卷前帖曾经替换，是辨析书迹流传与鉴藏证据的重要个案。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/233528.html"
+  },
+  "yingguang247": {
+    "title": "英光堂帖 · 岳珂集刻米芾书迹",
+    "summary": "岳珂集刻所藏米芾书迹，以刻帖传播北宋行书，是理解南宋私人收藏与法帖传承的重要材料。",
+    "source": "https://artsandculture.google.com/asset/FwGGRkhmlXd5xw?hl=zh-TW"
+  },
+  "caishi247": {
+    "title": "蔡襄行书自书诗卷",
+    "summary": "以十一首北行自作诗入行书，保存蔡襄中年书风，是理解宋四家与北宋文人自书诗传统的重要作品。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/228526.html"
+  },
+  "anguoshigu247": {
+    "title": "十鼓斋旧藏石鼓文 · 版本专题",
+    "summary": "安国十鼓斋旧藏将石鼓文拓本纳入系统鉴藏，是研究秦系古籀、拓本版本与明代金石收藏的线索。",
+    "source": "https://www.dpm.org.cn/collection/impres/228598.html"
+  },
+  "kushu247": {
+    "title": "枯树赋 · 王世贞鉴藏专题",
+    "summary": "赵孟頫临写与王世贞鉴藏题跋交叠，呈现《枯树赋》经临摹、鉴藏和刻帖传播的书法传承链。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/27579?dep=P"
+  },
+  "luoshui247": {
+    "title": "落水兰亭 · 孙承泽旧藏本的清内府摹刻",
+    "summary": "清内府据递藏旧本摹刻兰亭，使落水护帖的鉴藏故事转为法帖传播，须与早期原拓分辨阅读。",
+    "source": "https://www.dpm.org.cn/collection/impres/233223.html"
+  },
+  "zhaocheng275": {
+    "title": "赵城金藏",
+    "summary": "以金代雕版保存佛典系统，是中国国家图书馆四大专藏之一，也是研究佛教文献与古籍印刷的重要实物。",
+    "source": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml"
+  },
+  "yongle275": {
+    "title": "永乐大典",
+    "summary": "以大型类书汇存历代文献，是中国国家图书馆四大专藏之一，对辑佚古籍与研究知识编纂具有重要价值。",
+    "source": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml"
+  },
+  "wenjinge275": {
+    "title": "文津阁《四库全书》",
+    "summary": "以经史子集汇成清代官修丛书，是中国国家图书馆四大专藏之一，集中呈现传统典籍分类与汇编体系。",
+    "source": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml"
+  }
+}
