@@ -1,0 +1,10 @@
+/* Explicit URL imports only. No crawler, installation prefetch or remote publishing. */
+(function(root){
+const image=/\.(?:jpe?g|png|webp)(?:[?#]|$)/i;
+function url(value,base){try{const u=new URL(value,base);return u.protocol==='https:'&&!u.username&&!u.password?u.href:''}catch{return ''}}
+function lines(text){return [...new Set(text.split(/\r?\n/).map(s=>s.trim()).filter(Boolean))].map(s=>{const parts=s.split(/\s*\|\s*/);const source=url(parts.at(-1));if(!source)throw Error('请使用 HTTPS 网页或图片网址');return{source,title:parts.length>1?parts.slice(0,-1).join(' · '):''}})}
+function parse(html,source){const doc=new DOMParser().parseFromString(html,'text/html'),base=url(doc.querySelector('base[href]')?.getAttribute('href'),source)||source,title=doc.querySelector('meta[property="og:title"]')?.content||doc.querySelector('h1')?.textContent||doc.title||'',paths=[];for(const n of doc.querySelectorAll('meta[property="og:image"],img')){const src=n.getAttribute('data-original')||n.getAttribute('data-src')||n.getAttribute('content')||n.getAttribute('src');const next=url(src,base);if(!next||/logo|favicon|icon|avatar|qrcode/i.test(next))continue;const width=Number(n.getAttribute('width')),height=Number(n.getAttribute('height'));if(width&&width<100||height&&height<100)continue;paths.push(next)}const transcript=doc.querySelector('[data-transcript],.transcript,.fullText148')?.textContent?.trim()||'';return{title:title.trim().slice(0,200),images:[...new Set(paths)].slice(0,150),fullText148:transcript}}
+async function fetch276(source){const c=new AbortController,t=setTimeout(()=>c.abort(),10000);try{const r=await fetch(source,{signal:c.signal,credentials:'omit',referrerPolicy:'no-referrer'});if(!r.ok)throw Error('HTTP '+r.status);return r}finally{clearTimeout(t)}}
+async function resolve(row){if(image.test(row.source))return{...row,images:[row.source]};try{const r=await fetch276(row.source),data=parse(await r.text(),row.source);return{...row,...data,title:row.title||data.title}}catch{return{...row,images:[],blocked:true}}}
+root.CatalogueImport276={url,lines,parse,resolve,fetch:fetch276};
+})(window);

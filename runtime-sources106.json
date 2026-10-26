@@ -230,6 +230,7 @@
     "revision217.js",
     "media-editor218.js",
     "revision218.js",
+    "video-cuts276.js",
     "camera223.js",
     "revision228.js",
     "scene-video232.js",
@@ -238,6 +239,7 @@
     "stamp-rules238.js",
     "media-crop274.js",
     "media-studio235.js",
+    "grid-text276.js",
     "revision235.js",
     "children239.js",
     "reading239.js",
@@ -254,7 +256,8 @@
     "system-input275.js",
     "revision254.js",
     "region-selection274.js",
-    "subject-controls270.js"
+    "subject-controls270.js",
+    "rank-excerpts276.js"
   ],
   "styles": [
     "style.css",
@@ -407,6 +410,7 @@
     "revision252.css",
     "hand254/shared.css",
     "revision255.css",
-    "release260/relations.css"
+    "release260/relations.css",
+    "release276/excerpts.css"
   ]
 }
