@@ -1,4 +1,5 @@
 import{readFile,writeFile,copyFile}from'node:fs/promises';import{execFileSync}from'node:child_process';
+execFileSync(process.execPath,['scripts/system-input275.mjs'],{stdio:'inherit'});
 execFileSync(process.execPath,['scripts/handwriting254.mjs'],{stdio:'inherit'});
 execFileSync(process.execPath,['scripts/lazy257.mjs'],{stdio:'inherit'});
 const previous=JSON.parse(await readFile('runtime-history154.json','utf8'));
