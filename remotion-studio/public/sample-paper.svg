@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 852 970">
+  <rect width="852" height="970" fill="#e9dfca"/>
+  <rect x="32" y="32" width="788" height="906" fill="none" stroke="#b9aa8e" stroke-width="1"/>
+  <path d="M85 180H767M85 790H767" stroke="#c9bda6" opacity=".6"/>
+  <text x="426" y="420" text-anchor="middle" fill="#857761" font-family="serif" font-size="32" letter-spacing="8">在手筆中导出作品</text>
+  <text x="426" y="477" text-anchor="middle" fill="#857761" font-family="serif" font-size="22">替换此处的演示纸张</text>
+  <rect x="696" y="822" width="66" height="66" fill="#ad4633" opacity=".8"/>
+  <text x="729" y="866" text-anchor="middle" fill="#f8eddc" font-family="serif" font-size="28">手</text>
+</svg>

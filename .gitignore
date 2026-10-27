@@ -2,5 +2,6 @@
 /.sites-runtime/
 
 /node_modules/
+/remotion-studio/node_modules/
 /.wrangler/
 /.env*
