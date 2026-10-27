@@ -2,3 +2,4 @@
 
 .stickerControls279{flex-wrap:wrap}.stickerControls279 input[type=file]{width:min(190px,100%);height:auto;font-size:11px}
 .stickerPage281 .stickerGlyphs279 canvas{display:block;width:42px;height:42px}.stickerPage281 .stickerGlyphs279 button{min-width:44px;padding:2px}.stickerPage281 .stickerGrid279 img{max-width:520px}.stickerPage281 header{gap:8px}.stickerPage281 header h2{flex:1}
+.stickerPage281 .stickerGlyphs279 button{display:inline-flex;align-items:center;width:auto;max-width:100%;overflow-x:auto}.stickerPage281 .stickerGlyphs279 canvas{flex:none}.stickerPage281 footer{justify-content:center;flex-wrap:wrap;gap:6px}
