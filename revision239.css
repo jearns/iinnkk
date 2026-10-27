@@ -16,3 +16,9 @@ body.ui111.mediaMode235.reveal-config104 #previewEffects55#previewEffects55:has(
 
 /* Dimming must never block the real control while a tutorial target loads. */
 .tourShade224,.tourSpot224{pointer-events:none!important}
+
+#childGuides239 .pinyin239{font:11px/1.2 system-ui!important;background:#fffae5cf!important;border:1px solid #a67b46!important;border-radius:5px!important;padding:3px!important}#characterRail242{pointer-events:auto!important}#characterRail242 button{font-size:11px!important;width:auto!important;min-width:36px!important}.characterSpeech284{display:grid;gap:5px;padding:8px;background:#f6eed9;border-radius:6px}.characterSpeech284 button{background:transparent;border:0;text-align:left}.readingChildMode284{display:block;margin:5px 0;border-radius:8px;background:#e9ddc5;border:1px solid #b79c73;padding:6px 12px}.readingChildMode284[aria-pressed=true]{background:#aa5039;color:white}
+
+.quoteLexicon284{padding:8px}.quoteLexicon284 iframe{width:100%;height:min(68dvh,740px);border:1px solid #c5b28d;border-radius:8px}.quoteLexicon284 iframe[hidden]{display:none}
+
+#childGuides239 .pinyin239{width:25px!important;height:25px!important;min-width:25px!important;min-height:25px!important;display:grid!important;place-items:center!important;padding:2px!important}#childGuides239 .pinyin239 svg{display:block}
