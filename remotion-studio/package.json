@@ -1,0 +1,17 @@
+{
+  "name": "shoubi-remotion-studio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.jsx --no-open",
+    "render": "remotion render src/index.jsx ShoubiShowcase out/shoubi-showcase.mp4",
+    "compositions": "remotion compositions src/index.jsx"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "remotion": "4.0.539",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  }
+}
