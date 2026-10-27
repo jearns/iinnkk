@@ -7,12 +7,12 @@ import path from 'node:path';
 const root=process.cwd();
 const release=(await readFile('VERSION.txt','utf8')).match(/网页版\s*(\d+(?:\.\d+)?)/)?.[1];
 if(!release)throw Error('Missing release version');
-const excluded=new Set(['.git','.env','.openai','.sites-runtime','dist','downloads','updates','apple','wechat','node_modules','.wrangler']);
+const excluded=new Set(['.git','.env','.openai','.sites-runtime','dist','downloads','updates','apple','wechat','node_modules','.wrangler','remotion-studio']);
 async function files(dir=''){
  const result=[];
  for(const entry of await readdir(path.join(root,dir),{withFileTypes:true})){
   if(dir==='music'&&entry.name.startsWith('.'))continue;
-  if(!dir&&(excluded.has(entry.name)||entry.name==='.gitignore'||entry.name.startsWith('.sites-checkout')))continue;
+  if((!dir&&excluded.has(entry.name))||entry.name==='node_modules'||(!dir&&(entry.name==='.gitignore'||entry.name.startsWith('.sites-checkout'))))continue;
   const name=path.posix.join(dir,entry.name);
   if(entry.isDirectory())result.push(...await files(name));
   else if(entry.isFile()&&!name.endsWith('.zip')&&!name.endsWith('.tar.gz'))result.push(name);
