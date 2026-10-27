@@ -17,8 +17,7 @@ export const ShoubiShowcase = ({artwork, title, signature, paperColor}) => {
 
   return (
     <AbsoluteFill style={{backgroundColor: '#171b19', fontFamily: '"Songti SC", "Noto Serif CJK SC", serif'}}>
-      <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 38%, #54564b 0%, #202824 65%, #0b100e 100%)'}} />
-      <AbsoluteFill style={{opacity: 0.18, background: 'repeating-linear-gradient(105deg, transparent 0px, transparent 21px, #e3d6b8 22px, transparent 23px)'}} />
+      <AbsoluteFill style={{background: 'linear-gradient(130deg, #353d35 0%, #202824 55%, #0b100e 100%)'}} />
       <div style={{position: 'absolute', top: 122, left: 104, color: '#e6decc', opacity: enter * depart, fontSize: 30, letterSpacing: 12}}>手筆 · 作品成影</div>
       <div style={{position: 'absolute', left: 114, top: 235, width: 852, height: 970, opacity: enter * depart, scale: drift, translate: `0px ${Math.round((1 - enter) * 80)}px`, boxShadow: '0 24px 80px #0008', backgroundColor: paperColor, overflow: 'hidden'}}>
         <Img src={source} style={{width: '100%', height: '100%', objectFit: 'contain'}} />
