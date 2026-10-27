@@ -22,3 +22,5 @@ body.ui111.mediaMode235.reveal-config104 #previewEffects55#previewEffects55:has(
 .quoteLexicon284{padding:8px}.quoteLexicon284 iframe{width:100%;height:min(68dvh,740px);border:1px solid #c5b28d;border-radius:8px}.quoteLexicon284 iframe[hidden]{display:none}
 
 #childGuides239 .pinyin239{width:25px!important;height:25px!important;min-width:25px!important;min-height:25px!important;display:grid!important;place-items:center!important;padding:2px!important}#childGuides239 .pinyin239 svg{display:block}
+
+.characterStroke285{display:grid;gap:7px;padding:8px;background:#f6eed9;border-radius:6px}.characterStroke285 svg{width:min(100%,220px);height:auto;max-height:220px;color:#513b2b}.characterStroke285 text{fill:#a3362a;font:36px system-ui}.characterStroke285 button{width:max-content}
