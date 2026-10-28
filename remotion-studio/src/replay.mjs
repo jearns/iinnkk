@@ -1,3 +1,4 @@
+import {draftFocus, smoothFocuses} from './camera.mjs';
 export function strokeCount(draft) {
   return [...(draft?.flow?.strokes || []), ...(draft?.signatureStrokes || [])].filter(s => s.points?.length).length;
 }
@@ -26,7 +27,7 @@ export function partialDraft(draft, fraction) {
   return copy;
 }
 
-export async function prepareReplay(draft, {signal, maxSide = 720, steps = 72, onProgress = () => {}} = {}) {
+export async function prepareReplay(draft, {signal, maxSide = 720, steps = 72, onProgress = () => {}, onPoster = () => {}} = {}) {
   if (!strokeCount(draft)) throw new Error('这幅作品没有保存笔画轨迹，暂不能逐笔成影。');
   const urls = [];
   const iframe = document.createElement('iframe');
@@ -50,19 +51,35 @@ export async function prepareReplay(draft, {signal, maxSide = 720, steps = 72, o
       iframe.src = 'writer.html?prepare158=1&release=290&videoReplay290=1'; document.body.append(iframe);
       timer = setTimeout(check, 100);
     });
-    for (let i = 0; i <= steps; i++) {
+    const render = fraction => new Promise((resolve, reject) => {
+      let settled = false;
+      const finish = (value, error) => {
+        if (settled) return; settled = true; clearTimeout(timer); signal?.removeEventListener('abort', cancel);
+        error ? reject(error) : resolve(value);
+      };
+      const cancel = () => finish(null, new DOMException('已取消', 'AbortError'));
+      const timer = setTimeout(() => finish(null, new Error('书写回放画面生成超时，请使用轻量画质重试。')), fraction === 1 ? 45000 : 20000);
+      signal?.addEventListener('abort', cancel, {once: true});
+      if (signal?.aborted) return cancel();
+      const partial = partialDraft(draft, fraction);
+      Promise.resolve(app.renderSavedDraft179(partial, {previewMax187: maxSide, guide: false, credit: false, qr: false, palette: false})).then(blob => finish({blob, focus: draftFocus(partial)}), error => finish(null, error));
+    });
+    // Show the selected work first. Never use a brand image as a work placeholder.
+    const finalFrame = await render(1), posterBlob = finalFrame.blob;
+    if (!posterBlob?.size) throw new Error('书写回放画面未能生成，请重试。');
+    const poster = URL.createObjectURL(posterBlob); urls.push(poster); onPoster(posterBlob);
+    const frames = [], focuses = [];
+    for (let i = 0; i < steps; i++) {
       if (signal?.aborted) abort();
-      let timer;
-      const blob = await Promise.race([
-        app.renderSavedDraft179(partialDraft(draft, i / steps), {previewMax187: maxSide, guide: false, credit: false, qr: false, palette: false}),
-        new Promise((_, reject) => {timer = setTimeout(() => reject(new Error('书写回放画面生成超时，请使用轻量画质重试。')), 20000);}),
-      ]).finally(() => clearTimeout(timer));
+      const rendered = await render(i / steps), blob = rendered.blob;
       if (!blob?.size) throw new Error('书写回放画面未能生成，请重试。');
-      urls.push(URL.createObjectURL(blob)); onProgress((i + 1) / (steps + 1));
+      const url = URL.createObjectURL(blob); urls.push(url); frames.push(url); focuses.push(rendered.focus); onProgress((i + 1) / steps);
       await new Promise(resolve => setTimeout(resolve, 0));
     }
     if (signal?.aborted) abort();
-    return {frames: urls, close() { urls.forEach(url => URL.revokeObjectURL(url)); }};
+    frames.push(poster);
+    focuses.push(finalFrame.focus);
+    return {frames, focuses: smoothFocuses(focuses), close() { urls.forEach(url => URL.revokeObjectURL(url)); }};
   } catch (error) { urls.forEach(url => URL.revokeObjectURL(url)); throw error; }
   finally { iframe.remove(); }
 }

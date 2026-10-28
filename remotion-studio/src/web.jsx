@@ -4,16 +4,19 @@ import {Player} from '@remotion/player';
 import {canRenderMediaOnWeb, renderMediaOnWeb} from '@remotion/web-renderer';
 import {ShoubiShowcase} from './showcase.jsx';
 import {prepareReplay, strokeCount} from './replay.mjs';
+import {VIDEO_FPS, normalizeDuration} from './timing.mjs';
 
 const COMPOSITION = {
   id: 'ShoubiShowcase', component: ShoubiShowcase,
-  durationInFrames: 240, fps: 30, width: 1080, height: 1440,
+  durationInFrames: 30 * VIDEO_FPS, fps: VIDEO_FPS, width: 1080, height: 1440,
 };
 
 function Studio() {
   const [, refreshLanguage] = useState(0);
   const [work, setWork] = useState(null);
   const [replay, setReplay] = useState(null);
+  const [poster, setPoster] = useState(null);
+  const [durationSeconds, setDurationSeconds] = useState(30);
   const [retry, setRetry] = useState(0);
   const initial = new URLSearchParams(location.search);
   const [pickerOpen, setPickerOpen] = useState(!!initial.get('work290'));
@@ -26,12 +29,13 @@ function Studio() {
   const [status, setStatus] = useState({key: '从我的作品选择一幅保存了笔画轨迹的作品。'});
   const abortRef = useRef(null);
   const pickerRef = useRef(null), playerRef = useRef(null), prepareRef = useRef(null), replayRef = useRef(null), workRef = useRef(null);
+  const posterRef = useRef(null);
   const channel = useRef(crypto.randomUUID());
   const t = text => window.I18n218?.text(text) || text;
   const language = window.I18n218?.language || 'zh';
-  const image = 'brand.svg';
   const heading = t('手筆 · 作品成影');
-  const inputProps = useMemo(() => ({artwork: image, artworkFrames: replay?.frames, title, signature, heading, paperColor: '#e9dfca'}), [replay, title, signature, heading]);
+  const inputProps = useMemo(() => ({artwork: poster, artworkFrames: replay?.frames, artworkFocuses: replay?.focuses, artworkAspect: work?.draft?.sheetBounds194 ? work.draft.sheetBounds194.w / work.draft.sheetBounds194.h : Number(work?.draft?.values?.ratio) || .75, title, signature, paperColor: '#e9dfca'}), [poster, replay, work, title, signature]);
+  const composition = useMemo(() => ({...COMPOSITION, durationInFrames: durationSeconds * VIDEO_FPS}), [durationSeconds]);
 
   useEffect(() => {
     let active = true;
@@ -62,11 +66,16 @@ function Studio() {
   }, []);
   useEffect(() => {
     replayRef.current?.close(); replayRef.current = null; setReplay(null);
+    if (posterRef.current) URL.revokeObjectURL(posterRef.current); posterRef.current = null; setPoster(null);
     if (!work) {setChecking(false); return;}
     const controller = new AbortController(); prepareRef.current = controller; let active = true;
     setChecking(true);
     setStatus({key: '正在准备书写回放 {progress}%', progress: 0});
     prepareReplay(work.draft, {signal: controller.signal, maxSide: quality === 'full' ? 1440 : 720,
+      onPoster: blob => {
+        if (!active || controller.signal.aborted) return;
+        const url = URL.createObjectURL(blob); posterRef.current = url; setPoster(url);
+      },
       onProgress: progress => {if (active && !controller.signal.aborted) setStatus({key: '正在准备书写回放 {progress}%', progress: Math.round(progress * 100)});},
     }).then(result => {
       if (!active || controller.signal.aborted) {result.close(); return;}
@@ -76,7 +85,7 @@ function Studio() {
     }).finally(() => {if (active) setChecking(false);});
     return () => {active = false; controller.abort();};
   }, [work, quality, retry]);
-  useEffect(() => () => {prepareRef.current?.abort(); abortRef.current?.abort(); replayRef.current?.close();}, []);
+  useEffect(() => () => {prepareRef.current?.abort(); abortRef.current?.abort(); replayRef.current?.close(); if (posterRef.current) URL.revokeObjectURL(posterRef.current);}, []);
   const pickerUrl = 'works206.html?' + new URLSearchParams({selectVideo290: '1', channel290: channel.current, ...pickerSource});
 
   async function exportVideo() {
@@ -92,7 +101,7 @@ function Studio() {
       if (!support.canRender) throw new Error('此浏览器暂不支持 MP4 导出，请尝试其他浏览器。');
       if (controller.signal.aborted) throw new Error('cancelled');
       const {getBlob} = await renderMediaOnWeb({
-        composition: COMPOSITION, inputProps,
+        composition, inputProps,
         container: 'mp4', videoCodec: 'h264', muted: true,
         scale, pageResponsiveness: 'high', videoBitrate: quality === 'compact' ? 'medium' : 'high',
         signal: controller.signal,
@@ -119,18 +128,23 @@ function Studio() {
 
   return <div className="vsLayout" data-no-translate218="" dir={language === 'ar' ? 'rtl' : 'ltr'}>
     <section className="vsPreview" aria-label={t('作品动画预览')} translate="no">
-      <Player ref={playerRef} component={ShoubiShowcase} inputProps={inputProps} durationInFrames={240} fps={30} compositionWidth={1080} compositionHeight={1440} controls loop autoPlay={false} style={{width: '100%', aspectRatio: '3/4'}} />
+      {replay ? <Player key={durationSeconds} ref={playerRef} component={ShoubiShowcase} inputProps={inputProps} durationInFrames={composition.durationInFrames} fps={VIDEO_FPS} compositionWidth={1080} compositionHeight={1440} controls autoPlay={false} showPosterWhenUnplayed showPosterWhenEnded renderPoster={() => poster ? <img data-poster291="" className="vsStill291" src={poster} alt={work?.title || ''} /> : null} style={{width: '100%', aspectRatio: '3/4'}} />
+        : poster ? <img data-poster291="" className="vsStill291" src={poster} alt={work?.title || ''} />
+        : <div className="vsEmpty291">{t(work ? '正在读取作品预览…' : '选择作品后在此预览')}</div>}
     </section>
     <section className="vsSide">
       <h1>{t('让作品，慢慢入镜。')}</h1>
-      <p>{t('从保存的真实笔画轨迹生成 8 秒书写影片，保留原有纸张、笔刷与印章。')}</p>
+      <p>{t('从保存的真实笔画轨迹生成书写影片，保留原有纸张、笔刷与印章。')}</p>
       <button type="button" className="vsButton" disabled={busy || checking} onClick={() => {setPickerSource({}); setPickerOpen(true);}}>{t(work ? '更换作品' : '从我的作品选择')}</button>
       {work && <p className="vsSelected" translate="no">{work.title} · {strokeCount(work.draft)} {t('笔')}</p>}
       {checking && <button type="button" className="vsButton" onClick={() => prepareRef.current?.abort()}>{t('取消准备')}</button>}
       {work && !checking && !replay && <button type="button" className="vsButton" onClick={() => setRetry(n => n + 1)}>{t('重新准备')}</button>}
       <label className="vsField">{t('作品标题')}<input value={title} maxLength={18} onChange={e => setTitle(e.target.value)} disabled={busy} translate="no" /></label>
       <label className="vsField">{t('落款')}<input value={signature} maxLength={35} onChange={e => setSignature(e.target.value)} disabled={busy} translate="no" /></label>
-      <label className="vsField">{t('导出画质')}<select value={quality} onChange={e => setQuality(e.target.value)} disabled={busy}><option value="compact">{t('轻量 · 540 × 720')}</option><option value="full">{t('高清 · 1080 × 1440')}</option></select></label>
+      <label className="vsField">{t('影片时长')}<select value={durationSeconds} onChange={e => setDurationSeconds(normalizeDuration(e.target.value))} disabled={busy}><option value={15}>{t('15 秒')}</option><option value={30}>{t('30 秒')}</option><option value={60}>{t('1 分钟')}</option><option value={120}>{t('2 分钟')}</option></select></label>
+      <p className="vsTiming291">{t('片头、片尾各 2 秒，其余时间展示作品。')}</p>
+      <p className="vsTiming291">{t('全景、近景与笔墨特写，柔和转场。')}</p>
+      <label className="vsField">{t('导出画质')}<select value={quality} onChange={e => setQuality(e.target.value)} disabled={busy || checking}><option value="compact">{t('轻量 · 540 × 720')}</option><option value="full">{t('高清 · 1080 × 1440')}</option></select></label>
       <button type="button" className="vsButton" disabled={!replay || busy || checking} onClick={exportVideo}>{t(busy ? '正在生成视频…' : '下载 MP4 视频')}</button>
       {busy && <button type="button" className="vsButton" onClick={() => abortRef.current?.abort()}>{t('取消合成')}</button>}
       <div className="vsStatus" role="status">{t(status.key).replace('{progress}', status.progress ?? '')}{status.detail ? t(status.detail) : ''}</div>

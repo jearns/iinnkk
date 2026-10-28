@@ -1,13 +1,15 @@
 import React from 'react';
 import {Composition} from 'remotion';
 import {ShoubiShowcase} from './showcase.jsx';
+import {normalizeDuration, VIDEO_FPS} from './timing.mjs';
 
 export const Root = () => (
   <Composition
     id="ShoubiShowcase"
     component={ShoubiShowcase}
-    durationInFrames={240}
-    fps={30}
+    durationInFrames={30 * VIDEO_FPS}
+    fps={VIDEO_FPS}
+    calculateMetadata={({props}) => ({durationInFrames: normalizeDuration(props.durationSeconds) * VIDEO_FPS})}
     width={1080}
     height={1440}
     defaultProps={{
@@ -15,6 +17,7 @@ export const Root = () => (
       title: '一纸一世界',
       signature: '手筆 · 以手为笔，随时写字',
       paperColor: '#e9dfca',
+      durationSeconds: 30,
     }}
   />
 );
