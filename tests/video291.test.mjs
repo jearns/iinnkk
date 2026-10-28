@@ -1,20 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {VIDEO_DURATIONS, VIDEO_FPS, normalizeDuration, videoTimeline, OUTRO_SLOGAN} from '../remotion-studio/src/timing.mjs';
+import {VIDEO_DURATIONS, VIDEO_FPS, normalizeDuration, videoTimeline, OUTRO_SLOGAN, OUTRO_SITE} from '../remotion-studio/src/timing.mjs';
 import {cameraLayers, draftFocus} from '../remotion-studio/src/camera.mjs';
 import {prepareReplay} from '../remotion-studio/src/replay.mjs';
 
-test('all four complete durations reserve exactly two seconds for each brand card', () => {
-  assert.deepEqual(VIDEO_DURATIONS, [15, 30, 60, 120]);
+test('all five durations reserve a finished-work cover frame and two seconds for each brand card', () => {
+  assert.deepEqual(VIDEO_DURATIONS, [8, 15, 30, 60, 120]);
   for (const seconds of VIDEO_DURATIONS) {
     const total = seconds * VIDEO_FPS, at = f => videoTimeline(f, total, VIDEO_FPS);
-    assert.equal(at(59).phase, 'intro'); assert.equal(at(60).phase, 'artwork');
+    assert.equal(at(0).phase, 'cover'); assert.equal(at(0).progress, 1);
+    assert.equal(at(1).phase, 'intro'); assert.equal(at(60).phase, 'intro'); assert.equal(at(61).phase, 'artwork');
     assert.equal(at(total - 61).phase, 'artwork'); assert.equal(at(total - 60).phase, 'outro');
     assert.equal(at(total - 1).phase, 'outro'); assert.equal(at(total - 61).progress, 1);
-    assert.equal(at(60).progress, 0); assert.ok(at(120).progress < 1);
+    assert.equal(at(61).progress, 0); assert.ok(at(120).progress < 1);
   }
-  assert.equal(normalizeDuration(8), 30); assert.equal(normalizeDuration('120'), 120);
-  assert.equal(OUTRO_SLOGAN, '以手为笔，随手写字·iinnkk.me');
+  assert.equal(normalizeDuration(8), 8); assert.equal(normalizeDuration('120'), 120);
+  assert.equal(OUTRO_SLOGAN, '以手为笔，随手写字'); assert.equal(OUTRO_SITE, 'iinnkk.me');
 });
 
 test('camera changes from full view to ink close-up and returns to an uncropped full work', () => {
@@ -30,8 +31,11 @@ test('camera changes from full view to ink close-up and returns to an uncropped 
     assert.equal(layers[0].opacity, 1);
     for (const layer of layers) for (const key of ['scale', 'x', 'y', 'rotate', 'opacity']) assert.ok(Number.isFinite(layer[key]));
   }
-  const transition = cameraLayers(60 + .44 * 780, at(60 + .44 * 780), fps, .75, focus);
-  assert.equal(transition.length, 2); assert.equal(transition[1].opacity, .5);
+  const boundary = 61 + .45 * 779;
+  const transition = cameraLayers(boundary, at(boundary), fps, .75, focus);
+  assert.equal(transition.length, 1); assert.ok(transition[0].shade > .999);
+  const pose = f => {const {scale,x,y,rotate} = cameraLayers(f, at(f), fps, .75, focus)[0];return {scale,x,y,rotate}};
+  assert.deepEqual(pose(300), pose(350)); assert.equal(pose(300).rotate, 0);
   const end = cameraLayers(839, at(839), fps, .75, focus)[0];
   assert.deepEqual([end.scale, end.x, end.y, end.rotate], [1, 0, 0, 0]);
   assert.deepEqual(draftFocus({flow: {strokes: []}}), {x: .5, y: .5});

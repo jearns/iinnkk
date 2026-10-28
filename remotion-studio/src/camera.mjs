@@ -16,36 +16,23 @@ export function draftFocus(draft) {
 export function smoothFocuses(points) {
   return points.reduce((out, point) => {const last = out.at(-1);out.push(last ? {x: mix(last.x, point.x, .55), y: mix(last.y, point.y, .55)} : point);return out;}, []);
 }
+// Each shot is a locked camera. The ink changes; the camera never follows it.
 export function cameraLayers(frame, timing, fps, aspect = .75, focuses = []) {
-  const width = 968, height = 1160, ratio = Math.max(.01, Number(aspect) || .75);
+  const width = 1016, height = 1376, ratio = Math.max(.01, Number(aspect) || .75);
   const imageWidth = Math.min(width, height * ratio), imageHeight = Math.min(height, width / ratio);
-  const close = Math.max(1.7, Math.min(6, Math.max(width / imageWidth, height / imageHeight) * 1.12));
-  const position = timing.progress * Math.max(0, focuses.length - 1), index = Math.floor(position), a = focuses[index] || {x: .5, y: .5}, b = focuses[Math.min(index + 1, focuses.length - 1)] || a;
-  const follow = {x: mix(a.x, b.x, ease(position - index)), y: mix(a.y, b.y, ease(position - index))};
   const length = timing.outroStart - timing.introEnd, elapsed = frame - timing.introEnd;
-  const cuts = [0, .18, .44, .64, .84, 1], blend = Math.min(fps * 1.1, length * .07);
-  function shot(i, opacity) {
-    const start = cuts[i] * length, end = i === 4 ? timing.writingEnd - timing.introEnd : cuts[i + 1] * length;
-    const t = ease((elapsed - start) / Math.max(1, end - start));
-    let scale = 1, focus = {x: .5, y: .5}, rotate = 0;
-    if (i === 0) scale = mix(1, 1.06, t);
-    if (i === 1) {scale = close * mix(.96, 1.04, t); focus = follow; rotate = mix(-.35, .25, t);}
-    if (i === 2) {scale = close * mix(1.08, 1.14, t);focus = {x: mix(follow.x, mix(.32, .68, t), .18), y: follow.y};rotate = .25;}
-    if (i === 3) {scale = mix(1.16, Math.min(close * .85, 1.45), t); focus = {x: mix(.5, follow.x, .35), y: mix(.5, follow.y, .35)}; rotate = mix(-.8, .4, t);}
-    if (i === 4) scale = mix(1.16, 1, t);
-    const limitX = Math.max(0, (imageWidth * scale - width) / 2), limitY = Math.max(0, (imageHeight * scale - height) / 2);
-    const x = Math.max(-limitX, Math.min(limitX, (.5 - focus.x) * imageWidth * scale));
-    const y = Math.max(-limitY, Math.min(limitY, (.5 - focus.y) * imageHeight * scale));
-    return {shot: i, opacity, scale, x, y, rotate};
-  }
-  for (let i = 1; i < cuts.length - 1; i++) {
-    const boundary = cuts[i] * length;
-    if (Math.abs(elapsed - boundary) < blend / 2) {
-      const amount = ease((elapsed - boundary + blend / 2) / blend);
-      // Opaque previous layer plus a fading next layer avoids a dark dip.
-      return [shot(i - 1, 1), shot(i, amount)];
-    }
-  }
-  let indexShot = 0; while (indexShot < 4 && elapsed >= cuts[indexShot + 1] * length) indexShot++;
-  return [shot(indexShot, 1)];
+  const cuts = length < 7 * fps ? [0, .35, .67, 1] : [0, .23, .45, .68, .84, 1];
+  let shot = 0; while (shot < cuts.length - 2 && elapsed >= cuts[shot + 1] * length) shot++;
+  const final = shot === cuts.length - 2;
+  const detail = shot > 0 && !final;
+  const anchor = focuses[Math.round((shot === 2 ? .62 : .34) * Math.max(0, focuses.length - 1))] || {x: .5, y: .5};
+  const scale = detail ? Math.min(3.5, Math.max(1.65, Math.max(width / imageWidth, height / imageHeight) * 1.1) * (shot === 2 ? 1.12 : 1)) : 1;
+  const limitX = Math.max(0, (imageWidth * scale - width) / 2), limitY = Math.max(0, (imageHeight * scale - height) / 2);
+  const x = detail ? Math.max(-limitX, Math.min(limitX, (.5 - anchor.x) * imageWidth * scale)) : 0;
+  const y = detail ? Math.max(-limitY, Math.min(limitY, (.5 - anchor.y) * imageHeight * scale)) : 0;
+  // A fully opaque shadow hides the cut; no superimposed, offset copies of ink.
+  const blend = Math.min(fps * .4, length * .08);
+  const distance = Math.min(...cuts.slice(1, -1).map(c => Math.abs(elapsed - c * length)));
+  const shade = ease(1 - distance / blend);
+  return [{shot, opacity: 1, scale, x, y, rotate: 0, shade}];
 }
