@@ -1,33 +1,16 @@
-# 手筆 · Remotion 视频工作台
+# 手筆 · 作品成影
 
-此目录将视频创作与既有书写、实景录屏和 Mediabunny 导出解耦。
+从“我的作品”选择已保存的真实笔迹，生成 8 秒、30fps 的书写影片。无需导出或重新选择图片文件。仅有合成图片的旧作明确提示没有轨迹，多页临帖使用当前保存页。
 
-## 定位
+## 网页流程
 
-- 输入：从《手筆》现有“下载作品”导出的 PNG/JPG/WebP。保留原始笔迹、印章、纸纹和装裱，不试图重新描画手写笔迹。
-- 输出：独立生成竖屏 1080×1440、30fps、8 秒的作品展示动画。
-- 安全边界：不接入首页、书写初始化、Supabase 或 Service Worker；既有实景视频继续走 `scene-video232.js` 的 Mediabunny 链路。
-- CLI 工作台供本地 Studio/桌面渲染使用；新独立页面 `video-studio.html` 使用 `@remotion/player` 预览和 `@remotion/web-renderer` 的 WebCodecs 本机 MP4 合成，不依赖 Node 服务或上传图片。浏览器端渲染的实际兼容性仍须真机验证。
+- 实验室 → 作品成影 → 从我的作品选择；作品卡片也提供“成影”按钮。
+- 本机作品只读取选中的记录；云端作品沿用现有作品库的登录和权限，只按当前 owner/id 精确读取一幅原笔迹。账号切换使已选云端作品失效。没有上传、数据库修改、轮询或全库预取。
+- 使用校验来源、窗口和通道的同源消息传递，不复制作品，不另建作品 ID。
+- 选中后才载入原书写引擎；通过原 renderSavedDraft179 生成 73 个回放画面，保留笔压、笔刷、几何变换、纸张、照片和印章。时间按影片节奏安排，不宣称恢复原始实时速度。
+- 提供 540×720 和 1080×1440 MP4；准备和导出均可取消。渲染失败或超时不会修改原作品。
 
-## 操作
-
-```bash
-cd remotion-studio
-npm install
-npm run studio
-```
-
-Studio 中可调整标题、落款、纸色和作品图片。作品图片应使用 `public/` 内的相对文件名，例如 `my-artwork.png`。
-
-要生成视频，将你从《手筆》下载的图片放到 `remotion-studio/public/my-artwork.png`，然后：
-
-```bash
-npm run render -- --props='{"artwork":"my-artwork.png","title":"我的手筆","signature":"以手为笔 · 随时写字"}'
-```
-
-MP4 保存为 `out/shoubi-showcase.mp4`。不输入参数时使用自带的演示纸张（不冒充真实手写字）。
-
-## 网站独立页面
+## 构建与验证
 
 ```bash
 cd remotion-studio
@@ -35,14 +18,25 @@ npm ci
 npm run build:web
 ```
 
-生成的根目录 `video-studio.<内容哈希>.js` 和样式只会被 `video-studio.html` 按需下载，不挂到首页或书写启动链路。实验室 `lab257.html` 提供入口。用户在页面里自行选取从《手筆》下载的作品图片，然后预览和导出 MP4。提供 540×720（轻量）及 1080×1440（高清），导出前检查编码器是否支持。图片必须先完成解码，损坏或超时均保留上一幅有效作品。标题、落款在独立安全区域内单行自适应，不覆盖原图。
+构建生成 video-studio.<内容哈希>.js/.css，只由独立页面加载。不会增加首页和首次书写的加载。既有 scene-video232.js 链路不修改。
 
-Remotion 4.0.539 的成功上报路径存在未处理的异步拒绝。构建时的 `telemetry-compat.mjs` 只在原上报函数外补充错误捕获，保留原始统计请求、载荷、超时与重试。SDK 结构变化时构建会停止，不能悄悄跳过。页面告知用户 Remotion 的有限使用统计；作品像素不参与上报。
+```bash
+node --test tests/video290.test.mjs
+CHROMIUM_EXECUTABLE_PATH=/path/to/chromium node tests/ui-video290.cjs
+```
 
-回归：在仓库根目录执行 `node --test tests/video289.test.mjs`；配置 `CHROMIUM_EXECUTABLE_PATH` 后执行 `node tests/ui-video289.cjs` 可实测两档 MP4、损坏图片恢复、长标题、统计失败、五种语言与阿拉伯语方向。
+浏览器验证使用实际书写输入保存的草稿、原渲染器、真实 WebCodecs 导出和完整解码，并模拟缺少 Symbol.dispose 的环境。VIDEO_SKIP_EXPORT=1 仅供已有同一构建的两档导出结果后，分开复测作品库和账号隔离；默认执行两档导出。iPhone/iPad 和鸿蒙的真实设备表现仍需分别验证。
 
-这一模块和 `scene-video232.js` 的实景视频编辑/录制互不替换。不同浏览器的色彩和字体绘制、iPhone/iPad 保存到相册、华为鸿蒙兼容性仍需分别验收。
+## 兼容处理
 
-## 后续上线接口
+- disposal-prelude.mjs 通过 bundle banner 在依赖执行前统一 Symbol.dispose/asyncDispose，避免旧 Safari 上依赖内部释放标记不一致引发 Object not disposable。
+- telemetry-compat.mjs 只补充 Remotion 4.0.539 用量上报的错误捕获，保留请求、载荷、超时和重试。SDK 结构变化时停止构建，要求重新检查。页面说明有限使用统计；作品像素不参与上报。
 
-后续可以把现有“下载作品”面板导出的本地 Blob 直接交给“作品成影”，减少手动选择图片一步。不得将作品 PNG 自动上传到 Supabase，亦不得为渲染重复请求签名 URL。
+## 桌面 Studio
+
+```bash
+cd remotion-studio
+npm run studio
+```
+
+桌面示例仍使用 public/sample-paper.svg。可把作品图片放入 public 并用 npm run render 生成图片展示影片；这与网页的原笔迹回放入口分开。

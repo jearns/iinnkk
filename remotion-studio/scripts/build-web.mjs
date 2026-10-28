@@ -2,6 +2,7 @@ import {build} from 'esbuild';
 import {readFile, writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {containTelemetryRejection} from './telemetry-compat.mjs';
+import {disposalPrelude} from './disposal-prelude.mjs';
 
 let patched = false;
 const result = await build({
@@ -14,6 +15,7 @@ const result = await build({
   target: ['es2022', 'safari26'],
   jsx: 'automatic',
   write: false,
+  banner: {js: disposalPrelude},
   plugins: [{name: 'remotion-telemetry-rejection', setup(builder) {
     builder.onLoad({filter: /@remotion\/web-renderer\/dist\/esm\/index\.mjs$/}, async ({path}) => {
       patched = true;
