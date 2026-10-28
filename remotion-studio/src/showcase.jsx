@@ -1,7 +1,7 @@
 import React, {useMemo} from 'react';
-import {AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-
-const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
+import {AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {OUTRO_SLOGAN, videoTimeline} from './timing.mjs';
+import {cameraLayers} from './camera.mjs';
 
 function fitLine(text, maxSize, spacing) {
   if (typeof document === 'undefined') return maxSize;
@@ -12,34 +12,37 @@ function fitLine(text, maxSize, spacing) {
   return width ? Math.min(maxSize, Math.max(14, (844 - spacing * [...(text || '')].length) * 100 / width)) : maxSize;
 }
 
-export const ShoubiShowcase = ({artwork, artworkFrames, title, signature, paperColor, heading = '手筆 · 作品成影'}) => {
+export const ShoubiShowcase = ({artwork, artworkFrames, artworkFocuses, artworkAspect, title, signature, paperColor}) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const enter = interpolate(frame, [0, fps * 1.3], [0, 1], {
-    ...clamp,
-    easing: Easing.bezier(0.22, 1, 0.36, 1),
-  });
-  const depart = interpolate(frame, [fps * 6.9, fps * 7.9], [1, 0], clamp);
-  const drift = interpolate(frame, [0, fps * 8], [1.045, 1], clamp);
+  const {fps, durationInFrames} = useVideoConfig();
+  const timing = videoTimeline(frame, durationInFrames, fps);
   // Treat exported artwork as a complete image. Never synthesize or redraw user strokes.
-  const replayIndex = Math.min((artworkFrames?.length || 1) - 1, Math.floor(interpolate(frame, [fps * .7, fps * 6.5], [0, (artworkFrames?.length || 1) - 1], clamp)));
+  const replayIndex = Math.min((artworkFrames?.length || 1) - 1, Math.floor(timing.progress * ((artworkFrames?.length || 1) - 1)));
   const image = artworkFrames?.[replayIndex] || artwork;
-  const source = /^(https?:|data:|blob:)/.test(image) ? image : staticFile(image);
+  const source = image ? /^(https?:|data:|blob:)/.test(image) ? image : staticFile(image) : null;
   const titleSize = useMemo(() => fitLine(title, 54, 4), [title]);
   const signatureSize = useMemo(() => fitLine(signature, 23, 2), [signature]);
+  const layers = cameraLayers(frame, timing, fps, artworkAspect, artworkFocuses);
+  const unit = n => Math.max(0, Math.min(1, n));
+  const brandAlpha = timing.phase === 'intro' ? Math.min(unit(frame / (fps * .15)), unit((timing.introEnd - frame) / (fps * .22))) : unit((frame - timing.outroStart) / (fps * .2));
+  const artAlpha = Math.min(unit((frame - timing.introEnd) / (fps * .3)), unit((timing.outroStart - frame) / (fps * .3)));
 
   return (
-    <AbsoluteFill style={{direction: 'ltr', backgroundColor: '#171b19', fontFamily: '"Songti SC", "Noto Serif CJK SC", serif'}}>
+    <AbsoluteFill data-phase291={timing.phase} data-frame290={frame} data-replay290={replayIndex} style={{direction: 'ltr', backgroundColor: '#171b19', fontFamily: '"Songti SC", "Noto Serif CJK SC", serif'}}>
       <AbsoluteFill style={{background: 'linear-gradient(130deg, #353d35 0%, #202824 55%, #0b100e 100%)'}} />
-      <div style={{position: 'absolute', top: 122, left: 104, right: 104, whiteSpace: 'nowrap', overflow: 'hidden', color: '#e6decc', opacity: enter * depart, fontSize: 26, letterSpacing: 4}}>{heading}</div>
-      <div data-artwork289="" data-frame290={frame} data-replay290={replayIndex} style={{position: 'absolute', left: 114, top: 235, width: 852, height: 900, opacity: enter * depart, scale: drift, translate: `0px ${Math.round((1 - enter) * 80)}px`, boxShadow: '0 24px 80px #0008', backgroundColor: paperColor, overflow: 'hidden'}}>
-        <Img src={source} style={{width: '100%', height: '100%', objectFit: 'contain'}} />
+      {timing.phase !== 'artwork' ? <AbsoluteFill data-brand-card291="" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 28, opacity: brandAlpha}}>
+        <Img data-brand291="" src={staticFile('brand.svg')} style={{width: 96, height: 96, objectFit: 'contain'}} />
+        {timing.phase === 'outro' && <div data-slogan291="" style={{fontSize: 36, lineHeight: '54px', whiteSpace: 'nowrap', letterSpacing: 2, color: '#eee7d7'}}>{OUTRO_SLOGAN}</div>}
+      </AbsoluteFill> : <>
+      <div data-artwork289="" style={{position: 'absolute', left: 56, top: 40, width: 968, height: 1160, boxShadow: '0 24px 80px #0008', backgroundColor: paperColor, overflow: 'hidden', opacity: artAlpha}}>
+        {source && layers.map(layer => <div key={layer.shot} data-shot291={layer.shot} style={{position: 'absolute', inset: 0, backgroundColor: paperColor, opacity: layer.opacity, scale: layer.scale, translate: `${layer.x}px ${layer.y}px`, rotate: `${layer.rotate}deg`}}><Img src={source} style={{width: '100%', height: '100%', objectFit: 'contain'}} /></div>)}
       </div>
-      <div data-caption289="" style={{position: 'absolute', left: 114, width: 852, top: 1214, height: 126, color: '#eee7d7', overflow: 'hidden', opacity: interpolate(frame, [fps * 1.8, fps * 2.6], [0, 1], clamp) * depart}}>
+      <div data-caption289="" style={{position: 'absolute', left: 114, width: 852, top: 1240, height: 126, color: '#eee7d7', overflow: 'hidden', opacity: artAlpha}}>
         <div data-title289="" style={{height: 72, lineHeight: '72px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', fontSize: titleSize, letterSpacing: 4}}>{title}</div>
         <div data-signature289="" style={{marginTop: 12, height: 36, lineHeight: '36px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', textAlign: 'right', fontSize: signatureSize, letterSpacing: 2, opacity: 0.76}}>{signature}</div>
       </div>
-      <div style={{position: 'absolute', width: 4, height: 126, background: '#b63d2c', top: 1214, left: 100, opacity: enter * depart}} />
+      <div style={{position: 'absolute', width: 4, height: 126, background: '#b63d2c', top: 1240, left: 100, opacity: artAlpha}} />
+      </>}
     </AbsoluteFill>
   );
 };
