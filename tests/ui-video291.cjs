@@ -67,7 +67,7 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
   assert.equal(await page.locator('[data-slogan291]').innerText(),'以手为笔，随手写字·iinnkk.me');
   await page.screenshot({path:path.join(output,'outro.png')});
   console.log('Poster, small centered logo, full view, ink close-up, complete work and branded outro passed.');
-  const cases=process.env.VIDEO_SKIP_EXPORT?[]:[['compact',15],['compact',30],['compact',60],['compact',120],['full',15]].filter(([q,s])=>!process.env.VIDEO_SKIP_FIRST_EXPORT||q!=='compact'||s!==15);
+  const cases=process.env.VIDEO_SKIP_EXPORT?[]:[['compact',15],['compact',30],['compact',60],['compact',120],['full',15]].filter(([q,s])=>(!process.env.VIDEO_SKIP_FIRST_EXPORT||q!=='compact'||s!==15)&&(!process.env.VIDEO_SHORT_ONLY||s===15));
   for(const [quality,seconds] of cases){
    await page.getByLabel('影片时长').selectOption(String(seconds));
    const qualityChanged=await page.getByLabel('导出画质').inputValue()!==quality;

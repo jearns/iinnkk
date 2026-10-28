@@ -31,7 +31,7 @@ export const ShoubiShowcase = ({artwork, artworkFrames, artworkFocuses, artworkA
     <AbsoluteFill data-phase291={timing.phase} data-frame290={frame} data-replay290={replayIndex} style={{direction: 'ltr', backgroundColor: '#171b19', fontFamily: '"Songti SC", "Noto Serif CJK SC", serif'}}>
       <AbsoluteFill style={{background: 'linear-gradient(130deg, #353d35 0%, #202824 55%, #0b100e 100%)'}} />
       {timing.phase !== 'artwork' ? <AbsoluteFill data-brand-card291="" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 28, opacity: brandAlpha}}>
-        <Img data-brand291="" src={staticFile('brand.svg')} style={{width: 96, height: 96, objectFit: 'contain'}} />
+        <Img data-brand291="" src={staticFile('apple-touch-icon.png')} style={{width: 96, height: 96, objectFit: 'contain'}} />
         {timing.phase === 'outro' && <div data-slogan291="" style={{fontSize: 36, lineHeight: '54px', whiteSpace: 'nowrap', letterSpacing: 2, color: '#eee7d7'}}>{OUTRO_SLOGAN}</div>}
       </AbsoluteFill> : <>
       <div data-artwork289="" style={{position: 'absolute', left: 56, top: 40, width: 968, height: 1160, boxShadow: '0 24px 80px #0008', backgroundColor: paperColor, overflow: 'hidden', opacity: artAlpha}}>
