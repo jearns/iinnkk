@@ -1,5 +1,5 @@
 import{prepareReplay}from'./replay.mjs';
-import{loadDraft294}from'../../record-selection294.mjs';
+import{loadDraft294}from'../../release295/selection.mjs';
 // A bounded two-page window. Large books never create an iframe/canvas for every page.
 export async function prepareSequence294(items,options={}){
  const cache=new Map();let closed=false;const store=window.DraftStore;

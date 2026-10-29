@@ -1,6 +1,7 @@
 // Only metadata is queued. Each page's original strokes are read when that scene is prepared.
 export async function localItems294(store,id,choice='current'){
  const record=await store.get(id);if(!record)throw Error('作品暂未读取，请返回我的作品重新选择。');
+ if(record.collection295){const all=record.collection295.items;const chosen=choice==='all'?all.map((_,i)=>i):Array.isArray(choice)?choice:[0];const result=[];for(const i of chosen)if(all[i])result.push(...(await localItems294(store,all[i].id,'current')).map(x=>({...x,collectionIndex295:i,pageCount:all.length})));return result;}
  const book=record.copyBook158,pages=book?.pages||[];
  if(!pages.length)return[{id,title:record.title||'我的手写作品',source:'local',page:null}];
  const indices=choice==='all'?pages.map((_,i)=>i):Array.isArray(choice)?choice:[Math.min(pages.length-1,book.index||0)];
@@ -19,11 +20,12 @@ export async function scopeDialog294(store,id){
   const text=s=>window.I18n218?.text(s)||s;
   const title=document.createElement('h2');title.textContent=text('选择纪录页面');d.append(title);const hint=document.createElement('p');hint.textContent=text('仅纪录已保存笔迹的页面。');d.append(hint);
   const tools=document.createElement('nav'),pages=document.createElement('div');pages.className='recordPages294';d.append(tools,pages);const boxes=[];
-  items.forEach((item,i)=>{const label=document.createElement('label'),box=document.createElement('input');box.type='checkbox';box.checked=false;box.ariaLabel='第 '+(item.page+1)+' 页';boxes.push(box);label.append(box,document.createTextNode(text('第 {page} 页').replace('{page}',item.page+1)));pages.append(label)});
+  let thumbsObserver,thumbActive=0;const thumbQueue=[],thumbnailURLs=[];const requestThumb=(im,index)=>{thumbQueue.push([im,index]);drainThumb()};function drainThumb(){while(thumbActive<2&&thumbQueue.length){const[im,index]=thumbQueue.shift();if(!im.isConnected)continue;thumbActive++;thumb(im,index).finally(()=>{thumbActive--;drainThumb()})}}const thumb=async(im,index)=>{try{const {pageSources295}=await import('./release295/collection.mjs');const sources=await pageSources295(store,id),value=await sources[index]?.load();if(!im.isConnected||!value)return;if(value instanceof Blob){const url=URL.createObjectURL(value);thumbnailURLs.push(url);im.src=url}else im.src=value}catch{}};if(window.IntersectionObserver)thumbsObserver=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting){thumbsObserver.unobserve(e.target);requestThumb(e.target,+e.target.dataset.page295)}},{root:pages,rootMargin:'100px'});
+  items.forEach((item,i)=>{const label=document.createElement('label'),box=document.createElement('input');box.type='checkbox';box.checked=false;box.ariaLabel='第 '+((item.collectionIndex295??item.page??i)+1)+' 页';boxes.push(box);const im=document.createElement('img');im.alt=box.ariaLabel;im.loading='lazy';im.dataset.page295=item.collectionIndex295??item.page??i;label.append(im);label.append(box,document.createTextNode(text('第 {page} 页').replace('{page}',(item.collectionIndex295??item.page??i)+1)));pages.append(label);if(thumbsObserver)thumbsObserver.observe(im);else requestThumb(im,+im.dataset.page295)});
   const button=(text,fn)=>{const b=document.createElement('button');b.type='button';b.textContent=window.I18n218?.text(text)||text;b.onclick=fn;tools.append(b);return b};
   button('纪录当前临写页',async()=>{finish(await localItems294(store,id))});button('纪录全部临写组图',()=>finish(items));
   button('纪录勾选页面',()=>{const chosen=items.filter((_,i)=>boxes[i].checked);if(chosen.length)finish(chosen)});button('取消',()=>finish(null));
-  let done=false;function finish(value){if(done)return;done=true;d.close();d.remove();resolve(value)}d.addEventListener('cancel',e=>{e.preventDefault();finish(null)});document.body.append(d);d.showModal();
+  let done=false;function finish(value){if(done)return;done=true;thumbQueue.length=0;thumbsObserver?.disconnect();thumbnailURLs.forEach(url=>URL.revokeObjectURL(url));d.close();d.remove();resolve(value)}d.addEventListener('cancel',e=>{e.preventDefault();finish(null)});document.body.append(d);d.showModal();
  });
 }
 export async function saveSelection294(store,items){const key='record-selection294:'+crypto.randomUUID();await store.set(key,{items,created:Date.now()});return key;}

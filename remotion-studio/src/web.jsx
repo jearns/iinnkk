@@ -6,7 +6,7 @@ import {MUSIC_TRACKS, musicTrack, musicSource} from './music.mjs';
 
 import {artworkRatio,videoFormat} from './format.mjs';
 import{prepareSequence294}from'./sequence.mjs';
-import{localItems294,filmFilename294}from'../../record-selection294.mjs';
+import{localItems294,filmFilename294}from'../../release295/selection.mjs';
 import {TRANSITIONS} from './scene-plan.mjs';
 const FilmPlayer=lazy(()=>import('./player.jsx'));
 
@@ -22,10 +22,14 @@ function Studio() {
   const [pickerOpen, setPickerOpen] = useState(false);
   const [pickerSource, setPickerSource] = useState(initial.get('work290') ? {work290: initial.get('work290'), source290: initial.get('source290') || 'local'} : {});
   const title=work?.title||'手筆纪录',signature='iinnkk.me';
-  const [music, setMusic] = useState('orbit');
+  const [music, setMusic] = useState('guqin');
+  const [showOriginal295,setShowOriginal295]=useState(false);
   const [audition, setAudition] = useState(false);
   const musicRef = useRef(null);
-  const selectedTrack = musicTrack(music);
+  const [customMusic295,setCustomMusic295]=useState(null);
+  const customURL295=useRef(null);
+  const selectedTrack = music==='custom295'&&customMusic295?{title:customMusic295.name,credit:'用户本机导入音频'}:musicTrack(music);
+  const sourceMusic295=()=>music==='custom295'?customURL295.current:musicSource(music,durationSeconds);
   const [quality, setQuality] = useState('compact');
   const [busy, setBusy] = useState(false);
   const [checking, setChecking] = useState(false);
@@ -38,7 +42,7 @@ function Studio() {
   const language = window.I18n218?.language || 'zh';
   const heading = t('手筆 · 纪录大片');
   const format=videoFormat(artworkRatio(work?.draft,replay));
-  const inputProps=useMemo(()=>({surface:replay?.surface,artwork:poster,title,signature,music,transition}),[poster,replay,title,signature,music,transition]);
+  const inputProps=useMemo(()=>({surface:replay?.surface,artwork:poster,title,signature,music,musicUrl295:music==='custom295'?customURL295.current:null,transition}),[poster,replay,title,signature,music,transition,customMusic295]);
   const durationInFrames=durationSeconds*VIDEO_FPS;
 
 
@@ -83,7 +87,7 @@ function Studio() {
     const controller = new AbortController(); prepareRef.current = controller; let active = true;
     setChecking(true);
     setStatus({key: '正在准备书写回放 {progress}%', progress: 0});
-    const prepareOptions={signal: controller.signal, maxSide: 2240,
+    const prepareOptions={signal: controller.signal, maxSide: 2240,showOriginal295,
       onPoster: blob => {
         if (!active || controller.signal.aborted) return;
         const url = URL.createObjectURL(blob); posterRef.current = url; setPoster(url);
@@ -97,7 +101,7 @@ function Studio() {
       if (active) setStatus(controller.signal.aborted ? {key: '已取消准备，可点击重新准备。'} : {key: '作品读取未完成：', detail: error.message});
     }).finally(() => {if (active) setChecking(false);});
     return () => {active = false; controller.abort();};
-  }, [work, retry]);
+  }, [work, retry,showOriginal295]);
   useEffect(() => () => {prepareRef.current?.abort(); abortRef.current?.abort(); replayRef.current?.close(); if (posterRef.current) URL.revokeObjectURL(posterRef.current);}, []);
   const pickerUrl = 'works206.html?' + new URLSearchParams({selectVideo290: '1', channel290: channel.current, ...pickerSource});
 
@@ -107,7 +111,7 @@ function Studio() {
     if (audition) return stopAudition();
     playerRef.current?.pause();
     if (!musicRef.current) {musicRef.current = new Audio(); musicRef.current.volume = 1; musicRef.current.onended = () => setAudition(false);}
-    musicRef.current.src = musicSource(music, durationSeconds);
+    musicRef.current.src = sourceMusic295();
     try {await musicRef.current.play(); setAudition(true);} catch {setStatus({key: '配乐暂未加载，请重试。'});}
   }
   useEffect(() => () => musicRef.current?.pause(), []);
@@ -117,6 +121,8 @@ function Studio() {
     return () => player.removeEventListener('play', stopAudition);
   }, [replay, durationSeconds]);
 
+  useEffect(()=>()=>{if(customURL295.current)URL.revokeObjectURL(customURL295.current)},[]);
+  function importMusic295(event){const file=event.target.files?.[0];if(!file)return;stopAudition();if(customURL295.current)URL.revokeObjectURL(customURL295.current);customURL295.current=URL.createObjectURL(file);setCustomMusic295({file,name:file.name});setMusic('custom295');event.target.value='';}
   async function exportVideo() {
     if (!replay?.surface || busy || checking) return;
     playerRef.current?.pause(); stopAudition();
@@ -147,7 +153,7 @@ function Studio() {
       let blob = await getBlob();
       if (selectedTrack) {
         setStatus({key: '正在加入配乐与作品封面…'});
-        blob = await addMusic(blob, musicSource(music, durationSeconds), {signal: controller.signal, metadata, duration: durationSeconds});
+        let source295=sourceMusic295();if(music==='custom295'){const {compressMusic295}=await import('./custom-music.mjs');source295=await compressMusic295(customMusic295.file,{signal:controller.signal});}blob = await addMusic(blob, source295, {signal: controller.signal, metadata, duration: durationSeconds});
       }
       if (controller.signal.aborted) throw new Error('cancelled');
       if (!blob?.size) throw new Error('导出结果为空，请重新生成。');
@@ -178,12 +184,14 @@ function Studio() {
       {work && <p className="vsSelected" translate="no">{work.title} · {work.items?work.items.length:strokeCount(work.draft)} {t(work.items?'页 / 幅':'笔')}</p>}
       {checking && <button type="button" className="vsButton" onClick={() => prepareRef.current?.abort()}>{t('取消准备')}</button>}
       {work && !checking && !replay && <button type="button" className="vsButton" onClick={() => setRetry(n => n + 1)}>{t('重新准备')}</button>}
+      <label className="vsField">{t('原帖文字')}<select value={showOriginal295?'show':'clean'} disabled={busy} onChange={e=>setShowOriginal295(e.target.value==='show')}><option value="clean">{t('不带原帖字，保留背景纸')}</option><option value="show">{t('带原帖文字')}</option></select></label>
       <label className="vsField">{t('影片时长')}<select value={durationSeconds} onChange={e => {stopAudition(); setDurationSeconds(normalizeDuration(e.target.value));}} disabled={busy}><option value={8}>{t('8 秒')}</option><option value={15}>{t('15 秒')}</option><option value={30}>{t('30 秒')}</option><option value={60}>{t('1 分钟')}</option><option value={120}>{t('2 分钟')}</option></select></label>
       <p className="vsTiming291">{t('片头、片尾各 2 秒，其余时间展示作品。')}</p>
       <p className="vsTiming291">{t(format.orientation==='landscape'?'横屏 16:9 · 自动适配横向作品':'竖屏 9:16 · 自动适配纵向作品')}</p>
       <label className="vsField">{t('镜头转场')}<select value={transition} disabled={busy} onChange={e=>setTransition(e.target.value)}>{TRANSITIONS.map(mode=><option key={mode.id} value={mode.id}>{t(mode.label)}</option>)}</select></label>
       <p className="vsTiming291">{t('长片增加不同字与笔画的取景场景，按原始点位绘制。')}</p>
-      <label className="vsField">{t('背景音乐')}<select value={music} disabled={busy} onChange={e => {stopAudition(); setMusic(e.target.value);}}><option value="none">{t('无音乐')}</option>{MUSIC_TRACKS.map(track => <option key={track.id} value={track.id}>{t(track.title)}</option>)}</select></label>
+      <label className="vsField">{t('背景音乐')}<select value={music} disabled={busy} onChange={e => {stopAudition(); setMusic(e.target.value);}}><option value="none">{t('无音乐')}</option>{customMusic295&&<option value="custom295">{customMusic295.name}</option>}{MUSIC_TRACKS.map(track => <option key={track.id} value={track.id}>{t(track.title)}</option>)}</select></label>
+      <label className="vsField">{t('导入本机音乐')}<input type="file" accept="audio/*,.m4a,.mp3,.wav,.ogg,.flac" disabled={busy} onChange={importMusic295}/></label>
       {selectedTrack && <div className="vsMusic292"><button type="button" className="vsSecondary292" disabled={busy} onClick={auditionMusic}>{t(audition ? '停止试听' : '试听')}</button><small>{t('仅加载所选配乐，音轨约每分钟增加 240 KB。')}</small></div>}
       <label className="vsField">{t('导出画质')}<select value={quality} onChange={e => setQuality(e.target.value)} disabled={busy || checking}><option value="compact">{t(format.orientation==='landscape'?'轻量 · 960 × 540':'轻量 · 540 × 960')}</option><option value="full">{t(format.orientation==='landscape'?'1080 高清 · 1920 × 1080':'1080 高清 · 1080 × 1920')}</option></select></label>
       <button type="button" className="vsButton" disabled={!replay || busy || checking} onClick={exportVideo}>{t(busy ? '正在生成视频…' : '下载 MP4 视频')}</button>

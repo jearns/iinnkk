@@ -1,0 +1,4947 @@
+{
+  "inputs": {
+    "node_modules/react/cjs/react.production.js": {
+      "bytes": 16856,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/react/index.js": {
+      "bytes": 186,
+      "imports": [
+        {
+          "path": "node_modules/react/cjs/react.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/scheduler/cjs/scheduler.production.js": {
+      "bytes": 10346,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/scheduler/index.js": {
+      "bytes": 194,
+      "imports": [
+        {
+          "path": "node_modules/scheduler/cjs/scheduler.production.js",
+          "kind": "require-call",
+          "original": "./cjs/scheduler.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/cjs/react-dom.production.js": {
+      "bytes": 6655,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "require-call",
+          "original": "react"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/index.js": {
+      "bytes": 1359,
+      "imports": [
+        {
+          "path": "node_modules/react-dom/cjs/react-dom.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react-dom.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/cjs/react-dom-client.production.js": {
+      "bytes": 508988,
+      "imports": [
+        {
+          "path": "node_modules/scheduler/index.js",
+          "kind": "require-call",
+          "original": "scheduler"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "require-call",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react-dom/index.js",
+          "kind": "require-call",
+          "original": "react-dom"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/client.js": {
+      "bytes": 1373,
+      "imports": [
+        {
+          "path": "node_modules/react-dom/cjs/react-dom-client.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react-dom-client.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "src/replay.mjs": {
+      "bytes": 3656,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/timing.mjs": {
+      "bytes": 844,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/music.mjs": {
+      "bytes": 4760,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/format.mjs": {
+      "bytes": 404,
+      "imports": [],
+      "format": "esm"
+    },
+    "../release295/page-preview.mjs": {
+      "bytes": 503,
+      "imports": [
+        {
+          "path": "src/replay.mjs",
+          "kind": "dynamic-import",
+          "original": "../remotion-studio/src/replay.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../release295/collection.mjs": {
+      "bytes": 2040,
+      "imports": [
+        {
+          "path": "../release295/page-preview.mjs",
+          "kind": "import-statement",
+          "original": "./page-preview.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../release295/selection.mjs": {
+      "bytes": 5569,
+      "imports": [
+        {
+          "path": "../release295/collection.mjs",
+          "kind": "dynamic-import",
+          "original": "./collection.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/sequence.mjs": {
+      "bytes": 2463,
+      "imports": [
+        {
+          "path": "src/replay.mjs",
+          "kind": "import-statement",
+          "original": "./replay.mjs"
+        },
+        {
+          "path": "../release295/selection.mjs",
+          "kind": "import-statement",
+          "original": "../../release295/selection.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/scene-plan.mjs": {
+      "bytes": 2695,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/react/cjs/react-jsx-runtime.production.js": {
+      "bytes": 976,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/react/jsx-runtime.js": {
+      "bytes": 210,
+      "imports": [
+        {
+          "path": "node_modules/react/cjs/react-jsx-runtime.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react-jsx-runtime.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/remotion/dist/esm/index.mjs": {
+      "bytes": 577716,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react-dom/index.js",
+          "kind": "import-statement",
+          "original": "react-dom"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/remotion/dist/esm/no-react.mjs": {
+      "bytes": 79145,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@remotion/player/dist/esm/index.mjs": {
+      "bytes": 129142,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/no-react.mjs",
+          "kind": "import-statement",
+          "original": "remotion/no-react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/no-react.mjs",
+          "kind": "import-statement",
+          "original": "remotion/no-react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/misc.js": {
+      "bytes": 46984,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/logging.js": {
+      "bytes": 2902,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/metadata.js": {
+      "bytes": 8809,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/shared/bitstream.js": {
+      "bytes": 2262,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/shared/aac-misc.js": {
+      "bytes": 7173,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/bitstream.js",
+          "kind": "import-statement",
+          "original": "./bitstream.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/shared/ac3-misc.js": {
+      "bytes": 504,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/version.js": {
+      "bytes": 437,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/codec-data.js": {
+      "bytes": 132058,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "./codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/ac3-misc.js",
+          "kind": "import-statement",
+          "original": "../shared/ac3-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/bitstream.js",
+          "kind": "import-statement",
+          "original": "../shared/bitstream.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/version.js",
+          "kind": "import-statement",
+          "original": "./version.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/codec.js": {
+      "bytes": 57391,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/aac-misc.js",
+          "kind": "import-statement",
+          "original": "../shared/aac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "./codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/shared/mp3-misc.js": {
+      "bytes": 6072,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/demuxer.js": {
+      "bytes": 406,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/packet.js": {
+      "bytes": 9583,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-misc.js": {
+      "bytes": 1942,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-reader.js": {
+      "bytes": 4151,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/aes.js": {
+      "bytes": 10952,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "./reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-demuxer.js": {
+      "bytes": 178342,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/aac-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/aac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/demuxer.js",
+          "kind": "import-statement",
+          "original": "../demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "../packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-misc.js",
+          "kind": "import-statement",
+          "original": "./isobmff-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-reader.js",
+          "kind": "import-statement",
+          "original": "./isobmff-reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/ac3-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/ac3-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/bitstream.js",
+          "kind": "import-statement",
+          "original": "../../shared/bitstream.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/aes.js",
+          "kind": "import-statement",
+          "original": "../aes.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "../logging.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/matroska/ebml.js": {
+      "bytes": 25975,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/matroska/matroska-misc.js": {
+      "bytes": 731,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/matroska/matroska-demuxer.js": {
+      "bytes": 112696,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/demuxer.js",
+          "kind": "import-statement",
+          "original": "../demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "../logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "../packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/matroska/ebml.js",
+          "kind": "import-statement",
+          "original": "./ebml.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/matroska/matroska-misc.js",
+          "kind": "import-statement",
+          "original": "./matroska-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/mp3/mp3-reader.js": {
+      "bytes": 2132,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/mp3-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/mp3-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/mp3/mp3-demuxer.js": {
+      "bytes": 13568,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/demuxer.js",
+          "kind": "import-statement",
+          "original": "../demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "../packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/mp3-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/mp3-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/id3.js",
+          "kind": "import-statement",
+          "original": "../id3.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/mp3/mp3-reader.js",
+          "kind": "import-statement",
+          "original": "./mp3-reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/ogg/ogg-misc.js": {
+      "bytes": 3227,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/ogg/ogg-reader.js": {
+      "bytes": 2969,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/ogg/ogg-misc.js",
+          "kind": "import-statement",
+          "original": "./ogg-misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/ogg/ogg-demuxer.js": {
+      "bytes": 40209,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/demuxer.js",
+          "kind": "import-statement",
+          "original": "../demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "../packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/ogg/ogg-misc.js",
+          "kind": "import-statement",
+          "original": "./ogg-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/ogg/ogg-reader.js",
+          "kind": "import-statement",
+          "original": "./ogg-reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/wave/wave-demuxer.js": {
+      "bytes": 19925,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/demuxer.js",
+          "kind": "import-statement",
+          "original": "../demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "../packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/id3.js",
+          "kind": "import-statement",
+          "original": "../id3.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/adts/adts-reader.js": {
+      "bytes": 2570,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/bitstream.js",
+          "kind": "import-statement",
+          "original": "../../shared/bitstream.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/aac-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/aac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/adts/adts-demuxer.js": {
+      "bytes": 10263,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/aac-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/aac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/demuxer.js",
+          "kind": "import-statement",
+          "original": "../demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/id3.js",
+          "kind": "import-statement",
+          "original": "../id3.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "../packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/adts/adts-reader.js",
+          "kind": "import-statement",
+          "original": "./adts-reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/flac/flac-misc.js": {
+      "bytes": 4360,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/bitstream.js",
+          "kind": "import-statement",
+          "original": "../../shared/bitstream.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/flac/flac-demuxer.js": {
+      "bytes": 26075,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/demuxer.js",
+          "kind": "import-statement",
+          "original": "../demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "../packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/flac/flac-misc.js",
+          "kind": "import-statement",
+          "original": "./flac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/bitstream.js",
+          "kind": "import-statement",
+          "original": "../../shared/bitstream.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/id3.js",
+          "kind": "import-statement",
+          "original": "../id3.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/mpeg-ts/mpeg-ts-misc.js": {
+      "bytes": 720,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/mpeg-ts/mpeg-ts-demuxer.js": {
+      "bytes": 105841,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/adts/adts-demuxer.js",
+          "kind": "import-statement",
+          "original": "../adts/adts-demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/adts/adts-reader.js",
+          "kind": "import-statement",
+          "original": "../adts/adts-reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/aac-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/aac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/demuxer.js",
+          "kind": "import-statement",
+          "original": "../demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "../logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/mp3-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/mp3-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "../packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/mpeg-ts/mpeg-ts-misc.js",
+          "kind": "import-statement",
+          "original": "./mpeg-ts-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/ac3-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/ac3-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/bitstream.js",
+          "kind": "import-statement",
+          "original": "../../shared/bitstream.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/hls/hls-misc.js": {
+      "bytes": 7014,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "../logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/segmented-input.js": {
+      "bytes": 18204,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "(disabled):node_modules/mediabunny/dist/modules/src/node.js": {
+      "bytes": 0,
+      "imports": []
+    },
+    "node_modules/mediabunny/dist/modules/src/source.js": {
+      "bytes": 92253,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "(disabled):node_modules/mediabunny/dist/modules/src/node.js",
+          "kind": "import-statement",
+          "original": "./node.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input.js",
+          "kind": "import-statement",
+          "original": "./input.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/hls/hls-segmented-input.js": {
+      "bytes": 33883,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/aes.js",
+          "kind": "import-statement",
+          "original": "../aes.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input.js",
+          "kind": "import-statement",
+          "original": "../input.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/segmented-input.js",
+          "kind": "import-statement",
+          "original": "../segmented-input.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/source.js",
+          "kind": "import-statement",
+          "original": "../source.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/hls/hls-misc.js",
+          "kind": "import-statement",
+          "original": "./hls-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input-format.js",
+          "kind": "import-statement",
+          "original": "../input-format.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-misc.js",
+          "kind": "import-statement",
+          "original": "../isobmff/isobmff-misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/hls/hls-demuxer.js": {
+      "bytes": 35058,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/demuxer.js",
+          "kind": "import-statement",
+          "original": "../demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/hls/hls-misc.js",
+          "kind": "import-statement",
+          "original": "./hls-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/hls/hls-segmented-input.js",
+          "kind": "import-statement",
+          "original": "./hls-segmented-input.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/source.js",
+          "kind": "import-statement",
+          "original": "../source.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/input-format.js": {
+      "bytes": 23067,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-demuxer.js",
+          "kind": "import-statement",
+          "original": "./isobmff/isobmff-demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/matroska/ebml.js",
+          "kind": "import-statement",
+          "original": "./matroska/ebml.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/matroska/matroska-demuxer.js",
+          "kind": "import-statement",
+          "original": "./matroska/matroska-demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/mp3/mp3-demuxer.js",
+          "kind": "import-statement",
+          "original": "./mp3/mp3-demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/mp3-misc.js",
+          "kind": "import-statement",
+          "original": "../shared/mp3-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/id3.js",
+          "kind": "import-statement",
+          "original": "./id3.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/mp3/mp3-reader.js",
+          "kind": "import-statement",
+          "original": "./mp3/mp3-reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/ogg/ogg-demuxer.js",
+          "kind": "import-statement",
+          "original": "./ogg/ogg-demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/wave/wave-demuxer.js",
+          "kind": "import-statement",
+          "original": "./wave/wave-demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/adts/adts-reader.js",
+          "kind": "import-statement",
+          "original": "./adts/adts-reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/adts/adts-demuxer.js",
+          "kind": "import-statement",
+          "original": "./adts/adts-demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "./reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/flac/flac-demuxer.js",
+          "kind": "import-statement",
+          "original": "./flac/flac-demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/mpeg-ts/mpeg-ts-demuxer.js",
+          "kind": "import-statement",
+          "original": "./mpeg-ts/mpeg-ts-demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/mpeg-ts/mpeg-ts-misc.js",
+          "kind": "import-statement",
+          "original": "./mpeg-ts/mpeg-ts-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/hls/hls-demuxer.js",
+          "kind": "import-statement",
+          "original": "./hls/hls-demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/hls/hls-misc.js",
+          "kind": "import-statement",
+          "original": "./hls/hls-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/source.js",
+          "kind": "import-statement",
+          "original": "./source.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/decode.js": {
+      "bytes": 8240,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "./codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/custom-coder.js",
+          "kind": "import-statement",
+          "original": "./custom-coder.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/sample.js": {
+      "bytes": 115558,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/encode.js": {
+      "bytes": 37004,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "./codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/custom-coder.js",
+          "kind": "import-statement",
+          "original": "./custom-coder.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/sample.js",
+          "kind": "import-statement",
+          "original": "./sample.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/custom-coder.js": {
+      "bytes": 4643,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/decode.js",
+          "kind": "import-statement",
+          "original": "./decode.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/encode.js",
+          "kind": "import-statement",
+          "original": "./encode.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/pcm.js": {
+      "bytes": 2415,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/media-sink.js": {
+      "bytes": 99210,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "./codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "./codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/custom-coder.js",
+          "kind": "import-statement",
+          "original": "./custom-coder.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input.js",
+          "kind": "import-statement",
+          "original": "./input.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input-track.js",
+          "kind": "import-statement",
+          "original": "./input-track.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "./packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/pcm.js",
+          "kind": "import-statement",
+          "original": "./pcm.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/sample.js",
+          "kind": "import-statement",
+          "original": "./sample.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/input-track.js": {
+      "bytes": 48384,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "./codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "./codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/custom-coder.js",
+          "kind": "import-statement",
+          "original": "./custom-coder.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/media-sink.js",
+          "kind": "import-statement",
+          "original": "./media-sink.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "./packet.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/input.js": {
+      "bytes": 17332,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input-format.js",
+          "kind": "import-statement",
+          "original": "./input-format.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input-track.js",
+          "kind": "import-statement",
+          "original": "./input-track.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "./reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/source.js",
+          "kind": "import-statement",
+          "original": "./source.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/reader.js": {
+      "bytes": 10020,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input.js",
+          "kind": "import-statement",
+          "original": "./input.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/source.js",
+          "kind": "import-statement",
+          "original": "./source.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/id3.js": {
+      "bytes": 38527,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/mp3-misc.js",
+          "kind": "import-statement",
+          "original": "../shared/mp3-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "./reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/muxer.js": {
+      "bytes": 1859,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/adts/adts-muxer.js": {
+      "bytes": 3963,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/aac-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/aac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/id3.js",
+          "kind": "import-statement",
+          "original": "../id3.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/muxer.js",
+          "kind": "import-statement",
+          "original": "../muxer.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/flac/flac-muxer.js": {
+      "bytes": 13076,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/muxer.js",
+          "kind": "import-statement",
+          "original": "../muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/flac/flac-misc.js",
+          "kind": "import-statement",
+          "original": "./flac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/bitstream.js",
+          "kind": "import-statement",
+          "original": "../../shared/bitstream.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/subtitles.js": {
+      "bytes": 3693,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-boxes.js": {
+      "bytes": 69025,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/subtitles.js",
+          "kind": "import-statement",
+          "original": "../subtitles.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-muxer.js",
+          "kind": "import-statement",
+          "original": "./isobmff-muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/bitstream.js",
+          "kind": "import-statement",
+          "original": "../../shared/bitstream.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/version.js",
+          "kind": "import-statement",
+          "original": "../version.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/writer.js": {
+      "bytes": 3400,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/target.js": {
+      "bytes": 23638,
+      "imports": [
+        {
+          "path": "(disabled):node_modules/mediabunny/dist/modules/src/node.js",
+          "kind": "import-statement",
+          "original": "./node.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-muxer.js": {
+      "bytes": 62058,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-boxes.js",
+          "kind": "import-statement",
+          "original": "./isobmff-boxes.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/muxer.js",
+          "kind": "import-statement",
+          "original": "../muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/writer.js",
+          "kind": "import-statement",
+          "original": "../writer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/target.js",
+          "kind": "import-statement",
+          "original": "../target.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/output-format.js",
+          "kind": "import-statement",
+          "original": "../output-format.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/subtitles.js",
+          "kind": "import-statement",
+          "original": "../subtitles.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/aac-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/aac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/adts/adts-reader.js",
+          "kind": "import-statement",
+          "original": "../adts/adts-reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-misc.js",
+          "kind": "import-statement",
+          "original": "./isobmff-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-reader.js",
+          "kind": "import-statement",
+          "original": "./isobmff-reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/matroska/matroska-muxer.js": {
+      "bytes": 53983,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/bitstream.js",
+          "kind": "import-statement",
+          "original": "../../shared/bitstream.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/matroska/ebml.js",
+          "kind": "import-statement",
+          "original": "./ebml.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/matroska/matroska-misc.js",
+          "kind": "import-statement",
+          "original": "./matroska-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/output-format.js",
+          "kind": "import-statement",
+          "original": "../output-format.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/subtitles.js",
+          "kind": "import-statement",
+          "original": "../subtitles.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/aac-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/aac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/adts/adts-reader.js",
+          "kind": "import-statement",
+          "original": "../adts/adts-reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "../reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/muxer.js",
+          "kind": "import-statement",
+          "original": "../muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "../logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/version.js",
+          "kind": "import-statement",
+          "original": "../version.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/mp3/mp3-writer.js": {
+      "bytes": 3261,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/mp3-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/mp3-misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/mp3/mp3-muxer.js": {
+      "bytes": 9480,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/muxer.js",
+          "kind": "import-statement",
+          "original": "../muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/mp3-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/mp3-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/mp3/mp3-writer.js",
+          "kind": "import-statement",
+          "original": "./mp3-writer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/id3.js",
+          "kind": "import-statement",
+          "original": "../id3.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/ogg/ogg-muxer.js": {
+      "bytes": 19438,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/muxer.js",
+          "kind": "import-statement",
+          "original": "../muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/ogg/ogg-misc.js",
+          "kind": "import-statement",
+          "original": "./ogg-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/ogg/ogg-reader.js",
+          "kind": "import-statement",
+          "original": "./ogg-reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/mpeg-ts/mpeg-ts-muxer.js": {
+      "bytes": 27748,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/aac-misc.js",
+          "kind": "import-statement",
+          "original": "../../shared/aac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "../codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/bitstream.js",
+          "kind": "import-statement",
+          "original": "../../shared/bitstream.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/muxer.js",
+          "kind": "import-statement",
+          "original": "../muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/mpeg-ts/mpeg-ts-misc.js",
+          "kind": "import-statement",
+          "original": "./mpeg-ts-misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/wave/riff-writer.js": {
+      "bytes": 1046,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/wave/wave-muxer.js": {
+      "bytes": 13065,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/muxer.js",
+          "kind": "import-statement",
+          "original": "../muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/wave/wave-demuxer.js",
+          "kind": "import-statement",
+          "original": "./wave-demuxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/wave/riff-writer.js",
+          "kind": "import-statement",
+          "original": "./riff-writer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "../metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/id3.js",
+          "kind": "import-statement",
+          "original": "../id3.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "../logging.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/resample.js": {
+      "bytes": 13925,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/sample.js",
+          "kind": "import-statement",
+          "original": "./sample.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/media-source.js": {
+      "bytes": 123310,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/shared/aac-misc.js",
+          "kind": "import-statement",
+          "original": "../shared/aac-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "./codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/subtitles.js",
+          "kind": "import-statement",
+          "original": "./subtitles.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/pcm.js",
+          "kind": "import-statement",
+          "original": "./pcm.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/custom-coder.js",
+          "kind": "import-statement",
+          "original": "./custom-coder.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "./packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/sample.js",
+          "kind": "import-statement",
+          "original": "./sample.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/encode.js",
+          "kind": "import-statement",
+          "original": "./encode.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/resample.js",
+          "kind": "import-statement",
+          "original": "./resample.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec-data.js",
+          "kind": "import-statement",
+          "original": "./codec-data.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-reader.js",
+          "kind": "import-statement",
+          "original": "./isobmff/isobmff-reader.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/reader.js",
+          "kind": "import-statement",
+          "original": "./reader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/hls/hls-muxer.js": {
+      "bytes": 64096,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "../codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/encode.js",
+          "kind": "import-statement",
+          "original": "../encode.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "../logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/media-source.js",
+          "kind": "import-statement",
+          "original": "../media-source.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "../misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/muxer.js",
+          "kind": "import-statement",
+          "original": "../muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/output.js",
+          "kind": "import-statement",
+          "original": "../output.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/writer.js",
+          "kind": "import-statement",
+          "original": "../writer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/target.js",
+          "kind": "import-statement",
+          "original": "../target.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/hls/hls-misc.js",
+          "kind": "import-statement",
+          "original": "./hls-misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/output-format.js": {
+      "bytes": 28424,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/adts/adts-muxer.js",
+          "kind": "import-statement",
+          "original": "./adts/adts-muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "./codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/flac/flac-muxer.js",
+          "kind": "import-statement",
+          "original": "./flac/flac-muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-muxer.js",
+          "kind": "import-statement",
+          "original": "./isobmff/isobmff-muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/matroska/matroska-muxer.js",
+          "kind": "import-statement",
+          "original": "./matroska/matroska-muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/mp3/mp3-muxer.js",
+          "kind": "import-statement",
+          "original": "./mp3/mp3-muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/ogg/ogg-muxer.js",
+          "kind": "import-statement",
+          "original": "./ogg/ogg-muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/mpeg-ts/mpeg-ts-muxer.js",
+          "kind": "import-statement",
+          "original": "./mpeg-ts/mpeg-ts-muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/wave/wave-muxer.js",
+          "kind": "import-statement",
+          "original": "./wave/wave-muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/hls/hls-muxer.js",
+          "kind": "import-statement",
+          "original": "./hls/hls-muxer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/hls/hls-misc.js",
+          "kind": "import-statement",
+          "original": "./hls/hls-misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/output.js": {
+      "bytes": 29722,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "./metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/output-format.js",
+          "kind": "import-statement",
+          "original": "./output-format.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/media-source.js",
+          "kind": "import-statement",
+          "original": "./media-source.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/target.js",
+          "kind": "import-statement",
+          "original": "./target.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/writer.js",
+          "kind": "import-statement",
+          "original": "./writer.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "./packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "./codec.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/conversion.js": {
+      "bytes": 88887,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "./codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/encode.js",
+          "kind": "import-statement",
+          "original": "./encode.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input.js",
+          "kind": "import-statement",
+          "original": "./input.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/media-sink.js",
+          "kind": "import-statement",
+          "original": "./media-sink.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/media-source.js",
+          "kind": "import-statement",
+          "original": "./media-source.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/output.js",
+          "kind": "import-statement",
+          "original": "./output.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/output-format.js",
+          "kind": "import-statement",
+          "original": "./output-format.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/sample.js",
+          "kind": "import-statement",
+          "original": "./sample.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "./metadata.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/target.js",
+          "kind": "import-statement",
+          "original": "./target.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mediabunny/dist/modules/src/index.js": {
+      "bytes": 4300,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/output.js",
+          "kind": "import-statement",
+          "original": "./output.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/output-format.js",
+          "kind": "import-statement",
+          "original": "./output-format.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/media-source.js",
+          "kind": "import-statement",
+          "original": "./media-source.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/codec.js",
+          "kind": "import-statement",
+          "original": "./codec.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/decode.js",
+          "kind": "import-statement",
+          "original": "./decode.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/encode.js",
+          "kind": "import-statement",
+          "original": "./encode.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/target.js",
+          "kind": "import-statement",
+          "original": "./target.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/misc.js",
+          "kind": "import-statement",
+          "original": "./misc.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/logging.js",
+          "kind": "import-statement",
+          "original": "./logging.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/output.js",
+          "kind": "import-statement",
+          "original": "./output.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/source.js",
+          "kind": "import-statement",
+          "original": "./source.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input-format.js",
+          "kind": "import-statement",
+          "original": "./input-format.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input.js",
+          "kind": "import-statement",
+          "original": "./input.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/input-track.js",
+          "kind": "import-statement",
+          "original": "./input-track.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/packet.js",
+          "kind": "import-statement",
+          "original": "./packet.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/sample.js",
+          "kind": "import-statement",
+          "original": "./sample.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/media-sink.js",
+          "kind": "import-statement",
+          "original": "./media-sink.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/conversion.js",
+          "kind": "import-statement",
+          "original": "./conversion.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/custom-coder.js",
+          "kind": "import-statement",
+          "original": "./custom-coder.js"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/metadata.js",
+          "kind": "import-statement",
+          "original": "./metadata.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@remotion/media/dist/esm/index.mjs": {
+      "bytes": 244581,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/no-react.mjs",
+          "kind": "import-statement",
+          "original": "remotion/no-react"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/showcase.jsx": {
+      "bytes": 8234,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/@remotion/media/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "@remotion/media"
+        },
+        {
+          "path": "src/timing.mjs",
+          "kind": "import-statement",
+          "original": "./timing.mjs"
+        },
+        {
+          "path": "src/scene-plan.mjs",
+          "kind": "import-statement",
+          "original": "./scene-plan.mjs"
+        },
+        {
+          "path": "src/music.mjs",
+          "kind": "import-statement",
+          "original": "./music.mjs"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/player.jsx": {
+      "bytes": 844,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/@remotion/player/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "@remotion/player"
+        },
+        {
+          "path": "src/showcase.jsx",
+          "kind": "import-statement",
+          "original": "./showcase.jsx"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/remotion/dist/esm/version.mjs": {
+      "bytes": 65,
+      "imports": [],
+      "format": "esm"
+    },
+    "(disabled):worker_threads": {
+      "bytes": 0,
+      "imports": []
+    },
+    "node_modules/@mediabunny/aac-encoder/dist/bundles/mediabunny-aac-encoder.mjs": {
+      "bytes": 999289,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "(disabled):worker_threads",
+          "kind": "dynamic-import",
+          "original": "worker_threads"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@mediabunny/flac-encoder/dist/bundles/mediabunny-flac-encoder.mjs": {
+      "bytes": 327195,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "(disabled):worker_threads",
+          "kind": "dynamic-import",
+          "original": "worker_threads"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@mediabunny/mp3-encoder/dist/bundles/mediabunny-mp3-encoder.mjs": {
+      "bytes": 317165,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "(disabled):worker_threads",
+          "kind": "dynamic-import",
+          "original": "worker_threads"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@remotion/web-renderer/dist/esm/index.mjs": {
+      "bytes": 230251,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/version.mjs",
+          "kind": "import-statement",
+          "original": "remotion/version"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/no-react.mjs",
+          "kind": "import-statement",
+          "original": "remotion/no-react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react-dom/index.js",
+          "kind": "import-statement",
+          "original": "react-dom"
+        },
+        {
+          "path": "node_modules/react-dom/client.js",
+          "kind": "import-statement",
+          "original": "react-dom/client"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react-dom/index.js",
+          "kind": "import-statement",
+          "original": "react-dom"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        },
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/no-react.mjs",
+          "kind": "import-statement",
+          "original": "remotion/no-react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/no-react.mjs",
+          "kind": "import-statement",
+          "original": "remotion/no-react"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/remotion/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "remotion"
+        },
+        {
+          "path": "node_modules/@mediabunny/aac-encoder/dist/bundles/mediabunny-aac-encoder.mjs",
+          "kind": "dynamic-import",
+          "original": "@mediabunny/aac-encoder"
+        },
+        {
+          "path": "node_modules/@mediabunny/flac-encoder/dist/bundles/mediabunny-flac-encoder.mjs",
+          "kind": "dynamic-import",
+          "original": "@mediabunny/flac-encoder"
+        },
+        {
+          "path": "node_modules/@mediabunny/mp3-encoder/dist/bundles/mediabunny-mp3-encoder.mjs",
+          "kind": "dynamic-import",
+          "original": "@mediabunny/mp3-encoder"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/cover.mjs": {
+      "bytes": 1246,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/audio-mux.mjs": {
+      "bytes": 2550,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/export-engine.mjs": {
+      "bytes": 209,
+      "imports": [
+        {
+          "path": "node_modules/@remotion/web-renderer/dist/esm/index.mjs",
+          "kind": "import-statement",
+          "original": "@remotion/web-renderer"
+        },
+        {
+          "path": "src/showcase.jsx",
+          "kind": "import-statement",
+          "original": "./showcase.jsx"
+        },
+        {
+          "path": "src/cover.mjs",
+          "kind": "import-statement",
+          "original": "./cover.mjs"
+        },
+        {
+          "path": "src/audio-mux.mjs",
+          "kind": "import-statement",
+          "original": "./audio-mux.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/custom-music.mjs": {
+      "bytes": 1302,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/@mediabunny/aac-encoder/dist/bundles/mediabunny-aac-encoder.mjs",
+          "kind": "dynamic-import",
+          "original": "@mediabunny/aac-encoder"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/web.jsx": {
+      "bytes": 18064,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react-dom/client.js",
+          "kind": "import-statement",
+          "original": "react-dom/client"
+        },
+        {
+          "path": "src/replay.mjs",
+          "kind": "import-statement",
+          "original": "./replay.mjs"
+        },
+        {
+          "path": "src/timing.mjs",
+          "kind": "import-statement",
+          "original": "./timing.mjs"
+        },
+        {
+          "path": "src/music.mjs",
+          "kind": "import-statement",
+          "original": "./music.mjs"
+        },
+        {
+          "path": "src/format.mjs",
+          "kind": "import-statement",
+          "original": "./format.mjs"
+        },
+        {
+          "path": "src/sequence.mjs",
+          "kind": "import-statement",
+          "original": "./sequence.mjs"
+        },
+        {
+          "path": "../release295/selection.mjs",
+          "kind": "import-statement",
+          "original": "../../release295/selection.mjs"
+        },
+        {
+          "path": "src/scene-plan.mjs",
+          "kind": "import-statement",
+          "original": "./scene-plan.mjs"
+        },
+        {
+          "path": "src/player.jsx",
+          "kind": "dynamic-import",
+          "original": "./player.jsx"
+        },
+        {
+          "path": "src/export-engine.mjs",
+          "kind": "dynamic-import",
+          "original": "./export-engine.mjs"
+        },
+        {
+          "path": "src/custom-music.mjs",
+          "kind": "dynamic-import",
+          "original": "./custom-music.mjs"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "../video-assets295/chunk.E4FOH7R4.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.5P7SKBLK.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.XX4IRKTM.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.XGJTU6N6.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.25XVOIGD.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.MEA3C23B.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "../video-assets295/chunk.EANZUZXJ.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "../video-assets295/chunk.YDBKSGHP.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "ShoubiShowcase",
+        "addMusic",
+        "canRenderMediaOnWeb",
+        "coverMetadata",
+        "renderMediaOnWeb"
+      ],
+      "entryPoint": "src/export-engine.mjs",
+      "inputs": {
+        "node_modules/remotion/dist/esm/version.mjs": {
+          "bytesInOutput": 17
+        },
+        "node_modules/@remotion/web-renderer/dist/esm/index.mjs": {
+          "bytesInOutput": 103576
+        },
+        "src/export-engine.mjs": {
+          "bytesInOutput": 0
+        },
+        "src/cover.mjs": {
+          "bytesInOutput": 872
+        },
+        "src/audio-mux.mjs": {
+          "bytesInOutput": 1508
+        }
+      },
+      "bytes": 106798
+    },
+    "../video-assets295/chunk.2BEHZL72.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.25XVOIGD.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.MEA3C23B.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "compressMusic295"
+      ],
+      "entryPoint": "src/custom-music.mjs",
+      "inputs": {
+        "src/custom-music.mjs": {
+          "bytesInOutput": 936
+        }
+      },
+      "bytes": 1360
+    },
+    "../video-assets295/studio.64QDL36Z.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.5P7SKBLK.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.ZA67F4BS.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.XGJTU6N6.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.DAN252Y5.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "../video-assets295/chunk.E4FOH7R4.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "../video-assets295/chunk.2BEHZL72.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/web.jsx",
+      "inputs": {
+        "src/web.jsx": {
+          "bytesInOutput": 15505
+        },
+        "src/format.mjs": {
+          "bytesInOutput": 302
+        },
+        "../release295/selection.mjs": {
+          "bytesInOutput": 2055
+        },
+        "src/sequence.mjs": {
+          "bytesInOutput": 1579
+        }
+      },
+      "bytes": 19936
+    },
+    "../video-assets295/chunk.5P7SKBLK.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.XGJTU6N6.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "a"
+      ],
+      "inputs": {
+        "node_modules/scheduler/cjs/scheduler.production.js": {
+          "bytesInOutput": 3780
+        },
+        "node_modules/scheduler/index.js": {
+          "bytesInOutput": 51
+        },
+        "node_modules/react-dom/cjs/react-dom-client.production.js": {
+          "bytesInOutput": 167963
+        },
+        "node_modules/react-dom/client.js": {
+          "bytesInOutput": 253
+        }
+      },
+      "bytes": 173074
+    },
+    "../video-assets295/chunk.VMZPORHU.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.ZA67F4BS.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "partialDraft",
+        "prepareReplay",
+        "strokeCount"
+      ],
+      "entryPoint": "src/replay.mjs",
+      "inputs": {},
+      "bytes": 406
+    },
+    "../video-assets295/chunk.ZA67F4BS.js": {
+      "imports": [],
+      "exports": [
+        "a",
+        "b",
+        "c"
+      ],
+      "inputs": {
+        "src/replay.mjs": {
+          "bytesInOutput": 2550
+        }
+      },
+      "bytes": 2856
+    },
+    "../video-assets295/chunk.ABVEC5ME.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.VMZPORHU.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "collectionMembers295",
+        "createCollection295",
+        "pageSources295"
+      ],
+      "entryPoint": "../release295/collection.mjs",
+      "inputs": {
+        "../release295/page-preview.mjs": {
+          "bytesInOutput": 282
+        },
+        "../release295/collection.mjs": {
+          "bytesInOutput": 1531
+        }
+      },
+      "bytes": 2197
+    },
+    "../video-assets295/chunk.DAN252Y5.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.XX4IRKTM.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.XGJTU6N6.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.25XVOIGD.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "src/player.jsx",
+      "inputs": {
+        "src/player.jsx": {
+          "bytesInOutput": 618
+        },
+        "node_modules/@remotion/player/dist/esm/index.mjs": {
+          "bytesInOutput": 61521
+        }
+      },
+      "bytes": 62641
+    },
+    "../video-assets295/chunk.XX4IRKTM.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.XGJTU6N6.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.25XVOIGD.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h"
+      ],
+      "inputs": {
+        "src/showcase.jsx": {
+          "bytesInOutput": 5918
+        },
+        "node_modules/remotion/dist/esm/index.mjs": {
+          "bytesInOutput": 265104
+        },
+        "node_modules/@remotion/media/dist/esm/index.mjs": {
+          "bytesInOutput": 113905
+        },
+        "node_modules/remotion/dist/esm/no-react.mjs": {
+          "bytesInOutput": 40239
+        }
+      },
+      "bytes": 425794
+    },
+    "../video-assets295/chunk.XGJTU6N6.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n"
+      ],
+      "inputs": {
+        "node_modules/react/cjs/react.production.js": {
+          "bytesInOutput": 7435
+        },
+        "node_modules/react/index.js": {
+          "bytesInOutput": 46
+        },
+        "node_modules/react/cjs/react-jsx-runtime.production.js": {
+          "bytesInOutput": 355
+        },
+        "node_modules/react/jsx-runtime.js": {
+          "bytesInOutput": 47
+        },
+        "node_modules/react-dom/cjs/react-dom.production.js": {
+          "bytesInOutput": 3286
+        },
+        "node_modules/react-dom/index.js": {
+          "bytesInOutput": 251
+        },
+        "src/timing.mjs": {
+          "bytesInOutput": 418
+        },
+        "src/music.mjs": {
+          "bytesInOutput": 4882
+        },
+        "src/scene-plan.mjs": {
+          "bytesInOutput": 2099
+        }
+      },
+      "bytes": 20181
+    },
+    "../video-assets295/chunk.RUDHHM7O.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "(disabled):worker_threads",
+      "inputs": {
+        "(disabled):worker_threads": {
+          "bytesInOutput": 0
+        }
+      },
+      "bytes": 276
+    },
+    "../video-assets295/chunk.MEA3C23B.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.25XVOIGD.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.RUDHHM7O.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "registerAacEncoder"
+      ],
+      "entryPoint": "node_modules/@mediabunny/aac-encoder/dist/bundles/mediabunny-aac-encoder.mjs",
+      "inputs": {
+        "node_modules/@mediabunny/aac-encoder/dist/bundles/mediabunny-aac-encoder.mjs": {
+          "bytesInOutput": 992033
+        }
+      },
+      "bytes": 992825
+    },
+    "../video-assets295/chunk.EANZUZXJ.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.25XVOIGD.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.RUDHHM7O.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "registerFlacEncoder"
+      ],
+      "entryPoint": "node_modules/@mediabunny/flac-encoder/dist/bundles/mediabunny-flac-encoder.mjs",
+      "inputs": {
+        "node_modules/@mediabunny/flac-encoder/dist/bundles/mediabunny-flac-encoder.mjs": {
+          "bytesInOutput": 322546
+        }
+      },
+      "bytes": 323346
+    },
+    "../video-assets295/chunk.YDBKSGHP.js": {
+      "imports": [
+        {
+          "path": "../video-assets295/chunk.25XVOIGD.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets295/chunk.RUDHHM7O.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "registerMp3Encoder"
+      ],
+      "entryPoint": "node_modules/@mediabunny/mp3-encoder/dist/bundles/mediabunny-mp3-encoder.mjs",
+      "inputs": {
+        "node_modules/@mediabunny/mp3-encoder/dist/bundles/mediabunny-mp3-encoder.mjs": {
+          "bytesInOutput": 311117
+        }
+      },
+      "bytes": 311914
+    },
+    "../video-assets295/chunk.25XVOIGD.js": {
+      "imports": [],
+      "exports": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z"
+      ],
+      "inputs": {
+        "node_modules/mediabunny/dist/modules/src/misc.js": {
+          "bytesInOutput": 12200
+        },
+        "node_modules/mediabunny/dist/modules/src/logging.js": {
+          "bytesInOutput": 776
+        },
+        "node_modules/mediabunny/dist/modules/src/packet.js": {
+          "bytesInOutput": 4219
+        },
+        "node_modules/mediabunny/dist/modules/shared/bitstream.js": {
+          "bytesInOutput": 858
+        },
+        "node_modules/mediabunny/dist/modules/shared/aac-misc.js": {
+          "bytesInOutput": 2100
+        },
+        "node_modules/mediabunny/dist/modules/shared/ac3-misc.js": {
+          "bytesInOutput": 46
+        },
+        "node_modules/mediabunny/dist/modules/src/version.js": {
+          "bytesInOutput": 39
+        },
+        "node_modules/mediabunny/dist/modules/src/codec-data.js": {
+          "bytesInOutput": 34521
+        },
+        "node_modules/mediabunny/dist/modules/src/codec.js": {
+          "bytesInOutput": 23406
+        },
+        "node_modules/mediabunny/dist/modules/src/demuxer.js": {
+          "bytesInOutput": 54
+        },
+        "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-misc.js": {
+          "bytesInOutput": 693
+        },
+        "node_modules/mediabunny/dist/modules/src/metadata.js": {
+          "bytesInOutput": 5164
+        },
+        "node_modules/mediabunny/dist/modules/src/reader.js": {
+          "bytesInOutput": 3647
+        },
+        "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-reader.js": {
+          "bytesInOutput": 1212
+        },
+        "node_modules/mediabunny/dist/modules/src/aes.js": {
+          "bytesInOutput": 4061
+        },
+        "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-demuxer.js": {
+          "bytesInOutput": 53877
+        },
+        "node_modules/mediabunny/dist/modules/src/matroska/ebml.js": {
+          "bytesInOutput": 10705
+        },
+        "node_modules/mediabunny/dist/modules/src/matroska/matroska-misc.js": {
+          "bytesInOutput": 226
+        },
+        "node_modules/mediabunny/dist/modules/src/matroska/matroska-demuxer.js": {
+          "bytesInOutput": 38427
+        },
+        "node_modules/mediabunny/dist/modules/shared/mp3-misc.js": {
+          "bytesInOutput": 1788
+        },
+        "node_modules/mediabunny/dist/modules/src/id3.js": {
+          "bytesInOutput": 14196
+        },
+        "node_modules/mediabunny/dist/modules/src/mp3/mp3-reader.js": {
+          "bytesInOutput": 518
+        },
+        "node_modules/mediabunny/dist/modules/src/mp3/mp3-demuxer.js": {
+          "bytesInOutput": 5547
+        },
+        "node_modules/mediabunny/dist/modules/src/ogg/ogg-misc.js": {
+          "bytesInOutput": 940
+        },
+        "node_modules/mediabunny/dist/modules/src/ogg/ogg-reader.js": {
+          "bytesInOutput": 701
+        },
+        "node_modules/mediabunny/dist/modules/src/ogg/ogg-demuxer.js": {
+          "bytesInOutput": 12346
+        },
+        "node_modules/mediabunny/dist/modules/src/wave/wave-demuxer.js": {
+          "bytesInOutput": 7681
+        },
+        "node_modules/mediabunny/dist/modules/src/adts/adts-reader.js": {
+          "bytesInOutput": 786
+        },
+        "node_modules/mediabunny/dist/modules/src/adts/adts-demuxer.js": {
+          "bytesInOutput": 4179
+        },
+        "node_modules/mediabunny/dist/modules/src/flac/flac-misc.js": {
+          "bytesInOutput": 1108
+        },
+        "node_modules/mediabunny/dist/modules/src/flac/flac-demuxer.js": {
+          "bytesInOutput": 7514
+        },
+        "node_modules/mediabunny/dist/modules/src/mpeg-ts/mpeg-ts-misc.js": {
+          "bytesInOutput": 120
+        },
+        "node_modules/mediabunny/dist/modules/src/mpeg-ts/mpeg-ts-demuxer.js": {
+          "bytesInOutput": 28791
+        },
+        "node_modules/mediabunny/dist/modules/src/hls/hls-misc.js": {
+          "bytesInOutput": 2743
+        },
+        "node_modules/mediabunny/dist/modules/src/segmented-input.js": {
+          "bytesInOutput": 8422
+        },
+        "node_modules/mediabunny/dist/modules/src/hls/hls-segmented-input.js": {
+          "bytesInOutput": 11059
+        },
+        "node_modules/mediabunny/dist/modules/src/hls/hls-demuxer.js": {
+          "bytesInOutput": 12802
+        },
+        "node_modules/mediabunny/dist/modules/src/input-format.js": {
+          "bytesInOutput": 6063
+        },
+        "node_modules/mediabunny/dist/modules/src/sample.js": {
+          "bytesInOutput": 45505
+        },
+        "node_modules/mediabunny/dist/modules/src/encode.js": {
+          "bytesInOutput": 15807
+        },
+        "node_modules/mediabunny/dist/modules/src/custom-coder.js": {
+          "bytesInOutput": 477
+        },
+        "node_modules/mediabunny/dist/modules/src/pcm.js": {
+          "bytesInOutput": 560
+        },
+        "node_modules/mediabunny/dist/modules/src/media-sink.js": {
+          "bytesInOutput": 30139
+        },
+        "node_modules/mediabunny/dist/modules/src/input-track.js": {
+          "bytesInOutput": 14021
+        },
+        "node_modules/mediabunny/dist/modules/src/input.js": {
+          "bytesInOutput": 5386
+        },
+        "node_modules/mediabunny/dist/modules/src/source.js": {
+          "bytesInOutput": 25866
+        },
+        "node_modules/mediabunny/dist/modules/src/target.js": {
+          "bytesInOutput": 6718
+        },
+        "node_modules/mediabunny/dist/modules/src/muxer.js": {
+          "bytesInOutput": 761
+        },
+        "node_modules/mediabunny/dist/modules/src/adts/adts-muxer.js": {
+          "bytesInOutput": 1523
+        },
+        "node_modules/mediabunny/dist/modules/src/flac/flac-muxer.js": {
+          "bytesInOutput": 4629
+        },
+        "node_modules/mediabunny/dist/modules/src/subtitles.js": {
+          "bytesInOutput": 486
+        },
+        "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-boxes.js": {
+          "bytesInOutput": 20190
+        },
+        "node_modules/mediabunny/dist/modules/src/writer.js": {
+          "bytesInOutput": 1578
+        },
+        "node_modules/mediabunny/dist/modules/src/isobmff/isobmff-muxer.js": {
+          "bytesInOutput": 23842
+        },
+        "node_modules/mediabunny/dist/modules/src/matroska/matroska-muxer.js": {
+          "bytesInOutput": 19116
+        },
+        "node_modules/mediabunny/dist/modules/src/mp3/mp3-writer.js": {
+          "bytesInOutput": 1176
+        },
+        "node_modules/mediabunny/dist/modules/src/mp3/mp3-muxer.js": {
+          "bytesInOutput": 3900
+        },
+        "node_modules/mediabunny/dist/modules/src/ogg/ogg-muxer.js": {
+          "bytesInOutput": 7339
+        },
+        "node_modules/mediabunny/dist/modules/src/wave/riff-writer.js": {
+          "bytesInOutput": 480
+        },
+        "node_modules/mediabunny/dist/modules/src/wave/wave-muxer.js": {
+          "bytesInOutput": 5572
+        },
+        "node_modules/mediabunny/dist/modules/src/resample.js": {
+          "bytesInOutput": 4091
+        },
+        "node_modules/mediabunny/dist/modules/src/media-source.js": {
+          "bytesInOutput": 29957
+        },
+        "node_modules/mediabunny/dist/modules/src/output.js": {
+          "bytesInOutput": 12351
+        },
+        "node_modules/mediabunny/dist/modules/src/output-format.js": {
+          "bytesInOutput": 9154
+        },
+        "node_modules/mediabunny/dist/modules/src/conversion.js": {
+          "bytesInOutput": 32781
+        },
+        "node_modules/mediabunny/dist/modules/src/index.js": {
+          "bytesInOutput": 306
+        }
+      },
+      "bytes": 651145
+    },
+    "../video-assets295/chunk.5LHGNSCY.js": {
+      "imports": [],
+      "exports": [
+        "a",
+        "b",
+        "c"
+      ],
+      "inputs": {},
+      "bytes": 1076
+    }
+  }
+}

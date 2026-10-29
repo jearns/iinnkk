@@ -37,7 +37,7 @@ function FilmCanvas({surface,frame,timing,view,enter,width,height,fps}){
  },[frame,handle,surface,width,height,view.mode,view.factor,view.progress,enter]);
  return <canvas ref={ref} width={width} height={height} data-canvas293="" data-scene293={view.scene.id} data-mode293={view.mode} data-progress293={timing.phase==='cover'?1:view.progress} style={{width:'100%',height:'100%',display:'block'}}/>;
 }
-export const ShoubiShowcase=({surface,artwork,title,signature,music='none',transition='shadow'})=>{
+export const ShoubiShowcase=({surface,artwork,title,signature,music='none',musicUrl295=null,transition='shadow'})=>{
  const brandFontHandle=useMemo(()=>delayRender('Brand typography'),[]);useEffect(()=>{loadBrandFont294().then(()=>continueRender(brandFontHandle),cancelRender)},[]);
  const frame=useCurrentFrame(),{fps,durationInFrames,width,height}=useVideoConfig();
  const timing=videoTimeline(frame,durationInFrames,fps),plan=useMemo(()=>scenePlan(durationInFrames,fps,surface?.chapters||[]),[durationInFrames,fps,surface]);
@@ -47,7 +47,7 @@ export const ShoubiShowcase=({surface,artwork,title,signature,music='none',trans
  const brandAlpha=timing.phase==='intro'?Math.min(clamp((frame-1)/(fps*.15)),clamp((plan.intro-frame)/(fps*.2))):clamp((frame-plan.outro)/(fps*.2));
  const track=musicTrack(music);
  return <AbsoluteFill data-phase291={timing.phase} data-frame290={frame} style={{direction:'ltr',backgroundColor:'#08090b',fontFamily:'ShoubiFilm294,-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif'}}>
-  {track&&<Audio src={staticFile(musicSource(music,durationInFrames/fps))} premountFor={fps} volume={1}/>}
+  {(track||musicUrl295)&&<Audio loop src={musicUrl295||staticFile(musicSource(music,durationInFrames/fps))} premountFor={fps} volume={1}/>}
   {!brand&&(!surface&&artwork?<Img src={/^(https?:|data:|blob:)/.test(artwork)?artwork:staticFile(artwork)} style={{width:'100%',height:'100%',objectFit:'contain'}}/>:<FilmCanvas surface={surface} frame={frame} timing={timing} view={view} enter={enter} width={width} height={height} fps={fps}/>)}
   {timing.phase!=='cover'&&<>
    {!brand&&<div style={{position:'absolute',left:0,right:0,bottom:0,height:90*unit,background:'linear-gradient(transparent,rgba(0,0,0,.5))'}}/>}
