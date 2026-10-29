@@ -15,7 +15,7 @@ test('all five durations reserve a finished-work cover frame and two seconds for
     assert.equal(at(61).progress, 0); assert.ok(at(120).progress < 1);
   }
   assert.equal(normalizeDuration(8), 8); assert.equal(normalizeDuration('120'), 120);
-  assert.equal(OUTRO_SLOGAN, '以手为笔，随手写字'); assert.equal(OUTRO_SITE, 'iinnkk.me');
+  assert.equal(OUTRO_SLOGAN, '以手为笔，随时写字'); assert.equal(OUTRO_SITE, 'iinnkk.me');
 });
 
 test('camera changes from full view to ink close-up and returns to an uncropped full work', () => {

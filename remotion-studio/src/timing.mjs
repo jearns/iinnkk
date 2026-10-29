@@ -1,6 +1,6 @@
 export const VIDEO_FPS = 30;
 export const VIDEO_DURATIONS = [8, 15, 30, 60, 120];
-export const OUTRO_SLOGAN = '以手为笔，随手写字';
+export const OUTRO_SLOGAN = '以手为笔，随时写字';
 export const OUTRO_SITE = 'iinnkk.me';
 export function normalizeDuration(value) { return VIDEO_DURATIONS.includes(Number(value)) ? Number(value) : 30; }
 export function videoTimeline(frame, durationInFrames, fps) {
