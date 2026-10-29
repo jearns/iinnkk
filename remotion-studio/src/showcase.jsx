@@ -1,54 +1,56 @@
-import React, {useMemo} from 'react';
-import {AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import {Audio} from '@remotion/media';
-import {OUTRO_SLOGAN, OUTRO_SITE, videoTimeline} from './timing.mjs';
-import {cameraLayers} from './camera.mjs';
-import {musicTrack, musicSource} from './music.mjs';
-const unit = n => Math.max(0, Math.min(1, n));
-function fitLine(text, maxSize, spacing) {
-  if (typeof document === 'undefined') return maxSize;
-  const context = document.createElement('canvas').getContext('2d');
-  if (!context) return maxSize;
-  context.font = '600 100px -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif';
-  const width = context.measureText(text || '').width;
-  return width ? Math.min(maxSize, Math.max(16, (880 - spacing * [...(text || '')].length) * 100 / width)) : maxSize;
+import React,{useMemo,useRef,useLayoutEffect}from'react';
+import{AbsoluteFill,Img,staticFile,useCurrentFrame,useVideoConfig,delayRender,continueRender,interpolate,Easing}from'remotion';
+import{Audio}from'@remotion/media';
+import{OUTRO_SLOGAN,OUTRO_SITE,videoTimeline}from'./timing.mjs';
+import{scenePlan,sceneFrame,clamp}from'./scene-plan.mjs';
+import{musicTrack,musicSource}from'./music.mjs';
+function paintImage(ctx,image,w,h,scene,factor=1){
+ const fit=Math.min(w/image.width,h/image.height),scale=fit*scene.scale*factor;
+ const cx=scene.scale>1?scene.region.x:.5,cy=scene.scale>1?scene.region.y:.5;
+ const maxX=Math.max(0,(image.width*scale-w)/2),maxY=Math.max(0,(image.height*scale-h)/2);
+ const x=Math.max(-maxX,Math.min(maxX,(.5-cx)*image.width*scale)),y=Math.max(-maxY,Math.min(maxY,(.5-cy)*image.height*scale));
+ ctx.drawImage(image,(w-image.width*scale)/2+x,(h-image.height*scale)/2+y,image.width*scale,image.height*scale);
 }
-export const ShoubiShowcase = ({artwork, artworkFrames, artworkFocuses, artworkAspect, title, signature, music = 'none'}) => {
-  const frame = useCurrentFrame();
-  const {fps, durationInFrames} = useVideoConfig();
-  const timing = videoTimeline(frame, durationInFrames, fps);
-  const replayIndex = Math.min((artworkFrames?.length || 1) - 1, Math.floor(timing.progress * ((artworkFrames?.length || 1) - 1)));
-  const image = timing.phase === 'cover' ? artwork || artworkFrames?.at(-1) : artworkFrames?.[replayIndex] || artwork;
-  const source = image ? /^(https?:|data:|blob:)/.test(image) ? image : staticFile(image) : null;
-  const titleSize = useMemo(() => fitLine(title, 64, 0), [title]);
-  const signatureSize = useMemo(() => fitLine(signature, 28, 1), [signature]);
-  const shot = timing.phase === 'cover' ? {shot: -1, opacity: 1, scale: 1, x: 0, y: 0, rotate: 0, shade: 0} : cameraLayers(frame, timing, fps, artworkAspect, artworkFocuses)[0];
-  const brand = timing.phase === 'intro' || timing.phase === 'outro';
-  const brandAlpha = timing.phase === 'intro' ? Math.min(unit((frame - 1) / (fps * .15)), unit((timing.introEnd - frame) / (fps * .2))) : unit((frame - timing.outroStart) / (fps * .2));
-  const artAlpha = timing.phase === 'cover' ? 1 : Math.min(unit((frame - timing.introEnd) / (fps * .2)), unit((timing.outroStart - frame) / (fps * .2)));
-  const elapsed = frame - timing.introEnd, titleEnd = Math.min(fps * 2.5, (timing.outroStart - timing.introEnd) * .42);
-  const titleAlpha = timing.phase === 'artwork' ? Math.min(unit(elapsed / (fps * .18)), unit((titleEnd - elapsed) / (fps * .35))) : 0;
-  const track = musicTrack(music);
-  return <AbsoluteFill data-phase291={timing.phase} data-frame290={frame} data-replay290={replayIndex} style={{direction: 'ltr', backgroundColor: '#f5f5f7', fontFamily: '-apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif'}}>
-    {track && <Audio src={staticFile(musicSource(music, durationInFrames / fps))} premountFor={fps} volume={1} />}
-    {brand ? <AbsoluteFill data-brand-card291="" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: brandAlpha}}>
-      <Img data-brand291="" src={staticFile('apple-touch-icon.png')} style={{width: 96, height: 96, objectFit: 'contain'}} />
-      {timing.phase === 'outro' && <div data-slogan291="" style={{marginTop: 32, textAlign: 'center', color: '#1d1d1f'}}>
-        <div style={{fontSize: 38, lineHeight: '58px', fontWeight: 500, letterSpacing: 2}}>{OUTRO_SLOGAN}</div>
-        <div data-site292="" style={{marginTop: 12, fontSize: 30, lineHeight: '44px', letterSpacing: 2, opacity: .56}}>{OUTRO_SITE}</div>
-      </div>}
-    </AbsoluteFill> : <>
-      <div data-artwork289="" style={{position: 'absolute', inset: 32, borderRadius: 12, backgroundColor: '#fff', boxShadow: '0 8px 36px #0000000c', overflow: 'hidden', opacity: artAlpha}}>
-        {source && <div data-shot291={shot.shot} style={{position: 'absolute', inset: 0, scale: shot.scale, translate: `${shot.x}px ${shot.y}px`}}><Img src={source} style={{width: '100%', height: '100%', objectFit: 'contain'}} /></div>}
-        <AbsoluteFill data-shadow292="" style={{opacity: shot.shade, background: 'linear-gradient(115deg, #08090b, #17191e)'}} />
-        {titleAlpha > 0 && <AbsoluteFill data-announcement292="" style={{opacity: titleAlpha}}>
-          <AbsoluteFill style={{background: 'linear-gradient(to bottom, transparent 35%, rgba(0,0,0,.12) 55%, rgba(0,0,0,.76) 100%)'}} />
-          <div style={{position: 'absolute', left: 64, right: 64, bottom: 132, color: '#fff'}}>
-            <div data-title289="" style={{fontSize: titleSize, fontWeight: 600, lineHeight: 1.2, letterSpacing: -1, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis'}}>{title}</div>
-            <div data-signature289="" style={{marginTop: 18, fontSize: signatureSize, lineHeight: 1.5, letterSpacing: 1, opacity: .82, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis'}}>{signature}</div>
-          </div>
-        </AbsoluteFill>}
-      </div>
-    </>}
-  </AbsoluteFill>;
+function FilmCanvas({surface,frame,timing,view,enter,width,height,fps}){
+ const ref=useRef(null),handle=useMemo(()=>delayRender('Original ink frame'),[frame,width,height]);
+ useLayoutEffect(()=>{
+  const ctx=ref.current.getContext('2d');ctx.fillStyle='#08090b';ctx.fillRect(0,0,width,height);ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';
+  if(surface&&!surface.closed){
+   const isCover=timing.phase==='cover',hero=view.scene.kind==='hero';
+   const current=isCover?1:view.progress;
+   if(view.mode==='dolly'&&!isCover&&view.scene.kind==='writing'){
+    ctx.save();ctx.globalAlpha=.24;const im=surface.draw(1),k=Math.max(width/im.width,height/im.height)*(1.12-.08*view.t);ctx.drawImage(im,(width-im.width*k)/2,(height-im.height*k)/2,im.width*k,im.height*k);ctx.restore();
+   }
+   if(view.mode==='dissolve'&&view.previous&&view.blend>0&&!isCover){ctx.save();ctx.globalAlpha=view.blend;paintImage(ctx,surface.draw(view.previous.end),width,height,view.previous);ctx.restore();}
+   ctx.save();
+   if(!isCover&&hero){ctx.globalAlpha=enter;ctx.translate(0,(1-enter)*80*Math.min(width,height)/1080);}
+   if(!isCover&&view.mode==='dissolve'&&view.previous)ctx.globalAlpha*=1-view.blend;
+   let shot=isCover?{scale:1,region:{x:.5,y:.5}}:view.scene;
+   if(!isCover&&hero)shot={...shot,scale:1.045-.045*enter};
+   if(view.mode==='dolly'&&!isCover&&view.scene.kind==='writing'){ctx.beginPath();ctx.rect(width*.055,height*.055,width*.89,height*.89);ctx.clip();}
+   paintImage(ctx,surface.draw(current),width,height,shot,isCover?1:view.factor);ctx.restore();
+   if(!isCover&&view.shade>0){ctx.save();ctx.globalAlpha=view.shade;const g=ctx.createLinearGradient(0,0,width,height);g.addColorStop(0,'#050608');g.addColorStop(1,view.mode==='shadow'?'#17191e':'#050608');ctx.fillStyle=g;ctx.fillRect(0,0,width,height);ctx.restore();}
+  }
+  continueRender(handle);
+ },[frame,handle,surface,width,height,view.mode,view.factor,view.progress,enter]);
+ return <canvas ref={ref} width={width} height={height} data-canvas293="" data-scene293={view.scene.id} data-mode293={view.mode} data-progress293={timing.phase==='cover'?1:view.progress} style={{width:'100%',height:'100%',display:'block'}}/>;
+}
+export const ShoubiShowcase=({surface,artwork,title,signature,music='none',transition='shadow'})=>{
+ const frame=useCurrentFrame(),{fps,durationInFrames,width,height}=useVideoConfig();
+ const timing=videoTimeline(frame,durationInFrames,fps),plan=useMemo(()=>scenePlan(durationInFrames,fps,surface?.chapters||[]),[durationInFrames,fps,surface]);
+ const view=sceneFrame(frame,plan,fps,transition),brand=timing.phase==='intro'||timing.phase==='outro';
+ const enter=interpolate(frame-plan.intro,[0,Math.min(fps*1.3,plan.scenes[0].to-plan.intro)],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp',easing:Easing.bezier(.22,1,.36,1)});
+ const unit=Math.min(width,height)/1080;
+ const brandAlpha=timing.phase==='intro'?Math.min(clamp((frame-1)/(fps*.15)),clamp((plan.intro-frame)/(fps*.2))):clamp((frame-plan.outro)/(fps*.2));
+ const track=musicTrack(music);
+ return <AbsoluteFill data-phase291={timing.phase} data-frame290={frame} style={{direction:'ltr',backgroundColor:'#08090b',fontFamily:'-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif'}}>
+  {track&&<Audio src={staticFile(musicSource(music,durationInFrames/fps))} premountFor={fps} volume={1}/>}
+  {brand?<AbsoluteFill data-brand-card291="" style={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',opacity:brandAlpha}}>
+   {timing.phase==='outro'&&<div data-slogan291="" style={{fontSize:38*unit,color:'#f5f5f7',letterSpacing:2*unit}}>{OUTRO_SLOGAN}</div>}
+  </AbsoluteFill>:<>
+   {!surface&&artwork?<Img src={/^(https?:|data:|blob:)/.test(artwork)?artwork:staticFile(artwork)} style={{width:'100%',height:'100%',objectFit:'contain'}}/>:<FilmCanvas surface={surface} frame={frame} timing={timing} view={view} enter={enter} width={width} height={height} fps={fps}/>}
+
+  </>}
+  {timing.phase!=='cover'&&<div data-footer293="" style={{position:'absolute',left:0,right:0,bottom:0,padding:`${24*unit}px ${40*unit}px ${22*unit}px`,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:6*unit,background:'linear-gradient(transparent,rgba(0,0,0,.6))',color:'#f5f5f7'}}><div style={{display:'flex',alignItems:'center',gap:12*unit}}><Img data-brand291="" src={staticFile('apple-touch-icon.png')} style={{width:34*unit,height:34*unit,objectFit:'contain'}}/><span style={{fontSize:24*unit,letterSpacing:3*unit}}>手筆</span></div><div data-site292="" style={{fontSize:18*unit,letterSpacing:1.5*unit,opacity:.6,textAlign:'center'}}>{OUTRO_SITE}</div></div>}
+ </AbsoluteFill>;
 };
