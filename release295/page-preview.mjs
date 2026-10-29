@@ -1,0 +1,2 @@
+// Used only when the selected page has no saved preview; one renderer, disposed immediately.
+export async function renderPage295(store,record,page,index){const draft=page.draft||await store.get(page.draftRef192||record.id+':page:'+(page.id128||index));if(!draft)return null;const {prepareReplay}=await import('../remotion-studio/src/replay.mjs');const session=await prepareReplay(draft,{maxSide:1200,showOriginal295:true,allowEmpty294:true});try{return session.surface.poster}finally{session.close()}}
