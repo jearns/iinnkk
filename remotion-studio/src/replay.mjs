@@ -26,23 +26,13 @@ export function partialDraft(draft, fraction) {
   return copy;
 }
 
-export async function prepareReplay(draft, {signal, maxSide = 2240, onProgress = () => {}, onPoster = () => {}, allowEmpty294=false,showOriginal295=false} = {}) {
-  if (!strokeCount(draft)&&!allowEmpty294) throw new Error('这幅作品没有保存笔画轨迹，暂不能生成书写影片。');
-  const started=performance.now(),iframe=document.createElement('iframe');let surface,poster,closed=false;
-  iframe.title='纪录大片渲染器';iframe.tabIndex=-1;iframe.setAttribute('aria-hidden','true');
-  iframe.style.cssText='position:fixed;left:-2400px;top:0;width:1024px;height:768px;opacity:0;pointer-events:none;border:0';
-  const cleanup=()=>{if(closed)return;closed=true;surface?.close();if(poster)URL.revokeObjectURL(poster);iframe.remove();};
-  try {
-    const app=await new Promise((resolve,reject)=>{
-      let timer,done=false;const finish=(value,error)=>{if(done)return;done=true;clearTimeout(timer);signal?.removeEventListener('abort',cancel);error?reject(error):resolve(value)};
-      const cancel=()=>finish(null,new DOMException('已取消','AbortError'));
-      const check=()=>{if(signal?.aborted)return cancel();const api=iframe.contentWindow?.AnnotationApp;if(api?.ready&&iframe.contentWindow?.WriterEntry154?.ready&&api.prepareVideoReplay293)return finish(api);if(performance.now()-started>45000)return finish(null,Error('作品渲染器准备超时，请重试。'));timer=setTimeout(check,60)};
-      signal?.addEventListener('abort',cancel,{once:true});iframe.onload=check;iframe.onerror=()=>finish(null,Error('作品渲染器未能加载，请重试。'));
-      iframe.src='writer.html?prepare158=1&release=295&videoReplay293=1';document.body.append(iframe);timer=setTimeout(check,80);
-    });
-    surface=await app.prepareVideoReplay293(draft,{signal,maxSide,onProgress,allowEmpty294,showOriginal295});
-    if(signal?.aborted)throw new DOMException('已取消','AbortError');
-    poster=URL.createObjectURL(surface.poster);onPoster(surface.poster);
-    return{surface,width:surface.width,height:surface.height,chapters:surface.chapters,frames:[poster],prepareMs:performance.now()-started,close:cleanup};
-  }catch(error){cleanup();throw error;}
+export async function createReplayEngine296({signal}={}){
+ const iframe=document.createElement('iframe');iframe.title='纪录大片渲染器';iframe.tabIndex=-1;iframe.setAttribute('aria-hidden','true');iframe.style.cssText='position:fixed;left:-2400px;top:0;width:1024px;height:768px;opacity:0;pointer-events:none;border:0';let closed=false;
+ const close=()=>{if(closed)return;closed=true;iframe.remove()};
+ try{const app=await new Promise((resolve,reject)=>{let timer,done=false;const start=performance.now();const finish=(value,error)=>{if(done)return;done=true;clearTimeout(timer);signal?.removeEventListener('abort',cancel);error?reject(error):resolve(value)};const cancel=()=>finish(null,new DOMException('已取消','AbortError'));const check=()=>{if(signal?.aborted)return cancel();const api=iframe.contentWindow?.AnnotationApp;if(api?.ready&&iframe.contentWindow?.WriterEntry154?.ready)return finish(api);if(performance.now()-start>30000)return finish(null,Error('作品渲染器准备超时，请重试。'));timer=setTimeout(check,50)};signal?.addEventListener('abort',cancel,{once:true});iframe.onload=check;iframe.onerror=()=>finish(null,Error('作品渲染器未能加载，请重试。'));iframe.src='writer.html?prepare158=1&release=296&videoReplay293=1';document.body.append(iframe);timer=setTimeout(check,50)});return{app,close};}catch(e){close();throw e}
+}
+export async function prepareReplay(draft,{signal,maxSide=1920,onProgress=()=>{},onPoster=()=>{},allowEmpty294=false,showOriginal295=false,engine296}={}){
+ if(!strokeCount(draft)&&!allowEmpty294)throw Error('这幅作品没有保存笔画轨迹，暂不能生成书写影片。');const started=performance.now();let engine=engine296,surface,poster,closed=false;
+ const close=()=>{if(closed)return;closed=true;surface?.close();if(poster)URL.revokeObjectURL(poster);if(!engine296)engine?.close()};
+ try{engine||=await createReplayEngine296({signal});surface=await engine.app.prepareVideoReplay293(draft,{signal,maxSide,onProgress,allowEmpty294,showOriginal295});if(signal?.aborted)throw new DOMException('已取消','AbortError');poster=URL.createObjectURL(surface.poster);onPoster(surface.poster);return{surface,width:surface.width,height:surface.height,chapters:surface.chapters,frames:[poster],prepareMs:performance.now()-started,close};}catch(e){close();throw e}
 }

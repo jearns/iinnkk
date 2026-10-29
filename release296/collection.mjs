@@ -1,0 +1,13 @@
+import{renderPage295}from'../release295/page-preview.mjs';
+// Metadata-only collections. Originals remain independently recoverable; no pixel/draft copies.
+export async function createCollection295(store,ids,title){
+ const unique=[...new Set(ids)];if(unique.length<2)throw Error('请至少选择两幅单页作品');
+ const records=[];for(const id of unique){const record=await store.get(id);if(!record)throw Error('所选作品已不存在，请刷新后重试');if(record.collection295||record.copyBook158?.pages?.length>1)throw Error('组图作品不能再次合并');records.push(record)}
+ const now=Date.now(),record={id:'collection295:'+crypto.randomUUID(),title:String(title||'我的组图选集').trim().slice(0,100),created:now,updated:now,blob:records[0].blob,collection295:{version:295,items:records.map(x=>({id:x.id,title:x.title})),created:now}};
+ // saveWork writes record and index in one existing IDB transaction. No originals deleted.
+ await store.saveWork(record);return record;
+}
+export async function collectionMembers295(store){const index=await store.get('works-index')||[],hidden=new Set();for(const row of index){if(!String(row.id).startsWith('collection295:'))continue;const record=await store.get(row.id);for(const item of record?.collection295?.items||[])hidden.add(item.id)}return hidden}
+export async function pageSources295(store,id){const record=await store.get(id);if(!record)throw Error('作品暂未读取');if(record.collection295)return record.collection295.items.map((item,index)=>({...item,index,load:async()=>{const r=await store.get(item.id);if(!r)throw Error('本页作品已移除');return r.blob||await store.get(item.id+':thumb')}}));const book=record.copyBook158;if(book?.pages?.length)return book.pages.map((page,index)=>({index,title:record.title,load:async()=>await store.get((book.id||record.id)+':art161:'+(page.id128||index))||page.preview159||(index===(book.index||0)?record.blob:null)||await renderPage295(store,record,page,index)}));return[{index:0,title:record.title,load:async()=>record.blob}];}
+
+export async function appendCollection296(store,id,ids){const collection=await store.get(id);if(!collection?.collection295)throw Error('请选择已有组图选集');const members=new Set(collection.collection295.items.map(x=>x.id)),extra=[];for(const key of new Set(ids)){if(members.has(key))continue;const row=await store.get(key);if(!row)throw Error('所选作品已不存在');if(row.collection295||row.copyBook158?.pages?.length>1)throw Error('只能追加单页作品');extra.push({id:key,title:row.title});members.add(key)}if(!extra.length)return collection;const record={...collection,updated:Date.now(),collection295:{...collection.collection295,items:[...collection.collection295.items,...extra]}};await store.saveWork(record);return record}

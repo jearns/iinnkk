@@ -6,7 +6,7 @@ import {MUSIC_TRACKS, musicTrack, musicSource} from './music.mjs';
 
 import {artworkRatio,videoFormat} from './format.mjs';
 import{prepareSequence294}from'./sequence.mjs';
-import{localItems294,filmFilename294}from'../../release295/selection.mjs';
+import{localItems294,filmFilename294}from'../../release296/selection.mjs';
 import {TRANSITIONS} from './scene-plan.mjs';
 const FilmPlayer=lazy(()=>import('./player.jsx'));
 
@@ -22,8 +22,11 @@ function Studio() {
   const [pickerOpen, setPickerOpen] = useState(false);
   const [pickerSource, setPickerSource] = useState(initial.get('work290') ? {work290: initial.get('work290'), source290: initial.get('source290') || 'local'} : {});
   const title=work?.title||'手筆纪录',signature='iinnkk.me';
-  const [music, setMusic] = useState('focus-debussy');
+  const [music, setMusic] = useState('qiannian');
   const [showOriginal295,setShowOriginal295]=useState(false);
+  const [inkColor296,setInkColor296]=useState('original'),[customInk296,setCustomInk296]=useState('#171717');
+  const [background296,setBackground296]=useState(null),backgroundRef296=useRef(null);
+  const renderStyle296=useMemo(()=>({showOriginal295,inkColor296:inkColor296==='custom'?customInk296:inkColor296}),[showOriginal295,inkColor296,customInk296]);
   const [audition, setAudition] = useState(false);
   const musicRef = useRef(null);
   const [customMusic295,setCustomMusic295]=useState(null);
@@ -42,7 +45,7 @@ function Studio() {
   const language = window.I18n218?.language || 'zh';
   const heading = t('手筆 · 纪录大片');
   const format=videoFormat(artworkRatio(work?.draft,replay));
-  const inputProps=useMemo(()=>({surface:replay?.surface,artwork:poster,title,signature,music,musicUrl295:music==='custom295'?customURL295.current:null,transition}),[poster,replay,title,signature,music,transition,customMusic295]);
+  const inputProps=useMemo(()=>({surface:replay?.surface,artwork:poster,title,signature,music,renderStyle296,background296,musicUrl295:music==='custom295'?customURL295.current:null,transition}),[poster,replay,title,signature,music,transition,customMusic295,renderStyle296,background296]);
   const durationInFrames=durationSeconds*VIDEO_FPS;
 
 
@@ -60,7 +63,7 @@ function Studio() {
     const receive = event => {
       if (event.origin !== location.origin || event.source !== pickerRef.current?.contentWindow || event.data?.channel290 !== channel.current) return;
       const data = event.data;
-      if(data.type==='shoubi-video-selection294'){const selected={items:data.items,title:data.items.map(x=>x.title).filter((x,i,a)=>a.indexOf(x)===i).join(' · ')};workRef.current=selected;setWork(selected);setPickerOpen(false);}
+      if(data.type==='shoubi-video-selection294'){const selected={items:data.items,title:data.items.map(x=>x.collectionTitle296||x.title).filter((x,i,a)=>a.indexOf(x)===i).join(' · ')};workRef.current=selected;setWork(selected);setPickerOpen(false);}
       else if (data.type === 'shoubi-video-work290') {
         if (!strokeCount(data.draft)) {setStatus({key: '这幅作品没有保存笔画轨迹，暂不能生成书写影片。'}); return;}
         const selected = {draft: data.draft, title: data.title, owner: data.owner, id: data.workId};
@@ -78,7 +81,7 @@ function Studio() {
   useEffect(()=>{let active=true;const p=new URLSearchParams(location.search);(async()=>{
    let items;if(p.has('selection294')){const saved=await window.DraftStore.get(p.get('selection294'));items=saved?.items;if(!items?.length)throw Error('所选作品已不存在，请重新选择。');}
    else if(p.has('work290')&&p.get('source290')!=='cloud')items=await localItems294(window.DraftStore,p.get('work290'));
-   if(items&&active){const selected={items,title:items.map(x=>x.title).filter((x,i,a)=>a.indexOf(x)===i).join(' · ')};workRef.current=selected;setWork(selected);}
+   if(items&&active){const selected={items,title:items.map(x=>x.collectionTitle296||x.title).filter((x,i,a)=>a.indexOf(x)===i).join(' · ')};workRef.current=selected;setWork(selected);}
   })().catch(e=>{if(active)setStatus({key:'作品读取未完成：',detail:e.message})});return()=>active=false},[]);
   useEffect(() => {
     replayRef.current?.close(); replayRef.current = null; setReplay(null);
@@ -87,21 +90,21 @@ function Studio() {
     const controller = new AbortController(); prepareRef.current = controller; let active = true;
     setChecking(true);
     setStatus({key: '正在准备书写回放 {progress}%', progress: 0});
-    const prepareOptions={signal: controller.signal, maxSide: 2240,showOriginal295,
+    const prepareOptions={signal: controller.signal, maxSide: 1920,showOriginal295:false,
       onPoster: blob => {
         if (!active || controller.signal.aborted) return;
         const url = URL.createObjectURL(blob); posterRef.current = url; setPoster(url);
       },
       onProgress: progress => {if (active && !controller.signal.aborted) setStatus({key: '正在准备书写回放 {progress}%', progress: Math.round(progress * 100)});},
     };
-    (work.items?prepareSequence294(work.items,prepareOptions):prepareReplay(work.draft,prepareOptions)).then(result => {
+    prepareSequence294(work.items||[{draft:work.draft,title:work.title}],prepareOptions).then(result => {
       if (!active || controller.signal.aborted) {result.close(); return;}
       replayRef.current = result; setReplay(result); setStatus({key: '原始笔迹已就绪，可预览纪录大片。'});
     }).catch(error => {
       if (active) setStatus(controller.signal.aborted ? {key: '已取消准备，可点击重新准备。'} : {key: '作品读取未完成：', detail: error.message});
     }).finally(() => {if (active) setChecking(false);});
     return () => {active = false; controller.abort();};
-  }, [work, retry,showOriginal295]);
+  }, [work, retry]);
   useEffect(() => () => {prepareRef.current?.abort(); abortRef.current?.abort(); replayRef.current?.close(); if (posterRef.current) URL.revokeObjectURL(posterRef.current);}, []);
   const pickerUrl = 'works206.html?' + new URLSearchParams({selectVideo290: '1', channel290: channel.current, ...pickerSource});
 
@@ -123,6 +126,10 @@ function Studio() {
 
   useEffect(()=>()=>{if(customURL295.current)URL.revokeObjectURL(customURL295.current)},[]);
   function importMusic295(event){const file=event.target.files?.[0];if(!file)return;stopAudition();if(customURL295.current)URL.revokeObjectURL(customURL295.current);customURL295.current=URL.createObjectURL(file);setCustomMusic295({file,name:file.name});setMusic('custom295');event.target.value='';}
+  useEffect(()=>()=>backgroundRef296.current?.close(),[]);
+  async function chooseBackground296(kind,event){try{let selected;if(kind==='catalogue'){const {pickCatalogue296}=await import('../../release296/catalogue.mjs');selected=await pickCatalogue296();if(!selected)return;}else{const file=event?.target.files?.[0];if(!file)return;selected={file,kind:file.type.startsWith('video/')?'video':'image',title:file.name};event.target.value='';}const {prepareBackground296}=await import('./background.mjs');const next=await prepareBackground296(selected);backgroundRef296.current?.close();backgroundRef296.current=next;setBackground296(next);}catch(e){setStatus({key:'背景读取未完成：',detail:e.message})}}
+  async function capturePoster296(){const im=await replay.surface.hero({style:renderStyle296,transparent:!!background296});const c=document.createElement('canvas');c.width=format.width;c.height=format.height;const t=c.getContext('2d');t.fillStyle='#08090b';t.fillRect(0,0,c.width,c.height);if(background296){const bg=await background296.frame(0,showOriginal295),k=Math.max(c.width/bg.width,c.height/bg.height);t.drawImage(bg,(c.width-bg.width*k)/2,(c.height-bg.height*k)/2,bg.width*k,bg.height*k)}const k=Math.min(c.width/im.width,c.height/im.height);t.drawImage(im,(c.width-im.width*k)/2,(c.height-im.height*k)/2,im.width*k,im.height*k);return new Promise((resolve,reject)=>c.toBlob(b=>b?resolve(b):reject(Error('作品封面未能生成')),'image/jpeg',.94))}
+  useEffect(()=>{if(!replay)return;let active=true;capturePoster296().then(blob=>{if(!active)return;const url=URL.createObjectURL(blob);if(posterRef.current)URL.revokeObjectURL(posterRef.current);posterRef.current=url;setPoster(url)}).catch(()=>{});return()=>active=false},[replay,renderStyle296,background296]);
   async function exportVideo() {
     if (!replay?.surface || busy || checking) return;
     playerRef.current?.pause(); stopAudition();
@@ -140,7 +147,7 @@ function Studio() {
       const support = await canRenderMediaOnWeb({width: format.width, height: format.height, scale, container: 'mp4', videoCodec: 'h264', ...audioOptions});
       if (!support.canRender) throw new Error('此浏览器暂不支持 MP4 导出，请尝试其他浏览器。');
       if (controller.signal.aborted) throw new Error('cancelled');
-      const metadata = await coverMetadata(poster, {signal: controller.signal, title, signature, credit: selectedTrack?.credit || '', width:format.width, height:format.height});
+      const coverURL296=URL.createObjectURL(await capturePoster296());let metadata;try{metadata = await coverMetadata(coverURL296, {signal: controller.signal, title, signature, credit: selectedTrack?.credit || '', width:format.width, height:format.height});}finally{URL.revokeObjectURL(coverURL296)}
       const {getBlob} = await renderMediaOnWeb({
         composition, inputProps,
         container: 'mp4', videoCodec: 'h264', ...audioOptions, metadata,
@@ -185,6 +192,8 @@ function Studio() {
       {checking && <button type="button" className="vsButton" onClick={() => prepareRef.current?.abort()}>{t('取消准备')}</button>}
       {work && !checking && !replay && <button type="button" className="vsButton" onClick={() => setRetry(n => n + 1)}>{t('重新准备')}</button>}
       <label className="vsField">{t('原帖文字')}<select value={showOriginal295?'show':'clean'} disabled={busy} onChange={e=>setShowOriginal295(e.target.value==='show')}><option value="clean">{t('不带原帖字，保留背景纸')}</option><option value="show">{t('带原帖文字')}</option></select></label>
+      <label className="vsField">{t('回放墨色')}<select value={inkColor296} disabled={busy} onChange={e=>setInkColor296(e.target.value)}>{[['original','临写原墨色'],['#111111','黑'],['#ffffff','白'],['#b62118','红'],['#ffdd00','黄'],['#703ca0','紫'],['custom','自定义色']].map(([value,label])=><option key={value} value={value}>{t(label)}</option>)}</select>{inkColor296==='custom'&&<input type="color" aria-label={t('自定义墨色')} value={customInk296} disabled={busy} onChange={e=>setCustomInk296(e.target.value)}/>}</label>
+      <div className="vsBackground296"><button disabled={busy} onClick={()=>chooseBackground296('catalogue')}>{t('全站名帖背景')}</button><label>{t('拍照作背景')}<input type="file" accept="image/*" capture="environment" disabled={busy} onChange={e=>chooseBackground296('file',e)}/></label><label>{t('本机图片或视频背景')}<input type="file" accept="image/*,video/*" disabled={busy} onChange={e=>chooseBackground296('file',e)}/></label>{background296&&<><span translate="no">{background296.title}</span><button disabled={busy} onClick={()=>{backgroundRef296.current?.close();backgroundRef296.current=null;setBackground296(null)}}>{t('恢复作品背景')}</button></>}</div>
       <label className="vsField">{t('影片时长')}<select value={durationSeconds} onChange={e => {stopAudition(); setDurationSeconds(normalizeDuration(e.target.value));}} disabled={busy}><option value={8}>{t('8 秒')}</option><option value={15}>{t('15 秒')}</option><option value={30}>{t('30 秒')}</option><option value={60}>{t('1 分钟')}</option><option value={120}>{t('2 分钟')}</option></select></label>
       <p className="vsTiming291">{t('片头、片尾各 2 秒，其余时间展示作品。')}</p>
       <p className="vsTiming291">{t(format.orientation==='landscape'?'横屏 16:9 · 自动适配横向作品':'竖屏 9:16 · 自动适配纵向作品')}</p>

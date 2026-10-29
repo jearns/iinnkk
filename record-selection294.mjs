@@ -1,7 +1,7 @@
 // Only metadata is queued. Each page's original strokes are read when that scene is prepared.
 export async function localItems294(store,id,choice='current'){
  const record=await store.get(id);if(!record)throw Error('作品暂未读取，请返回我的作品重新选择。');
- if(record.collection295){const all=record.collection295.items;const chosen=choice==='all'?all.map((_,i)=>i):Array.isArray(choice)?choice:[0];const result=[];for(const i of chosen)if(all[i])result.push(...(await localItems294(store,all[i].id,'current')).map(x=>({...x,collectionIndex295:i,pageCount:all.length})));return result;}
+ if(record.collection295){const all=record.collection295.items;const chosen=choice==='all'?all.map((_,i)=>i):Array.isArray(choice)?choice:[0];const result=[];for(const i of chosen)if(all[i])result.push(...(await localItems294(store,all[i].id,'current')).map(x=>({...x,collectionIndex295:i,collectionTitle296:record.title,pageCount:all.length})));return result;}
  const book=record.copyBook158,pages=book?.pages||[];
  if(!pages.length)return[{id,title:record.title||'我的手写作品',source:'local',page:null}];
  const indices=choice==='all'?pages.map((_,i)=>i):Array.isArray(choice)?choice:[Math.min(pages.length-1,book.index||0)];
