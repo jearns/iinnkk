@@ -4745,7 +4745,14 @@
           ]
         }
       ],
-      "featuredCopies260": []
+      "featuredCopies260": [
+        {
+          "id": "b6a7dc0a-bf6c-4ef2-86bd-c365f2c00447",
+          "title": "寒山子庞居士诗帖",
+          "thumbnail260": "timeline/pages/post-0b353763-38f7-4c4c-a2b4-497329755afa/related-b6a7dc0a-bf6c-4ef2-86bd-c365f2c00447.jpg",
+          "linkedAt": 1793269666425
+        }
+      ]
     },
     "zhaocheng275": {
       "id": "zhaocheng275",
