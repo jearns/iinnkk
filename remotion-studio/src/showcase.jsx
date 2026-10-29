@@ -17,23 +17,26 @@ function FilmCanvas({surface,frame,timing,view,enter,width,height,fps,renderStyl
  useLayoutEffect(()=>{
   let disposed=false,finished=false,playback296;const bufferTimer296=setTimeout(()=>{try{playback296=buffering296.delayPlayback()}catch{}},35);const finish=()=>{if(!finished){finished=true;clearTimeout(bufferTimer296);playback296?.unblock();continueRender(handle)}};
   const copy=(image,key)=>{const c=layers.current[key]||(layers.current[key]=document.createElement('canvas'));c.width=image.width;c.height=image.height;c.getContext('2d').drawImage(image,0,0);return c};
-  const paint=async()=>{
+  const collect=async()=>{
    if(!surface||surface.closed)return;
    const isCover=timing.phase==='cover',hero=view.scene.kind==='hero',current=isCover?1:view.progress;const capture=async(progress,extra={})=>{if(surface.capture296)return surface.capture296(progress,{style:renderStyle296,transparent:!!background296,cancelled:()=>disposed,...extra});await surface.configure296?.(renderStyle296);return extra.transparent||background296?surface.drawInk296(progress):surface.draw(progress)};
    let backdrop,previous;
    if(view.mode==='dolly'&&!isCover&&view.scene.kind==='writing'){const im=await capture(current,{complete:true});if(disposed||!im)return;backdrop=copy(im,'backdrop')}
    if(view.mode==='dissolve'&&view.previous&&view.blend>0&&!isCover){const im=await capture(view.previous.end,{hero:surface.sequence294&&view.previous.kind==='hero'});if(disposed||!im)return;previous=copy(im,'previous')}
    const image=await capture(current,{hero:surface.sequence294&&(isCover||hero)});if(disposed||!image)return;
-   const bg296=background296?await background296.frame(frame/fps,renderStyle296?.showOriginal295):null;if(disposed)return;const ctx=ref.current.getContext('2d');ctx.resetTransform();ctx.globalAlpha=1;ctx.fillStyle='#08090b';ctx.fillRect(0,0,width,height);ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';if(background296){const bg=bg296;const k=Math.max(width/bg.width,height/bg.height);ctx.drawImage(bg,(width-bg.width*k)/2,(height-bg.height*k)/2,bg.width*k,bg.height*k);}
+   return {image,backdrop,previous,isCover,hero};
+  };
+  const commit=({image,backdrop,previous,isCover,hero},bg296)=>{
+   if(disposed)return;const ctx=ref.current.getContext('2d');ctx.resetTransform();ctx.globalAlpha=1;ctx.fillStyle='#08090b';ctx.fillRect(0,0,width,height);ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';if(background296){const bg=bg296;const k=Math.max(width/bg.width,height/bg.height);ctx.drawImage(bg,(width-bg.width*k)/2,(height-bg.height*k)/2,bg.width*k,bg.height*k);}
    if(backdrop){ctx.save();ctx.globalAlpha=.24;const k=Math.max(width/backdrop.width,height/backdrop.height)*(1.12-.08*view.t);ctx.drawImage(backdrop,(width-backdrop.width*k)/2,(height-backdrop.height*k)/2,backdrop.width*k,backdrop.height*k);ctx.restore()}
    if(previous){ctx.save();ctx.globalAlpha=view.blend;paintImage(ctx,previous,width,height,view.previous);ctx.restore()}
    ctx.save();if(!isCover&&hero){ctx.globalAlpha=enter;ctx.translate(0,(1-enter)*80*Math.min(width,height)/1080)}
    if(previous)ctx.globalAlpha*=1-view.blend;
    let shot=isCover?{scale:1,region:{x:.5,y:.5}}:view.scene;if(!isCover&&hero)shot={...shot,scale:1.045-.045*enter};
    if(backdrop){ctx.beginPath();ctx.rect(width*.055,height*.055,width*.89,height*.89);ctx.clip()}
-   paintImage(ctx,image,width,height,shot,isCover?1:view.factor);ctx.restore();
+   paintImage(ctx,image,width,height,shot,isCover?1:view.factor);ctx.restore();ref.current.dataset.painted297=String(frame);
    if(!isCover&&view.shade>0){ctx.save();ctx.globalAlpha=view.shade;const g=ctx.createLinearGradient(0,0,width,height);g.addColorStop(0,'#050608');g.addColorStop(1,view.mode==='shadow'?'#17191e':'#050608');ctx.fillStyle=g;ctx.fillRect(0,0,width,height);ctx.restore()}
-  };paint().then(finish,error=>{if(!disposed)cancelRender(error);finish()});return()=>{disposed=true;finish()};
+  };const paint=()=>{if(surface?.frame297&&!background296){const isCover=timing.phase==='cover',hero=view.scene.kind==='hero',current=isCover?1:view.progress,capture=(p,o={})=>surface.frame297(p,{style:renderStyle296,...o});const backdrop=view.mode==='dolly'&&!isCover&&view.scene.kind==='writing'?copy(capture(current,{complete:true}),'backdrop'):null,previous=view.mode==='dissolve'&&view.previous&&view.blend>0&&!isCover?copy(capture(view.previous.end,{hero:view.previous.kind==='hero'}),'previous'):null,image=capture(current,{hero:isCover||hero});commit({image,backdrop,previous,isCover,hero},null);return Promise.resolve()}return collect().then(async data=>{if(!data||disposed)return;const bg=background296?await background296.frame(frame/fps,renderStyle296?.showOriginal295):null;commit(data,bg)})};paint().then(finish,error=>{if(!disposed)cancelRender(error);finish()});return()=>{disposed=true;finish()};
  },[frame,handle,surface,width,height,view.mode,view.factor,view.progress,enter,renderStyle296,background296]);
  return <canvas ref={ref} width={width} height={height} data-canvas293="" data-scene293={view.scene.id} data-mode293={view.mode} data-progress293={timing.phase==='cover'?1:view.progress} style={{width:'100%',height:'100%',display:'block'}}/>;
 }
