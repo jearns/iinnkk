@@ -1,35 +1,10 @@
-import {build} from 'esbuild';
-import {readFile, writeFile} from 'node:fs/promises';
-import {createHash} from 'node:crypto';
-import {containTelemetryRejection} from './telemetry-compat.mjs';
-import {disposalPrelude} from './disposal-prelude.mjs';
-
-let patched = false;
-const result = await build({
-  entryPoints: ['src/web.jsx'],
-  outfile: '../video-studio.bundle.js',
-  bundle: true,
-  minify: true,
-  platform: 'browser',
-  format: 'iife',
-  target: ['es2022', 'safari26'],
-  jsx: 'automatic',
-  write: false,
-  banner: {js: disposalPrelude},
-  plugins: [{name: 'remotion-telemetry-rejection', setup(builder) {
-    builder.onLoad({filter: /@remotion\/web-renderer\/dist\/esm\/index\.mjs$/}, async ({path}) => {
-      patched = true;
-      return {contents: containTelemetryRejection(await readFile(path, 'utf8')), loader: 'js'};
-    });
-  }}],
-});
-if (!patched) throw new Error('Remotion compatibility guard was not applied');
-const bytes = result.outputFiles[0].contents;
-const bundle = 'video-studio.' + createHash('sha256').update(bytes).digest('hex').slice(0, 16) + '.js';
-await writeFile('../' + bundle, bytes);
-const css = await readFile('../video-studio.css');
-const stylesheet = 'video-studio.' + createHash('sha256').update(css).digest('hex').slice(0, 16) + '.css';
-await writeFile('../' + stylesheet, css);
-const html = await readFile('../video-studio.html', 'utf8');
-await writeFile('../video-studio.html', html.replace(/video-studio(?:\.bundle|\.[a-f0-9]+)\.js/g, bundle).replace(/video-studio(?:\.[a-f0-9]+)?\.css/g, stylesheet));
-console.log('Created ' + bundle + ' and ' + stylesheet + ' (loaded only from video-studio.html)');
+import{build}from'esbuild';import{readFile,writeFile,mkdir}from'node:fs/promises';import{createHash}from'node:crypto';import{containTelemetryRejection}from'./telemetry-compat.mjs';import{disposalPrelude}from'./disposal-prelude.mjs';
+let patched=false;const outdir='../video-assets293';await mkdir(outdir,{recursive:true});
+const result=await build({entryPoints:['src/web.jsx'],outdir,bundle:true,minify:true,format:'esm',splitting:true,entryNames:'studio.[hash]',chunkNames:'chunk.[hash]',platform:'browser',target:['es2022','safari26'],jsx:'automatic',write:false,metafile:true,banner:{js:disposalPrelude},plugins:[{name:'remotion-telemetry-rejection',setup(builder){builder.onLoad({filter:/@remotion\/web-renderer\/dist\/esm\/index\.mjs$/},async({path})=>{patched=true;return{contents:containTelemetryRejection(await readFile(path,'utf8')),loader:'js'}})}}]});
+if(!patched)throw Error('Remotion compatibility guard was not applied');
+for(const file of result.outputFiles)await writeFile(file.path,file.contents);
+const entry=Object.entries(result.metafile.outputs).find(([path,info])=>info.entryPoint==='src/web.jsx')[0].replace('../','');
+const css=await readFile('../video-studio.css'),stylesheet='video-studio.'+createHash('sha256').update(css).digest('hex').slice(0,16)+'.css';await writeFile('../'+stylesheet,css);
+let html=await readFile('../video-studio.html','utf8');html=html.replace(/<script (?:defer|type="module") src="(?:video-studio(?:\.bundle|\.[a-f0-9]+)\.js|video-assets293\/[^" ]+)"[^>]*><\/script>/g,`<script type="module" src="${entry}"></script>`).replace(/video-studio(?:\.[a-f0-9]+)?\.css/g,stylesheet);await writeFile('../video-studio.html',html);
+await writeFile('../video-assets293/build-manifest.json',JSON.stringify(result.metafile,null,2));
+console.log('Entry: '+entry+'; deferred player/export chunks: '+result.outputFiles.length+'; stylesheet: '+stylesheet);

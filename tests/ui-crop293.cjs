@@ -1,0 +1,15 @@
+const{chromium}=require('playwright'),fs=require('node:fs'),http=require('node:http'),path=require('node:path'),assert=require('node:assert/strict');
+const out='/tmp/video293';fs.mkdirSync(out,{recursive:true});
+const server=http.createServer((req,res)=>{const p=new URL(req.url,'http://localhost').pathname;fs.readFile(path.join(process.cwd(),p),(e,b)=>{res.writeHead(e?404:200,{'Content-Type':p.endsWith('.js')||p.endsWith('.mjs')?'application/javascript':p.endsWith('.html')?'text/html':p.endsWith('.css')?'text/css':p.endsWith('.json')?'application/json':'application/octet-stream'});res.end(e?'Not found':b)})});
+(async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));const base='http://127.0.0.1:'+server.address().port;const browser=await chromium.launch({executablePath:'/tmp/chromium',headless:true,args:['--no-sandbox','--no-zygote','--single-process','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});try{
+ const page=await browser.newPage();page.on('pageerror',e=>console.error('PAGEERROR',e.message));await page.goto(base+'/writer.html?prepare158=1');await page.waitForFunction(()=>window.AnnotationApp?.ready,{},{timeout:60000});
+
+ await page.waitForFunction(()=>window.Modes53&&window.MediaStudio235?.ready);await page.evaluate(async()=>{await AnnotationApp.showWriter();Modes53.setContext149('photo','');const c=document.createElement('canvas');c.width=400;c.height=600;c.getContext('2d').fillRect(0,0,400,600);await AnnotationApp.replaceMedia235({data:c.toDataURL(),width:400,height:600});document.body.classList.remove('writer-pending157');MediaStudio235.sync();});
+ await page.waitForFunction(()=>window.MediaStudio235?.ready);await page.evaluate(()=>MediaStudio235.sync());
+ const points=await page.evaluate(()=>{const m=AnnotationApp.mediaFrame235(),r=document.getElementById('board').getBoundingClientRect();const x=r.left+m.view.x+m.frame.w*m.view.scale*.5,y=r.top+m.view.y+m.frame.h*m.view.scale*.5;return[{clientX:x-20,clientY:y},{clientX:x+20,clientY:y}]});
+ assert.equal(await page.evaluate(p=>MediaStudio235.startCropGesture274(p),points),null);
+ await page.locator('[data-tool235=crop]').click();await page.getByRole('dialog',{name:'裁切',exact:true}).waitFor();assert.equal(await page.locator('[data-tool235=crop]').getAttribute('aria-pressed'),'true');assert.equal(await page.getByRole('button',{name:'自由',exact:true}).getAttribute('aria-pressed'),'true');
+ await page.getByRole('button',{name:'自由',exact:true}).click();assert.equal(await page.evaluate(p=>!!MediaStudio235.startCropGesture274(p),points),true);
+ await page.locator('.cropDone274').click();assert.equal(await page.locator('[data-tool235=crop]').getAttribute('aria-pressed'),'false');assert.equal(await page.evaluate(p=>MediaStudio235.startCropGesture274(p),points),null);console.log('Crop gate: locked by default, explicit free-crop opens, Done relocks.');await page.screenshot({path:out+'/crop-gate.png'});
+
+ }finally{await browser.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
