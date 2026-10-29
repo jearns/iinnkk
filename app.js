@@ -636,7 +636,7 @@ async function prepareVideoReplay293(draft,{maxSide=2240,onProgress=()=>{},signa
  const check=()=>{if(signal?.aborted)throw new DOMException('已取消','AbortError')};
  check();openingWork=true;window.WarmEngine158=true;
  try{await loadEditableDraft(structuredClone(draft));}finally{openingWork=false;renderSuspended=true;clearTimeout(saveTimer)}
- let source295=reference;if(floatingPaperState214?.originalData215)source295=await ReferenceIO129.load(floatingPaperState214.originalData215,location.href);const paper295=source295?(showOriginal295?source295:await window.PaperInk188.ensure(source295)):null;check();
+ let source295=reference||floatingPaper212||referencePaper188;if(floatingPaperState214?.originalData215)source295=await ReferenceIO129.load(floatingPaperState214.originalData215,location.href);const paper295=source295?(showOriginal295?source295:await window.PaperInk188.ensure(source295)):null;check();
  const opts={...exportPrefs,credit:false,qr:false,palette:false,guide:false,highResolution:true,filmReference295:!!paper295,original184:!!paper295,originalClean188:!showOriginal295,originalOpacity187:100,referenceEffect215:paper295,referencePaper188:paper295};
  if($('sceneChoice').value.startsWith('annotation:'))await AnnotationTemplates.ensure($('sceneChoice').value.slice(11),true);
  await Promise.all(photos.filter(p=>p.effects?.behindPerson270).map(p=>window.SubjectLayers270?.prepare(p.image)));check();
