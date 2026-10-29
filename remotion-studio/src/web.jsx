@@ -22,7 +22,7 @@ function Studio() {
   const [pickerOpen, setPickerOpen] = useState(false);
   const [pickerSource, setPickerSource] = useState(initial.get('work290') ? {work290: initial.get('work290'), source290: initial.get('source290') || 'local'} : {});
   const title=work?.title||'手筆纪录',signature='iinnkk.me';
-  const [music, setMusic] = useState('guqin');
+  const [music, setMusic] = useState('focus-debussy');
   const [showOriginal295,setShowOriginal295]=useState(false);
   const [audition, setAudition] = useState(false);
   const musicRef = useRef(null);

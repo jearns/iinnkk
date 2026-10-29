@@ -15,16 +15,6 @@ export const MUSIC_TRACKS = [
     "credit": "Beeswaxcandle at English Wikisource and Londonjackbooks at English Wikisource; CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0; https://commons.wikimedia.org/wiki/File:Chopin Nocturne Op 9 No 2.ogg; AAC excerpt, volume and fades adjusted; video-music295/CREDITS.md"
   },
   {
-    "id": "guqin",
-    "title": "阳关三叠 · 古琴",
-    "credit": "Charlie Huang; CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0/; https://commons.wikimedia.org/wiki/File:Guqin-Yangguan_Sandie.ogg; AAC excerpt, volume and fades adjusted; video-music295/CREDITS.md"
-  },
-  {
-    "id": "fisher",
-    "title": "醉渔唱晚 · 古琴",
-    "credit": "Charlie Huang; CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0/; https://commons.wikimedia.org/wiki/File:Guqin-Zuiyu_Changwan.ogg; AAC excerpt, volume and fades adjusted; video-music295/CREDITS.md"
-  },
-  {
     "id": "spring",
     "title": "维瓦尔第 · 四季·春·快板 RV269",
     "credit": "John Harrison（小提琴）；Robert Turizziani（指挥）；Wichita State University Chamber Players; CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0/; https://commons.wikimedia.org/wiki/File:Vivaldi_-_Four_Seasons_1_Spring_mvt_1_Allegro_-_John_Harrison_violin.oga; AAC excerpt, volume and fades adjusted; video-music295/CREDITS.md"
