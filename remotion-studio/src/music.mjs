@@ -1,4 +1,5 @@
 export const MUSIC_TRACKS = [
+ {id:'qiannian',title:'千年之后',directory:'video-music296',credit:'用户指定音源：https://music.163.com/song/media/outer/url?id=3442664844.mp3；轻量AAC裁切、音量与淡入淡出调整；原录音权利归原权利人。'},
   {
     "id": "strauss",
     "title": "施特劳斯 · 蓝色多瑙河",
@@ -61,4 +62,4 @@ export const MUSIC_TRACKS = [
   }
 ];
 export function musicTrack(id){return MUSIC_TRACKS.find(x=>x.id===id)||null;}
-export function musicSource(id,seconds){return musicTrack(id)?`video-music295/${id}-${[8,15,30,60,120].includes(Number(seconds))?Number(seconds):30}.m4a`:null;}
+export function musicSource(id,seconds){return musicTrack(id)?`${musicTrack(id).directory||'video-music295'}/${id}-${[8,15,30,60,120].includes(Number(seconds))?Number(seconds):30}.m4a`:null;}

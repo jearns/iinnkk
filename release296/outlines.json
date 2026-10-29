@@ -1,0 +1,782 @@
+[
+  {
+    "id": "burj",
+    "name": "哈利法塔",
+    "group": "地标轮廓",
+    "words": [
+      "哈利法塔",
+      "迪拜",
+      "世界最高",
+      "摩天之城",
+      "沙漠奇迹"
+    ],
+    "note": "828米；分级收束的尖塔轮廓。",
+    "image": "release296/outlines/burj.svg",
+    "source": "https://www.skyscrapercenter.com/buildings"
+  },
+  {
+    "id": "merdeka",
+    "name": "默迪卡一一八",
+    "group": "地标轮廓",
+    "words": [
+      "默迪卡一一八",
+      "吉隆坡",
+      "独立之光",
+      "水晶棱面",
+      "亚洲天际"
+    ],
+    "note": "以伸向天空的细长尖顶和折面体量辨识。",
+    "image": "release296/outlines/merdeka.svg",
+    "source": "https://www.skyscrapercenter.com/buildings"
+  },
+  {
+    "id": "shanghai",
+    "name": "上海中心",
+    "group": "地标轮廓",
+    "words": [
+      "上海中心",
+      "上海",
+      "螺旋上升",
+      "垂直城市",
+      "海纳百川"
+    ],
+    "note": "螺旋上升的玻璃塔身。",
+    "image": "release296/outlines/shanghai.svg",
+    "source": "https://www.skyscrapercenter.com/buildings"
+  },
+  {
+    "id": "makkah",
+    "name": "麦加皇家钟塔",
+    "group": "地标轮廓",
+    "words": [
+      "麦加皇家钟塔",
+      "麦加",
+      "巨型钟面",
+      "朝觐",
+      "天际钟声"
+    ],
+    "note": "顶部大型钟面与新月尖顶。",
+    "image": "release296/outlines/makkah.svg",
+    "source": "https://www.skyscrapercenter.com/buildings"
+  },
+  {
+    "id": "pingan",
+    "name": "平安金融中心",
+    "group": "地标轮廓",
+    "words": [
+      "平安金融中心",
+      "深圳",
+      "鹏城",
+      "几何力量",
+      "摩天之城"
+    ],
+    "note": "棱线内收的尖顶体量。",
+    "image": "release296/outlines/pingan.svg",
+    "source": "https://www.skyscrapercenter.com/buildings"
+  },
+  {
+    "id": "lotte",
+    "name": "乐天世界塔",
+    "group": "地标轮廓",
+    "words": [
+      "乐天世界塔",
+      "首尔",
+      "流线",
+      "韩国天际",
+      "修长弧线"
+    ],
+    "note": "由底部向顶部平滑收束。",
+    "image": "release296/outlines/lotte.svg",
+    "source": "https://www.skyscrapercenter.com/buildings"
+  },
+  {
+    "id": "oneworld",
+    "name": "世贸一号楼",
+    "group": "地标轮廓",
+    "words": [
+      "世贸一号楼",
+      "纽约",
+      "自由之塔",
+      "重生",
+      "城市精神"
+    ],
+    "note": "扭转棱面的高塔与顶部天线。",
+    "image": "release296/outlines/oneworld.svg",
+    "source": "https://www.skyscrapercenter.com/buildings"
+  },
+  {
+    "id": "guangzhou",
+    "name": "广州周大福中心",
+    "group": "地标轮廓",
+    "words": [
+      "广州周大福中心",
+      "广州",
+      "珠江",
+      "新城",
+      "竖向秩序"
+    ],
+    "note": "矩形塔身与多层退台。",
+    "image": "release296/outlines/guangzhou.svg",
+    "source": "https://www.skyscrapercenter.com/buildings"
+  },
+  {
+    "id": "tianjin",
+    "name": "天津周大福中心",
+    "group": "地标轮廓",
+    "words": [
+      "天津周大福中心",
+      "天津",
+      "滨海",
+      "流线",
+      "现代天际"
+    ],
+    "note": "流线收腰与弧形顶端。",
+    "image": "release296/outlines/tianjin.svg",
+    "source": "https://www.skyscrapercenter.com/buildings"
+  },
+  {
+    "id": "citic",
+    "name": "中国尊",
+    "group": "地标轮廓",
+    "words": [
+      "中国尊",
+      "北京",
+      "尊形",
+      "中华礼器",
+      "古今相融"
+    ],
+    "note": "底部和顶部舒展，中部收腰。",
+    "image": "release296/outlines/citic.svg",
+    "source": "https://www.skyscrapercenter.com/buildings"
+  },
+  {
+    "id": "sagrada",
+    "name": "圣家堂",
+    "group": "宗教建筑",
+    "words": [
+      "圣家堂",
+      "巴塞罗那",
+      "高迪",
+      "自然几何",
+      "建筑诗篇"
+    ],
+    "note": "圣家堂的尖塔与自然主义构思。",
+    "image": "release296/outlines/sagrada.svg",
+    "source": "https://whc.unesco.org/en/list/"
+  },
+  {
+    "id": "borobudur",
+    "name": "婆罗浮屠",
+    "group": "宗教建筑",
+    "words": [
+      "婆罗浮屠",
+      "爪哇",
+      "佛教石塔",
+      "浮雕",
+      "曼荼罗"
+    ],
+    "note": "层叠台基和中央窣堵坡。",
+    "image": "release296/outlines/borobudur.svg",
+    "source": "https://whc.unesco.org/en/list/"
+  },
+  {
+    "id": "angkor",
+    "name": "吴哥窟",
+    "group": "宗教建筑",
+    "words": [
+      "吴哥窟",
+      "高棉",
+      "文明",
+      "石雕",
+      "莲苞塔"
+    ],
+    "note": "层叠莲苞塔的寺庙轮廓。",
+    "image": "release296/outlines/angkor.svg",
+    "source": "https://whc.unesco.org/en/list/"
+  },
+  {
+    "id": "taj",
+    "name": "泰姬陵",
+    "group": "宗教建筑",
+    "words": [
+      "泰姬陵",
+      "阿格拉",
+      "莫卧儿",
+      "大理石",
+      "对称之美"
+    ],
+    "note": "白色大理石穹顶与四角宣礼塔。",
+    "image": "release296/outlines/taj.svg",
+    "source": "https://whc.unesco.org/en/list/"
+  },
+  {
+    "id": "zayed",
+    "name": "谢赫扎耶德清真寺",
+    "group": "宗教建筑",
+    "words": [
+      "谢赫扎耶德清真寺",
+      "阿布扎比",
+      "白色穹顶",
+      "阿拉伯",
+      "几何之美"
+    ],
+    "note": "穹顶、拱廊和宣礼塔。",
+    "image": "release296/outlines/zayed.svg",
+    "source": "https://whc.unesco.org/en/list/"
+  },
+  {
+    "id": "hagia",
+    "name": "圣索菲亚",
+    "group": "宗教建筑",
+    "words": [
+      "圣索菲亚",
+      "伊斯坦布尔",
+      "拜占庭",
+      "穹顶",
+      "东西交汇"
+    ],
+    "note": "大型中央穹顶与四周宣礼塔。",
+    "image": "release296/outlines/hagia.svg",
+    "source": "https://whc.unesco.org/en/list/"
+  },
+  {
+    "id": "peter",
+    "name": "圣彼得大教堂",
+    "group": "宗教建筑",
+    "words": [
+      "圣彼得大教堂",
+      "梵蒂冈",
+      "文艺复兴",
+      "穹顶",
+      "广场"
+    ],
+    "note": "中央高穹顶与宽阔立面。",
+    "image": "release296/outlines/peter.svg",
+    "source": "https://whc.unesco.org/en/list/"
+  },
+  {
+    "id": "notredame",
+    "name": "巴黎圣母院",
+    "group": "宗教建筑",
+    "words": [
+      "巴黎圣母院",
+      "巴黎",
+      "哥特式",
+      "玫瑰花窗",
+      "双塔"
+    ],
+    "note": "双塔和中央玫瑰花窗构图。",
+    "image": "release296/outlines/notredame.svg",
+    "source": "https://whc.unesco.org/en/list/"
+  },
+  {
+    "id": "shwedagon",
+    "name": "仰光大金塔",
+    "group": "宗教建筑",
+    "words": [
+      "仰光大金塔",
+      "仰光",
+      "金色佛塔",
+      "缅甸",
+      "层叠之美"
+    ],
+    "note": "层层收束的覆钵式佛塔。",
+    "image": "release296/outlines/shwedagon.svg",
+    "source": "https://whc.unesco.org/en/list/"
+  },
+  {
+    "id": "heaven",
+    "name": "天坛祈年殿",
+    "group": "宗教建筑",
+    "words": [
+      "天坛祈年殿",
+      "北京",
+      "祭天",
+      "三重檐",
+      "天圆地方"
+    ],
+    "note": "三重圆形屋檐与圆形台基。",
+    "image": "release296/outlines/heaven.svg",
+    "source": "https://whc.unesco.org/en/list/"
+  },
+  {
+    "id": "huawei",
+    "name": "华为",
+    "group": "科技品牌",
+    "words": [
+      "华为",
+      "通信",
+      "鸿蒙",
+      "科技",
+      "连接"
+    ],
+    "note": "以花瓣形标志辨识。",
+    "image": "release296/outlines/huawei.svg",
+    "source": "https://icons.lobehub.com/",
+    "label": "华为 HUAWEI"
+  },
+  {
+    "id": "apple",
+    "name": "苹果",
+    "group": "科技品牌",
+    "words": [
+      "苹果",
+      "设计",
+      "生态",
+      "创造",
+      "简洁"
+    ],
+    "note": "以被咬一口的苹果图形辨识。",
+    "image": "release296/outlines/apple.svg",
+    "source": "https://icons.lobehub.com/",
+    "label": "苹果 Apple"
+  },
+  {
+    "id": "gemini",
+    "name": "谷歌双子",
+    "group": "科技品牌",
+    "words": [
+      "谷歌双子",
+      "人工智能",
+      "多模态",
+      "星芒",
+      "探索"
+    ],
+    "note": "Gemini星芒标志。",
+    "image": "release296/outlines/gemini.svg",
+    "source": "https://icons.lobehub.com/",
+    "label": "谷歌 Gemini"
+  },
+  {
+    "id": "openai",
+    "name": "聊天伙伴",
+    "group": "科技品牌",
+    "words": [
+      "聊天伙伴",
+      "人工智能",
+      "对话",
+      "智能",
+      "结网"
+    ],
+    "note": "ChatGPT / OpenAI结形标志。",
+    "image": "release296/outlines/openai.svg",
+    "source": "https://icons.lobehub.com/",
+    "label": "ChatGPT"
+  },
+  {
+    "id": "doubao",
+    "name": "豆包",
+    "group": "科技品牌",
+    "words": [
+      "豆包",
+      "人工智能",
+      "陪伴",
+      "对话",
+      "灵感"
+    ],
+    "note": "豆包图形标志。",
+    "image": "release296/outlines/doubao.svg",
+    "source": "https://icons.lobehub.com/",
+    "label": "豆包 Doubao"
+  },
+  {
+    "id": "workbuddy",
+    "name": "腾讯办公伙伴",
+    "group": "科技品牌",
+    "words": [
+      "腾讯办公伙伴",
+      "智能办公",
+      "协作",
+      "效率",
+      "工作"
+    ],
+    "note": "WorkBuddy图形标志。",
+    "image": "release296/outlines/workbuddy.svg",
+    "source": "https://icons.lobehub.com/",
+    "label": "腾讯 WorkBuddy"
+  },
+  {
+    "id": "qwen",
+    "name": "千问",
+    "group": "科技品牌",
+    "words": [
+      "千问",
+      "开源",
+      "大模型",
+      "智能",
+      "探索"
+    ],
+    "note": "千问图形标志。",
+    "image": "release296/outlines/qwen.svg",
+    "source": "https://icons.lobehub.com/",
+    "label": "千问 Qwen"
+  },
+  {
+    "id": "deepseek",
+    "name": "深度求索",
+    "group": "科技品牌",
+    "words": [
+      "深度求索",
+      "鲸鱼",
+      "开源",
+      "推理",
+      "探索"
+    ],
+    "note": "DeepSeek鲸鱼标志。",
+    "image": "release296/outlines/deepseek.svg",
+    "source": "https://icons.lobehub.com/",
+    "label": "DeepSeek"
+  },
+  {
+    "id": "claude",
+    "name": "克劳德",
+    "group": "科技品牌",
+    "words": [
+      "克劳德",
+      "人工智能",
+      "写作",
+      "对话",
+      "思考"
+    ],
+    "note": "Claude放射形标志。",
+    "image": "release296/outlines/claude.svg",
+    "source": "https://icons.lobehub.com/",
+    "label": "Claude"
+  },
+  {
+    "id": "tesla",
+    "name": "特斯拉",
+    "group": "汽车品牌",
+    "words": [
+      "特斯拉",
+      "电动",
+      "科技",
+      "纯电",
+      "创新"
+    ],
+    "note": "Tesla 标志。",
+    "image": "release296/outlines/tesla.svg",
+    "source": "https://simpleicons.org/?q=tesla",
+    "brand": "Tesla"
+  },
+  {
+    "id": "aito",
+    "name": "问界",
+    "group": "汽车品牌",
+    "words": [
+      "问界",
+      "智能",
+      "出行",
+      "鸿蒙",
+      "山海"
+    ],
+    "note": "AITO 标志。",
+    "image": "release296/outlines/aito.svg",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/AITO%20logo%20%28transparent%29.svg",
+    "brand": "AITO"
+  },
+  {
+    "id": "liauto",
+    "name": "理想",
+    "group": "汽车品牌",
+    "words": [
+      "理想",
+      "家庭",
+      "智能",
+      "出行",
+      "增程"
+    ],
+    "note": "Li Auto 标志。",
+    "image": "release296/outlines/liauto.svg",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Li%20Auto%20logo.svg",
+    "brand": "Li Auto"
+  },
+  {
+    "id": "nio",
+    "name": "蔚来",
+    "group": "汽车品牌",
+    "words": [
+      "蔚来",
+      "纯电",
+      "换电",
+      "未来",
+      "天地"
+    ],
+    "note": "NIO 标志。",
+    "image": "release296/outlines/nio.svg",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/NIO%20logo.svg",
+    "brand": "NIO"
+  },
+  {
+    "id": "mercedesbenz",
+    "name": "奔驰",
+    "group": "汽车品牌",
+    "words": [
+      "奔驰",
+      "三叉星",
+      "工程",
+      "豪华",
+      "精工"
+    ],
+    "note": "Mercedes-Benz 标志。",
+    "image": "release296/outlines/mercedesbenz.svg",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20Star.svg",
+    "brand": "Mercedes-Benz"
+  },
+  {
+    "id": "bmw",
+    "name": "宝马",
+    "group": "汽车品牌",
+    "words": [
+      "宝马",
+      "蓝白",
+      "驾驶",
+      "精工",
+      "巴伐利亚"
+    ],
+    "note": "BMW 标志。",
+    "image": "release296/outlines/bmw.svg",
+    "source": "https://simpleicons.org/?q=bmw",
+    "brand": "BMW"
+  },
+  {
+    "id": "audi",
+    "name": "奥迪",
+    "group": "汽车品牌",
+    "words": [
+      "奥迪",
+      "四环",
+      "工程",
+      "德国",
+      "精工"
+    ],
+    "note": "Audi 标志。",
+    "image": "release296/outlines/audi.svg",
+    "source": "https://simpleicons.org/?q=audi",
+    "brand": "Audi"
+  },
+  {
+    "id": "maybach",
+    "name": "迈巴赫",
+    "group": "汽车品牌",
+    "words": [
+      "迈巴赫",
+      "双M",
+      "豪华",
+      "设计",
+      "精工"
+    ],
+    "note": "Maybach 标志。",
+    "image": "release296/outlines/maybach.svg",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Maybach%20symbol.svg",
+    "brand": "Maybach"
+  },
+  {
+    "id": "rollsroyce",
+    "name": "劳斯莱斯",
+    "group": "汽车品牌",
+    "words": [
+      "劳斯莱斯",
+      "双R",
+      "手工",
+      "精工",
+      "英伦"
+    ],
+    "note": "Rolls-Royce 标志。",
+    "image": "release296/outlines/rollsroyce.svg",
+    "source": "https://simpleicons.org/?q=rollsroyce",
+    "brand": "Rolls-Royce"
+  },
+  {
+    "id": "porsche",
+    "name": "保时捷",
+    "group": "汽车品牌",
+    "words": [
+      "保时捷",
+      "跑车",
+      "盾徽",
+      "驾驶",
+      "精工"
+    ],
+    "note": "Porsche 标志。",
+    "image": "release296/outlines/porsche.svg",
+    "source": "https://simpleicons.org/?q=porsche",
+    "brand": "Porsche"
+  },
+  {
+    "id": "hermes",
+    "name": "爱马仕",
+    "group": "奢侈品牌",
+    "words": [
+      "爱马仕",
+      "巴黎",
+      "马术",
+      "丝巾",
+      "手工"
+    ],
+    "note": "Hermes 标志。",
+    "image": "release296/outlines/hermes.svg",
+    "source": "https://simpleicons.org/?q=hermes",
+    "brand": "Hermes"
+  },
+  {
+    "id": "louisvuitton",
+    "name": "路易威登",
+    "group": "奢侈品牌",
+    "words": [
+      "路易威登",
+      "旅行",
+      "箱包",
+      "字母花",
+      "巴黎"
+    ],
+    "note": "Louis Vuitton 标志。",
+    "image": "release296/outlines/louisvuitton.svg",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis%20Vuitton%20logo%20and%20wordmark.svg",
+    "brand": "Louis Vuitton"
+  },
+  {
+    "id": "dior",
+    "name": "迪奥",
+    "group": "奢侈品牌",
+    "words": [
+      "迪奥",
+      "高级时装",
+      "巴黎",
+      "花园",
+      "设计"
+    ],
+    "note": "Dior 标志。",
+    "image": "release296/outlines/dior.svg",
+    "source": "https://simpleicons.org/?q=dior",
+    "brand": "Dior"
+  },
+  {
+    "id": "gucci",
+    "name": "古驰",
+    "group": "奢侈品牌",
+    "words": [
+      "古驰",
+      "双G",
+      "佛罗伦萨",
+      "时装",
+      "设计"
+    ],
+    "note": "Gucci 标志。",
+    "image": "release296/outlines/gucci.svg",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Gucci%20Logo.svg",
+    "brand": "Gucci"
+  },
+  {
+    "id": "prada",
+    "name": "普拉达",
+    "group": "奢侈品牌",
+    "words": [
+      "普拉达",
+      "米兰",
+      "时装",
+      "设计",
+      "三角标"
+    ],
+    "note": "Prada 标志。",
+    "image": "release296/outlines/prada.svg",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Prada%20Logo.svg",
+    "brand": "Prada"
+  },
+  {
+    "id": "burberry",
+    "name": "博柏利",
+    "group": "奢侈品牌",
+    "words": [
+      "博柏利",
+      "英伦",
+      "风衣",
+      "格纹",
+      "骑士"
+    ],
+    "note": "Burberry 标志。",
+    "image": "release296/outlines/burberry.svg",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Burberry%20Logo.svg",
+    "brand": "Burberry"
+  },
+  {
+    "id": "cartier",
+    "name": "卡地亚",
+    "group": "奢侈品牌",
+    "words": [
+      "卡地亚",
+      "珠宝",
+      "巴黎",
+      "腕表",
+      "设计"
+    ],
+    "note": "Cartier 标志。",
+    "image": "release296/outlines/cartier.svg",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Cartier%20logo.svg",
+    "brand": "Cartier"
+  },
+  {
+    "id": "bvlgari",
+    "name": "宝格丽",
+    "group": "奢侈品牌",
+    "words": [
+      "宝格丽",
+      "珠宝",
+      "罗马",
+      "灵蛇",
+      "设计"
+    ],
+    "note": "Bvlgari 标志。",
+    "image": "release296/outlines/bvlgari.svg",
+    "source": "https://commons.wikimedia.org/wiki/Special:FilePath/Bulgari%20logo.svg",
+    "brand": "Bvlgari"
+  },
+  {
+    "id": "microsoft",
+    "name": "微软",
+    "group": "科技品牌",
+    "words": [
+      "微软",
+      "视窗",
+      "软件",
+      "连接",
+      "生产力"
+    ],
+    "note": "四格视窗标志。",
+    "image": "release296/outlines/microsoft.svg",
+    "source": "https://icons.lobehub.com/components/microsoft",
+    "label": "微软 Microsoft"
+  },
+  {
+    "id": "chanel",
+    "name": "香奈儿",
+    "group": "奢侈品牌",
+    "words": [
+      "香奈儿",
+      "双C",
+      "巴黎",
+      "时装",
+      "设计"
+    ],
+    "note": "互扣双C的几何轮廓。",
+    "image": "release296/outlines/chanel.svg",
+    "source": "https://www.chanel.com/",
+    "stylized": true
+  },
+  {
+    "id": "tiffany",
+    "name": "蒂芙尼",
+    "group": "奢侈品牌",
+    "words": [
+      "蒂芙尼",
+      "珠宝",
+      "纽约",
+      "设计",
+      "蓝色"
+    ],
+    "note": "品牌字标的衬线轮廓。",
+    "image": "release296/outlines/tiffany.svg",
+    "source": "https://www.tiffany.com/",
+    "stylized": true
+  }
+]
