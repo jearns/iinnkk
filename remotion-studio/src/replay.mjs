@@ -26,8 +26,8 @@ export function partialDraft(draft, fraction) {
   return copy;
 }
 
-export async function prepareReplay(draft, {signal, maxSide = 2240, onProgress = () => {}, onPoster = () => {}} = {}) {
-  if (!strokeCount(draft)) throw new Error('这幅作品没有保存笔画轨迹，暂不能生成书写影片。');
+export async function prepareReplay(draft, {signal, maxSide = 2240, onProgress = () => {}, onPoster = () => {}, allowEmpty294=false} = {}) {
+  if (!strokeCount(draft)&&!allowEmpty294) throw new Error('这幅作品没有保存笔画轨迹，暂不能生成书写影片。');
   const started=performance.now(),iframe=document.createElement('iframe');let surface,poster,closed=false;
   iframe.title='纪录大片渲染器';iframe.tabIndex=-1;iframe.setAttribute('aria-hidden','true');
   iframe.style.cssText='position:fixed;left:-2400px;top:0;width:1024px;height:768px;opacity:0;pointer-events:none;border:0';
@@ -38,9 +38,9 @@ export async function prepareReplay(draft, {signal, maxSide = 2240, onProgress =
       const cancel=()=>finish(null,new DOMException('已取消','AbortError'));
       const check=()=>{if(signal?.aborted)return cancel();const api=iframe.contentWindow?.AnnotationApp;if(api?.ready&&api.prepareVideoReplay293)return finish(api);if(performance.now()-started>45000)return finish(null,Error('作品渲染器准备超时，请重试。'));timer=setTimeout(check,60)};
       signal?.addEventListener('abort',cancel,{once:true});iframe.onload=check;iframe.onerror=()=>finish(null,Error('作品渲染器未能加载，请重试。'));
-      iframe.src='writer.html?prepare158=1&release=293&videoReplay293=1';document.body.append(iframe);timer=setTimeout(check,80);
+      iframe.src='writer.html?prepare158=1&release=294&videoReplay293=1';document.body.append(iframe);timer=setTimeout(check,80);
     });
-    surface=await app.prepareVideoReplay293(draft,{signal,maxSide,onProgress});
+    surface=await app.prepareVideoReplay293(draft,{signal,maxSide,onProgress,allowEmpty294});
     if(signal?.aborted)throw new DOMException('已取消','AbortError');
     poster=URL.createObjectURL(surface.poster);onPoster(surface.poster);
     return{surface,width:surface.width,height:surface.height,chapters:surface.chapters,frames:[poster],prepareMs:performance.now()-started,close:cleanup};

@@ -231,7 +231,7 @@ function recordWritingTap96(g,time){clearTimeout(writingTapTimer96);const same=p
 let writingViewFrame=0,writingPinchFrame96=0;
 function queueWritingPinch96(){if(writingPinchFrame96)return;const oldCenter={...gestureCenter},oldDistance=pinchDistance;writingPinchFrame96=requestAnimationFrame(()=>{writingPinchFrame96=0;if(!overview&&gesturing&&touches.size===2){const c=centroid(),d=touchDistance();gestureCenter=oldCenter;pinchDistance=oldDistance;pinchWriting(c,d);gestureCenter=c;pinchDistance=d}})}
 function pinchWriting(c,distance){
- if(window.LiveScene225?.active){window.LiveScene225.setCameraZoom226(window.LiveScene225.cameraZoom226*distance/Math.max(1,pinchDistance));return}if(['photo','scene'].includes(localStorage.getItem('iinnkk.mode53'))&&photos.length){if(window.writingLocked)return;const p=photos[selectedPhoto>=0?selectedPhoto:0];p.crop={zoom:1,x:.5,y:.5,...p.crop,zoom:Math.max(1,Math.min(12,(p.crop?.zoom||1)*distance/Math.max(1,pinchDistance)))};paperCacheKey='';background();saveSoon();return}
+ if(window.LiveScene225?.active&&window.writingLocked){window.LiveScene225.setCameraZoom226(window.LiveScene225.cameraZoom226*distance/Math.max(1,pinchDistance));return}
  const rect=live.getBoundingClientRect(),anchor={x:camera.x+(gestureCenter.x-rect.left)/S,y:camera.y+(gestureCenter.y-rect.top)/S};
  const base=writingBase229(),next=window.writingLocked?S:Math.max(base*.1,Math.min(base*25,S*distance/Math.max(1,pinchDistance)));if(!window.writingLocked&&Math.abs(next-S)>.001){brush.size=Math.max(1,Math.min(1000,Math.round(brush.size*S/next)));$('size').value=String(brush.size);$('sizeNumber').value=String(brush.size);paperCacheKey='';}
  focused=true;S=next;$('zoom').value=String(Math.round(S/base*100));camera={x:anchor.x-(c.x-rect.left)/S,y:anchor.y-(c.y-rect.top)/S};clampCamera();
@@ -631,7 +631,7 @@ async function beginGameWriting244(data){document.body.classList.remove('writer-
 function gameInk244(){finish();const a=writingArea();return flow.strokes.map(st=>({points:st.points.map(p=>({...p,x:(p.x-a.x)/a.w,y:(p.y-a.y)/a.h})),settings:{...st.settings,size:st.settings.size/a.w}}))}
 // Dedicated video iframe: load the saved draft once; cache paper, overlays and
 // original-brush stroke tiles. No archives, image sequences or repeated restore.
-async function prepareVideoReplay293(draft,{maxSide=2240,onProgress=()=>{},signal}={}){
+async function prepareVideoReplay293(draft,{maxSide=2240,onProgress=()=>{},signal,allowEmpty294=false}={}){
  if(!new URLSearchParams(location.search).has('videoReplay293'))throw Error('请使用纪录大片渲染器');
  const check=()=>{if(signal?.aborted)throw new DOMException('已取消','AbortError')};
  check();openingWork=true;window.WarmEngine158=true;
@@ -654,7 +654,7 @@ async function prepareVideoReplay293(draft,{maxSide=2240,onProgress=()=>{},signa
  const sb=inkBounds(signatureStrokes);if(sb){const k=Math.min((bounds.w-.24)/sb.w,.22/sb.h),x=bounds.x+.12-sb.x*k,y=bounds.y+bounds.h-Math.min(bounds.w,bounds.h)*(+$('tailSize').value/100+.035)-.28-sb.y*k;for(const st of signatureStrokes)if(st.points?.length)records.push({st,k,x,y})}
  let total=0;const chapters=[];
  for(const r of records){r.start=total;r.weight=Math.max(1,r.st.points.length-1);total+=r.weight;r.end=total;const q=inkBounds([r.st]);r.rect={x:Math.floor(b.x+(q.x*r.k+r.x-bounds.x)*scale)-2,y:Math.floor(b.y+(q.y*r.k+r.y-bounds.y)*scale)-2,w:Math.ceil(q.w*r.k*scale)+4,h:Math.ceil(q.h*r.k*scale)+4};chapters.push({x:(r.rect.x+r.rect.w/2)/combined293.width,y:(r.rect.y+r.rect.h/2)/combined293.height,w:r.rect.w/combined293.width,h:r.rect.h/combined293.height,start:r.start,end:r.end})}
- if(!records.length)throw Error('这幅作品没有保存笔画轨迹，暂不能逐笔成影。');
+ if(!records.length&&!allowEmpty294)throw Error('这幅作品没有保存笔画轨迹，暂不能逐笔成影。');
  let tiles=new Map(),pixels=0,completed=0,closed=false;const budget=16000000; // 64 MB maximum tile cache
  const renderStroke=(ctx,r,st=r.st)=>{const prev=compositionOptions;compositionOptions=opts;ctx.save();try{ctx.translate(b.x+(r.x-bounds.x)*scale,b.y+(r.y-bounds.y)*scale);ctx.beginPath();ctx.rect(-r.x*scale,-r.y*scale,pw,ph);ctx.clip();renderInk(st,ctx,r.k*scale,r.k*scale,null,true)}finally{ctx.restore();compositionOptions=prev}};
  const tile=r=>{let found=tiles.get(r);if(found){tiles.delete(r);tiles.set(r,found);return found}const c=document.createElement('canvas');c.width=r.rect.w;c.height=r.rect.h;const t=c.getContext('2d');t.translate(-r.rect.x,-r.rect.y);renderStroke(t,r);found={canvas:c,x:r.rect.x,y:r.rect.y};const size=c.width*c.height;while(pixels+size>budget&&tiles.size){const key=tiles.keys().next().value,old=tiles.get(key);pixels-=old.canvas.width*old.canvas.height;old.canvas.width=old.canvas.height=0;tiles.delete(key)}if(size<=budget){tiles.set(r,found);pixels+=size}return found};

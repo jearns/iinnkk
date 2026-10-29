@@ -15,13 +15,13 @@ test('each locked shot stays still; only an opaque shadow can hide a camera cut'
   assert.equal(previous.scale,1);
  }
 });
-test('all four music choices have exact-length small AAC assets for every duration',()=>{
- assert.equal(MUSIC_TRACKS.length,4);assert.equal(musicSource('none',8),null);
+test('all seven music choices have exact-length small AAC assets for every duration',()=>{
+ assert.equal(MUSIC_TRACKS.length,7);assert.equal(musicSource('none',8),null);
  for(const track of MUSIC_TRACKS)for(const duration of VIDEO_DURATIONS){
   const path=musicSource(track.id,duration);assert.ok(fs.statSync(path).size<duration*4600+6000);assert.ok(track.credit);
  }
  const web=fs.readFileSync('remotion-studio/src/web.jsx','utf8');
  assert.match(web,/coverMetadata\(poster/);assert.match(web,/addMusic\(blob/);
- const composition=fs.readFileSync('remotion-studio/src/showcase.jsx','utf8');assert.doesNotMatch(composition,/data-caption289/);assert.doesNotMatch(composition,/data-announcement292/);assert.match(composition,/data-footer293/);
+ const composition=fs.readFileSync('remotion-studio/src/showcase.jsx','utf8');assert.doesNotMatch(composition,/data-caption289/);assert.doesNotMatch(composition,/data-announcement292/);assert.match(composition,/data-brand294/);
  const mux=fs.readFileSync('remotion-studio/src/audio-mux.mjs','utf8');assert.doesNotMatch(mux,/new AudioEncoder|new VideoEncoder/);
 });
