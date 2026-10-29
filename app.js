@@ -630,7 +630,7 @@ async function beginGameWriting244(data){document.body.classList.remove('writer-
 function gameInk244(){finish();const a=writingArea();return flow.strokes.map(st=>({points:st.points.map(p=>({...p,x:(p.x-a.x)/a.w,y:(p.y-a.y)/a.h})),settings:{...st.settings,size:st.settings.size/a.w}}))}
 // Dedicated video iframe: load the saved draft once; cache paper, overlays and
 // original-brush stroke tiles. No archives, image sequences or repeated restore.
-async function prepareVideoReplay293(draft,{maxSide=2240,onProgress=()=>{},signal,allowEmpty294=false,showOriginal295=false}={}){
+async function prepareVideoReplay293(draft,{maxSide=2240,onProgress=()=>{},signal,allowEmpty294=false,showOriginal295=false,detach297=false}={}){
  if(!new URLSearchParams(location.search).has('videoReplay293'))throw Error('请使用纪录大片渲染器');
  const check=()=>{if(signal?.aborted)throw new DOMException('已取消','AbortError')};
  check();openingWork=true;window.WarmEngine158=true;
@@ -657,6 +657,12 @@ async function prepareVideoReplay293(draft,{maxSide=2240,onProgress=()=>{},signa
  let total=0;const chapters=[];
  for(const r of records){r.start=total;r.weight=Math.max(1,r.st.points.length-1);total+=r.weight;r.end=total;const q=inkBounds([r.st]);r.rect={x:Math.floor(b.x+(q.x*r.k+r.x-bounds.x)*scale)-2,y:Math.floor(b.y+(q.y*r.k+r.y-bounds.y)*scale)-2,w:Math.ceil(q.w*r.k*scale)+4,h:Math.ceil(q.h*r.k*scale)+4};chapters.push({x:(r.rect.x+r.rect.w/2)/combined293.width,y:(r.rect.y+r.rect.h/2)/combined293.height,w:r.rect.w/combined293.width,h:r.rect.h/combined293.height,start:r.start,end:r.end})}
  if(!records.length&&!allowEmpty294)throw Error('这幅作品没有保存笔画轨迹，暂不能逐笔成影。');
+ if(detach297){
+  const encode=(c,type='image/webp')=>new Promise((resolve,reject)=>c.toBlob(x=>x?resolve(x):reject(Error('回放背景准备失败')),type,.92));
+  const original=make(),prev=compositionOptions,art=composingArtwork;compositionOptions={...opts,referenceEffect215:source295,referencePaper188:source295};composingArtwork=true;
+  try{const t=original.getContext('2d');if(mountKey!=='bare'||$('papercolor').value!=='transparent')Mounting.draw(t,mountKey,pw,ph);t.save();t.translate(b.x-bounds.x*scale,b.y-bounds.y*scale);drawStationery(t,bounds,scale);t.restore()}finally{compositionOptions=prev;composingArtwork=art}
+  try{return{version297:1,sceneKey:$('sceneChoice').value!=='none'&&!$('sceneChoice').value.startsWith('annotation:')&&CreativePaper.ready($('sceneChoice').value)?$('sceneChoice').value:null,width:combined293.width,height:combined293.height,scale,b:{x:b.x,y:b.y},bounds,records:records.map(r=>({...r,st:structuredClone(displayStroke(r.st))})),chapters:chapters.map(c=>({...c,start:total?c.start/total:0,end:total?c.end/total:1})),total,background:await encode(background293),original:source295?await encode(original):null,foreground:await encode(foreground293,'image/png')}}finally{for(const c of[original,background293,foreground293,ink293,combined293,result293])c.width=c.height=0}
+ }
  let tiles=new Map(),pixels=0,completed=0,closed=false;const budget=16000000; // 64 MB maximum tile cache
  const renderStroke=(ctx,r,st=r.st)=>{const prev=compositionOptions;compositionOptions=opts;ctx.save();try{ctx.translate(b.x+(r.x-bounds.x)*scale,b.y+(r.y-bounds.y)*scale);ctx.beginPath();ctx.rect(-r.x*scale,-r.y*scale,pw,ph);ctx.clip();renderInk(st,ctx,r.k*scale,r.k*scale,null,true)}finally{ctx.restore();compositionOptions=prev}};
  const tile=r=>{let found=tiles.get(r);if(found){tiles.delete(r);tiles.set(r,found);return found}const c=document.createElement('canvas');c.width=r.rect.w;c.height=r.rect.h;const t=c.getContext('2d');t.translate(-r.rect.x,-r.rect.y);renderStroke(t,r);found={canvas:c,x:r.rect.x,y:r.rect.y};const size=c.width*c.height;while(pixels+size>budget&&tiles.size){const key=tiles.keys().next().value,old=tiles.get(key);pixels-=old.canvas.width*old.canvas.height;old.canvas.width=old.canvas.height=0;tiles.delete(key)}if(size<=budget){tiles.set(r,found);pixels+=size}return found};
