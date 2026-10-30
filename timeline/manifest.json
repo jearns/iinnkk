@@ -4973,22 +4973,87 @@
         "文津阁四库全书"
       ],
       "pages": [
-        "release300/assets/manuscripts/wenjinge275-1.webp",
-        "release300/assets/manuscripts/wenjinge275-2.webp"
+        "timeline/pages/wenjinge275/45276e56-d07b-469a-a5bb-315af9fc1747.jpg",
+        "timeline/pages/wenjinge275/c823b07d-1a0d-471f-8161-0a9f564055a0.jpg",
+        "timeline/pages/wenjinge275/b84fcb33-97dd-43e4-885a-cdbad01f9567.jpg",
+        "timeline/pages/wenjinge275/1bb10c2c-0d50-46dc-b356-5d32781871ab.jpg",
+        "timeline/pages/wenjinge275/20011768-87c0-4808-89e6-8e4fd3efed82.jpg",
+        "timeline/pages/wenjinge275/20e68abc-ee65-4544-aac4-199d6ebf1480.jpg",
+        "timeline/pages/wenjinge275/8b14de51-1de3-4034-be46-a313e3cedb7b.jpg",
+        "timeline/pages/wenjinge275/2b4b4091-da7b-4c55-8b21-4b10bb398313.jpg",
+        "timeline/pages/wenjinge275/61c02db0-1110-4c37-a01a-f7158571ef96.jpg",
+        "timeline/pages/wenjinge275/70c88658-a64a-4a1d-9ff9-f83ebf66600c.jpg",
+        "timeline/pages/wenjinge275/d5afe6c6-be13-4c98-9f1e-8a48bcaf993e.jpg",
+        "timeline/pages/wenjinge275/d1f5a2e0-f1e6-474d-9514-7509d2e96281.jpg",
+        "timeline/pages/wenjinge275/0d54fd5d-467b-4ec0-9de3-9888598cdca3.jpg",
+        "timeline/pages/wenjinge275/ef212fe4-3255-4b2a-a7f1-11bfcaed7c9f.jpg",
+        "timeline/pages/wenjinge275/aa2d7878-cbe6-4741-bf13-6f10dfb5a934.jpg",
+        "timeline/pages/wenjinge275/0579339f-41a2-4a45-999f-11b40d12a9e2.jpg"
       ],
       "deleted": false,
       "pageNames": [
-        "《文津阁四库全书样本》书影一",
-        "《文津阁四库全书样本》书影二"
+        "IMG_5491.png",
+        "IMG_5501.jpeg",
+        "IMG_5492.png",
+        "IMG_5493.png",
+        "IMG_5494.jpeg",
+        "IMG_5502.jpeg",
+        "IMG_5503.jpeg",
+        "IMG_5504.jpeg",
+        "IMG_5505.jpeg",
+        "IMG_5506.jpeg",
+        "IMG_5507.jpeg",
+        "IMG_5508.jpeg",
+        "IMG_5509.jpeg",
+        "IMG_5510.jpeg",
+        "IMG_5511.jpeg",
+        "IMG_5512.jpeg"
       ],
-      "cover143": "release300/assets/manuscripts/wenjinge275-1.webp",
+      "cover143": "timeline/pages/wenjinge275/45276e56-d07b-469a-a5bb-315af9fc1747.jpg",
       "imageCredit247": "资料：国家古籍保护中心；书影依原页面标注来自网络。",
       "versionNote300": "此处展示《文津阁四库全书样本》书影；是抄写规范样书，不是整套四库全书或所有卷册的图像。",
-      "style": "ouyang",
+      "style": "",
       "size": 320,
       "zoom": 170,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "authorPosition151": "",
+      "status": "",
+      "videoUrl148": "",
+      "videoTitle148": "",
+      "fullText148": "",
+      "parentId": "",
+      "readingDirection260": "rtl",
+      "pageGroups260": [
+        {
+          "id": "group260-default",
+          "title": "组图一",
+          "pages": [
+            "timeline/pages/wenjinge275/45276e56-d07b-469a-a5bb-315af9fc1747.jpg",
+            "timeline/pages/wenjinge275/c823b07d-1a0d-471f-8161-0a9f564055a0.jpg",
+            "timeline/pages/wenjinge275/b84fcb33-97dd-43e4-885a-cdbad01f9567.jpg",
+            "timeline/pages/wenjinge275/1bb10c2c-0d50-46dc-b356-5d32781871ab.jpg",
+            "timeline/pages/wenjinge275/20011768-87c0-4808-89e6-8e4fd3efed82.jpg",
+            "timeline/pages/wenjinge275/20e68abc-ee65-4544-aac4-199d6ebf1480.jpg",
+            "timeline/pages/wenjinge275/8b14de51-1de3-4034-be46-a313e3cedb7b.jpg",
+            "timeline/pages/wenjinge275/2b4b4091-da7b-4c55-8b21-4b10bb398313.jpg",
+            "timeline/pages/wenjinge275/61c02db0-1110-4c37-a01a-f7158571ef96.jpg",
+            "timeline/pages/wenjinge275/70c88658-a64a-4a1d-9ff9-f83ebf66600c.jpg",
+            "timeline/pages/wenjinge275/d5afe6c6-be13-4c98-9f1e-8a48bcaf993e.jpg",
+            "timeline/pages/wenjinge275/d1f5a2e0-f1e6-474d-9514-7509d2e96281.jpg",
+            "timeline/pages/wenjinge275/0d54fd5d-467b-4ec0-9de3-9888598cdca3.jpg",
+            "timeline/pages/wenjinge275/ef212fe4-3255-4b2a-a7f1-11bfcaed7c9f.jpg",
+            "timeline/pages/wenjinge275/aa2d7878-cbe6-4741-bf13-6f10dfb5a934.jpg",
+            "timeline/pages/wenjinge275/0579339f-41a2-4a45-999f-11b40d12a9e2.jpg"
+          ]
+        }
+      ],
+      "featuredCopies260": [],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "oracle-sacrifice298": {
       "id": "oracle-sacrifice298",
