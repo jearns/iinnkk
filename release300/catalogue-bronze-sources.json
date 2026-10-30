@@ -1,0 +1,32 @@
+[
+  {
+    "path": "release300/assets/bronze/bronze-dayu299-1.webp",
+    "source": "https://www.chnmuseum.cn/zp/cptp/201812/P020181219374879412262.jpg",
+    "width": 480,
+    "height": 477
+  },
+  {
+    "path": "release300/assets/bronze/bronze-guoji299-1.webp",
+    "source": "https://www.chnmuseum.cn/zp/cptp/201812/P020181219375955916878.jpg",
+    "width": 604,
+    "height": 1063
+  },
+  {
+    "path": "release300/assets/bronze/bronze-dake299-1.webp",
+    "source": "https://www.shanghaimuseum.net/mu/asset2/20151104094055028/images/t12-1.jpg",
+    "width": 682,
+    "height": 1334
+  },
+  {
+    "path": "release300/assets/bronze/bronze-dake299-2.webp",
+    "source": "https://www.shanghaimuseum.net/mu/asset2/20151104094055028/images/t12-2.jpg",
+    "width": 766,
+    "height": 1336
+  },
+  {
+    "path": "release300/assets/bronze/bronze-dake299-3.webp",
+    "source": "https://www.shanghaimuseum.net/mu/asset2/20151104094055028/images/t14.jpg",
+    "width": 1200,
+    "height": 491
+  }
+]

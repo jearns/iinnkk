@@ -1,0 +1,728 @@
+{
+  "tianfa": {
+    "url": "https://www.dpm.org.cn/collection/impres/234552.html",
+    "pages": [
+      "release300/assets/steles/tianfa-1.webp",
+      "release300/assets/steles/tianfa-2.webp",
+      "release300/assets/steles/tianfa-3.webp",
+      "release300/assets/steles/tianfa-4.webp",
+      "release300/assets/steles/tianfa-5.webp"
+    ],
+    "cover143": "release300/assets/steles/tianfa-1.webp",
+    "pageNames": [
+      "天发神谶碑-碑文之一",
+      "天发神谶碑-碑文之二",
+      "天发神谶碑-碑文之三",
+      "天发神谶碑-碑文之四",
+      "天发神谶碑-碑文之五"
+    ],
+    "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/tianfa-1.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/838.jpg",
+        "label": "天发神谶碑-碑文之一",
+        "width": 400,
+        "height": 304,
+        "sha256": "8ba3fb35daea258c3471734665875977b3b7356587c9528959578fd11669ade1"
+      },
+      {
+        "path": "release300/assets/steles/tianfa-2.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/840.jpg",
+        "label": "天发神谶碑-碑文之二",
+        "width": 400,
+        "height": 304,
+        "sha256": "24e671ed16c069e61b2d65c1065841eb2be6e96372824ce29e2c929db9cf4889"
+      },
+      {
+        "path": "release300/assets/steles/tianfa-3.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/841.jpg",
+        "label": "天发神谶碑-碑文之三",
+        "width": 400,
+        "height": 295,
+        "sha256": "c2373e11d53b19b923c1e974202415e1429b553019a6faee27af11da7e736525"
+      },
+      {
+        "path": "release300/assets/steles/tianfa-4.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/843.jpg",
+        "label": "天发神谶碑-碑文之四",
+        "width": 400,
+        "height": 315,
+        "sha256": "6baf89656d81f49fe8605eca78e4aa6058e0d0bea4fa1ab19197f1aa0e87fff9"
+      },
+      {
+        "path": "release300/assets/steles/tianfa-5.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/845.jpg",
+        "label": "天发神谶碑-碑文之五",
+        "width": 400,
+        "height": 294,
+        "sha256": "ca47b445d7471c2b5b491f3efb2b1f36ffa664dfa0858906dce31e2183b77c28"
+      }
+    ]
+  },
+  "yanqinli": {
+    "url": "https://www.dpm.org.cn/collection/impres/234175.html",
+    "pages": [
+      "release300/assets/steles/yanqinli-2.webp",
+      "release300/assets/steles/yanqinli-3.webp",
+      "release300/assets/steles/yanqinli-4.webp",
+      "release300/assets/steles/yanqinli-5.webp"
+    ],
+    "cover143": "release300/assets/steles/yanqinli-2.webp",
+    "pageNames": [
+      "颜勤礼碑(册页2)",
+      "颜勤礼碑(册页3)",
+      "颜勤礼碑(册页4)",
+      "颜勤礼碑(册页5)"
+    ],
+    "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/yanqinli-2.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/61518[1024].jpg",
+        "label": "颜勤礼碑(册页2)",
+        "width": 1024,
+        "height": 876,
+        "sha256": "291aead71c66dd476ab72695ce3300bd31f573510c20e22e9c7c59601f536bce"
+      },
+      {
+        "path": "release300/assets/steles/yanqinli-3.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/61517[1024].jpg",
+        "label": "颜勤礼碑(册页3)",
+        "width": 1024,
+        "height": 886,
+        "sha256": "1c735680d53c564954f50e020fc415cd2454c6b144ac7ee713122501166b981d"
+      },
+      {
+        "path": "release300/assets/steles/yanqinli-4.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/61516[1024].jpg",
+        "label": "颜勤礼碑(册页4)",
+        "width": 1024,
+        "height": 881,
+        "sha256": "295970cf8a303304d7b84d53143355523b43d83e5f8c4a4bdd1dfeebec06977b"
+      },
+      {
+        "path": "release300/assets/steles/yanqinli-5.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/61515[1024].jpg",
+        "label": "颜勤礼碑(册页5)",
+        "width": 1024,
+        "height": 892,
+        "sha256": "5a80caa3a5aeaac2c77ba24ff2f205ce6c2ad412addaf639e954ac1d778b95f4"
+      }
+    ]
+  },
+  "sanfen": {
+    "url": "https://beilin-museum.com/INDEX.PHP?a=index&aid=2611&c=View&m=home",
+    "pages": [
+      "release300/assets/steles/sanfen-1.webp"
+    ],
+    "cover143": "release300/assets/steles/sanfen-1.webp",
+    "pageNames": [
+      "三坟记碑(图1)"
+    ],
+    "imageCredit247": "西安碑林博物馆公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/sanfen-1.webp",
+        "source": "https://www.beilin-museum.com/uploads/ueditor/20200826/2-200R6163552642.jpg",
+        "label": "三坟记碑(图1)",
+        "width": 547,
+        "height": 1181,
+        "sha256": "5d38e49d6e7c47ce0396314b3e5349b1a5dc74a7adb71c48863b9978340c9624"
+      }
+    ]
+  },
+  "mengying": {
+    "url": "https://www.beilin-museum.com/index.php?a=index&aid=4613&c=View&m=home",
+    "pages": [
+      "release300/assets/steles/mengying-1.webp"
+    ],
+    "cover143": "release300/assets/steles/mengying-1.webp",
+    "pageNames": [
+      "篆书千字文碑.jpg"
+    ],
+    "imageCredit247": "西安碑林博物馆公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/mengying-1.webp",
+        "source": "https://www.beilin-museum.com/uploads/allimg/20250508/2-25050Q04HGQ.jpg",
+        "label": "篆书千字文碑.jpg",
+        "width": 1140,
+        "height": 3180,
+        "sha256": "501310cdde9e9574238428e712554f0c8eb14dad70a550a5adfd36dacaef5af6"
+      }
+    ]
+  },
+  "hengfang": {
+    "url": "https://www.dpm.org.cn/collection/impres/228606.html",
+    "pages": [
+      "release300/assets/steles/hengfang-1.webp"
+    ],
+    "cover143": "release300/assets/steles/hengfang-1.webp",
+    "pageNames": [
+      "衡方碑拓本"
+    ],
+    "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/hengfang-1.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9694.jpg",
+        "label": "衡方碑拓本",
+        "width": 188,
+        "height": 400,
+        "sha256": "b00098e6bb83e3ef21bec03daf597c97993d00965e75bc2db8f16ae19ba0f0c8"
+      }
+    ]
+  },
+  "shichen": {
+    "url": "https://www.dpm.org.cn/collection/impres/228527.html",
+    "pages": [
+      "release300/assets/steles/shichen-2.webp",
+      "release300/assets/steles/shichen-3.webp",
+      "release300/assets/steles/shichen-4.webp",
+      "release300/assets/steles/shichen-5.webp"
+    ],
+    "cover143": "release300/assets/steles/shichen-2.webp",
+    "pageNames": [
+      "史晨碑帖页之二",
+      "史晨碑帖页之三",
+      "史晨碑帖页之四",
+      "史晨碑帖页之五"
+    ],
+    "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/shichen-2.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9541[1024].jpg",
+        "label": "史晨碑帖页之二",
+        "width": 1024,
+        "height": 809,
+        "sha256": "4e26f9124843e0fe2e911d32876aba4e52181d1a2845ac479f8ed10427c3e317"
+      },
+      {
+        "path": "release300/assets/steles/shichen-3.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9543[1024].jpg",
+        "label": "史晨碑帖页之三",
+        "width": 1024,
+        "height": 823,
+        "sha256": "a26b6da0caf328a377eb028cf3f73bbc0b194817a5650d56e3fdf2f4827faba8"
+      },
+      {
+        "path": "release300/assets/steles/shichen-4.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9540[1024].jpg",
+        "label": "史晨碑帖页之四",
+        "width": 1024,
+        "height": 805,
+        "sha256": "b0e47d48c2bebf5247c0ed7bdf2104bdd11e210ca0c79ce36fe9645090a431bb"
+      },
+      {
+        "path": "release300/assets/steles/shichen-5.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9539[1024].jpg",
+        "label": "史晨碑帖页之五",
+        "width": 1024,
+        "height": 811,
+        "sha256": "a912789fb0052dcebe7bf7bf997860b3d1bfa8c01ee135f482d57c03c1785c31"
+      }
+    ]
+  },
+  "huashan": {
+    "url": "https://www.dpm.org.cn/collection/impres/234706.html",
+    "pages": [
+      "release300/assets/steles/huashan-1.webp"
+    ],
+    "cover143": "release300/assets/steles/huashan-1.webp",
+    "pageNames": [
+      "宋拓四明本西岳华山庙碑"
+    ],
+    "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/huashan-1.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/610.jpg",
+        "label": "宋拓四明本西岳华山庙碑",
+        "width": 186,
+        "height": 400,
+        "sha256": "4226c0644e18c37fafd36e874c9f8251eba7ffa7fbaf2367640d34f3b8b87d32"
+      }
+    ]
+  },
+  "shimen": {
+    "url": "https://www.dpm.org.cn/collection/impres/234191.html",
+    "pages": [
+      "release300/assets/steles/shimen-3.webp",
+      "release300/assets/steles/shimen-4.webp",
+      "release300/assets/steles/shimen-5.webp"
+    ],
+    "cover143": "release300/assets/steles/shimen-3.webp",
+    "pageNames": [
+      "杨孟文颂(册页3)",
+      "杨孟文颂(册页4)",
+      "杨孟文颂(册页5)"
+    ],
+    "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/shimen-3.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/62829.jpg",
+        "label": "杨孟文颂(册页3)",
+        "width": 400,
+        "height": 299,
+        "sha256": "0a2b405663e1d7b825fccfbe4e2688898f0e354239601e21466945529c7d2442"
+      },
+      {
+        "path": "release300/assets/steles/shimen-4.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/62828.jpg",
+        "label": "杨孟文颂(册页4)",
+        "width": 400,
+        "height": 299,
+        "sha256": "a9e24018c824d51d347de830baeecd05832937efc0be9d374799370b57273517"
+      },
+      {
+        "path": "release300/assets/steles/shimen-5.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/62827.jpg",
+        "label": "杨孟文颂(册页5)",
+        "width": 400,
+        "height": 299,
+        "sha256": "aca9b20d9d1de7262e3527966320aa0fb76af7a1efb9e56630b47a513430418d"
+      }
+    ]
+  },
+  "yiying": {
+    "url": "https://www.dpm.org.cn/collection/impres/228529.html",
+    "pages": [
+      "release300/assets/steles/yiying-1.webp",
+      "release300/assets/steles/yiying-2.webp",
+      "release300/assets/steles/yiying-3.webp",
+      "release300/assets/steles/yiying-4.webp",
+      "release300/assets/steles/yiying-5.webp"
+    ],
+    "cover143": "release300/assets/steles/yiying-1.webp",
+    "pageNames": [
+      "乙瑛碑帖页之一",
+      "乙瑛碑帖页之二",
+      "乙瑛碑帖页之三",
+      "乙瑛碑帖页之四",
+      "乙瑛碑帖页之五"
+    ],
+    "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/yiying-1.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9583[1024].jpg",
+        "label": "乙瑛碑帖页之一",
+        "width": 1024,
+        "height": 897,
+        "sha256": "4f61a67588b3ab660db720e498f1c35061dae80d96ee1481959247e584f7af17"
+      },
+      {
+        "path": "release300/assets/steles/yiying-2.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9582[1024].jpg",
+        "label": "乙瑛碑帖页之二",
+        "width": 1024,
+        "height": 897,
+        "sha256": "e8e056188e1cdd92ee1059a0727d7e1b00d99e16d30a5c8511d8a6146d101219"
+      },
+      {
+        "path": "release300/assets/steles/yiying-3.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9581[1024].jpg",
+        "label": "乙瑛碑帖页之三",
+        "width": 1024,
+        "height": 897,
+        "sha256": "9b239a3da37d4416ed7ff0784f58ce79ef12b5c9d89cc7c02cbe5e73fd1a36e2"
+      },
+      {
+        "path": "release300/assets/steles/yiying-4.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9580[1024].jpg",
+        "label": "乙瑛碑帖页之四",
+        "width": 1024,
+        "height": 897,
+        "sha256": "c36914f7272c27749e65f2a9f84b261d3a0a7b8110ad519e4b62093812166420"
+      },
+      {
+        "path": "release300/assets/steles/yiying-5.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9579[1024].jpg",
+        "label": "乙瑛碑帖页之五",
+        "width": 1024,
+        "height": 897,
+        "sha256": "ba3544298ce5e4b574bcce2408a2631ad6c5d937fc33de1278d6a07cc2ef6c57"
+      }
+    ]
+  },
+  "yihe": {
+    "url": "https://www.dpm.org.cn/collection/impres/234548.html",
+    "pages": [
+      "release300/assets/steles/yihe-1.webp",
+      "release300/assets/steles/yihe-2.webp",
+      "release300/assets/steles/yihe-3.webp",
+      "release300/assets/steles/yihe-4.webp",
+      "release300/assets/steles/yihe-5.webp"
+    ],
+    "cover143": "release300/assets/steles/yihe-1.webp",
+    "pageNames": [
+      "瘗鹤铭-碑文之一",
+      "瘗鹤铭-碑文之二",
+      "瘗鹤铭-碑文之三",
+      "瘗鹤铭-碑文之四",
+      "瘗鹤铭-碑文之五"
+    ],
+    "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/yihe-1.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/826.jpg",
+        "label": "瘗鹤铭-碑文之一",
+        "width": 400,
+        "height": 321,
+        "sha256": "bee0863f0054c1491b426314145d303d3094e18bc25d5f37c0d0339cf3772695"
+      },
+      {
+        "path": "release300/assets/steles/yihe-2.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/827[1024].jpg",
+        "label": "瘗鹤铭-碑文之二",
+        "width": 1024,
+        "height": 811,
+        "sha256": "ccf130398133878cc309a31188dc2de8c513613ad1c0ad94949f8693efa9e8a0"
+      },
+      {
+        "path": "release300/assets/steles/yihe-3.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/828.jpg",
+        "label": "瘗鹤铭-碑文之三",
+        "width": 400,
+        "height": 320,
+        "sha256": "0cf276afd040aa037dafd7167f250c99a020350b8d78dcec6a4879f90d1bdff1"
+      },
+      {
+        "path": "release300/assets/steles/yihe-4.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/830.jpg",
+        "label": "瘗鹤铭-碑文之四",
+        "width": 400,
+        "height": 330,
+        "sha256": "36c263dccc9681cce59cc47f1a52d84781f249f9279cf90cee1c8982b8122c64"
+      },
+      {
+        "path": "release300/assets/steles/yihe-5.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/831.jpg",
+        "label": "瘗鹤铭-碑文之五",
+        "width": 400,
+        "height": 318,
+        "sha256": "88262208cca37ccafcfcc4d1de3d6512828f185f0bb9bd6beed63c23ba8fe43b"
+      }
+    ]
+  },
+  "shengjiao": {
+    "url": "https://www.dpm.org.cn/collection/impres/228597.html",
+    "pages": [
+      "release300/assets/steles/shengjiao-1.webp",
+      "release300/assets/steles/shengjiao-2.webp",
+      "release300/assets/steles/shengjiao-3.webp",
+      "release300/assets/steles/shengjiao-4.webp",
+      "release300/assets/steles/shengjiao-5.webp"
+    ],
+    "cover143": "release300/assets/steles/shengjiao-1.webp",
+    "pageNames": [
+      "集王圣教序之一",
+      "集王圣教序之三",
+      "集王圣教序之四",
+      "集王圣教序之五",
+      "集王圣教序之七"
+    ],
+    "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/shengjiao-1.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9803.jpg",
+        "label": "集王圣教序之一",
+        "width": 379,
+        "height": 400,
+        "sha256": "057b796611302723bebc16d05d3a8aefd788e7baf8eb750ba4f0181006bd232b"
+      },
+      {
+        "path": "release300/assets/steles/shengjiao-2.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9804.jpg",
+        "label": "集王圣教序之三",
+        "width": 389,
+        "height": 400,
+        "sha256": "4b9180fcbb526788782c5f5fff0202244390ef19fa6bea951e77f9a7d69d647d"
+      },
+      {
+        "path": "release300/assets/steles/shengjiao-3.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9805.jpg",
+        "label": "集王圣教序之四",
+        "width": 388,
+        "height": 400,
+        "sha256": "d69b2ece6e711231a28e6a04ceac2b634cef2f1f3d16b59b00582b6d36443710"
+      },
+      {
+        "path": "release300/assets/steles/shengjiao-4.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9806.jpg",
+        "label": "集王圣教序之五",
+        "width": 384,
+        "height": 400,
+        "sha256": "aefdf5bd2e500ab41afd4b681e35f0215022fb3c798e1a358bc821245c952e2f"
+      },
+      {
+        "path": "release300/assets/steles/shengjiao-5.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9808.jpg",
+        "label": "集王圣教序之七",
+        "width": 394,
+        "height": 400,
+        "sha256": "c1a4f04293c5a912f6ac20841e822179177b50960f2e4e6eaced0f5fb531ca59"
+      }
+    ]
+  },
+  "kaicheng": {
+    "url": "https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=280",
+    "pages": [
+      "release300/assets/steles/kaicheng-1.webp",
+      "release300/assets/steles/kaicheng-2.webp"
+    ],
+    "cover143": "release300/assets/steles/kaicheng-1.webp",
+    "pageNames": [
+      "开成石经陈列原石照片（非拓片）",
+      "开成石经陈列原石照片（非拓片）"
+    ],
+    "imageCredit247": "西安碑林博物馆公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/kaicheng-1.webp",
+        "source": "https://beilin-museum.com/uploads/allimg/20250127/2-25012H00220192.JPG",
+        "label": "开成石经陈列原石照片（非拓片）",
+        "width": 2400,
+        "height": 1600,
+        "sha256": "62e7a12e56aa657d46d53a48d5ac70326bf96c75a011e74edbd44f1046260aab"
+      },
+      {
+        "path": "release300/assets/steles/kaicheng-2.webp",
+        "source": "https://beilin-museum.com/uploads/allimg/20250127/2-25012H00354229.JPG",
+        "label": "开成石经陈列原石照片（非拓片）",
+        "width": 2343,
+        "height": 1562,
+        "sha256": "fc7a310b5aaf2e0d7a6d1ee8f9cdf9a9ca762a845230a9ad27ee1e44be1c32ea"
+      }
+    ]
+  },
+  "xianyuhuang": {
+    "url": "https://tjculture.museum.chaoxing.com/302/304/9696.html",
+    "pages": [
+      "release300/assets/steles/xianyuhuang-1.webp",
+      "release300/assets/steles/xianyuhuang-2.webp"
+    ],
+    "cover143": "release300/assets/steles/xianyuhuang-1.webp",
+    "pageNames": [
+      "鲜于璜碑原拓",
+      "鲜于璜碑原拓"
+    ],
+    "imageCredit247": "天津市文化遗产保护中心公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/xianyuhuang-1.webp",
+        "source": "https://museum.chaoxing.com/micro-upload/tjwbzx/richText/image/9696/2.jpg",
+        "label": "鲜于璜碑原拓",
+        "width": 227,
+        "height": 437,
+        "sha256": "ec40d059c5333a6a65f126cceba55d0a63fa9cd79f3e9ec59721338f567426fc"
+      },
+      {
+        "path": "release300/assets/steles/xianyuhuang-2.webp",
+        "source": "https://museum.chaoxing.com/micro-upload/tjwbzx/richText/image/9696/3.jpg",
+        "label": "鲜于璜碑原拓",
+        "width": 232,
+        "height": 446,
+        "sha256": "b4486e6f1878b9a58ec212581c33bf78f256c75f26d2df4cd499a89bd0bfc7f9"
+      }
+    ]
+  },
+  "zhongxing": {
+    "url": "https://www.dpm.org.cn/collection/impres/228473.html",
+    "pages": [
+      "release300/assets/steles/zhongxing-1.webp",
+      "release300/assets/steles/zhongxing-2.webp",
+      "release300/assets/steles/zhongxing-3.webp",
+      "release300/assets/steles/zhongxing-4.webp",
+      "release300/assets/steles/zhongxing-5.webp"
+    ],
+    "cover143": "release300/assets/steles/zhongxing-1.webp",
+    "pageNames": [
+      "大唐中兴颂 一册第一开",
+      "大唐中兴颂 一册第二开",
+      "大唐中兴颂 一册第三开",
+      "大唐中兴颂 一册第四开",
+      "大唐中兴颂 一册第五开"
+    ],
+    "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/zhongxing-1.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/3788[1024].jpg",
+        "label": "大唐中兴颂 一册第一开",
+        "width": 1024,
+        "height": 916,
+        "sha256": "252944bd647a369e342af43c94f4b88c0e8c8f7ab173a33f53cdfd7c285b1377"
+      },
+      {
+        "path": "release300/assets/steles/zhongxing-2.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/3790[1024].jpg",
+        "label": "大唐中兴颂 一册第二开",
+        "width": 1024,
+        "height": 916,
+        "sha256": "3d23fdbf27c6852383c606f8d5c652c4d16e09aa77fee70e49c80e465330b41e"
+      },
+      {
+        "path": "release300/assets/steles/zhongxing-3.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/3791[1024].jpg",
+        "label": "大唐中兴颂 一册第三开",
+        "width": 1024,
+        "height": 916,
+        "sha256": "c03530f3a967e981560dbbc1aa9da39da6f0048a556d32adad20aa4e298a34cc"
+      },
+      {
+        "path": "release300/assets/steles/zhongxing-4.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/3792[1024].jpg",
+        "label": "大唐中兴颂 一册第四开",
+        "width": 1024,
+        "height": 916,
+        "sha256": "99919725a97a2caeb79a626b4b366ba562a81c8ceea4c80c733bd32eef8863c2"
+      },
+      {
+        "path": "release300/assets/steles/zhongxing-5.webp",
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/3793[1024].jpg",
+        "label": "大唐中兴颂 一册第五开",
+        "width": 1024,
+        "height": 916,
+        "sha256": "b81a028c31b0646929c9924a53ebb49b1477a4a7b22806bbc0f8a724dd774714"
+      }
+    ]
+  },
+  "zhengwengong": {
+    "url": "https://www.chinanews.com.cn/gn/2024/01-18/10148676.shtml",
+    "pages": [
+      "release300/assets/steles/zhengwengong-1.webp"
+    ],
+    "cover143": "release300/assets/steles/zhengwengong-1.webp",
+    "pageNames": [
+      "郑文公下碑原石，莱州市博物馆供图"
+    ],
+    "imageCredit247": "莱州市博物馆供图／中国新闻网；原石照片，保留来源水印，未去除。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/zhengwengong-1.webp",
+        "source": "https://i2.chinanews.com.cn/simg/cmshd/2024/01/18/61d90f34aee044368c3657a122648a64.jpg",
+        "label": "郑文公下碑原石，莱州市博物馆供图",
+        "width": 700,
+        "height": 432,
+        "sha256": "cc39e8a757ecdb0973d69e78752a5c882f0a30a6dff4ea8e32c8eb032cabd6df"
+      }
+    ]
+  },
+  "sishan": {
+    "url": "https://whlyj.jining.gov.cn/art/2025/6/12/art_70690_2706024.html",
+    "pages": [
+      "release300/assets/steles/sishan-2.webp",
+      "release300/assets/steles/sishan-3.webp"
+    ],
+    "cover143": "release300/assets/steles/sishan-2.webp",
+    "pageNames": [
+      "四山摩崖刻经代表：铁山、岗山石刻照片（非整套拓片）",
+      "四山摩崖刻经代表：岗山石刻照片"
+    ],
+    "imageCredit247": "济宁市文化和旅游局公开图像；按来源标示拓片或原石照片。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/sishan-2.webp",
+        "source": "https://whlyj.jining.gov.cn/picture/-1/2309971a2e5c42cdb1990177d9031572.png",
+        "label": "四山摩崖刻经代表：铁山、岗山石刻照片（非整套拓片）",
+        "width": 539,
+        "height": 400,
+        "sha256": "10db741cbd49f8bef4bc7051e668942f4ea46f1bb842f3ead215c9fe2080569f"
+      },
+      {
+        "path": "release300/assets/steles/sishan-3.webp",
+        "source": "https://whlyj.jining.gov.cn/picture/-1/8f20e394e47641909cb7d4339104ae03.png",
+        "label": "四山摩崖刻经代表：岗山石刻照片",
+        "width": 535,
+        "height": 374,
+        "sha256": "6265026333dc485008dfd66c2919c6f9a36a957bf0711b849d526aa813dfb2f5"
+      }
+    ]
+  },
+  "shimenming": {
+    "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/15187?dep=P",
+    "pages": [
+      "release300/assets/steles/shimenming-1.webp",
+      "release300/assets/steles/shimenming-2.webp",
+      "release300/assets/steles/shimenming-3.webp"
+    ],
+    "cover143": "release300/assets/steles/shimenming-1.webp",
+    "pageNames": [
+      "魏王远石门铭墨拓本（台北故宫）",
+      "魏王远石门铭墨拓本（台北故宫）",
+      "魏王远石门铭墨拓本（台北故宫）"
+    ],
+    "imageCredit247": "魏王远石门铭墨拓本　轴。国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/shimenming-1.webp",
+        "source": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=498208&randomCode=96067555462",
+        "label": "魏王远石门铭墨拓本（台北故宫）",
+        "width": 569,
+        "height": 600,
+        "sha256": "883a7d44912e9e55e949247056c1d035c13ccb063d048e21ec42409d7cd3a9cc"
+      },
+      {
+        "path": "release300/assets/steles/shimenming-2.webp",
+        "source": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=498209&randomCode=63187861859",
+        "label": "魏王远石门铭墨拓本（台北故宫）",
+        "width": 446,
+        "height": 600,
+        "sha256": "897050ec5b861d55376d2a4a9931efbc5d7b3adf75e41a7781b53763bdf44c78"
+      },
+      {
+        "path": "release300/assets/steles/shimenming-3.webp",
+        "source": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=498210&randomCode=96530751048",
+        "label": "魏王远石门铭墨拓本（台北故宫）",
+        "width": 446,
+        "height": 600,
+        "sha256": "7271ce06527c2ed517782d29415be57867b1459ae667d9f1479915a8d3ed01b4"
+      }
+    ]
+  },
+  "biluo": {
+    "url": "http://kanji.zinbun.kyoto-u.ac.jp/db-machine/imgsrv/takuhon/type_a/html/tou0494x.html",
+    "pages": [
+      "release300/assets/steles/biluo-1.webp"
+    ],
+    "cover143": "release300/assets/steles/biluo-1.webp",
+    "pageNames": [
+      "碧落碑碑阳拓片（翻刻未断本，京都大学 TOU0494X）"
+    ],
+    "imageCredit247": "京都大学人文科学研究所拓本文字数据库 TOU0494X；图像转存 Wikimedia Commons，公共领域。翻刻本不是唐代原石。",
+    "imageSelection300": "代表图像节选；不代表整套拓本",
+    "sources300": [
+      {
+        "path": "release300/assets/steles/biluo-1.webp",
+        "source": "https://upload.wikimedia.org/wikipedia/commons/4/47/%E7%A2%A7%E8%90%BD%E7%A2%91%E7%A2%91%E9%99%BD%E6%8B%93%E7%89%87%EF%BC%88%E6%9C%AA%E6%96%B7%E7%89%88%EF%BC%89.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+        "label": "碧落碑碑阳拓片（金元翻刻未断本）",
+        "width": 3119,
+        "height": 5321,
+        "sha256": "8e311b2960fc0bac57efb05fb4ea408dd7872c684dda3ed157f4aa2b27a8c777"
+      }
+    ]
+  }
+}

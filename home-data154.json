@@ -25,28 +25,37 @@
       "era": "西周",
       "title": "毛公鼎",
       "script": "金文",
-      "place": "中国·台北",
-      "museum": "国立故宫博物院",
+      "place": "台北",
+      "museum": "台北故宫博物院",
       "status": "",
-      "url": "https://www.npm.gov.tw/",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1438?dep=U&mode=full",
       "style": "yan",
       "size": 430,
       "zoom": 145,
       "glyph": "鼎",
       "order": 1,
-      "milestone": "西周长篇金文的雄浑典范，以庙堂气象铸就青铜时代的文字丰碑。",
+      "milestone": "西周册命长篇铭文的代表，以庄重章法保存王命、政治理想与文字艺术。",
       "portraitLabel": "",
       "year": -800,
-      "dateLabel": "约公元前850—750年",
-      "summary211": "西周长篇金文的雄浑典范，以庙堂气象铸就青铜时代的文字丰碑。"
+      "dateLabel": "约公元前9—前8世纪",
+      "summary211": "西周长篇金文的雄浑典范，以庙堂气象铸就青铜时代的文字丰碑。",
+      "author": "书者佚名",
+      "description": "行列端整，字形凝重；适合比较西周晚期金文的秩序与书写意味。",
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1438?dep=U&mode=full"
+        }
+      ],
+      "objectNumber300": "台北故宫文物统一编号：中銅000651N000000000"
     },
     {
       "id": "sanshi",
       "era": "西周",
       "title": "散氏盘",
       "script": "金文",
-      "place": "中国·台北",
-      "museum": "国立故宫博物院",
+      "place": "台北",
+      "museum": "台北故宫博物院",
       "status": "",
       "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1462?dep=U&mode=full",
       "style": "yan",
@@ -54,31 +63,49 @@
       "zoom": 145,
       "glyph": "盤",
       "order": 2,
-      "milestone": "西周金文的奇逸代表，在错落章法中展现金文自由舒展的生命力。",
+      "milestone": "以土地交割与盟誓的记录留存社会生活，字势朴拙而富有欹侧变化。",
       "portraitLabel": "",
       "year": -800,
-      "dateLabel": "约公元前850—750年",
-      "summary211": "西周金文的奇逸代表，在错落章法中展现金文自由舒展的生命力。"
+      "dateLabel": "西周晚期",
+      "summary211": "西周金文的奇逸代表，在错落章法中展现金文自由舒展的生命力。",
+      "author": "书者佚名",
+      "description": "将文字作为契约与见证；观察横向舒展、错落自然的结体。",
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1462?dep=U&mode=full"
+        }
+      ],
+      "objectNumber300": "台北故宫文物统一编号：故銅002376N000000000"
     },
     {
       "id": "hezun",
       "era": "西周",
       "title": "何尊",
       "script": "金文",
-      "place": "中国·宝鸡",
+      "place": "宝鸡",
       "museum": "宝鸡青铜器博物院",
       "status": "",
-      "url": "https://wwj.baoji.gov.cn/col1892/col17273/202505/t20250512_1147496.html",
+      "url": "https://www.xianqin.org/xr_html/articles/lwjsh/384.html",
       "style": "yan",
       "size": 420,
       "zoom": 145,
       "glyph": "中",
       "order": 3,
-      "milestone": "铭文中的“中国”见证早期国家观念，凝铸西周礼制与文字的庄严气象。",
+      "milestone": "“宅兹中国”的铭文，为早期国家观念与成周营建留下重要实物线索。",
       "portraitLabel": "",
       "year": -1038,
-      "dateLabel": "约公元前1050—1000年",
-      "summary211": "铭文中的“中国”见证早期国家观念，凝铸西周礼制与文字的庄严气象。"
+      "dateLabel": "约公元前11世纪",
+      "summary211": "铭文中的“中国”见证早期国家观念，凝铸西周礼制与文字的庄严气象。",
+      "author": "书者佚名",
+      "description": "从器内铭文认识字形、制度与历史叙述的相互联系。",
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://www.xianqin.org/xr_html/articles/lwjsh/384.html"
+        }
+      ],
+      "objectNumber300": "《殷周金文集成》6014"
     },
     {
       "id": "shizhoupian",
@@ -342,44 +369,135 @@
     },
     {
       "id": "shengjiao",
-      "era": "东晋书风·唐代刻石",
-      "title": "怀仁集王羲之字·圣教序",
+      "era": "唐",
+      "title": "集王圣教序",
       "script": "行书",
-      "place": "中国·西安",
+      "place": "陕西西安",
       "museum": "西安碑林博物馆",
-      "status": "",
-      "url": "https://beilin-museum.com/",
+      "status": "唐集字原碑",
+      "url": "https://www.dpm.org.cn/collection/impres/228597.html",
       "style": "wang",
       "size": 350,
       "zoom": 175,
       "glyph": "羲",
       "order": 16,
-      "milestone": "集王字的行书典范，将王羲之书风凝为后世取法不尽的碑刻经典。",
+      "milestone": "以集字把王羲之行书带入大型碑刻，推动二王书风广泛传播。",
       "portraitLabel": "怀仁集王羲之字",
       "year": 672,
-      "dateLabel": "公元672年·唐集字碑",
-      "summary211": "集王字的行书典范，将王羲之书风凝为后世取法不尽的碑刻经典。"
+      "dateLabel": "672年",
+      "summary211": "集王字的行书典范，将王羲之书风凝为后世取法不尽的碑刻经典。",
+      "author": "怀仁集王羲之字",
+      "description": "集字碑非王羲之亲笔连续书写；文含唐太宗圣教序等，新增应登记整碑还是单独序文，避免与褚遂良雁塔圣教序混淆。",
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/shengjiao-1.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9803.jpg",
+          "label": "集王圣教序之一",
+          "width": 379,
+          "height": 400,
+          "sha256": "057b796611302723bebc16d05d3a8aefd788e7baf8eb750ba4f0181006bd232b"
+        },
+        {
+          "path": "release300/assets/steles/shengjiao-2.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9804.jpg",
+          "label": "集王圣教序之三",
+          "width": 389,
+          "height": 400,
+          "sha256": "4b9180fcbb526788782c5f5fff0202244390ef19fa6bea951e77f9a7d69d647d"
+        },
+        {
+          "path": "release300/assets/steles/shengjiao-3.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9805.jpg",
+          "label": "集王圣教序之四",
+          "width": 388,
+          "height": 400,
+          "sha256": "d69b2ece6e711231a28e6a04ceac2b634cef2f1f3d16b59b00582b6d36443710"
+        },
+        {
+          "path": "release300/assets/steles/shengjiao-4.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9806.jpg",
+          "label": "集王圣教序之五",
+          "width": 384,
+          "height": 400,
+          "sha256": "aefdf5bd2e500ab41afd4b681e35f0215022fb3c798e1a358bc821245c952e2f"
+        },
+        {
+          "path": "release300/assets/steles/shengjiao-5.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9808.jpg",
+          "label": "集王圣教序之七",
+          "width": 394,
+          "height": 400,
+          "sha256": "c1a4f04293c5a912f6ac20841e822179177b50960f2e4e6eaced0f5fb531ca59"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本"
     },
     {
       "after": "shengjiao",
       "id": "yihe",
-      "era": "南朝",
+      "era": "南朝（作者、年代有讨论）",
       "title": "瘗鹤铭",
-      "script": "摩崖楷书",
-      "place": "中国·镇江",
-      "museum": "焦山摩崖遗存；故宫藏宋拓",
-      "status": "",
+      "script": "楷书／隶意",
+      "place": "江苏镇江",
+      "museum": "焦山碑林",
+      "status": "残石迁藏焦山碑林；作者有争议",
       "url": "https://www.dpm.org.cn/collection/impres/234548.html",
       "style": "liu",
       "size": 390,
       "zoom": 150,
       "glyph": "鶴",
-      "milestone": "大字楷书的雄逸典范，以宽博结体和舒展笔势写出山林般的高古气象。",
+      "milestone": "大字中的隶意、草情与舒朗气度，启发后世榜书并获“大字之祖”赞誉。",
       "portraitLabel": "",
-      "year": 500,
-      "dateLabel": "约公元450—550年·断代有争议",
+      "year": null,
+      "dateLabel": "南朝；作者、确切纪年有讨论",
       "summary211": "大字楷书的雄逸典范，以宽博结体和舒展笔势写出山林般的高古气象。",
-      "author": "陶宏景（据信）"
+      "author": "署华阳真逸；传陶弘景等说",
+      "description": "为瘗鹤而刻，残石曾崩落江中、多次打捞。作者与刻年存在不同说法，不能把陶弘景与514年说当成确定事实。",
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/yihe-1.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/826.jpg",
+          "label": "瘗鹤铭-碑文之一",
+          "width": 400,
+          "height": 321,
+          "sha256": "bee0863f0054c1491b426314145d303d3094e18bc25d5f37c0d0339cf3772695"
+        },
+        {
+          "path": "release300/assets/steles/yihe-2.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/827[1024].jpg",
+          "label": "瘗鹤铭-碑文之二",
+          "width": 1024,
+          "height": 811,
+          "sha256": "ccf130398133878cc309a31188dc2de8c513613ad1c0ad94949f8693efa9e8a0"
+        },
+        {
+          "path": "release300/assets/steles/yihe-3.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/828.jpg",
+          "label": "瘗鹤铭-碑文之三",
+          "width": 400,
+          "height": 320,
+          "sha256": "0cf276afd040aa037dafd7167f250c99a020350b8d78dcec6a4879f90d1bdff1"
+        },
+        {
+          "path": "release300/assets/steles/yihe-4.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/830.jpg",
+          "label": "瘗鹤铭-碑文之四",
+          "width": 400,
+          "height": 330,
+          "sha256": "36c263dccc9681cce59cc47f1a52d84781f249f9279cf90cee1c8982b8122c64"
+        },
+        {
+          "path": "release300/assets/steles/yihe-5.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/831.jpg",
+          "label": "瘗鹤铭-碑文之五",
+          "width": 400,
+          "height": 318,
+          "sha256": "88262208cca37ccafcfcc4d1de3d6512828f185f0bb9bd6beed63c23ba8fe43b"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本"
     },
     {
       "after": "yihe",

@@ -1,0 +1,84 @@
+[
+  {
+    "source": "https://museum.sinica.edu.tw/_upload/image/paragraph/hd/524549786017fc97.jpg",
+    "width": 500,
+    "height": 832,
+    "path": "release300/assets/oracle/oracle-sacrifice298-1.webp"
+  },
+  {
+    "source": "https://www.chnmuseum.cn/zp/zpml/201812/P020181218760166912533.jpg",
+    "width": 350,
+    "height": 204,
+    "path": "release300/assets/oracle/oracle-tufang298-1.webp"
+  },
+  {
+    "source": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/P020220829552391036147.jpg",
+    "width": 1748,
+    "height": 1748,
+    "path": "release300/assets/oracle/oracle-ban298-1.webp"
+  },
+  {
+    "source": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/P020220829550911722425.jpg",
+    "width": 1606,
+    "height": 1606,
+    "path": "release300/assets/oracle/oracle-zaifeng298-1.webp"
+  },
+  {
+    "source": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202107/P020220728583111707839.jpg",
+    "width": 1400,
+    "height": 1400,
+    "path": "release300/assets/oracle/oracle-farming298-1.webp"
+  },
+  {
+    "source": "https://museum.sinica.edu.tw/_upload/image/paragraph/hd/441549782e42a64d.jpg",
+    "width": 270,
+    "height": 600,
+    "path": "release300/assets/oracle/oracle-zhou298-1.webp"
+  },
+  {
+    "source": "https://museum.sinica.edu.tw/_upload/image/paragraph/hd/1125497821de0fe5.jpg",
+    "width": 1118,
+    "height": 587,
+    "path": "release300/assets/oracle/oracle-fuhao298-1.webp"
+  },
+  {
+    "source": "https://museum.sinica.edu.tw/_upload/image/paragraph/hd/49549782a21b77c.jpg",
+    "width": 479,
+    "height": 600,
+    "path": "release300/assets/oracle/oracle-brush298-1.webp"
+  },
+  {
+    "source": "https://museum.sinica.edu.tw/_upload/image/paragraph/hd/8595497844bc2319.jpg",
+    "width": 350,
+    "height": 600,
+    "path": "release300/assets/oracle/oracle-harvest298-1.webp"
+  },
+  {
+    "source": "https://www.dpm.org.cn/Uploads/File/2019/02/22/u5c6fe719bec1f.pdf",
+    "figure": "2",
+    "path": "release300/assets/oracle/qiang-1.webp",
+    "width": 646,
+    "height": 956
+  },
+  {
+    "source": "https://www.dpm.org.cn/Uploads/File/2019/02/22/u5c6fe719bec1f.pdf",
+    "figure": "2",
+    "path": "release300/assets/oracle/qiang-3.webp",
+    "width": 609,
+    "height": 891
+  },
+  {
+    "source": "https://www.dpm.org.cn/Uploads/File/2019/02/22/u5c6fe719bec1f.pdf",
+    "figure": "1",
+    "path": "release300/assets/oracle/qiang-5.webp",
+    "width": 688,
+    "height": 1134
+  },
+  {
+    "source": "https://www.dpm.org.cn/Uploads/File/2019/02/22/u5c6fe719bec1f.pdf",
+    "figure": "1",
+    "path": "release300/assets/oracle/qiang-6.webp",
+    "width": 754,
+    "height": 1134
+  }
+]

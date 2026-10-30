@@ -1,0 +1,1904 @@
+{
+  "release300/assets/bronze/bronze-dake299-1.webp": {
+    "width": 682,
+    "height": 1334,
+    "bytes": 453262,
+    "sha256": "d766a756acd7e4b092b1516ccd7482cc666cb4dc00c8a40c5b5b9b7d2666be6a"
+  },
+  "release300/assets/bronze/bronze-dake299-2.webp": {
+    "width": 766,
+    "height": 1336,
+    "bytes": 487806,
+    "sha256": "e0f9bd7722409400548abd0dc3807fa269e27e139b243cf9358843e4d2e4e1d3"
+  },
+  "release300/assets/bronze/bronze-dake299-3.webp": {
+    "width": 1200,
+    "height": 491,
+    "bytes": 261992,
+    "sha256": "11bffc682c5f07903f154719e8ba48ea540dc6901c96e4fde7d519627418bc62"
+  },
+  "release300/assets/bronze/bronze-dayu299-1.webp": {
+    "width": 480,
+    "height": 477,
+    "bytes": 131664,
+    "sha256": "4fec7edef31605e1ee8b697d27db0fae078f27b973c8368bda077b0e0d27b917"
+  },
+  "release300/assets/bronze/bronze-guoji299-1.webp": {
+    "width": 604,
+    "height": 1063,
+    "bytes": 163018,
+    "sha256": "080ae94cde371ae4db1ea3ae350f8f762dfb1abdb1bb1cf8b765331fb13c3a6f"
+  },
+  "release300/assets/core/boyuan-01.webp": {
+    "width": 1258,
+    "height": 500,
+    "bytes": 207492,
+    "sha256": "983d480afd4ffec1fa0d4cffdc62e72dbaf69a9e73991512a18feb73d8b97f50"
+  },
+  "release300/assets/core/fuge-01.webp": {
+    "width": 791,
+    "height": 1024,
+    "bytes": 58896,
+    "sha256": "e7f4497fe07fa01ad83eb0a919b05f0a5227e5e85a7497727a6695f676110084"
+  },
+  "release300/assets/core/fuge-02.webp": {
+    "width": 1024,
+    "height": 861,
+    "bytes": 168400,
+    "sha256": "cca36d3cabb91b1fb087e66e01207dc696b53fd32060b81dc74e495bca14b6e0"
+  },
+  "release300/assets/core/fuge-03.webp": {
+    "width": 1024,
+    "height": 861,
+    "bytes": 155688,
+    "sha256": "47d1ef05b5e8f893bc2497e38c017781ab5ec7155d2d78e8ee6b5a7a6350f301"
+  },
+  "release300/assets/core/fuge-04.webp": {
+    "width": 1024,
+    "height": 859,
+    "bytes": 169712,
+    "sha256": "850a62010999d1f84d1e3dec934edaebc01635739774fd555d5d8d8c61b636e9"
+  },
+  "release300/assets/core/fuge-05.webp": {
+    "width": 1024,
+    "height": 862,
+    "bytes": 177372,
+    "sha256": "9d575bc6c5d8ba078b758bd447905a8e3e6ce045abf7fbbe59af25f7b52a6703"
+  },
+  "release300/assets/core/fuge-06.webp": {
+    "width": 1024,
+    "height": 860,
+    "bytes": 149750,
+    "sha256": "d1ad4824ec0a6cbaf7ae24de14721a2880bac2d9a62a77f4fcd5e5400e23b6f4"
+  },
+  "release300/assets/core/fuge-07.webp": {
+    "width": 1024,
+    "height": 870,
+    "bytes": 172004,
+    "sha256": "8ca63e413daa82ea941c6150e1e559bfe84af3453c9c7c7bd0d6619ba1de3d12"
+  },
+  "release300/assets/core/fuge-08.webp": {
+    "width": 1024,
+    "height": 852,
+    "bytes": 163954,
+    "sha256": "adeea06834a0a4c6b311ab953bb8c13b21fac218455f17d58ccf3636e66d5e98"
+  },
+  "release300/assets/core/fuge-09.webp": {
+    "width": 1024,
+    "height": 855,
+    "bytes": 187308,
+    "sha256": "1597e639908f0a7fc666669df692d4e3c7a7a35f75e4742ced11ae71d39d23b5"
+  },
+  "release300/assets/core/fuge-10.webp": {
+    "width": 1024,
+    "height": 864,
+    "bytes": 190404,
+    "sha256": "f2521a3ac8799b3fe3caee3eeb3dae2e1b82143ba4c19f7a6c43d0be3da5d9fe"
+  },
+  "release300/assets/core/fuge-11.webp": {
+    "width": 1024,
+    "height": 846,
+    "bytes": 184510,
+    "sha256": "e9a5ef9344c5a4608381b15462371ee3bfc65885f44ac2291bec77bb80b38d7f"
+  },
+  "release300/assets/core/fuge-12.webp": {
+    "width": 1024,
+    "height": 854,
+    "bytes": 183792,
+    "sha256": "ece98b0ba1547f52a6f8a30d86313b50e3657cd00ede4c072fa44b2c4eefe99f"
+  },
+  "release300/assets/core/fuge-13.webp": {
+    "width": 1024,
+    "height": 858,
+    "bytes": 192116,
+    "sha256": "68f42e16b95888cf8dd48e3739d7e633457b26fde26babd8b9f35a4e53480750"
+  },
+  "release300/assets/core/fuge-14.webp": {
+    "width": 1024,
+    "height": 820,
+    "bytes": 37918,
+    "sha256": "6af19a367d14fdba642b3c5ec6d280f68641ad50f949b8abed17f5c318cd3bb4"
+  },
+  "release300/assets/core/fuge-15.webp": {
+    "width": 1024,
+    "height": 872,
+    "bytes": 204350,
+    "sha256": "20d45bccffa7d2ae9b2ae0b59a24f570aeadc6d32a2b8dc8a724a74565ff34e1"
+  },
+  "release300/assets/core/fuge-16.webp": {
+    "width": 1024,
+    "height": 854,
+    "bytes": 188442,
+    "sha256": "41565c8d4f54ca6bf061df5b0dabedc81fa4f83b861e52d7439227b9f5f6f9ea"
+  },
+  "release300/assets/core/fuge-17.webp": {
+    "width": 1024,
+    "height": 867,
+    "bytes": 197518,
+    "sha256": "2694b8781ccf9f657086cba9bbec782e90138f1c69911229cde02080597b3e88"
+  },
+  "release300/assets/core/fuge-18.webp": {
+    "width": 1024,
+    "height": 862,
+    "bytes": 188190,
+    "sha256": "44b07e9679ab9fc8c7f88ea1931412bb5853a9b0eaf88a1cda7b8084eca13994"
+  },
+  "release300/assets/core/fuge-19.webp": {
+    "width": 1024,
+    "height": 858,
+    "bytes": 177142,
+    "sha256": "899becc65cb221af99aa12f86b30888ee75ae67b9792a6b7011813b1f1bac3e0"
+  },
+  "release300/assets/core/fuge-20.webp": {
+    "width": 1024,
+    "height": 865,
+    "bytes": 171976,
+    "sha256": "237f6d699d2d1b30609fef4c3e7cbf1d0226dc5fe09f138c3ce33b7992c1f554"
+  },
+  "release300/assets/core/fuge-21.webp": {
+    "width": 1024,
+    "height": 867,
+    "bytes": 169844,
+    "sha256": "2778ea6a65372e965d9464156a256b042334a318c5890a817434cc690a951c35"
+  },
+  "release300/assets/core/fuge-22.webp": {
+    "width": 1024,
+    "height": 868,
+    "bytes": 192100,
+    "sha256": "ed0e1368c74a35944de21a6810e42820cf34e50182ac13593734f67ac80af3ae"
+  },
+  "release300/assets/core/fuge-23.webp": {
+    "width": 1024,
+    "height": 866,
+    "bytes": 175520,
+    "sha256": "d7b5351e8022d80c607179ffda8babd0c499654c25e5a2cf1e12933fe0c14e52"
+  },
+  "release300/assets/core/jingshiyu-01.webp": {
+    "width": 460,
+    "height": 366,
+    "bytes": 71692,
+    "sha256": "9f656f91d66da192f0d91161cfa8c01af2a83dad731688124416df43ca387f38"
+  },
+  "release300/assets/core/jitaishan-01.webp": {
+    "width": 460,
+    "height": 306,
+    "bytes": 40880,
+    "sha256": "be156900ea3a3c31c6f22f30eda9b40e857f469a13cde56351a25a5bbde3eabe"
+  },
+  "release300/assets/core/langya-01.webp": {
+    "width": 1400,
+    "height": 1400,
+    "bytes": 287682,
+    "sha256": "e895bf74bb15e858ad079d3cfe15c8b6f1fc2e091dd06a851d873c0fe3cb72c5"
+  },
+  "release300/assets/core/liqi-01.webp": {
+    "width": 552,
+    "height": 1024,
+    "bytes": 76964,
+    "sha256": "d46fcaa06f776955c406384af6cf743bc8ee00ece9572ece276ce09f2457e871"
+  },
+  "release300/assets/core/liqi-02.webp": {
+    "width": 400,
+    "height": 364,
+    "bytes": 42798,
+    "sha256": "1434d726bd4a06e36499f3f340491cb8db3aa5234cbaac1442475560051c3147"
+  },
+  "release300/assets/core/liqi-03.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 37490,
+    "sha256": "2bdd320f91229266202f3ddb2d4760222fb0739291591a68005a5d60a4f9302d"
+  },
+  "release300/assets/core/liqi-04.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 39518,
+    "sha256": "3b27b478f227dce2f475975fd459802be3cdcede28140f835fdaf7eebc8eb9e0"
+  },
+  "release300/assets/core/liqi-05.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 35868,
+    "sha256": "65c9e73ccfcea076e20c003e76011b6163e0c3ed72e5c774c3811f45a12310f9"
+  },
+  "release300/assets/core/liqi-06.webp": {
+    "width": 400,
+    "height": 362,
+    "bytes": 43138,
+    "sha256": "9df9cbd72bf578698ba096511a13c77389fd8ea0814c030c17678fdba6cd7fb3"
+  },
+  "release300/assets/core/liqi-07.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 36582,
+    "sha256": "b012dcc9e310a38c77ccb1efa3c60d9de7cc1080336fad93ed04fbf45353f090"
+  },
+  "release300/assets/core/liqi-08.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 35728,
+    "sha256": "eba4bc46b8101a38d83e12621e36434f14e2fb70de6f8b57ba89fe6dd562e617"
+  },
+  "release300/assets/core/liqi-09.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 35534,
+    "sha256": "944a8bc4b36012df80d4bb68e41c3f717b6a6762a27332fe476d56151a5da758"
+  },
+  "release300/assets/core/liqi-10.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 36490,
+    "sha256": "7064fbf045fdbe72b421f9a5d1be960f0f9a0f0d2a7df3abcc7f4ac689d774d1"
+  },
+  "release300/assets/core/liqi-11.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 36766,
+    "sha256": "c7e183375582e86c8a573c8a9c2067d4aeee39f564c4520cd97eb4f1d89ee5ac"
+  },
+  "release300/assets/core/liqi-12.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 38548,
+    "sha256": "8ec08fbea64668f976354ee528f3d024b8d9864128d9d6540cf569afb48ffac3"
+  },
+  "release300/assets/core/liqi-13.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 39392,
+    "sha256": "ab4778585c35b9fe93f0dce02714d5cc8610300153fb8387e7c17e8847103b89"
+  },
+  "release300/assets/core/liqi-14.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 39840,
+    "sha256": "4530f03bd35af3e65941604d7275e9b581249bdf1015af768ba970a10e57f54b"
+  },
+  "release300/assets/core/liqi-15.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 32952,
+    "sha256": "5cb4f5fcae6b46095577221c7c190357229dee5cae9d65da050fbfcb366855dd"
+  },
+  "release300/assets/core/liqi-16.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 32952,
+    "sha256": "5cb4f5fcae6b46095577221c7c190357229dee5cae9d65da050fbfcb366855dd"
+  },
+  "release300/assets/core/liqi-17.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 36330,
+    "sha256": "a1dc88193672401a9f8f5fed972b9f06db1245a66edc1683fef7413fc813d66e"
+  },
+  "release300/assets/core/liqi-18.webp": {
+    "width": 400,
+    "height": 349,
+    "bytes": 29814,
+    "sha256": "6c378ebb6d34e9a53dc3ef2b428200150909738d0315986f07ca14542e88a815"
+  },
+  "release300/assets/core/liqi-19.webp": {
+    "width": 552,
+    "height": 1024,
+    "bytes": 76964,
+    "sha256": "d46fcaa06f776955c406384af6cf743bc8ee00ece9572ece276ce09f2457e871"
+  },
+  "release300/assets/core/liqi-20.webp": {
+    "width": 1024,
+    "height": 952,
+    "bytes": 252170,
+    "sha256": "a380e5adb3310c74587fd12e080e2f3d67a5dec60deaa2aeea88b545215a74d0"
+  },
+  "release300/assets/core/liqi-21.webp": {
+    "width": 1024,
+    "height": 939,
+    "bytes": 244454,
+    "sha256": "617f0f682c5685d970fd289953b903329dbe3308438f977977fd9014b6ef2e47"
+  },
+  "release300/assets/core/liqi-22.webp": {
+    "width": 1024,
+    "height": 948,
+    "bytes": 240142,
+    "sha256": "7329da4c2e9616f92b7d876bf38a147e4702a6904e4f20c2f5ddc41305743e34"
+  },
+  "release300/assets/core/liqi-23.webp": {
+    "width": 1024,
+    "height": 972,
+    "bytes": 236660,
+    "sha256": "56214ec07ff855685cb083704825dfc8edf8572c4179494fba50e02b0dd5f0db"
+  },
+  "release300/assets/core/liqi-24.webp": {
+    "width": 1024,
+    "height": 950,
+    "bytes": 276730,
+    "sha256": "532d94a8a81f439f7e92fe21d821e2db3b425d4a1c65df90f2fbf067f8ada2df"
+  },
+  "release300/assets/core/liqi-25.webp": {
+    "width": 1024,
+    "height": 935,
+    "bytes": 244464,
+    "sha256": "c98bba18a81b71a107826eedf4ee6a9d073f2d3ee7d893909241947e75517d85"
+  },
+  "release300/assets/core/liqi-26.webp": {
+    "width": 1024,
+    "height": 957,
+    "bytes": 219528,
+    "sha256": "f4cda53be4a9b431ee98c2d908e0bcfc3fa7cac3c0a011a8f5446898e773677c"
+  },
+  "release300/assets/core/liqi-27.webp": {
+    "width": 1024,
+    "height": 957,
+    "bytes": 247842,
+    "sha256": "af03dc1a0d7ff115d06983523d0597e2d9cb813487738fc8b863f66bf89f566d"
+  },
+  "release300/assets/core/liqi-28.webp": {
+    "width": 1024,
+    "height": 940,
+    "bytes": 238826,
+    "sha256": "3055a938a2c633cad072993c6bf0dfa03477057c894082b80b83dd7edd561217"
+  },
+  "release300/assets/core/liqi-29.webp": {
+    "width": 1024,
+    "height": 955,
+    "bytes": 266604,
+    "sha256": "6c9814be5624a7e23dcfca3d2728008c9f4ddcd1008160e388c3217b19cf4098"
+  },
+  "release300/assets/core/liqi-30.webp": {
+    "width": 1024,
+    "height": 950,
+    "bytes": 287918,
+    "sha256": "9eedebac50c5f4c8f8ba058e6dc061c63a9660d3b44219f5923446dd820b2f66"
+  },
+  "release300/assets/core/liqi-31.webp": {
+    "width": 1024,
+    "height": 946,
+    "bytes": 268056,
+    "sha256": "93044c9a7a35de306f72ff7a42b83f8353c011f0953dcf81b6cf2100418644b5"
+  },
+  "release300/assets/core/liqi-32.webp": {
+    "width": 1024,
+    "height": 939,
+    "bytes": 283452,
+    "sha256": "10202777c7b013a6d76e0c351658e042611b74da7e4abf4ace47394c9beb41ca"
+  },
+  "release300/assets/core/liqi-33.webp": {
+    "width": 1024,
+    "height": 955,
+    "bytes": 264384,
+    "sha256": "3f10e3d5fe83599596929024efd30aa4c6b40b62231b8933dad08497212cf28a"
+  },
+  "release300/assets/core/liqi-34.webp": {
+    "width": 1024,
+    "height": 960,
+    "bytes": 224704,
+    "sha256": "e214547867440d03f12a35ab1afde247ea4a0effebdf91d47095d4de0df77b35"
+  },
+  "release300/assets/core/liqi-35.webp": {
+    "width": 1024,
+    "height": 953,
+    "bytes": 179900,
+    "sha256": "cbf9845b29231b58bc3a5a16c932242b06590b4ed2e2ab58ce41291efd5dd8a1"
+  },
+  "release300/assets/core/liqi-36.webp": {
+    "width": 1024,
+    "height": 952,
+    "bytes": 179872,
+    "sha256": "5108d4dcc742380050e741308314a53e23d455b2966ab1ff792a5ad5d929dabf"
+  },
+  "release300/assets/core/liqi-37.webp": {
+    "width": 1024,
+    "height": 952,
+    "bytes": 183264,
+    "sha256": "8b4204b83538b4f3468669f18eeb8191d545da076649f1fbdb91ba5dae9bf279"
+  },
+  "release300/assets/core/liqi-38.webp": {
+    "width": 1024,
+    "height": 951,
+    "bytes": 198884,
+    "sha256": "89ebc4a0af4207381653b90a31bfa4adb8a7c075d009622361b2be3bc8f73f33"
+  },
+  "release300/assets/core/liqi-39.webp": {
+    "width": 1024,
+    "height": 955,
+    "bytes": 178840,
+    "sha256": "a4aa81705b0530bdb8b1d5a38aadc87d005174510f1d5cd740c0a195b7e99f89"
+  },
+  "release300/assets/core/taishan-01.webp": {
+    "width": 766,
+    "height": 1024,
+    "bytes": 107022,
+    "sha256": "f6cfd6fde8f005c6a053fd958be4bdc3a5452f03d2cc23775d8cf61658776b4c"
+  },
+  "release300/assets/core/taishan-02.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 96262,
+    "sha256": "feb4bc3439b13a7b2b7f02c10bb8a973ae562a20ce8f2fa6aa13d20e07969417"
+  },
+  "release300/assets/core/taishan-03.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 51536,
+    "sha256": "a469c81af486ed2d1d763badf7ccd39811123679baf191ad2712d1005eb1b245"
+  },
+  "release300/assets/core/taishan-04.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 131004,
+    "sha256": "482da6b408eca8aa487531a247d774789faa3b910ac27bf5062f3b5d3a792893"
+  },
+  "release300/assets/core/taishan-05.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 131650,
+    "sha256": "16c626f4ef8dbf40a6b2bdd939e72d99458efe834a07df8401aab686995aa62f"
+  },
+  "release300/assets/core/taishan-06.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 131516,
+    "sha256": "b07bbb334e9d15fb224c717730d1bb4e721e1b4a8e7f79302ce54e5e17aa209f"
+  },
+  "release300/assets/core/taishan-07.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 58332,
+    "sha256": "94ec57feade79e218e74793d0f1717b25b0c30699aea2895f58c5872710114e9"
+  },
+  "release300/assets/core/taishan-08.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 33622,
+    "sha256": "e933a7a8a59c427423247dddab071b8d516d60eebb7b56cefdb3fa0c91f788b4"
+  },
+  "release300/assets/core/wuchangshuo-shigu-01.webp": {
+    "width": 438,
+    "height": 1500,
+    "bytes": 126556,
+    "sha256": "ac8e9693d6d05c77fcc7e66589b5019183d2c7edfc6f8a9c2a2541fe97ce0fd3"
+  },
+  "release300/assets/core/xiping-01.webp": {
+    "width": 1675,
+    "height": 1674,
+    "bytes": 428488,
+    "sha256": "b334b465df35a0381481c3cd6bfe1e8ad664a607ecec93e5bf126721ca8cbb45"
+  },
+  "release300/assets/core/xixia-1.webp": {
+    "width": 700,
+    "height": 467,
+    "bytes": 66424,
+    "sha256": "52672849465ff5c63f6bdd60b3eb4fd2f11b2a0d7e39800595970932a7aba0bb"
+  },
+  "release300/assets/core/xixia-2.webp": {
+    "width": 700,
+    "height": 700,
+    "bytes": 282266,
+    "sha256": "f52845fd490046779c17a61651f7f7cdfff59d1412a17b2d3ea9fe333603c671"
+  },
+  "release300/assets/core/xuanmi-01.webp": {
+    "width": 2600,
+    "height": 1948,
+    "bytes": 277460,
+    "sha256": "c3dfd6aad52885ad65bfa32c07f1c989094f5634e1c818834f02fa4c754235a2"
+  },
+  "release300/assets/core/xuanmi-02.webp": {
+    "width": 2600,
+    "height": 1946,
+    "bytes": 476170,
+    "sha256": "3930ab479164578e89b5a4f6664d4435c8bc97688c67459ae298698d4f33d1a5"
+  },
+  "release300/assets/core/xuanmi-03.webp": {
+    "width": 2600,
+    "height": 1946,
+    "bytes": 486304,
+    "sha256": "2f0f2447f94de2df5b1b510dc8681e3e3910b3c76d6a44cb7251d8140ad9ebf5"
+  },
+  "release300/assets/core/xuanmi-04.webp": {
+    "width": 2600,
+    "height": 1949,
+    "bytes": 468192,
+    "sha256": "29ca4a4c38ab9a5b6a5470d89b8e806217ee8f3fef938f51056953f46076484e"
+  },
+  "release300/assets/core/yanta-01.webp": {
+    "width": 766,
+    "height": 1024,
+    "bytes": 37478,
+    "sha256": "21169bd2c75ff550a440f25002f8e4b900db7629aa9fa56a4908df908c2360aa"
+  },
+  "release300/assets/core/yanta-02.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 157684,
+    "sha256": "c9edac11d01ce3bfe09e7d4ef189ce4e05cd3e5437c19f825e1b34dc9f11c699"
+  },
+  "release300/assets/core/yanta-03.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 63842,
+    "sha256": "f035e220630492c838aa585da2f07bbbfbaf7bace1d13a9a6f84a20ff1f5c1b5"
+  },
+  "release300/assets/core/yanta-04.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 77498,
+    "sha256": "eb480340bfaf8a4db3e5915d36451ef40c3a9d931e911d16fd4765dfcfca7611"
+  },
+  "release300/assets/core/yanta-05.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 76864,
+    "sha256": "b230d2a514a78a40757b3370e24eeb746d89729583d810029c0ae510bafafa0f"
+  },
+  "release300/assets/core/yanta-06.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 72848,
+    "sha256": "2343da041d5e73836ffcb4623f72a6481c89d2e5534635e231f8530c3c52a89c"
+  },
+  "release300/assets/core/yanta-07.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 73730,
+    "sha256": "19b343764769da49ad5f1fff54a866990f162cb74848b9d27b81bfa60be3a07a"
+  },
+  "release300/assets/core/yanta-08.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 68020,
+    "sha256": "f5f1e861a3b589a122018983c674ef8888fea255dd66e847bec4c0a71f6461c1"
+  },
+  "release300/assets/core/yanta-09.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 65024,
+    "sha256": "2dd6171e9a5d7673983de4a82e377c37ad8a3645daf2dd1df3873c7786f88901"
+  },
+  "release300/assets/core/yanta-10.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 68250,
+    "sha256": "f143fedb77bf03d15cf7e2a50c2c67a5a480509f43ec0f21c18c5ee17fbee338"
+  },
+  "release300/assets/core/yanta-11.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 69048,
+    "sha256": "638dea1aac3e42b6dafa4f14bda557057a94c79db6eb2e88c43d19dd62df5800"
+  },
+  "release300/assets/core/yanta-12.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 69648,
+    "sha256": "c4233de332211cc95bda3e3281fa4e68bf572f26d5949b145e80dc857305b2a5"
+  },
+  "release300/assets/core/yanta-13.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 69510,
+    "sha256": "79fdb6d51640327714c90db065616c0518e600aef2494f1e65bc3326736730e5"
+  },
+  "release300/assets/core/yanta-14.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 69098,
+    "sha256": "2113fbee137bb26af06fabd79eebf89e4687358c16bba9556b429700a98338da"
+  },
+  "release300/assets/core/yanta-15.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 69366,
+    "sha256": "c6db1d8df44b00c512c8f03064a17b621027897c9fb9bbabbd0758cb7176c84d"
+  },
+  "release300/assets/core/yanta-16.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 68900,
+    "sha256": "6053f58627cd31152fbd553d84b64a7ef894d0878b25a27e550df971fa839953"
+  },
+  "release300/assets/core/yanta-17.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 62176,
+    "sha256": "b944d176f3de4a1576f5c226619e1885c00302c69d8c7060376e85916ef1f79b"
+  },
+  "release300/assets/core/yanta-18.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 76316,
+    "sha256": "91f6aade5bf448502ab34264d66b8ca45bea3bb4631f8bcd7367acbbe757a4a7"
+  },
+  "release300/assets/core/yanta-19.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 75066,
+    "sha256": "71ec308e5b3e4f87d89b6a5ca9b659d18109611fe794f208b3059ebc4730fe81"
+  },
+  "release300/assets/core/yanta-20.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 72268,
+    "sha256": "6e58c6098b9a3100b7d9da54ef8c4658b32a4230c7c7af52a92a86d77fbc8e3c"
+  },
+  "release300/assets/core/yanta-21.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 74528,
+    "sha256": "65189518ba26060757b6195f0cbb1e1f456732bcafddcd1c74a330607ee23a83"
+  },
+  "release300/assets/core/yanta-22.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 70742,
+    "sha256": "2fdd0cb4d743d760065e05bc6507437c63710b4dfda16aedfc2cc31f613943cf"
+  },
+  "release300/assets/core/yanta-23.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 77778,
+    "sha256": "ec98eda04112237f74d986ebe632e0b58232df9a33fd84dc892be9030d35da23"
+  },
+  "release300/assets/core/yanta-24.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 76878,
+    "sha256": "31c1272868666050a72ae66fe6f3707e441a85604fb1b183a924d4fd62acd041"
+  },
+  "release300/assets/core/yanta-25.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 75326,
+    "sha256": "534063dd4411a8d97535da63a3666fe7787aa647b4a138b2ce008c1b2f7ca0f4"
+  },
+  "release300/assets/core/yanta-26.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 76226,
+    "sha256": "d911cdfc4266e475398c27b3365a9e4bbbb1777edb6870e315b0ad0a5f54c98b"
+  },
+  "release300/assets/core/yanta-27.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 67962,
+    "sha256": "5ae0230f7b54a9f59952932b7d9e0af750ec0034349d95eb19a5065df0f1030f"
+  },
+  "release300/assets/core/yanta-28.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 68714,
+    "sha256": "fdf7bd40bdf9758778cfcc9517e01cc495e6d1f3458ba4b8d2ce56cf0dfabf00"
+  },
+  "release300/assets/core/yanta-29.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 78952,
+    "sha256": "c42c1af7ec4de2380f18e9169edb6e465f0efd00b829d543c1279a591306ff9c"
+  },
+  "release300/assets/core/yanta-30.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 73300,
+    "sha256": "7389e2656b1fac995aedcaad37cb32306d037ae089f7406b16d8cd19e2632c07"
+  },
+  "release300/assets/core/yanta-31.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 70750,
+    "sha256": "727f296de8bf6ec9eb10bb012292cf7b66630b360afadf981e1a2e50181d4f9b"
+  },
+  "release300/assets/core/yanta-32.webp": {
+    "width": 1024,
+    "height": 766,
+    "bytes": 65600,
+    "sha256": "cf3eb61696138bd9c2fcf5a3f8dbf8e09fd7b43d1f56eb8ed01dba0e52f08618"
+  },
+  "release300/assets/core/yuanchang-01.webp": {
+    "width": 626,
+    "height": 439,
+    "bytes": 42100,
+    "sha256": "c482b0861ed61c101b21b42eab5d7d92d10945918571d96d7e91be150a64eea8"
+  },
+  "release300/assets/core/zhanghan-01.webp": {
+    "width": 1024,
+    "height": 817,
+    "bytes": 144764,
+    "sha256": "3b5a30a9bb3a09cd3b7c08bfa04657f06fb66c63ee23eae09c2bb89bc3fb020a"
+  },
+  "release300/assets/core/zhanghan-02.webp": {
+    "width": 1024,
+    "height": 742,
+    "bytes": 113072,
+    "sha256": "5a6209f365cbc82911284f8b0ff65945f4dfb7f5ffc48dc1991ba8c15d9b3159"
+  },
+  "release300/assets/core/zhengshi-01.webp": {
+    "width": 323,
+    "height": 350,
+    "bytes": 43708,
+    "sha256": "c228a14bd4312f2d965bf695b2088ceda300b7b970ba673afc8d5f4141da761b"
+  },
+  "release300/assets/core/zhongqiu-01.webp": {
+    "width": 1258,
+    "height": 500,
+    "bytes": 117478,
+    "sha256": "b42abcfe22c87f9bedfa7dbefd026a4f2d588fb1887e96387b6c2834f8cb7735"
+  },
+  "release300/assets/manuscripts-collector/caishi247-1.webp": {
+    "width": 1258,
+    "height": 500,
+    "bytes": 197636,
+    "sha256": "bd80a25a9f24706fa83c047cd298513afd78540f05ae68a750f5ca909667064d"
+  },
+  "release300/assets/manuscripts-collector/kushu247-1.webp": {
+    "width": 450,
+    "height": 600,
+    "bytes": 84610,
+    "sha256": "6408b0e36647160f524b714e2f103419229c6e840fa9e90dfce7b5007af90cc9"
+  },
+  "release300/assets/manuscripts-collector/kushu247-2.webp": {
+    "width": 450,
+    "height": 600,
+    "bytes": 86588,
+    "sha256": "81a8107ad0577a690a70d51745e5761c38b275ebf806aa6ff6a8e9f418ddff8c"
+  },
+  "release300/assets/manuscripts-collector/kushu247-3.webp": {
+    "width": 450,
+    "height": 600,
+    "bytes": 85992,
+    "sha256": "51ba4ab0a5f0d1444b80eaec62bb823eb768121fbd1d073f426e69fd5bac0a16"
+  },
+  "release300/assets/manuscripts-collector/luoshui247-1.webp": {
+    "width": 1258,
+    "height": 500,
+    "bytes": 192050,
+    "sha256": "ef147998d351d3497f024c7e02000a8762e6b6b751b89c260709eebbd4ad0ca3"
+  },
+  "release300/assets/manuscripts-collector/milan247-1.webp": {
+    "width": 1258,
+    "height": 500,
+    "bytes": 173370,
+    "sha256": "ed47130f298431a08e157ed1c97a8606ec0cfa4d0b1186421888752c26279ad7"
+  },
+  "release300/assets/manuscripts-collector/yingguang247-1.webp": {
+    "width": 2000,
+    "height": 1874,
+    "bytes": 860986,
+    "sha256": "58411072e26684a72e7159dc5ee8bf2136cd161ea9b0cc7de8400e9f2903078a"
+  },
+  "release300/assets/manuscripts-extra/kuaiji-1.webp": {
+    "width": 1095,
+    "height": 2114,
+    "bytes": 1215344,
+    "sha256": "74f893d23c1037ad9681658b8bcccb71341e446caaabe97369476a6204be3457"
+  },
+  "release300/assets/manuscripts-extra/kuaiji-2.webp": {
+    "width": 1000,
+    "height": 1930,
+    "bytes": 875362,
+    "sha256": "854e59c17282e8aac4bb6b164db270297a083e9e788ae7b584bee0074db8d1a6"
+  },
+  "release300/assets/manuscripts-extra/shiqi-1.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 38704,
+    "sha256": "97d47c3595e96337efb64c21cf917fdb7e006dbbc6481e696a4ca50ad6c07f84"
+  },
+  "release300/assets/manuscripts-extra/shiqi-10.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 43736,
+    "sha256": "2e243a9a79753ce8d42ad58e0a71e5871c38c71a6baf2c2aa89f8d0d822ef19f"
+  },
+  "release300/assets/manuscripts-extra/shiqi-11.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 41850,
+    "sha256": "4301234ef81cb5d4d8fd367fd325d2a7c46b8b29a33460a335b4626bf80e6447"
+  },
+  "release300/assets/manuscripts-extra/shiqi-12.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 45180,
+    "sha256": "2d1ef7247cf78ab37525d46f601168f34ee6c8c2cd3a0ae0790800918e977795"
+  },
+  "release300/assets/manuscripts-extra/shiqi-13.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 45340,
+    "sha256": "dee0284ef33d63402810dfca851eb2f6a22d589e9d6b86e96507ad2e95ef55ab"
+  },
+  "release300/assets/manuscripts-extra/shiqi-14.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 41814,
+    "sha256": "760410baffb9d55dcc9885851f564d0ef81eeab377cb7b39781b5a8cf35b9c4e"
+  },
+  "release300/assets/manuscripts-extra/shiqi-15.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 42200,
+    "sha256": "777d3b10f7e5ede9e4c8490421c6cccb5718587dd8e2655a45e2f9837cba480e"
+  },
+  "release300/assets/manuscripts-extra/shiqi-16.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 43696,
+    "sha256": "a7ac683c24ccb4a4d271673f099953c741ad1440b1c6ad8690bf883868b4d077"
+  },
+  "release300/assets/manuscripts-extra/shiqi-2.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 41704,
+    "sha256": "20799754f72b88917fc26a837f9b7602b5c4d54df034ea820feab4a06952f585"
+  },
+  "release300/assets/manuscripts-extra/shiqi-3.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 44208,
+    "sha256": "05f24606acaed30bf90e400ac5fff66c04f3a41827703e3ae499337931057956"
+  },
+  "release300/assets/manuscripts-extra/shiqi-4.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 43568,
+    "sha256": "529e56935f675fb35f01f1348766bde1079c39ed80aaab7a43dc2eb693464f20"
+  },
+  "release300/assets/manuscripts-extra/shiqi-5.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 44398,
+    "sha256": "5057b1a23817bbcc41fa71a2913da11f3b75433e3be562e2ee3e8a2888f661ed"
+  },
+  "release300/assets/manuscripts-extra/shiqi-6.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 43484,
+    "sha256": "93ea0378b622157ebe2855886f9f64ac6eb5c221b7d8929974189ccb6276aee0"
+  },
+  "release300/assets/manuscripts-extra/shiqi-7.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 43946,
+    "sha256": "8c4d80b19f59bdde4cb210c3f0f3b66a934f764e205fb455fcb154a3bcbef05c"
+  },
+  "release300/assets/manuscripts-extra/shiqi-8.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 42460,
+    "sha256": "d07c87f5c2b02f5a4b5f47b4e0a2e55bec1db60b7bfae2ef2f8ae61c08b352c4"
+  },
+  "release300/assets/manuscripts-extra/shiqi-9.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 44184,
+    "sha256": "e8354a7d679c964cc5faa71d7d6f4fe4f94f690bc2f3b26336c6d176eabd39a7"
+  },
+  "release300/assets/manuscripts-extra/yuanan-1.webp": {
+    "width": 285,
+    "height": 540,
+    "bytes": 93046,
+    "sha256": "997b82281229f46ce4df25cb541b22794759a9633f119548640b43b99d16832c"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-1.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 288344,
+    "sha256": "53be39a24c7fa57f44f93eccdf61ff774514d342052e06f7d248dc3aa1a6e19e"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-10.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 557236,
+    "sha256": "d5065141ff3612c3c00e87fe311f15a22b359ec1af3492aa819140c9f8b806c6"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-11.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 526342,
+    "sha256": "1a9ae20d7803ac72d07c576b3533d8a69aa0781033f85946c1977cc875ec0777"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-12.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 567358,
+    "sha256": "3f1d521e6226fcfe99c97c80c0a02b94f436530a1bef08b0f7c640902872235a"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-2.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 333236,
+    "sha256": "0e1f475a3567479586064342d807e8e08c3011a27e4855ce5aed32bb5d209424"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-3.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 538478,
+    "sha256": "fbb86b3e772450d7b329f453b4f7a783235212dc89cba5c55b028f3f1c345339"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-4.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 536664,
+    "sha256": "a5045393fb394ebced614d9ff2af316ae39460a1ab7b642337484989cd6e8760"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-5.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 528362,
+    "sha256": "99d293da000286dd3c08fec79e2ad7c6d7abb6405b0cf50dbaf12998498064af"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-6.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 517456,
+    "sha256": "da18a338469d07d8ce0f87500898471f6bbd697ee880c37e89823915d3f35b5c"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-7.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 554620,
+    "sha256": "d75ad7953458678ac0ae2c6815441992ea5c4034c583f71ea5ab1761267d403b"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-8.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 566268,
+    "sha256": "4b9c8ec231047fbd5ffb3e41f44c9059eebc9036a3a6b415ed151cddf7c5a677"
+  },
+  "release300/assets/manuscripts-extra/zhangqian-9.webp": {
+    "width": 1800,
+    "height": 1571,
+    "bytes": 541784,
+    "sha256": "da26d0dfb0b1985d194e53a1bb032a5fd76b13a95b29d2214f309d635972378c"
+  },
+  "release300/assets/manuscripts/huangting-1.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 63348,
+    "sha256": "c1b3d1e203c43c0decda98b2996b1952a40fa9593a9fd89f7bb7302a5047c6a3"
+  },
+  "release300/assets/manuscripts/huangting-2.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 64688,
+    "sha256": "bddd762c06b6e7e73c94d00227310b8cd2f15af466d3f21e0ccbdb20a3a30798"
+  },
+  "release300/assets/manuscripts/huangting-3.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 61004,
+    "sha256": "965d69a082a05c55cbdc19d2b455a2707a540db4ee0f011641c87b38d30973ef"
+  },
+  "release300/assets/manuscripts/huangting-4.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 62254,
+    "sha256": "7bdac76a9332840dd2a059c9c2a087a5b0a3b3c3d2e0e87893566f1bfe3ca131"
+  },
+  "release300/assets/manuscripts/huangting-5.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 62328,
+    "sha256": "3a7b650523fc236e31df2c7b5e0dbe58a085ad11f9607b0e129aeeca7c3d4aae"
+  },
+  "release300/assets/manuscripts/huangting-6.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 35726,
+    "sha256": "39a8c1a02994d1ad2034b2b0b43384136b999f12460ff877686fa670b86abea6"
+  },
+  "release300/assets/manuscripts/kuaixue-1.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 47972,
+    "sha256": "8ecf2794ac0435c90da8f8b1355756c27f2ee536d2e37b751b6df28aa2b1cd88"
+  },
+  "release300/assets/manuscripts/kuaixue-10.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 67708,
+    "sha256": "cb8a6d65ee3d1368edcbc6e373548ef1c8bc7b259b0caf2e2850daf46f7e3358"
+  },
+  "release300/assets/manuscripts/kuaixue-11.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 69992,
+    "sha256": "9d7318a26222fb9833bb154ea006316900d7225a2d82328ddb0e88cab4a25be2"
+  },
+  "release300/assets/manuscripts/kuaixue-12.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 71150,
+    "sha256": "71ab06887e2b6c7266fc86d363d56a9ae01ff2f2f2413acea7d6a29e99d44844"
+  },
+  "release300/assets/manuscripts/kuaixue-2.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 63674,
+    "sha256": "febf26f59b51631fea9eca1c2812be82697fa176459dae3c67bf0fb7ff8f7af8"
+  },
+  "release300/assets/manuscripts/kuaixue-3.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 71068,
+    "sha256": "1bc6483108d2b90b4007f6a1421062fba19e9e8ec4f9adfb46ef48f61d1eb259"
+  },
+  "release300/assets/manuscripts/kuaixue-4.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 57366,
+    "sha256": "522382c85582564d06e16939271ce21d1b0cece6448f7d647cfa8a81241c8224"
+  },
+  "release300/assets/manuscripts/kuaixue-5.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 66148,
+    "sha256": "8f0b6d498781b2da7ae96dd9f5193c6c0570c3665a6657e41543fafee540dc1a"
+  },
+  "release300/assets/manuscripts/kuaixue-6.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 54436,
+    "sha256": "edd47c8828c0b46cf272f90adbe51923bb6fda53107aa51ce2e295583a599d69"
+  },
+  "release300/assets/manuscripts/kuaixue-7.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 70634,
+    "sha256": "ee9b6d5a0d34f2c531a30cbfe4171eeffd2927335b3e2cb4ae0f165984041930"
+  },
+  "release300/assets/manuscripts/kuaixue-8.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 74712,
+    "sha256": "c86363d3b6717de47386b69a9cb482a73044e2d39b0abe791006cbe1f1ae1f63"
+  },
+  "release300/assets/manuscripts/kuaixue-9.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 67856,
+    "sha256": "a219aa47c5335c7d8f8c607932f0fbe616edd5800dbde1f8c7879461ed69418d"
+  },
+  "release300/assets/manuscripts/leyi-1.webp": {
+    "width": 600,
+    "height": 450,
+    "bytes": 54380,
+    "sha256": "ea771c2045cca27fd6c04ed367161b34c93a4d92c96eaa5c6331fc97ab38f931"
+  },
+  "release300/assets/manuscripts/leyi-2.webp": {
+    "width": 600,
+    "height": 450,
+    "bytes": 55276,
+    "sha256": "4d1a4483a2c709af1556af7cb3c00ffb8ecc4b902dd5acfbbdd6e01ba3110809"
+  },
+  "release300/assets/manuscripts/leyi-3.webp": {
+    "width": 600,
+    "height": 450,
+    "bytes": 48262,
+    "sha256": "562b82de3fe9dfbeb7921804b6950d6af871e48d423cf8107839e8c5aa0df422"
+  },
+  "release300/assets/manuscripts/luoshen13-1.webp": {
+    "width": 482,
+    "height": 900,
+    "bytes": 47264,
+    "sha256": "08a0b8340c9c05159005bccb4ed6720b4fce8f4114c3ba5bddcf2e52639fe0ff"
+  },
+  "release300/assets/manuscripts/luoshen13-10.webp": {
+    "width": 900,
+    "height": 835,
+    "bytes": 129508,
+    "sha256": "cb6f72d1f9c728c02e469817a8cff20a55b8afdf06c90ad45bb999c09a1c6607"
+  },
+  "release300/assets/manuscripts/luoshen13-11.webp": {
+    "width": 900,
+    "height": 831,
+    "bytes": 160566,
+    "sha256": "9e330fd0270c5e4151d7e9ae2ef1100b1b2ccf26fc866f5725d5531b99c52702"
+  },
+  "release300/assets/manuscripts/luoshen13-12.webp": {
+    "width": 900,
+    "height": 830,
+    "bytes": 125230,
+    "sha256": "126e70c563264ddc8a93511b789c762f5e5460369e8ba45adb82d7d675a4d719"
+  },
+  "release300/assets/manuscripts/luoshen13-13.webp": {
+    "width": 900,
+    "height": 835,
+    "bytes": 142218,
+    "sha256": "435a6f563b6c626eebae828a0beda2c0309715c195e3c5b3112837a4ff9f3f3b"
+  },
+  "release300/assets/manuscripts/luoshen13-14.webp": {
+    "width": 900,
+    "height": 827,
+    "bytes": 78920,
+    "sha256": "5ac6fabceeaba5723d3f1f5c41b6a96b736aca190cb80f521966b551616c21f6"
+  },
+  "release300/assets/manuscripts/luoshen13-15.webp": {
+    "width": 591,
+    "height": 900,
+    "bytes": 62976,
+    "sha256": "ff86330e22329ced0379544165d8588cf538e497f0b4b89bb44ab0e4358465d6"
+  },
+  "release300/assets/manuscripts/luoshen13-2.webp": {
+    "width": 900,
+    "height": 837,
+    "bytes": 92284,
+    "sha256": "9a0abb9b7a2e5066b6d1959ca6c193da072883af02852e76d4e48bc713a84e9a"
+  },
+  "release300/assets/manuscripts/luoshen13-3.webp": {
+    "width": 900,
+    "height": 824,
+    "bytes": 159166,
+    "sha256": "69c2fc813233973772959a402a20289175f160c64865774fb4da51b70563bf16"
+  },
+  "release300/assets/manuscripts/luoshen13-4.webp": {
+    "width": 900,
+    "height": 829,
+    "bytes": 150102,
+    "sha256": "7cef0b61fe4a5670c0648af85450343d24140aded6d1e3ca7152ea0a86a760c2"
+  },
+  "release300/assets/manuscripts/luoshen13-5.webp": {
+    "width": 900,
+    "height": 837,
+    "bytes": 157018,
+    "sha256": "a8a2d3b6741d16338f47324965134043afc59095cdd0e050ef85a02bb29417a8"
+  },
+  "release300/assets/manuscripts/luoshen13-6.webp": {
+    "width": 900,
+    "height": 842,
+    "bytes": 158550,
+    "sha256": "764f4a833d71de01cfcf5ff82f2ac0e7718227bb962aa8ac39724b0e510562d3"
+  },
+  "release300/assets/manuscripts/luoshen13-7.webp": {
+    "width": 900,
+    "height": 835,
+    "bytes": 107846,
+    "sha256": "aabb375b2faddb119946d68b3c8d555509830bd4499f898c9a28e0a305450b75"
+  },
+  "release300/assets/manuscripts/luoshen13-8.webp": {
+    "width": 900,
+    "height": 840,
+    "bytes": 165398,
+    "sha256": "84e96f76ee877389eb07f239c71bb9b41978df0c61a98930261c7ae20369b863"
+  },
+  "release300/assets/manuscripts/luoshen13-9.webp": {
+    "width": 900,
+    "height": 822,
+    "bytes": 131442,
+    "sha256": "196654d95bb8507f7bc0151bbfc6aa215305f83d0c01cc0f7e0becb129fe58b3"
+  },
+  "release300/assets/manuscripts/mengdian-main.webp": {
+    "width": 484,
+    "height": 374,
+    "bytes": 52536,
+    "sha256": "7b133073b691a8d4c5d4d269ae647ac2b78cce470b253c3b33399acb408b85d5"
+  },
+  "release300/assets/manuscripts/mengzhao-1.webp": {
+    "width": 1258,
+    "height": 500,
+    "bytes": 109546,
+    "sha256": "5ac3e2fb12e6fd3e86c6017d528c8a5f67b5a130b9aceed4e10e381b997c3c27"
+  },
+  "release300/assets/manuscripts/nikuan-1.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 33432,
+    "sha256": "9498bb1d7ff6140190dfb1c8ca2b1f99a714a4f818d638ff4a445db52e146a4b"
+  },
+  "release300/assets/manuscripts/nikuan-10.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 65614,
+    "sha256": "8916c834f3d382f63169bf1133d32abdaa2e309798cbea7f2e7cc3adf670c54d"
+  },
+  "release300/assets/manuscripts/nikuan-11.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 57214,
+    "sha256": "868580f1dfbe846f7d05db382ffa1b9cca3ef98c0ff0fd5eb1702b5b1f2a3e43"
+  },
+  "release300/assets/manuscripts/nikuan-2.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 52394,
+    "sha256": "a8c92569115cb1dc2871641498b517e909e62659c135818b44599e912f8b6389"
+  },
+  "release300/assets/manuscripts/nikuan-3.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 55826,
+    "sha256": "cf37bbc57d38060dacd350d997d9c84aa29d0fe902bff992d80c10314314c4ff"
+  },
+  "release300/assets/manuscripts/nikuan-4.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 58420,
+    "sha256": "c473ea615e76af27c6f596bf84d1d1f7454959530fd09f011e6f6c76e2426df7"
+  },
+  "release300/assets/manuscripts/nikuan-5.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 60994,
+    "sha256": "1879001a628f49a7decc124e5744957ecbd84abaa4d327da78192122a2942cc5"
+  },
+  "release300/assets/manuscripts/nikuan-6.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 59866,
+    "sha256": "173310f3ccc38f1ef42d4bb01e8627d5c2e288903cc4c1f21dee0266832623f9"
+  },
+  "release300/assets/manuscripts/nikuan-7.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 68746,
+    "sha256": "470c63197003a1f83720ebd07ed2466d146a4fdbd0b8ed01a1cb32b5e5f5c95d"
+  },
+  "release300/assets/manuscripts/nikuan-8.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 66162,
+    "sha256": "77452a1dd42ca59c3ca2e548ef18cbe8c6877b7ab0517ae1e42e4558f5dfe823"
+  },
+  "release300/assets/manuscripts/nikuan-9.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 68574,
+    "sha256": "e81037312bb606b93c3ca013e2f884be19d53e417c988189f350ce9d94a65c70"
+  },
+  "release300/assets/manuscripts/tumu-1.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 42310,
+    "sha256": "1be09134efd3b6843ea41c4362bad5b566045ea6180c879b4af783f0f131d32e"
+  },
+  "release300/assets/manuscripts/tumu-2.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 45800,
+    "sha256": "b6f8aed049db184562142adad34e97462215b4c9ba2415386777bb4fee5ea532"
+  },
+  "release300/assets/manuscripts/tumu-3.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 44052,
+    "sha256": "afcaab9c45bc65517f0f3c3ffa883b4c416afd3bb38642a9f6d448fc9a20ef7b"
+  },
+  "release300/assets/manuscripts/tumu-4.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 44316,
+    "sha256": "560d1b222463541840c5d799838e3b6e3444932b6a37c6da644dfae4ea4daea7"
+  },
+  "release300/assets/manuscripts/tumu-5.webp": {
+    "width": 600,
+    "height": 449,
+    "bytes": 38528,
+    "sha256": "259e9f43a00a9392ecd90c98278e02abe6c22a60c614ae746e68256c1d3730a7"
+  },
+  "release300/assets/manuscripts/wenjinge275-1.webp": {
+    "width": 640,
+    "height": 509,
+    "bytes": 41184,
+    "sha256": "51543564b142c671b69bfa5a40b2018f48111b2aafddcc163d7b6e2764eae53d"
+  },
+  "release300/assets/manuscripts/wenjinge275-2.webp": {
+    "width": 640,
+    "height": 539,
+    "bytes": 29520,
+    "sha256": "1148b8c82dd4d3fdc191c270038cd37a1191912c64536c295f79c7b6fa61d575"
+  },
+  "release300/assets/manuscripts/yongle275-1.webp": {
+    "width": 1000,
+    "height": 750,
+    "bytes": 97006,
+    "sha256": "ede67011a622c6e7fa1a596ca7f629d0b5d97d7df4bfd3b078c4992ccc06024d"
+  },
+  "release300/assets/manuscripts/zhaocheng275-main.webp": {
+    "width": 14173,
+    "height": 562,
+    "bytes": 3232550,
+    "sha256": "a21f1d92632058d1c9a361d67999338a44ebcb9f4f618d8941336a021eb014cb"
+  },
+  "release300/assets/misc/auction-pingan-1.webp": {
+    "width": 900,
+    "height": 265,
+    "bytes": 48318,
+    "sha256": "b1828568ac9cf0cf65323533ac74e1bfbc3bdec2ff776c4a9a5ec87699e51b09"
+  },
+  "release300/assets/misc/baozhi-1.webp": {
+    "width": 554,
+    "height": 331,
+    "bytes": 46058,
+    "sha256": "464ad624a26dff51fcb83b4fb6228c7e10ffd5a415fa801dfa8d4e1ae8ed5e69"
+  },
+  "release300/assets/misc/baozhi-2.webp": {
+    "width": 640,
+    "height": 480,
+    "bytes": 61016,
+    "sha256": "eb3b29432e90411ba10eb17f0c35fce2d0456c59b70c9935c48b18a02149df11"
+  },
+  "release300/assets/misc/chenghuang-1.webp": {
+    "width": 300,
+    "height": 533,
+    "bytes": 70518,
+    "sha256": "fb6773bc89ff8b8597e29a2aa172114ceb9b4fa28dc777f2fcedeb45d4fbba69"
+  },
+  "release300/assets/misc/chenghuang-2.webp": {
+    "width": 640,
+    "height": 1309,
+    "bytes": 73724,
+    "sha256": "d13cdf71e4ee26d7d7a17ae908ac38e81e5486c542ad0afafed8704f98ac2105"
+  },
+  "release300/assets/misc/dong-longshen-1.webp": {
+    "width": 640,
+    "height": 561,
+    "bytes": 59108,
+    "sha256": "b54010bade07129570c49103c2023f240b1fa8662cfec40451195e0912c07650"
+  },
+  "release300/assets/misc/gongfu-1.webp": {
+    "width": 2560,
+    "height": 2157,
+    "bytes": 877324,
+    "sha256": "feaf0f701bc2fe1ad2823a4f81b9c2dd5321b2dc2c07f9c486eae561bc082674"
+  },
+  "release300/assets/misc/gongfu-2.webp": {
+    "width": 1485,
+    "height": 1350,
+    "bytes": 237088,
+    "sha256": "569809c975621f738032c93d265ecb8f516a92df2720b9757ef3442b1242075d"
+  },
+  "release300/assets/misc/guoyouzhi-1.webp": {
+    "width": 700,
+    "height": 535,
+    "bytes": 125730,
+    "sha256": "17d38adcd6cc6e6015140190344d856cedaef36df8dbb3a55db1e014a90a14d6"
+  },
+  "release300/assets/misc/jushi-1.webp": {
+    "width": 400,
+    "height": 296,
+    "bytes": 31920,
+    "sha256": "72c2e7930827a5a650f4d8e715db0d2a4a69a84ecdbea7f1d60d227acd2bb331"
+  },
+  "release300/assets/misc/lisheng-1.webp": {
+    "width": 490,
+    "height": 715,
+    "bytes": 80794,
+    "sha256": "7879612bb40d2a16a2ded65fabe6f9fcbbb5543220bf81711defe043ff8c3a41"
+  },
+  "release300/assets/misc/lisheng-2.webp": {
+    "width": 453,
+    "height": 1300,
+    "bytes": 278208,
+    "sha256": "704791ed0a676774d445efa399dd45398d470825b92972afa970abcebe34bada"
+  },
+  "release300/assets/misc/lizi-1.webp": {
+    "width": 1000,
+    "height": 380,
+    "bytes": 207366,
+    "sha256": "421c3611807b5dbdc2ecd1303eec20732c56f25a980a95994ad1cbd560a5853c"
+  },
+  "release300/assets/misc/rao-hanliu-1.webp": {
+    "width": 4096,
+    "height": 2726,
+    "bytes": 2329312,
+    "sha256": "80af08833904ca705bad9a48d220a4846621216318358fc5e6df38b9392ffa58"
+  },
+  "release300/assets/misc/rao-hanliu-2.webp": {
+    "width": 2000,
+    "height": 741,
+    "bytes": 334742,
+    "sha256": "84982b8fd9ca03302994285d035acf13c73f59cfb50e5a852900e5a178a4c92c"
+  },
+  "release300/assets/misc/rao-hanliu-3.webp": {
+    "width": 2000,
+    "height": 741,
+    "bytes": 468980,
+    "sha256": "2b712c71021db1477b3173af1b28c625dd5f4f2cd1e226ff586b1b75ef324843"
+  },
+  "release300/assets/misc/rao-hanliu-4.webp": {
+    "width": 2000,
+    "height": 742,
+    "bytes": 498284,
+    "sha256": "0a0edb82cd11fbb473bbc41a707a20d3ef86d6444950a69d2b9ee4fd201b47ae"
+  },
+  "release300/assets/misc/rao-hanliu-5.webp": {
+    "width": 2000,
+    "height": 733,
+    "bytes": 497354,
+    "sha256": "0745d8f29d984529731ce430d699c6683f4bfeaa888d8ad337abece5170a22e9"
+  },
+  "release300/assets/misc/rao-hanliu-6.webp": {
+    "width": 2000,
+    "height": 733,
+    "bytes": 465560,
+    "sha256": "28f5c0466f76233bcdfedfe63919ec4007a3e066173a2f1c8a26bf42cab685f9"
+  },
+  "release300/assets/misc/shamenghai-bangshu-1.webp": {
+    "width": 500,
+    "height": 333,
+    "bytes": 33314,
+    "sha256": "be0d328aa5722359a5b2ec504a813b7c66dde600bfe9f8350d7e40d9e679bed6"
+  },
+  "release300/assets/misc/shouchan-1.webp": {
+    "width": 569,
+    "height": 1024,
+    "bytes": 318460,
+    "sha256": "85edfe28dd4bcc946cd85702ff0bbe0ddf24e7941bd9889e623992262dbb0a55"
+  },
+  "release300/assets/misc/songke-zhuangyou-1.webp": {
+    "width": 500,
+    "height": 155,
+    "bytes": 38226,
+    "sha256": "3601d7c625ecb484424d5129c901280f48409e23ff670be5c9136fa83c512922"
+  },
+  "release300/assets/misc/suxian-1.webp": {
+    "width": 640,
+    "height": 428,
+    "bytes": 67970,
+    "sha256": "3997bb996bd6be2fd336c4c99a8b4e063fad4b6436d2a029ac8ccb4dd67c2f67"
+  },
+  "release300/assets/misc/suxian-2.webp": {
+    "width": 472,
+    "height": 342,
+    "bytes": 66606,
+    "sha256": "ec007a08ec46934db994397a32f747444cc355a4d1a3f0e163f8ade27631c837"
+  },
+  "release300/assets/misc/wanan-1.webp": {
+    "width": 640,
+    "height": 426,
+    "bytes": 56536,
+    "sha256": "cfd1ab1d86d35a9fd1e55c718f1e9f2525be0d8b57d759471a0d9749c76172bf"
+  },
+  "release300/assets/misc/wuhou-1.webp": {
+    "width": 251,
+    "height": 500,
+    "bytes": 49854,
+    "sha256": "5a1782c686aa924ed15599d3e4664c1608724499760016edc67ef67ba4c51d97"
+  },
+  "release300/assets/misc/zhao-huangting-1.webp": {
+    "width": 803,
+    "height": 1448,
+    "bytes": 234838,
+    "sha256": "be6f581f3a7cdd04856a1e179b8fe4ed4a74aacf4edbd63c6c23d694cfb8e323"
+  },
+  "release300/assets/misc/zhao-huangting-2.webp": {
+    "width": 1080,
+    "height": 2333,
+    "bytes": 456714,
+    "sha256": "aa06161e2e97b2b4080435dc8d99525c8a8408c6e9e2fb3019ed4708fd55263b"
+  },
+  "release300/assets/misc/zhao-xinjing-1.webp": {
+    "width": 550,
+    "height": 972,
+    "bytes": 131876,
+    "sha256": "5f42da21afb7c6cbd1248e644909afab2ffa651621e508c2021873deee8ddfcb"
+  },
+  "release300/assets/misc/zhao-xinjing-2.webp": {
+    "width": 550,
+    "height": 972,
+    "bytes": 128296,
+    "sha256": "2008f4b0eac9aa4a2ed3eaee53afa662d5c8d4231edcafa41ad2b4cd66969931"
+  },
+  "release300/assets/misc/zhao-xinjing-3.webp": {
+    "width": 550,
+    "height": 972,
+    "bytes": 126338,
+    "sha256": "d9a0fb198d23a5de932b2b1bac564268ad8b4a1b8ad28c44dc6b00a778d4b583"
+  },
+  "release300/assets/misc/zhao-xinjing-4.webp": {
+    "width": 550,
+    "height": 972,
+    "bytes": 125904,
+    "sha256": "cf0c0a89baf5d9f873705a032aeeb4274e88634552527604e66a4cc4e9137234"
+  },
+  "release300/assets/misc/zuiweng-1.webp": {
+    "width": 632,
+    "height": 1352,
+    "bytes": 103554,
+    "sha256": "c41caf4824c890bd28465543c49c495f379363e1c20f5f26eca4a96423a0dde7"
+  },
+  "release300/assets/oracle/oracle-ban298-1.webp": {
+    "width": 1748,
+    "height": 1748,
+    "bytes": 546874,
+    "sha256": "311b19256cdf82a03c9ecf94267cb784a9080b9d96b455f4729f408d7a84d180"
+  },
+  "release300/assets/oracle/oracle-brush298-1.webp": {
+    "width": 479,
+    "height": 600,
+    "bytes": 107088,
+    "sha256": "8742efed771b8d9ea0ec8feca13ea510ae80fb00a68eed02e41eed297054b4e6"
+  },
+  "release300/assets/oracle/oracle-farming298-1.webp": {
+    "width": 1400,
+    "height": 1400,
+    "bytes": 237160,
+    "sha256": "cf70c448c81037ca5584223c16845a48b065c70876e9d6e8d6534700cb4ab321"
+  },
+  "release300/assets/oracle/oracle-fuhao298-1.webp": {
+    "width": 1118,
+    "height": 587,
+    "bytes": 285930,
+    "sha256": "ac596d84f33cf8e2904614b4fc3f774268daff85e5aa671a9dd0d0d241f406d7"
+  },
+  "release300/assets/oracle/oracle-harvest298-1.webp": {
+    "width": 350,
+    "height": 600,
+    "bytes": 65780,
+    "sha256": "d05de17c367e53f4cfb484c30012b96cd7a61bcf78d0ba798f9663f7275dc528"
+  },
+  "release300/assets/oracle/oracle-sacrifice298-1.webp": {
+    "width": 500,
+    "height": 832,
+    "bytes": 41514,
+    "sha256": "883fa4d25d3a4630fde7426c52505c742e87d7b67fe116305a8b1740fdc31bbf"
+  },
+  "release300/assets/oracle/oracle-tufang298-1.webp": {
+    "width": 350,
+    "height": 204,
+    "bytes": 20318,
+    "sha256": "093d3931b1d78f6e220774b13708c527c45dcc7d348b42619cad21ed3b01700d"
+  },
+  "release300/assets/oracle/oracle-zaifeng298-1.webp": {
+    "width": 1606,
+    "height": 1606,
+    "bytes": 121910,
+    "sha256": "60ed29c8c9eadc1bcb3a727c1aa613b6a9c3df934be33c73c8ef30c966baf621"
+  },
+  "release300/assets/oracle/oracle-zhou298-1.webp": {
+    "width": 270,
+    "height": 600,
+    "bytes": 41896,
+    "sha256": "fbd3f38de2e929fca6cb6bde155661508ebb1cac04499174cd83db0ddf50a817"
+  },
+  "release300/assets/oracle/qiang-1.webp": {
+    "width": 646,
+    "height": 956,
+    "bytes": 248828,
+    "sha256": "2e1495cad0dadfc088a9d64b90c2c64aca6ac2b3dddd9cc9ba3fc382611b5059"
+  },
+  "release300/assets/oracle/qiang-3.webp": {
+    "width": 609,
+    "height": 891,
+    "bytes": 240678,
+    "sha256": "b508e2e511593e59b6dcbbce434c9c9b4b5ce10c94f1cccb4af6803eef81563e"
+  },
+  "release300/assets/oracle/qiang-5.webp": {
+    "width": 688,
+    "height": 1134,
+    "bytes": 112058,
+    "sha256": "ae4e7eb8a140da551335b16787b546816f89302b3d06481128dfb14dc88a94d6"
+  },
+  "release300/assets/oracle/qiang-6.webp": {
+    "width": 754,
+    "height": 1134,
+    "bytes": 43112,
+    "sha256": "9847a03be7f69d3155a3ead8f4e593a2ac7d8a8ddd33bed1f08d9adc10353150"
+  },
+  "release300/assets/steles/biluo-1.webp": {
+    "width": 1524,
+    "height": 2600,
+    "bytes": 885488,
+    "sha256": "8e311b2960fc0bac57efb05fb4ea408dd7872c684dda3ed157f4aa2b27a8c777"
+  },
+  "release300/assets/steles/hengfang-1.webp": {
+    "width": 188,
+    "height": 400,
+    "bytes": 30142,
+    "sha256": "b00098e6bb83e3ef21bec03daf597c97993d00965e75bc2db8f16ae19ba0f0c8"
+  },
+  "release300/assets/steles/huashan-1.webp": {
+    "width": 186,
+    "height": 400,
+    "bytes": 27730,
+    "sha256": "4226c0644e18c37fafd36e874c9f8251eba7ffa7fbaf2367640d34f3b8b87d32"
+  },
+  "release300/assets/steles/kaicheng-1.webp": {
+    "width": 2400,
+    "height": 1600,
+    "bytes": 197870,
+    "sha256": "62e7a12e56aa657d46d53a48d5ac70326bf96c75a011e74edbd44f1046260aab"
+  },
+  "release300/assets/steles/kaicheng-2.webp": {
+    "width": 2343,
+    "height": 1562,
+    "bytes": 290586,
+    "sha256": "fc7a310b5aaf2e0d7a6d1ee8f9cdf9a9ca762a845230a9ad27ee1e44be1c32ea"
+  },
+  "release300/assets/steles/mengying-1.webp": {
+    "width": 932,
+    "height": 2600,
+    "bytes": 964734,
+    "sha256": "501310cdde9e9574238428e712554f0c8eb14dad70a550a5adfd36dacaef5af6"
+  },
+  "release300/assets/steles/sanfen-1.webp": {
+    "width": 547,
+    "height": 1181,
+    "bytes": 218858,
+    "sha256": "5d38e49d6e7c47ce0396314b3e5349b1a5dc74a7adb71c48863b9978340c9624"
+  },
+  "release300/assets/steles/shengjiao-1.webp": {
+    "width": 379,
+    "height": 400,
+    "bytes": 33196,
+    "sha256": "057b796611302723bebc16d05d3a8aefd788e7baf8eb750ba4f0181006bd232b"
+  },
+  "release300/assets/steles/shengjiao-2.webp": {
+    "width": 389,
+    "height": 400,
+    "bytes": 33132,
+    "sha256": "4b9180fcbb526788782c5f5fff0202244390ef19fa6bea951e77f9a7d69d647d"
+  },
+  "release300/assets/steles/shengjiao-3.webp": {
+    "width": 388,
+    "height": 400,
+    "bytes": 33592,
+    "sha256": "d69b2ece6e711231a28e6a04ceac2b634cef2f1f3d16b59b00582b6d36443710"
+  },
+  "release300/assets/steles/shengjiao-4.webp": {
+    "width": 384,
+    "height": 400,
+    "bytes": 32474,
+    "sha256": "aefdf5bd2e500ab41afd4b681e35f0215022fb3c798e1a358bc821245c952e2f"
+  },
+  "release300/assets/steles/shengjiao-5.webp": {
+    "width": 394,
+    "height": 400,
+    "bytes": 34654,
+    "sha256": "c1a4f04293c5a912f6ac20841e822179177b50960f2e4e6eaced0f5fb531ca59"
+  },
+  "release300/assets/steles/shichen-2.webp": {
+    "width": 1024,
+    "height": 809,
+    "bytes": 90910,
+    "sha256": "4e26f9124843e0fe2e911d32876aba4e52181d1a2845ac479f8ed10427c3e317"
+  },
+  "release300/assets/steles/shichen-3.webp": {
+    "width": 1024,
+    "height": 823,
+    "bytes": 96706,
+    "sha256": "a26b6da0caf328a377eb028cf3f73bbc0b194817a5650d56e3fdf2f4827faba8"
+  },
+  "release300/assets/steles/shichen-4.webp": {
+    "width": 1024,
+    "height": 805,
+    "bytes": 108434,
+    "sha256": "b0e47d48c2bebf5247c0ed7bdf2104bdd11e210ca0c79ce36fe9645090a431bb"
+  },
+  "release300/assets/steles/shichen-5.webp": {
+    "width": 1024,
+    "height": 811,
+    "bytes": 92590,
+    "sha256": "a912789fb0052dcebe7bf7bf997860b3d1bfa8c01ee135f482d57c03c1785c31"
+  },
+  "release300/assets/steles/shimen-3.webp": {
+    "width": 400,
+    "height": 299,
+    "bytes": 39324,
+    "sha256": "0a2b405663e1d7b825fccfbe4e2688898f0e354239601e21466945529c7d2442"
+  },
+  "release300/assets/steles/shimen-4.webp": {
+    "width": 400,
+    "height": 299,
+    "bytes": 36638,
+    "sha256": "a9e24018c824d51d347de830baeecd05832937efc0be9d374799370b57273517"
+  },
+  "release300/assets/steles/shimen-5.webp": {
+    "width": 400,
+    "height": 299,
+    "bytes": 38380,
+    "sha256": "aca9b20d9d1de7262e3527966320aa0fb76af7a1efb9e56630b47a513430418d"
+  },
+  "release300/assets/steles/shimenming-1.webp": {
+    "width": 569,
+    "height": 600,
+    "bytes": 99144,
+    "sha256": "883a7d44912e9e55e949247056c1d035c13ccb063d048e21ec42409d7cd3a9cc"
+  },
+  "release300/assets/steles/shimenming-2.webp": {
+    "width": 446,
+    "height": 600,
+    "bytes": 77704,
+    "sha256": "897050ec5b861d55376d2a4a9931efbc5d7b3adf75e41a7781b53763bdf44c78"
+  },
+  "release300/assets/steles/shimenming-3.webp": {
+    "width": 446,
+    "height": 600,
+    "bytes": 77944,
+    "sha256": "7271ce06527c2ed517782d29415be57867b1459ae667d9f1479915a8d3ed01b4"
+  },
+  "release300/assets/steles/sishan-2.webp": {
+    "width": 539,
+    "height": 400,
+    "bytes": 41942,
+    "sha256": "10db741cbd49f8bef4bc7051e668942f4ea46f1bb842f3ead215c9fe2080569f"
+  },
+  "release300/assets/steles/sishan-3.webp": {
+    "width": 535,
+    "height": 374,
+    "bytes": 53388,
+    "sha256": "6265026333dc485008dfd66c2919c6f9a36a957bf0711b849d526aa813dfb2f5"
+  },
+  "release300/assets/steles/tianfa-1.webp": {
+    "width": 400,
+    "height": 304,
+    "bytes": 28106,
+    "sha256": "8ba3fb35daea258c3471734665875977b3b7356587c9528959578fd11669ade1"
+  },
+  "release300/assets/steles/tianfa-2.webp": {
+    "width": 400,
+    "height": 304,
+    "bytes": 30988,
+    "sha256": "24e671ed16c069e61b2d65c1065841eb2be6e96372824ce29e2c929db9cf4889"
+  },
+  "release300/assets/steles/tianfa-3.webp": {
+    "width": 400,
+    "height": 295,
+    "bytes": 28638,
+    "sha256": "c2373e11d53b19b923c1e974202415e1429b553019a6faee27af11da7e736525"
+  },
+  "release300/assets/steles/tianfa-4.webp": {
+    "width": 400,
+    "height": 315,
+    "bytes": 31892,
+    "sha256": "6baf89656d81f49fe8605eca78e4aa6058e0d0bea4fa1ab19197f1aa0e87fff9"
+  },
+  "release300/assets/steles/tianfa-5.webp": {
+    "width": 400,
+    "height": 294,
+    "bytes": 29826,
+    "sha256": "ca47b445d7471c2b5b491f3efb2b1f36ffa664dfa0858906dce31e2183b77c28"
+  },
+  "release300/assets/steles/xianyuhuang-1.webp": {
+    "width": 227,
+    "height": 437,
+    "bytes": 28384,
+    "sha256": "ec40d059c5333a6a65f126cceba55d0a63fa9cd79f3e9ec59721338f567426fc"
+  },
+  "release300/assets/steles/xianyuhuang-2.webp": {
+    "width": 232,
+    "height": 446,
+    "bytes": 27040,
+    "sha256": "b4486e6f1878b9a58ec212581c33bf78f256c75f26d2df4cd499a89bd0bfc7f9"
+  },
+  "release300/assets/steles/yanqinli-2.webp": {
+    "width": 1024,
+    "height": 876,
+    "bytes": 158512,
+    "sha256": "291aead71c66dd476ab72695ce3300bd31f573510c20e22e9c7c59601f536bce"
+  },
+  "release300/assets/steles/yanqinli-3.webp": {
+    "width": 1024,
+    "height": 886,
+    "bytes": 168096,
+    "sha256": "1c735680d53c564954f50e020fc415cd2454c6b144ac7ee713122501166b981d"
+  },
+  "release300/assets/steles/yanqinli-4.webp": {
+    "width": 1024,
+    "height": 881,
+    "bytes": 164590,
+    "sha256": "295970cf8a303304d7b84d53143355523b43d83e5f8c4a4bdd1dfeebec06977b"
+  },
+  "release300/assets/steles/yanqinli-5.webp": {
+    "width": 1024,
+    "height": 892,
+    "bytes": 160466,
+    "sha256": "5a80caa3a5aeaac2c77ba24ff2f205ce6c2ad412addaf639e954ac1d778b95f4"
+  },
+  "release300/assets/steles/yihe-1.webp": {
+    "width": 400,
+    "height": 321,
+    "bytes": 29090,
+    "sha256": "bee0863f0054c1491b426314145d303d3094e18bc25d5f37c0d0339cf3772695"
+  },
+  "release300/assets/steles/yihe-2.webp": {
+    "width": 1024,
+    "height": 811,
+    "bytes": 118258,
+    "sha256": "ccf130398133878cc309a31188dc2de8c513613ad1c0ad94949f8693efa9e8a0"
+  },
+  "release300/assets/steles/yihe-3.webp": {
+    "width": 400,
+    "height": 320,
+    "bytes": 24014,
+    "sha256": "0cf276afd040aa037dafd7167f250c99a020350b8d78dcec6a4879f90d1bdff1"
+  },
+  "release300/assets/steles/yihe-4.webp": {
+    "width": 400,
+    "height": 330,
+    "bytes": 27972,
+    "sha256": "36c263dccc9681cce59cc47f1a52d84781f249f9279cf90cee1c8982b8122c64"
+  },
+  "release300/assets/steles/yihe-5.webp": {
+    "width": 400,
+    "height": 318,
+    "bytes": 23934,
+    "sha256": "88262208cca37ccafcfcc4d1de3d6512828f185f0bb9bd6beed63c23ba8fe43b"
+  },
+  "release300/assets/steles/yiying-1.webp": {
+    "width": 1024,
+    "height": 897,
+    "bytes": 136112,
+    "sha256": "4f61a67588b3ab660db720e498f1c35061dae80d96ee1481959247e584f7af17"
+  },
+  "release300/assets/steles/yiying-2.webp": {
+    "width": 1024,
+    "height": 897,
+    "bytes": 125054,
+    "sha256": "e8e056188e1cdd92ee1059a0727d7e1b00d99e16d30a5c8511d8a6146d101219"
+  },
+  "release300/assets/steles/yiying-3.webp": {
+    "width": 1024,
+    "height": 897,
+    "bytes": 121132,
+    "sha256": "9b239a3da37d4416ed7ff0784f58ce79ef12b5c9d89cc7c02cbe5e73fd1a36e2"
+  },
+  "release300/assets/steles/yiying-4.webp": {
+    "width": 1024,
+    "height": 897,
+    "bytes": 121418,
+    "sha256": "c36914f7272c27749e65f2a9f84b261d3a0a7b8110ad519e4b62093812166420"
+  },
+  "release300/assets/steles/yiying-5.webp": {
+    "width": 1024,
+    "height": 897,
+    "bytes": 116336,
+    "sha256": "ba3544298ce5e4b574bcce2408a2631ad6c5d937fc33de1278d6a07cc2ef6c57"
+  },
+  "release300/assets/steles/zhengwengong-1.webp": {
+    "width": 700,
+    "height": 432,
+    "bytes": 122172,
+    "sha256": "cc39e8a757ecdb0973d69e78752a5c882f0a30a6dff4ea8e32c8eb032cabd6df"
+  },
+  "release300/assets/steles/zhongxing-1.webp": {
+    "width": 1024,
+    "height": 916,
+    "bytes": 84336,
+    "sha256": "252944bd647a369e342af43c94f4b88c0e8c8f7ab173a33f53cdfd7c285b1377"
+  },
+  "release300/assets/steles/zhongxing-2.webp": {
+    "width": 1024,
+    "height": 916,
+    "bytes": 87084,
+    "sha256": "3d23fdbf27c6852383c606f8d5c652c4d16e09aa77fee70e49c80e465330b41e"
+  },
+  "release300/assets/steles/zhongxing-3.webp": {
+    "width": 1024,
+    "height": 916,
+    "bytes": 79242,
+    "sha256": "c03530f3a967e981560dbbc1aa9da39da6f0048a556d32adad20aa4e298a34cc"
+  },
+  "release300/assets/steles/zhongxing-4.webp": {
+    "width": 1024,
+    "height": 916,
+    "bytes": 88064,
+    "sha256": "99919725a97a2caeb79a626b4b366ba562a81c8ceea4c80c733bd32eef8863c2"
+  },
+  "release300/assets/steles/zhongxing-5.webp": {
+    "width": 1024,
+    "height": 916,
+    "bytes": 82922,
+    "sha256": "b81a028c31b0646929c9924a53ebb49b1477a4a7b22806bbc0f8a724dd774714"
+  }
+}

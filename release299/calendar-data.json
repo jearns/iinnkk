@@ -1,12 +1,12 @@
 {
-  "version": 299,
+  "version": 300,
   "sourceNote": "确切史事、诞辰与国际纪念日按来源标示；“主题荐写”是编辑关联，不是遗产入选日或作品创作日。仅知年份的往事不编造月日。荐写短句注明作者，不冒充历史人物原话。世界遗产、世界记忆、非遗及国家级文献名录分别标示。节气使用北京时间实算表。",
   "works": [
     {
       "id": "taishan",
       "title": "泰山刻石",
       "author": "传李斯",
-      "url": "https://tsgw.taian.gov.cn/art/2021/6/16/art_162237_10286435.html",
+      "url": "https://www.dpm.org.cn/collection/impres/234107.html",
       "isPerson": false,
       "term": "冬至",
       "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
@@ -42,7 +42,7 @@
       "id": "luoshen13",
       "title": "洛神赋十三行",
       "author": "传王献之书；曹植文",
-      "url": "https://www.dpm.org.cn/collection/handwriting/228244.html",
+      "url": "https://online.bunka.go.jp/heritages/detail/456484",
       "isPerson": false,
       "term": "立春",
       "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
@@ -123,7 +123,7 @@
       "id": "mengzhao",
       "title": "蒙诏帖",
       "author": "旧题柳公权；故宫判为宋人仿本",
-      "url": "https://intl.dpm.org.cn/Calligraphy_collection/25607.html",
+      "url": "https://www.dpm.org.cn/collection/handwriting/231095.html",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -141,7 +141,7 @@
       "id": "tumu",
       "title": "土母帖",
       "author": "李建中",
-      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14903?dep=P",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/22635?dep=P",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -159,7 +159,7 @@
       "id": "mengdian",
       "title": "仲尼梦奠帖",
       "author": "欧阳询",
-      "url": "https://zhuanti.mct.gov.cn/lnsbwg2022.html",
+      "url": "https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/04/content_50238.html",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -222,7 +222,7 @@
       "id": "kuaiji",
       "title": "会稽刻石",
       "author": "传李斯",
-      "url": "https://www.dpm.org.cn/collection/impres/234107.html",
+      "url": "https://kmbl.hzwbzx.cn/stele/view?id=85",
       "isPerson": false,
       "term": "冬至",
       "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
@@ -249,7 +249,7 @@
       "id": "tianfa",
       "title": "天发神谶碑",
       "author": "书者归属有争议",
-      "url": "https://www.dpm.org.cn/",
+      "url": "https://www.dpm.org.cn/collection/impres/234552.html",
       "isPerson": false,
       "term": "冬至",
       "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
@@ -258,7 +258,7 @@
       "id": "biluo",
       "title": "碧落碑",
       "author": "作者归属有争议",
-      "url": "https://www.dpm.org.cn/historical/talk/210376.html",
+      "url": "http://kanji.zinbun.kyoto-u.ac.jp/db-machine/imgsrv/takuhon/type_a/html/tou0494x.html",
       "isPerson": false,
       "term": "冬至",
       "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
@@ -267,7 +267,7 @@
       "id": "sanfen",
       "title": "三坟记",
       "author": "李阳冰",
-      "url": "https://www.beilin-museum.com/",
+      "url": "https://beilin-museum.com/INDEX.PHP?a=index&aid=2611&c=View&m=home",
       "isPerson": false,
       "term": "冬至",
       "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
@@ -285,7 +285,7 @@
       "id": "yiying",
       "title": "乙瑛碑",
       "author": "书者佚名",
-      "url": "https://www.dpm.org.cn/journal_detail/112088.html",
+      "url": "https://www.dpm.org.cn/collection/impres/228529.html",
       "isPerson": false,
       "term": "芒种",
       "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
@@ -294,7 +294,7 @@
       "id": "shichen",
       "title": "史晨碑",
       "author": "书者佚名",
-      "url": "https://kongziyjy.org/nd.jsp?id=2498",
+      "url": "https://www.dpm.org.cn/collection/impres/228527.html",
       "isPerson": false,
       "term": "芒种",
       "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
@@ -303,7 +303,7 @@
       "id": "zhangqian",
       "title": "张迁碑",
       "author": "书者佚名",
-      "url": "https://tsgw.taian.gov.cn/art/2021/6/13/art_198322_10286362.html",
+      "url": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/6be0a531-a57e-4d99-109e-3cb2dff175aa",
       "isPerson": false,
       "term": "芒种",
       "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
@@ -312,7 +312,7 @@
       "id": "shimen",
       "title": "石门颂",
       "author": "王升撰；书者佚名",
-      "url": "https://www.htq.gov.cn/hzshtqzf/zjht/lswh/201004/b3532f0f77b3420a8a772d419a16684c.shtml",
+      "url": "https://www.dpm.org.cn/collection/impres/234191.html",
       "isPerson": false,
       "term": "芒种",
       "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
@@ -321,7 +321,7 @@
       "id": "huashan",
       "title": "西岳华山庙碑",
       "author": "书者佚名",
-      "url": "https://ggzl.dpm.org.cn/app/api/app/exhibitionListPc/165",
+      "url": "https://www.dpm.org.cn/collection/impres/234706.html",
       "isPerson": false,
       "term": "芒种",
       "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
@@ -339,7 +339,7 @@
       "id": "hengfang",
       "title": "衡方碑",
       "author": "书者佚名",
-      "url": "https://www.dpm.org.cn/",
+      "url": "https://www.dpm.org.cn/collection/impres/228606.html",
       "isPerson": false,
       "term": "芒种",
       "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
@@ -348,7 +348,7 @@
       "id": "xianyuhuang",
       "title": "鲜于璜碑",
       "author": "书者佚名",
-      "url": "https://www.tjbwg.com/",
+      "url": "https://tjculture.museum.chaoxing.com/302/304/9696.html",
       "isPerson": false,
       "term": "芒种",
       "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
@@ -366,7 +366,7 @@
       "id": "huangting",
       "title": "黄庭经",
       "author": "传王羲之",
-      "url": "https://www.dpm.org.cn/",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1949?dep=P",
       "isPerson": false,
       "term": "立春",
       "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
@@ -375,7 +375,7 @@
       "id": "leyi",
       "title": "乐毅论",
       "author": "传王羲之",
-      "url": "https://www.dpm.org.cn/",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/21574?dep=P",
       "isPerson": false,
       "term": "立春",
       "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
@@ -384,7 +384,7 @@
       "id": "nikuan",
       "title": "倪宽赞",
       "author": "传褚遂良",
-      "url": "https://www.npm.gov.tw/",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14846?dep=P",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -411,7 +411,7 @@
       "id": "yanqinli",
       "title": "颜勤礼碑",
       "author": "颜真卿",
-      "url": "https://www.beilin-museum.com/",
+      "url": "https://www.dpm.org.cn/collection/impres/234175.html",
       "isPerson": false,
       "term": "清明",
       "reason": "以追思与家国记忆，体会书迹中的情感与担当。"
@@ -492,7 +492,7 @@
       "id": "zhengwengong",
       "title": "郑文公下碑",
       "author": "郑道昭",
-      "url": "https://www.laizhou.gov.cn/art/2021/11/12/art_23203_2932809.html",
+      "url": "https://www.chinanews.com.cn/gn/2024/01-18/10148676.shtml",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -501,7 +501,7 @@
       "id": "yihe",
       "title": "瘗鹤铭",
       "author": "署华阳真逸；传陶弘景等说",
-      "url": "https://jssdfz.jiangsu.gov.cn/n96/20221114/i22004.html",
+      "url": "https://www.dpm.org.cn/collection/impres/234548.html",
       "isPerson": false,
       "term": "芒种",
       "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
@@ -510,7 +510,7 @@
       "id": "jingshiyu",
       "title": "经石峪金刚经",
       "author": "书者佚名",
-      "url": "https://www.dpm.org.cn/lemmas/241211.html",
+      "url": "https://tsgw.taian.gov.cn/art/2021/6/16/art_162237_10286435.html",
       "isPerson": false,
       "term": "立夏",
       "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
@@ -519,7 +519,7 @@
       "id": "sishan",
       "title": "四山摩崖刻经",
       "author": "安道壹等，逐山逐刻核验",
-      "url": "https://www.mencius.gov.cn/index.php/cms/item-list-category-1398-page-5.shtml",
+      "url": "https://whlyj.jining.gov.cn/art/2025/6/12/art_70690_2706024.html",
       "isPerson": false,
       "term": "立夏",
       "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
@@ -528,7 +528,7 @@
       "id": "zhongxing",
       "title": "大唐中兴颂",
       "author": "颜真卿书；元结撰",
-      "url": "https://www.hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html",
+      "url": "https://www.dpm.org.cn/collection/impres/228473.html",
       "isPerson": false,
       "term": "清明",
       "reason": "以追思与家国记忆，体会书迹中的情感与担当。"
@@ -537,7 +537,7 @@
       "id": "shimenming",
       "title": "石门铭",
       "author": "王远撰书；武阿仁刻",
-      "url": "https://www.dpm.org.cn/lemmas/241188.html",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/15187?dep=P",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -555,7 +555,7 @@
       "id": "shengjiao",
       "title": "集王圣教序",
       "author": "怀仁集王羲之字",
-      "url": "https://www.beilin-museum.com/",
+      "url": "https://www.dpm.org.cn/collection/impres/228597.html",
       "isPerson": false,
       "term": "立春",
       "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
@@ -582,7 +582,7 @@
       "id": "kaicheng",
       "title": "开成石经",
       "author": "艾居晦、陈玠等奉敕刊刻",
-      "url": "https://www.beilin-museum.com/index.php?a=index&c=Lists&m=home&tid=86",
+      "url": "https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=280",
       "isPerson": false,
       "term": "立夏",
       "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
@@ -600,7 +600,7 @@
       "id": "shamenghai-bangshu",
       "title": "榜书选赏",
       "author": "沙孟海",
-      "url": "https://www.zhejiangmuseum.com/",
+      "url": "https://news.cnnb.com.cn/system/2011/04/22/006912192.shtml",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -618,7 +618,7 @@
       "id": "wuhou",
       "title": "蜀丞相诸葛武侯祠堂碑",
       "author": "裴度撰；柳公绰书；鲁建刻",
-      "url": "https://www.ccdi.gov.cn/special/jtsj/jt_jtsj/201706/t20170612_100891.html",
+      "url": "https://cd.wenming.cn/lsmc/201806/t20180605_5250045.shtml",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -627,7 +627,7 @@
       "id": "lizi",
       "title": "苏轼荔子碑",
       "author": "韩愈诗；苏轼书",
-      "url": "https://www.yzcity.gov.cn/",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/202109mhzxs/",
       "isPerson": false,
       "term": "秋分",
       "reason": "循秋水与明月，读东坡诗文及其书法回响。"
@@ -636,7 +636,7 @@
       "id": "baozhi",
       "title": "宝志公像赞诗碑",
       "author": "传李白诗；吴道子画；颜真卿书",
-      "url": "https://www.nanjing.gov.cn/",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
       "isPerson": false,
       "term": "清明",
       "reason": "以追思与家国记忆，体会书迹中的情感与担当。"
@@ -645,7 +645,7 @@
       "id": "suxian",
       "title": "苏仙岭三绝碑",
       "author": "秦观词；米芾书；苏轼跋",
-      "url": "https://www.hunantoday.cn/news/xhn/201602/14454833.html",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
       "isPerson": false,
       "term": "秋分",
       "reason": "循秋水与明月，读东坡诗文及其书法回响。"
@@ -654,7 +654,7 @@
       "id": "zuiweng",
       "title": "苏轼书醉翁亭记碑",
       "author": "欧阳修文；苏轼书",
-      "url": "https://www.zzmuseum.com/",
+      "url": "https://shilun.xafa.edu.cn/info/1036/6708.htm",
       "isPerson": false,
       "term": "秋分",
       "reason": "循秋水与明月，读东坡诗文及其书法回响。"
@@ -663,7 +663,7 @@
       "id": "lisheng",
       "title": "李晟墓碑",
       "author": "裴度撰；柳公权书",
-      "url": "https://sn.cri.cn/2018-10-10/a9d320c0-dd8c-b673-5dc6-39eb447ea7c7.html",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -672,7 +672,7 @@
       "id": "chenghuang",
       "title": "新修城隍庙碑",
       "author": "郑板桥撰并书；司徒文膏刻",
-      "url": "https://dao.china.com.cn/2026-07/20/content_43463943.shtml",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -681,7 +681,7 @@
       "id": "wanan",
       "title": "万安桥记大字碑",
       "author": "蔡襄撰并书",
-      "url": "https://www.quanzhou.gov.cn/lyb/lswh/zdww/201609/t20160913_372301.htm",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -690,7 +690,7 @@
       "id": "shouchan",
       "title": "上尊号与受禅碑",
       "author": "传王朗文；梁鹄书；钟繇刻",
-      "url": "https://www.xuchang.gov.cn/zjxc/005010/20211110/8a942bfd-b4a8-4304-b3f9-0d793364ad60.html",
+      "url": "https://www.dpm.org.cn/collection/impres/231867.html",
       "isPerson": false,
       "term": "芒种",
       "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
@@ -699,7 +699,7 @@
       "id": "auction-pingan",
       "title": "平安帖（拍卖本）",
       "author": "传王羲之",
-      "url": "https://amma.artron.net/observation_shownews.php?newid=837914",
+      "url": "https://amma.artron.net/observation_shownews.php?newid=1114816",
       "isPerson": false,
       "term": "立春",
       "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
@@ -708,7 +708,7 @@
       "id": "guoyouzhi",
       "title": "致郭右之二帖卷",
       "author": "赵孟頫",
-      "url": "https://www.trueart.com/news/359245.html",
+      "url": "https://www.chinanews.com/cul/2019/11-20/9012462.shtml",
       "isPerson": false,
       "term": "立夏",
       "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
@@ -717,7 +717,7 @@
       "id": "rao-hanliu",
       "title": "草书韩愈柳宗元文",
       "author": "饶介",
-      "url": "https://companies.caixin.com/2025-04-11/102308294.html",
+      "url": "https://www.sothebys.com/en/buy/auction/2025/fine-classical-chinese-paintings/rao-jie-cao-shu-han-yu-liu-zong-yuan-wen-rao-jie",
       "isPerson": false,
       "term": "大暑",
       "reason": "从夏日的舒展，体会草书线条的速度与节奏。"
@@ -726,7 +726,7 @@
       "id": "jushi",
       "title": "局事帖",
       "author": "曾巩",
-      "url": "https://art.people.com.cn/n1/2016/0519/c206244-28362025.html",
+      "url": "https://collection.sina.com.cn/zgsh/20091124/12257008300.shtml",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -735,7 +735,7 @@
       "id": "zhao-xinjing",
       "title": "般若波罗蜜多心经",
       "author": "赵孟頫",
-      "url": "https://www.thepaper.cn/newsDetail_forward_1910000",
+      "url": "https://collection.sina.cn/auction/2017-12-12/detail-ifyppemf6456208.d.html?vt=4",
       "isPerson": false,
       "term": "立夏",
       "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
@@ -744,7 +744,7 @@
       "id": "zhao-huangting",
       "title": "临黄庭经（保利本）",
       "author": "赵孟頫",
-      "url": "https://www.trueart.com/news/638899.html",
+      "url": "https://amma.artron.net/observation_shownews.php?newid=1123015",
       "isPerson": false,
       "term": "立夏",
       "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
@@ -753,7 +753,7 @@
       "id": "gongfu",
       "title": "功甫帖（拍卖本）",
       "author": "传苏轼",
-      "url": "https://www.chinanews.com/cul/2013/12-21/5647683.shtml",
+      "url": "https://www.sudongpo.org/gong-fu-tie/",
       "isPerson": false,
       "term": "秋分",
       "reason": "循秋水与明月，读东坡诗文及其书法回响。"
@@ -771,7 +771,7 @@
       "id": "dong-longshen",
       "title": "龙神感应记",
       "author": "董其昌",
-      "url": "https://collection.sina.com.cn/zgsh/20091123/16397003637.shtml",
+      "url": "https://app.6z6z.com/class/2023-04-14/18374.html",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -816,7 +816,7 @@
       "id": "zhaocheng275",
       "title": "赵城金藏",
       "author": "金代刻工",
-      "url": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00159297",
       "isPerson": false,
       "term": "立夏",
       "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
@@ -825,7 +825,7 @@
       "id": "yongle275",
       "title": "永乐大典",
       "author": "明代纂修诸臣",
-      "url": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml",
+      "url": "https://www.nlc.cn/nmcb/jpww/zhhp_ljcg/",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
@@ -834,73 +834,73 @@
       "id": "wenjinge275",
       "title": "文津阁《四库全书》",
       "author": "清代纂修与誊录诸臣",
-      "url": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml",
+      "url": "https://www.nlc.cn/pcab/gjbhzs/sc/20170814_154335.shtml",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
     },
     {
       "id": "oracle-sacrifice298",
-      "title": "祭祀刻辞龟甲",
+      "title": "祭祀牛胛骨刻辞《甲》3333＋3361",
       "author": "书者佚名",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
       "isPerson": false,
       "term": "谷雨",
-      "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
+      "reason": "以可定位的缀合编号，将商代祭祀记录与真实契刻布局对应起来。"
     },
     {
       "id": "oracle-tufang298",
-      "title": "土方征涂朱卜骨刻辞",
+      "title": "土方征涂朱卜骨刻辞《合集》6057",
       "author": "书者佚名",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "url": "https://www.chnmuseum.cn/zp/zpml/201812/t20181218_26025.shtml",
       "isPerson": false,
       "term": "谷雨",
       "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
     },
     {
       "id": "oracle-ban298",
-      "title": "般无咎全甲刻辞",
+      "title": "般无咎全甲刻辞《合集》4264",
       "author": "书者佚名",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250929.shtml",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
     },
     {
       "id": "oracle-qiang298",
-      "title": "小臣墙记事刻辞",
+      "title": "小臣墙记事刻辞《合集》36481",
       "author": "书者佚名",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "url": "https://www.dpm.org.cn/impress/talk/248912.html",
       "isPerson": false,
       "term": "春分",
       "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
     },
     {
       "id": "oracle-zaifeng298",
-      "title": "宰丰骨匕记事刻辞",
+      "title": "宰丰骨匕《合补》11299",
       "author": "书者佚名",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250927.shtml",
       "isPerson": false,
       "term": "谷雨",
       "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
     },
     {
       "id": "oracle-farming298",
-      "title": "众人协田卜骨刻辞",
+      "title": "众人协田卜骨刻辞《合集》1",
       "author": "书者佚名",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202107/t20210728_250885.shtml",
       "isPerson": false,
       "term": "芒种",
       "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
     },
     {
       "id": "oracle-zhou298",
-      "title": "西周卦画卜骨",
+      "title": "先书后刻龟甲《乙》5867＋8202",
       "author": "书者佚名",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
       "isPerson": false,
       "term": "谷雨",
-      "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
+      "reason": "罕见的先书后刻痕迹，为追溯毛笔与甲骨契刻的关系提供实物线索。"
     },
     {
       "id": "oracle-fuhao298",
@@ -1086,7 +1086,7 @@
       "id": "bronze-dake299",
       "title": "大克鼎",
       "author": "书者佚名",
-      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/CI00000656",
+      "url": "https://www.shanghaimuseum.net/mu/asset2/20151104094055028/",
       "isPerson": false,
       "term": "冬至",
       "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"
@@ -1104,7 +1104,7 @@
       "id": "hezun",
       "title": "何尊",
       "author": "书者佚名",
-      "url": "https://www.bjqtm.com/dczp/qtq/何尊等五组周代有铭青铜器成功入选《中国档",
+      "url": "https://www.xianqin.org/xr_html/articles/lwjsh/384.html",
       "isPerson": false,
       "term": "冬至",
       "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"

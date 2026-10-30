@@ -1,0 +1,133 @@
+{
+  "maogong": {
+    "objectNumber300": "台北故宫文物统一编号：中銅000651N000000000",
+    "sources300": [
+      {
+        "label": "著录号与馆藏依据",
+        "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1438?dep=U&mode=full"
+      }
+    ]
+  },
+  "sanshi": {
+    "objectNumber300": "台北故宫文物统一编号：故銅002376N000000000",
+    "sources300": [
+      {
+        "label": "著录号与馆藏依据",
+        "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1462?dep=U&mode=full"
+      }
+    ]
+  },
+  "bronze-dayu299": {
+    "objectNumber300": "《殷周金文集成》2837",
+    "sources300": [
+      {
+        "label": "著录号与馆藏依据",
+        "url": "https://www.fdgwz.org.cn/Web/Show/3107"
+      }
+    ],
+    "imageCredit247": "原器图及铭文拓片：中国国家博物馆；拓片不是排印释文。",
+    "pages": [
+      "release299/bronze/dayu-photo.webp",
+      "release299/bronze/dayu.webp",
+      "release300/assets/bronze/bronze-dayu299-1.webp"
+    ],
+    "pageNames": [
+      "原器图（非拓本）",
+      "馆方排印释文（非拓本）",
+      "铭文拓片（馆方公开图）"
+    ],
+    "cover143": "release300/assets/bronze/bronze-dayu299-1.webp"
+  },
+  "bronze-dake299": {
+    "objectNumber300": "《殷周金文集成》2836",
+    "sources300": [
+      {
+        "label": "著录号与馆藏依据",
+        "url": "https://www.fdgwz.org.cn/Web/Show/466"
+      }
+    ],
+    "url": "https://www.shanghaimuseum.net/mu/asset2/20151104094055028/",
+    "versionNote300": "原器与铭文拓片分开呈现；拓片及释文图保留馆方原有编排。",
+    "imageCredit247": "大克鼎铭文图像：上海博物馆《每月一珍·大克鼎》；著录《殷周金文集成》2836。",
+    "pages": [
+      "release299/bronze/dake.webp",
+      "release300/assets/bronze/bronze-dake299-1.webp",
+      "release300/assets/bronze/bronze-dake299-2.webp",
+      "release300/assets/bronze/bronze-dake299-3.webp"
+    ],
+    "pageNames": [
+      "原器图（非拓本）",
+      "铭文拓片及释文一",
+      "铭文拓片及释文二",
+      "铭文拓片"
+    ],
+    "cover143": "release300/assets/bronze/bronze-dake299-3.webp"
+  },
+  "bronze-guoji299": {
+    "objectNumber300": "《殷周金文集成》10173",
+    "sources300": [
+      {
+        "label": "著录号与馆藏依据",
+        "url": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=34.E413"
+      }
+    ],
+    "imageCredit247": "原器图及铭文拓片：中国国家博物馆；拓片不是排印释文。",
+    "pages": [
+      "release299/bronze/guoji-photo.webp",
+      "release299/bronze/guoji.webp",
+      "release300/assets/bronze/bronze-guoji299-1.webp"
+    ],
+    "pageNames": [
+      "原器图（非拓本）",
+      "馆方排印释文（非拓本）",
+      "铭文拓片（馆方公开图）"
+    ],
+    "cover143": "release300/assets/bronze/bronze-guoji299-1.webp"
+  },
+  "hezun": {
+    "objectNumber300": "《殷周金文集成》6014",
+    "sources300": [
+      {
+        "label": "著录号与馆藏依据",
+        "url": "https://www.xianqin.org/xr_html/articles/lwjsh/384.html"
+      }
+    ],
+    "url": "https://www.xianqin.org/xr_html/articles/lwjsh/384.html"
+  },
+  "bronze-qiang299": {
+    "objectNumber300": "《殷周金文集成》10175",
+    "sources300": [
+      {
+        "label": "著录号与馆藏依据",
+        "url": "https://www.fdgwz.org.cn/Web/Show/932"
+      }
+    ]
+  },
+  "bronze-lai299": {
+    "objectNumber300": "《商周青铜器铭文暨图像集成》14543",
+    "sources300": [
+      {
+        "label": "著录号与馆藏依据",
+        "url": "https://www.cssn.cn/skgz/bwyc/202411/t20241111_5801552.shtml"
+      }
+    ]
+  },
+  "bronze-li299": {
+    "objectNumber300": "《殷周金文集成》4131",
+    "sources300": [
+      {
+        "label": "著录号与馆藏依据",
+        "url": "https://www.fdgwz.org.cn/Web/Show/3107"
+      }
+    ]
+  },
+  "bronze-zongzhou299": {
+    "objectNumber300": "台北故宫文物统一编号：故銅002377N000000000；《殷周金文集成》260",
+    "sources300": [
+      {
+        "label": "著录号与馆藏依据",
+        "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1464?dep=U&mode=full"
+      }
+    ]
+  }
+}

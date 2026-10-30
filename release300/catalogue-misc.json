@@ -1,0 +1,477 @@
+{
+  "lizi": {
+    "url": "https://www.chnmuseum.cn/portals/0/web/zt/202109mhzxs/",
+    "imageCredit247": "图像：中国国家博物馆“摩崖上的中兴颂”展览；清代重刻拓片，不是苏轼墨迹。",
+    "pages": [
+      "release300/assets/misc/lizi-1.webp"
+    ],
+    "cover143": "release300/assets/misc/lizi-1.webp",
+    "pageNames": [
+      "荔子碑拓片（清重刻本）"
+    ],
+    "sources300": [
+      {
+        "source": "https://www.chnmuseum.cn/portals/0/web/zt/202109mhzxs/img/2/pic1.jpg",
+        "path": "release300/assets/misc/lizi-1.webp",
+        "width": 1000,
+        "height": 380
+      }
+    ]
+  },
+  "zuiweng": {
+    "url": "https://shilun.xafa.edu.cn/info/1036/6708.htm",
+    "imageCredit247": "图像：西安美术学院美术史论系郑州博物馆考察记录，图3；清代重刻本实物照片，非北宋原迹。",
+    "pages": [
+      "release300/assets/misc/zuiweng-1.webp"
+    ],
+    "cover143": "release300/assets/misc/zuiweng-1.webp",
+    "pageNames": [
+      "苏轼书《醉翁亭记》刻石（郑州博物馆藏）"
+    ],
+    "sources300": [
+      {
+        "source": "https://shilun.xafa.edu.cn/__local/F/4D/D6/45233F8F6AA04F0B9EB88E74BD5_74454531_1944C.jpeg",
+        "path": "release300/assets/misc/zuiweng-1.webp",
+        "width": 632,
+        "height": 1352
+      }
+    ]
+  },
+  "wanan": {
+    "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+    "imageCredit247": "图像：书法艺术网《闻名天下的三绝碑》公开图；万安桥记碑，不以洛阳桥全景替代碑文。",
+    "pages": [
+      "release300/assets/misc/wanan-1.webp"
+    ],
+    "cover143": "release300/assets/misc/wanan-1.webp",
+    "pageNames": [
+      "蔡襄万安桥记碑"
+    ],
+    "sources300": [
+      {
+        "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035041609.jpeg",
+        "path": "release300/assets/misc/wanan-1.webp",
+        "width": 640,
+        "height": 426
+      }
+    ]
+  },
+  "lisheng": {
+    "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+    "imageCredit247": "图像：书法艺术网《闻名天下的三绝碑》公开图；柳公权李晟碑，不以碑亭建筑替代作品。",
+    "pages": [
+      "release300/assets/misc/lisheng-1.webp",
+      "release300/assets/misc/lisheng-2.webp"
+    ],
+    "cover143": "release300/assets/misc/lisheng-1.webp",
+    "pageNames": [
+      "李晟碑",
+      "李晟碑书刻"
+    ],
+    "sources300": [
+      {
+        "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035041590.jpeg",
+        "path": "release300/assets/misc/lisheng-1.webp",
+        "width": 490,
+        "height": 715
+      },
+      {
+        "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035042625.jpeg",
+        "path": "release300/assets/misc/lisheng-2.webp",
+        "width": 453,
+        "height": 1300
+      }
+    ]
+  },
+  "songke-zhuangyou": {
+    "url": "https://collection.sina.com.cn/zgsh/20091123/16397003637.shtml",
+    "imageCredit247": "图像：新浪收藏2009年拍卖公开报道；宋克卷公开图，不用于董其昌《龙神感应记》。",
+    "pages": [
+      "release300/assets/misc/songke-zhuangyou-1.webp"
+    ],
+    "cover143": "release300/assets/misc/songke-zhuangyou-1.webp",
+    "pageNames": [
+      "宋克《草书杜子美壮游诗卷》拍卖公开图"
+    ],
+    "sources300": [
+      {
+        "source": "https://i1.sinaimg.cn/cj/money/collection/zgsh/20091123/U3294P31T1D7003637F46DT20091123163920.jpg",
+        "path": "release300/assets/misc/songke-zhuangyou-1.webp",
+        "width": 500,
+        "height": 155
+      }
+    ]
+  },
+  "wuhou": {
+    "url": "https://cd.wenming.cn/lsmc/201806/t20180605_5250045.shtml",
+    "imageCredit247": "图像及资料：成都文明网《唐裴度撰蜀丞相诸葛武侯祠堂碑》；唐碑实物照片，非拓片。",
+    "pages": [
+      "release300/assets/misc/wuhou-1.webp"
+    ],
+    "cover143": "release300/assets/misc/wuhou-1.webp",
+    "pageNames": [
+      "唐蜀丞相诸葛武侯祠堂碑实物"
+    ],
+    "sources300": [
+      {
+        "source": "https://cd.wenming.cn/lsmc/201806/W020180605531618401250.jpg",
+        "path": "release300/assets/misc/wuhou-1.webp",
+        "width": 251,
+        "height": 500
+      }
+    ]
+  },
+  "shouchan": {
+    "url": "https://www.dpm.org.cn/collection/impres/231867.html",
+    "objectNumber300": "新00045373（故宫受禅表碑拓本）",
+    "imageCredit247": "图像及资料：故宫博物院；明拓《受禅表碑》，为上尊号与受禅碑组中受禅表一碑，非两碑全图。",
+    "pages": [
+      "release300/assets/misc/shouchan-1.webp"
+    ],
+    "cover143": "release300/assets/misc/shouchan-1.webp",
+    "pageNames": [
+      "受禅表碑明拓本（新00045373）"
+    ],
+    "sources300": [
+      {
+        "source": "https://img.dpm.org.cn/Uploads/Picture/dc/28089[1024].jpg",
+        "path": "release300/assets/misc/shouchan-1.webp",
+        "width": 569,
+        "height": 1024
+      }
+    ]
+  },
+  "suxian": {
+    "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+    "imageCredit247": "图像：书法艺术网《闻名天下的三绝碑》公开图；对应秦观词、苏轼跋、米芾书的书刻，不以导览牌替代。",
+    "pages": [
+      "release300/assets/misc/suxian-1.webp",
+      "release300/assets/misc/suxian-2.webp"
+    ],
+    "cover143": "release300/assets/misc/suxian-1.webp",
+    "pageNames": [
+      "苏仙岭三绝碑",
+      "苏仙岭三绝碑书刻"
+    ],
+    "sources300": [
+      {
+        "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035042472.jpeg",
+        "path": "release300/assets/misc/suxian-1.webp",
+        "width": 640,
+        "height": 428
+      },
+      {
+        "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035042184.jpeg",
+        "path": "release300/assets/misc/suxian-2.webp",
+        "width": 472,
+        "height": 342
+      }
+    ]
+  },
+  "guoyouzhi": {
+    "url": "https://www.chinanews.com/cul/2019/11-20/9012462.shtml",
+    "imageCredit247": "图像：中国嘉德供图，中国新闻网2019年11月20日报道；赵孟頫两封书札拍卖公开图。",
+    "pages": [
+      "release300/assets/misc/guoyouzhi-1.webp"
+    ],
+    "cover143": "release300/assets/misc/guoyouzhi-1.webp",
+    "pageNames": [
+      "致郭右之二帖卷（中国嘉德供图）"
+    ],
+    "sources300": [
+      {
+        "source": "https://i2.chinanews.com/simg/cmshd/2019/11/20/47fef12669f94d5cb3800bd3708e7d56.jpg",
+        "path": "release300/assets/misc/guoyouzhi-1.webp",
+        "width": 700,
+        "height": 535
+      }
+    ]
+  },
+  "jushi": {
+    "url": "https://collection.sina.com.cn/zgsh/20091124/12257008300.shtml",
+    "imageCredit247": "图像：新浪收藏2009年11月24日《局事帖创下全球中国书法成交纪录》资料图片；非后人临写。",
+    "pages": [
+      "release300/assets/misc/jushi-1.webp"
+    ],
+    "cover143": "release300/assets/misc/jushi-1.webp",
+    "pageNames": [
+      "曾巩局事帖拍卖公开图"
+    ],
+    "sources300": [
+      {
+        "source": "https://i0.sinaimg.cn/cj/cr/2009/1124/69715386.jpg",
+        "path": "release300/assets/misc/jushi-1.webp",
+        "width": 400,
+        "height": 296
+      }
+    ]
+  },
+  "dong-longshen": {
+    "url": "https://app.6z6z.com/class/2023-04-14/18374.html",
+    "imageCredit247": "图像及题名核对：集大家书法《董其昌67岁行楷龙神感应记》；转引公开图，原作版本依拍卖著录。",
+    "pages": [
+      "release300/assets/misc/dong-longshen-1.webp"
+    ],
+    "cover143": "release300/assets/misc/dong-longshen-1.webp",
+    "pageNames": [
+      "董其昌龙神感应记公开图"
+    ],
+    "sources300": [
+      {
+        "source": "https://app.6z6z.com/d/file/p/2023/04-14/3740f9a01d1b9d688e9327df2b8bf323.jpg",
+        "path": "release300/assets/misc/dong-longshen-1.webp",
+        "width": 640,
+        "height": 561
+      }
+    ]
+  },
+  "auction-pingan": {
+    "url": "https://amma.artron.net/observation_shownews.php?newid=1114816",
+    "imageCredit247": "图像：雅昌艺术市场监测中心，祁小春《平安帖应是王羲之寄给女儿婆家的信》；摹本与刻帖须区分，非王羲之原迹。",
+    "pages": [
+      "release300/assets/misc/auction-pingan-1.webp"
+    ],
+    "cover143": "release300/assets/misc/auction-pingan-1.webp",
+    "pageNames": [
+      "平安帖摹本公开图（拍卖本）"
+    ],
+    "sources300": [
+      {
+        "source": "https://img10.artimg.net/public/beian/jpg/202209/e0cea9eae56c9320caebb21e7f982d8f.jpg",
+        "path": "release300/assets/misc/auction-pingan-1.webp",
+        "width": 900,
+        "height": 265
+      }
+    ]
+  },
+  "baozhi": {
+    "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+    "imageCredit247": "图像：书法艺术网《闻名天下的三绝碑》公开图；现存重刻本，非唐代墨迹。",
+    "pages": [
+      "release300/assets/misc/baozhi-1.webp",
+      "release300/assets/misc/baozhi-2.webp"
+    ],
+    "cover143": "release300/assets/misc/baozhi-2.webp",
+    "pageNames": [
+      "宝志公像赞诗碑实物",
+      "宝志公像赞诗碑书刻"
+    ],
+    "sources300": [
+      {
+        "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035041913.jpeg",
+        "path": "release300/assets/misc/baozhi-1.webp",
+        "width": 554,
+        "height": 331
+      },
+      {
+        "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035041547.jpeg",
+        "path": "release300/assets/misc/baozhi-2.webp",
+        "width": 640,
+        "height": 480
+      }
+    ]
+  },
+  "chenghuang": {
+    "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+    "imageCredit247": "图像：书法艺术网《闻名天下的三绝碑》公开图，按文中对应标题核对；非南京博物院藏草稿本。",
+    "pages": [
+      "release300/assets/misc/chenghuang-1.webp",
+      "release300/assets/misc/chenghuang-2.webp"
+    ],
+    "cover143": "release300/assets/misc/chenghuang-1.webp",
+    "pageNames": [
+      "潍坊新修城隍庙碑",
+      "新修城隍庙碑记书刻"
+    ],
+    "sources300": [
+      {
+        "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035040926.jpeg",
+        "path": "release300/assets/misc/chenghuang-1.webp",
+        "width": 300,
+        "height": 533
+      },
+      {
+        "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035040197.jpeg",
+        "path": "release300/assets/misc/chenghuang-2.webp",
+        "width": 640,
+        "height": 1309
+      }
+    ]
+  },
+  "shamenghai-bangshu": {
+    "url": "https://news.cnnb.com.cn/system/2011/04/22/006912192.shtml",
+    "imageCredit247": "图像：中国宁波网《沙孟海书法篆刻作品展今起亮相宁波天一阁书画馆》，李洁莹摄；作品展陈图。",
+    "pages": [
+      "release300/assets/misc/shamenghai-bangshu-1.webp"
+    ],
+    "cover143": "release300/assets/misc/shamenghai-bangshu-1.webp",
+    "pageNames": [
+      "沙孟海榜书龙（天一阁展览）"
+    ],
+    "sources300": [
+      {
+        "source": "https://www.cnnb.com.cn/pic/0/01/99/89/1998923_988942.jpg",
+        "path": "release300/assets/misc/shamenghai-bangshu-1.webp",
+        "width": 500,
+        "height": 333
+      }
+    ]
+  },
+  "gongfu": {
+    "url": "https://www.sudongpo.org/gong-fu-tie/",
+    "imageCredit247": "图像：苏东坡的一生专题资料《功甫帖》；拍卖本局部，真伪归属存学术争议，不作定论。",
+    "pages": [
+      "release300/assets/misc/gongfu-1.webp",
+      "release300/assets/misc/gongfu-2.webp"
+    ],
+    "cover143": "release300/assets/misc/gongfu-1.webp",
+    "pageNames": [
+      "功甫帖（拍卖本）局部",
+      "功甫帖（拍卖本）局部"
+    ],
+    "sources300": [
+      {
+        "source": "https://www.sudongpo.org/wp-content/uploads/2022/03/gong-fu-tie-scaled.jpg",
+        "path": "release300/assets/misc/gongfu-1.webp",
+        "width": 2560,
+        "height": 2157
+      },
+      {
+        "source": "https://www.sudongpo.org/wp-content/uploads/2022/03/gong-fu-tie-1.jpg",
+        "path": "release300/assets/misc/gongfu-2.webp",
+        "width": 1485,
+        "height": 1350
+      }
+    ]
+  },
+  "zhao-huangting": {
+    "url": "https://amma.artron.net/observation_shownews.php?newid=1123015",
+    "pages": [
+      "release300/assets/misc/zhao-huangting-1.webp",
+      "release300/assets/misc/zhao-huangting-2.webp"
+    ],
+    "cover143": "release300/assets/misc/zhao-huangting-1.webp",
+    "pageNames": [
+      "赵孟頫临黄庭经（保利2023拍卖本）局部 1",
+      "赵孟頫临黄庭经（保利2023拍卖本）局部 2"
+    ],
+    "imageCredit247": "图像：雅昌艺术市场监测中心2023年7月5日拍卖战报；赵孟頫1302年作、1322年自跋之保利本局部，非故宫藏同名卷。",
+    "sources300": [
+      {
+        "source": "https://img10.artimg.net/public/beian/png/202307/f97955a6ce659dd2c8f0a4428aade04e.png",
+        "path": "release300/assets/misc/zhao-huangting-1.webp",
+        "width": 803,
+        "height": 1448
+      },
+      {
+        "source": "https://img10.artimg.net/public/beian/png/202307/f91e1e6e5735d446cdd93aa0c9ea8333.png",
+        "path": "release300/assets/misc/zhao-huangting-2.webp",
+        "width": 1080,
+        "height": 2333
+      }
+    ]
+  },
+  "rao-hanliu": {
+    "url": "https://www.sothebys.com/en/buy/auction/2025/fine-classical-chinese-paintings/rao-jie-cao-shu-han-yu-liu-zong-yuan-wen-rao-jie",
+    "objectNumber300": "苏富比2025年4月10日拍品2528",
+    "imageCredit247": "图像及资料：苏富比2025年4月10日中国古代书画拍品2528；公开拍卖原卷图，非拍卖现场照片。",
+    "pages": [
+      "release300/assets/misc/rao-hanliu-1.webp",
+      "release300/assets/misc/rao-hanliu-2.webp",
+      "release300/assets/misc/rao-hanliu-3.webp",
+      "release300/assets/misc/rao-hanliu-4.webp",
+      "release300/assets/misc/rao-hanliu-5.webp",
+      "release300/assets/misc/rao-hanliu-6.webp"
+    ],
+    "cover143": "release300/assets/misc/rao-hanliu-1.webp",
+    "pageNames": [
+      "饶介草书韩愈柳宗元文全卷图（苏富比）",
+      "饶介原卷分段图 1（苏富比）",
+      "饶介原卷分段图 2（苏富比）",
+      "饶介原卷分段图 3（苏富比）",
+      "饶介原卷分段图 4（苏富比）",
+      "饶介原卷分段图 5（苏富比）"
+    ],
+    "sources300": [
+      {
+        "source": "https://sothebys-md.brightspotcdn.com/dims4/default/40736da/2147483647/strip/true/crop/3216x2140+0+0/resize/4096x2726%21/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2Ff9%2F00%2F5c50206641efbde31e32261334a3%2Fd72f6.jpg",
+        "path": "release300/assets/misc/rao-hanliu-1.webp",
+        "width": 4096,
+        "height": 2726
+      },
+      {
+        "source": "https://sothebys-brightspot.s3.amazonaws.com/media-desk/webnative/images/4f/9c/7fd6d0b74686a95eeb8da9031b83/hk1623-d72f6-t1-01a.jpg",
+        "path": "release300/assets/misc/rao-hanliu-2.webp",
+        "width": 2000,
+        "height": 741
+      },
+      {
+        "source": "https://sothebys-brightspot.s3.amazonaws.com/media-desk/webnative/images/6a/6f/e16f04fb4dc7ba87248efa3af40b/hk1623-d72f6-t1-01b.jpg",
+        "path": "release300/assets/misc/rao-hanliu-3.webp",
+        "width": 2000,
+        "height": 741
+      },
+      {
+        "source": "https://sothebys-brightspot.s3.amazonaws.com/media-desk/webnative/images/05/bf/e6fa1e014a868466896fbd78832c/hk1623-d72f6-t1-01c.jpg",
+        "path": "release300/assets/misc/rao-hanliu-4.webp",
+        "width": 2000,
+        "height": 742
+      },
+      {
+        "source": "https://sothebys-brightspot.s3.amazonaws.com/media-desk/webnative/images/b2/cb/2e20b6d44e08af25d36c092eab6e/hk1623-d72f6-t1-01d.jpg",
+        "path": "release300/assets/misc/rao-hanliu-5.webp",
+        "width": 2000,
+        "height": 733
+      },
+      {
+        "source": "https://sothebys-brightspot.s3.amazonaws.com/media-desk/webnative/images/db/0b/6effe6e149bb889995c104dfae0b/hk1623-d72f6-t1-01e.jpg",
+        "path": "release300/assets/misc/rao-hanliu-6.webp",
+        "width": 2000,
+        "height": 733
+      }
+    ]
+  },
+  "zhao-xinjing": {
+    "url": "https://collection.sina.cn/auction/2017-12-12/detail-ifyppemf6456208.d.html?vt=4",
+    "pages": [
+      "release300/assets/misc/zhao-xinjing-1.webp",
+      "release300/assets/misc/zhao-xinjing-2.webp",
+      "release300/assets/misc/zhao-xinjing-3.webp",
+      "release300/assets/misc/zhao-xinjing-4.webp"
+    ],
+    "cover143": "release300/assets/misc/zhao-xinjing-1.webp",
+    "pageNames": [
+      "赵孟頫心经（保利2017拍卖本）分段 1",
+      "赵孟頫心经（保利2017拍卖本）分段 2",
+      "赵孟頫心经（保利2017拍卖本）分段 3",
+      "赵孟頫心经（保利2017拍卖本）分段 4"
+    ],
+    "imageCredit247": "图像：新浪收藏《保利将呈赵孟頫般若波罗蜜多心经》拍卖公开图；日林和上本，保留原图所带出处标记，非台北故宫藏同名本。",
+    "sources300": [
+      {
+        "path": "release300/assets/misc/zhao-xinjing-1.webp",
+        "source": "https://k.sinaimg.cn/n/collect/crawl/w550h972/20171212/5FUA-fypnsip8936938.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+        "width": 550,
+        "height": 972
+      },
+      {
+        "path": "release300/assets/misc/zhao-xinjing-2.webp",
+        "source": "https://k.sinaimg.cn/n/collect/crawl/w550h972/20171212/2LuJ-fypnsip8936984.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+        "width": 550,
+        "height": 972
+      },
+      {
+        "path": "release300/assets/misc/zhao-xinjing-3.webp",
+        "source": "https://k.sinaimg.cn/n/collect/crawl/w550h972/20171212/DoiU-fypnsip8937026.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+        "width": 550,
+        "height": 972
+      },
+      {
+        "path": "release300/assets/misc/zhao-xinjing-4.webp",
+        "source": "https://k.sinaimg.cn/n/collect/crawl/w550h972/20171212/VZSz-fypnsip8937054.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+        "width": 550,
+        "height": 972
+      }
+    ]
+  }
+}

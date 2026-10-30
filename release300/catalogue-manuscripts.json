@@ -1,0 +1,547 @@
+{
+  "mengzhao": {
+    "url": "https://www.dpm.org.cn/collection/handwriting/231095.html",
+    "cover143": "release300/assets/manuscripts/mengzhao-1.webp",
+    "pages": [
+      "release300/assets/manuscripts/mengzhao-1.webp"
+    ],
+    "pageNames": [
+      "柳公权蒙诏贴 · 1"
+    ],
+    "imageCredit247": "图像与文物资料：故宫博物院，公开馆藏页面。故宫博物院所藏传柳公权《蒙诏帖》，归属有争议，不标作确定唐代真迹。",
+    "versionNote300": "故宫博物院所藏传柳公权《蒙诏帖》，归属有争议，不标作确定唐代真迹。",
+    "imageSources300": [
+      {
+        "url": "https://img.dpm.org.cn/Uploads/Picture/2017/04/05/s58e4898007962.jpg",
+        "width": 1258,
+        "height": 500
+      }
+    ]
+  },
+  "tumu": {
+    "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/22635?dep=P",
+    "cover143": "release300/assets/manuscripts/tumu-1.webp",
+    "pages": [
+      "release300/assets/manuscripts/tumu-1.webp",
+      "release300/assets/manuscripts/tumu-2.webp",
+      "release300/assets/manuscripts/tumu-3.webp",
+      "release300/assets/manuscripts/tumu-4.webp",
+      "release300/assets/manuscripts/tumu-5.webp"
+    ],
+    "pageNames": [
+      "清三希堂法帖（八）　冊　宋李建中書土母帖 · 1",
+      "清三希堂法帖（八）　冊　宋李建中書土母帖 · 2",
+      "清三希堂法帖（八）　冊　宋李建中書土母帖 · 3",
+      "清三希堂法帖（八）　冊　宋李建中書土母帖 · 4",
+      "清三希堂法帖（八）　冊　宋李建中書土母帖 · 5"
+    ],
+    "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。图像为清《三希堂法帖》所刻李建中《土母帖》，是刻帖拓本，不是墨迹原件。",
+    "versionNote300": "图像为清《三希堂法帖》所刻李建中《土母帖》，是刻帖拓本，不是墨迹原件。",
+    "imageSources300": [
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=456689&randomCode=26035429304",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=456690&randomCode=45039267042",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=456691&randomCode=85758247177",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=456692&randomCode=37467343964",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=456693&randomCode=71743449599",
+        "width": 600,
+        "height": 449
+      }
+    ],
+    "objectNumber300": "贈帖000085N000000003"
+  },
+  "kuaixue": {
+    "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/19?dep=P",
+    "cover143": "release300/assets/manuscripts/kuaixue-2.webp",
+    "pages": [
+      "release300/assets/manuscripts/kuaixue-1.webp",
+      "release300/assets/manuscripts/kuaixue-2.webp",
+      "release300/assets/manuscripts/kuaixue-3.webp",
+      "release300/assets/manuscripts/kuaixue-4.webp",
+      "release300/assets/manuscripts/kuaixue-5.webp",
+      "release300/assets/manuscripts/kuaixue-6.webp",
+      "release300/assets/manuscripts/kuaixue-7.webp",
+      "release300/assets/manuscripts/kuaixue-8.webp",
+      "release300/assets/manuscripts/kuaixue-9.webp",
+      "release300/assets/manuscripts/kuaixue-10.webp",
+      "release300/assets/manuscripts/kuaixue-11.webp",
+      "release300/assets/manuscripts/kuaixue-12.webp"
+    ],
+    "pageNames": [
+      "晉王羲之快雪時晴帖　冊 · 1",
+      "晉王羲之快雪時晴帖　冊 · 2",
+      "晉王羲之快雪時晴帖　冊 · 3",
+      "晉王羲之快雪時晴帖　冊 · 4",
+      "晉王羲之快雪時晴帖　冊 · 5",
+      "晉王羲之快雪時晴帖　冊 · 6",
+      "晉王羲之快雪時晴帖　冊 · 7",
+      "晉王羲之快雪時晴帖　冊 · 8",
+      "晉王羲之快雪時晴帖　冊 · 9",
+      "晉王羲之快雪時晴帖　冊 · 10",
+      "晉王羲之快雪時晴帖　冊 · 11",
+      "晉王羲之快雪時晴帖　冊 · 12"
+    ],
+    "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。台北故宫所藏《快雪时晴帖》册；王羲之原迹与唐摹本归属依馆方研究。",
+    "versionNote300": "台北故宫所藏《快雪时晴帖》册；王羲之原迹与唐摹本归属依馆方研究。",
+    "imageSources300": [
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520789&randomCode=56273285932",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520790&randomCode=56569491977",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520791&randomCode=65264523758",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520792&randomCode=58792289508",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520793&randomCode=232612584",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520794&randomCode=24607458038",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520795&randomCode=86114743326",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520796&randomCode=71183267460",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520797&randomCode=53943040921",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520798&randomCode=25357543276",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520799&randomCode=88055563275",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=520800&randomCode=88283308652",
+        "width": 600,
+        "height": 449
+      }
+    ],
+    "objectNumber300": "故書000141N000000000"
+  },
+  "huangting": {
+    "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1949?dep=P",
+    "cover143": "release300/assets/manuscripts/huangting-1.webp",
+    "pages": [
+      "release300/assets/manuscripts/huangting-1.webp",
+      "release300/assets/manuscripts/huangting-2.webp",
+      "release300/assets/manuscripts/huangting-3.webp",
+      "release300/assets/manuscripts/huangting-4.webp",
+      "release300/assets/manuscripts/huangting-5.webp",
+      "release300/assets/manuscripts/huangting-6.webp"
+    ],
+    "pageNames": [
+      "宋拓寶晉齋黃庭經　冊 · 1",
+      "宋拓寶晉齋黃庭經　冊 · 2",
+      "宋拓寶晉齋黃庭經　冊 · 3",
+      "宋拓寶晉齋黃庭經　冊 · 4",
+      "宋拓寶晉齋黃庭經　冊 · 5",
+      "宋拓寶晉齋黃庭經　冊 · 6"
+    ],
+    "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。所用图像为宋拓《宝晋斋黄庭经》册，是刻帖拓本，不是王羲之墨迹。",
+    "versionNote300": "所用图像为宋拓《宝晋斋黄庭经》册，是刻帖拓本，不是王羲之墨迹。",
+    "imageSources300": [
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=478678&randomCode=64265156391",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=478679&randomCode=48628698318",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=478680&randomCode=36511076559",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=478681&randomCode=65213229378",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=478682&randomCode=80020866012",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=478683&randomCode=68599234605",
+        "width": 600,
+        "height": 449
+      }
+    ],
+    "objectNumber300": "故帖000021N000000000"
+  },
+  "leyi": {
+    "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/21574?dep=P",
+    "cover143": "release300/assets/manuscripts/leyi-1.webp",
+    "pages": [
+      "release300/assets/manuscripts/leyi-1.webp",
+      "release300/assets/manuscripts/leyi-2.webp",
+      "release300/assets/manuscripts/leyi-3.webp"
+    ],
+    "pageNames": [
+      "宋拓晉唐小楷　冊　王羲之樂毅論 · 1",
+      "宋拓晉唐小楷　冊　王羲之樂毅論 · 2",
+      "宋拓晉唐小楷　冊　王羲之樂毅論 · 3"
+    ],
+    "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。所用图像为《宋拓晋唐小楷》册《王羲之乐毅论》，是宋拓本，不是墨迹原件。",
+    "versionNote300": "所用图像为《宋拓晋唐小楷》册《王羲之乐毅论》，是宋拓本，不是墨迹原件。",
+    "imageSources300": [
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=478365&randomCode=16410433084",
+        "width": 600,
+        "height": 450
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=478366&randomCode=29653063337",
+        "width": 600,
+        "height": 450
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=478367&randomCode=83514636281",
+        "width": 600,
+        "height": 450
+      }
+    ],
+    "objectNumber300": "故帖000007N000000001"
+  },
+  "nikuan": {
+    "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14846?dep=P",
+    "cover143": "release300/assets/manuscripts/nikuan-2.webp",
+    "pages": [
+      "release300/assets/manuscripts/nikuan-1.webp",
+      "release300/assets/manuscripts/nikuan-2.webp",
+      "release300/assets/manuscripts/nikuan-3.webp",
+      "release300/assets/manuscripts/nikuan-4.webp",
+      "release300/assets/manuscripts/nikuan-5.webp",
+      "release300/assets/manuscripts/nikuan-6.webp",
+      "release300/assets/manuscripts/nikuan-7.webp",
+      "release300/assets/manuscripts/nikuan-8.webp",
+      "release300/assets/manuscripts/nikuan-9.webp",
+      "release300/assets/manuscripts/nikuan-10.webp",
+      "release300/assets/manuscripts/nikuan-11.webp"
+    ],
+    "pageNames": [
+      "唐褚遂良書倪寬傳贊　卷 · 1",
+      "唐褚遂良書倪寬傳贊　卷 · 2",
+      "唐褚遂良書倪寬傳贊　卷 · 3",
+      "唐褚遂良書倪寬傳贊　卷 · 4",
+      "唐褚遂良書倪寬傳贊　卷 · 5",
+      "唐褚遂良書倪寬傳贊　卷 · 6",
+      "唐褚遂良書倪寬傳贊　卷 · 7",
+      "唐褚遂良書倪寬傳贊　卷 · 8",
+      "唐褚遂良書倪寬傳贊　卷 · 9",
+      "唐褚遂良書倪寬傳贊　卷 · 10",
+      "唐褚遂良書倪寬傳贊　卷 · 11"
+    ],
+    "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。传褚遂良《倪宽传赞》卷；馆方指出可能为南宋摹本，不以旧题当作确定唐代真迹。",
+    "versionNote300": "传褚遂良《倪宽传赞》卷；馆方指出可能为南宋摹本，不以旧题当作确定唐代真迹。",
+    "imageSources300": [
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=519174&randomCode=33067540242",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=519173&randomCode=50593317182",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=519172&randomCode=85757815910",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=519171&randomCode=83851533948",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=519170&randomCode=19753784305",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=519169&randomCode=48998924625",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=519168&randomCode=81001207408",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=519167&randomCode=85037471755",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=519166&randomCode=40586052248",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=519165&randomCode=51416044689",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=519164&randomCode=29192431575",
+        "width": 600,
+        "height": 449
+      }
+    ],
+    "objectNumber300": "故書000054N000000000"
+  },
+  "luoshen13": {
+    "url": "https://online.bunka.go.jp/heritages/detail/456484",
+    "objectNumber300": "東京国立博物館 TB-1360",
+    "versionNote300": "图像为东京国立博物馆所藏《洛神赋十三行》纸本墨拓，不是王献之墨迹，也不是首都博物馆玉版原石照片。",
+    "imageCredit247": "东京国立博物馆藏；图像与资料：日本文化厅文化遗产在线。",
+    "pages": [
+      "release300/assets/manuscripts/luoshen13-1.webp",
+      "release300/assets/manuscripts/luoshen13-2.webp",
+      "release300/assets/manuscripts/luoshen13-3.webp",
+      "release300/assets/manuscripts/luoshen13-4.webp",
+      "release300/assets/manuscripts/luoshen13-5.webp",
+      "release300/assets/manuscripts/luoshen13-6.webp",
+      "release300/assets/manuscripts/luoshen13-7.webp",
+      "release300/assets/manuscripts/luoshen13-8.webp",
+      "release300/assets/manuscripts/luoshen13-9.webp",
+      "release300/assets/manuscripts/luoshen13-10.webp",
+      "release300/assets/manuscripts/luoshen13-11.webp",
+      "release300/assets/manuscripts/luoshen13-12.webp",
+      "release300/assets/manuscripts/luoshen13-13.webp",
+      "release300/assets/manuscripts/luoshen13-14.webp",
+      "release300/assets/manuscripts/luoshen13-15.webp"
+    ],
+    "pageNames": [
+      "东京国立博物馆藏纸本墨拓 · 1",
+      "东京国立博物馆藏纸本墨拓 · 2",
+      "东京国立博物馆藏纸本墨拓 · 3",
+      "东京国立博物馆藏纸本墨拓 · 4",
+      "东京国立博物馆藏纸本墨拓 · 5",
+      "东京国立博物馆藏纸本墨拓 · 6",
+      "东京国立博物馆藏纸本墨拓 · 7",
+      "东京国立博物馆藏纸本墨拓 · 8",
+      "东京国立博物馆藏纸本墨拓 · 9",
+      "东京国立博物馆藏纸本墨拓 · 10",
+      "东京国立博物馆藏纸本墨拓 · 11",
+      "东京国立博物馆藏纸本墨拓 · 12",
+      "东京国立博物馆藏纸本墨拓 · 13",
+      "东京国立博物馆藏纸本墨拓 · 14",
+      "东京国立博物馆藏纸本墨拓 · 15"
+    ],
+    "imageSources300": [
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594724228314488680_900.jpg",
+        "width": 482,
+        "height": 900
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594794702011089466_900.jpg",
+        "width": 900,
+        "height": 837
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594205747837860739_900.jpg",
+        "width": 900,
+        "height": 824
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594319367828977783_900.jpg",
+        "width": 900,
+        "height": 829
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594229621358943645_900.jpg",
+        "width": 900,
+        "height": 837
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594373218726514326_900.jpg",
+        "width": 900,
+        "height": 842
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594565895975907681_900.jpg",
+        "width": 900,
+        "height": 835
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594556479313732433_900.jpg",
+        "width": 900,
+        "height": 840
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594005125980614540_900.jpg",
+        "width": 900,
+        "height": 822
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594130454809623306_900.jpg",
+        "width": 900,
+        "height": 835
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594114539451896564_900.jpg",
+        "width": 900,
+        "height": 831
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594452070309284167_900.jpg",
+        "width": 900,
+        "height": 830
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594245180640818033_900.jpg",
+        "width": 900,
+        "height": 835
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594042468725695441_900.jpg",
+        "width": 900,
+        "height": 827
+      },
+      {
+        "url": "https://online.bunka.go.jp/heritage/131010/_444594/131010_444594439325031518641_900.jpg",
+        "width": 591,
+        "height": 900
+      }
+    ],
+    "cover143": "release300/assets/manuscripts/luoshen13-3.webp"
+  },
+  "yongle275": {
+    "url": "https://www.nlc.cn/nmcb/jpww/zhhp_ljcg/",
+    "versionNote300": "仅展示国家典籍博物馆公布的《永乐大典》卷7213—7214“堂”字册书影，不代表全书。",
+    "imageCredit247": "图像与资料：国家典籍博物馆。",
+    "pages": [
+      "release300/assets/manuscripts/yongle275-1.webp"
+    ],
+    "pageNames": [
+      "卷7213—7214“堂”字册书影"
+    ],
+    "imageSources300": [
+      {
+        "url": "https://www.nlc.cn/upload/img/2024-03-26/6bfba68e.jpg",
+        "width": 1000,
+        "height": 750
+      }
+    ],
+    "cover143": "release300/assets/manuscripts/yongle275-1.webp"
+  },
+  "wenjinge275": {
+    "url": "https://www.nlc.cn/pcab/gjbhzs/sc/20170814_154335.shtml",
+    "versionNote300": "此处展示《文津阁四库全书样本》书影；是抄写规范样书，不是整套四库全书或所有卷册的图像。",
+    "imageCredit247": "资料：国家古籍保护中心；书影依原页面标注来自网络。",
+    "pages": [
+      "release300/assets/manuscripts/wenjinge275-1.webp",
+      "release300/assets/manuscripts/wenjinge275-2.webp"
+    ],
+    "pageNames": [
+      "《文津阁四库全书样本》书影一",
+      "《文津阁四库全书样本》书影二"
+    ],
+    "imageSources300": [
+      {
+        "url": "https://www.nlc.cn/migrated/pcab.nlc.cn/gjbhzs/sc/201708/W020170814514591724156.jpg",
+        "width": 640,
+        "height": 509
+      },
+      {
+        "url": "https://www.nlc.cn/migrated/pcab.nlc.cn/gjbhzs/sc/201708/W020170814514591726295.jpg",
+        "width": 640,
+        "height": 539
+      }
+    ],
+    "cover143": "release300/assets/manuscripts/wenjinge275-1.webp"
+  },
+  "mengdian": {
+    "url": "https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/04/content_50238.html",
+    "cover143": "release300/assets/manuscripts/mengdian-main.webp",
+    "pages": [
+      "release300/assets/manuscripts/mengdian-main.webp"
+    ],
+    "pageNames": [
+      "辽宁省博物馆藏《仲尼梦奠帖》正文"
+    ],
+    "imageCredit247": "辽宁省博物馆藏；图像与资料：辽宁日报2019年11月4日展品解读。",
+    "versionNote300": "仅呈现《仲尼梦奠帖》正文，不混入后人题跋。",
+    "imageSources300": [
+      {
+        "url": "https://epaper.lnd.com.cn/lnrbepaper/pc/pic/201911/04/bbd44f2f-fa9d-49d8-bfc2-82b4a8d33b02.jpg.2",
+        "width": 484,
+        "height": 374
+      }
+    ]
+  },
+  "zhaocheng275": {
+    "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00159297",
+    "cover143": "release300/assets/manuscripts/zhaocheng275-main.webp",
+    "pages": [
+      "release300/assets/manuscripts/zhaocheng275-main.webp"
+    ],
+    "pageNames": [
+      "《赵城金藏》零卷《佛说弥勒下生成佛经·佛说弥勒来时经》书影"
+    ],
+    "imageCredit247": "上海博物馆藏，图像与资料：上海博物馆。",
+    "versionNote300": "以《赵城金藏》零卷为代表书影，千字文号“养”，《国家珍贵古籍名录》02957；不是整藏图像或释文。",
+    "imageSources300": [
+      {
+        "url": "https://www.shanghaimuseum.net/mu/upload/202305/33aad883-c171-4ed3-a6a7-32cbbc14a658.jpg",
+        "width": 14173,
+        "height": 562
+      }
+    ],
+    "objectNumber300": "国家珍贵古籍名录02957；千字文号“养”"
+  }
+}

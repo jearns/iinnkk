@@ -1,0 +1,269 @@
+{
+  "yuanan": {
+    "url": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/dzjp/mzyp/articlec484963b76bb4ed7be38b0295575efc0.html",
+    "cover143": "release300/assets/manuscripts-extra/yuanan-1.webp",
+    "pages": [
+      "release300/assets/manuscripts-extra/yuanan-1.webp"
+    ],
+    "pageNames": [
+      "图像为河南博物院公布的袁安碑（图一）；不混入同文介绍的袁敞碑。 · 1"
+    ],
+    "imageSources300": [
+      {
+        "url": "https://www.chnmus.net/images/attachement/jpg/site2/20120328/2c4138aa3db610dca3e407.jpg",
+        "width": 285,
+        "height": 540
+      }
+    ],
+    "versionNote300": "图像为河南博物院公布的袁安碑（图一）；不混入同文介绍的袁敞碑。",
+    "imageCredit247": "河南博物院。图像为河南博物院公布的袁安碑（图一）；不混入同文介绍的袁敞碑。"
+  },
+  "kuaiji": {
+    "url": "https://kmbl.hzwbzx.cn/stele/view?id=85",
+    "cover143": "release300/assets/manuscripts-extra/kuaiji-1.webp",
+    "pages": [
+      "release300/assets/manuscripts-extra/kuaiji-1.webp",
+      "release300/assets/manuscripts-extra/kuaiji-2.webp"
+    ],
+    "pageNames": [
+      "清代重摹会稽刻石的清拓本，浙江省博物馆藏；不是秦代原石。会稽刻石与所附峄山刻石分开，不用泰山刻石代替。 · 1",
+      "清代重摹会稽刻石的清拓本，浙江省博物馆藏；不是秦代原石。会稽刻石与所附峄山刻石分开，不用泰山刻石代替。 · 2"
+    ],
+    "imageSources300": [
+      {
+        "url": "https://kmbl.hzwbzx.cn/upfile/2024/08/21/big1724224635i8t9.jpg",
+        "width": 1095,
+        "height": 2114
+      },
+      {
+        "url": "https://kmbl.hzwbzx.cn/upfile/2024/08/29/1_202408290239071DlbR_small.jpg",
+        "width": 1000,
+        "height": 1930
+      }
+    ],
+    "versionNote300": "清代重摹会稽刻石的清拓本，浙江省博物馆藏；不是秦代原石。会稽刻石与所附峄山刻石分开，不用泰山刻石代替。",
+    "imageCredit247": "杭州孔庙·杭州文保中心；浙江省博物馆藏清拓本。清代重摹会稽刻石的清拓本，浙江省博物馆藏；不是秦代原石。会稽刻石与所附峄山刻石分开，不用泰山刻石代替。"
+  },
+  "zhangqian": {
+    "url": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/6be0a531-a57e-4d99-109e-3cb2dff175aa",
+    "cover143": "release300/assets/manuscripts-extra/zhangqian-5.webp",
+    "pages": [
+      "release300/assets/manuscripts-extra/zhangqian-1.webp",
+      "release300/assets/manuscripts-extra/zhangqian-2.webp",
+      "release300/assets/manuscripts-extra/zhangqian-3.webp",
+      "release300/assets/manuscripts-extra/zhangqian-4.webp",
+      "release300/assets/manuscripts-extra/zhangqian-5.webp",
+      "release300/assets/manuscripts-extra/zhangqian-6.webp",
+      "release300/assets/manuscripts-extra/zhangqian-7.webp",
+      "release300/assets/manuscripts-extra/zhangqian-8.webp",
+      "release300/assets/manuscripts-extra/zhangqian-9.webp",
+      "release300/assets/manuscripts-extra/zhangqian-10.webp",
+      "release300/assets/manuscripts-extra/zhangqian-11.webp",
+      "release300/assets/manuscripts-extra/zhangqian-12.webp"
+    ],
+    "pageNames": [
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 1",
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 2",
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 3",
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 4",
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 5",
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 6",
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 7",
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 8",
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 9",
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 10",
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 11",
+      "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 12"
+    ],
+    "imageSources300": [
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0001.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      },
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0002.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      },
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0003.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      },
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0004.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      },
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0005.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      },
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0006.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      },
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0007.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      },
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0008.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      },
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0009.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      },
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0010.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      },
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0011.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      },
+      {
+        "url": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006261/tiff/AA006261-00-0012.tif/full/!1800,1800/0/default.jpg",
+        "width": 1800,
+        "height": 1571
+      }
+    ],
+    "versionNote300": "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。",
+    "imageCredit247": "东京大学附属图书馆亚洲研究图书馆U-PARL；原图来自该馆IIIF公开服务。东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。",
+    "objectNumber300": "A006261"
+  },
+  "shiqi": {
+    "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1986?dep=P",
+    "objectNumber300": "故帖000062N000000000",
+    "cover143": "release300/assets/manuscripts-extra/shiqi-2.webp",
+    "pages": [
+      "release300/assets/manuscripts-extra/shiqi-1.webp",
+      "release300/assets/manuscripts-extra/shiqi-2.webp",
+      "release300/assets/manuscripts-extra/shiqi-3.webp",
+      "release300/assets/manuscripts-extra/shiqi-4.webp",
+      "release300/assets/manuscripts-extra/shiqi-5.webp",
+      "release300/assets/manuscripts-extra/shiqi-6.webp",
+      "release300/assets/manuscripts-extra/shiqi-7.webp",
+      "release300/assets/manuscripts-extra/shiqi-8.webp",
+      "release300/assets/manuscripts-extra/shiqi-9.webp",
+      "release300/assets/manuscripts-extra/shiqi-10.webp",
+      "release300/assets/manuscripts-extra/shiqi-11.webp",
+      "release300/assets/manuscripts-extra/shiqi-12.webp",
+      "release300/assets/manuscripts-extra/shiqi-13.webp",
+      "release300/assets/manuscripts-extra/shiqi-14.webp",
+      "release300/assets/manuscripts-extra/shiqi-15.webp",
+      "release300/assets/manuscripts-extra/shiqi-16.webp"
+    ],
+    "pageNames": [
+      "《旧榻十七帖》册页 · 1",
+      "《旧榻十七帖》册页 · 2",
+      "《旧榻十七帖》册页 · 3",
+      "《旧榻十七帖》册页 · 4",
+      "《旧榻十七帖》册页 · 5",
+      "《旧榻十七帖》册页 · 6",
+      "《旧榻十七帖》册页 · 7",
+      "《旧榻十七帖》册页 · 8",
+      "《旧榻十七帖》册页 · 9",
+      "《旧榻十七帖》册页 · 10",
+      "《旧榻十七帖》册页 · 11",
+      "《旧榻十七帖》册页 · 12",
+      "《旧榻十七帖》册页 · 13",
+      "《旧榻十七帖》册页 · 14",
+      "《旧榻十七帖》册页 · 15",
+      "《旧榻十七帖》册页 · 16"
+    ],
+    "imageSources300": [
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479528&randomCode=1176230400",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479513&randomCode=80579336505",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479514&randomCode=85754848967",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479515&randomCode=81509217357",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479516&randomCode=37465698024",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479517&randomCode=57382587443",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479518&randomCode=2139390310",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479519&randomCode=1345690765",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479520&randomCode=717822062",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479521&randomCode=1991370857",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479522&randomCode=402072949",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479523&randomCode=237972812",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479524&randomCode=409163882",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479525&randomCode=1686342200",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479526&randomCode=1506161379",
+        "width": 600,
+        "height": 449
+      },
+      {
+        "url": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=479527&randomCode=1989472039",
+        "width": 600,
+        "height": 449
+      }
+    ],
+    "versionNote300": "台北故宫藏《旧榻十七帖》册，勅字本系统；正文图像由馆方关联分件取得，不以册页封面代替正文。",
+    "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。正文图像来自馆方分件记录。"
+  }
+}

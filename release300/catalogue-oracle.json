@@ -1,0 +1,248 @@
+{
+  "oracle-sacrifice298": {
+    "title": "祭祀牛胛骨刻辞《甲》3333＋3361",
+    "objectNumber300": "《殷虚文字甲编》3333＋3361",
+    "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+    "museum": "中央研究院历史语言研究所",
+    "place": "台北",
+    "era": "殷商",
+    "description": "两片缀合牛肩胛骨记录在义京祭祀的占问，展示字形、卜兆与行列的关系。",
+    "milestone": "以可定位的缀合编号，将商代祭祀记录与真实契刻布局对应起来。",
+    "replaces300": "299版祭祀刻辞龟甲未取得可核实著录号，300改选同主题且有明确编号的馆藏。",
+    "sources300": [
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+      }
+    ],
+    "imageCredit247": "图像：中央研究院历史语言研究所历史文物陈列馆公开高清图。",
+    "pages": [
+      "release300/assets/oracle/oracle-sacrifice298-1.webp"
+    ],
+    "pageNames": [
+      "原器图 · 《殷虚文字甲编》3333＋3361"
+    ],
+    "cover143": "release300/assets/oracle/oracle-sacrifice298-1.webp"
+  },
+  "oracle-tufang298": {
+    "title": "土方征涂朱卜骨刻辞《合集》6057",
+    "objectNumber300": "《甲骨文合集》6057正、反",
+    "url": "https://www.chnmuseum.cn/zp/zpml/201812/t20181218_26025.shtml",
+    "description": "牛肩胛骨的长篇卜辞保留商代边境战事和占卜记录，字口涂朱。正反面应按同一骨版对读，不把现代临写本当作原刻。",
+    "sources300": [
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://www.chnmuseum.cn/zp/zpml/201812/t20181218_26025.shtml"
+      },
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/search.php?word=%E5%BE%81"
+      }
+    ],
+    "imageCredit247": "图像：中国国家博物馆公开馆藏图；具体著录号与依据分别登记。",
+    "pages": [
+      "release300/assets/oracle/oracle-tufang298-1.webp"
+    ],
+    "pageNames": [
+      "原器图 · 《甲骨文合集》6057正、反"
+    ],
+    "cover143": "release300/assets/oracle/oracle-tufang298-1.webp"
+  },
+  "oracle-ban298": {
+    "title": "般无咎全甲刻辞《合集》4264",
+    "objectNumber300": "《甲骨文合集》4264",
+    "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250929.shtml",
+    "description": "商王为贵族般卜问有无灾祸。刻辞与卜兆、兆序相互对应，可观察完整龟甲的空间安排。",
+    "sources300": [
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250929.shtml"
+      },
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://www.rmhb.com.cn/yxsj/zttp/201912/t20191212_800187500_3.html"
+      }
+    ],
+    "imageCredit247": "图像：中国国家博物馆公开馆藏图；具体著录号与依据分别登记。",
+    "pages": [
+      "release300/assets/oracle/oracle-ban298-1.webp"
+    ],
+    "pageNames": [
+      "原器图 · 《甲骨文合集》4264"
+    ],
+    "cover143": "release300/assets/oracle/oracle-ban298-1.webp"
+  },
+  "oracle-qiang298": {
+    "title": "小臣墙记事刻辞《合集》36481",
+    "objectNumber300": "《甲骨文合集》36481；《双剑誃所藏甲骨文字》212",
+    "url": "https://www.dpm.org.cn/impress/talk/248912.html",
+    "description": "牛骨版两面分别保存记事刻辞与干支表。残辞的正反面称谓及缺文存在讨论，图像分为馆藏照片和旧拓，不以拟补文字替代原物。",
+    "sources300": [
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://www.dpm.org.cn/impress/talk/248912.html"
+      },
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://www.dpm.org.cn/Uploads/File/2019/02/22/u5c6fe719bec1f.pdf"
+      }
+    ],
+    "imageCredit247": "原器照片与旧拓引自故宫博物院院刊2019年第2期《小臣墙骨版刻辞残缺文字拟补》图一、图二，照片馆藏为中国国家博物馆。",
+    "pages": [
+      "release300/assets/oracle/qiang-1.webp",
+      "release300/assets/oracle/qiang-3.webp",
+      "release300/assets/oracle/qiang-5.webp",
+      "release300/assets/oracle/qiang-6.webp"
+    ],
+    "pageNames": [
+      "馆藏照片一 · 《合集》36481",
+      "馆藏照片二 · 《合集》36481",
+      "旧拓一 · 《合集》36481",
+      "旧拓二 · 《合集》36481"
+    ],
+    "cover143": "release300/assets/oracle/qiang-1.webp"
+  },
+  "oracle-zaifeng298": {
+    "title": "宰丰骨匕《合补》11299",
+    "objectNumber300": "《甲骨文合集补编》11299；《殷契佚存》518",
+    "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250927.shtml",
+    "description": "骨匕的一面保存赏赐记事，另一面雕有纹饰并嵌绿松石。它展示甲骨文字不只用于占卜，也用于记事与纪念。",
+    "sources300": [
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250927.shtml"
+      },
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://www.xianqin.org/data/zhhsong_guobo_Yh127_20071120.pdf"
+      }
+    ],
+    "imageCredit247": "图像：中国国家博物馆公开馆藏图；具体著录号与依据分别登记。",
+    "pages": [
+      "release300/assets/oracle/oracle-zaifeng298-1.webp"
+    ],
+    "pageNames": [
+      "原器图 · 《甲骨文合集补编》11299；《殷契佚存》518"
+    ],
+    "cover143": "release300/assets/oracle/oracle-zaifeng298-1.webp"
+  },
+  "oracle-farming298": {
+    "title": "众人协田卜骨刻辞《合集》1",
+    "objectNumber300": "《甲骨文合集》1；国博甲骨卷45，旧编号Y703",
+    "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202107/t20210728_250885.shtml",
+    "description": "卜辞记商王命众人协田并卜问收成，是《甲骨文合集》的开卷第一片。协田的具体制度与释义仍应结合研究阅读。",
+    "sources300": [
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202107/t20210728_250885.shtml"
+      },
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://www.xianqin.org/data/zhhsong_guobo_Yh127_20071120.pdf"
+      },
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://news.nankai.edu.cn/mtnk/system/2026/10/15/030074801.shtml"
+      }
+    ],
+    "imageCredit247": "图像：中国国家博物馆公开馆藏图；具体著录号与依据分别登记。",
+    "pages": [
+      "release300/assets/oracle/oracle-farming298-1.webp"
+    ],
+    "pageNames": [
+      "原器图 · 《甲骨文合集》1；国博甲骨卷45，旧编号Y703"
+    ],
+    "cover143": "release300/assets/oracle/oracle-farming298-1.webp"
+  },
+  "oracle-zhou298": {
+    "title": "先书后刻龟甲《乙》5867＋8202",
+    "objectNumber300": "《殷虚文字乙编》5867＋8202",
+    "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+    "museum": "中央研究院历史语言研究所",
+    "place": "台北",
+    "era": "殷商",
+    "year": -1250,
+    "dateLabel": "商代晚期；以馆方分期为准",
+    "description": "龟甲保留先写后刻的痕迹，内容涉及问雨。序辞刻在背面，帮助理解毛笔书写与契刻之间的工序关系。",
+    "milestone": "罕见的先书后刻痕迹，为追溯毛笔与甲骨契刻的关系提供实物线索。",
+    "replaces300": "299版西周卦画卜骨未取得可核实器号，300改选明确著录号的先书后刻龟甲；并非同一文物。",
+    "sources300": [
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+      }
+    ],
+    "imageCredit247": "图像：中央研究院历史语言研究所历史文物陈列馆公开高清图。",
+    "pages": [
+      "release300/assets/oracle/oracle-zhou298-1.webp"
+    ],
+    "pageNames": [
+      "原器图 · 《殷虚文字乙编》5867＋8202"
+    ],
+    "cover143": "release300/assets/oracle/oracle-zhou298-1.webp"
+  },
+  "oracle-fuhao298": {
+    "title": "妇好分娩卜辞《丙》247",
+    "objectNumber300": "《殷虚文字丙编》247；《甲骨文合集》14002正",
+    "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+    "description": "商王武丁时期的龟腹甲保存妇好分娩的占问与结果，将具体人物的生活带入商代史。",
+    "sources300": [
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+      },
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+      }
+    ],
+    "imageCredit247": "图像：中央研究院历史语言研究所历史文物陈列馆公开高清图。",
+    "pages": [
+      "release300/assets/oracle/oracle-fuhao298-1.webp"
+    ],
+    "pageNames": [
+      "原器图 · 《殷虚文字丙编》247；《甲骨文合集》14002正"
+    ],
+    "cover143": "release300/assets/oracle/oracle-fuhao298-1.webp"
+  },
+  "oracle-brush298": {
+    "title": "带朱书龟甲卜辞《乙》0778",
+    "objectNumber300": "《殷虚文字乙编》0778",
+    "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+    "description": "朱书问雨文字保留真实的早期书写墨迹，适合将毛笔线条与契刻线条对照观察。",
+    "sources300": [
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+      }
+    ],
+    "imageCredit247": "图像：中央研究院历史语言研究所历史文物陈列馆公开高清图。",
+    "pages": [
+      "release300/assets/oracle/oracle-brush298-1.webp"
+    ],
+    "pageNames": [
+      "原器图 · 《殷虚文字乙编》0778"
+    ],
+    "cover143": "release300/assets/oracle/oracle-brush298-1.webp"
+  },
+  "oracle-harvest298": {
+    "title": "填朱卜辞龟腹甲《乙》0867",
+    "objectNumber300": "《殷虚文字乙编》0867",
+    "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+    "description": "丙子日由贞人韦对问收成，以受年与不受年构成对贞。填朱字口使文字和布局更加清晰。",
+    "sources300": [
+      {
+        "label": "馆藏与编号依据",
+        "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+      }
+    ],
+    "imageCredit247": "图像：中央研究院历史语言研究所历史文物陈列馆公开高清图。",
+    "pages": [
+      "release300/assets/oracle/oracle-harvest298-1.webp"
+    ],
+    "pageNames": [
+      "原器图 · 《殷虚文字乙编》0867"
+    ],
+    "cover143": "release300/assets/oracle/oracle-harvest298-1.webp"
+  }
+}

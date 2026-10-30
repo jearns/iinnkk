@@ -1838,21 +1838,21 @@
     },
     "shengjiao": {
       "deleted": false,
-      "era": "东晋",
+      "era": "唐",
       "script": "行书",
       "year": 672,
-      "dateLabel": "公元672年·唐集字碑",
+      "dateLabel": "672年",
       "glyph": "羲",
       "order": 16,
-      "title": "怀仁集王羲之字·圣教序",
-      "place": "中国·西安",
+      "title": "集王圣教序",
+      "place": "陕西西安",
       "museum": "西安碑林博物馆",
-      "status": "唐代集字刻碑，并非王羲之亲笔原帖",
-      "milestone": "",
-      "description": "",
+      "status": "唐集字原碑",
+      "milestone": "以集字把王羲之行书带入大型碑刻，推动二王书风广泛传播。",
+      "description": "集字碑非王羲之亲笔连续书写；文含唐太宗圣教序等，新增应登记整碑还是单独序文，避免与褚遂良雁塔圣教序混淆。",
       "textStatus183": "",
       "parentId": "",
-      "url": "https://beilin-museum.com/",
+      "url": "https://www.dpm.org.cn/collection/impres/228597.html",
       "style": "wang",
       "size": 350,
       "zoom": 200,
@@ -1862,7 +1862,7 @@
         "x": 52.361106872558594,
         "y": 27.77777777777778
       },
-      "author": "王羲之",
+      "author": "怀仁集王羲之字",
       "authorPosition151": "",
       "fullText148": "",
       "videoUrl148": "",
@@ -1972,7 +1972,54 @@
         "timeline/pages/shengjiao/mv27gtnf-1c/IMG_4302.jpeg",
         "timeline/pages/shengjiao/mv27gv4p-1d/IMG_4303.jpeg",
         "timeline/pages/shengjiao/mv27gwrs-1e/IMG_4304.jpeg"
-      ]
+      ],
+      "preserveUserPages300": true,
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/shengjiao-1.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9803.jpg",
+          "label": "集王圣教序之一",
+          "width": 379,
+          "height": 400,
+          "sha256": "057b796611302723bebc16d05d3a8aefd788e7baf8eb750ba4f0181006bd232b"
+        },
+        {
+          "path": "release300/assets/steles/shengjiao-2.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9804.jpg",
+          "label": "集王圣教序之三",
+          "width": 389,
+          "height": 400,
+          "sha256": "4b9180fcbb526788782c5f5fff0202244390ef19fa6bea951e77f9a7d69d647d"
+        },
+        {
+          "path": "release300/assets/steles/shengjiao-3.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9805.jpg",
+          "label": "集王圣教序之四",
+          "width": 388,
+          "height": 400,
+          "sha256": "d69b2ece6e711231a28e6a04ceac2b634cef2f1f3d16b59b00582b6d36443710"
+        },
+        {
+          "path": "release300/assets/steles/shengjiao-4.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9806.jpg",
+          "label": "集王圣教序之五",
+          "width": 384,
+          "height": 400,
+          "sha256": "aefdf5bd2e500ab41afd4b681e35f0215022fb3c798e1a358bc821245c952e2f"
+        },
+        {
+          "path": "release300/assets/steles/shengjiao-5.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9808.jpg",
+          "label": "集王圣教序之七",
+          "width": 394,
+          "height": 400,
+          "sha256": "c1a4f04293c5a912f6ac20841e822179177b50960f2e4e6eaced0f5fb531ca59"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "id": "shengjiao",
+      "catalogueRelease300": true
     },
     "jiucheng": {
       "deleted": false,
@@ -2762,18 +2809,18 @@
     },
     "yihe": {
       "deleted": false,
-      "era": "南朝",
-      "script": "摩崖楷书",
-      "year": 500,
-      "dateLabel": "约公元450—550年·断代有争议",
+      "era": "南朝（作者、年代有讨论）",
+      "script": "楷书／隶意",
+      "year": null,
+      "dateLabel": "南朝；作者、确切纪年有讨论",
       "glyph": "鶴",
       "order": 0,
       "title": "瘗鹤铭",
-      "place": "中国·镇江",
-      "museum": "焦山摩崖遗存；故宫藏宋拓",
-      "status": "作者归属有争议，不作陶弘景真迹展示",
-      "milestone": "南朝摩崖把楷书带入山石尺度，舒展书势影响隋唐碑刻审美。",
-      "description": "",
+      "place": "江苏镇江",
+      "museum": "焦山碑林",
+      "status": "残石迁藏焦山碑林；作者有争议",
+      "milestone": "大字中的隶意、草情与舒朗气度，启发后世榜书并获“大字之祖”赞誉。",
+      "description": "为瘗鹤而刻，残石曾崩落江中、多次打捞。作者与刻年存在不同说法，不能把陶弘景与514年说当成确定事实。",
       "textStatus183": "",
       "parentId": "",
       "url": "https://www.dpm.org.cn/collection/impres/234548.html",
@@ -2786,7 +2833,7 @@
         "x": 21.249999999999996,
         "y": 100
       },
-      "author": "陶宏景（据信）",
+      "author": "署华阳真逸；传陶弘景等说",
       "authorPosition151": "",
       "fullText148": "",
       "videoUrl148": "",
@@ -3056,7 +3103,54 @@
         "timeline/pages/yihe/mv4oww54-18/IMG_4701.jpeg",
         "timeline/pages/yihe/mv4owxzd-19/IMG_4702.jpeg",
         "timeline/pages/yihe/mv61n7xm-0/IMG_4603.jpeg"
-      ]
+      ],
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/yihe-1.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/826.jpg",
+          "label": "瘗鹤铭-碑文之一",
+          "width": 400,
+          "height": 321,
+          "sha256": "bee0863f0054c1491b426314145d303d3094e18bc25d5f37c0d0339cf3772695"
+        },
+        {
+          "path": "release300/assets/steles/yihe-2.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/827[1024].jpg",
+          "label": "瘗鹤铭-碑文之二",
+          "width": 1024,
+          "height": 811,
+          "sha256": "ccf130398133878cc309a31188dc2de8c513613ad1c0ad94949f8693efa9e8a0"
+        },
+        {
+          "path": "release300/assets/steles/yihe-3.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/828.jpg",
+          "label": "瘗鹤铭-碑文之三",
+          "width": 400,
+          "height": 320,
+          "sha256": "0cf276afd040aa037dafd7167f250c99a020350b8d78dcec6a4879f90d1bdff1"
+        },
+        {
+          "path": "release300/assets/steles/yihe-4.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/830.jpg",
+          "label": "瘗鹤铭-碑文之四",
+          "width": 400,
+          "height": 330,
+          "sha256": "36c263dccc9681cce59cc47f1a52d84781f249f9279cf90cee1c8982b8122c64"
+        },
+        {
+          "path": "release300/assets/steles/yihe-5.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/831.jpg",
+          "label": "瘗鹤铭-碑文之五",
+          "width": 400,
+          "height": 318,
+          "sha256": "88262208cca37ccafcfcc4d1de3d6512828f185f0bb9bd6beed63c23ba8fe43b"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "id": "yihe",
+      "catalogueRelease300": true,
+      "preserveUserPages300": true
     },
     "pingfu": {
       "deleted": false,
@@ -4126,8 +4220,8 @@
       "script": "古籀",
       "place": "原书亡佚",
       "museum": "无原件馆藏",
-      "status": "",
-      "url": "",
+      "status": "原书亡佚，无可供欣赏的原作图像",
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=128143&la=0&powerMode=0",
       "style": "ouyang",
       "size": 360,
       "zoom": 150,
@@ -4148,29 +4242,42 @@
         "zoom": 1,
         "x": 50,
         "y": 50
-      }
+      },
+      "versionNote300": "《史籀篇》原书已佚。后世辑本、说文所引籀文与其他篆书拓本都不等于原书手迹；本站不生成或冒用原作图片。",
+      "imageUnavailable300": true,
+      "sources300": [
+        {
+          "label": "教育部重编国语辞典·史籀篇",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=128143&la=0&powerMode=0"
+        },
+        {
+          "label": "故宫博物院·籀文",
+          "url": "https://www.dpm.org.cn/lemmas/240105.html"
+        }
+      ],
+      "catalogueRelease300": true
     },
     "hezun": {
       "id": "hezun",
       "era": "西周",
       "title": "何尊",
       "script": "金文",
-      "place": "中国·宝鸡",
+      "place": "宝鸡",
       "museum": "宝鸡青铜器博物院",
       "status": "",
-      "url": "https://wwj.baoji.gov.cn/col1892/col17273/202505/t20250512_1147496.html",
+      "url": "https://www.xianqin.org/xr_html/articles/lwjsh/384.html",
       "style": "yan",
       "size": 420,
       "zoom": 145,
       "glyph": "中",
       "order": 3,
-      "milestone": "铭文中的“中国”见证早期国家观念，凝铸西周礼制与文字的庄严气象。",
+      "milestone": "“宅兹中国”的铭文，为早期国家观念与成周营建留下重要实物线索。",
       "portraitLabel": "",
       "year": -1038,
-      "dateLabel": "约公元前1050—1000年",
+      "dateLabel": "约公元前11世纪",
       "summary211": "铭文中的“中国”见证早期国家观念，凝铸西周礼制与文字的庄严气象。",
-      "author": "",
-      "description": "",
+      "author": "书者佚名",
+      "description": "从器内铭文认识字形、制度与历史叙述的相互联系。",
       "fullText148": "铭文释文：\n唯王初迁宅于成周，复称武王礼，祼自天。在四月丙戌，王诰宗小子于京室，曰：“昔在尔考公氏，克逑文王，肆文王受兹大[命]。唯武王既克大邑商，则廷告于天，曰：‘余其宅兹中国，自之乂民。’呜呼！尔有唯小子，亡识，视于公氏有庸于天彻命，敬享哉！助王龏德，欲天临我不敏。”王咸诰，何赐贝卅朋，用作□公宝尊彝。唯王五祀。\n\n翻译一下：\n王刚开始迁到成周，再次行用武王的礼典，从天室起始举行祼祭。在四月丙戌之日，王到京室，训诰宗族小子们说：“过去你们的父辈诸公能够辅佐文王，文王接受了（上天让周代商的）大命。武王攻克大邑商后，就在大廷告祭上天，说：‘我要宅居天下之中，从这里统治万民。’啊！你们都是小子，没有识见，要向前辈诸公看齐，像他们那样努力贯彻上天下达的大命，敬事君王，辅助我秉持明德，以使上天眷顾我们国家的不才之人。”王训诰完毕，何被赏赐贝币三十朋（古代贝币单位），因此铸造了祭祀□公的宝器。时为王的第五年。",
       "pages": [
         "timeline/pages/hezun/28c07379-6e72-48fd-a996-cbde05111f5b.jpg",
@@ -4184,7 +4291,16 @@
         "zoom": 1.6035485463739887,
         "x": 38.07047079684972,
         "y": 17.209826152584853
-      }
+      },
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://www.xianqin.org/xr_html/articles/lwjsh/384.html"
+        }
+      ],
+      "objectNumber300": "《殷周金文集成》6014",
+      "catalogueRelease300": true,
+      "preserveUserPages300": true
     },
     "wangziwu": {
       "id": "wangziwu",
@@ -4228,8 +4344,8 @@
       "era": "西周",
       "title": "散氏盘",
       "script": "金文",
-      "place": "中国·台北",
-      "museum": "国立故宫博物院",
+      "place": "台北",
+      "museum": "台北故宫博物院",
       "status": "",
       "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1462?dep=U&mode=full",
       "style": "yan",
@@ -4237,13 +4353,13 @@
       "zoom": 145,
       "glyph": "盤",
       "order": 2,
-      "milestone": "西周金文的奇逸代表，在错落章法中展现金文自由舒展的生命力。",
+      "milestone": "以土地交割与盟誓的记录留存社会生活，字势朴拙而富有欹侧变化。",
       "portraitLabel": "",
       "year": -800,
-      "dateLabel": "约公元前850—750年",
+      "dateLabel": "西周晚期",
       "summary211": "西周金文的奇逸代表，在错落章法中展现金文自由舒展的生命力。",
-      "author": "",
-      "description": "",
+      "author": "书者佚名",
+      "description": "将文字作为契约与见证；观察横向舒展、错落自然的结体。",
       "fullText148": "散氏盘，又称夨人盘，西周晚期青铜器，因铭文中有“散氏”字样而得名。清乾隆年间出土于陕西凤翔（今宝鸡市凤翔县），现藏于台北故宫博物院。\n盘高20.6公分，腹深9.8公分，口径54.6公分，底径41.4公分。圆形 ，浅腹，双附耳，高圈足。腹饰夔纹，间以兽首三，圈足饰兽面纹。内底铸有铭文19行、357字。记述地是夨人付给散氏田地之事，是研究西周土地制度的重要史料。散国位于陕西宝鸡凤翔一带，西北方与夨国为邻。青铜器断代上一般将散氏盘定为周厉王时器。被誉为“晚清四大国宝”（大盂鼎、毛公鼎、虢季子白盘、散氏盘）之一。",
       "pages": [
         "timeline/pages/sanshi/df036a75-5c36-4d69-b984-8896d8ff79a6.jpg",
@@ -4282,29 +4398,38 @@
         "zoom": 1.3599307365710676,
         "x": 41.875,
         "y": 52.07171314741036
-      }
+      },
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1462?dep=U&mode=full"
+        }
+      ],
+      "objectNumber300": "台北故宫文物统一编号：故銅002376N000000000",
+      "catalogueRelease300": true,
+      "preserveUserPages300": true
     },
     "maogong": {
       "id": "maogong",
       "era": "西周",
       "title": "毛公鼎",
       "script": "金文",
-      "place": "中国·台北",
-      "museum": "国立故宫博物院",
+      "place": "台北",
+      "museum": "台北故宫博物院",
       "status": "",
-      "url": "https://www.npm.gov.tw/",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1438?dep=U&mode=full",
       "style": "yan",
       "size": 430,
       "zoom": 145,
       "glyph": "鼎",
       "order": 1,
-      "milestone": "西周长篇金文的雄浑典范，以庙堂气象铸就青铜时代的文字丰碑。",
+      "milestone": "西周册命长篇铭文的代表，以庄重章法保存王命、政治理想与文字艺术。",
       "portraitLabel": "",
       "year": -800,
-      "dateLabel": "约公元前850—750年",
+      "dateLabel": "约公元前9—前8世纪",
       "summary211": "西周长篇金文的雄浑典范，以庙堂气象铸就青铜时代的文字丰碑。",
-      "author": "",
-      "description": "历史\n《毛公鼎》，西周晚期毛公所铸青铜器，造型端庄稳重，饰纹也十分简洁有力、古雅朴素，标志着西周晚期，青铜器已经从浓重的神秘色彩中摆脱出来，清道光年间出土于陕西岐山，收藏于台北故宫博物院。铭文长达四百九十七字，为皇皇钜制，被誉为“抵得一篇尚书”。其内容是周王为中兴周室，革除积弊，策命重臣毛公，要他忠心辅佐周王，以免遭丧国之祸，并赐给他大量物品，毛公为感谢周王，特铸鼎记其事。其书法是成熟的西周金文风格，\n奇逸飞动，气象浑穆，笔意圆劲茂隽，结体方长",
+      "author": "书者佚名",
+      "description": "行列端整，字形凝重；适合比较西周晚期金文的秩序与书写意味。",
       "fullText148": "王若曰：“父歆，丕显文武，皇天引厌劂德，配我有周，膺受大命，率怀不廷方亡不觐于文武耿光。唯天将集厥命，亦唯先正略又劂辟，属谨大命，肆皇天亡，临保我有周，丕巩先王配命，畏天疾威，司余小子弗，邦将曷吉？迹迹四方，大从丕静。呜呼！惧作小子溷湛于艰，永巩先王”。王曰：父歆，余唯肇经先王命，命汝辥我邦，我家内外，憃于小大政，甹朕立，虩许上下若否。宁四方死母童，祭一人才立，引唯乃智，余非庸又昏，汝母敢妄宁,虔夙夕，惠我一人，拥我邦小大猷，毋折缄，告余先王若德，用印邵皇天，緟恪大命，康能四国，俗我弗作先王忧。王曰：父歆，余之庶出，入事于外，专命专政，蓺小大楚赋，无唯正闻，引其唯王智，廼唯是丧我国，历自今，出入专命于外，厥非先告歆，父歆舍命，母又敢专命于外。 王曰：父歆，今余唯緟先王命，命汝亟一方，弘我邦我家，毋顀于政，勿雝建庶口。母敢龏槖，龏槖乃侮鳏寡，善效乃友正，母敢湛于酒，汝母敢坠在乃服，恪夙夕，敬念王畏不赐。女母弗帅用先王作明刑，俗女弗以乃辟圅于囏。王曰：父歆，已曰及兹卿事寮，大史寮，于父即君，命女摄司公族，雩三有司，小子，师氏，虎臣雩朕亵事，以乃族干吾王身，取专卅寽，赐汝秬鬯一卣，裸圭瓒宝，朱市，悤黄，玉环，玉瑹金车，绎较，朱嚣弘斩，虎冟熏裹，右厄，画鞴，画輴，金甬，错衡，金童，金豙，涑燢，金簟笰，鱼箙，马四匹，攸勒，金口，金膺，朱旂二铃，易汝兹关，用岁于政，毛公对歆天子皇休，用作尊鼎，子子孙孙永宝用。参考释文周王这样说：“父歆啊！伟大英明的文王和武王，皇天很满意他们的德行，让我们周国匹配他，我们衷心地接受了皇天的伟大命令。循抚怀柔了那些不来朝聘的方国，他们没有不在文王、武王的光辉润泽之中的。这样，老天爷就收回了殷的命令而给了我们周国。这也是先辈大臣们辅助他们的主君，勤恳奉天大命的结果。所以皇天不懈，监护着我们周国，大大巩固了降给先王的匹配命令。但是严肃的上天突然发出威怒，嗣后的我虽没来得及领略天威，却知道对国家是不吉利的。扰扰四方，很不安宁。唉！我真害怕沉溺在艰难之中，永远给先王带来忧惧。”周王说：“父歆啊！我严正地遵守先王的命令，命令你治理我们国家和我们家族的里里外外，操心大大小小的政事。屏卫我的王位，协调上下关系，考绩四方官吏，始终不使我的王位动摇。这需要发挥你的智慧。我并不是那么平庸而昏聩的，你也不能怠忽苟安，虔诚地时刻地惠助于我，维护我们国家大大小小的谋划，不要闭口不说话。经常告诉我先王的美德，以便我能符合天意，继续勉力保持大命，使四方诸国康强安定，使我不造成先王的担忧！”周王说：“父歆啊！这些众官出入从事，对外发布政令，制定各种徭役赋税，不管错对，都说是我的英明。这是可以造成亡国的！从今以后，出入或颁布命令，没有事先报告你，也不是你叫他们颁布的，就不能对外胡乱发布政令！”周王说：“父歆啊！现在我重申先王的命令，命令你做一方的政治楷模，光大我们的国家和家族。不要荒怠政事，不要壅塞庶民，不要让官吏中饱私囊，不要欺负鳏公寡妇。好好教导你的僚属，不能酗酒。你不能从你的职位上坠落下来，时刻勉力啊！恭恭敬敬地记住守业不易的遗训。你不能不以先王所树立的典型为表率，你不要让你的君主陷入困难境地！”周王说：“父歆啊！我已对这些卿事僚、太史僚说过，叫他们归你管束。还命令你兼管公族和三有司、小子、师氏、虎臣，以及我的一切官吏。你率领你的族属捍卫我。取资三十寽，赐你香酒一坛、裸祭用的圭瓒宝器、红色蔽膝加青色横带、玉环、玉笏、金车、有纹饰的蔽较、红皮制成的鞃和艰、虎纹车盖绛色里子、轭头、蒙饰车厢前面栏杆的画缚、铜车辔、错纹衡饰、金踵、金秜、金蕈席、鱼皮箭袋、四匹马、镳和络、金马冠、金缨索、红旗二杆。赐你这些器物，以便你用来岁祭和征伐。”毛公喑为了报答天子的辉煌美德，因而铸造了一个宝鼎子子孙孙永远宝用。",
       "pages": [
         "timeline/pages/maogong/d57b4046-6388-4eb1-9047-f1ff0187736a.jpg",
@@ -4332,7 +4457,16 @@
         "zoom": 1.119595871071641,
         "x": 20.194253662189666,
         "y": 5.068759591444765
-      }
+      },
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1438?dep=U&mode=full"
+        }
+      ],
+      "objectNumber300": "台北故宫文物统一编号：中銅000651N000000000",
+      "catalogueRelease300": true,
+      "preserveUserPages300": true
     },
     "mao-changzheng257": {
       "id": "mao-changzheng257",
@@ -4760,11 +4894,25 @@
       "glyph": "藏",
       "milestone": "金代雕版佛典，国图四大专藏之一。",
       "description": "因曾藏于山西赵城广胜寺而得名，是研究古代佛典版本与雕版印刷的重要文献。欣赏时区分原版经卷、补配卷与影印本。",
-      "url": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00159297",
       "sourceLabel183": "中国国家图书馆·馆藏概况",
       "textStatus183": "大型佛典文献群；按具体经名、卷次与版本维护图像和释文。",
-      "pages": [],
-      "deleted": false
+      "pages": [
+        "release300/assets/manuscripts/zhaocheng275-main.webp"
+      ],
+      "deleted": false,
+      "pageNames": [
+        "《赵城金藏》零卷《佛说弥勒下生成佛经·佛说弥勒来时经》书影"
+      ],
+      "cover143": "release300/assets/manuscripts/zhaocheng275-main.webp",
+      "imageCredit247": "上海博物馆藏，图像与资料：上海博物馆。",
+      "objectNumber300": "国家珍贵古籍名录02957；千字文号“养”",
+      "versionNote300": "以《赵城金藏》零卷为代表书影，千字文号“养”，《国家珍贵古籍名录》02957；不是整藏图像或释文。",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "yongle275": {
       "id": "yongle275",
@@ -4779,11 +4927,24 @@
       "glyph": "典",
       "milestone": "汇聚历代典籍的明代大型类书，国图四大专藏之一。",
       "description": "按韵目汇集典籍文献，保存了大量古代文化资料。今日所见为传世卷册，不以单页、节录或现代重排本代替全书原貌。",
-      "url": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml",
+      "url": "https://www.nlc.cn/nmcb/jpww/zhhp_ljcg/",
       "sourceLabel183": "中国国家图书馆·馆藏概况",
       "textStatus183": "大型类书；按具体卷次与所藏版本维护，不虚构全书释文。",
-      "pages": [],
-      "deleted": false
+      "pages": [
+        "release300/assets/manuscripts/yongle275-1.webp"
+      ],
+      "deleted": false,
+      "pageNames": [
+        "卷7213—7214“堂”字册书影"
+      ],
+      "cover143": "release300/assets/manuscripts/yongle275-1.webp",
+      "imageCredit247": "图像与资料：国家典籍博物馆。",
+      "versionNote300": "仅展示国家典籍博物馆公布的《永乐大典》卷7213—7214“堂”字册书影，不代表全书。",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "wenjinge275": {
       "id": "wenjinge275",
@@ -4798,7 +4959,7 @@
       "glyph": "库",
       "milestone": "经、史、子、集汇为一藏；国图四大专藏之一。",
       "description": "国家图书馆所藏《四库全书》为文津阁本。导读、图像和临写记录均标注文津阁本，不与文渊阁等其他阁本混用。",
-      "url": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml",
+      "url": "https://www.nlc.cn/pcab/gjbhzs/sc/20170814_154335.shtml",
       "sources247": [
         {
           "label": "文津阁本影印出版资料",
@@ -4811,45 +4972,70 @@
         "四库全书",
         "文津阁四库全书"
       ],
-      "pages": [],
-      "deleted": false
+      "pages": [
+        "release300/assets/manuscripts/wenjinge275-1.webp",
+        "release300/assets/manuscripts/wenjinge275-2.webp"
+      ],
+      "deleted": false,
+      "pageNames": [
+        "《文津阁四库全书样本》书影一",
+        "《文津阁四库全书样本》书影二"
+      ],
+      "cover143": "release300/assets/manuscripts/wenjinge275-1.webp",
+      "imageCredit247": "资料：国家古籍保护中心；书影依原页面标注来自网络。",
+      "versionNote300": "此处展示《文津阁四库全书样本》书影；是抄写规范样书，不是整套四库全书或所有卷册的图像。",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "oracle-sacrifice298": {
       "id": "oracle-sacrifice298",
-      "title": "祭祀刻辞龟甲",
+      "title": "祭祀牛胛骨刻辞《甲》3333＋3361",
       "glyph": "祭",
-      "milestone": "祭祀文字把商代信仰与王室世系保存为可考的实物证据。",
-      "description": "以龟腹甲上的契刻观察字形、行列与占卜记录的关系。",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
-      "museum": "中国国家博物馆",
+      "milestone": "以可定位的缀合编号，将商代祭祀记录与真实契刻布局对应起来。",
+      "description": "两片缀合牛肩胛骨记录在义京祭祀的占问，展示字形、卜兆与行列的关系。",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+      "museum": "中央研究院历史语言研究所",
       "author": "书者佚名",
       "era": "殷商",
       "year": -1250,
       "dateLabel": "商代晚期；具体分期依馆方研究",
       "script": "甲骨文",
-      "place": "北京",
-      "cover143": "release298/oracle/oracle-sacrifice298.webp",
+      "place": "台北",
+      "cover143": "release300/assets/oracle/oracle-sacrifice298-1.webp",
       "pages": [
-        "release298/oracle/oracle-sacrifice298.webp"
+        "release300/assets/oracle/oracle-sacrifice298-1.webp"
       ],
       "pageNames": [
-        "祭祀刻辞龟甲"
+        "原器图 · 《殷虚文字甲编》3333＋3361"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
-      "imageCredit247": "图像与资料：中国国家博物馆；原图来源见资料链接。",
+      "imageCredit247": "图像：中央研究院历史语言研究所历史文物陈列馆公开高清图。",
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+        }
+      ],
+      "objectNumber300": "《殷虚文字甲编》3333＋3361",
+      "replaces300": "299版祭祀刻辞龟甲未取得可核实著录号，300改选同主题且有明确编号的馆藏。",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "oracle-tufang298": {
       "id": "oracle-tufang298",
-      "title": "土方征涂朱卜骨刻辞",
+      "title": "土方征涂朱卜骨刻辞《合集》6057",
       "glyph": "征",
       "milestone": "涂朱刻辞让早期战争记录与雄健的契刻书风一同留存。",
-      "description": "从商代方国关系的记录，体会刀刻线条与朱色字口的力量。",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "description": "牛肩胛骨的长篇卜辞保留商代边境战事和占卜记录，字口涂朱。正反面应按同一骨版对读，不把现代临写本当作原刻。",
+      "url": "https://www.chnmuseum.cn/zp/zpml/201812/t20181218_26025.shtml",
       "museum": "中国国家博物馆",
       "author": "书者佚名",
       "era": "殷商",
@@ -4857,28 +5043,41 @@
       "dateLabel": "商代晚期；具体分期依馆方研究",
       "script": "甲骨文",
       "place": "北京",
-      "cover143": "release298/oracle/oracle-tufang298.webp",
+      "cover143": "release300/assets/oracle/oracle-tufang298-1.webp",
       "pages": [
-        "release298/oracle/oracle-tufang298.webp"
+        "release300/assets/oracle/oracle-tufang298-1.webp"
       ],
       "pageNames": [
-        "土方征涂朱卜骨刻辞"
+        "原器图 · 《甲骨文合集》6057正、反"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
-      "imageCredit247": "图像与资料：中国国家博物馆；原图来源见资料链接。",
+      "imageCredit247": "图像：中国国家博物馆公开馆藏图；具体著录号与依据分别登记。",
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://www.chnmuseum.cn/zp/zpml/201812/t20181218_26025.shtml"
+        },
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/search.php?word=%E5%BE%81"
+        }
+      ],
+      "objectNumber300": "《甲骨文合集》6057正、反",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "oracle-ban298": {
       "id": "oracle-ban298",
-      "title": "般无咎全甲刻辞",
+      "title": "般无咎全甲刻辞《合集》4264",
       "glyph": "卜",
       "milestone": "完整龟甲呈现卜兆与刻辞的布局，是理解甲骨章法的直观材料。",
-      "description": "不只看单字，也看文字如何围绕卜兆安排空间。",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "description": "商王为贵族般卜问有无灾祸。刻辞与卜兆、兆序相互对应，可观察完整龟甲的空间安排。",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250929.shtml",
       "museum": "中国国家博物馆",
       "author": "书者佚名",
       "era": "殷商",
@@ -4886,28 +5085,41 @@
       "dateLabel": "商代晚期；具体分期依馆方研究",
       "script": "甲骨文",
       "place": "北京",
-      "cover143": "release298/oracle/oracle-ban298.webp",
+      "cover143": "release300/assets/oracle/oracle-ban298-1.webp",
       "pages": [
-        "release298/oracle/oracle-ban298.webp"
+        "release300/assets/oracle/oracle-ban298-1.webp"
       ],
       "pageNames": [
-        "般无咎全甲刻辞"
+        "原器图 · 《甲骨文合集》4264"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
-      "imageCredit247": "图像与资料：中国国家博物馆；原图来源见资料链接。",
+      "imageCredit247": "图像：中国国家博物馆公开馆藏图；具体著录号与依据分别登记。",
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250929.shtml"
+        },
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://www.rmhb.com.cn/yxsj/zttp/201912/t20191212_800187500_3.html"
+        }
+      ],
+      "objectNumber300": "《甲骨文合集》4264",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "oracle-qiang298": {
       "id": "oracle-qiang298",
-      "title": "小臣墙记事刻辞",
+      "title": "小臣墙记事刻辞《合集》36481",
       "glyph": "记",
       "milestone": "记事刻辞把个人经历与王朝活动带入早期文字的叙事。",
-      "description": "把甲骨作为记录历史的载体，观察记事文字的组织方式。",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "description": "牛骨版两面分别保存记事刻辞与干支表。残辞的正反面称谓及缺文存在讨论，图像分为馆藏照片和旧拓，不以拟补文字替代原物。",
+      "url": "https://www.dpm.org.cn/impress/talk/248912.html",
       "museum": "中国国家博物馆",
       "author": "书者佚名",
       "era": "殷商",
@@ -4915,28 +5127,47 @@
       "dateLabel": "商代晚期；具体分期依馆方研究",
       "script": "甲骨文",
       "place": "北京",
-      "cover143": "release298/oracle/oracle-qiang298.webp",
+      "cover143": "release300/assets/oracle/qiang-1.webp",
       "pages": [
-        "release298/oracle/oracle-qiang298.webp"
+        "release300/assets/oracle/qiang-1.webp",
+        "release300/assets/oracle/qiang-3.webp",
+        "release300/assets/oracle/qiang-5.webp",
+        "release300/assets/oracle/qiang-6.webp"
       ],
       "pageNames": [
-        "小臣墙记事刻辞"
+        "馆藏照片一 · 《合集》36481",
+        "馆藏照片二 · 《合集》36481",
+        "旧拓一 · 《合集》36481",
+        "旧拓二 · 《合集》36481"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
-      "imageCredit247": "图像与资料：中国国家博物馆；原图来源见资料链接。",
+      "imageCredit247": "原器照片与旧拓引自故宫博物院院刊2019年第2期《小臣墙骨版刻辞残缺文字拟补》图一、图二，照片馆藏为中国国家博物馆。",
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://www.dpm.org.cn/impress/talk/248912.html"
+        },
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://www.dpm.org.cn/Uploads/File/2019/02/22/u5c6fe719bec1f.pdf"
+        }
+      ],
+      "objectNumber300": "《甲骨文合集》36481；《双剑誃所藏甲骨文字》212",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "oracle-zaifeng298": {
       "id": "oracle-zaifeng298",
-      "title": "宰丰骨匕记事刻辞",
+      "title": "宰丰骨匕《合补》11299",
       "glyph": "丰",
       "milestone": "器物装饰与记事文字相互映照，展示甲骨文字超出占卜的用途。",
-      "description": "以骨匕上的刻写，认识记事、赏赐与器物工艺之间的联系。",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "description": "骨匕的一面保存赏赐记事，另一面雕有纹饰并嵌绿松石。它展示甲骨文字不只用于占卜，也用于记事与纪念。",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250927.shtml",
       "museum": "中国国家博物馆",
       "author": "书者佚名",
       "era": "殷商",
@@ -4944,28 +5175,41 @@
       "dateLabel": "商代晚期；具体分期依馆方研究",
       "script": "甲骨文",
       "place": "北京",
-      "cover143": "release298/oracle/oracle-zaifeng298.webp",
+      "cover143": "release300/assets/oracle/oracle-zaifeng298-1.webp",
       "pages": [
-        "release298/oracle/oracle-zaifeng298.webp"
+        "release300/assets/oracle/oracle-zaifeng298-1.webp"
       ],
       "pageNames": [
-        "宰丰骨匕记事刻辞"
+        "原器图 · 《甲骨文合集补编》11299；《殷契佚存》518"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
-      "imageCredit247": "图像与资料：中国国家博物馆；原图来源见资料链接。",
+      "imageCredit247": "图像：中国国家博物馆公开馆藏图；具体著录号与依据分别登记。",
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250927.shtml"
+        },
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://www.xianqin.org/data/zhhsong_guobo_Yh127_20071120.pdf"
+        }
+      ],
+      "objectNumber300": "《甲骨文合集补编》11299；《殷契佚存》518",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "oracle-farming298": {
       "id": "oracle-farming298",
-      "title": "众人协田卜骨刻辞",
+      "title": "众人协田卜骨刻辞《合集》1",
       "glyph": "田",
       "milestone": "有关协力耕作的刻辞，为认识商代农业和社会组织提供实物线索。",
-      "description": "从农事记录读古人的劳作，也留意简洁字形中的象形意味。",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "description": "卜辞记商王命众人协田并卜问收成，是《甲骨文合集》的开卷第一片。协田的具体制度与释义仍应结合研究阅读。",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202107/t20210728_250885.shtml",
       "museum": "中国国家博物馆",
       "author": "书者佚名",
       "era": "殷商",
@@ -4973,56 +5217,83 @@
       "dateLabel": "商代晚期；具体分期依馆方研究",
       "script": "甲骨文",
       "place": "北京",
-      "cover143": "release298/oracle/oracle-farming298.webp",
+      "cover143": "release300/assets/oracle/oracle-farming298-1.webp",
       "pages": [
-        "release298/oracle/oracle-farming298.webp"
+        "release300/assets/oracle/oracle-farming298-1.webp"
       ],
       "pageNames": [
-        "众人协田卜骨刻辞"
+        "原器图 · 《甲骨文合集》1；国博甲骨卷45，旧编号Y703"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
-      "imageCredit247": "图像与资料：中国国家博物馆；原图来源见资料链接。",
+      "imageCredit247": "图像：中国国家博物馆公开馆藏图；具体著录号与依据分别登记。",
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202107/t20210728_250885.shtml"
+        },
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://www.xianqin.org/data/zhhsong_guobo_Yh127_20071120.pdf"
+        },
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://news.nankai.edu.cn/mtnk/system/2026/10/15/030074801.shtml"
+        }
+      ],
+      "objectNumber300": "《甲骨文合集》1；国博甲骨卷45，旧编号Y703",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "oracle-zhou298": {
       "id": "oracle-zhou298",
-      "title": "西周卦画卜骨",
+      "title": "先书后刻龟甲《乙》5867＋8202",
       "glyph": "卦",
-      "milestone": "卦画卜骨把观察视野从殷商延伸至周代的占卜与符号传统。",
-      "description": "此件为西周材料；与殷墟甲骨并观，分辨时代与符号形态。",
-      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
-      "museum": "中国国家博物馆",
+      "milestone": "罕见的先书后刻痕迹，为追溯毛笔与甲骨契刻的关系提供实物线索。",
+      "description": "龟甲保留先写后刻的痕迹，内容涉及问雨。序辞刻在背面，帮助理解毛笔书写与契刻之间的工序关系。",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+      "museum": "中央研究院历史语言研究所",
       "author": "书者佚名",
-      "era": "西周",
-      "year": -1000,
-      "dateLabel": "西周；具体年代依馆方研究",
+      "era": "殷商",
+      "year": -1250,
+      "dateLabel": "商代晚期；以馆方分期为准",
       "script": "甲骨文",
-      "place": "北京",
-      "cover143": "release298/oracle/oracle-zhou298.webp",
+      "place": "台北",
+      "cover143": "release300/assets/oracle/oracle-zhou298-1.webp",
       "pages": [
-        "release298/oracle/oracle-zhou298.webp"
+        "release300/assets/oracle/oracle-zhou298-1.webp"
       ],
       "pageNames": [
-        "西周卦画卜骨"
+        "原器图 · 《殷虚文字乙编》5867＋8202"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
-      "imageCredit247": "图像与资料：中国国家博物馆；原图来源见资料链接。",
+      "imageCredit247": "图像：中央研究院历史语言研究所历史文物陈列馆公开高清图。",
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+        }
+      ],
+      "objectNumber300": "《殷虚文字乙编》5867＋8202",
+      "replaces300": "299版西周卦画卜骨未取得可核实器号，300改选明确著录号的先书后刻龟甲；并非同一文物。",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "oracle-fuhao298": {
       "id": "oracle-fuhao298",
       "title": "妇好分娩卜辞《丙》247",
       "glyph": "好",
       "milestone": "关于妇好分娩的占卜，让三千年前具体人物的生活进入历史。",
-      "description": "武丁时期的龟腹甲记录对妇好分娩的询问，兼具文字史与人物史价值。",
+      "description": "商王武丁时期的龟腹甲保存妇好分娩的占问与结果，将具体人物的生活带入商代史。",
       "url": "https://museum.sinica.edu.tw/exhibitions/21/",
       "museum": "中央研究院历史语言研究所",
       "author": "书者佚名",
@@ -5031,27 +5302,40 @@
       "dateLabel": "商代晚期；具体分期依馆方研究",
       "script": "甲骨文",
       "place": "台北",
-      "cover143": "release298/oracle/oracle-fuhao298.webp",
+      "cover143": "release300/assets/oracle/oracle-fuhao298-1.webp",
       "pages": [
-        "release298/oracle/oracle-fuhao298.webp"
+        "release300/assets/oracle/oracle-fuhao298-1.webp"
       ],
       "pageNames": [
-        "妇好分娩卜辞《丙》247"
+        "原器图 · 《殷虚文字丙编》247；《甲骨文合集》14002正"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
-      "imageCredit247": "图像与资料：中央研究院历史语言研究所；原图来源见资料链接。",
+      "imageCredit247": "图像：中央研究院历史语言研究所历史文物陈列馆公开高清图。",
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+        },
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+        }
+      ],
+      "objectNumber300": "《殷虚文字丙编》247；《甲骨文合集》14002正",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "oracle-brush298": {
       "id": "oracle-brush298",
       "title": "带朱书龟甲卜辞《乙》0778",
       "glyph": "雨",
       "milestone": "保留下来的朱书笔迹，为理解契刻以前的毛笔书写提供线索。",
-      "description": "以求问雨水的朱书材料，观察早期汉字真实的书写痕迹。",
+      "description": "朱书问雨文字保留真实的早期书写墨迹，适合将毛笔线条与契刻线条对照观察。",
       "url": "https://museum.sinica.edu.tw/exhibitions/21/",
       "museum": "中央研究院历史语言研究所",
       "author": "书者佚名",
@@ -5060,27 +5344,36 @@
       "dateLabel": "商代晚期；具体分期依馆方研究",
       "script": "甲骨文",
       "place": "台北",
-      "cover143": "release298/oracle/oracle-brush298.webp",
+      "cover143": "release300/assets/oracle/oracle-brush298-1.webp",
       "pages": [
-        "release298/oracle/oracle-brush298.webp"
+        "release300/assets/oracle/oracle-brush298-1.webp"
       ],
       "pageNames": [
-        "带朱书龟甲卜辞《乙》0778"
+        "原器图 · 《殷虚文字乙编》0778"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
-      "imageCredit247": "图像与资料：中央研究院历史语言研究所；原图来源见资料链接。",
+      "imageCredit247": "图像：中央研究院历史语言研究所历史文物陈列馆公开高清图。",
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+        }
+      ],
+      "objectNumber300": "《殷虚文字乙编》0778",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "oracle-harvest298": {
       "id": "oracle-harvest298",
       "title": "填朱卜辞龟腹甲《乙》0867",
       "glyph": "年",
-      "milestone": "正反两面设问收成的卜辞，展示早期记录的逻辑与填朱字形。",
-      "description": "围绕收成年景的对贞卜辞，适合比较同一语境中的字形与布局。",
+      "milestone": "围绕收成的正反设问，展示商代卜辞的逻辑与填朱字形。",
+      "description": "丙子日由贞人韦对问收成，以受年与不受年构成对贞。填朱字口使文字和布局更加清晰。",
       "url": "https://museum.sinica.edu.tw/exhibitions/21/",
       "museum": "中央研究院历史语言研究所",
       "author": "书者佚名",
@@ -5089,20 +5382,29 @@
       "dateLabel": "商代晚期；具体分期依馆方研究",
       "script": "甲骨文",
       "place": "台北",
-      "cover143": "release298/oracle/oracle-harvest298.webp",
+      "cover143": "release300/assets/oracle/oracle-harvest298-1.webp",
       "pages": [
-        "release298/oracle/oracle-harvest298.webp"
+        "release300/assets/oracle/oracle-harvest298-1.webp"
       ],
       "pageNames": [
-        "填朱卜辞龟腹甲《乙》0867"
+        "原器图 · 《殷虚文字乙编》0867"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
-      "imageCredit247": "图像与资料：中央研究院历史语言研究所；原图来源见资料链接。",
+      "imageCredit247": "图像：中央研究院历史语言研究所历史文物陈列馆公开高清图。",
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "馆藏与编号依据",
+          "url": "https://museum.sinica.edu.tw/exhibitions/21/"
+        }
+      ],
+      "objectNumber300": "《殷虚文字乙编》0867",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "bronze-dayu299": {
       "id": "bronze-dayu299",
@@ -5117,22 +5419,34 @@
       "era": "西周",
       "year": -900,
       "script": "金文",
-      "cover143": "release299/bronze/dayu-photo.webp",
+      "cover143": "release300/assets/bronze/bronze-dayu299-1.webp",
       "pages": [
         "release299/bronze/dayu-photo.webp",
-        "release299/bronze/dayu.webp"
+        "release299/bronze/dayu.webp",
+        "release300/assets/bronze/bronze-dayu299-1.webp"
       ],
       "pageNames": [
         "原器图（非拓本）",
-        "馆方排印释文（非拓本）"
+        "馆方排印释文（非拓本）",
+        "铭文拓片（馆方公开图）"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
       "fullText148": "",
-      "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
+      "imageCredit247": "原器图及铭文拓片：中国国家博物馆；拓片不是排印释文。",
       "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://www.fdgwz.org.cn/Web/Show/3107"
+        }
+      ],
+      "objectNumber300": "《殷周金文集成》2837",
+      "glyph": "大",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "bronze-dake299": {
       "id": "bronze-dake299",
@@ -5140,27 +5454,44 @@
       "museum": "上海博物馆",
       "place": "上海",
       "dateLabel": "约公元前10世纪末",
-      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/CI00000656",
+      "url": "https://www.shanghaimuseum.net/mu/asset2/20151104094055028/",
       "milestone": "长篇册命铭文将祖先记忆与官职授命相接，是西周金文的重要范本。",
       "description": "从规整行款与文字组织，认识礼制记录与书法章法的联系。",
       "author": "书者佚名",
       "era": "西周",
       "year": -900,
       "script": "金文",
-      "cover143": "release299/bronze/dake.webp",
+      "cover143": "release300/assets/bronze/bronze-dake299-3.webp",
       "pages": [
-        "release299/bronze/dake.webp"
+        "release299/bronze/dake.webp",
+        "release300/assets/bronze/bronze-dake299-1.webp",
+        "release300/assets/bronze/bronze-dake299-2.webp",
+        "release300/assets/bronze/bronze-dake299-3.webp"
       ],
       "pageNames": [
-        "原器图（非拓本）"
+        "原器图（非拓本）",
+        "铭文拓片及释文一",
+        "铭文拓片及释文二",
+        "铭文拓片"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
       "fullText148": "",
-      "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
+      "imageCredit247": "大克鼎铭文图像：上海博物馆《每月一珍·大克鼎》；著录《殷周金文集成》2836。",
       "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://www.fdgwz.org.cn/Web/Show/466"
+        }
+      ],
+      "objectNumber300": "《殷周金文集成》2836",
+      "versionNote300": "原器与铭文拓片分开呈现；拓片及释文图保留馆方原有编排。",
+      "glyph": "大",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "bronze-guoji299": {
       "id": "bronze-guoji299",
@@ -5175,22 +5506,34 @@
       "era": "西周",
       "year": -900,
       "script": "金文",
-      "cover143": "release299/bronze/guoji-photo.webp",
+      "cover143": "release300/assets/bronze/bronze-guoji299-1.webp",
       "pages": [
         "release299/bronze/guoji-photo.webp",
-        "release299/bronze/guoji.webp"
+        "release299/bronze/guoji.webp",
+        "release300/assets/bronze/bronze-guoji299-1.webp"
       ],
       "pageNames": [
         "原器图（非拓本）",
-        "馆方排印释文（非拓本）"
+        "馆方排印释文（非拓本）",
+        "铭文拓片（馆方公开图）"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
       "fullText148": "",
-      "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
+      "imageCredit247": "原器图及铭文拓片：中国国家博物馆；拓片不是排印释文。",
       "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://xiaoxue.iis.sinica.edu.tw/char?fontcode=34.E413"
+        }
+      ],
+      "objectNumber300": "《殷周金文集成》10173",
+      "glyph": "虢",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "bronze-qiang299": {
       "id": "bronze-qiang299",
@@ -5218,7 +5561,17 @@
       "fullText148": "",
       "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
       "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://www.fdgwz.org.cn/Web/Show/932"
+        }
+      ],
+      "objectNumber300": "《殷周金文集成》10175",
+      "glyph": "史",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "bronze-lai299": {
       "id": "bronze-lai299",
@@ -5246,7 +5599,17 @@
       "fullText148": "",
       "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
       "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://www.cssn.cn/skgz/bwyc/202411/t20241111_5801552.shtml"
+        }
+      ],
+      "objectNumber300": "《商周青铜器铭文暨图像集成》14543",
+      "glyph": "逨",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "bronze-li299": {
       "id": "bronze-li299",
@@ -5276,7 +5639,17 @@
       "fullText148": "",
       "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
       "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://www.fdgwz.org.cn/Web/Show/3107"
+        }
+      ],
+      "objectNumber300": "《殷周金文集成》4131",
+      "glyph": "利",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     },
     "bronze-zongzhou299": {
       "id": "bronze-zongzhou299",
@@ -5304,7 +5677,3087 @@
       "fullText148": "",
       "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
       "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
-      "deleted": false
+      "deleted": false,
+      "sources300": [
+        {
+          "label": "著录号与馆藏依据",
+          "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1464?dep=U&mode=full"
+        }
+      ],
+      "objectNumber300": "台北故宫文物统一编号：故銅002377N000000000；《殷周金文集成》260",
+      "glyph": "宗",
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "boyuan": {
+      "title": "伯远帖",
+      "author": "王珣",
+      "era": "东晋",
+      "year": null,
+      "dateLabel": "东晋（4世纪）",
+      "script": "行书",
+      "place": "北京",
+      "museum": "故宫博物院",
+      "milestone": "以短札保留东晋名人真实书写，是认识晋人行书不可替代的实物。",
+      "description": "五行四十七字书札，风神萧散而笔势流畅。与快雪时晴帖、中秋帖合称“三希”，三帖各有作者与流传史，不能写为三人合写一卷。",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228199.html",
+      "pages": [
+        "release300/assets/core/boyuan-01.webp"
+      ],
+      "pageNames": [
+        "伯远帖"
+      ],
+      "cover143": "release300/assets/core/boyuan-01.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "传世晋人墨迹",
+      "id": "boyuan",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "伯",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "zhanghan": {
+      "title": "张翰思鲈帖",
+      "author": "传欧阳询",
+      "era": "唐",
+      "year": null,
+      "dateLabel": "唐代（7世纪书风）",
+      "script": "行书",
+      "place": "北京",
+      "museum": "故宫博物院",
+      "milestone": "把北碑的险劲融入晋人行书，展示欧体在楷法以外的纵横之势。",
+      "description": "馆方题名《张翰帖》，内容节录张翰思归故事，传世本为唐人钩填本。条目保留用户常用别名，不能据列为墨迹便断言欧阳询亲笔原稿。",
+      "url": "https://www.dpm.org.cn/collection/handwriting/234567.html",
+      "pages": [
+        "release300/assets/core/zhanghan-01.webp",
+        "release300/assets/core/zhanghan-02.webp"
+      ],
+      "pageNames": [
+        "张翰帖",
+        "宋徽宗瘦金书题跋"
+      ],
+      "cover143": "release300/assets/core/zhanghan-01.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "唐人钩填本，传欧阳询书",
+      "id": "zhanghan",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "张",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "zhongqiu": {
+      "title": "中秋帖",
+      "author": "传王献之（宋临本）",
+      "era": "东晋书风·宋临",
+      "year": null,
+      "dateLabel": "宋临本；东晋书风",
+      "script": "行草",
+      "place": "北京",
+      "museum": "故宫博物院",
+      "milestone": "连贯不绝的一笔书意，让短札呈现王献之一路的流动气脉。",
+      "description": "馆方指出它是《十二月割帖》的不完全临本，多认为宋人米芾所临。正文只录现存部分，不补入原帖已佚的前六字。",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228204.html",
+      "pages": [
+        "release300/assets/core/zhongqiu-01.webp"
+      ],
+      "pageNames": [
+        "王献之中秋帖"
+      ],
+      "cover143": "release300/assets/core/zhongqiu-01.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "宋临本；传王献之",
+      "id": "zhongqiu",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "中",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "liqi": {
+      "title": "礼器碑",
+      "author": "书者佚名",
+      "era": "东汉",
+      "year": 156,
+      "dateLabel": "156年",
+      "script": "隶书",
+      "place": "山东曲阜／北京",
+      "museum": "曲阜汉魏碑刻陈列馆；明拓本藏故宫等",
+      "milestone": "瘦劲与波磔对比鲜明，让汉隶在庄严礼制中生出轻灵变化。",
+      "description": "记韩敕修饰孔庙、增置礼器，碑阳与碑阴、两侧题名共同构成文本。与乙瑛、史晨合称孔庙三碑，上传应标明所含各面。",
+      "url": "https://www.dpm.org.cn/collection/impres/234635.html",
+      "pages": [
+        "release300/assets/core/liqi-01.webp",
+        "release300/assets/core/liqi-02.webp",
+        "release300/assets/core/liqi-03.webp",
+        "release300/assets/core/liqi-04.webp",
+        "release300/assets/core/liqi-05.webp",
+        "release300/assets/core/liqi-06.webp",
+        "release300/assets/core/liqi-07.webp",
+        "release300/assets/core/liqi-08.webp",
+        "release300/assets/core/liqi-09.webp",
+        "release300/assets/core/liqi-10.webp",
+        "release300/assets/core/liqi-11.webp",
+        "release300/assets/core/liqi-12.webp",
+        "release300/assets/core/liqi-13.webp",
+        "release300/assets/core/liqi-14.webp",
+        "release300/assets/core/liqi-15.webp",
+        "release300/assets/core/liqi-16.webp",
+        "release300/assets/core/liqi-17.webp",
+        "release300/assets/core/liqi-18.webp",
+        "release300/assets/core/liqi-19.webp",
+        "release300/assets/core/liqi-20.webp",
+        "release300/assets/core/liqi-21.webp",
+        "release300/assets/core/liqi-22.webp",
+        "release300/assets/core/liqi-23.webp",
+        "release300/assets/core/liqi-24.webp",
+        "release300/assets/core/liqi-25.webp",
+        "release300/assets/core/liqi-26.webp",
+        "release300/assets/core/liqi-27.webp",
+        "release300/assets/core/liqi-28.webp",
+        "release300/assets/core/liqi-29.webp",
+        "release300/assets/core/liqi-30.webp",
+        "release300/assets/core/liqi-31.webp",
+        "release300/assets/core/liqi-32.webp",
+        "release300/assets/core/liqi-33.webp",
+        "release300/assets/core/liqi-34.webp",
+        "release300/assets/core/liqi-35.webp",
+        "release300/assets/core/liqi-36.webp",
+        "release300/assets/core/liqi-37.webp",
+        "release300/assets/core/liqi-38.webp",
+        "release300/assets/core/liqi-39.webp"
+      ],
+      "pageNames": [
+        "礼器碑-碑阳之封面",
+        "礼器碑-碑阳之一",
+        "礼器碑-碑阳之二",
+        "礼器碑-碑阳之三",
+        "礼器碑-碑阳之四",
+        "礼器碑-碑阳之五",
+        "礼器碑-碑阳之六",
+        "礼器碑-碑阳之七",
+        "礼器碑-碑阳之八",
+        "礼器碑-碑阳之九",
+        "礼器碑-碑阳之十",
+        "礼器碑-碑阳之十一",
+        "礼器碑-碑阳之十二",
+        "礼器碑-碑阳之十三",
+        "礼器碑-碑阳之十四",
+        "礼器碑-碑阳之十五",
+        "礼器碑-碑阳之十六",
+        "礼器碑-碑阳之十七",
+        "礼器碑-碑阴碑侧之封面",
+        "礼器碑-碑阴碑侧之一",
+        "礼器碑-碑阴碑侧之二",
+        "礼器碑-碑阴碑侧之三",
+        "礼器碑-碑阴碑侧之四",
+        "礼器碑-碑阴碑侧之五",
+        "礼器碑-碑阴碑侧之六",
+        "礼器碑-碑阴碑侧之七",
+        "礼器碑-碑阴碑侧之八",
+        "礼器碑-碑阴碑侧之九",
+        "礼器碑-碑阴碑侧之十",
+        "礼器碑-碑阴碑侧之十一",
+        "礼器碑-碑阴碑侧之十二",
+        "礼器碑-碑阴碑侧之十三",
+        "礼器碑-碑阴碑侧之十四",
+        "礼器碑-碑阴碑侧之十五",
+        "礼器碑-碑阴碑侧之十六",
+        "礼器碑-碑阴碑侧之十七",
+        "礼器碑-碑阴碑侧之十八",
+        "礼器碑-碑阴碑侧之十九",
+        "礼器碑-碑阴碑侧之二十"
+      ],
+      "cover143": "release300/assets/core/liqi-02.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "原碑与多期拓本分藏",
+      "id": "liqi",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "礼",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "yanta": {
+      "title": "雁塔圣教序",
+      "author": "褚遂良书；李世民、李治撰",
+      "era": "唐",
+      "year": 653,
+      "dateLabel": "653年",
+      "script": "楷书",
+      "place": "陕西西安",
+      "museum": "大慈恩寺大雁塔",
+      "milestone": "以细劲、提按鲜明的楷法把南朝秀润与唐代法度连在一起。",
+      "description": "两碑分别为圣教序与述圣记，书写方向互相对应。它与怀仁集王圣教序是两组不同作品，应分别登记作者、刻年和原石位置。",
+      "url": "https://www.dpm.org.cn/collection/impres/234134.html",
+      "pages": [
+        "release300/assets/core/yanta-01.webp",
+        "release300/assets/core/yanta-02.webp",
+        "release300/assets/core/yanta-03.webp",
+        "release300/assets/core/yanta-04.webp",
+        "release300/assets/core/yanta-05.webp",
+        "release300/assets/core/yanta-06.webp",
+        "release300/assets/core/yanta-07.webp",
+        "release300/assets/core/yanta-08.webp",
+        "release300/assets/core/yanta-09.webp",
+        "release300/assets/core/yanta-10.webp",
+        "release300/assets/core/yanta-11.webp",
+        "release300/assets/core/yanta-12.webp",
+        "release300/assets/core/yanta-13.webp",
+        "release300/assets/core/yanta-14.webp",
+        "release300/assets/core/yanta-15.webp",
+        "release300/assets/core/yanta-16.webp",
+        "release300/assets/core/yanta-17.webp",
+        "release300/assets/core/yanta-18.webp",
+        "release300/assets/core/yanta-19.webp",
+        "release300/assets/core/yanta-20.webp",
+        "release300/assets/core/yanta-21.webp",
+        "release300/assets/core/yanta-22.webp",
+        "release300/assets/core/yanta-23.webp",
+        "release300/assets/core/yanta-24.webp",
+        "release300/assets/core/yanta-25.webp",
+        "release300/assets/core/yanta-26.webp",
+        "release300/assets/core/yanta-27.webp",
+        "release300/assets/core/yanta-28.webp",
+        "release300/assets/core/yanta-29.webp",
+        "release300/assets/core/yanta-30.webp",
+        "release300/assets/core/yanta-31.webp",
+        "release300/assets/core/yanta-32.webp"
+      ],
+      "pageNames": [
+        "慈恩圣教序(封面)",
+        "慈恩圣教序(册页1)",
+        "慈恩圣教序(册页2)",
+        "慈恩圣教序(册页3)",
+        "慈恩圣教序(册页4)",
+        "慈恩圣教序(册页5)",
+        "慈恩圣教序(册页6)",
+        "慈恩圣教序(册页7)",
+        "慈恩圣教序(册页8)",
+        "慈恩圣教序(册页9)",
+        "慈恩圣教序(册页10)",
+        "慈恩圣教序(册页11)",
+        "慈恩圣教序(册页12)",
+        "慈恩圣教序(册页13)",
+        "慈恩圣教序(册页14)",
+        "慈恩圣教序(册页15)",
+        "慈恩圣教序(册页16)",
+        "慈恩圣教序(册页17)",
+        "慈恩圣教序(册页18)",
+        "慈恩圣教序(册页19)",
+        "慈恩圣教序(册页20)",
+        "慈恩圣教序(册页21)",
+        "慈恩圣教序(册页22)",
+        "慈恩圣教序(册页23)",
+        "慈恩圣教序(册页24)",
+        "慈恩圣教序(册页25)",
+        "慈恩圣教序(册页26)",
+        "慈恩圣教序(册页27)",
+        "慈恩圣教序(册页28)",
+        "慈恩圣教序(册页29)",
+        "慈恩圣教序(册页30)",
+        "慈恩圣教序(册页31)"
+      ],
+      "cover143": "release300/assets/core/yanta-04.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "大雁塔原碑；拓本另藏",
+      "id": "yanta",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "雁",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "xuanmi": {
+      "title": "玄秘塔碑",
+      "author": "柳公权书；裴休撰",
+      "era": "唐",
+      "year": 841,
+      "dateLabel": "841年",
+      "script": "楷书",
+      "place": "陕西西安",
+      "museum": "西安碑林博物馆",
+      "milestone": "以骨力、方整结构与劲健转折，树立晚唐柳体的规范。",
+      "description": "为端甫法师而立，由柳公权书丹并篆额，刻工亦有姓名。与颜体同属唐楷高峰，但紧密中宫和骨力取向自具面貌。",
+      "url": "https://www.dpm.org.cn/collection/impres/261926.html",
+      "pages": [
+        "release300/assets/core/xuanmi-01.webp",
+        "release300/assets/core/xuanmi-02.webp",
+        "release300/assets/core/xuanmi-03.webp",
+        "release300/assets/core/xuanmi-04.webp"
+      ],
+      "pageNames": [
+        "宋拓唐柳公权书玄秘塔碑册",
+        "宋拓唐柳公权书玄秘塔碑册",
+        "宋拓唐柳公权书玄秘塔碑册",
+        "宋拓唐柳公权书玄秘塔碑册"
+      ],
+      "cover143": "release300/assets/core/xuanmi-02.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "原碑；宋拓本另藏",
+      "id": "xuanmi",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "玄",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "fuge": {
+      "title": "郙阁颂",
+      "author": "仇靖撰；仇绋书",
+      "era": "东汉",
+      "year": 172,
+      "dateLabel": "172年",
+      "script": "隶书",
+      "place": "陕西略阳",
+      "museum": "略阳灵岩寺",
+      "milestone": "以古朴茂密的汉隶记录栈道工程，与石门、西狭并列汉三颂。",
+      "description": "原刻析里郙阁桥头，后迁藏灵岩寺。撰文与书丹两人不同，新增记录应分别填写，不能沿袭蔡邕书的旧误传。",
+      "url": "https://www.dpm.org.cn/collection/impres/231823.html",
+      "pages": [
+        "release300/assets/core/fuge-01.webp",
+        "release300/assets/core/fuge-02.webp",
+        "release300/assets/core/fuge-03.webp",
+        "release300/assets/core/fuge-04.webp",
+        "release300/assets/core/fuge-05.webp",
+        "release300/assets/core/fuge-06.webp",
+        "release300/assets/core/fuge-07.webp",
+        "release300/assets/core/fuge-08.webp",
+        "release300/assets/core/fuge-09.webp",
+        "release300/assets/core/fuge-10.webp",
+        "release300/assets/core/fuge-11.webp",
+        "release300/assets/core/fuge-12.webp",
+        "release300/assets/core/fuge-13.webp",
+        "release300/assets/core/fuge-14.webp",
+        "release300/assets/core/fuge-15.webp",
+        "release300/assets/core/fuge-16.webp",
+        "release300/assets/core/fuge-17.webp",
+        "release300/assets/core/fuge-18.webp",
+        "release300/assets/core/fuge-19.webp",
+        "release300/assets/core/fuge-20.webp",
+        "release300/assets/core/fuge-21.webp",
+        "release300/assets/core/fuge-22.webp",
+        "release300/assets/core/fuge-23.webp"
+      ],
+      "pageNames": [
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂",
+        "析里桥郙阁颂"
+      ],
+      "cover143": "release300/assets/core/fuge-02.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "迁藏摩崖原石",
+      "id": "fuge",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "郙",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "taishan": {
+      "title": "泰山刻石",
+      "author": "传李斯",
+      "era": "秦",
+      "year": -219,
+      "dateLabel": "前219年；二世诏书前209年",
+      "script": "小篆",
+      "place": "山东泰安",
+      "museum": "泰山岱庙；拓本分藏多馆",
+      "milestone": "秦统一文字后的小篆典范，把“书同文”写成可见的国家形象。",
+      "description": "始皇刻辞与二世诏书共同构成秦代政治、文字与书法的重要见证。原石现仅存残字，本站“第一篆书”为策展推荐；文献全文与原石残字不是同一版本。",
+      "url": "https://www.dpm.org.cn/collection/impres/234107.html",
+      "pages": [
+        "release300/assets/core/taishan-01.webp",
+        "release300/assets/core/taishan-02.webp",
+        "release300/assets/core/taishan-03.webp",
+        "release300/assets/core/taishan-04.webp",
+        "release300/assets/core/taishan-05.webp",
+        "release300/assets/core/taishan-06.webp",
+        "release300/assets/core/taishan-07.webp",
+        "release300/assets/core/taishan-08.webp"
+      ],
+      "pageNames": [
+        "泰山刻石（封面）",
+        "泰山刻石（册页1）",
+        "泰山刻石（册页2）",
+        "泰山刻石（册页3）",
+        "泰山刻石（册页4）",
+        "泰山刻石（册页5）",
+        "泰山刻石（册页6）",
+        "泰山刻石（册页7）"
+      ],
+      "cover143": "release300/assets/core/taishan-04.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "原石残存；文献录文与宋／明拓本须分别登记",
+      "id": "taishan",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "泰",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "jitaishan": {
+      "title": "纪泰山铭",
+      "author": "唐玄宗李隆基",
+      "era": "唐",
+      "year": 726,
+      "dateLabel": "726年",
+      "script": "隶书",
+      "place": "山东泰安",
+      "museum": "泰山大观峰",
+      "milestone": "以帝王御书的大字八分书，形成山岳、封禅与唐隶相交的宏大景观。",
+      "description": "铭文刻于岱顶大观峰，既是封禅史料也是唐代隶书代表；不要误用赵佶大观圣作碑，它是另一时代、另一作品。",
+      "url": "https://tsgw.taian.gov.cn/art/2021/6/16/art_162237_10286435.html",
+      "pages": [
+        "release300/assets/core/jitaishan-01.webp"
+      ],
+      "pageNames": [
+        "唐摩崖 · 文保机构实景"
+      ],
+      "cover143": "release300/assets/core/jitaishan-01.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "原址摩崖",
+      "id": "jitaishan",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "纪",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "jingshiyu": {
+      "title": "经石峪金刚经",
+      "author": "书者佚名",
+      "era": "北齐",
+      "year": null,
+      "dateLabel": "北齐（6世纪）",
+      "script": "隶楷大字",
+      "place": "山东泰安",
+      "museum": "泰山经石峪",
+      "milestone": "以巨幅经文把书法变成可步入的山水空间，扩展大字的尺度。",
+      "description": "内容为鸠摩罗什译金刚经节录，现存残字不是经文全本；字数随辨识标准与调查时点不同，应登记所上传区域。",
+      "url": "https://tsgw.taian.gov.cn/art/2021/6/16/art_162237_10286435.html",
+      "pages": [
+        "release300/assets/core/jingshiyu-01.webp"
+      ],
+      "pageNames": [
+        "经石峪摩崖 · 文保机构实景"
+      ],
+      "cover143": "release300/assets/core/jingshiyu-01.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "原址摩崖残经",
+      "id": "jingshiyu",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "经",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "langya": {
+      "title": "琅琊台刻石",
+      "author": "传李斯",
+      "era": "秦",
+      "year": -219,
+      "dateLabel": "约公元前219年",
+      "script": "小篆",
+      "place": "北京",
+      "museum": "中国国家博物馆",
+      "milestone": "秦刻石残文把统一制度与小篆规范留在同一件实物之上。",
+      "description": "原刻在琅琊台，现存残石保存秦二世诏书等内容，原石与《史记》录载全文要区分；并非已完整保存始皇全部颂辞。",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202010/t20201028_247940.shtml",
+      "pages": [
+        "release300/assets/core/langya-01.webp"
+      ],
+      "pageNames": [
+        "馆藏实物／拓本图像"
+      ],
+      "cover143": "release300/assets/core/langya-01.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "秦残石，非全文完整原石",
+      "id": "langya",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "琅",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "xiping": {
+      "title": "熹平石经",
+      "author": "蔡邕等奉诏",
+      "era": "东汉",
+      "year": "175—183",
+      "dateLabel": "175—183年",
+      "script": "隶书",
+      "place": "北京／郑州等",
+      "museum": "中国国家博物馆、河南博物院等（残石分藏）",
+      "milestone": "用标准汉隶固定官定经文，成为文字规范与经学传播的实物标准。",
+      "description": "曾将多部经文刻碑供太学生校读，今为残石而非完整七经原石。管理员应以具体残石编号、所属经篇、存字范围建立可临子帖。",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202008/t20200824_247256.shtml",
+      "pages": [
+        "release300/assets/core/xiping-01.webp"
+      ],
+      "pageNames": [
+        "馆藏实物／拓本图像"
+      ],
+      "cover143": "release300/assets/core/xiping-01.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "残石多馆分藏；勿用现代七经全文冒充本帖",
+      "id": "xiping",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "熹",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "zhengshi": {
+      "title": "正始石经",
+      "author": "曹魏官定；书者待考",
+      "era": "三国魏",
+      "year": 241,
+      "dateLabel": "241年",
+      "script": "古文／小篆／隶书",
+      "place": "洛阳／郑州等",
+      "museum": "洛阳博物馆、河南博物院等（残石分藏）",
+      "milestone": "以三体并列同一经字，建立古文、篆书与隶书互证的视觉字典。",
+      "description": "又称三体石经，刻于洛阳太学。今存残石内容须按具体器号登记，不把邯郸淳旧传书者身份或经书全部原文当成已证实本帖。",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33105.shtml",
+      "pages": [
+        "release300/assets/core/zhengshi-01.webp"
+      ],
+      "pageNames": [
+        "馆藏实物／拓本图像"
+      ],
+      "cover143": "release300/assets/core/zhengshi-01.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "三体残石分藏；书者待考",
+      "id": "zhengshi",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "正",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "yuanchang": {
+      "title": "袁敞碑",
+      "author": "书者佚名",
+      "era": "东汉",
+      "year": 117,
+      "dateLabel": "117年",
+      "script": "小篆",
+      "place": "沈阳／郑州",
+      "museum": "原石辽宁省博物馆；拓本河南博物院等",
+      "milestone": "以残存汉篆记录袁氏仕历，与袁安碑共同揭示汉篆的整饬力量。",
+      "description": "碑文残缺，具体书手是否同袁安碑尚需论证；原石收藏与官方链接中的“拓片”收藏必须区别。",
+      "url": "https://www.chnmus.net/ch/collection/appraise/details.html?id=512155561935985314",
+      "pages": [
+        "release300/assets/core/yuanchang-01.webp"
+      ],
+      "pageNames": [
+        "馆藏实物／拓本图像"
+      ],
+      "cover143": "release300/assets/core/yuanchang-01.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "原石与拓本分藏；链接为河南博物院拓片",
+      "id": "yuanchang",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "袁",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "wuchangshuo-shigu": {
+      "title": "临石鼓文",
+      "author": "吴昌硕",
+      "era": "近现代",
+      "script": "篆书",
+      "museum": "深圳博物馆等多馆分藏",
+      "milestone": "将石鼓古籀融入苍劲笔势，成为近现代金石书风的重要范式。",
+      "description": "“第一石鼓”为本榜专题称号。吴昌硕毕生研习石鼓文，临作众多；应按具体临本年代和藏馆分别维护。",
+      "url": "https://www.shenzhenmuseum.com/webCollection/collectionDetail?exId=bf7b7740f34c4fcdaa7d46fbc3167d2e&resId=1e8bbc06013449d4b2e5b4841c728b66",
+      "pages": [
+        "release300/assets/core/wuchangshuo-shigu-01.webp"
+      ],
+      "pageNames": [
+        "馆藏实物／拓本图像"
+      ],
+      "cover143": "release300/assets/core/wuchangshuo-shigu-01.webp",
+      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "wuchangshuo-shigu",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "临",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "mengzhao": {
+      "title": "蒙诏帖",
+      "author": "旧题柳公权；故宫判为宋人仿本",
+      "era": "宋（旧题唐）",
+      "year": null,
+      "dateLabel": "宋人仿本；传统题为唐柳公权",
+      "script": "行书",
+      "place": "北京",
+      "museum": "故宫博物院",
+      "milestone": "以“旧题名家”与仿写争议，提醒观者把书风、文本与鉴定证据一起阅读。",
+      "description": "故宫指出“出守翰林”的职称表达不合唐制，后段结体与柳书差异明显，认定是宋人依据《翰林帖》大意所作仿本。榜单保留传统名称，但不宣传柳公权真迹。",
+      "url": "https://www.dpm.org.cn/collection/handwriting/231095.html",
+      "pages": [
+        "release300/assets/manuscripts/mengzhao-1.webp"
+      ],
+      "pageNames": [
+        "柳公权蒙诏贴 · 1"
+      ],
+      "cover143": "release300/assets/manuscripts/mengzhao-1.webp",
+      "imageCredit247": "图像与文物资料：故宫博物院，公开馆藏页面。故宫博物院所藏传柳公权《蒙诏帖》，归属有争议，不标作确定唐代真迹。",
+      "versionNote300": "故宫博物院所藏传柳公权《蒙诏帖》，归属有争议，不标作确定唐代真迹。",
+      "status": "宋人仿本；旧题柳公权",
+      "id": "mengzhao",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "蒙",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "tumu": {
+      "title": "土母帖",
+      "author": "李建中",
+      "era": "北宋",
+      "year": null,
+      "dateLabel": "北宋初（10世纪末—11世纪初）",
+      "script": "行书",
+      "place": "台北",
+      "museum": "国立故宫博物院（宋十二名家法书·书谘）",
+      "milestone": "以丰腴而严谨的日常书札承接颜、杨之法，保存五代至宋初的转折。",
+      "description": "馆方编目为《宋十二名家法书·李建中书谘》，俗称土母帖；内容请求土母、合药等生活事项。它显示宋初行书的稳厚基础，不能混写为北京故宫藏原迹。",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/22635?dep=P",
+      "pages": [
+        "release300/assets/manuscripts/tumu-1.webp",
+        "release300/assets/manuscripts/tumu-2.webp",
+        "release300/assets/manuscripts/tumu-3.webp",
+        "release300/assets/manuscripts/tumu-4.webp",
+        "release300/assets/manuscripts/tumu-5.webp"
+      ],
+      "pageNames": [
+        "清三希堂法帖（八）　冊　宋李建中書土母帖 · 1",
+        "清三希堂法帖（八）　冊　宋李建中書土母帖 · 2",
+        "清三希堂法帖（八）　冊　宋李建中書土母帖 · 3",
+        "清三希堂法帖（八）　冊　宋李建中書土母帖 · 4",
+        "清三希堂法帖（八）　冊　宋李建中書土母帖 · 5"
+      ],
+      "cover143": "release300/assets/manuscripts/tumu-1.webp",
+      "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。图像为清《三希堂法帖》所刻李建中《土母帖》，是刻帖拓本，不是墨迹原件。",
+      "objectNumber300": "贈帖000085N000000003",
+      "versionNote300": "图像为清《三希堂法帖》所刻李建中《土母帖》，是刻帖拓本，不是墨迹原件。",
+      "status": "纸本书札墨迹",
+      "id": "tumu",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "土",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "kuaixue": {
+      "title": "快雪时晴帖",
+      "author": "传王羲之",
+      "era": "东晋书风·唐摹",
+      "year": null,
+      "dateLabel": "东晋书风；传世摹本",
+      "script": "行楷",
+      "place": "台北",
+      "museum": "国立故宫博物院",
+      "milestone": "短短问候以圆劲流利贯通楷行草，凝缩晋人书札的清雅风神。",
+      "description": "传世为摹本，正文是雪后问安的短信，是“三希”之一。本帖在台北，其他两希伯远、中秋在北京，三希不在同一馆。",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/19?dep=P",
+      "pages": [
+        "release300/assets/manuscripts/kuaixue-1.webp",
+        "release300/assets/manuscripts/kuaixue-2.webp",
+        "release300/assets/manuscripts/kuaixue-3.webp",
+        "release300/assets/manuscripts/kuaixue-4.webp",
+        "release300/assets/manuscripts/kuaixue-5.webp",
+        "release300/assets/manuscripts/kuaixue-6.webp",
+        "release300/assets/manuscripts/kuaixue-7.webp",
+        "release300/assets/manuscripts/kuaixue-8.webp",
+        "release300/assets/manuscripts/kuaixue-9.webp",
+        "release300/assets/manuscripts/kuaixue-10.webp",
+        "release300/assets/manuscripts/kuaixue-11.webp",
+        "release300/assets/manuscripts/kuaixue-12.webp"
+      ],
+      "pageNames": [
+        "晉王羲之快雪時晴帖　冊 · 1",
+        "晉王羲之快雪時晴帖　冊 · 2",
+        "晉王羲之快雪時晴帖　冊 · 3",
+        "晉王羲之快雪時晴帖　冊 · 4",
+        "晉王羲之快雪時晴帖　冊 · 5",
+        "晉王羲之快雪時晴帖　冊 · 6",
+        "晉王羲之快雪時晴帖　冊 · 7",
+        "晉王羲之快雪時晴帖　冊 · 8",
+        "晉王羲之快雪時晴帖　冊 · 9",
+        "晉王羲之快雪時晴帖　冊 · 10",
+        "晉王羲之快雪時晴帖　冊 · 11",
+        "晉王羲之快雪時晴帖　冊 · 12"
+      ],
+      "cover143": "release300/assets/manuscripts/kuaixue-2.webp",
+      "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。台北故宫所藏《快雪时晴帖》册；王羲之原迹与唐摹本归属依馆方研究。",
+      "objectNumber300": "故書000141N000000000",
+      "versionNote300": "台北故宫所藏《快雪时晴帖》册；王羲之原迹与唐摹本归属依馆方研究。",
+      "status": "传王羲之书；摹本",
+      "id": "kuaixue",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "快",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "huangting": {
+      "title": "黄庭经",
+      "author": "传王羲之",
+      "era": "东晋书风",
+      "year": null,
+      "dateLabel": "东晋书风；后世刻帖",
+      "script": "小楷",
+      "place": "各地",
+      "museum": "原迹不存；历代刻帖分藏",
+      "milestone": "以小楷的均衡点画与内在气韵，成为晋人小字法度的重要范本。",
+      "description": "流传有不同刻本，书写年代和作者归属不能仅凭题名确定；作品文学正文与本帖实际刻字范围应分别标明。",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1949?dep=P",
+      "pages": [
+        "release300/assets/manuscripts/huangting-1.webp",
+        "release300/assets/manuscripts/huangting-2.webp",
+        "release300/assets/manuscripts/huangting-3.webp",
+        "release300/assets/manuscripts/huangting-4.webp",
+        "release300/assets/manuscripts/huangting-5.webp",
+        "release300/assets/manuscripts/huangting-6.webp"
+      ],
+      "pageNames": [
+        "宋拓寶晉齋黃庭經　冊 · 1",
+        "宋拓寶晉齋黃庭經　冊 · 2",
+        "宋拓寶晉齋黃庭經　冊 · 3",
+        "宋拓寶晉齋黃庭經　冊 · 4",
+        "宋拓寶晉齋黃庭經　冊 · 5",
+        "宋拓寶晉齋黃庭經　冊 · 6"
+      ],
+      "cover143": "release300/assets/manuscripts/huangting-1.webp",
+      "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。所用图像为宋拓《宝晋斋黄庭经》册，是刻帖拓本，不是王羲之墨迹。",
+      "objectNumber300": "故帖000021N000000000",
+      "versionNote300": "所用图像为宋拓《宝晋斋黄庭经》册，是刻帖拓本，不是王羲之墨迹。",
+      "status": "传王羲之书；版本待登记",
+      "id": "huangting",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "黄",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "leyi": {
+      "title": "乐毅论",
+      "author": "传王羲之",
+      "era": "东晋书风",
+      "year": null,
+      "dateLabel": "东晋书风；后世传本",
+      "script": "小楷",
+      "place": "各地",
+      "museum": "原迹不存；唐宋以下刻帖分藏",
+      "milestone": "以精密而不板滞的小楷承载论述，影响后世小楷的取法。",
+      "description": "论文本属夏侯玄，王羲之传书版本通过摹刻保存。应注明所用玉石刻本、阁帖或临本，不把文作者写成书者。",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/21574?dep=P",
+      "pages": [
+        "release300/assets/manuscripts/leyi-1.webp",
+        "release300/assets/manuscripts/leyi-2.webp",
+        "release300/assets/manuscripts/leyi-3.webp"
+      ],
+      "pageNames": [
+        "宋拓晉唐小楷　冊　王羲之樂毅論 · 1",
+        "宋拓晉唐小楷　冊　王羲之樂毅論 · 2",
+        "宋拓晉唐小楷　冊　王羲之樂毅論 · 3"
+      ],
+      "cover143": "release300/assets/manuscripts/leyi-1.webp",
+      "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。所用图像为《宋拓晋唐小楷》册《王羲之乐毅论》，是宋拓本，不是墨迹原件。",
+      "objectNumber300": "故帖000007N000000001",
+      "versionNote300": "所用图像为《宋拓晋唐小楷》册《王羲之乐毅论》，是宋拓本，不是墨迹原件。",
+      "status": "传王羲之书；摹刻传本",
+      "id": "leyi",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "乐",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "nikuan": {
+      "title": "倪宽赞",
+      "author": "传褚遂良",
+      "era": "唐书风",
+      "year": null,
+      "dateLabel": "唐人书风；传世本归属待按馆方说明",
+      "script": "小楷",
+      "place": "台北",
+      "museum": "国立故宫博物院（传本）",
+      "milestone": "以细劲而丰润的线条，在小楷中表现褚体流美与弹性。",
+      "description": "本帖题归褚遂良，归属与时代须按馆方鉴定说明；同名董其昌仿颜真卿卷与本帖不同，不能误用它的图片与作者。",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14846?dep=P",
+      "pages": [
+        "release300/assets/manuscripts/nikuan-1.webp",
+        "release300/assets/manuscripts/nikuan-2.webp",
+        "release300/assets/manuscripts/nikuan-3.webp",
+        "release300/assets/manuscripts/nikuan-4.webp",
+        "release300/assets/manuscripts/nikuan-5.webp",
+        "release300/assets/manuscripts/nikuan-6.webp",
+        "release300/assets/manuscripts/nikuan-7.webp",
+        "release300/assets/manuscripts/nikuan-8.webp",
+        "release300/assets/manuscripts/nikuan-9.webp",
+        "release300/assets/manuscripts/nikuan-10.webp",
+        "release300/assets/manuscripts/nikuan-11.webp"
+      ],
+      "pageNames": [
+        "唐褚遂良書倪寬傳贊　卷 · 1",
+        "唐褚遂良書倪寬傳贊　卷 · 2",
+        "唐褚遂良書倪寬傳贊　卷 · 3",
+        "唐褚遂良書倪寬傳贊　卷 · 4",
+        "唐褚遂良書倪寬傳贊　卷 · 5",
+        "唐褚遂良書倪寬傳贊　卷 · 6",
+        "唐褚遂良書倪寬傳贊　卷 · 7",
+        "唐褚遂良書倪寬傳贊　卷 · 8",
+        "唐褚遂良書倪寬傳贊　卷 · 9",
+        "唐褚遂良書倪寬傳贊　卷 · 10",
+        "唐褚遂良書倪寬傳贊　卷 · 11"
+      ],
+      "cover143": "release300/assets/manuscripts/nikuan-2.webp",
+      "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。传褚遂良《倪宽传赞》卷；馆方指出可能为南宋摹本，不以旧题当作确定唐代真迹。",
+      "objectNumber300": "故書000054N000000000",
+      "versionNote300": "传褚遂良《倪宽传赞》卷；馆方指出可能为南宋摹本，不以旧题当作确定唐代真迹。",
+      "status": "传褚遂良；实际时代按馆方鉴定",
+      "id": "nikuan",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "倪",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "luoshen13": {
+      "title": "洛神赋十三行",
+      "author": "传王献之书；曹植文",
+      "era": "东晋",
+      "year": null,
+      "dateLabel": "东晋；传世多为后世刻帖／临本",
+      "script": "小楷",
+      "place": "存世刻帖／摹临本",
+      "museum": "原墨迹已佚；历代刻帖、临本分藏",
+      "milestone": "摆脱早期楷书的隶势，以疏朗、舒展的小楷开出“玉润”风貌。",
+      "description": "这里只指传王献之小楷残本，非曹植《洛神赋》全篇，更非赵孟頫行书卷。传世十三行从“嬉”至“飞”；具体玉版刻本、拓本和临本须标明，不能称晋人原迹。",
+      "url": "https://online.bunka.go.jp/heritages/detail/456484",
+      "pages": [
+        "release300/assets/manuscripts/luoshen13-1.webp",
+        "release300/assets/manuscripts/luoshen13-2.webp",
+        "release300/assets/manuscripts/luoshen13-3.webp",
+        "release300/assets/manuscripts/luoshen13-4.webp",
+        "release300/assets/manuscripts/luoshen13-5.webp",
+        "release300/assets/manuscripts/luoshen13-6.webp",
+        "release300/assets/manuscripts/luoshen13-7.webp",
+        "release300/assets/manuscripts/luoshen13-8.webp",
+        "release300/assets/manuscripts/luoshen13-9.webp",
+        "release300/assets/manuscripts/luoshen13-10.webp",
+        "release300/assets/manuscripts/luoshen13-11.webp",
+        "release300/assets/manuscripts/luoshen13-12.webp",
+        "release300/assets/manuscripts/luoshen13-13.webp",
+        "release300/assets/manuscripts/luoshen13-14.webp",
+        "release300/assets/manuscripts/luoshen13-15.webp"
+      ],
+      "pageNames": [
+        "东京国立博物馆藏纸本墨拓 · 1",
+        "东京国立博物馆藏纸本墨拓 · 2",
+        "东京国立博物馆藏纸本墨拓 · 3",
+        "东京国立博物馆藏纸本墨拓 · 4",
+        "东京国立博物馆藏纸本墨拓 · 5",
+        "东京国立博物馆藏纸本墨拓 · 6",
+        "东京国立博物馆藏纸本墨拓 · 7",
+        "东京国立博物馆藏纸本墨拓 · 8",
+        "东京国立博物馆藏纸本墨拓 · 9",
+        "东京国立博物馆藏纸本墨拓 · 10",
+        "东京国立博物馆藏纸本墨拓 · 11",
+        "东京国立博物馆藏纸本墨拓 · 12",
+        "东京国立博物馆藏纸本墨拓 · 13",
+        "东京国立博物馆藏纸本墨拓 · 14",
+        "东京国立博物馆藏纸本墨拓 · 15"
+      ],
+      "cover143": "release300/assets/manuscripts/luoshen13-3.webp",
+      "imageCredit247": "东京国立博物馆藏；图像与资料：日本文化厅文化遗产在线。",
+      "objectNumber300": "東京国立博物館 TB-1360",
+      "versionNote300": "图像为东京国立博物馆所藏《洛神赋十三行》纸本墨拓，不是王献之墨迹，也不是首都博物馆玉版原石照片。",
+      "status": "东晋书风；传世残刻本，原墨迹不存",
+      "id": "luoshen13",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "洛",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "mengdian": {
+      "title": "仲尼梦奠帖",
+      "author": "欧阳询",
+      "era": "唐",
+      "year": null,
+      "dateLabel": "唐（7世纪）",
+      "script": "行书",
+      "place": "沈阳",
+      "museum": "辽宁省博物馆",
+      "milestone": "以瘦劲险绝的行书讲述孔子梦奠，展示初唐行书的筋骨。",
+      "description": "属欧阳询《史事帖》系统的传世名迹，文本取孔子梦奠故事。与张翰帖等相互参照，可见欧体楷行共享的内紧外拓。",
+      "url": "https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/04/content_50238.html",
+      "pages": [
+        "release300/assets/manuscripts/mengdian-main.webp"
+      ],
+      "pageNames": [
+        "辽宁省博物馆藏《仲尼梦奠帖》正文"
+      ],
+      "cover143": "release300/assets/manuscripts/mengdian-main.webp",
+      "imageCredit247": "辽宁省博物馆藏；图像与资料：辽宁日报2019年11月4日展品解读。",
+      "versionNote300": "仅呈现《仲尼梦奠帖》正文，不混入后人题跋。",
+      "status": "传世行书卷",
+      "id": "mengdian",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "仲",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "tianfa": {
+      "title": "天发神谶碑",
+      "author": "书者归属有争议",
+      "era": "三国吴",
+      "year": 276,
+      "dateLabel": "276年",
+      "script": "篆书",
+      "place": "南京等",
+      "museum": "原石已毁；旧拓、重刻分藏",
+      "milestone": "以方折、垂锋与奇崛字形改造圆转篆法，启发后世金石书写。",
+      "description": "又称天玺纪功碑，篆书造型独特；传皇象书等旧说须标注争议。原石清代毁于火灾，所上传只能是旧拓、重刻或临本。",
+      "url": "https://www.dpm.org.cn/collection/impres/234552.html",
+      "pages": [
+        "release300/assets/steles/tianfa-1.webp",
+        "release300/assets/steles/tianfa-2.webp",
+        "release300/assets/steles/tianfa-3.webp",
+        "release300/assets/steles/tianfa-4.webp",
+        "release300/assets/steles/tianfa-5.webp"
+      ],
+      "pageNames": [
+        "天发神谶碑-碑文之一",
+        "天发神谶碑-碑文之二",
+        "天发神谶碑-碑文之三",
+        "天发神谶碑-碑文之四",
+        "天发神谶碑-碑文之五"
+      ],
+      "cover143": "release300/assets/steles/tianfa-1.webp",
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/tianfa-1.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/838.jpg",
+          "label": "天发神谶碑-碑文之一",
+          "width": 400,
+          "height": 304,
+          "sha256": "8ba3fb35daea258c3471734665875977b3b7356587c9528959578fd11669ade1"
+        },
+        {
+          "path": "release300/assets/steles/tianfa-2.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/840.jpg",
+          "label": "天发神谶碑-碑文之二",
+          "width": 400,
+          "height": 304,
+          "sha256": "24e671ed16c069e61b2d65c1065841eb2be6e96372824ce29e2c929db9cf4889"
+        },
+        {
+          "path": "release300/assets/steles/tianfa-3.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/841.jpg",
+          "label": "天发神谶碑-碑文之三",
+          "width": 400,
+          "height": 295,
+          "sha256": "c2373e11d53b19b923c1e974202415e1429b553019a6faee27af11da7e736525"
+        },
+        {
+          "path": "release300/assets/steles/tianfa-4.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/843.jpg",
+          "label": "天发神谶碑-碑文之四",
+          "width": 400,
+          "height": 315,
+          "sha256": "6baf89656d81f49fe8605eca78e4aa6058e0d0bea4fa1ab19197f1aa0e87fff9"
+        },
+        {
+          "path": "release300/assets/steles/tianfa-5.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/845.jpg",
+          "label": "天发神谶碑-碑文之五",
+          "width": 400,
+          "height": 294,
+          "sha256": "ca47b445d7471c2b5b491f3efb2b1f36ffa664dfa0858906dce31e2183b77c28"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "原石已毁；具体拓本藏馆待登记",
+      "id": "tianfa",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "天",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "catalogue300-yanqinli": {
+      "title": "颜勤礼碑",
+      "author": "颜真卿",
+      "era": "唐",
+      "year": 779,
+      "dateLabel": "唐大历十四年（779年）",
+      "script": "楷书",
+      "place": "中国·西安",
+      "museum": "西安碑林博物馆",
+      "milestone": "以雄浑开张、外拓筋骨呈现颜真卿晚年成熟楷法，是学习颜体与理解盛唐书风的重要典范。",
+      "description": "为先祖颜勤礼而作，晚年楷书面貌鲜明；原碑与后世拓本应区分，文字的缺损与侧面刻字须按实际上传范围记录。",
+      "url": "https://www.dpm.org.cn/collection/impres/234175.html",
+      "pages": [
+        "release300/assets/steles/yanqinli-2.webp",
+        "release300/assets/steles/yanqinli-3.webp",
+        "release300/assets/steles/yanqinli-4.webp",
+        "release300/assets/steles/yanqinli-5.webp"
+      ],
+      "pageNames": [
+        "颜勤礼碑(册页2)",
+        "颜勤礼碑(册页3)",
+        "颜勤礼碑(册页4)",
+        "颜勤礼碑(册页5)"
+      ],
+      "cover143": "release300/assets/steles/yanqinli-2.webp",
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/yanqinli-2.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/61518[1024].jpg",
+          "label": "颜勤礼碑(册页2)",
+          "width": 1024,
+          "height": 876,
+          "sha256": "291aead71c66dd476ab72695ce3300bd31f573510c20e22e9c7c59601f536bce"
+        },
+        {
+          "path": "release300/assets/steles/yanqinli-3.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/61517[1024].jpg",
+          "label": "颜勤礼碑(册页3)",
+          "width": 1024,
+          "height": 886,
+          "sha256": "1c735680d53c564954f50e020fc415cd2454c6b144ac7ee713122501166b981d"
+        },
+        {
+          "path": "release300/assets/steles/yanqinli-4.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/61516[1024].jpg",
+          "label": "颜勤礼碑(册页4)",
+          "width": 1024,
+          "height": 881,
+          "sha256": "295970cf8a303304d7b84d53143355523b43d83e5f8c4a4bdd1dfeebec06977b"
+        },
+        {
+          "path": "release300/assets/steles/yanqinli-5.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/61515[1024].jpg",
+          "label": "颜勤礼碑(册页5)",
+          "width": 1024,
+          "height": 892,
+          "sha256": "5a80caa3a5aeaac2c77ba24ff2f205ce6c2ad412addaf639e954ac1d778b95f4"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "原碑",
+      "id": "catalogue300-yanqinli",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "颜",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "sanfen": {
+      "title": "三坟记",
+      "author": "李阳冰",
+      "era": "唐",
+      "year": 767,
+      "dateLabel": "767年",
+      "script": "小篆",
+      "place": "陕西西安等",
+      "museum": "拓本、重刻分藏；具体版本待登记",
+      "milestone": "以唐代中锋篆法继承秦篆，使小篆在楷行兴盛时代重新成为艺术语言。",
+      "description": "李阳冰以篆书见长，此碑常为唐篆教学范本；本条预录作品身份，不擅定所上传刻本就是唐代原石。",
+      "url": "https://beilin-museum.com/INDEX.PHP?a=index&aid=2611&c=View&m=home",
+      "pages": [
+        "release300/assets/steles/sanfen-1.webp"
+      ],
+      "pageNames": [
+        "三坟记碑(图1)"
+      ],
+      "cover143": "release300/assets/steles/sanfen-1.webp",
+      "imageCredit247": "西安碑林博物馆公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/sanfen-1.webp",
+          "source": "https://www.beilin-museum.com/uploads/ueditor/20200826/2-200R6163552642.jpg",
+          "label": "三坟记碑(图1)",
+          "width": 547,
+          "height": 1181,
+          "sha256": "5d38e49d6e7c47ce0396314b3e5349b1a5dc74a7adb71c48863b9978340c9624"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "实际临写刻本与收藏地待核",
+      "id": "sanfen",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "三",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "mengying": {
+      "title": "篆书千字文碑",
+      "author": "释梦英",
+      "era": "北宋",
+      "year": 965,
+      "dateLabel": "965年",
+      "script": "篆书",
+      "place": "陕西西安",
+      "museum": "西安碑林博物馆",
+      "milestone": "以宋代篆书刊刻千字文，把篆体教育与碑林传承连接起来。",
+      "description": "碑林官方年表记宋乾德三年梦英千字文刊立，须与徐铉千字文残卷区分，二者作者、载体、藏馆均不同。",
+      "url": "https://www.beilin-museum.com/index.php?a=index&aid=4613&c=View&m=home",
+      "pages": [
+        "release300/assets/steles/mengying-1.webp"
+      ],
+      "pageNames": [
+        "篆书千字文碑.jpg"
+      ],
+      "cover143": "release300/assets/steles/mengying-1.webp",
+      "imageCredit247": "西安碑林博物馆公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/mengying-1.webp",
+          "source": "https://www.beilin-museum.com/uploads/allimg/20250508/2-25050Q04HGQ.jpg",
+          "label": "篆书千字文碑.jpg",
+          "width": 1140,
+          "height": 3180,
+          "sha256": "501310cdde9e9574238428e712554f0c8eb14dad70a550a5adfd36dacaef5af6"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "北宋篆书碑",
+      "id": "mengying",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "篆",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "hengfang": {
+      "title": "衡方碑",
+      "author": "书者佚名",
+      "era": "东汉",
+      "year": 168,
+      "dateLabel": "168年",
+      "script": "隶书",
+      "place": "山东",
+      "museum": "具体原碑与拓本保管单位须核验",
+      "milestone": "以茂密布白和厚重方整结体，展示汉隶沉雄一路。",
+      "description": "为衡方颂德而立，结构密实、笔画丰厚，与张迁碑可相互比较。本条不给未核验的当前原石藏馆，上传时填具体文保单位与版本。",
+      "url": "https://www.dpm.org.cn/collection/impres/228606.html",
+      "pages": [
+        "release300/assets/steles/hengfang-1.webp"
+      ],
+      "pageNames": [
+        "衡方碑拓本"
+      ],
+      "cover143": "release300/assets/steles/hengfang-1.webp",
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/hengfang-1.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9694.jpg",
+          "label": "衡方碑拓本",
+          "width": 188,
+          "height": 400,
+          "sha256": "b00098e6bb83e3ef21bec03daf597c97993d00965e75bc2db8f16ae19ba0f0c8"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "现存原碑保管单位待核验",
+      "id": "hengfang",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "衡",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "shichen": {
+      "title": "史晨碑",
+      "author": "书者佚名",
+      "era": "东汉",
+      "year": 169,
+      "dateLabel": "169年",
+      "script": "隶书",
+      "place": "山东曲阜",
+      "museum": "曲阜汉魏碑刻陈列馆",
+      "milestone": "把整饬章法、厚重笔画与孔庙祭祀记录汇成汉隶正宗一路。",
+      "description": "前碑、后碑文字不同，均记录史晨祭孔相关事宜；与乙瑛、礼器并读可见成熟汉隶既有法度也有个性。",
+      "url": "https://www.dpm.org.cn/collection/impres/228527.html",
+      "pages": [
+        "release300/assets/steles/shichen-2.webp",
+        "release300/assets/steles/shichen-3.webp",
+        "release300/assets/steles/shichen-4.webp",
+        "release300/assets/steles/shichen-5.webp"
+      ],
+      "pageNames": [
+        "史晨碑帖页之二",
+        "史晨碑帖页之三",
+        "史晨碑帖页之四",
+        "史晨碑帖页之五"
+      ],
+      "cover143": "release300/assets/steles/shichen-2.webp",
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/shichen-2.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9541[1024].jpg",
+          "label": "史晨碑帖页之二",
+          "width": 1024,
+          "height": 809,
+          "sha256": "4e26f9124843e0fe2e911d32876aba4e52181d1a2845ac479f8ed10427c3e317"
+        },
+        {
+          "path": "release300/assets/steles/shichen-3.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9543[1024].jpg",
+          "label": "史晨碑帖页之三",
+          "width": 1024,
+          "height": 823,
+          "sha256": "a26b6da0caf328a377eb028cf3f73bbc0b194817a5650d56e3fdf2f4827faba8"
+        },
+        {
+          "path": "release300/assets/steles/shichen-4.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9540[1024].jpg",
+          "label": "史晨碑帖页之四",
+          "width": 1024,
+          "height": 805,
+          "sha256": "b0e47d48c2bebf5247c0ed7bdf2104bdd11e210ca0c79ce36fe9645090a431bb"
+        },
+        {
+          "path": "release300/assets/steles/shichen-5.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9539[1024].jpg",
+          "label": "史晨碑帖页之五",
+          "width": 1024,
+          "height": 811,
+          "sha256": "a912789fb0052dcebe7bf7bf997860b3d1bfa8c01ee135f482d57c03c1785c31"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "原碑前后两面",
+      "id": "shichen",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "史",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "huashan": {
+      "title": "西岳华山庙碑",
+      "author": "书者佚名",
+      "era": "东汉",
+      "year": 165,
+      "dateLabel": "165年",
+      "script": "隶书",
+      "place": "北京／香港／东京等",
+      "museum": "原碑已毁；四明、华阴等拓本分藏",
+      "milestone": "在严整汉隶中容纳圆劲与波磔，成为后世取法汉碑的重要源头。",
+      "description": "原碑明代已毁，重要旧拓分藏北京故宫、香港中文大学文物馆和东京书道博物馆；不能把某拓本收藏馆标成原碑现址。",
+      "url": "https://www.dpm.org.cn/collection/impres/234706.html",
+      "pages": [
+        "release300/assets/steles/huashan-1.webp"
+      ],
+      "pageNames": [
+        "宋拓四明本西岳华山庙碑"
+      ],
+      "cover143": "release300/assets/steles/huashan-1.webp",
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/huashan-1.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/610.jpg",
+          "label": "宋拓四明本西岳华山庙碑",
+          "width": 186,
+          "height": 400,
+          "sha256": "4226c0644e18c37fafd36e874c9f8251eba7ffa7fbaf2367640d34f3b8b87d32"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "原碑已毁；应指定旧拓版本",
+      "id": "huashan",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "西",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "shimen": {
+      "title": "石门颂",
+      "author": "王升撰；书者佚名",
+      "era": "东汉",
+      "year": 148,
+      "dateLabel": "148年",
+      "script": "隶书",
+      "place": "陕西汉中",
+      "museum": "汉中市博物馆",
+      "milestone": "在崖面上保留舒展长画与草意，突破碑版隶书的拘束。",
+      "description": "原为褒斜道石门摩崖，为保护水库工程迁入古汉台；与西狭、郙阁合称汉三颂，原刻现藏地点应写汉中博物馆。",
+      "url": "https://www.dpm.org.cn/collection/impres/234191.html",
+      "pages": [
+        "release300/assets/steles/shimen-3.webp",
+        "release300/assets/steles/shimen-4.webp",
+        "release300/assets/steles/shimen-5.webp"
+      ],
+      "pageNames": [
+        "杨孟文颂(册页3)",
+        "杨孟文颂(册页4)",
+        "杨孟文颂(册页5)"
+      ],
+      "cover143": "release300/assets/steles/shimen-3.webp",
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/shimen-3.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/62829.jpg",
+          "label": "杨孟文颂(册页3)",
+          "width": 400,
+          "height": 299,
+          "sha256": "0a2b405663e1d7b825fccfbe4e2688898f0e354239601e21466945529c7d2442"
+        },
+        {
+          "path": "release300/assets/steles/shimen-4.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/62828.jpg",
+          "label": "杨孟文颂(册页4)",
+          "width": 400,
+          "height": 299,
+          "sha256": "a9e24018c824d51d347de830baeecd05832937efc0be9d374799370b57273517"
+        },
+        {
+          "path": "release300/assets/steles/shimen-5.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/62827.jpg",
+          "label": "杨孟文颂(册页5)",
+          "width": 400,
+          "height": 299,
+          "sha256": "aca9b20d9d1de7262e3527966320aa0fb76af7a1efb9e56630b47a513430418d"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "迁藏摩崖原石",
+      "id": "shimen",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "石",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "yiying": {
+      "title": "乙瑛碑",
+      "author": "书者佚名",
+      "era": "东汉",
+      "year": 153,
+      "dateLabel": "153年",
+      "script": "隶书",
+      "place": "山东曲阜",
+      "museum": "曲阜汉魏碑刻陈列馆",
+      "milestone": "以方整平正、骨肉匀停的汉隶，将行政文书刻成庙堂典范。",
+      "description": "记设置掌管孔庙祭祀的百石卒史，与礼器、史晨共同展示汉代礼制与成熟隶法。释文需依所用拓本补损，不能隐去残缺。",
+      "url": "https://www.dpm.org.cn/collection/impres/228529.html",
+      "pages": [
+        "release300/assets/steles/yiying-1.webp",
+        "release300/assets/steles/yiying-2.webp",
+        "release300/assets/steles/yiying-3.webp",
+        "release300/assets/steles/yiying-4.webp",
+        "release300/assets/steles/yiying-5.webp"
+      ],
+      "pageNames": [
+        "乙瑛碑帖页之一",
+        "乙瑛碑帖页之二",
+        "乙瑛碑帖页之三",
+        "乙瑛碑帖页之四",
+        "乙瑛碑帖页之五"
+      ],
+      "cover143": "release300/assets/steles/yiying-1.webp",
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/yiying-1.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9583[1024].jpg",
+          "label": "乙瑛碑帖页之一",
+          "width": 1024,
+          "height": 897,
+          "sha256": "4f61a67588b3ab660db720e498f1c35061dae80d96ee1481959247e584f7af17"
+        },
+        {
+          "path": "release300/assets/steles/yiying-2.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9582[1024].jpg",
+          "label": "乙瑛碑帖页之二",
+          "width": 1024,
+          "height": 897,
+          "sha256": "e8e056188e1cdd92ee1059a0727d7e1b00d99e16d30a5c8511d8a6146d101219"
+        },
+        {
+          "path": "release300/assets/steles/yiying-3.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9581[1024].jpg",
+          "label": "乙瑛碑帖页之三",
+          "width": 1024,
+          "height": 897,
+          "sha256": "9b239a3da37d4416ed7ff0784f58ce79ef12b5c9d89cc7c02cbe5e73fd1a36e2"
+        },
+        {
+          "path": "release300/assets/steles/yiying-4.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9580[1024].jpg",
+          "label": "乙瑛碑帖页之四",
+          "width": 1024,
+          "height": 897,
+          "sha256": "c36914f7272c27749e65f2a9f84b261d3a0a7b8110ad519e4b62093812166420"
+        },
+        {
+          "path": "release300/assets/steles/yiying-5.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9579[1024].jpg",
+          "label": "乙瑛碑帖页之五",
+          "width": 1024,
+          "height": 897,
+          "sha256": "ba3544298ce5e4b574bcce2408a2631ad6c5d937fc33de1278d6a07cc2ef6c57"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "原碑",
+      "id": "yiying",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "乙",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "kaicheng": {
+      "title": "开成石经",
+      "author": "艾居晦、陈玠等奉敕刊刻",
+      "era": "唐",
+      "year": 837,
+      "dateLabel": "833—837年",
+      "script": "楷书",
+      "place": "陕西西安",
+      "museum": "西安碑林博物馆",
+      "milestone": "把十二部儒家经典刻成庞大石上文库，使唐楷成为公共校读标准。",
+      "description": "立于唐代国子监，后迁碑林；多碑、多篇、多行构成整体，应按经书与石号拆分维护，不以一张缩略图覆盖整个石经。",
+      "url": "https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=280",
+      "pages": [
+        "release300/assets/steles/kaicheng-1.webp",
+        "release300/assets/steles/kaicheng-2.webp"
+      ],
+      "pageNames": [
+        "开成石经陈列原石照片（非拓片）",
+        "开成石经陈列原石照片（非拓片）"
+      ],
+      "cover143": "release300/assets/steles/kaicheng-1.webp",
+      "imageCredit247": "西安碑林博物馆公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/kaicheng-1.webp",
+          "source": "https://beilin-museum.com/uploads/allimg/20250127/2-25012H00220192.JPG",
+          "label": "开成石经陈列原石照片（非拓片）",
+          "width": 2400,
+          "height": 1600,
+          "sha256": "62e7a12e56aa657d46d53a48d5ac70326bf96c75a011e74edbd44f1046260aab"
+        },
+        {
+          "path": "release300/assets/steles/kaicheng-2.webp",
+          "source": "https://beilin-museum.com/uploads/allimg/20250127/2-25012H00354229.JPG",
+          "label": "开成石经陈列原石照片（非拓片）",
+          "width": 2343,
+          "height": 1562,
+          "sha256": "fc7a310b5aaf2e0d7a6d1ee8f9cdf9a9ca762a845230a9ad27ee1e44be1c32ea"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "大规模多碑石经；按篇、石编号维护",
+      "id": "kaicheng",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "开",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "xianyuhuang": {
+      "title": "鲜于璜碑",
+      "author": "书者佚名",
+      "era": "东汉",
+      "year": 165,
+      "dateLabel": "165年",
+      "script": "隶书",
+      "place": "天津",
+      "museum": "天津博物馆",
+      "milestone": "以出土原碑的清晰刻痕，为汉隶雄强方整风格补上实物证据。",
+      "description": "近现代出土，碑阳与碑阴文本俱具研究价值；与传世拓本对读，有助于分辨刻工、风化和后世翻刻造成的笔形变化。",
+      "url": "https://tjculture.museum.chaoxing.com/302/304/9696.html",
+      "pages": [
+        "release300/assets/steles/xianyuhuang-1.webp",
+        "release300/assets/steles/xianyuhuang-2.webp"
+      ],
+      "pageNames": [
+        "鲜于璜碑原拓",
+        "鲜于璜碑原拓"
+      ],
+      "cover143": "release300/assets/steles/xianyuhuang-1.webp",
+      "imageCredit247": "天津市文化遗产保护中心公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/xianyuhuang-1.webp",
+          "source": "https://museum.chaoxing.com/micro-upload/tjwbzx/richText/image/9696/2.jpg",
+          "label": "鲜于璜碑原拓",
+          "width": 227,
+          "height": 437,
+          "sha256": "ec40d059c5333a6a65f126cceba55d0a63fa9cd79f3e9ec59721338f567426fc"
+        },
+        {
+          "path": "release300/assets/steles/xianyuhuang-2.webp",
+          "source": "https://museum.chaoxing.com/micro-upload/tjwbzx/richText/image/9696/3.jpg",
+          "label": "鲜于璜碑原拓",
+          "width": 232,
+          "height": 446,
+          "sha256": "b4486e6f1878b9a58ec212581c33bf78f256c75f26d2df4cd499a89bd0bfc7f9"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "原碑；官方链接为收藏机构主页",
+      "id": "xianyuhuang",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "鲜",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "zhongxing": {
+      "title": "大唐中兴颂",
+      "author": "颜真卿书；元结撰",
+      "era": "唐",
+      "year": 771,
+      "dateLabel": "761年作文，771年刻石",
+      "script": "楷书",
+      "place": "湖南祁阳",
+      "museum": "浯溪碑林",
+      "milestone": "以雄伟颜楷、诗文与天然崖面合成“摩崖三绝”，铭刻时代转折。",
+      "description": "元结作颂纪安史之乱后的中兴，颜真卿书丹刻于浯溪。文、书、石各为一绝，原文作于761年、刻石771年，两日期应区别。",
+      "url": "https://www.dpm.org.cn/collection/impres/228473.html",
+      "pages": [
+        "release300/assets/steles/zhongxing-1.webp",
+        "release300/assets/steles/zhongxing-2.webp",
+        "release300/assets/steles/zhongxing-3.webp",
+        "release300/assets/steles/zhongxing-4.webp",
+        "release300/assets/steles/zhongxing-5.webp"
+      ],
+      "pageNames": [
+        "大唐中兴颂 一册第一开",
+        "大唐中兴颂 一册第二开",
+        "大唐中兴颂 一册第三开",
+        "大唐中兴颂 一册第四开",
+        "大唐中兴颂 一册第五开"
+      ],
+      "cover143": "release300/assets/steles/zhongxing-1.webp",
+      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/zhongxing-1.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/3788[1024].jpg",
+          "label": "大唐中兴颂 一册第一开",
+          "width": 1024,
+          "height": 916,
+          "sha256": "252944bd647a369e342af43c94f4b88c0e8c8f7ab173a33f53cdfd7c285b1377"
+        },
+        {
+          "path": "release300/assets/steles/zhongxing-2.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/3790[1024].jpg",
+          "label": "大唐中兴颂 一册第二开",
+          "width": 1024,
+          "height": 916,
+          "sha256": "3d23fdbf27c6852383c606f8d5c652c4d16e09aa77fee70e49c80e465330b41e"
+        },
+        {
+          "path": "release300/assets/steles/zhongxing-3.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/3791[1024].jpg",
+          "label": "大唐中兴颂 一册第三开",
+          "width": 1024,
+          "height": 916,
+          "sha256": "c03530f3a967e981560dbbc1aa9da39da6f0048a556d32adad20aa4e298a34cc"
+        },
+        {
+          "path": "release300/assets/steles/zhongxing-4.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/3792[1024].jpg",
+          "label": "大唐中兴颂 一册第四开",
+          "width": 1024,
+          "height": 916,
+          "sha256": "99919725a97a2caeb79a626b4b366ba562a81c8ceea4c80c733bd32eef8863c2"
+        },
+        {
+          "path": "release300/assets/steles/zhongxing-5.webp",
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/3793[1024].jpg",
+          "label": "大唐中兴颂 一册第五开",
+          "width": 1024,
+          "height": 916,
+          "sha256": "b81a028c31b0646929c9924a53ebb49b1477a4a7b22806bbc0f8a724dd774714"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "原址摩崖",
+      "id": "zhongxing",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "大",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "zhengwengong": {
+      "title": "郑文公下碑",
+      "author": "郑道昭",
+      "era": "北魏",
+      "year": 511,
+      "dateLabel": "511年",
+      "script": "楷书／魏碑",
+      "place": "山东莱州",
+      "museum": "莱州云峰山",
+      "milestone": "以篆隶气息融入楷法，使北朝摩崖获得宽博雄浑的气度。",
+      "description": "为郑道昭父郑羲颂德，与天柱山上碑相互参照。下碑留于云峰山原址，刻石保护与过度传拓的关系可作为观帖导读。",
+      "url": "https://www.chinanews.com.cn/gn/2024/01-18/10148676.shtml",
+      "pages": [
+        "release300/assets/steles/zhengwengong-1.webp"
+      ],
+      "pageNames": [
+        "郑文公下碑原石，莱州市博物馆供图"
+      ],
+      "cover143": "release300/assets/steles/zhengwengong-1.webp",
+      "imageCredit247": "莱州市博物馆供图／中国新闻网；原石照片，保留来源水印，未去除。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/zhengwengong-1.webp",
+          "source": "https://i2.chinanews.com.cn/simg/cmshd/2024/01/18/61d90f34aee044368c3657a122648a64.jpg",
+          "label": "郑文公下碑原石，莱州市博物馆供图",
+          "width": 700,
+          "height": 432,
+          "sha256": "cc39e8a757ecdb0973d69e78752a5c882f0a30a6dff4ea8e32c8eb032cabd6df"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "原址摩崖",
+      "id": "zhengwengong",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "郑",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "sishan": {
+      "title": "四山摩崖刻经",
+      "author": "安道壹等，逐山逐刻核验",
+      "era": "北朝",
+      "year": null,
+      "dateLabel": "北齐—北周（6世纪）",
+      "script": "隶楷大字",
+      "place": "山东邹城",
+      "museum": "铁山、岗山、葛山、尖山原址",
+      "milestone": "以大字摩崖传播佛经，使北朝书法、信仰与山体空间相融。",
+      "description": "四山是地区组合，不是同一篇经文；维护时应为各山各刻建立子帖，避免拼接不同经文、题跋和书者。",
+      "url": "https://whlyj.jining.gov.cn/art/2025/6/12/art_70690_2706024.html",
+      "pages": [
+        "release300/assets/steles/sishan-2.webp",
+        "release300/assets/steles/sishan-3.webp"
+      ],
+      "pageNames": [
+        "四山摩崖刻经代表：铁山、岗山石刻照片（非整套拓片）",
+        "四山摩崖刻经代表：岗山石刻照片"
+      ],
+      "cover143": "release300/assets/steles/sishan-2.webp",
+      "imageCredit247": "济宁市文化和旅游局公开图像；按来源标示拓片或原石照片。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/sishan-2.webp",
+          "source": "https://whlyj.jining.gov.cn/picture/-1/2309971a2e5c42cdb1990177d9031572.png",
+          "label": "四山摩崖刻经代表：铁山、岗山石刻照片（非整套拓片）",
+          "width": 539,
+          "height": 400,
+          "sha256": "10db741cbd49f8bef4bc7051e668942f4ea46f1bb842f3ead215c9fe2080569f"
+        },
+        {
+          "path": "release300/assets/steles/sishan-3.webp",
+          "source": "https://whlyj.jining.gov.cn/picture/-1/8f20e394e47641909cb7d4339104ae03.png",
+          "label": "四山摩崖刻经代表：岗山石刻照片",
+          "width": 535,
+          "height": 374,
+          "sha256": "6265026333dc485008dfd66c2919c6f9a36a957bf0711b849d526aa813dfb2f5"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "原址多处刻经组合",
+      "id": "sishan",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "四",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "shimenming": {
+      "title": "石门铭",
+      "author": "王远撰书；武阿仁刻",
+      "era": "北魏",
+      "year": 509,
+      "dateLabel": "509年",
+      "script": "楷书／魏碑",
+      "place": "陕西汉中",
+      "museum": "汉中市博物馆",
+      "milestone": "以跌宕结体和开张空间，把汉代摩崖遗韵推进北魏楷法。",
+      "description": "记录褒斜道修复，字体保留隶意而已具楷书面貌；与东汉石门颂不同，迁藏后应写现存收藏位置。",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/15187?dep=P",
+      "pages": [
+        "release300/assets/steles/shimenming-1.webp",
+        "release300/assets/steles/shimenming-2.webp",
+        "release300/assets/steles/shimenming-3.webp"
+      ],
+      "pageNames": [
+        "魏王远石门铭墨拓本（台北故宫）",
+        "魏王远石门铭墨拓本（台北故宫）",
+        "魏王远石门铭墨拓本（台北故宫）"
+      ],
+      "cover143": "release300/assets/steles/shimenming-1.webp",
+      "imageCredit247": "魏王远石门铭墨拓本　轴。国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/shimenming-1.webp",
+          "source": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=498208&randomCode=96067555462",
+          "label": "魏王远石门铭墨拓本（台北故宫）",
+          "width": 569,
+          "height": 600,
+          "sha256": "883a7d44912e9e55e949247056c1d035c13ccb063d048e21ec42409d7cd3a9cc"
+        },
+        {
+          "path": "release300/assets/steles/shimenming-2.webp",
+          "source": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=498209&randomCode=63187861859",
+          "label": "魏王远石门铭墨拓本（台北故宫）",
+          "width": 446,
+          "height": 600,
+          "sha256": "897050ec5b861d55376d2a4a9931efbc5d7b3adf75e41a7781b53763bdf44c78"
+        },
+        {
+          "path": "release300/assets/steles/shimenming-3.webp",
+          "source": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=498210&randomCode=96530751048",
+          "label": "魏王远石门铭墨拓本（台北故宫）",
+          "width": 446,
+          "height": 600,
+          "sha256": "7271ce06527c2ed517782d29415be57867b1459ae667d9f1479915a8d3ed01b4"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "迁藏摩崖原石",
+      "id": "shimenming",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "石",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "biluo": {
+      "title": "碧落碑",
+      "author": "作者归属有争议",
+      "era": "唐",
+      "year": 670,
+      "dateLabel": "670年",
+      "script": "古文篆书",
+      "place": "山西新绛",
+      "museum": "山西新绛相关文保；拓本分藏",
+      "milestone": "以古文、篆体的复杂构形，保存唐人理解与重构古文字的尝试。",
+      "description": "碑为造像祈福而作，用字多古异形，作者和传说不可当作定论；临帖释文宜附古字对照、损泐情况与所据拓本。",
+      "url": "http://kanji.zinbun.kyoto-u.ac.jp/db-machine/imgsrv/takuhon/type_a/html/tou0494x.html",
+      "pages": [
+        "release300/assets/steles/biluo-1.webp"
+      ],
+      "pageNames": [
+        "碧落碑碑阳拓片（翻刻未断本，京都大学 TOU0494X）"
+      ],
+      "cover143": "release300/assets/steles/biluo-1.webp",
+      "imageCredit247": "京都大学人文科学研究所拓本文字数据库 TOU0494X；图像转存 Wikimedia Commons，公共领域。翻刻本不是唐代原石。",
+      "sources300": [
+        {
+          "path": "release300/assets/steles/biluo-1.webp",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/4/47/%E7%A2%A7%E8%90%BD%E7%A2%91%E7%A2%91%E9%99%BD%E6%8B%93%E7%89%87%EF%BC%88%E6%9C%AA%E6%96%B7%E7%89%88%EF%BC%89.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "label": "碧落碑碑阳拓片（金元翻刻未断本）",
+          "width": 3119,
+          "height": 5321,
+          "sha256": "8e311b2960fc0bac57efb05fb4ea408dd7872c684dda3ed157f4aa2b27a8c777"
+        }
+      ],
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "status": "原刻、翻刻与明拓须分别注明",
+      "id": "biluo",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "碧",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "lizi": {
+      "title": "苏轼荔子碑",
+      "author": "韩愈诗；苏轼书",
+      "era": "宋书／清重刻",
+      "script": "行书",
+      "museum": "湖南永州柳子庙",
+      "milestone": "韩文、苏书、柳事在同一碑面交汇，连接唐宋文脉。",
+      "description": "诗咏柳宗元；永州柳子庙所见为清代重刻，不应与柳州宋代刻本混为同一原石。",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/202109mhzxs/",
+      "pages": [
+        "release300/assets/misc/lizi-1.webp"
+      ],
+      "pageNames": [
+        "荔子碑拓片（清重刻本）"
+      ],
+      "cover143": "release300/assets/misc/lizi-1.webp",
+      "imageCredit247": "图像：中国国家博物馆“摩崖上的中兴颂”展览；清代重刻拓片，不是苏轼墨迹。",
+      "sources300": [
+        {
+          "source": "https://www.chnmuseum.cn/portals/0/web/zt/202109mhzxs/img/2/pic1.jpg",
+          "path": "release300/assets/misc/lizi-1.webp",
+          "width": 1000,
+          "height": 380
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "lizi",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "苏",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "zuiweng": {
+      "title": "苏轼书醉翁亭记碑",
+      "author": "欧阳修文；苏轼书",
+      "era": "宋书／后世摹刻",
+      "script": "楷书、行书",
+      "museum": "相关碑刻与拓本分藏多地",
+      "milestone": "欧文的山水意境与苏书的丰润气象，成为文章书法合璧的名碑。",
+      "description": "传统称文、书、刻三绝；各地刻本、拓本的年代与收藏须分别核对，不能统称宋代原石。",
+      "url": "https://shilun.xafa.edu.cn/info/1036/6708.htm",
+      "pages": [
+        "release300/assets/misc/zuiweng-1.webp"
+      ],
+      "pageNames": [
+        "苏轼书《醉翁亭记》刻石（郑州博物馆藏）"
+      ],
+      "cover143": "release300/assets/misc/zuiweng-1.webp",
+      "imageCredit247": "图像：西安美术学院美术史论系郑州博物馆考察记录，图3；清代重刻本实物照片，非北宋原迹。",
+      "sources300": [
+        {
+          "source": "https://shilun.xafa.edu.cn/__local/F/4D/D6/45233F8F6AA04F0B9EB88E74BD5_74454531_1944C.jpeg",
+          "path": "release300/assets/misc/zuiweng-1.webp",
+          "width": 632,
+          "height": 1352
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "zuiweng",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "苏",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "wanan": {
+      "title": "万安桥记大字碑",
+      "author": "蔡襄撰并书",
+      "era": "北宋",
+      "script": "楷书",
+      "museum": "福建泉州洛阳桥蔡襄祠",
+      "milestone": "以简练文字和雄健楷书，记录海湾造桥的公共工程成就。",
+      "description": "《万安桥记》全文153字，传统称文、书、镌三绝；分刻两石，注意碑阳碑阴及重刻版本。",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+      "pages": [
+        "release300/assets/misc/wanan-1.webp"
+      ],
+      "pageNames": [
+        "蔡襄万安桥记碑"
+      ],
+      "cover143": "release300/assets/misc/wanan-1.webp",
+      "imageCredit247": "图像：书法艺术网《闻名天下的三绝碑》公开图；万安桥记碑，不以洛阳桥全景替代碑文。",
+      "sources300": [
+        {
+          "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035041609.jpeg",
+          "path": "release300/assets/misc/wanan-1.webp",
+          "width": 640,
+          "height": 426
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "wanan",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "万",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "lisheng": {
+      "title": "李晟墓碑",
+      "author": "裴度撰；柳公权书",
+      "era": "唐",
+      "script": "楷书",
+      "museum": "陕西高陵",
+      "milestone": "柳体严整笔法与裴度文章共同铭刻中兴名将功绩。",
+      "description": "传统以文章、书法、碑主功绩称三绝；纪念平定叛乱、收复京城的李晟。",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+      "pages": [
+        "release300/assets/misc/lisheng-1.webp",
+        "release300/assets/misc/lisheng-2.webp"
+      ],
+      "pageNames": [
+        "李晟碑",
+        "李晟碑书刻"
+      ],
+      "cover143": "release300/assets/misc/lisheng-1.webp",
+      "imageCredit247": "图像：书法艺术网《闻名天下的三绝碑》公开图；柳公权李晟碑，不以碑亭建筑替代作品。",
+      "sources300": [
+        {
+          "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035041590.jpeg",
+          "path": "release300/assets/misc/lisheng-1.webp",
+          "width": 490,
+          "height": 715
+        },
+        {
+          "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035042625.jpeg",
+          "path": "release300/assets/misc/lisheng-2.webp",
+          "width": 453,
+          "height": 1300
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "lisheng",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "李",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "songke-zhuangyou": {
+      "title": "草书杜子美壮游诗卷",
+      "author": "宋克",
+      "era": "明",
+      "script": "草书",
+      "museum": "中国嘉德拍卖记录",
+      "milestone": "2009年 · 6832万元人民币成交。",
+      "description": "本条收录历史高价书法成交，保留原币种；含佣成交金额不等于落槌价，也不代表当前估值。",
+      "url": "https://collection.sina.com.cn/zgsh/20091123/16397003637.shtml",
+      "pages": [
+        "release300/assets/misc/songke-zhuangyou-1.webp"
+      ],
+      "pageNames": [
+        "宋克《草书杜子美壮游诗卷》拍卖公开图"
+      ],
+      "cover143": "release300/assets/misc/songke-zhuangyou-1.webp",
+      "imageCredit247": "图像：新浪收藏2009年拍卖公开报道；宋克卷公开图，不用于董其昌《龙神感应记》。",
+      "sources300": [
+        {
+          "source": "https://i1.sinaimg.cn/cj/money/collection/zgsh/20091123/U3294P31T1D7003637F46DT20091123163920.jpg",
+          "path": "release300/assets/misc/songke-zhuangyou-1.webp",
+          "width": 500,
+          "height": 155
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "songke-zhuangyou",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "草",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "wuhou": {
+      "title": "蜀丞相诸葛武侯祠堂碑",
+      "author": "裴度撰；柳公绰书；鲁建刻",
+      "era": "唐",
+      "script": "楷书",
+      "museum": "成都武侯祠",
+      "milestone": "以名相之文、名家之书和武侯功德汇成纪念碑典范。",
+      "description": "“三绝”有文章、书法、功德及文、书、刻两种解释；书丹者为柳公绰，非柳公权。",
+      "url": "https://cd.wenming.cn/lsmc/201806/t20180605_5250045.shtml",
+      "pages": [
+        "release300/assets/misc/wuhou-1.webp"
+      ],
+      "pageNames": [
+        "唐蜀丞相诸葛武侯祠堂碑实物"
+      ],
+      "cover143": "release300/assets/misc/wuhou-1.webp",
+      "imageCredit247": "图像及资料：成都文明网《唐裴度撰蜀丞相诸葛武侯祠堂碑》；唐碑实物照片，非拓片。",
+      "sources300": [
+        {
+          "source": "https://cd.wenming.cn/lsmc/201806/W020180605531618401250.jpg",
+          "path": "release300/assets/misc/wuhou-1.webp",
+          "width": 251,
+          "height": 500
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "wuhou",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "蜀",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "shouchan": {
+      "title": "上尊号与受禅碑",
+      "author": "传王朗文；梁鹄书；钟繇刻",
+      "era": "曹魏",
+      "script": "隶书",
+      "museum": "河南漯河临颍繁城",
+      "milestone": "两通碑以成熟隶书记录汉魏政权更替，兼具史料与艺术价值。",
+      "description": "指《公卿将军上尊号奏》和《受禅表》两碑。文书刻三家归属属传称；现址为临颍繁城，不是现代许昌市区。",
+      "url": "https://www.dpm.org.cn/collection/impres/231867.html",
+      "pages": [
+        "release300/assets/misc/shouchan-1.webp"
+      ],
+      "pageNames": [
+        "受禅表碑明拓本（新00045373）"
+      ],
+      "cover143": "release300/assets/misc/shouchan-1.webp",
+      "imageCredit247": "图像及资料：故宫博物院；明拓《受禅表碑》，为上尊号与受禅碑组中受禅表一碑，非两碑全图。",
+      "sources300": [
+        {
+          "source": "https://img.dpm.org.cn/Uploads/Picture/dc/28089[1024].jpg",
+          "path": "release300/assets/misc/shouchan-1.webp",
+          "width": 569,
+          "height": 1024
+        }
+      ],
+      "objectNumber300": "新00045373（故宫受禅表碑拓本）",
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "shouchan",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "上",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "suxian": {
+      "title": "苏仙岭三绝碑",
+      "author": "秦观词；米芾书；苏轼跋",
+      "era": "南宋刻",
+      "script": "行书",
+      "museum": "湖南郴州苏仙岭",
+      "milestone": "词、书、跋互相回应，保存宋人贬谪文学的共鸣。",
+      "description": "刻秦观《踏莎行·郴州旅舍》、苏轼题跋和米芾书迹；现石为南宋咸淳二年（1266）摹刻。",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+      "pages": [
+        "release300/assets/misc/suxian-1.webp",
+        "release300/assets/misc/suxian-2.webp"
+      ],
+      "pageNames": [
+        "苏仙岭三绝碑",
+        "苏仙岭三绝碑书刻"
+      ],
+      "cover143": "release300/assets/misc/suxian-1.webp",
+      "imageCredit247": "图像：书法艺术网《闻名天下的三绝碑》公开图；对应秦观词、苏轼跋、米芾书的书刻，不以导览牌替代。",
+      "sources300": [
+        {
+          "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035042472.jpeg",
+          "path": "release300/assets/misc/suxian-1.webp",
+          "width": 640,
+          "height": 428
+        },
+        {
+          "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035042184.jpeg",
+          "path": "release300/assets/misc/suxian-2.webp",
+          "width": 472,
+          "height": 342
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "suxian",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "苏",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "guoyouzhi": {
+      "title": "致郭右之二帖卷",
+      "author": "赵孟頫",
+      "era": "元",
+      "script": "行书",
+      "museum": "中国嘉德拍卖记录",
+      "milestone": "2019年 · 2.67375亿元人民币成交。",
+      "description": "本条收录历史高价书法成交，保留原币种；含佣成交金额不等于落槌价，也不代表当前估值。",
+      "url": "https://www.chinanews.com/cul/2019/11-20/9012462.shtml",
+      "pages": [
+        "release300/assets/misc/guoyouzhi-1.webp"
+      ],
+      "pageNames": [
+        "致郭右之二帖卷（中国嘉德供图）"
+      ],
+      "cover143": "release300/assets/misc/guoyouzhi-1.webp",
+      "imageCredit247": "图像：中国嘉德供图，中国新闻网2019年11月20日报道；赵孟頫两封书札拍卖公开图。",
+      "sources300": [
+        {
+          "source": "https://i2.chinanews.com/simg/cmshd/2019/11/20/47fef12669f94d5cb3800bd3708e7d56.jpg",
+          "path": "release300/assets/misc/guoyouzhi-1.webp",
+          "width": 700,
+          "height": 535
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "guoyouzhi",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "致",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "jushi": {
+      "title": "局事帖",
+      "author": "曾巩",
+      "era": "北宋",
+      "script": "行书",
+      "museum": "中国嘉德拍卖记录",
+      "milestone": "2016年 · 2.07亿元人民币成交。",
+      "description": "本条收录历史高价书法成交，保留原币种；含佣成交金额不等于落槌价，也不代表当前估值。",
+      "url": "https://collection.sina.com.cn/zgsh/20091124/12257008300.shtml",
+      "pages": [
+        "release300/assets/misc/jushi-1.webp"
+      ],
+      "pageNames": [
+        "曾巩局事帖拍卖公开图"
+      ],
+      "cover143": "release300/assets/misc/jushi-1.webp",
+      "imageCredit247": "图像：新浪收藏2009年11月24日《局事帖创下全球中国书法成交纪录》资料图片；非后人临写。",
+      "sources300": [
+        {
+          "source": "https://i0.sinaimg.cn/cj/cr/2009/1124/69715386.jpg",
+          "path": "release300/assets/misc/jushi-1.webp",
+          "width": 400,
+          "height": 296
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "jushi",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "局",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "dong-longshen": {
+      "title": "龙神感应记",
+      "author": "董其昌",
+      "era": "明",
+      "script": "行书",
+      "museum": "中国嘉德拍卖记录",
+      "milestone": "2009年 · 4480万元人民币成交。",
+      "description": "本条收录历史高价书法成交，保留原币种；含佣成交金额不等于落槌价，也不代表当前估值。",
+      "url": "https://app.6z6z.com/class/2023-04-14/18374.html",
+      "pages": [
+        "release300/assets/misc/dong-longshen-1.webp"
+      ],
+      "pageNames": [
+        "董其昌龙神感应记公开图"
+      ],
+      "cover143": "release300/assets/misc/dong-longshen-1.webp",
+      "imageCredit247": "图像及题名核对：集大家书法《董其昌67岁行楷龙神感应记》；转引公开图，原作版本依拍卖著录。",
+      "sources300": [
+        {
+          "source": "https://app.6z6z.com/d/file/p/2023/04-14/3740f9a01d1b9d688e9327df2b8bf323.jpg",
+          "path": "release300/assets/misc/dong-longshen-1.webp",
+          "width": 640,
+          "height": 561
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "dong-longshen",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "龙",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "auction-pingan": {
+      "title": "平安帖（拍卖本）",
+      "author": "传王羲之",
+      "era": "传东晋／摹本",
+      "script": "草书",
+      "museum": "中国嘉德拍卖记录",
+      "milestone": "2010年 · 3.08亿元人民币成交。",
+      "description": "不同于台北故宫《平安何如奉橘三帖》的具体藏品；须核对拍卖本版本。本条收录历史高价书法成交，保留原币种；含佣成交金额不等于落槌价，也不代表当前估值。",
+      "url": "https://amma.artron.net/observation_shownews.php?newid=1114816",
+      "pages": [
+        "release300/assets/misc/auction-pingan-1.webp"
+      ],
+      "pageNames": [
+        "平安帖摹本公开图（拍卖本）"
+      ],
+      "cover143": "release300/assets/misc/auction-pingan-1.webp",
+      "imageCredit247": "图像：雅昌艺术市场监测中心，祁小春《平安帖应是王羲之寄给女儿婆家的信》；摹本与刻帖须区分，非王羲之原迹。",
+      "sources300": [
+        {
+          "source": "https://img10.artimg.net/public/beian/jpg/202209/e0cea9eae56c9320caebb21e7f982d8f.jpg",
+          "path": "release300/assets/misc/auction-pingan-1.webp",
+          "width": 900,
+          "height": 265
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "auction-pingan",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "平",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "baozhi": {
+      "title": "宝志公像赞诗碑",
+      "author": "传李白诗；吴道子画；颜真卿书",
+      "era": "传唐／后世摹刻",
+      "script": "楷书",
+      "museum": "南京灵谷寺",
+      "milestone": "以诗、画、书合璧的形式，使人物纪念成为综合艺术。",
+      "description": "又称唐贤三绝碑；唐代三家归属属传统传称，现存碑刻须区分原作与后世摹刻。",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+      "pages": [
+        "release300/assets/misc/baozhi-1.webp",
+        "release300/assets/misc/baozhi-2.webp"
+      ],
+      "pageNames": [
+        "宝志公像赞诗碑实物",
+        "宝志公像赞诗碑书刻"
+      ],
+      "cover143": "release300/assets/misc/baozhi-2.webp",
+      "imageCredit247": "图像：书法艺术网《闻名天下的三绝碑》公开图；现存重刻本，非唐代墨迹。",
+      "sources300": [
+        {
+          "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035041913.jpeg",
+          "path": "release300/assets/misc/baozhi-1.webp",
+          "width": 554,
+          "height": 331
+        },
+        {
+          "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035041547.jpeg",
+          "path": "release300/assets/misc/baozhi-2.webp",
+          "width": 640,
+          "height": 480
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "baozhi",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "宝",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "chenghuang": {
+      "title": "新修城隍庙碑",
+      "author": "郑板桥撰并书；司徒文膏刻",
+      "era": "清",
+      "script": "楷书",
+      "museum": "山东潍坊",
+      "milestone": "官员亲撰亲书与精工刻石结合，使地方公共记忆化为艺术。",
+      "description": "清乾隆十七年（1752）碑，称文章佳、书法好、刻工精；不得将郑板桥所有作品笼统归作六分半书。",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+      "pages": [
+        "release300/assets/misc/chenghuang-1.webp",
+        "release300/assets/misc/chenghuang-2.webp"
+      ],
+      "pageNames": [
+        "潍坊新修城隍庙碑",
+        "新修城隍庙碑记书刻"
+      ],
+      "cover143": "release300/assets/misc/chenghuang-1.webp",
+      "imageCredit247": "图像：书法艺术网《闻名天下的三绝碑》公开图，按文中对应标题核对；非南京博物院藏草稿本。",
+      "sources300": [
+        {
+          "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035040926.jpeg",
+          "path": "release300/assets/misc/chenghuang-1.webp",
+          "width": 300,
+          "height": 533
+        },
+        {
+          "source": "https://m.sfrx.cn/uploadfile/2018/0730/20180730035040197.jpeg",
+          "path": "release300/assets/misc/chenghuang-2.webp",
+          "width": 640,
+          "height": 1309
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "chenghuang",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "新",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "shamenghai-bangshu": {
+      "title": "榜书选赏",
+      "author": "沙孟海",
+      "era": "现代",
+      "script": "榜书",
+      "museum": "沙孟海书学院；各馆分藏",
+      "milestone": "碑帖融会的雄强大字，为现代榜书打开新的尺度。",
+      "description": "“第一榜书”为本榜赏帖称号。沙孟海以碑帖兼融、雄浑刚健的大字著称；本条是专题入口，上传时应登记具体作品名称与藏馆。",
+      "url": "https://news.cnnb.com.cn/system/2011/04/22/006912192.shtml",
+      "pages": [
+        "release300/assets/misc/shamenghai-bangshu-1.webp"
+      ],
+      "pageNames": [
+        "沙孟海榜书龙（天一阁展览）"
+      ],
+      "cover143": "release300/assets/misc/shamenghai-bangshu-1.webp",
+      "imageCredit247": "图像：中国宁波网《沙孟海书法篆刻作品展今起亮相宁波天一阁书画馆》，李洁莹摄；作品展陈图。",
+      "sources300": [
+        {
+          "source": "https://www.cnnb.com.cn/pic/0/01/99/89/1998923_988942.jpg",
+          "path": "release300/assets/misc/shamenghai-bangshu-1.webp",
+          "width": 500,
+          "height": 333
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "shamenghai-bangshu",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "榜",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "gongfu": {
+      "title": "功甫帖（拍卖本）",
+      "author": "传苏轼",
+      "era": "传北宋",
+      "script": "行书",
+      "museum": "纽约苏富比拍卖记录",
+      "milestone": "2013年 · 822.9万美元成交。",
+      "description": "真伪存在学术争议；拍卖归属与研究意见须同时标注。本条收录历史高价书法成交，保留原币种；含佣成交金额不等于落槌价，也不代表当前估值。",
+      "url": "https://www.sudongpo.org/gong-fu-tie/",
+      "pages": [
+        "release300/assets/misc/gongfu-1.webp",
+        "release300/assets/misc/gongfu-2.webp"
+      ],
+      "pageNames": [
+        "功甫帖（拍卖本）局部",
+        "功甫帖（拍卖本）局部"
+      ],
+      "cover143": "release300/assets/misc/gongfu-1.webp",
+      "imageCredit247": "图像：苏东坡的一生专题资料《功甫帖》；拍卖本局部，真伪归属存学术争议，不作定论。",
+      "sources300": [
+        {
+          "source": "https://www.sudongpo.org/wp-content/uploads/2022/03/gong-fu-tie-scaled.jpg",
+          "path": "release300/assets/misc/gongfu-1.webp",
+          "width": 2560,
+          "height": 2157
+        },
+        {
+          "source": "https://www.sudongpo.org/wp-content/uploads/2022/03/gong-fu-tie-1.jpg",
+          "path": "release300/assets/misc/gongfu-2.webp",
+          "width": 1485,
+          "height": 1350
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "gongfu",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "功",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "zhao-huangting": {
+      "title": "临黄庭经（保利本）",
+      "author": "赵孟頫",
+      "era": "元",
+      "script": "小楷",
+      "museum": "北京保利拍卖记录",
+      "milestone": "2023年 · 1.817亿元人民币成交。",
+      "description": "本条收录历史高价书法成交，保留原币种；含佣成交金额不等于落槌价，也不代表当前估值。",
+      "url": "https://amma.artron.net/observation_shownews.php?newid=1123015",
+      "pages": [
+        "release300/assets/misc/zhao-huangting-1.webp",
+        "release300/assets/misc/zhao-huangting-2.webp"
+      ],
+      "pageNames": [
+        "赵孟頫临黄庭经（保利2023拍卖本）局部 1",
+        "赵孟頫临黄庭经（保利2023拍卖本）局部 2"
+      ],
+      "cover143": "release300/assets/misc/zhao-huangting-1.webp",
+      "imageCredit247": "图像：雅昌艺术市场监测中心2023年7月5日拍卖战报；赵孟頫1302年作、1322年自跋之保利本局部，非故宫藏同名卷。",
+      "sources300": [
+        {
+          "source": "https://img10.artimg.net/public/beian/png/202307/f97955a6ce659dd2c8f0a4428aade04e.png",
+          "path": "release300/assets/misc/zhao-huangting-1.webp",
+          "width": 803,
+          "height": 1448
+        },
+        {
+          "source": "https://img10.artimg.net/public/beian/png/202307/f91e1e6e5735d446cdd93aa0c9ea8333.png",
+          "path": "release300/assets/misc/zhao-huangting-2.webp",
+          "width": 1080,
+          "height": 2333
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "zhao-huangting",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "临",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "rao-hanliu": {
+      "title": "草书韩愈柳宗元文",
+      "author": "饶介",
+      "era": "元",
+      "script": "草书",
+      "museum": "香港苏富比拍卖记录",
+      "milestone": "2025年 · 2.501亿港元成交。",
+      "description": "本条收录历史高价书法成交，保留原币种；含佣成交金额不等于落槌价，也不代表当前估值。",
+      "url": "https://www.sothebys.com/en/buy/auction/2025/fine-classical-chinese-paintings/rao-jie-cao-shu-han-yu-liu-zong-yuan-wen-rao-jie",
+      "pages": [
+        "release300/assets/misc/rao-hanliu-1.webp",
+        "release300/assets/misc/rao-hanliu-2.webp",
+        "release300/assets/misc/rao-hanliu-3.webp",
+        "release300/assets/misc/rao-hanliu-4.webp",
+        "release300/assets/misc/rao-hanliu-5.webp",
+        "release300/assets/misc/rao-hanliu-6.webp"
+      ],
+      "pageNames": [
+        "饶介草书韩愈柳宗元文全卷图（苏富比）",
+        "饶介原卷分段图 1（苏富比）",
+        "饶介原卷分段图 2（苏富比）",
+        "饶介原卷分段图 3（苏富比）",
+        "饶介原卷分段图 4（苏富比）",
+        "饶介原卷分段图 5（苏富比）"
+      ],
+      "cover143": "release300/assets/misc/rao-hanliu-1.webp",
+      "imageCredit247": "图像及资料：苏富比2025年4月10日中国古代书画拍品2528；公开拍卖原卷图，非拍卖现场照片。",
+      "sources300": [
+        {
+          "source": "https://sothebys-md.brightspotcdn.com/dims4/default/40736da/2147483647/strip/true/crop/3216x2140+0+0/resize/4096x2726%21/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2Ff9%2F00%2F5c50206641efbde31e32261334a3%2Fd72f6.jpg",
+          "path": "release300/assets/misc/rao-hanliu-1.webp",
+          "width": 4096,
+          "height": 2726
+        },
+        {
+          "source": "https://sothebys-brightspot.s3.amazonaws.com/media-desk/webnative/images/4f/9c/7fd6d0b74686a95eeb8da9031b83/hk1623-d72f6-t1-01a.jpg",
+          "path": "release300/assets/misc/rao-hanliu-2.webp",
+          "width": 2000,
+          "height": 741
+        },
+        {
+          "source": "https://sothebys-brightspot.s3.amazonaws.com/media-desk/webnative/images/6a/6f/e16f04fb4dc7ba87248efa3af40b/hk1623-d72f6-t1-01b.jpg",
+          "path": "release300/assets/misc/rao-hanliu-3.webp",
+          "width": 2000,
+          "height": 741
+        },
+        {
+          "source": "https://sothebys-brightspot.s3.amazonaws.com/media-desk/webnative/images/05/bf/e6fa1e014a868466896fbd78832c/hk1623-d72f6-t1-01c.jpg",
+          "path": "release300/assets/misc/rao-hanliu-4.webp",
+          "width": 2000,
+          "height": 742
+        },
+        {
+          "source": "https://sothebys-brightspot.s3.amazonaws.com/media-desk/webnative/images/b2/cb/2e20b6d44e08af25d36c092eab6e/hk1623-d72f6-t1-01d.jpg",
+          "path": "release300/assets/misc/rao-hanliu-5.webp",
+          "width": 2000,
+          "height": 733
+        },
+        {
+          "source": "https://sothebys-brightspot.s3.amazonaws.com/media-desk/webnative/images/db/0b/6effe6e149bb889995c104dfae0b/hk1623-d72f6-t1-01e.jpg",
+          "path": "release300/assets/misc/rao-hanliu-6.webp",
+          "width": 2000,
+          "height": 733
+        }
+      ],
+      "objectNumber300": "苏富比2025年4月10日拍品2528",
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "rao-hanliu",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "草",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "zhao-xinjing": {
+      "title": "般若波罗蜜多心经",
+      "author": "赵孟頫",
+      "era": "元",
+      "script": "楷书",
+      "museum": "北京保利拍卖记录",
+      "milestone": "2017年 · 1.909亿元人民币成交。",
+      "description": "本条收录历史高价书法成交，保留原币种；含佣成交金额不等于落槌价，也不代表当前估值。",
+      "url": "https://collection.sina.cn/auction/2017-12-12/detail-ifyppemf6456208.d.html?vt=4",
+      "pages": [
+        "release300/assets/misc/zhao-xinjing-1.webp",
+        "release300/assets/misc/zhao-xinjing-2.webp",
+        "release300/assets/misc/zhao-xinjing-3.webp",
+        "release300/assets/misc/zhao-xinjing-4.webp"
+      ],
+      "pageNames": [
+        "赵孟頫心经（保利2017拍卖本）分段 1",
+        "赵孟頫心经（保利2017拍卖本）分段 2",
+        "赵孟頫心经（保利2017拍卖本）分段 3",
+        "赵孟頫心经（保利2017拍卖本）分段 4"
+      ],
+      "cover143": "release300/assets/misc/zhao-xinjing-1.webp",
+      "imageCredit247": "图像：新浪收藏《保利将呈赵孟頫般若波罗蜜多心经》拍卖公开图；日林和上本，保留原图所带出处标记，非台北故宫藏同名本。",
+      "sources300": [
+        {
+          "path": "release300/assets/misc/zhao-xinjing-1.webp",
+          "source": "https://k.sinaimg.cn/n/collect/crawl/w550h972/20171212/5FUA-fypnsip8936938.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+          "width": 550,
+          "height": 972
+        },
+        {
+          "path": "release300/assets/misc/zhao-xinjing-2.webp",
+          "source": "https://k.sinaimg.cn/n/collect/crawl/w550h972/20171212/2LuJ-fypnsip8936984.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+          "width": 550,
+          "height": 972
+        },
+        {
+          "path": "release300/assets/misc/zhao-xinjing-3.webp",
+          "source": "https://k.sinaimg.cn/n/collect/crawl/w550h972/20171212/DoiU-fypnsip8937026.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+          "width": 550,
+          "height": 972
+        },
+        {
+          "path": "release300/assets/misc/zhao-xinjing-4.webp",
+          "source": "https://k.sinaimg.cn/n/collect/crawl/w550h972/20171212/VZSz-fypnsip8937054.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+          "width": 550,
+          "height": 972
+        }
+      ],
+      "status": "新增时须核对具体作品、版本和图像授权",
+      "id": "zhao-xinjing",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "般",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "yuanan": {
+      "title": "袁安碑",
+      "author": "书者佚名",
+      "era": "东汉",
+      "year": 92,
+      "dateLabel": "92年",
+      "script": "小篆",
+      "place": "郑州",
+      "museum": "河南博物院",
+      "milestone": "以汉代宽博结体和秦篆圆劲笔线，让小篆在隶书时代延续生命。",
+      "description": "记司徒袁安仕历，残碑尚有界格。河南博物院说明其断代有讨论，不把通行92年说写成唯一结论；全文应留缺字符号。",
+      "url": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/dzjp/mzyp/articlec484963b76bb4ed7be38b0295575efc0.html",
+      "pages": [
+        "release300/assets/manuscripts-extra/yuanan-1.webp"
+      ],
+      "pageNames": [
+        "图像为河南博物院公布的袁安碑（图一）；不混入同文介绍的袁敞碑。 · 1"
+      ],
+      "cover143": "release300/assets/manuscripts-extra/yuanan-1.webp",
+      "imageCredit247": "河南博物院。图像为河南博物院公布的袁安碑（图一）；不混入同文介绍的袁敞碑。",
+      "versionNote300": "图像为河南博物院公布的袁安碑（图一）；不混入同文介绍的袁敞碑。",
+      "status": "原石残碑；刻立年代有讨论",
+      "id": "yuanan",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "袁",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "kuaiji": {
+      "title": "会稽刻石",
+      "author": "传李斯",
+      "era": "秦书风·后世重刻",
+      "year": -210,
+      "dateLabel": "秦前210年；传世为后世重刻",
+      "script": "小篆",
+      "place": "浙江绍兴等",
+      "museum": "原石已佚；后世重刻与拓本分藏",
+      "milestone": "把秦代教化宣言纳入小篆刻石体系，补充统一文字的南方见证。",
+      "description": "《史记》存录刻辞，现可见者为后代重刻；应在名称中区分原作时代与实际临写重刻时代，不把重刻当秦真迹。",
+      "url": "https://kmbl.hzwbzx.cn/stele/view?id=85",
+      "pages": [
+        "release300/assets/manuscripts-extra/kuaiji-1.webp",
+        "release300/assets/manuscripts-extra/kuaiji-2.webp"
+      ],
+      "pageNames": [
+        "清代重摹会稽刻石的清拓本，浙江省博物馆藏；不是秦代原石。会稽刻石与所附峄山刻石分开，不用泰山刻石代替。 · 1",
+        "清代重摹会稽刻石的清拓本，浙江省博物馆藏；不是秦代原石。会稽刻石与所附峄山刻石分开，不用泰山刻石代替。 · 2"
+      ],
+      "cover143": "release300/assets/manuscripts-extra/kuaiji-1.webp",
+      "imageCredit247": "杭州孔庙·杭州文保中心；浙江省博物馆藏清拓本。清代重摹会稽刻石的清拓本，浙江省博物馆藏；不是秦代原石。会稽刻石与所附峄山刻石分开，不用泰山刻石代替。",
+      "versionNote300": "清代重摹会稽刻石的清拓本，浙江省博物馆藏；不是秦代原石。会稽刻石与所附峄山刻石分开，不用泰山刻石代替。",
+      "status": "原石已佚；链接用于参照秦刻石体系",
+      "id": "kuaiji",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "会",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "zhangqian": {
+      "title": "张迁碑",
+      "author": "书者佚名",
+      "era": "东汉",
+      "year": 186,
+      "dateLabel": "186年",
+      "script": "隶书",
+      "place": "山东泰安",
+      "museum": "泰安岱庙",
+      "milestone": "以方笔、古拙结体与错落章法，开出汉隶雄强朴厚的一路。",
+      "description": "记张迁仕历，既含规矩的分行，也保留不事妍美的笔意；应分别登记碑阳、碑阴，不以重刻补字冒充完整原刻。",
+      "url": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/6be0a531-a57e-4d99-109e-3cb2dff175aa",
+      "pages": [
+        "release300/assets/manuscripts-extra/zhangqian-1.webp",
+        "release300/assets/manuscripts-extra/zhangqian-2.webp",
+        "release300/assets/manuscripts-extra/zhangqian-3.webp",
+        "release300/assets/manuscripts-extra/zhangqian-4.webp",
+        "release300/assets/manuscripts-extra/zhangqian-5.webp",
+        "release300/assets/manuscripts-extra/zhangqian-6.webp",
+        "release300/assets/manuscripts-extra/zhangqian-7.webp",
+        "release300/assets/manuscripts-extra/zhangqian-8.webp",
+        "release300/assets/manuscripts-extra/zhangqian-9.webp",
+        "release300/assets/manuscripts-extra/zhangqian-10.webp",
+        "release300/assets/manuscripts-extra/zhangqian-11.webp",
+        "release300/assets/manuscripts-extra/zhangqian-12.webp"
+      ],
+      "pageNames": [
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 1",
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 2",
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 3",
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 4",
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 5",
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 6",
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 7",
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 8",
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 9",
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 10",
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 11",
+        "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。 · 12"
+      ],
+      "cover143": "release300/assets/manuscripts-extra/zhangqian-5.webp",
+      "imageCredit247": "东京大学附属图书馆亚洲研究图书馆U-PARL；原图来自该馆IIIF公开服务。东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。",
+      "objectNumber300": "A006261",
+      "versionNote300": "东京大学所藏《张迁碑》拓本A006261。原碑与后世拓本分别标示。",
+      "status": "原碑；具体拓本待登记",
+      "id": "zhangqian",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "张",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "shiqi": {
+      "title": "十七帖",
+      "author": "王羲之",
+      "era": "东晋书风",
+      "year": null,
+      "dateLabel": "东晋书风；历代刻帖",
+      "script": "草书",
+      "place": "各地",
+      "museum": "刻帖传本分藏多馆",
+      "milestone": "以多通尺牍展示今草的结构法与连贯节奏，成为草书教学的长期范本。",
+      "description": "由不同书札汇集，名取卷首“十七日”三字，不是一封书信；历代翻刻、馆藏版本与分帖数量有差异。",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1986?dep=P",
+      "pages": [
+        "release300/assets/manuscripts-extra/shiqi-1.webp",
+        "release300/assets/manuscripts-extra/shiqi-2.webp",
+        "release300/assets/manuscripts-extra/shiqi-3.webp",
+        "release300/assets/manuscripts-extra/shiqi-4.webp",
+        "release300/assets/manuscripts-extra/shiqi-5.webp",
+        "release300/assets/manuscripts-extra/shiqi-6.webp",
+        "release300/assets/manuscripts-extra/shiqi-7.webp",
+        "release300/assets/manuscripts-extra/shiqi-8.webp",
+        "release300/assets/manuscripts-extra/shiqi-9.webp",
+        "release300/assets/manuscripts-extra/shiqi-10.webp",
+        "release300/assets/manuscripts-extra/shiqi-11.webp",
+        "release300/assets/manuscripts-extra/shiqi-12.webp",
+        "release300/assets/manuscripts-extra/shiqi-13.webp",
+        "release300/assets/manuscripts-extra/shiqi-14.webp",
+        "release300/assets/manuscripts-extra/shiqi-15.webp",
+        "release300/assets/manuscripts-extra/shiqi-16.webp"
+      ],
+      "pageNames": [
+        "《旧榻十七帖》册页 · 1",
+        "《旧榻十七帖》册页 · 2",
+        "《旧榻十七帖》册页 · 3",
+        "《旧榻十七帖》册页 · 4",
+        "《旧榻十七帖》册页 · 5",
+        "《旧榻十七帖》册页 · 6",
+        "《旧榻十七帖》册页 · 7",
+        "《旧榻十七帖》册页 · 8",
+        "《旧榻十七帖》册页 · 9",
+        "《旧榻十七帖》册页 · 10",
+        "《旧榻十七帖》册页 · 11",
+        "《旧榻十七帖》册页 · 12",
+        "《旧榻十七帖》册页 · 13",
+        "《旧榻十七帖》册页 · 14",
+        "《旧榻十七帖》册页 · 15",
+        "《旧榻十七帖》册页 · 16"
+      ],
+      "cover143": "release300/assets/manuscripts-extra/shiqi-2.webp",
+      "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。正文图像来自馆方分件记录。",
+      "objectNumber300": "故帖000062N000000000",
+      "versionNote300": "台北故宫藏《旧榻十七帖》册，勅字本系统；正文图像由馆方关联分件取得，不以册页封面代替正文。",
+      "status": "原札已佚；链接为旧拓十七帖册",
+      "id": "shiqi",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "十",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "sanxi": {
+      "title": "三希宝帖",
+      "author": "王羲之、王献之、王珣（各自独立作品）",
+      "era": "东晋书风／唐宋传本",
+      "year": null,
+      "dateLabel": "东晋书风，传世版本年代分别注明",
+      "script": "行楷／行草／行书",
+      "place": "台北／北京",
+      "museum": "台北国立故宫博物院、北京故宫博物院",
+      "milestone": "三件晋人书风名迹组成清宫鉴藏的“三希”，共同保存书札艺术的三种面貌。",
+      "description": "这是《快雪时晴帖》《中秋帖》《伯远帖》的合称，不是三人合写同一帖；快雪、中秋须注明摹临性质，伯远为晋人墨迹。管理员应分别上传三件，不能合并作者和藏地。",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228199.html",
+      "pages": [
+        "release300/assets/core/boyuan-01.webp",
+        "release300/assets/core/zhongqiu-01.webp",
+        "release300/assets/manuscripts/kuaixue-2.webp"
+      ],
+      "pageNames": [
+        "伯远帖 · 馆方图像",
+        "中秋帖 · 馆方图像",
+        "快雪时晴帖 · 馆方图像"
+      ],
+      "cover143": "release300/assets/core/boyuan-01.webp",
+      "imageCredit247": "伯远帖、中秋帖图像：故宫博物院；快雪时晴帖图像：国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。",
+      "versionNote300": "三希为三件不同作品的合称；此处并列伯远、中秋、快雪图像，不将三件当作一卷。",
+      "status": "三件作品的组合；各件版本不同",
+      "id": "sanxi",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "三",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "xixia": {
+      "title": "西狭颂",
+      "author": "仇靖撰并书",
+      "era": "东汉",
+      "year": 171,
+      "dateLabel": "171年",
+      "script": "隶书",
+      "place": "甘肃成县",
+      "museum": "成县西狭颂景区原址",
+      "milestone": "雄强汉隶与五瑞图同刻，形成兼具图像与交通史的摩崖叙事。",
+      "description": "记武都太守李翕修路政绩，是汉三颂中原址保存的重要作品；新增宜将正文、图像、额题分开编排。",
+      "url": "https://www.cdmuseum.com/xinwen/202402/3485.html",
+      "pages": [
+        "release300/assets/core/xixia-1.webp",
+        "release300/assets/core/xixia-2.webp"
+      ],
+      "pageNames": [
+        "西狭颂 · 馆藏拓片",
+        "西狭颂 · 馆藏拓片局部"
+      ],
+      "cover143": "release300/assets/core/xixia-1.webp",
+      "imageCredit247": "西狭颂拓片图像：汉中市博物馆藏，成都博物馆“汉三颂”专题公开；原摩崖在甘肃成县。",
+      "versionNote300": "采用馆藏拓片及局部，不把拓片收藏地点误作原摩崖所在地。",
+      "status": "原址摩崖",
+      "id": "xixia",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "西",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "milan247": {
+      "title": "米芾题兰亭序卷",
+      "author": "米芾题跋",
+      "era": "宋",
+      "place": "北京",
+      "museum": "故宫博物院",
+      "milestone": "米芾曾鉴赏并题跋褚摹兰亭。馆方指出，现卷前帖在安岐著录时已被替换，不能把今天的前帖当作米芾亲见的原件。",
+      "description": "米芾曾鉴赏并题跋褚摹兰亭。馆方指出，现卷前帖在安岐著录时已被替换，不能把今天的前帖当作米芾亲见的原件。",
+      "url": "https://www.dpm.org.cn/collection/handwriting/233528.html",
+      "pages": [
+        "release300/assets/manuscripts-collector/milan247-1.webp"
+      ],
+      "pageNames": [
+        "宋米芾题《兰亭序》卷；米跋前所配兰亭摹本在流传中已更换，不将整卷都归为米芾亲书。 · 1"
+      ],
+      "cover143": "release300/assets/manuscripts-collector/milan247-1.webp",
+      "imageCredit247": "故宫博物院。宋米芾题《兰亭序》卷；米跋前所配兰亭摹本在流传中已更换，不将整卷都归为米芾亲书。",
+      "versionNote300": "宋米芾题《兰亭序》卷；米跋前所配兰亭摹本在流传中已更换，不将整卷都归为米芾亲书。",
+      "id": "milan247",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "帖",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "caishi247": {
+      "title": "蔡襄行书自书诗卷",
+      "author": "蔡襄",
+      "era": "宋",
+      "place": "北京",
+      "museum": "故宫博物院",
+      "milestone": "北行途中所作诗十一首，蔡襄中年行书代表。贾似道、管延枝、梁清标及嘉庆内府鉴藏印可见其递藏线索。",
+      "description": "北行途中所作诗十一首，蔡襄中年行书代表。贾似道、管延枝、梁清标及嘉庆内府鉴藏印可见其递藏线索。",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228526.html",
+      "pages": [
+        "release300/assets/manuscripts-collector/caishi247-1.webp"
+      ],
+      "pageNames": [
+        "北宋蔡襄行书《自书诗》卷，故宫博物院所藏纸本；图像不是后人临写。 · 1"
+      ],
+      "cover143": "release300/assets/manuscripts-collector/caishi247-1.webp",
+      "imageCredit247": "故宫博物院。北宋蔡襄行书《自书诗》卷，故宫博物院所藏纸本；图像不是后人临写。",
+      "versionNote300": "北宋蔡襄行书《自书诗》卷，故宫博物院所藏纸本；图像不是后人临写。",
+      "id": "caishi247",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "帖",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "luoshui247": {
+      "title": "落水兰亭 · 孙承泽旧藏本的清内府摹刻",
+      "author": "王羲之书法传本",
+      "era": "清",
+      "place": "北京",
+      "museum": "故宫博物院",
+      "milestone": "赵子固获兰亭拓本后舟覆，以身护帖，因称落水兰亭。孙承泽、高士奇、王鸿绪、蒋质甫递藏后入乾隆内府；本条为内府据旧本摹刻的清拓本。",
+      "description": "赵子固获兰亭拓本后舟覆，以身护帖，因称落水兰亭。孙承泽、高士奇、王鸿绪、蒋质甫递藏后入乾隆内府；本条为内府据旧本摹刻的清拓本。",
+      "url": "https://www.dpm.org.cn/collection/impres/233223.html",
+      "pages": [
+        "release300/assets/manuscripts-collector/luoshui247-1.webp"
+      ],
+      "pageNames": [
+        "清拓清内府摹刻《赵子固落水兰亭》卷；为清宫摹刻拓本，不是落水旧拓原件。 · 1"
+      ],
+      "cover143": "release300/assets/manuscripts-collector/luoshui247-1.webp",
+      "imageCredit247": "故宫博物院。清拓清内府摹刻《赵子固落水兰亭》卷；为清宫摹刻拓本，不是落水旧拓原件。",
+      "versionNote300": "清拓清内府摹刻《赵子固落水兰亭》卷；为清宫摹刻拓本，不是落水旧拓原件。",
+      "id": "luoshui247",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "帖",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "kushu247": {
+      "title": "枯树赋 · 王世贞鉴藏专题",
+      "author": "褚遂良书法传本",
+      "era": "唐",
+      "place": "台北",
+      "museum": "版本分藏；本条附台北故宫经训堂刻帖资料",
+      "milestone": "王世贞鉴藏与题跋的枯树赋有唐人双钩本、赵孟頫临本等版本。链接展示经训堂刻帖中的赵临本及王氏题跋，刻帖与王氏所藏墨迹须分别理解。",
+      "description": "王世贞鉴藏与题跋的枯树赋有唐人双钩本、赵孟頫临本等版本。链接展示经训堂刻帖中的赵临本及王氏题跋，刻帖与王氏所藏墨迹须分别理解。",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/27579?dep=P",
+      "pages": [
+        "release300/assets/manuscripts-collector/kushu247-1.webp",
+        "release300/assets/manuscripts-collector/kushu247-2.webp",
+        "release300/assets/manuscripts-collector/kushu247-3.webp"
+      ],
+      "pageNames": [
+        "《经训堂法帖》赵孟頫临《枯树赋》及王世贞相关跋文的刻帖本；不是赵孟頫原墨迹。 · 1",
+        "《经训堂法帖》赵孟頫临《枯树赋》及王世贞相关跋文的刻帖本；不是赵孟頫原墨迹。 · 2",
+        "《经训堂法帖》赵孟頫临《枯树赋》及王世贞相关跋文的刻帖本；不是赵孟頫原墨迹。 · 3"
+      ],
+      "cover143": "release300/assets/manuscripts-collector/kushu247-1.webp",
+      "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。《经训堂法帖》赵孟頫临《枯树赋》及王世贞相关跋文的刻帖本；不是赵孟頫原墨迹。",
+      "versionNote300": "《经训堂法帖》赵孟頫临《枯树赋》及王世贞相关跋文的刻帖本；不是赵孟頫原墨迹。",
+      "id": "kushu247",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "帖",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
+    },
+    "yingguang247": {
+      "title": "英光堂帖 · 岳珂集刻米芾书迹",
+      "author": "米芾书；岳珂集刻",
+      "era": "宋",
+      "place": "香港",
+      "museum": "香港中文大学文物馆（徐渭仁旧藏本）",
+      "milestone": "岳珂以所藏米芾书迹辑刻《英光堂帖》，原墨迹与各地流传的刻帖不是同一实物。本条以刻帖展示其收藏与传播事业。",
+      "description": "岳珂以所藏米芾书迹辑刻《英光堂帖》，原墨迹与各地流传的刻帖不是同一实物。本条以刻帖展示其收藏与传播事业。",
+      "url": "https://www.artmuseum.cuhk.edu.hk/zh/collections/results/detail/12970",
+      "pages": [
+        "release300/assets/manuscripts-collector/yingguang247-1.webp"
+      ],
+      "pageNames": [
+        "《英光堂帖》（徐渭仁旧藏本）1996.0156 · 公开册页"
+      ],
+      "cover143": "release300/assets/manuscripts-collector/yingguang247-1.webp",
+      "imageCredit247": "香港中文大学文物馆藏1996.0156；图像与资料：该馆公开馆藏页面。南宋绍定年间米芾书、岳珂集刻《英光堂帖》，徐渭仁旧藏本；北山堂惠赠。",
+      "objectNumber300": "1996.0156",
+      "versionNote300": "南宋绍定年间米芾书、岳珂集刻《英光堂帖》，徐渭仁旧藏本；北山堂惠赠。",
+      "id": "yingguang247",
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "glyph": "帖",
+      "deleted": false,
+      "catalogueRelease300": true,
+      "preserveUserPages300": false
     }
   },
   "order129": []
