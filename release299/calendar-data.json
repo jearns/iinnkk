@@ -1,0 +1,3144 @@
+{
+  "version": 299,
+  "sourceNote": "确切史事、诞辰与国际纪念日按来源标示；“主题荐写”是编辑关联，不是遗产入选日或作品创作日。仅知年份的往事不编造月日。荐写短句注明作者，不冒充历史人物原话。世界遗产、世界记忆、非遗及国家级文献名录分别标示。节气使用北京时间实算表。",
+  "works": [
+    {
+      "id": "taishan",
+      "title": "泰山刻石",
+      "author": "传李斯",
+      "url": "https://tsgw.taian.gov.cn/art/2021/6/16/art_162237_10286435.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
+    },
+    {
+      "id": "longcang",
+      "title": "龙藏寺碑",
+      "author": "书者佚名；撰者旧题张公礼",
+      "url": "https://www.dpm.org.cn/journal_detail/112103.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "caoquan",
+      "title": "曹全碑",
+      "author": "书者佚名",
+      "url": "https://www.beilin-museum.com/index.php?a=index&aid=145&c=View&m=home",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "jiucheng",
+      "title": "九成宫醴泉铭",
+      "author": "欧阳询书；魏徵撰",
+      "url": "https://www.dpm.org.cn/collection/impres/234546.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "luoshen13",
+      "title": "洛神赋十三行",
+      "author": "传王献之书；曹植文",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228244.html",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
+    },
+    {
+      "id": "lanting",
+      "title": "兰亭集序",
+      "author": "王羲之",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228277.html",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
+    },
+    {
+      "id": "zixu",
+      "title": "自叙帖",
+      "author": "怀素",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14890?dep=P",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。"
+    },
+    {
+      "id": "shusu",
+      "title": "蜀素帖",
+      "author": "米芾",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/912?dep=P",
+      "isPerson": false,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。"
+    },
+    {
+      "id": "jizhi",
+      "title": "祭侄文稿",
+      "author": "颜真卿",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。"
+    },
+    {
+      "id": "hanshi",
+      "title": "黄州寒食帖",
+      "author": "苏轼",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/14714?dep=P&mode=full",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。"
+    },
+    {
+      "id": "boyuan",
+      "title": "伯远帖",
+      "author": "王珣",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228199.html",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
+    },
+    {
+      "id": "zhanghan",
+      "title": "张翰思鲈帖",
+      "author": "传欧阳询",
+      "url": "https://www.dpm.org.cn/collection/handwriting/234567.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "jiuhua",
+      "title": "韭花帖",
+      "author": "杨凝式",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/22623?dep=P",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "mengzhao",
+      "title": "蒙诏帖",
+      "author": "旧题柳公权；故宫判为宋人仿本",
+      "url": "https://intl.dpm.org.cn/Calligraphy_collection/25607.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "songfeng",
+      "title": "松风阁诗帖",
+      "author": "黄庭坚",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/43?dep=P",
+      "isPerson": false,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。"
+    },
+    {
+      "id": "tumu",
+      "title": "土母帖",
+      "author": "李建中",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14903?dep=P",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "zhongqiu",
+      "title": "中秋帖",
+      "author": "传王献之（宋临本）",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228204.html",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
+    },
+    {
+      "id": "mengdian",
+      "title": "仲尼梦奠帖",
+      "author": "欧阳询",
+      "url": "https://zhuanti.mct.gov.cn/lnsbwg2022.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "caoshuqianzi",
+      "title": "草书千字文",
+      "author": "赵佶书；周兴嗣文",
+      "url": "https://zhuanti.mct.gov.cn/lnsbwg2022.html",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。"
+    },
+    {
+      "id": "chibi",
+      "title": "前后赤壁赋",
+      "author": "赵孟頫书；苏轼文",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/373?dep=P",
+      "isPerson": false,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。"
+    },
+    {
+      "id": "zhupoems",
+      "title": "草书诗帖",
+      "author": "祝允明书；曹植诗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/2517?dep=P",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。"
+    },
+    {
+      "id": "shigu",
+      "title": "石鼓文",
+      "author": "佚名",
+      "url": "https://www.dpm.org.cn/collection/impres/234438.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
+    },
+    {
+      "id": "yishan",
+      "title": "峄山碑",
+      "author": "传李斯",
+      "url": "https://www.beilin-museum.com/",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
+    },
+    {
+      "id": "langya",
+      "title": "琅琊台刻石",
+      "author": "传李斯",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202010/t20201028_247940.shtml",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
+    },
+    {
+      "id": "kuaiji",
+      "title": "会稽刻石",
+      "author": "传李斯",
+      "url": "https://www.dpm.org.cn/collection/impres/234107.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
+    },
+    {
+      "id": "yuanan",
+      "title": "袁安碑",
+      "author": "书者佚名",
+      "url": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/dzjp/mzyp/articlec484963b76bb4ed7be38b0295575efc0.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
+    },
+    {
+      "id": "yuanchang",
+      "title": "袁敞碑",
+      "author": "书者佚名",
+      "url": "https://www.chnmus.net/ch/collection/appraise/details.html?id=512155561935985314",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
+    },
+    {
+      "id": "tianfa",
+      "title": "天发神谶碑",
+      "author": "书者归属有争议",
+      "url": "https://www.dpm.org.cn/",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
+    },
+    {
+      "id": "biluo",
+      "title": "碧落碑",
+      "author": "作者归属有争议",
+      "url": "https://www.dpm.org.cn/historical/talk/210376.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
+    },
+    {
+      "id": "sanfen",
+      "title": "三坟记",
+      "author": "李阳冰",
+      "url": "https://www.beilin-museum.com/",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
+    },
+    {
+      "id": "liqi",
+      "title": "礼器碑",
+      "author": "书者佚名",
+      "url": "https://www.dpm.org.cn/collection/impres/234635.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "yiying",
+      "title": "乙瑛碑",
+      "author": "书者佚名",
+      "url": "https://www.dpm.org.cn/journal_detail/112088.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "shichen",
+      "title": "史晨碑",
+      "author": "书者佚名",
+      "url": "https://kongziyjy.org/nd.jsp?id=2498",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "zhangqian",
+      "title": "张迁碑",
+      "author": "书者佚名",
+      "url": "https://tsgw.taian.gov.cn/art/2021/6/13/art_198322_10286362.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "shimen",
+      "title": "石门颂",
+      "author": "王升撰；书者佚名",
+      "url": "https://www.htq.gov.cn/hzshtqzf/zjht/lswh/201004/b3532f0f77b3420a8a772d419a16684c.shtml",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "huashan",
+      "title": "西岳华山庙碑",
+      "author": "书者佚名",
+      "url": "https://ggzl.dpm.org.cn/app/api/app/exhibitionListPc/165",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "xixia",
+      "title": "西狭颂",
+      "author": "仇靖撰并书",
+      "url": "https://www.cdmuseum.com/xinwen/202402/3485.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "hengfang",
+      "title": "衡方碑",
+      "author": "书者佚名",
+      "url": "https://www.dpm.org.cn/",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "xianyuhuang",
+      "title": "鲜于璜碑",
+      "author": "书者佚名",
+      "url": "https://www.tjbwg.com/",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "xuanshi",
+      "title": "宣示表",
+      "author": "传钟繇",
+      "url": "https://www.dpm.org.cn/",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "huangting",
+      "title": "黄庭经",
+      "author": "传王羲之",
+      "url": "https://www.dpm.org.cn/",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
+    },
+    {
+      "id": "leyi",
+      "title": "乐毅论",
+      "author": "传王羲之",
+      "url": "https://www.dpm.org.cn/",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
+    },
+    {
+      "id": "nikuan",
+      "title": "倪宽赞",
+      "author": "传褚遂良",
+      "url": "https://www.npm.gov.tw/",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "yanta",
+      "title": "雁塔圣教序",
+      "author": "褚遂良书；李世民、李治撰",
+      "url": "https://www.dpm.org.cn/collection/impres/234134.html",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
+    },
+    {
+      "id": "duobao",
+      "title": "多宝塔碑",
+      "author": "颜真卿书；岑勋撰",
+      "url": "https://www.dpm.org.cn/collection/impres/261924.html",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。"
+    },
+    {
+      "id": "yanqinli",
+      "title": "颜勤礼碑",
+      "author": "颜真卿",
+      "url": "https://www.beilin-museum.com/",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。"
+    },
+    {
+      "id": "xuanmi",
+      "title": "玄秘塔碑",
+      "author": "柳公权书；裴休撰",
+      "url": "https://www.dpm.org.cn/collection/impres/261926.html",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
+    },
+    {
+      "id": "shupu",
+      "title": "书谱",
+      "author": "孙过庭",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14900?dep=P",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "gushi",
+      "title": "古诗四帖",
+      "author": "传张旭",
+      "url": "https://zhuanti.mct.gov.cn/lnsbwg2022.html",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。"
+    },
+    {
+      "id": "pingfu",
+      "title": "平复帖",
+      "author": "陆机",
+      "url": "https://www.dpm.org.cn/collection/handwriting/234553.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "shiqi",
+      "title": "十七帖",
+      "author": "王羲之",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1986?dep=P",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
+    },
+    {
+      "id": "guanjun",
+      "title": "冠军帖",
+      "author": "传张芝",
+      "url": "https://www.dpm.org.cn/",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。"
+    },
+    {
+      "id": "zhushang",
+      "title": "诸上座帖",
+      "author": "黄庭坚",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228218.html",
+      "isPerson": false,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。"
+    },
+    {
+      "id": "fuge",
+      "title": "郙阁颂",
+      "author": "仇靖撰；仇绋书",
+      "url": "https://www.dpm.org.cn/collection/impres/231823.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "zhengwengong",
+      "title": "郑文公下碑",
+      "author": "郑道昭",
+      "url": "https://www.laizhou.gov.cn/art/2021/11/12/art_23203_2932809.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "yihe",
+      "title": "瘗鹤铭",
+      "author": "署华阳真逸；传陶弘景等说",
+      "url": "https://jssdfz.jiangsu.gov.cn/n96/20221114/i22004.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "jingshiyu",
+      "title": "经石峪金刚经",
+      "author": "书者佚名",
+      "url": "https://www.dpm.org.cn/lemmas/241211.html",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
+    },
+    {
+      "id": "sishan",
+      "title": "四山摩崖刻经",
+      "author": "安道壹等，逐山逐刻核验",
+      "url": "https://www.mencius.gov.cn/index.php/cms/item-list-category-1398-page-5.shtml",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
+    },
+    {
+      "id": "zhongxing",
+      "title": "大唐中兴颂",
+      "author": "颜真卿书；元结撰",
+      "url": "https://www.hunan.gov.cn/hnszf/c101484/202108/t20210830_20409590.html",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。"
+    },
+    {
+      "id": "shimenming",
+      "title": "石门铭",
+      "author": "王远撰书；武阿仁刻",
+      "url": "https://www.dpm.org.cn/lemmas/241188.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "jitaishan",
+      "title": "纪泰山铭",
+      "author": "唐玄宗李隆基",
+      "url": "https://tsgw.taian.gov.cn/art/2021/6/16/art_162237_10286435.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "shengjiao",
+      "title": "集王圣教序",
+      "author": "怀仁集王羲之字",
+      "url": "https://www.beilin-museum.com/",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
+    },
+    {
+      "id": "xiping",
+      "title": "熹平石经",
+      "author": "蔡邕等奉诏",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202008/t20200824_247256.shtml",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
+    },
+    {
+      "id": "zhengshi",
+      "title": "正始石经",
+      "author": "曹魏官定；书者待考",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33105.shtml",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
+    },
+    {
+      "id": "kaicheng",
+      "title": "开成石经",
+      "author": "艾居晦、陈玠等奉敕刊刻",
+      "url": "https://www.beilin-museum.com/index.php?a=index&c=Lists&m=home&tid=86",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
+    },
+    {
+      "id": "dizhu",
+      "title": "砥柱铭",
+      "author": "黄庭坚",
+      "url": "https://jw.beijing.gov.cn/language/ywsh/201606/t20160623_1056379.html",
+      "isPerson": false,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。"
+    },
+    {
+      "id": "shamenghai-bangshu",
+      "title": "榜书选赏",
+      "author": "沙孟海",
+      "url": "https://www.zhejiangmuseum.com/",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "wuchangshuo-shigu",
+      "title": "临石鼓文",
+      "author": "吴昌硕",
+      "url": "https://www.shenzhenmuseum.com/webCollection/collectionDetail?exId=bf7b7740f34c4fcdaa7d46fbc3167d2e&resId=1e8bbc06013449d4b2e5b4841c728b66",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。"
+    },
+    {
+      "id": "wuhou",
+      "title": "蜀丞相诸葛武侯祠堂碑",
+      "author": "裴度撰；柳公绰书；鲁建刻",
+      "url": "https://www.ccdi.gov.cn/special/jtsj/jt_jtsj/201706/t20170612_100891.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "lizi",
+      "title": "苏轼荔子碑",
+      "author": "韩愈诗；苏轼书",
+      "url": "https://www.yzcity.gov.cn/",
+      "isPerson": false,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。"
+    },
+    {
+      "id": "baozhi",
+      "title": "宝志公像赞诗碑",
+      "author": "传李白诗；吴道子画；颜真卿书",
+      "url": "https://www.nanjing.gov.cn/",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。"
+    },
+    {
+      "id": "suxian",
+      "title": "苏仙岭三绝碑",
+      "author": "秦观词；米芾书；苏轼跋",
+      "url": "https://www.hunantoday.cn/news/xhn/201602/14454833.html",
+      "isPerson": false,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。"
+    },
+    {
+      "id": "zuiweng",
+      "title": "苏轼书醉翁亭记碑",
+      "author": "欧阳修文；苏轼书",
+      "url": "https://www.zzmuseum.com/",
+      "isPerson": false,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。"
+    },
+    {
+      "id": "lisheng",
+      "title": "李晟墓碑",
+      "author": "裴度撰；柳公权书",
+      "url": "https://sn.cri.cn/2018-10-10/a9d320c0-dd8c-b673-5dc6-39eb447ea7c7.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "chenghuang",
+      "title": "新修城隍庙碑",
+      "author": "郑板桥撰并书；司徒文膏刻",
+      "url": "https://dao.china.com.cn/2026-07/20/content_43463943.shtml",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "wanan",
+      "title": "万安桥记大字碑",
+      "author": "蔡襄撰并书",
+      "url": "https://www.quanzhou.gov.cn/lyb/lswh/zdww/201609/t20160913_372301.htm",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "shouchan",
+      "title": "上尊号与受禅碑",
+      "author": "传王朗文；梁鹄书；钟繇刻",
+      "url": "https://www.xuchang.gov.cn/zjxc/005010/20211110/8a942bfd-b4a8-4304-b3f9-0d793364ad60.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "auction-pingan",
+      "title": "平安帖（拍卖本）",
+      "author": "传王羲之",
+      "url": "https://amma.artron.net/observation_shownews.php?newid=837914",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。"
+    },
+    {
+      "id": "guoyouzhi",
+      "title": "致郭右之二帖卷",
+      "author": "赵孟頫",
+      "url": "https://www.trueart.com/news/359245.html",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
+    },
+    {
+      "id": "rao-hanliu",
+      "title": "草书韩愈柳宗元文",
+      "author": "饶介",
+      "url": "https://companies.caixin.com/2025-04-11/102308294.html",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。"
+    },
+    {
+      "id": "jushi",
+      "title": "局事帖",
+      "author": "曾巩",
+      "url": "https://art.people.com.cn/n1/2016/0519/c206244-28362025.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "zhao-xinjing",
+      "title": "般若波罗蜜多心经",
+      "author": "赵孟頫",
+      "url": "https://www.thepaper.cn/newsDetail_forward_1910000",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
+    },
+    {
+      "id": "zhao-huangting",
+      "title": "临黄庭经（保利本）",
+      "author": "赵孟頫",
+      "url": "https://www.trueart.com/news/638899.html",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
+    },
+    {
+      "id": "gongfu",
+      "title": "功甫帖（拍卖本）",
+      "author": "传苏轼",
+      "url": "https://www.chinanews.com/cul/2013/12-21/5647683.shtml",
+      "isPerson": false,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。"
+    },
+    {
+      "id": "songke-zhuangyou",
+      "title": "草书杜子美壮游诗卷",
+      "author": "宋克",
+      "url": "https://collection.sina.com.cn/zgsh/20091123/16397003637.shtml",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。"
+    },
+    {
+      "id": "dong-longshen",
+      "title": "龙神感应记",
+      "author": "董其昌",
+      "url": "https://collection.sina.com.cn/zgsh/20091123/16397003637.shtml",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "oracle",
+      "title": "殷墟甲骨",
+      "author": "书者佚名",
+      "url": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
+    },
+    {
+      "id": "juyan",
+      "title": "居延汉简",
+      "author": "书者佚名",
+      "url": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。"
+    },
+    {
+      "id": "dunhuang",
+      "title": "敦煌遗书",
+      "author": "书者佚名",
+      "url": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "mingqing",
+      "title": "明清档案",
+      "author": "书者佚名",
+      "url": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "zhaocheng275",
+      "title": "赵城金藏",
+      "author": "金代刻工",
+      "url": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。"
+    },
+    {
+      "id": "yongle275",
+      "title": "永乐大典",
+      "author": "明代纂修诸臣",
+      "url": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "wenjinge275",
+      "title": "文津阁《四库全书》",
+      "author": "清代纂修与誊录诸臣",
+      "url": "https://www.nlc.cn/web/dsb_footer/gygt/lsyg/index_2.shtml",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "oracle-sacrifice298",
+      "title": "祭祀刻辞龟甲",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
+    },
+    {
+      "id": "oracle-tufang298",
+      "title": "土方征涂朱卜骨刻辞",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
+    },
+    {
+      "id": "oracle-ban298",
+      "title": "般无咎全甲刻辞",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "oracle-qiang298",
+      "title": "小臣墙记事刻辞",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。"
+    },
+    {
+      "id": "oracle-zaifeng298",
+      "title": "宰丰骨匕记事刻辞",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
+    },
+    {
+      "id": "oracle-farming298",
+      "title": "众人协田卜骨刻辞",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
+    },
+    {
+      "id": "oracle-zhou298",
+      "title": "西周卦画卜骨",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
+    },
+    {
+      "id": "oracle-fuhao298",
+      "title": "妇好分娩卜辞《丙》247",
+      "author": "书者佚名",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
+    },
+    {
+      "id": "oracle-brush298",
+      "title": "带朱书龟甲卜辞《乙》0778",
+      "author": "书者佚名",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+      "isPerson": false,
+      "term": "雨水",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
+    },
+    {
+      "id": "oracle-harvest298",
+      "title": "填朱卜辞龟腹甲《乙》0867",
+      "author": "书者佚名",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。"
+    },
+    {
+      "id": "collector-mi",
+      "title": "米芾",
+      "author": "米芾",
+      "url": "https://www.dpm.org.cn/lemmas/242576.html",
+      "isPerson": true,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。"
+    },
+    {
+      "id": "collector-yue",
+      "title": "岳珂",
+      "author": "岳珂",
+      "url": "https://www.dpm.org.cn/ancient/hall/161801.html",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-jia",
+      "title": "贾似道",
+      "author": "贾似道",
+      "url": "https://minghuaji.dpm.org.cn/paint/detail?id=chgo2dy9jf92f6nutocr4w2gbhwt6dhd",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-anguo",
+      "title": "安国",
+      "author": "安国",
+      "url": "https://daj.wuxi.gov.cn/doc/2016/03/30/2425467.shtml",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-xiang",
+      "title": "项元汴",
+      "author": "项元汴",
+      "url": "https://www.dpm.org.cn/lemmas/240345.html",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-wang",
+      "title": "王世贞",
+      "author": "王世贞",
+      "url": "https://www.taicang.gov.cn/taicang/whtyzc/202507/b50ece43547847f6ad3c4b569b81ac90.shtml",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-sun",
+      "title": "孙承泽",
+      "author": "孙承泽",
+      "url": "https://www.dpm.org.cn/lemmas/243352.html",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-liang",
+      "title": "梁清标",
+      "author": "梁清标",
+      "url": "https://www.dpm.org.cn/lemmas/240115.html",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-anqi",
+      "title": "安岐",
+      "author": "安岐",
+      "url": "https://theme.npm.edu.tw/khan/Article.aspx?sNo=03009219",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-qianlong",
+      "title": "乾隆",
+      "author": "乾隆",
+      "url": "https://young.dpm.org.cn/info/308",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "song-cai",
+      "title": "蔡襄",
+      "author": "蔡襄",
+      "url": "https://www.dpm.org.cn/lemmas/244591.html",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "song-su",
+      "title": "苏轼",
+      "author": "苏轼",
+      "url": "https://www.dpm.org.cn/lemmas/242068.html",
+      "isPerson": true,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。"
+    },
+    {
+      "id": "song-huang",
+      "title": "黄庭坚",
+      "author": "黄庭坚",
+      "url": "https://www.dpm.org.cn/lemmas/242585.html",
+      "isPerson": true,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。"
+    },
+    {
+      "id": "song-mi",
+      "title": "米芾",
+      "author": "米芾",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228246.html",
+      "isPerson": true,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。"
+    },
+    {
+      "id": "maogong",
+      "title": "毛公鼎",
+      "author": "书者佚名",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1438?dep=U&mode=full",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"
+    },
+    {
+      "id": "sanshi",
+      "title": "散氏盘",
+      "author": "书者佚名",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1462?dep=U&mode=full",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"
+    },
+    {
+      "id": "bronze-dayu299",
+      "title": "大盂鼎",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247375.shtml",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"
+    },
+    {
+      "id": "bronze-dake299",
+      "title": "大克鼎",
+      "author": "书者佚名",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/CI00000656",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"
+    },
+    {
+      "id": "bronze-guoji299",
+      "title": "虢季子白盘",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247376.shtml",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"
+    },
+    {
+      "id": "hezun",
+      "title": "何尊",
+      "author": "书者佚名",
+      "url": "https://www.bjqtm.com/dczp/qtq/何尊等五组周代有铭青铜器成功入选《中国档",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"
+    },
+    {
+      "id": "bronze-qiang299",
+      "title": "史墙盘",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zl/zlhg/201812/t20181220_32314.shtml",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"
+    },
+    {
+      "id": "bronze-lai299",
+      "title": "逨盘",
+      "author": "书者佚名",
+      "url": "https://www.cdmuseum.com/xinwen/202011/1853.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"
+    },
+    {
+      "id": "bronze-li299",
+      "title": "利簋",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250931.shtml",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"
+    },
+    {
+      "id": "bronze-zongzhou299",
+      "title": "宗周钟",
+      "author": "书者佚名",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1464?dep=U&mode=full",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。"
+    }
+  ],
+  "events": [
+    {
+      "id": "lanting353",
+      "title": "兰亭修禊",
+      "kind": "documented",
+      "rule": {
+        "lunar": [
+          3,
+          3
+        ]
+      },
+      "year": 353,
+      "reason": "永和九年三月三日，王羲之与友人在兰亭修禊作序。按农历三月三纪念，不固定成某个公历日。",
+      "works": [
+        "lanting"
+      ],
+      "source": "https://www.dpm.org.cn/collection/handwriting/228277.html",
+      "category": "writing"
+    },
+    {
+      "id": "chibi1082",
+      "title": "苏轼夜游赤壁",
+      "kind": "documented",
+      "rule": {
+        "lunar": [
+          7,
+          16
+        ]
+      },
+      "year": 1082,
+      "reason": "《前赤壁赋》自记“壬戌之秋，七月既望”。按农历七月十六纪念这次江上夜游。",
+      "works": [
+        "chibi"
+      ],
+      "source": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/373?dep=P&mode=full",
+      "category": "writing"
+    },
+    {
+      "id": "chibi-later1082",
+      "title": "后赤壁夜游",
+      "kind": "documented",
+      "rule": {
+        "lunar": [
+          10,
+          15
+        ]
+      },
+      "year": 1082,
+      "reason": "《后赤壁赋》自记“是岁十月之望”。按农历十月十五重读江月与人生。",
+      "works": [
+        "chibi"
+      ],
+      "source": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/373?dep=P&mode=full",
+      "category": "writing"
+    },
+    {
+      "id": "su-birth",
+      "title": "苏轼诞辰",
+      "kind": "birth",
+      "rule": {
+        "lunar": [
+          12,
+          19
+        ]
+      },
+      "year": 1036,
+      "reason": "景祐三年十二月十九，后世寿苏雅集沿用农历纪念。诞辰年数按农历纪年相减；对应公历出生年为1037年。",
+      "works": [
+        "hanshi",
+        "chibi",
+        "gongfu",
+        "lizi",
+        "zuiweng",
+        "suxian"
+      ],
+      "source": "https://www.chinawriter.com.cn/n1/2025/0120/c442005-40405544.html",
+      "category": "writing"
+    },
+    {
+      "id": "zhao-birth",
+      "title": "赵孟頫诞辰",
+      "kind": "birth",
+      "rule": {
+        "lunar": [
+          9,
+          10
+        ]
+      },
+      "year": 1254,
+      "reason": "故宫大事年表记宝祐二年九月十日出生；按农历九月十日纪念。",
+      "works": [
+        "chibi",
+        "guoyouzhi",
+        "zhao-xinjing",
+        "zhao-huangting"
+      ],
+      "source": "https://www.dpm.org.cn/subject_zhaomengfu/event.html",
+      "category": "writing"
+    },
+    {
+      "id": "yan758",
+      "title": "颜真卿祭侄",
+      "kind": "documented",
+      "rule": {
+        "lunar": [
+          9,
+          3
+        ]
+      },
+      "year": 758,
+      "reason": "稿首自记乾元元年九月三日，循农历日期读未加修饰的亲情与悲愤。",
+      "works": [
+        "jizhi"
+      ],
+      "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/27275?dep=P",
+      "category": "writing"
+    },
+    {
+      "id": "zhao-death",
+      "title": "赵孟頫逝世纪念",
+      "kind": "death",
+      "rule": {
+        "lunar": [
+          6,
+          16
+        ]
+      },
+      "year": 1322,
+      "reason": "故宫大事年表记至治二年六月十六日卒于家；按农历日期纪念，重读晋唐传统在元代的回响。",
+      "works": [
+        "chibi",
+        "guoyouzhi",
+        "zhao-xinjing",
+        "zhao-huangting"
+      ],
+      "source": "https://www.dpm.org.cn/subject_zhaomengfu/event.html",
+      "category": "writing"
+    },
+    {
+      "id": "oracle-memory",
+      "title": "甲骨入选世界记忆名录纪念",
+      "kind": "documented",
+      "rule": {
+        "solar": [
+          10,
+          30
+        ]
+      },
+      "year": 2017,
+      "reason": "以甲骨文走向世界的当代记忆，回望汉字的早期形态。",
+      "works": [
+        "oracle",
+        "oracle-sacrifice298",
+        "oracle-tufang298",
+        "oracle-ban298",
+        "oracle-qiang298",
+        "oracle-zaifeng298",
+        "oracle-farming298",
+        "oracle-zhou298",
+        "oracle-fuhao298",
+        "oracle-brush298",
+        "oracle-harvest298"
+      ],
+      "source": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/moe_1485/201712/t20171227_322958.html",
+      "category": "writing"
+    },
+    {
+      "id": "festival-spring",
+      "title": "春节",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          1,
+          1
+        ]
+      },
+      "reason": "新岁临写，寄愿四时安康。",
+      "works": [
+        "caoshuqianzi"
+      ],
+      "poem": {
+        "id": "festival-spring",
+        "title": "元日",
+        "author": "王安石",
+        "text": "爆竹声中一岁除，春风送暖入屠苏。千门万户曈曈日，总把新桃换旧符。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-lantern",
+      "title": "元宵",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          1,
+          15
+        ]
+      },
+      "reason": "灯火与人间相逢，适合写一阕春夜词。",
+      "works": [
+        "lanting"
+      ],
+      "poem": {
+        "id": "festival-lantern",
+        "title": "青玉案·元夕（节选）",
+        "author": "辛弃疾",
+        "text": "东风夜放花千树。更吹落、星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-shangsi",
+      "title": "上巳",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          3,
+          3
+        ]
+      },
+      "reason": "春禊雅集，循古人的曲水流觞重读兰亭。",
+      "works": [
+        "lanting"
+      ],
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-dragon",
+      "title": "端午",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          5,
+          5
+        ]
+      },
+      "reason": "由端午追怀屈原，把求索与坚守写在纸上。",
+      "works": [
+        "shupu"
+      ],
+      "poem": {
+        "id": "festival-dragon",
+        "title": "离骚（节选）",
+        "author": "屈原",
+        "text": "路漫漫其修远兮，吾将上下而求索。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-qixi",
+      "title": "七夕",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          7,
+          7
+        ]
+      },
+      "reason": "借星河与相逢，写一阕温柔而辽阔的词。",
+      "works": [
+        "luoshen13"
+      ],
+      "poem": {
+        "id": "festival-qixi",
+        "title": "鹊桥仙·纤云弄巧（节选）",
+        "author": "秦观",
+        "text": "金风玉露一相逢，便胜却人间无数。两情若是久长时，又岂在朝朝暮暮。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-ghost",
+      "title": "中元",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          7,
+          15
+        ]
+      },
+      "reason": "追思与记忆，适合静读祭文中的亲情。",
+      "works": [
+        "jizhi"
+      ],
+      "poem": {
+        "id": "festival-ghost",
+        "title": "游子吟",
+        "author": "孟郊",
+        "text": "慈母手中线，游子身上衣。临行密密缝，意恐迟迟归。谁言寸草心，报得三春晖。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-moon",
+      "title": "中秋",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          8,
+          15
+        ]
+      },
+      "reason": "以月色与尺牍寄相思。",
+      "works": [
+        "zhongqiu"
+      ],
+      "poem": {
+        "id": "festival-moon",
+        "title": "水调歌头·明月几时有（节选）",
+        "author": "苏轼",
+        "text": "但愿人长久，千里共婵娟。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-double9",
+      "title": "重阳",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          9,
+          9
+        ]
+      },
+      "reason": "登高怀远，借书写问候远方的人。",
+      "works": [
+        "shusu"
+      ],
+      "poem": {
+        "id": "festival-double9",
+        "title": "九月九日忆山东兄弟",
+        "author": "王维",
+        "text": "独在异乡为异客，每逢佳节倍思亲。遥知兄弟登高处，遍插茱萸少一人。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-winterclothes",
+      "title": "寒衣节",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          10,
+          1
+        ]
+      },
+      "reason": "以思亲之诗寄托对故人的记忆。",
+      "works": [
+        "jizhi"
+      ],
+      "poem": {
+        "id": "festival-winterclothes",
+        "title": "月夜忆舍弟（节选）",
+        "author": "杜甫",
+        "text": "露从今夜白，月是故乡明。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-lower",
+      "title": "下元",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          10,
+          15
+        ]
+      },
+      "reason": "静观江月，遥应后赤壁的夜游。",
+      "works": [
+        "chibi"
+      ],
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-laba",
+      "title": "腊八",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          12,
+          8
+        ]
+      },
+      "reason": "岁末静写，留一份平实而温暖的心意。",
+      "works": [
+        "zhao-xinjing"
+      ],
+      "poem": {
+        "id": "festival-laba",
+        "title": "问刘十九",
+        "author": "白居易",
+        "text": "绿蚁新醅酒，红泥小火炉。晚来天欲雪，能饮一杯无？",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-north",
+      "title": "小年（北方习俗）",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          12,
+          23
+        ]
+      },
+      "reason": "扫尘迎新，写下对团聚的期待。",
+      "works": [
+        "caoshuqianzi"
+      ],
+      "poem": {
+        "id": "festival-north",
+        "title": "元日",
+        "author": "王安石",
+        "text": "爆竹声中一岁除，春风送暖入屠苏。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-south",
+      "title": "小年（南方部分地区习俗）",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          12,
+          24
+        ]
+      },
+      "reason": "各地小年日期不同，借书写迎新纳福。",
+      "works": [
+        "caoshuqianzi"
+      ],
+      "poem": {
+        "id": "festival-south",
+        "title": "元日",
+        "author": "王安石",
+        "text": "千门万户曈曈日，总把新桃换旧符。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-eve",
+      "title": "除夕",
+      "kind": "festival",
+      "rule": {
+        "newYearEve": true
+      },
+      "reason": "在一年的最后一晚，写一行向新岁出发的心愿。",
+      "works": [
+        "caoshuqianzi"
+      ],
+      "poem": {
+        "id": "eve",
+        "title": "除夜作",
+        "author": "高适",
+        "text": "旅馆寒灯独不眠，客心何事转凄然。故乡今夜思千里，霜鬓明朝又一年。"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "festival-hanshi",
+      "title": "寒食",
+      "kind": "festival",
+      "rule": {
+        "beforeTerm": [
+          "清明",
+          1
+        ]
+      },
+      "reason": "按今行清明前一日纪念寒食，古代节期存在差异；并非《寒食帖》创作的精确公历日期。",
+      "works": [
+        "hanshi"
+      ],
+      "source": "https://www.dpm.org.cn/lemmas/242596.html",
+      "category": "writing"
+    },
+    {
+      "id": "term-小寒",
+      "title": "小寒",
+      "kind": "seasonal",
+      "rule": {
+        "term": "小寒"
+      },
+      "reason": "以雪景中的留白，感受尺牍疏密。",
+      "works": [
+        "kuaixue"
+      ],
+      "poem": {
+        "id": "term-小寒",
+        "title": "江雪",
+        "author": "柳宗元",
+        "text": "千山鸟飞绝，万径人踪灭。孤舟蓑笠翁，独钓寒江雪。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-大寒",
+      "title": "大寒",
+      "kind": "seasonal",
+      "rule": {
+        "term": "大寒"
+      },
+      "reason": "从岁寒气节读郑板桥的笔意。",
+      "works": [
+        "chenghuang"
+      ],
+      "poem": {
+        "id": "term-大寒",
+        "title": "竹石",
+        "author": "郑燮",
+        "text": "咬定青山不放松，立根原在破岩中。千磨万击还坚劲，任尔东西南北风。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-立春",
+      "title": "立春",
+      "kind": "seasonal",
+      "rule": {
+        "term": "立春"
+      },
+      "reason": "以春意开启文人雅集与行书的阅读。",
+      "works": [
+        "lanting",
+        "luoshen13",
+        "boyuan",
+        "zhongqiu",
+        "huangting",
+        "leyi",
+        "yanta",
+        "shiqi",
+        "shengjiao",
+        "auction-pingan"
+      ],
+      "poem": {
+        "id": "term-立春",
+        "title": "咏柳",
+        "author": "贺知章",
+        "text": "碧玉妆成一树高，万条垂下绿丝绦。不知细叶谁裁出，二月春风似剪刀。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-雨水",
+      "title": "雨水",
+      "kind": "seasonal",
+      "rule": {
+        "term": "雨水"
+      },
+      "reason": "从雨水与农事，追寻最早的朱书笔迹。",
+      "works": [
+        "oracle-brush298"
+      ],
+      "poem": {
+        "id": "term-雨水",
+        "title": "春夜喜雨",
+        "author": "杜甫",
+        "text": "好雨知时节，当春乃发生。随风潜入夜，润物细无声。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-惊蛰",
+      "title": "惊蛰",
+      "kind": "seasonal",
+      "rule": {
+        "term": "惊蛰"
+      },
+      "reason": "把春耕诗与协田刻辞放在一起读。",
+      "works": [
+        "oracle-farming298"
+      ],
+      "poem": {
+        "id": "term-惊蛰",
+        "title": "观田家（节选）",
+        "author": "韦应物",
+        "text": "微雨众卉新，一雷惊蛰始。田家几日闲，耕种从此起。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-春分",
+      "title": "春分",
+      "kind": "seasonal",
+      "rule": {
+        "term": "春分"
+      },
+      "reason": "于春分静观草书线条的节奏。",
+      "works": [
+        "shupu",
+        "longcang",
+        "jiucheng",
+        "zhanghan",
+        "jiuhua",
+        "mengzhao",
+        "tumu",
+        "mengdian",
+        "xuanshi",
+        "nikuan",
+        "pingfu",
+        "zhengwengong",
+        "shimenming",
+        "shamenghai-bangshu",
+        "wuhou",
+        "lisheng",
+        "chenghuang",
+        "wanan",
+        "jushi",
+        "dong-longshen",
+        "dunhuang",
+        "mingqing",
+        "yongle275",
+        "wenjinge275",
+        "oracle-ban298",
+        "oracle-qiang298"
+      ],
+      "poem": {
+        "id": "term-春分",
+        "title": "鸟鸣涧",
+        "author": "王维",
+        "text": "人闲桂花落，夜静春山空。月出惊山鸟，时鸣春涧中。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-清明",
+      "title": "清明",
+      "kind": "seasonal",
+      "rule": {
+        "term": "清明"
+      },
+      "reason": "追思时节，体会祭文中的亲情与悲悯。",
+      "works": [
+        "jizhi",
+        "hanshi",
+        "duobao",
+        "yanqinli",
+        "zhongxing",
+        "baozhi"
+      ],
+      "poem": {
+        "id": "term-清明",
+        "title": "清明",
+        "author": "杜牧",
+        "text": "清明时节雨纷纷，路上行人欲断魂。借问酒家何处有？牧童遥指杏花村。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-谷雨",
+      "title": "谷雨",
+      "kind": "seasonal",
+      "rule": {
+        "term": "谷雨"
+      },
+      "reason": "从丰年之愿读古今农事。",
+      "works": [
+        "oracle-harvest298",
+        "oracle",
+        "oracle-sacrifice298",
+        "oracle-tufang298",
+        "oracle-zaifeng298",
+        "oracle-zhou298",
+        "oracle-fuhao298"
+      ],
+      "poem": {
+        "id": "term-谷雨",
+        "title": "游山西村（节选）",
+        "author": "陆游",
+        "text": "莫笑农家腊酒浑，丰年留客足鸡豚。山重水复疑无路，柳暗花明又一村。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-立夏",
+      "title": "立夏",
+      "kind": "seasonal",
+      "rule": {
+        "term": "立夏"
+      },
+      "reason": "夏日静写小楷，观察均衡与留白。",
+      "works": [
+        "huangting",
+        "xuanmi",
+        "jingshiyu",
+        "sishan",
+        "xiping",
+        "zhengshi",
+        "kaicheng",
+        "guoyouzhi",
+        "zhao-xinjing",
+        "zhao-huangting",
+        "zhaocheng275"
+      ],
+      "poem": {
+        "id": "term-立夏",
+        "title": "山亭夏日",
+        "author": "高骈",
+        "text": "绿树阴浓夏日长，楼台倒影入池塘。水晶帘动微风起，满架蔷薇一院香。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-小满",
+      "title": "小满",
+      "kind": "seasonal",
+      "rule": {
+        "term": "小满"
+      },
+      "reason": "以麦田诗意重读早期农耕文字。",
+      "works": [
+        "oracle-farming298"
+      ],
+      "poem": {
+        "id": "term-小满",
+        "title": "观刈麦（节选）",
+        "author": "白居易",
+        "text": "田家少闲月，五月人倍忙。夜来南风起，小麦覆陇黄。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-芒种",
+      "title": "芒种",
+      "kind": "seasonal",
+      "rule": {
+        "term": "芒种"
+      },
+      "reason": "丰收祈愿与民生诗意相互对读。",
+      "works": [
+        "oracle-harvest298",
+        "caoquan",
+        "liqi",
+        "yiying",
+        "shichen",
+        "zhangqian",
+        "shimen",
+        "huashan",
+        "xixia",
+        "hengfang",
+        "xianyuhuang",
+        "fuge",
+        "yihe",
+        "jitaishan",
+        "shouchan",
+        "juyan",
+        "oracle-farming298"
+      ],
+      "poem": {
+        "id": "term-芒种",
+        "title": "悯农二首·其一",
+        "author": "李绅",
+        "text": "春种一粒粟，秋收万颗子。四海无闲田，农夫犹饿死。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-夏至",
+      "title": "夏至",
+      "kind": "seasonal",
+      "rule": {
+        "term": "夏至"
+      },
+      "reason": "借水光与荷影读飘逸精细的小楷。",
+      "works": [
+        "luoshen13"
+      ],
+      "poem": {
+        "id": "term-夏至",
+        "title": "晓出净慈寺送林子方",
+        "author": "杨万里",
+        "text": "毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-小暑",
+      "title": "小暑",
+      "kind": "seasonal",
+      "rule": {
+        "term": "小暑"
+      },
+      "reason": "以短篇诗文和尺牍，练习小中见大。",
+      "works": [
+        "boyuan"
+      ],
+      "poem": {
+        "id": "term-小暑",
+        "title": "小池",
+        "author": "杨万里",
+        "text": "泉眼无声惜细流，树阴照水爱晴柔。小荷才露尖尖角，早有蜻蜓立上头。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-大暑",
+      "title": "大暑",
+      "kind": "seasonal",
+      "rule": {
+        "term": "大暑"
+      },
+      "reason": "在暑日体会草书的纵逸。",
+      "works": [
+        "zixu",
+        "caoshuqianzi",
+        "zhupoems",
+        "gushi",
+        "guanjun",
+        "rao-hanliu",
+        "songke-zhuangyou"
+      ],
+      "poem": {
+        "id": "term-大暑",
+        "title": "夏日山中",
+        "author": "李白",
+        "text": "懒摇白羽扇，裸袒青林中。脱巾挂石壁，露顶洒松风。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-立秋",
+      "title": "立秋",
+      "kind": "seasonal",
+      "rule": {
+        "term": "立秋"
+      },
+      "reason": "秋风起时读思鲈旧事。",
+      "works": [
+        "zhanghan"
+      ],
+      "poem": {
+        "id": "term-立秋",
+        "title": "秋词·其一",
+        "author": "刘禹锡",
+        "text": "自古逢秋悲寂寥，我言秋日胜春朝。晴空一鹤排云上，便引诗情到碧霄。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-处暑",
+      "title": "处暑",
+      "kind": "seasonal",
+      "rule": {
+        "term": "处暑"
+      },
+      "reason": "把山中秋意与松风书卷并读。",
+      "works": [
+        "songfeng"
+      ],
+      "poem": {
+        "id": "term-处暑",
+        "title": "山居秋暝（节选）",
+        "author": "王维",
+        "text": "空山新雨后，天气晚来秋。明月松间照，清泉石上流。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-白露",
+      "title": "白露",
+      "kind": "seasonal",
+      "rule": {
+        "term": "白露"
+      },
+      "reason": "从思亲之诗体会祭文的真情。",
+      "works": [
+        "jizhi",
+        "collector-yue",
+        "collector-jia",
+        "collector-anguo",
+        "collector-xiang",
+        "collector-wang",
+        "collector-sun",
+        "collector-liang",
+        "collector-anqi",
+        "collector-qianlong",
+        "song-cai"
+      ],
+      "poem": {
+        "id": "term-白露",
+        "title": "月夜忆舍弟（节选）",
+        "author": "杜甫",
+        "text": "戍鼓断人行，边秋一雁声。露从今夜白，月是故乡明。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-秋分",
+      "title": "秋分",
+      "kind": "seasonal",
+      "rule": {
+        "term": "秋分"
+      },
+      "reason": "以秋水明月遥应赤壁诗文。",
+      "works": [
+        "chibi",
+        "lizi",
+        "suxian",
+        "zuiweng",
+        "gongfu",
+        "song-su"
+      ],
+      "poem": {
+        "id": "term-秋分",
+        "title": "望洞庭",
+        "author": "刘禹锡",
+        "text": "湖光秋月两相和，潭面无风镜未磨。遥望洞庭山水翠，白银盘里一青螺。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-寒露",
+      "title": "寒露",
+      "kind": "seasonal",
+      "rule": {
+        "term": "寒露"
+      },
+      "reason": "登高赏秋，也读米芾的诗与行书。",
+      "works": [
+        "shusu",
+        "songfeng",
+        "zhushang",
+        "dizhu",
+        "collector-mi",
+        "song-huang",
+        "song-mi"
+      ],
+      "poem": {
+        "id": "term-寒露",
+        "title": "山行",
+        "author": "杜牧",
+        "text": "远上寒山石径斜，白云生处有人家。停车坐爱枫林晚，霜叶红于二月花。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-霜降",
+      "title": "霜降",
+      "kind": "seasonal",
+      "rule": {
+        "term": "霜降"
+      },
+      "reason": "从秋夜声景感受行书的起伏。",
+      "works": [
+        "songfeng"
+      ],
+      "poem": {
+        "id": "term-霜降",
+        "title": "枫桥夜泊",
+        "author": "张继",
+        "text": "月落乌啼霜满天，江枫渔火对愁眠。姑苏城外寒山寺，夜半钟声到客船。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-立冬",
+      "title": "立冬",
+      "kind": "seasonal",
+      "rule": {
+        "term": "立冬"
+      },
+      "reason": "入冬读雪，以短札体会问候之情。",
+      "works": [
+        "kuaixue"
+      ],
+      "poem": {
+        "id": "term-立冬",
+        "title": "逢雪宿芙蓉山主人",
+        "author": "刘长卿",
+        "text": "日暮苍山远，天寒白屋贫。柴门闻犬吠，风雪夜归人。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-小雪",
+      "title": "小雪",
+      "kind": "seasonal",
+      "rule": {
+        "term": "小雪"
+      },
+      "reason": "以相邀之诗，写朋友之间的温暖。",
+      "works": [
+        "boyuan"
+      ],
+      "poem": {
+        "id": "term-小雪",
+        "title": "问刘十九",
+        "author": "白居易",
+        "text": "绿蚁新醅酒，红泥小火炉。晚来天欲雪，能饮一杯无？",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-大雪",
+      "title": "大雪",
+      "kind": "seasonal",
+      "rule": {
+        "term": "大雪"
+      },
+      "reason": "以雪夜诗和快雪尺牍感受动静相生。",
+      "works": [
+        "kuaixue"
+      ],
+      "poem": {
+        "id": "term-大雪",
+        "title": "夜雪",
+        "author": "白居易",
+        "text": "已讶衾枕冷，复见窗户明。夜深知雪重，时闻折竹声。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "term-冬至",
+      "title": "冬至",
+      "kind": "seasonal",
+      "rule": {
+        "term": "冬至"
+      },
+      "reason": "借节令思亲，读尺牍里的牵挂。",
+      "works": [
+        "zhongqiu",
+        "taishan",
+        "shigu",
+        "yishan",
+        "langya",
+        "kuaiji",
+        "yuanan",
+        "yuanchang",
+        "tianfa",
+        "biluo",
+        "sanfen",
+        "wuchangshuo-shigu",
+        "maogong",
+        "sanshi",
+        "bronze-dayu299",
+        "bronze-dake299",
+        "bronze-guoji299",
+        "hezun",
+        "bronze-qiang299",
+        "bronze-lai299",
+        "bronze-li299",
+        "bronze-zongzhou299"
+      ],
+      "poem": {
+        "id": "term-冬至",
+        "title": "邯郸冬至夜思家",
+        "author": "白居易",
+        "text": "邯郸驿里逢冬至，抱膝灯前影伴身。想得家中夜深坐，还应说着远行人。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing"
+    },
+    {
+      "id": "mother299",
+      "title": "国际母语日",
+      "rule": {
+        "solar": [
+          2,
+          21
+        ]
+      },
+      "kind": "observance",
+      "category": "writing",
+      "reason": "珍惜每一种语言，也珍惜以母语写下的第一句话。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/mother-language",
+      "poem": {
+        "id": "mother299",
+        "title": "国际母语日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "一字一音，皆是故乡。",
+        "url": "https://www.unesco.org/en/days/mother-language"
+      }
+    },
+    {
+      "id": "poetry299",
+      "title": "世界诗歌日",
+      "rule": {
+        "solar": [
+          3,
+          21
+        ]
+      },
+      "kind": "observance",
+      "category": "arts",
+      "reason": "不同语言的诗，让各地的人在感受中相遇。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/poetry",
+      "poem": {
+        "id": "poetry299",
+        "title": "世界诗歌日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "以诗相逢，以字传情。",
+        "url": "https://www.unesco.org/en/days/poetry"
+      }
+    },
+    {
+      "id": "monuments299",
+      "title": "国际古迹遗址日",
+      "rule": {
+        "solar": [
+          4,
+          18
+        ]
+      },
+      "kind": "observance",
+      "category": "heritage",
+      "reason": "从长城、金字塔到吴哥，建筑与遗址保存着人类营造生活的记忆。",
+      "works": [],
+      "source": "https://www.icomos.org/what-we-do/focus/18-april-international-day-for-monuments-and-sites/",
+      "poem": {
+        "id": "monuments299",
+        "title": "国际古迹遗址日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "山河有迹，文明长存。",
+        "url": "https://www.icomos.org/what-we-do/focus/18-april-international-day-for-monuments-and-sites/"
+      }
+    },
+    {
+      "id": "books299",
+      "title": "世界图书与版权日",
+      "rule": {
+        "solar": [
+          4,
+          23
+        ]
+      },
+      "kind": "observance",
+      "category": "memory",
+      "reason": "典籍、手稿与印本把跨越时代的思想交到下一双手中。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/world-book-and-copyright",
+      "poem": {
+        "id": "books299",
+        "title": "世界图书与版权日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "一卷在手，千年相闻。",
+        "url": "https://www.unesco.org/en/days/world-book-and-copyright"
+      }
+    },
+    {
+      "id": "museum299",
+      "title": "国际博物馆日",
+      "rule": {
+        "solar": [
+          5,
+          18
+        ]
+      },
+      "kind": "observance",
+      "category": "heritage",
+      "reason": "从一件器物进入一段历史，让保护与分享成为共同的责任。",
+      "works": [],
+      "source": "https://icom.museum/en/international-museum-day/",
+      "poem": {
+        "id": "museum299",
+        "title": "国际博物馆日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "与古为新，万物有声。",
+        "url": "https://icom.museum/en/international-museum-day/"
+      }
+    },
+    {
+      "id": "diversity299",
+      "title": "世界文化多样性促进对话和发展日",
+      "rule": {
+        "solar": [
+          5,
+          21
+        ]
+      },
+      "kind": "observance",
+      "category": "exchange",
+      "reason": "不同文明的表达值得相互尊重；相遇不必抹去各自的独特。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/cultural-diversity-day",
+      "poem": {
+        "id": "diversity299",
+        "title": "世界文化多样性促进对话和发展日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "不同的美，在纸上相逢。",
+        "url": "https://www.un.org/en/observances/cultural-diversity-day"
+      }
+    },
+    {
+      "id": "archives299",
+      "title": "国际档案日",
+      "rule": {
+        "solar": [
+          6,
+          9
+        ]
+      },
+      "kind": "observance",
+      "category": "memory",
+      "reason": "档案不仅是名人的记录，也保存普通人的生活与社会的共同记忆。",
+      "works": [],
+      "source": "https://www.ica.org/what-we-do/international-archives-week/",
+      "poem": {
+        "id": "archives299",
+        "title": "国际档案日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "留一纸真迹，存一代记忆。",
+        "url": "https://www.ica.org/what-we-do/international-archives-week/"
+      }
+    },
+    {
+      "id": "moon299",
+      "title": "国际月球日",
+      "rule": {
+        "solar": [
+          7,
+          20
+        ]
+      },
+      "kind": "observance",
+      "category": "science",
+      "reason": "月亮既是诗歌中的故乡，也连接人类对未知的共同探索。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/moon-day",
+      "poem": {
+        "id": "moon299",
+        "title": "国际月球日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "仰望同一轮明月。",
+        "url": "https://www.un.org/en/observances/moon-day"
+      }
+    },
+    {
+      "id": "indigenous299",
+      "title": "世界土著人民国际日",
+      "rule": {
+        "solar": [
+          8,
+          9
+        ]
+      },
+      "kind": "observance",
+      "category": "intangible",
+      "reason": "口述传统、语言和地方知识，提醒我们尊重各群体自己的文化表达。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/list-days-weeks",
+      "poem": {
+        "id": "indigenous299",
+        "title": "世界土著人民国际日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "每一种声音，都值得被听见。",
+        "url": "https://www.un.org/en/observances/list-days-weeks"
+      }
+    },
+    {
+      "id": "literacy299",
+      "title": "国际扫盲日",
+      "rule": {
+        "solar": [
+          9,
+          8
+        ]
+      },
+      "kind": "observance",
+      "category": "writing",
+      "reason": "能读能写，让更多人表达经验、参与生活并掌握自己的故事。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/literacy",
+      "poem": {
+        "id": "literacy299",
+        "title": "国际扫盲日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "人人可读，人人可写。",
+        "url": "https://www.unesco.org/en/days/literacy"
+      }
+    },
+    {
+      "id": "peace299",
+      "title": "国际和平日",
+      "rule": {
+        "solar": [
+          9,
+          21
+        ]
+      },
+      "kind": "observance",
+      "category": "values",
+      "reason": "写下对和平的期望，让不同语言的人能够平等相见。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/international-day-peace",
+      "poem": {
+        "id": "peace299",
+        "title": "国际和平日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "愿山河无恙，愿人间相安。",
+        "url": "https://www.un.org/en/observances/international-day-peace"
+      }
+    },
+    {
+      "id": "access299",
+      "title": "普遍获取信息国际日",
+      "rule": {
+        "solar": [
+          9,
+          28
+        ]
+      },
+      "kind": "observance",
+      "category": "memory",
+      "reason": "保存文献之后，还需要让人们有机会阅读与理解它们。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/universal-access-information",
+      "poem": {
+        "id": "access299",
+        "title": "普遍获取信息国际日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "记忆属于所有人。",
+        "url": "https://www.unesco.org/en/days/universal-access-information"
+      }
+    },
+    {
+      "id": "translation299",
+      "title": "国际翻译日",
+      "rule": {
+        "solar": [
+          9,
+          30
+        ]
+      },
+      "kind": "observance",
+      "category": "exchange",
+      "reason": "翻译让一种语言中的经验走进另一种语言，文字因此跨越边界。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/international-translation-day",
+      "poem": {
+        "id": "translation299",
+        "title": "国际翻译日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "译一行文字，开一扇窗。",
+        "url": "https://www.un.org/en/observances/international-translation-day"
+      }
+    },
+    {
+      "id": "living299",
+      "title": "国际非物质文化遗产日",
+      "rule": {
+        "solar": [
+          10,
+          17
+        ]
+      },
+      "kind": "observance",
+      "category": "intangible",
+      "reason": "技艺、节庆、音乐与口述传统，依靠人的实践而代代相续。",
+      "works": [],
+      "source": "https://ich.unesco.org/en/internationalday-of-intangible-cultural-heritage-01363",
+      "poem": {
+        "id": "living299",
+        "title": "国际非物质文化遗产日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "手传心授，生生不息。",
+        "url": "https://ich.unesco.org/en/internationalday-of-intangible-cultural-heritage-01363"
+      }
+    },
+    {
+      "id": "av299",
+      "title": "世界音像遗产日",
+      "rule": {
+        "solar": [
+          10,
+          27
+        ]
+      },
+      "kind": "observance",
+      "category": "memory",
+      "reason": "电影、声音与影像也在记录人类；它们与手稿同样需要保护。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/audiovisual-heritage",
+      "poem": {
+        "id": "av299",
+        "title": "世界音像遗产日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "留住声音，留住此刻。",
+        "url": "https://www.unesco.org/en/days/audiovisual-heritage"
+      }
+    },
+    {
+      "id": "science299",
+      "title": "世界科学促进和平与发展日",
+      "rule": {
+        "solar": [
+          11,
+          10
+        ]
+      },
+      "kind": "observance",
+      "category": "science",
+      "reason": "观察、求证与分享知识，让不同地方的人共同拓展认识。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/science-peace-development",
+      "poem": {
+        "id": "science299",
+        "title": "世界科学促进和平与发展日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "求真知，行远路。",
+        "url": "https://www.unesco.org/en/days/science-peace-development"
+      }
+    },
+    {
+      "id": "tolerance299",
+      "title": "国际宽容日",
+      "rule": {
+        "solar": [
+          11,
+          16
+        ]
+      },
+      "kind": "observance",
+      "category": "values",
+      "reason": "尊重不同文化、信仰与表达，是文明相处的日常功课。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/tolerance-day",
+      "poem": {
+        "id": "tolerance299",
+        "title": "国际宽容日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "和而不同，相敬相知。",
+        "url": "https://www.un.org/en/observances/tolerance-day"
+      }
+    },
+    {
+      "id": "rights299",
+      "title": "人权日",
+      "rule": {
+        "solar": [
+          12,
+          10
+        ]
+      },
+      "kind": "observance",
+      "category": "values",
+      "reason": "1948年这一天，《世界人权宣言》获得通过，人的尊严成为共同的书面承诺。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/human-rights-day",
+      "poem": {
+        "id": "rights299",
+        "title": "人权日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "生而有尊严，彼此有光。",
+        "url": "https://www.un.org/en/observances/human-rights-day"
+      }
+    },
+    {
+      "id": "arabicday299",
+      "title": "世界阿拉伯语日",
+      "rule": {
+        "solar": [
+          12,
+          18
+        ]
+      },
+      "kind": "observance",
+      "category": "writing",
+      "reason": "在连绵的字形中认识另一种语言，让书写成为相互理解的入口。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/world-arabic-language",
+      "poem": {
+        "id": "arabicday299",
+        "title": "世界阿拉伯语日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "字形各异，心意相通。",
+        "url": "https://www.unesco.org/en/days/world-arabic-language"
+      }
+    },
+    {
+      "id": "worldconvention299",
+      "title": "世界遗产公约获通过",
+      "rule": {
+        "solar": [
+          11,
+          16
+        ]
+      },
+      "kind": "documented",
+      "category": "heritage",
+      "reason": "1972年11月16日，保护文化与自然遗产的共同责任写入国际公约。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/conventiontext/",
+      "poem": {
+        "id": "worldconvention299",
+        "title": "世界遗产公约获通过 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "守护共同的家园。",
+        "url": "https://whc.unesco.org/en/conventiontext/"
+      },
+      "year": 1972
+    },
+    {
+      "id": "ichconvention299",
+      "title": "保护非物质文化遗产公约获通过",
+      "rule": {
+        "solar": [
+          10,
+          17
+        ]
+      },
+      "kind": "documented",
+      "category": "intangible",
+      "reason": "2003年10月17日通过的公约，让活着的传统与传承群体得到更多关注。",
+      "works": [],
+      "source": "https://ich.unesco.org/en/convention",
+      "poem": {
+        "id": "ichconvention299",
+        "title": "保护非物质文化遗产公约获通过 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "传统在手，未来在心。",
+        "url": "https://ich.unesco.org/en/convention"
+      },
+      "year": 2003
+    },
+    {
+      "id": "iss299",
+      "title": "《兰亭集序》从国际空间站传来",
+      "rule": {
+        "solar": [
+          10,
+          12
+        ]
+      },
+      "kind": "documented",
+      "category": "exchange",
+      "reason": "2022年10月12日，欧空局意大利航天员萨曼莎·克里斯托福雷蒂在国际空间站任务期间分享中国上空影像，并引用《兰亭集序》。从地面到太空，古文与今日的观看相遇。",
+      "works": [
+        "lanting"
+      ],
+      "source": "https://www.fmprc.gov.cn/web/fyrbt_673021/202210/t20221013_10782902.shtml",
+      "poem": {
+        "id": "iss299",
+        "title": "《兰亭集序》从国际空间站传来 · 荐写",
+        "author": "王羲之 ·《兰亭集序》",
+        "text": "仰观宇宙之大，俯察品类之盛，所以游目骋怀，足以极视听之娱，信可乐也。",
+        "url": "https://www.fmprc.gov.cn/web/fyrbt_673021/202210/t20221013_10782902.shtml"
+      },
+      "year": 2022
+    },
+    {
+      "id": "jobs299",
+      "title": "一堂书法课，走进个人电脑",
+      "rule": {
+        "solar": [
+          6,
+          12
+        ]
+      },
+      "kind": "documented",
+      "category": "exchange",
+      "reason": "2005年6月12日，乔布斯在斯坦福毕业演讲中回忆里德学院的书法课如何启发 Macintosh 字体设计。这里说的是西方字母书法课程。",
+      "works": [],
+      "source": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says",
+      "poem": {
+        "id": "jobs299",
+        "title": "一堂书法课，走进个人电脑 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "美的学习，会在未来相遇。",
+        "url": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says"
+      },
+      "year": 2005
+    },
+    {
+      "id": "arabicinscription299",
+      "title": "阿拉伯书法成为人类非遗",
+      "rule": {
+        "solar": [
+          12,
+          14
+        ]
+      },
+      "kind": "documented",
+      "category": "intangible",
+      "reason": "2021年12月14日，16国联合申报的阿拉伯书法项目列入人类非物质文化遗产代表作名录，呈现书写艺术的跨国传承。",
+      "works": [],
+      "source": "https://www.unesco.org/en/articles/unesco-adds-arabic-calligraphy-intangible-cultural-heritage-humanity-list",
+      "poem": {
+        "id": "arabicinscription299",
+        "title": "阿拉伯书法成为人类非遗 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "一笔连山海，一字见天地。",
+        "url": "https://www.unesco.org/en/articles/unesco-adds-arabic-calligraphy-intangible-cultural-heritage-humanity-list"
+      },
+      "year": 2021
+    },
+    {
+      "id": "dylan299",
+      "title": "迪伦的公寓里，一幅中文书法",
+      "rule": {
+        "solar": [
+          5,
+          24
+        ]
+      },
+      "kind": "editorial",
+      "category": "exchange",
+      "reason": "特德·罗素拍摄的早年公寓照片里，可见迪伦家中悬挂的中文书法。借他的生日回看这段文明相遇；现有依据不能证明书法由迪伦亲笔，也没有可靠的悬挂月日。",
+      "works": [],
+      "source": "https://whb-oss.oss-cn-shanghai.aliyuncs.com/zhuzhan/dushu/20180618/201138.html",
+      "poem": {
+        "id": "dylan299",
+        "title": "迪伦的公寓里，一幅中文书法 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "以诚为心，以爱为基。",
+        "url": "https://whb-oss.oss-cn-shanghai.aliyuncs.com/zhuzhan/dushu/20180618/201138.html"
+      },
+      "dateNote": "借5月24日诞辰荐写；不是书法悬挂日"
+    },
+    {
+      "id": "sutra868299",
+      "title": "一卷有纪年的雕版印本",
+      "rule": {
+        "solar": [
+          5,
+          11
+        ]
+      },
+      "kind": "documented",
+      "category": "memory",
+      "reason": "大英图书馆所藏868年《金刚经》卷末题记，对应公历5月11日。明确纪年的印本见证了复制、流通与知识共享。",
+      "works": [],
+      "source": "https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/buddhism-on-the-ground/buddhist-texts-the-diamond-sutra/",
+      "poem": {
+        "id": "sutra868299",
+        "title": "一卷有纪年的雕版印本 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "一纸传灯，千载同明。",
+        "url": "https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/buddhism-on-the-ground/buddhist-texts-the-diamond-sutra/"
+      },
+      "year": 868
+    },
+    {
+      "id": "mow299",
+      "title": "世界记忆：让文献对所有人开放",
+      "rule": {
+        "solar": [
+          6,
+          9
+        ]
+      },
+      "kind": "editorial",
+      "category": "memory",
+      "reason": "世界记忆计划始于1992年；在国际档案日回看世界记忆名录。这里的6月9日是主题荐写日，不是计划创立日。",
+      "works": [],
+      "source": "https://www.unesco.org/en/memory-world/register",
+      "poem": {
+        "id": "mow299",
+        "title": "世界记忆：让文献对所有人开放 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "记忆不灭，文明不息。",
+        "url": "https://www.unesco.org/en/memory-world/register"
+      },
+      "dateNote": "主题荐写；非遗产入选日"
+    },
+    {
+      "id": "mogao299",
+      "title": "莫高窟：壁画、洞窟与丝路",
+      "rule": {
+        "solar": [
+          4,
+          18
+        ]
+      },
+      "kind": "editorial",
+      "category": "heritage",
+      "reason": "莫高窟列入世界遗产名录；在古迹遗址日，循洞窟、壁画和写卷认识丝路交流，不将今日说成入选日。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/list/440/",
+      "poem": {
+        "id": "mogao299",
+        "title": "莫高窟：壁画、洞窟与丝路 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "千年壁上，一眼相逢。",
+        "url": "https://whc.unesco.org/en/list/440/"
+      },
+      "dateNote": "主题荐写；非遗产入选日"
+    },
+    {
+      "id": "pyramid299",
+      "title": "孟菲斯及其墓地：石上的文明",
+      "rule": {
+        "solar": [
+          4,
+          18
+        ]
+      },
+      "kind": "editorial",
+      "category": "heritage",
+      "reason": "从吉萨金字塔到古埃及的营造传统，世界遗产让远方文明留下可见的印记。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/list/86/",
+      "poem": {
+        "id": "pyramid299",
+        "title": "孟菲斯及其墓地：石上的文明 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "以石记时，以字相知。",
+        "url": "https://whc.unesco.org/en/list/86/"
+      },
+      "dateNote": "主题荐写；非遗产入选日"
+    },
+    {
+      "id": "borobudur299",
+      "title": "婆罗浮屠：海上丝路的回响",
+      "rule": {
+        "solar": [
+          5,
+          21
+        ]
+      },
+      "kind": "editorial",
+      "category": "heritage",
+      "reason": "在文化多样性之日，认识印度尼西亚婆罗浮屠寺庙群的造像、建筑与跨文化历史。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/list/592/",
+      "poem": {
+        "id": "borobudur299",
+        "title": "婆罗浮屠：海上丝路的回响 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "山海相望，文明相通。",
+        "url": "https://whc.unesco.org/en/list/592/"
+      },
+      "dateNote": "主题荐写；非遗产入选日"
+    },
+    {
+      "id": "taj299",
+      "title": "泰姬陵：建筑中的爱与记忆",
+      "rule": {
+        "solar": [
+          4,
+          18
+        ]
+      },
+      "kind": "editorial",
+      "category": "heritage",
+      "reason": "在古迹遗址日，读印度泰姬陵的建筑、花园与书法装饰；不把纪念关联误当作建成日期。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/list/252/",
+      "poem": {
+        "id": "taj299",
+        "title": "泰姬陵：建筑中的爱与记忆 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "把思念写进时间。",
+        "url": "https://whc.unesco.org/en/list/252/"
+      },
+      "dateNote": "主题荐写；非遗产入选日"
+    },
+    {
+      "id": "chinesecalligraphy299",
+      "title": "中国书法：从纸墨到人类非遗",
+      "rule": {
+        "solar": [
+          10,
+          17
+        ]
+      },
+      "kind": "editorial",
+      "category": "intangible",
+      "reason": "中国书法于2009年列入人类非遗代表作名录。借国际非遗日读五体笔墨，不编造具体入选月日。",
+      "works": [],
+      "source": "https://ich.unesco.org/en/RL/chinese-calligraphy-00216",
+      "poem": {
+        "id": "chinesecalligraphy299",
+        "title": "中国书法：从纸墨到人类非遗 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "笔墨相传，心手相应。",
+        "url": "https://ich.unesco.org/en/RL/chinese-calligraphy-00216"
+      },
+      "dateNote": "主题荐写；非遗产入选日"
+    },
+    {
+      "id": "silk299",
+      "title": "丝绸之路：跨越山海的对话",
+      "rule": {
+        "solar": [
+          9,
+          30
+        ]
+      },
+      "kind": "editorial",
+      "category": "exchange",
+      "reason": "从长安至天山廊道的世界遗产，在翻译日回看语言、商旅与艺术如何跨越边界。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/list/1442/",
+      "poem": {
+        "id": "silk299",
+        "title": "丝绸之路：跨越山海的对话 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "路通山海，字达远方。",
+        "url": "https://whc.unesco.org/en/list/1442/"
+      },
+      "dateNote": "主题荐写；非遗产入选日"
+    },
+    {
+      "id": "tea299",
+      "title": "中国传统制茶技艺及其相关习俗",
+      "rule": {
+        "solar": [
+          10,
+          17
+        ]
+      },
+      "kind": "editorial",
+      "category": "intangible",
+      "reason": "联合国教科文组织于2022年将这一项目列入人类非遗代表作名录。借国际非遗日写茶事与待客。",
+      "works": [],
+      "source": "https://ich.unesco.org/en/RL/traditional-tea-processing-techniques-and-associated-social-practices-in-china-01884",
+      "poem": {
+        "id": "tea299",
+        "title": "中国传统制茶技艺及其相关习俗 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "一盏清茶，四海相知。",
+        "url": "https://ich.unesco.org/en/RL/traditional-tea-processing-techniques-and-associated-social-practices-in-china-01884"
+      },
+      "dateNote": "主题荐写；非遗产入选日"
+    },
+    {
+      "id": "annefrank299",
+      "title": "《安妮日记》手稿成为世界记忆",
+      "rule": {
+        "solar": [
+          7,
+          30
+        ]
+      },
+      "kind": "documented",
+      "category": "memory",
+      "reason": "安妮之家2009年7月31日公告称，联合国教科文组织于前一天宣布将安妮的手稿列入世界记忆名录。私人日记由此成为共同记忆的见证。",
+      "works": [],
+      "source": "https://www.annefrank.org/en/about-us/news-and-press/news/2009/7/31/geschriften-anne-frank-op-unesco-lijst/",
+      "dateNote": "日期按安妮之家公告所述的宣布日",
+      "poem": {
+        "id": "annefrank299",
+        "title": "《安妮日记》手稿成为世界记忆 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "守护每一个人的故事。",
+        "url": "https://www.annefrank.org/en/about-us/news-and-press/news/2009/7/31/geschriften-anne-frank-op-unesco-lijst/"
+      },
+      "year": 2009
+    },
+    {
+      "id": "jikji299",
+      "title": "《直指》列入世界记忆名录",
+      "rule": {
+        "solar": [
+          9,
+          4
+        ]
+      },
+      "kind": "documented",
+      "category": "memory",
+      "reason": "1377年的金属活字印本《直指》于2001年9月4日列入世界记忆名录。小小活字连接了手工技艺与知识传播。",
+      "works": [],
+      "source": "https://www.globaljikji.org/en/sub.do?menukey=4205",
+      "dateNote": "日期据清州古印刷博物馆资料",
+      "poem": {
+        "id": "jikji299",
+        "title": "《直指》列入世界记忆名录 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "活字生光，文脉相连。",
+        "url": "https://www.globaljikji.org/en/sub.do?menukey=4205"
+      },
+      "year": 2001
+    },
+    {
+      "id": "beethoven299",
+      "title": "贝多芬《第九交响曲》手稿",
+      "rule": {
+        "solar": [
+          10,
+          27
+        ]
+      },
+      "kind": "editorial",
+      "category": "memory",
+      "reason": "这部交响曲的亲笔总谱于2001年列入世界记忆名录。借世界音像遗产日，认识音乐从手写谱页走向人类共同聆听的过程。",
+      "works": [],
+      "source": "https://www.loc.gov/item/2021668114/",
+      "dateNote": "主题荐写；非手稿入选日",
+      "poem": {
+        "id": "beethoven299",
+        "title": "贝多芬《第九交响曲》手稿 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "纸上有声，心中相通。",
+        "url": "https://www.loc.gov/item/2021668114/"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "heritage",
+      "title": "世界遗产"
+    },
+    {
+      "id": "memory",
+      "title": "世界记忆"
+    },
+    {
+      "id": "intangible",
+      "title": "活态非遗"
+    },
+    {
+      "id": "writing",
+      "title": "文字与典籍"
+    },
+    {
+      "id": "arts",
+      "title": "艺术与文学"
+    },
+    {
+      "id": "science",
+      "title": "科学与探索"
+    },
+    {
+      "id": "exchange",
+      "title": "文明交流"
+    },
+    {
+      "id": "values",
+      "title": "和平与尊严"
+    }
+  ]
+}

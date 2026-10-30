@@ -39,4 +39,4 @@ if('serviceWorker'in navigator&&isSecureContext)setTimeout(()=>navigator.service
 (async()=>{const id=new URLSearchParams(location.search).get('rank275');if(!id)return;for(let i=0;i<200;i++){if(window.Home154?.chapters?.length){await Home154.openCopyPicker(id);break}await new Promise(r=>setTimeout(r,50))}})();
 
 // Calendar metadata is independent of writing and never preloads copybook pages.
-import("./release298/ui.mjs").then(m=>m.mountHome()).catch(()=>{});
+import("./release299/ui.mjs").then(m=>m.mountHome()).catch(()=>{});

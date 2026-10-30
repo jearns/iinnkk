@@ -5103,6 +5103,208 @@
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
       "deleted": false
+    },
+    "bronze-dayu299": {
+      "id": "bronze-dayu299",
+      "title": "大盂鼎",
+      "museum": "中国国家博物馆",
+      "place": "北京",
+      "dateLabel": "西周康王时期",
+      "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247375.shtml",
+      "milestone": "西周早期册命铭文的重器，以雄浑文字连接历史训诰与国家礼制。",
+      "description": "结体庄严而保留早期金文的变化，可与毛公鼎对读。",
+      "author": "书者佚名",
+      "era": "西周",
+      "year": -900,
+      "script": "金文",
+      "cover143": "release299/bronze/dayu-photo.webp",
+      "pages": [
+        "release299/bronze/dayu-photo.webp",
+        "release299/bronze/dayu.webp"
+      ],
+      "pageNames": [
+        "原器图（非拓本）",
+        "馆方排印释文（非拓本）"
+      ],
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "fullText148": "",
+      "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
+      "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
+      "deleted": false
+    },
+    "bronze-dake299": {
+      "id": "bronze-dake299",
+      "title": "大克鼎",
+      "museum": "上海博物馆",
+      "place": "上海",
+      "dateLabel": "约公元前10世纪末",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/CI00000656",
+      "milestone": "长篇册命铭文将祖先记忆与官职授命相接，是西周金文的重要范本。",
+      "description": "从规整行款与文字组织，认识礼制记录与书法章法的联系。",
+      "author": "书者佚名",
+      "era": "西周",
+      "year": -900,
+      "script": "金文",
+      "cover143": "release299/bronze/dake.webp",
+      "pages": [
+        "release299/bronze/dake.webp"
+      ],
+      "pageNames": [
+        "原器图（非拓本）"
+      ],
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "fullText148": "",
+      "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
+      "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
+      "deleted": false
+    },
+    "bronze-guoji299": {
+      "id": "bronze-guoji299",
+      "title": "虢季子白盘",
+      "museum": "中国国家博物馆",
+      "place": "北京",
+      "dateLabel": "西周宣王时期",
+      "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247376.shtml",
+      "milestone": "铭辞富有诗意，修长匀称的字形展现西周晚期金文清朗的一面。",
+      "description": "比较四言韵语与疏朗布局，体会铸铭的文辞与线条之美。",
+      "author": "书者佚名",
+      "era": "西周",
+      "year": -900,
+      "script": "金文",
+      "cover143": "release299/bronze/guoji-photo.webp",
+      "pages": [
+        "release299/bronze/guoji-photo.webp",
+        "release299/bronze/guoji.webp"
+      ],
+      "pageNames": [
+        "原器图（非拓本）",
+        "馆方排印释文（非拓本）"
+      ],
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "fullText148": "",
+      "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
+      "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
+      "deleted": false
+    },
+    "bronze-qiang299": {
+      "id": "bronze-qiang299",
+      "title": "史墙盘",
+      "museum": "宝鸡周原博物院",
+      "place": "宝鸡扶风",
+      "dateLabel": "西周中期",
+      "url": "https://www.chnmuseum.cn/zl/zlhg/201812/t20181220_32314.shtml",
+      "milestone": "把王朝史与家族史编织在一篇铭文中，是西周书写记忆的重要见证。",
+      "description": "行列与文字组织见出成熟的章法，读文字也读记录者的历史意识。",
+      "author": "书者佚名",
+      "era": "西周",
+      "year": -900,
+      "script": "金文",
+      "cover143": "release299/bronze/qiang.webp",
+      "pages": [
+        "release299/bronze/qiang.webp"
+      ],
+      "pageNames": [
+        "原器图（非拓本）"
+      ],
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "fullText148": "",
+      "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
+      "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
+      "deleted": false
+    },
+    "bronze-lai299": {
+      "id": "bronze-lai299",
+      "title": "逨盘",
+      "museum": "宝鸡青铜器博物院",
+      "place": "宝鸡",
+      "dateLabel": "西周晚期",
+      "url": "https://www.cdmuseum.com/xinwen/202011/1853.html",
+      "milestone": "以家族数代辅佐周王的叙述保存世系与政事，是青铜器上的长篇史书。",
+      "description": "在长篇铭文拓片中观察均衡的行列、曲线与字间呼应。",
+      "author": "书者佚名",
+      "era": "西周",
+      "year": -900,
+      "script": "金文",
+      "cover143": "release299/bronze/lai.webp",
+      "pages": [
+        "release299/bronze/lai.webp"
+      ],
+      "pageNames": [
+        "铭文拓片"
+      ],
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "fullText148": "",
+      "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
+      "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
+      "deleted": false
+    },
+    "bronze-li299": {
+      "id": "bronze-li299",
+      "title": "利簋",
+      "museum": "中国国家博物馆",
+      "place": "北京",
+      "dateLabel": "西周武王时期",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250931.shtml",
+      "milestone": "短篇铭文记录武王征商，为古代史与传世文献之间提供实物参照。",
+      "description": "字数虽少而史意深厚，适合认识早期金文的字形与记录功能。",
+      "author": "书者佚名",
+      "era": "西周",
+      "year": -900,
+      "script": "金文",
+      "cover143": "release299/bronze/li-photo.webp",
+      "pages": [
+        "release299/bronze/li-photo.webp",
+        "release299/bronze/li.webp"
+      ],
+      "pageNames": [
+        "原器图（非拓本）",
+        "馆方排印释文（非拓本）"
+      ],
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "fullText148": "",
+      "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
+      "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
+      "deleted": false
+    },
+    "bronze-zongzhou299": {
+      "id": "bronze-zongzhou299",
+      "title": "宗周钟",
+      "museum": "台北故宫博物院",
+      "place": "台北",
+      "dateLabel": "西周晚期",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1464?dep=U&mode=full",
+      "milestone": "将铭文铸于礼乐重器，文字、器形与声音共同保存周代文化的记忆。",
+      "description": "又称㝬钟；将钟体与铭文位置合看，认识礼乐器铭的空间。",
+      "author": "书者佚名",
+      "era": "西周",
+      "year": -900,
+      "script": "金文",
+      "cover143": "release299/bronze/zongzhou.webp",
+      "pages": [
+        "release299/bronze/zongzhou.webp"
+      ],
+      "pageNames": [
+        "原器图（非拓本）"
+      ],
+      "style": "ouyang",
+      "size": 320,
+      "zoom": 170,
+      "fullText148": "",
+      "imageCredit247": "馆藏与图像来源见机构资料链接。原器照片、拓片、排印释文分开标示；不把排印字当作原始金文。",
+      "textStatus183": "释读以馆方著录为准；原器、拓片与排印释文不是同一种图像。",
+      "deleted": false
     }
   },
   "order129": []
