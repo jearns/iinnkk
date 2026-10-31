@@ -1,3 +1,4 @@
+import '../../media-effects241.js';
 import React,{useMemo,useRef,useLayoutEffect,useEffect}from'react';
 import{AbsoluteFill,Img,staticFile,useCurrentFrame,useVideoConfig,delayRender,continueRender,cancelRender,interpolate,Easing,useBufferState}from'remotion';
 import{Audio}from'@remotion/media';
@@ -34,13 +35,15 @@ function FilmCanvas({surface,frame,timing,view,enter,width,height,fps,renderStyl
    if(previous)ctx.globalAlpha*=1-view.blend;
    let shot=isCover?{scale:1,region:{x:.5,y:.5}}:view.scene;if(!isCover&&hero)shot={...shot,scale:1.045-.045*enter};
    if(backdrop){ctx.beginPath();ctx.rect(width*.055,height*.055,width*.89,height*.89);ctx.clip()}
-   paintImage(ctx,image,width,height,shot,isCover?1:view.factor);ctx.restore();ref.current.dataset.painted297=String(frame);
+   paintImage(ctx,image,width,height,shot,isCover?1:view.factor);ctx.restore();
+   const effects=renderStyle296?.effects301;if(effects){const scratch=layers.current.filter301||(layers.current.filter301=document.createElement('canvas'));scratch.width=width;scratch.height=height;scratch.getContext('2d').drawImage(ref.current,0,0);const filtered=window.MediaEffects241.video(scratch,effects);ctx.drawImage(filtered,0,0,width,height);if(effects.veil235){const veil=layers.current.veil301||(layers.current.veil301=document.createElement('canvas'));veil.width=width;veil.height=height;const v=veil.getContext('2d');v.clearRect(0,0,width,height);v.fillStyle=`rgba(0,0,0,${effects.veil235})`;v.fillRect(0,0,width,height);v.globalCompositeOperation='destination-out';for(const p of effects.lightSpots238||[]){const r=p.radius*Math.min(width,height),g=v.createRadialGradient(p.x*width,p.y*height,0,p.x*width,p.y*height,r);g.addColorStop(0,'#000');g.addColorStop(1,'#0000');v.fillStyle=g;v.fillRect(p.x*width-r,p.y*height-r,r*2,r*2)}v.globalCompositeOperation='source-over';ctx.drawImage(veil,0,0)}}
+   ref.current.dataset.painted297=String(frame);
    if(!isCover&&view.shade>0){ctx.save();ctx.globalAlpha=view.shade;const g=ctx.createLinearGradient(0,0,width,height);g.addColorStop(0,'#050608');g.addColorStop(1,view.mode==='shadow'?'#17191e':'#050608');ctx.fillStyle=g;ctx.fillRect(0,0,width,height);ctx.restore()}
   };const paint=()=>{if(surface?.frame297&&!background296){const isCover=timing.phase==='cover',hero=view.scene.kind==='hero',current=isCover?1:view.progress,capture=(p,o={})=>surface.frame297(p,{style:renderStyle296,...o});const backdrop=view.mode==='dolly'&&!isCover&&view.scene.kind==='writing'?copy(capture(current,{complete:true}),'backdrop'):null,previous=view.mode==='dissolve'&&view.previous&&view.blend>0&&!isCover?copy(capture(view.previous.end,{hero:view.previous.kind==='hero'}),'previous'):null,image=capture(current,{hero:isCover||hero});commit({image,backdrop,previous,isCover,hero},null);return Promise.resolve()}return collect().then(async data=>{if(!data||disposed)return;const bg=background296?await background296.frame(frame/fps,renderStyle296?.showOriginal295):null;commit(data,bg)})};paint().then(finish,error=>{if(!disposed)cancelRender(error);finish()});return()=>{disposed=true;finish()};
  },[frame,handle,surface,width,height,view.mode,view.factor,view.progress,enter,renderStyle296,background296]);
  return <canvas ref={ref} width={width} height={height} data-canvas293="" data-scene293={view.scene.id} data-mode293={view.mode} data-progress293={timing.phase==='cover'?1:view.progress} style={{width:'100%',height:'100%',display:'block'}}/>;
 }
-export const ShoubiShowcase=({surface,artwork,title,signature,music='none',musicUrl295=null,transition='shadow',renderStyle296={},background296=null})=>{
+export const ShoubiShowcase=({surface,artwork,title,signature,music='none',musicUrl295=null,transition='push',renderStyle296={},background296=null})=>{
  const brandFontHandle=useMemo(()=>delayRender('Brand typography'),[]);useEffect(()=>{loadBrandFont294().then(()=>continueRender(brandFontHandle),cancelRender)},[]);
  const frame=useCurrentFrame(),{fps,durationInFrames,width,height}=useVideoConfig();
  const timing=videoTimeline(frame,durationInFrames,fps),plan=useMemo(()=>scenePlan(durationInFrames,fps,surface?.chapters||[]),[durationInFrames,fps,surface]);

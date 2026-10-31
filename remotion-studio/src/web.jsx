@@ -11,11 +11,14 @@ import {TRANSITIONS} from './scene-plan.mjs';
 const FilmPlayer=lazy(()=>import('./player.jsx'));
 
 function Studio() {
+  const [panel301,setPanel301]=useState(null);
+  const [effects301,setEffects301]=useState({style:'original',blur:0,veil235:0,hd241:false});
+  const [spot301,setSpot301]=useState(null);
   const [, refreshLanguage] = useState(0);
   const [work, setWork] = useState(null);
   const [replay, setReplay] = useState(null);
   const [poster, setPoster] = useState(null);
-  const [transition,setTransition]=useState('shadow');
+  const [transition,setTransition]=useState('push');
   const [durationSeconds, setDurationSeconds] = useState(30);
   const [retry, setRetry] = useState(0);
   const initial = new URLSearchParams(location.search);
@@ -26,21 +29,21 @@ function Studio() {
   const [showOriginal295,setShowOriginal295]=useState(false);
   const [inkColor296,setInkColor296]=useState('original'),[customInk296,setCustomInk296]=useState('#171717');
   const [background296,setBackground296]=useState(null),backgroundRef296=useRef(null);
-  const renderStyle296=useMemo(()=>({showOriginal295,inkColor296:inkColor296==='custom'?customInk296:inkColor296}),[showOriginal295,inkColor296,customInk296]);
+  const renderStyle296=useMemo(()=>({showOriginal295,effects301,inkColor296:inkColor296==='custom'?customInk296:inkColor296}),[showOriginal295,inkColor296,customInk296,effects301]);
   const [audition, setAudition] = useState(false);
   const musicRef = useRef(null);
   const [customMusic295,setCustomMusic295]=useState(null);
   const customURL295=useRef(null);
   const selectedTrack = music==='custom295'&&customMusic295?{title:customMusic295.name,credit:'用户本机导入音频'}:musicTrack(music);
   const sourceMusic295=()=>music==='custom295'?customURL295.current:musicSource(music,durationSeconds);
-  const [quality, setQuality] = useState('compact');
+  const [quality, setQuality] = useState('full');
   const [busy, setBusy] = useState(false);
   const [checking, setChecking] = useState(false);const [stylePreparing297,setStylePreparing297]=useState(false);
   const [status, setStatus] = useState({key: '从我的作品选择一幅保存了笔画轨迹的作品。'});
   const abortRef = useRef(null);
   const pickerRef = useRef(null), playerRef = useRef(null), prepareRef = useRef(null), replayRef = useRef(null), workRef = useRef(null);
   const posterRef = useRef(null);
-  const channel = useRef(crypto.randomUUID());
+  const channel = useRef(crypto.randomUUID?.()||Array.from(crypto.getRandomValues(new Uint32Array(4)),n=>n.toString(16)).join('-'));
   const t = text => window.I18n218?.text(text) || text;
   const language = window.I18n218?.language || 'zh';
   const heading = t('手筆 · 纪录大片');
@@ -181,33 +184,32 @@ function Studio() {
   }
 
   return <div className="vsLayout" data-no-translate218="" dir={language === 'ar' ? 'rtl' : 'ltr'}>
-    <section className="vsPreview" inert={stylePreparing297||undefined} style={{aspectRatio:`${format.width}/${format.height}`,maxWidth:format.orientation==='landscape'?700:440}} aria-label={t('作品动画预览')} translate="no">
+    <section className="vsPreview" inert={stylePreparing297||undefined} style={{aspectRatio:`${format.width}/${format.height}`,maxWidth:format.orientation==='landscape'?700:440}} aria-label={t('作品动画预览')} translate="no" onPointerDown={e=>{if(!spot301)return;e.preventDefault();const r=e.currentTarget.getBoundingClientRect();const point={x:(e.clientX-r.left)/r.width,y:(e.clientY-r.top)/r.height,radius:.16};setEffects301(v=>({...v,[spot301]:[...(v[spot301]||[]).slice(-3),point]}));}}>
       {replay ? <Suspense fallback={<img className="vsStill291" src={poster} alt={work?.title||''}/>}><FilmPlayer key={durationSeconds+format.orientation} playerRef={playerRef} inputProps={inputProps} format={format} durationInFrames={durationInFrames} fps={VIDEO_FPS} poster={poster} title={work?.title} onPlay={stopAudition}/></Suspense>
         : poster ? <img data-poster291="" className="vsStill291" src={poster} alt={work?.title || ''} />
         : <div className="vsEmpty291">{t(work ? '正在读取作品预览…' : '选择作品后在此预览')}</div>}
     </section>
-    <section className="vsSide">
-      <h1>{t('让作品，慢慢入镜。')}</h1>
+    <nav className="vsTools301" aria-label={t('影片操作')}>{[['作品','M3 4h18v16H3zM7 8h10M7 12h10'],['背景','M3 4h18v16H3zM3 16l6-7 6 7 3-3 3 3'],['墨色','M12 3l7 10a8 8 0 1 1-14 0z'],['滤镜','M4 4h16l-6 8v7l-4 2V12z'],['运镜','M3 6h13v12H3zM16 10l5-3v10l-5-3'],['时长','M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16M12 7v5l3 2'],['音乐','M9 18V5l11-2v13M9 7l11-2M9 18a3 3 0 1 1-3-3h3M20 16a3 3 0 1 1-3-3h3'],['画质','M3 5h18v14H3zM7 9v6M11 9v6M7 12h4M15 9v6h3'],['下载','M12 3v12M7 10l5 5 5-5M4 17v4h16v-4']].map(([label,path])=><button key={label} title={t(label)} aria-label={t(label)} aria-pressed={panel301===label} disabled={busy&&(label!=='下载')} onClick={()=>{if(label==='作品'){setPickerSource({});setPickerOpen(true)}else if(label==='下载'){if(busy)abortRef.current?.abort();else exportVideo()}else setPanel301(v=>v===label?null:label)}}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d={path}/></svg><span>{t(label)}</span></button>)}</nav>
+    <section className="vsSide" data-panel301={panel301||''}>
+      <h1>{t('每一次手笔，值得一部纪录大片')}</h1>
       <p>{t('从保存的真实笔画轨迹生成书写影片，保留原有纸张、笔刷与印章。')}</p>
       <button type="button" className="vsButton" disabled={busy || checking} onClick={() => {setPickerSource({}); setPickerOpen(true);}}>{t(work ? '更换作品' : '从我的作品选择')}</button>
       {work && <p className="vsSelected" translate="no">{work.title} · {work.items?work.items.length:strokeCount(work.draft)} {t(work.items?'页 / 幅':'笔')}</p>}
       {checking && <button type="button" className="vsButton" onClick={() => prepareRef.current?.abort()}>{t('取消准备')}</button>}
       {work && !checking && !replay && <button type="button" className="vsButton" onClick={() => setRetry(n => n + 1)}>{t('重新准备')}</button>}
-      <label className="vsField">{t('原帖文字')}<select value={showOriginal295?'show':'clean'} disabled={busy} onChange={e=>setShowOriginal295(e.target.value==='show')}><option value="clean">{t('不带原帖字，保留背景纸')}</option><option value="show">{t('带原帖文字')}</option></select></label>
-      <label className="vsField">{t('回放墨色')}<select value={inkColor296} disabled={busy} onChange={e=>setInkColor296(e.target.value)}>{[['original','临写原墨色'],['#111111','黑'],['#ffffff','白'],['#b62118','红'],['#ffdd00','黄'],['#703ca0','紫'],['custom','自定义色']].map(([value,label])=><option key={value} value={value}>{t(label)}</option>)}</select>{inkColor296==='custom'&&<input type="color" aria-label={t('自定义墨色')} value={customInk296} disabled={busy} onChange={e=>setCustomInk296(e.target.value)}/>}</label>
-      <div className="vsBackground296"><button disabled={busy} onClick={()=>chooseBackground296('catalogue')}>{t('全站名帖背景')}</button><label>{t('拍照作背景')}<input type="file" accept="image/*" capture="environment" disabled={busy} onChange={e=>chooseBackground296('file',e)}/></label><label>{t('本机图片或视频背景')}<input type="file" accept="image/*,video/*" multiple disabled={busy} onChange={e=>chooseBackground296('file',e)}/></label>{background296&&<><span translate="no">{background296.title}</span><button disabled={busy} onClick={()=>{backgroundRef296.current?.close();backgroundRef296.current=null;setBackground296(null)}}>{t('恢复作品背景')}</button></>}</div>
-      <label className="vsField">{t('影片时长')}<select value={durationSeconds} onChange={e => {stopAudition(); setDurationSeconds(normalizeDuration(e.target.value));}} disabled={busy}><option value={8}>{t('8 秒')}</option><option value={15}>{t('15 秒')}</option><option value={30}>{t('30 秒')}</option><option value={60}>{t('1 分钟')}</option><option value={120}>{t('2 分钟')}</option></select></label>
+{panel301==='背景'&&<div className="vsPanel301"><header><strong>{t('背景')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('背景')}<select value={showOriginal295?'show':'clean'} disabled={busy} onChange={e=>{if(e.target.value==='catalogue'){chooseBackground296('catalogue');return}if(e.target.value==='local'){document.getElementById('backgroundLocal301').click();return}backgroundRef296.current?.close();backgroundRef296.current=null;setBackground296(null);setShowOriginal295(e.target.value==='show')}}><option value="clean">{t('原帖无字')}</option><option value="show">{t('原帖有字')}</option><option value="catalogue">{t('全站选帖')}</option><option value="local">{t('本地添加')}</option></select></label>
+      <div className="vsBackground296"><button disabled={busy} onClick={()=>chooseBackground296('catalogue')}>{t('全站名帖背景')}</button><label>{t('拍照作背景')}<input type="file" accept="image/*" capture="environment" disabled={busy} onChange={e=>chooseBackground296('file',e)}/></label><label>{t('本机图片或视频背景')}<input id="backgroundLocal301" type="file" accept="image/*,video/*" multiple disabled={busy} onChange={e=>chooseBackground296('file',e)}/></label>{background296&&<><span translate="no">{background296.title}</span><button disabled={busy} onClick={()=>{backgroundRef296.current?.close();backgroundRef296.current=null;setBackground296(null)}}>{t('恢复作品背景')}</button></>}</div>
+</div>}{panel301==='墨色'&&<div className="vsPanel301"><header><strong>{t('墨色')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('回放墨色')}<select value={inkColor296} disabled={busy} onChange={e=>setInkColor296(e.target.value)}>{[['original','临写原墨色'],['#111111','黑'],['#ffffff','白'],['#b62118','红'],['#ffdd00','黄'],['#703ca0','紫'],['custom','自定义色']].map(([value,label])=><option key={value} value={value}>{t(label)}</option>)}</select>{inkColor296==='custom'&&<input type="color" aria-label={t('自定义墨色')} value={customInk296} disabled={busy} onChange={e=>setCustomInk296(e.target.value)}/>}</label>
+</div>}{panel301==='时长'&&<div className="vsPanel301"><header><strong>{t('时长')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('影片时长')}<select value={durationSeconds} onChange={e => {stopAudition(); setDurationSeconds(normalizeDuration(e.target.value));}} disabled={busy}><option value={8}>{t('8 秒')}</option><option value={15}>{t('15 秒')}</option><option value={30}>{t('30 秒')}</option><option value={60}>{t('1 分钟')}</option><option value={120}>{t('2 分钟')}</option><option value={180}>{t('3 分钟')}</option><option value={300}>{t('5 分钟')}</option></select></label>
       <p className="vsTiming291">{t('片头、片尾各 2 秒，其余时间展示作品。')}</p>
       <p className="vsTiming291">{t(format.orientation==='landscape'?'横屏 16:9 · 自动适配横向作品':'竖屏 9:16 · 自动适配纵向作品')}</p>
-      <label className="vsField">{t('镜头转场')}<select value={transition} disabled={busy} onChange={e=>setTransition(e.target.value)}>{TRANSITIONS.map(mode=><option key={mode.id} value={mode.id}>{t(mode.label)}</option>)}</select></label>
+</div>}{panel301==='运镜'&&<div className="vsPanel301"><header><strong>{t('运镜')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('镜头转场')}<select value={transition} disabled={busy} onChange={e=>setTransition(e.target.value)}>{TRANSITIONS.map(mode=><option key={mode.id} value={mode.id}>{t(mode.label)}</option>)}</select></label>
       <p className="vsTiming291">{t('长片增加不同字与笔画的取景场景，按原始点位绘制。')}</p>
-      <label className="vsField">{t('背景音乐')}<select value={music} disabled={busy} onChange={e => {stopAudition(); setMusic(e.target.value);}}><option value="none">{t('无音乐')}</option>{customMusic295&&<option value="custom295">{customMusic295.name}</option>}{MUSIC_TRACKS.map(track => <option key={track.id} value={track.id}>{t(track.title)}</option>)}</select></label>
-      <label className="vsField">{t('导入本机音乐')}<input type="file" accept="audio/*,.m4a,.mp3,.wav,.ogg,.flac" disabled={busy} onChange={importMusic295}/></label>
+</div>}{panel301==='音乐'&&<div className="vsPanel301"><header><strong>{t('音乐')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('背景音乐')}<select value={music} disabled={busy} onChange={e => {stopAudition();if(musicTrack(e.target.value)?.requiresImport301){setStatus({key:'请选择这首曲目的本机音源'});document.getElementById('localMusic301').click();return}setMusic(e.target.value);}}><option value="none">{t('无音乐')}</option>{customMusic295&&<option value="custom295">{customMusic295.name}</option>}{MUSIC_TRACKS.map(track => <option key={track.id} value={track.id}>{t(track.title)}</option>)}</select></label>
+      <label className="vsField">{t('导入本机音乐')}<input type="file" id="localMusic301" accept="audio/*,.m4a,.mp3,.wav,.ogg,.flac" disabled={busy} onChange={importMusic295}/></label>
       {selectedTrack && <div className="vsMusic292"><button type="button" className="vsSecondary292" disabled={busy} onClick={auditionMusic}>{t(audition ? '停止试听' : '试听')}</button><small>{t('仅加载所选配乐，音轨约每分钟增加 240 KB。')}</small></div>}
-      <label className="vsField">{t('导出画质')}<select value={quality} onChange={e => setQuality(e.target.value)} disabled={busy || checking}><option value="compact">{t(format.orientation==='landscape'?'轻量 · 960 × 540':'轻量 · 540 × 960')}</option><option value="full">{t(format.orientation==='landscape'?'1080 高清 · 1920 × 1080':'1080 高清 · 1080 × 1920')}</option></select></label>
-      <button type="button" className="vsButton" disabled={!replay || busy || checking || stylePreparing297} onClick={exportVideo}>{t(busy ? '正在生成视频…' : '下载 MP4 视频')}</button>
-      {busy && <button type="button" className="vsButton" onClick={() => abortRef.current?.abort()}>{t('取消合成')}</button>}
-      <div className="vsStatus" role="status">{t(status.key).replace('{progress}', status.progress ?? '')}{status.detail ? t(status.detail) : ''}</div>
+</div>}{panel301==='画质'&&<div className="vsPanel301"><header><strong>{t('画质')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('导出画质')}<select value={quality} onChange={e => setQuality(e.target.value)} disabled={busy || checking}><option value="compact">{t(format.orientation==='landscape'?'轻量 · 960 × 540':'轻量 · 540 × 960')}</option><option value="full">{t(format.orientation==='landscape'?'1080 高清 · 1920 × 1080':'1080 高清 · 1080 × 1920')}</option></select></label>
+</div>}{panel301==='滤镜'&&<div className="vsPanel301"><header><strong>{t('滤镜')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header><div className="vsFilter301">{[['original','原片'],['veil','蒙板'],['noir','黑白'],['blur','虚化'],['hd','高清']].map(([id,label])=><button key={id} onClick={()=>{setSpot301(id==='noir'?'colorSpots':id==='blur'?'clearSpots235':id==='veil'?'lightSpots238':null);setEffects301(v=>id==='hd'?{...v,hd241:!v.hd241}:id==='veil'?{...v,veil235:.42}: {...v,style:id==='noir'?'noir':'original',blur:id==='blur'?12:0,colorSpots:[],clearSpots235:[]})}}>{t(label)}</button>)}<label>{t('滤镜程度')}<input type="range" min="0" max="100" value={spot301==='lightSpots238'?effects301.veil235*100:effects301.blur} onChange={e=>setEffects301(v=>({...v,[spot301==='lightSpots238'?'veil235':'blur']:+e.target.value/(spot301==='lightSpots238'?100:1)}))}/></label><p>{t('轻点预览添加局部亮区、彩色或清晰区域。')}</p></div></div>}      <div className="vsStatus" role="status">{t(status.key).replace('{progress}', status.progress ?? '')}{status.detail ? t(status.detail) : ''}</div>
       <details className="vsNote"><summary>{t('关于本机合成与配乐')}</summary><div>{t('无需上传图片。按保存的笔画顺序回放，不推测图片中的笔顺，也不修改原作品。仅有图片的旧作品需要先保存原笔迹；多页临帖使用当前保存页。云端原笔迹仅在点选该作品后读取。视频在当前设备生成。')}<p>{t('Remotion 会向其服务发送不含作品内容的使用统计，包括站点来源、网络地址及生成状态。')}</p><p>{t('手机和平板兼容性仍在验证中，建议先使用轻量画质。')}</p>{selectedTrack && <p translate="no">{selectedTrack.credit}</p>}<p><a href={selectedTrack?.directory?selectedTrack.directory+'/CREDITS.md':'video-music292/CREDITS.md'} target="_blank" rel="noreferrer">{t('配乐来源与许可')}</a></p></div></details>
     </section>
     {(pickerOpen || (initial.get('source290')==='cloud'&&initial.get('work290'))) && <section className="vsPicker290" hidden={!pickerOpen} role="dialog" aria-modal="true" aria-label={t('选择作品')}>

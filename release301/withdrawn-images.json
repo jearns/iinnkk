@@ -1,0 +1,4 @@
+{
+  "policy": "Manual images are preserved unchanged. Automatic images are replaced only when a verified higher-quality source is available. No low-resolution batch withdrawal is active.",
+  "withdrawnPaths": 0
+}

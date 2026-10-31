@@ -1,0 +1,5518 @@
+{
+  "version": 301,
+  "sourceNote": "确切史事、诞辰与国际纪念日按来源标示；“主题荐写”是编辑关联，不是遗产入选日或作品创作日。仅知年份的往事不编造月日。荐写短句注明作者，不冒充历史人物原话。世界遗产、世界记忆、非遗及国家级文献名录分别标示。节气使用北京时间实算表。",
+  "works": [
+    {
+      "id": "taishan",
+      "title": "泰山刻石",
+      "author": "传李斯",
+      "url": "https://www.dpm.org.cn/collection/impres/234107.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。",
+      "encyclopedia301": {
+        "title": "泰山刻石",
+        "label": "泰山刻石（秦代石刻）",
+        "url": "https://bkso.baidu.com/item/%E6%B3%B0%E5%B1%B1%E5%88%BB%E7%9F%B3/2820330?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "longcang",
+      "title": "龙藏寺碑",
+      "author": "书者佚名；撰者旧题张公礼",
+      "url": "https://www.dpm.org.cn/journal_detail/112103.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "龙藏寺碑",
+        "label": "龙藏寺碑",
+        "url": "https://www.zgbk.com/ecph/words?ID=550117&SiteID=1&SubID=205242&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "caoquan",
+      "title": "曹全碑",
+      "author": "书者佚名",
+      "url": "https://www.beilin-museum.com/index.php?a=index&aid=145&c=View&m=home",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "曹全碑",
+        "label": "曹全碑（东汉隶书碑刻）",
+        "url": "https://bkso.baidu.com/item/%E6%9B%B9%E5%85%A8%E7%A2%91/62962291?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "jiucheng",
+      "title": "九成宫醴泉铭",
+      "author": "欧阳询书；魏徵撰",
+      "url": "https://www.dpm.org.cn/collection/impres/234546.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "九成宫醴泉铭",
+        "label": "九成宫醴泉铭",
+        "url": "https://www.baike.com/wikiid/7166154239981846539",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "九成宫醴泉铭,唐代欧阳询的书法作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "luoshen13",
+      "title": "洛神赋十三行",
+      "author": "传王献之书；曹植文",
+      "url": "https://online.bunka.go.jp/heritages/detail/456484",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。",
+      "encyclopedia301": {
+        "title": "洛神赋十三行",
+        "label": "洛神赋十三行",
+        "url": "https://www.baike.com/wikiid/2789507547732558327",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "洛神赋十三行,东晋王献之的小楷书法代表作",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "lanting",
+      "title": "兰亭集序",
+      "author": "王羲之",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228277.html",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。",
+      "encyclopedia301": {
+        "title": "兰亭集序",
+        "label": "兰亭集序",
+        "url": "https://www.baike.com/wikiid/7237045937847189519",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "兰亭集序,东晋书法家王羲之的作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "zixu",
+      "title": "自叙帖",
+      "author": "怀素",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14890?dep=P",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。",
+      "encyclopedia301": {
+        "title": "自叙帖",
+        "label": "自叙帖",
+        "url": "https://www.baike.com/wikiid/7264881404662710335",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "自叙帖,唐代怀素创作的草书书法作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "shusu",
+      "title": "蜀素帖",
+      "author": "米芾",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/912?dep=P",
+      "isPerson": false,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。",
+      "encyclopedia301": {
+        "title": "蜀素帖",
+        "label": "蜀素帖",
+        "url": "https://www.baike.com/wikiid/7265595839627542562",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "蜀素帖,北宋米芾书法作品、“天下第八行书”",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "jizhi",
+      "title": "祭侄文稿",
+      "author": "颜真卿",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3?dep=P",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。",
+      "encyclopedia301": {
+        "title": "祭侄文稿",
+        "label": "祭侄文稿",
+        "url": "https://www.baike.com/wikiid/7218806996241006644",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "祭侄文稿,唐代书法家颜真卿的作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "hanshi",
+      "title": "黄州寒食帖",
+      "author": "苏轼",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/14714?dep=P&mode=full",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。",
+      "encyclopedia301": {
+        "title": "黄州寒食帖",
+        "label": "寒食帖",
+        "url": "https://www.baike.com/wikiid/7205811311510863883",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "寒食帖,苏轼撰诗并书的墨迹素笺本",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "boyuan",
+      "title": "伯远帖",
+      "author": "王珣",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228199.html",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。",
+      "encyclopedia301": {
+        "title": "伯远帖",
+        "label": "伯远帖",
+        "url": "https://www.baike.com/wikiid/2881573534556213471",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "伯远帖,东晋王珣创作的行书书法作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "zhanghan",
+      "title": "张翰思鲈帖",
+      "author": "传欧阳询",
+      "url": "https://www.dpm.org.cn/collection/handwriting/234567.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "张翰思鲈帖",
+        "label": "张翰帖",
+        "url": "https://www.baike.com/wikiid/7715380762822830093",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "张翰帖,唐代欧阳询创作的纸本行书作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "jiuhua",
+      "title": "韭花帖",
+      "author": "杨凝式",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/22623?dep=P",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "韭花帖",
+        "label": "韭花帖",
+        "url": "https://www.baike.com/wikiid/606311241788293304",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "韭花帖,唐末杨凝式创作的作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "mengzhao",
+      "title": "蒙诏帖",
+      "author": "旧题柳公权；故宫判为宋人仿本",
+      "url": "https://www.dpm.org.cn/collection/handwriting/231095.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "蒙诏帖",
+        "label": "蒙诏帖",
+        "url": "https://wapbaike.baidu.com/item/%E8%92%99%E8%AF%8F%E5%B8%96/8370535?fromModule=tashuo-article_bottom-lemma",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "songfeng",
+      "title": "松风阁诗帖",
+      "author": "黄庭坚",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/43?dep=P",
+      "isPerson": false,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。",
+      "encyclopedia301": {
+        "title": "松风阁诗帖",
+        "label": "自书松风阁诗卷",
+        "url": "https://www.baike.com/wikiid/8499115645532462377",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回完整条目简介，明确黄庭坚1102年卷、台北故宫藏",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "tumu",
+      "title": "土母帖",
+      "author": "李建中",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/22635?dep=P",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "土母帖",
+        "label": "李建中",
+        "url": "https://www.baike.com/wikiid/2870243261680206802",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": "已打开作者条目，正文列出《土母帖》；未核实到作品独立条目",
+        "verifiedAt": "2026-10-31"
+      }
+    },
+    {
+      "id": "zhongqiu",
+      "title": "中秋帖",
+      "author": "传王献之（宋临本）",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228204.html",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。",
+      "encyclopedia301": {
+        "title": "中秋帖",
+        "label": "中秋帖",
+        "url": "https://www.baike.com/wikiid/887161870007944866",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "中秋帖,行草纸本书法作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "mengdian",
+      "title": "仲尼梦奠帖",
+      "author": "欧阳询",
+      "url": "https://epaper.lnd.com.cn/lnrbepaper/pc/con/201911/04/content_50238.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "仲尼梦奠帖",
+        "label": "梦奠帖",
+        "url": "https://www.baike.com/wikiid/7239565328207380519",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息",
+        "descriptionSignal": "梦奠帖,唐代欧阳询书法作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "caoshuqianzi",
+      "title": "草书千字文",
+      "author": "赵佶书；周兴嗣文",
+      "url": "https://zhuanti.mct.gov.cn/lnsbwg2022.html",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。",
+      "encyclopedia301": {
+        "title": "草书千字文",
+        "label": "草书千字文",
+        "url": "https://www.baike.com/wikiid/7234086138804781068",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "草书千字文,北宋宋徽宗赵佶书写的狂草作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "chibi",
+      "title": "前后赤壁赋",
+      "author": "赵孟頫书；苏轼文",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/373?dep=P",
+      "isPerson": false,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。",
+      "encyclopedia301": {
+        "title": "前后赤壁赋",
+        "label": "元赵孟頫前后赤壁赋",
+        "url": "https://www.baike.com/wikiid/3506969429149715867",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "zhupoems",
+      "title": "草书诗帖",
+      "author": "祝允明书；曹植诗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/2517?dep=P",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。",
+      "encyclopedia301": {
+        "title": "草书诗帖",
+        "label": "草书诗帖",
+        "url": "https://www.baike.com/wikiid/1371777566279050871",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "草书诗帖,明代祝允明创作的作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "shigu",
+      "title": "石鼓文",
+      "author": "佚名",
+      "url": "https://www.dpm.org.cn/collection/impres/234438.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。",
+      "encyclopedia301": {
+        "title": "石鼓文",
+        "label": "石鼓文",
+        "url": "https://www.zgbk.com/ecph/words?ID=759914&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "yishan",
+      "title": "峄山碑",
+      "author": "传李斯",
+      "url": "https://www.beilin-museum.com/",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。",
+      "encyclopedia301": {
+        "title": "峄山碑",
+        "label": "峄山刻石",
+        "url": "https://www.baike.com/wikiid/5893640894273981017",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "网页条目标题和简介已核对",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "langya",
+      "title": "琅琊台刻石",
+      "author": "传李斯",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202010/t20201028_247940.shtml",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。",
+      "encyclopedia301": {
+        "title": "琅琊台刻石",
+        "label": "琅琊刻石",
+        "url": "https://bkso.baidu.com/item/%E7%90%85%E7%90%8A%E5%88%BB%E7%9F%B3/7872969?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "kuaiji",
+      "title": "会稽刻石",
+      "author": "传李斯",
+      "url": "https://kmbl.hzwbzx.cn/stele/view?id=85",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。",
+      "encyclopedia301": {
+        "title": "会稽刻石",
+        "label": "会稽刻石",
+        "url": "https://bkso.baidu.com/item/%E4%BC%9A%E7%A8%BD%E5%88%BB%E7%9F%B3/3680412?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "yuanan",
+      "title": "袁安碑",
+      "author": "书者佚名",
+      "url": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/dzjp/mzyp/articlec484963b76bb4ed7be38b0295575efc0.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。",
+      "encyclopedia301": {
+        "title": "袁安碑",
+        "label": "袁安碑",
+        "url": "https://www.zgbk.com/ecph/words?ID=406572&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "yuanchang",
+      "title": "袁敞碑",
+      "author": "书者佚名",
+      "url": "https://www.chnmus.net/ch/collection/appraise/details.html?id=512155561935985314",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。",
+      "encyclopedia301": {
+        "title": "袁敞碑",
+        "label": "袁敞碑",
+        "url": "https://bkso.baidu.com/item/%E8%A2%81%E6%95%9E%E7%A2%91/0?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网页条目标题和简介已核对",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "tianfa",
+      "title": "天发神谶碑",
+      "author": "书者归属有争议",
+      "url": "https://www.dpm.org.cn/collection/impres/234552.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。",
+      "encyclopedia301": {
+        "title": "天发神谶碑",
+        "label": "吴天玺纪功碑",
+        "url": "https://bkso.baidu.com/item/%E5%90%B4%E5%A4%A9%E7%8E%BA%E7%BA%AA%E5%8A%9F%E7%A2%91/3784870",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "从皇象词条进入天发神谶碑，实际跳转吴天玺纪功碑，正文明确两名指同一碑",
+        "verifiedAt": "2026-10-31"
+      }
+    },
+    {
+      "id": "biluo",
+      "title": "碧落碑",
+      "author": "作者归属有争议",
+      "url": "http://kanji.zinbun.kyoto-u.ac.jp/db-machine/imgsrv/takuhon/type_a/html/tou0494x.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。",
+      "encyclopedia301": {
+        "title": "碧落碑",
+        "label": "新绛县博物馆",
+        "url": "https://bkso.baidu.com/item/%E6%96%B0%E7%BB%9B%E5%8E%BF%E5%8D%9A%E7%89%A9%E9%A6%86/2329947",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": "已打开馆藏机构条目并核实碧落碑藏品介绍；其作品内链未能读取，使用相关馆藏机构条目",
+        "verifiedAt": "2026-10-31"
+      }
+    },
+    {
+      "id": "sanfen",
+      "title": "三坟记",
+      "author": "李阳冰",
+      "url": "https://beilin-museum.com/INDEX.PHP?a=index&aid=2611&c=View&m=home",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。",
+      "encyclopedia301": {
+        "title": "三坟记",
+        "label": "三坟记",
+        "url": "https://bkso.baidu.com/item/%E4%B8%89%E5%9D%9F%E8%AE%B0/8486479?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "liqi",
+      "title": "礼器碑",
+      "author": "书者佚名",
+      "url": "https://www.dpm.org.cn/collection/impres/234635.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "礼器碑",
+        "label": "礼器碑（东汉碑刻）",
+        "url": "https://bkso.baidu.com/item/%E7%A4%BC%E5%99%A8%E7%A2%91/5791902?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "yiying",
+      "title": "乙瑛碑",
+      "author": "书者佚名",
+      "url": "https://www.dpm.org.cn/collection/impres/228529.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "乙瑛碑",
+        "label": "《乙瑛碑》",
+        "url": "https://www.zgbk.com/ecph/words?ID=52253&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "shichen",
+      "title": "史晨碑",
+      "author": "书者佚名",
+      "url": "https://www.dpm.org.cn/collection/impres/228527.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "史晨碑",
+        "label": "史晨碑",
+        "url": "https://www.baike.com/wikiid/5302226356616770109",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "史晨碑,东汉建宁碑刻",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "zhangqian",
+      "title": "张迁碑",
+      "author": "书者佚名",
+      "url": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/6be0a531-a57e-4d99-109e-3cb2dff175aa",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "张迁碑",
+        "label": "张迁碑",
+        "url": "https://www.baike.com/wikiid/7269969715882901565",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "张迁碑,东汉时期佚名隶书",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "shimen",
+      "title": "石门颂",
+      "author": "王升撰；书者佚名",
+      "url": "https://www.dpm.org.cn/collection/impres/234191.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "石门颂",
+        "label": "石门颂",
+        "url": "https://www.baike.com/wikiid/2758724730360020400",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "石门颂,东汉隶书摩崖石刻",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "huashan",
+      "title": "西岳华山庙碑",
+      "author": "书者佚名",
+      "url": "https://www.dpm.org.cn/collection/impres/234706.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "西岳华山庙碑",
+        "label": "西岳华山庙碑（东汉延熹八年（公元165年）所立碑刻）",
+        "url": "https://bkso.baidu.com/item/%E8%A5%BF%E5%B2%B3%E5%8D%8E%E5%B1%B1%E5%BA%99%E7%A2%91/8102725?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "xixia",
+      "title": "西狭颂",
+      "author": "仇靖撰并书",
+      "url": "https://www.cdmuseum.com/xinwen/202402/3485.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "西狭颂",
+        "label": "西狭颂",
+        "url": "https://www.baike.com/wikiid/7502080265885862835",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "西狭颂,仇靖创作隶书书法作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "hengfang",
+      "title": "衡方碑",
+      "author": "书者佚名",
+      "url": "https://www.dpm.org.cn/collection/impres/228606.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "衡方碑",
+        "label": "衡方碑",
+        "url": "https://www.baike.com/wikiid/8321886279196814321",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "衡方碑,东汉灵帝建宁元年所刻的书法碑",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "xianyuhuang",
+      "title": "鲜于璜碑",
+      "author": "书者佚名",
+      "url": "https://tjculture.museum.chaoxing.com/302/304/9696.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "鲜于璜碑",
+        "label": "鲜于璜碑",
+        "url": "https://www.baike.com/wikiid/5308100680465518861",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "鲜于璜碑,天津市武清区出土的汉代碑刻",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "xuanshi",
+      "title": "宣示表",
+      "author": "传钟繇",
+      "url": "https://www.dpm.org.cn/",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "宣示表",
+        "label": "宣示表",
+        "url": "https://wapbaike.baidu.com/item/%E5%AE%A3%E7%A4%BA%E8%A1%A8/9938021?fromModule=tashuo-article_bottom-lemma",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网页条目标题和简介已核对",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "huangting",
+      "title": "黄庭经",
+      "author": "传王羲之",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1949?dep=P",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。",
+      "encyclopedia301": {
+        "title": "黄庭经",
+        "label": "黄庭经（道教养生修仙专著）",
+        "url": "https://bkso.baidu.com/item/%E9%BB%84%E5%BA%AD%E7%BB%8F/6240400?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "leyi",
+      "title": "乐毅论",
+      "author": "传王羲之",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/21574?dep=P",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。",
+      "encyclopedia301": {
+        "title": "乐毅论",
+        "label": "乐毅论",
+        "url": "https://www.baike.com/wikiid/3374454192292108748",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "乐毅论,王羲之书法作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "nikuan",
+      "title": "倪宽赞",
+      "author": "传褚遂良",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14846?dep=P",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "倪宽赞",
+        "label": "倪宽赞",
+        "url": "https://bkso.baidu.com/item/%E5%80%AA%E5%AE%BD%E8%B5%9E/11042962?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "yanta",
+      "title": "雁塔圣教序",
+      "author": "褚遂良书；李世民、李治撰",
+      "url": "https://www.dpm.org.cn/collection/impres/234134.html",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。",
+      "encyclopedia301": {
+        "title": "雁塔圣教序",
+        "label": "《雁塔圣教序》",
+        "url": "https://www.zgbk.com/ecph/words?ID=52316&SiteID=1&SubID=61002&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "duobao",
+      "title": "多宝塔碑",
+      "author": "颜真卿书；岑勋撰",
+      "url": "https://www.dpm.org.cn/collection/impres/261924.html",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。",
+      "encyclopedia301": {
+        "title": "多宝塔碑",
+        "label": "多宝塔碑（唐代颜真卿创作书法作品）",
+        "url": "https://bkso.baidu.com/item/%E5%A4%9A%E5%AE%9D%E5%A1%94%E7%A2%91/5607244",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "yanqinli",
+      "title": "颜勤礼碑",
+      "author": "颜真卿",
+      "url": "https://www.dpm.org.cn/collection/impres/234175.html",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。",
+      "encyclopedia301": {
+        "title": "颜勤礼碑",
+        "label": "颜勤礼碑",
+        "url": "https://www.baike.com/wikiid/6823655394236180626",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "颜勤礼碑,唐代颜真卿撰文并书写的神道碑",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "xuanmi",
+      "title": "玄秘塔碑",
+      "author": "柳公权书；裴休撰",
+      "url": "https://www.dpm.org.cn/collection/impres/261926.html",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。",
+      "encyclopedia301": {
+        "title": "玄秘塔碑",
+        "label": "玄秘塔碑（唐代柳公权创作书法作品）",
+        "url": "https://bkso.baidu.com/item/%E7%8E%84%E7%A7%98%E5%A1%94%E7%A2%91/766770",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "shupu",
+      "title": "书谱",
+      "author": "孙过庭",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14900?dep=P",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "书谱",
+        "label": "《书谱》",
+        "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E4%B9%A6%E8%B0%B1%E3%80%8B&SiteID=1&SourceID=52384&Type=bkzyb&subSourceType=000003000013000004",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "gushi",
+      "title": "古诗四帖",
+      "author": "传张旭",
+      "url": "https://zhuanti.mct.gov.cn/lnsbwg2022.html",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。",
+      "encyclopedia301": {
+        "title": "古诗四帖",
+        "label": "古诗四帖",
+        "url": "https://www.baike.com/wikiid/568374178561649744",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "古诗四帖,唐代书法家张旭代表作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "pingfu",
+      "title": "平复帖",
+      "author": "陆机",
+      "url": "https://www.dpm.org.cn/collection/handwriting/234553.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "平复帖",
+        "label": "平复帖",
+        "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%A4%8D%E5%B8%96/2146947?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "shiqi",
+      "title": "十七帖",
+      "author": "王羲之",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1986?dep=P",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。",
+      "encyclopedia301": {
+        "title": "十七帖",
+        "label": "十七帖",
+        "url": "https://www.baike.com/wikiid/7171013034918395912",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "十七帖,王羲之重要的草书代表作之一",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "guanjun",
+      "title": "冠军帖",
+      "author": "传张芝",
+      "url": "https://www.dpm.org.cn/",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。",
+      "encyclopedia301": {
+        "title": "冠军帖",
+        "label": "冠军帖",
+        "url": "https://bkso.baidu.com/item/%E5%86%A0%E5%86%9B%E5%B8%96/9578917?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "zhushang",
+      "title": "诸上座帖",
+      "author": "黄庭坚",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228218.html",
+      "isPerson": false,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。",
+      "encyclopedia301": {
+        "title": "诸上座帖",
+        "label": "诸上座",
+        "url": "https://www.baike.com/wikiid/7239567495035142181",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息",
+        "descriptionSignal": "诸上座,宋代书法家黄庭坚的草书代表作之一",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "fuge",
+      "title": "郙阁颂",
+      "author": "仇靖撰；仇绋书",
+      "url": "https://www.dpm.org.cn/collection/impres/231823.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "郙阁颂",
+        "label": "郙阁颂",
+        "url": "https://www.baike.com/wikiid/8376265384829168502",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "郙阁颂,一方摩崖石刻",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "zhengwengong",
+      "title": "郑文公下碑",
+      "author": "郑道昭",
+      "url": "https://www.chinanews.com.cn/gn/2024/01-18/10148676.shtml",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "郑文公下碑",
+        "label": "郑文公碑",
+        "url": "https://www.baike.com/wikiid/1368860765563557191",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "郑文公碑,北魏光州刺史郑道昭所立碑刻",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "yihe",
+      "title": "瘗鹤铭",
+      "author": "署华阳真逸；传陶弘景等说",
+      "url": "https://www.dpm.org.cn/collection/impres/234548.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "瘗鹤铭",
+        "label": "瘗鹤铭",
+        "url": "https://www.baike.com/wikiid/6610215489071873026",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "瘗鹤铭,南朝时期陶弘景创作的书法作品",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "jingshiyu",
+      "title": "经石峪金刚经",
+      "author": "书者佚名",
+      "url": "https://tsgw.taian.gov.cn/art/2021/6/16/art_162237_10286435.html",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。",
+      "encyclopedia301": {
+        "title": "经石峪金刚经",
+        "label": "泰山金刚经",
+        "url": "https://www.baike.com/wikiid/4297149561839363724",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "网页条目标题和简介已核对",
+        "verifiedAt": "2026-10-30"
+      }
+    },
+    {
+      "id": "sishan",
+      "title": "四山摩崖刻经",
+      "author": "安道壹等，逐山逐刻核验",
+      "url": "https://whlyj.jining.gov.cn/art/2025/6/12/art_70690_2706024.html",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。",
+      "encyclopedia301": {
+        "title": "四山摩崖刻经",
+        "label": "摩崖",
+        "url": "https://bkso.baidu.com/item/%E6%91%A9%E5%B4%96/6120237",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": "搜索核实文化术语条目，正文明确提及山东四山摩崖北周佛经；未找到已核实独立条目",
+        "verifiedAt": "2026-10-31"
+      }
+    },
+    {
+      "id": "zhongxing",
+      "title": "大唐中兴颂",
+      "author": "颜真卿书；元结撰",
+      "url": "https://www.dpm.org.cn/collection/impres/228473.html",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。",
+      "encyclopedia301": {
+        "title": "大唐中兴颂",
+        "label": "大唐中兴颂",
+        "url": "https://www.baike.com/wikiid/292857875054594688",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn61search0",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "shimenming",
+      "title": "石门铭",
+      "author": "王远撰书；武阿仁刻",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/15187?dep=P",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "石门铭",
+        "label": "石门铭",
+        "url": "https://wapbaike.baidu.com/item/%E7%9F%B3%E9%97%A8%E9%93%AD/9937775",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn63search0",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "jitaishan",
+      "title": "纪泰山铭",
+      "author": "唐玄宗李隆基",
+      "url": "https://tsgw.taian.gov.cn/art/2021/6/16/art_162237_10286435.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "纪泰山铭",
+        "label": "纪泰山铭",
+        "url": "https://bkso.baidu.com/item/%E7%BA%AA%E6%B3%B0%E5%B1%B1%E9%93%AD/5248009",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn63search1",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "shengjiao",
+      "title": "集王圣教序",
+      "author": "怀仁集王羲之字",
+      "url": "https://www.dpm.org.cn/collection/impres/228597.html",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。",
+      "encyclopedia301": {
+        "title": "集王圣教序",
+        "label": "集王圣教序",
+        "url": "https://bkso.baidu.com/item/%E9%9B%86%E7%8E%8B%E5%9C%A3%E6%95%99%E5%BA%8F/61489707",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn63search2",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "xiping",
+      "title": "熹平石经",
+      "author": "蔡邕等奉诏",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202008/t20200824_247256.shtml",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。",
+      "encyclopedia301": {
+        "title": "熹平石经",
+        "label": "熹平石经",
+        "url": "https://www.zgbk.com/ecph/words?ID=406856&SiteID=1&SubID=205242&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn63search4",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "zhengshi",
+      "title": "正始石经",
+      "author": "曹魏官定；书者待考",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33105.shtml",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。",
+      "encyclopedia301": {
+        "title": "三体石经（正始石经）",
+        "label": "三体石经（正始石经）",
+        "url": "https://www.baike.com/wikiid/8127465928708748561",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn67search19",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "正始石经"
+      }
+    },
+    {
+      "id": "kaicheng",
+      "title": "开成石经",
+      "author": "艾居晦、陈玠等奉敕刊刻",
+      "url": "https://www.beilin-museum.com/index.php?m=home&c=View&a=index&aid=280",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。",
+      "encyclopedia301": {
+        "title": "开成石经",
+        "label": "开成石经",
+        "url": "https://bkso.baidu.com/item/%E5%BC%80%E6%88%90%E7%9F%B3%E7%BB%8F/0",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn67search0",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "dizhu",
+      "title": "砥柱铭",
+      "author": "黄庭坚",
+      "url": "https://jw.beijing.gov.cn/language/ywsh/201606/t20160623_1056379.html",
+      "isPerson": false,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。",
+      "encyclopedia301": {
+        "title": "砥柱铭",
+        "label": "砥柱铭",
+        "url": "https://bkso.baidu.com/item/%E7%A0%A5%E6%9F%B1%E9%93%AD/10487439",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn67search22",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "shamenghai-bangshu",
+      "title": "榜书选赏",
+      "author": "沙孟海",
+      "url": "https://news.cnnb.com.cn/system/2011/04/22/006912192.shtml",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "沙孟海",
+        "label": "沙孟海",
+        "url": "https://www.baike.com/wikiid/7277601295829467147",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "article_html_og_title",
+          "url": "https://www.baike.com/wikiid/7277601295829467147",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    },
+    {
+      "id": "wuchangshuo-shigu",
+      "title": "临石鼓文",
+      "author": "吴昌硕",
+      "url": "https://www.shenzhenmuseum.com/webCollection/collectionDetail?exId=bf7b7740f34c4fcdaa7d46fbc3167d2e&resId=1e8bbc06013449d4b2e5b4841c728b66",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "岁序转换时溯源古文字，观察篆籀结构的延续。",
+      "encyclopedia301": {
+        "title": "吴昌硕",
+        "label": "吴昌硕",
+        "url": "https://www.baike.com/wikiid/7251744333568180285",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn69search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "临石鼓文"
+      }
+    },
+    {
+      "id": "wuhou",
+      "title": "蜀丞相诸葛武侯祠堂碑",
+      "author": "裴度撰；柳公绰书；鲁建刻",
+      "url": "https://cd.wenming.cn/lsmc/201806/t20180605_5250045.shtml",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "蜀丞相诸葛武侯祠堂碑",
+        "label": "蜀丞相诸葛武侯祠堂碑",
+        "url": "https://www.baike.com/wikiid/2775137578744231",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn69search0",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "lizi",
+      "title": "苏轼荔子碑",
+      "author": "韩愈诗；苏轼书",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/202109mhzxs/",
+      "isPerson": false,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。",
+      "encyclopedia301": {
+        "title": "荔子碑",
+        "label": "荔子碑",
+        "url": "https://bkso.baidu.com/item/%E8%8D%94%E5%AD%90%E7%A2%91/10846310",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn69search26",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "苏轼荔子碑"
+      }
+    },
+    {
+      "id": "baozhi",
+      "title": "宝志公像赞诗碑",
+      "author": "传李白诗；吴道子画；颜真卿书",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+      "isPerson": false,
+      "term": "清明",
+      "reason": "以追思与家国记忆，体会书迹中的情感与担当。",
+      "encyclopedia301": {
+        "title": "宝志禅师",
+        "label": "宝志禅师",
+        "url": "https://www.baike.com/wikiid/8498096015577952946",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn74search24",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "宝志公像赞诗碑"
+      }
+    },
+    {
+      "id": "suxian",
+      "title": "苏仙岭三绝碑",
+      "author": "秦观词；米芾书；苏轼跋",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+      "isPerson": false,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。",
+      "encyclopedia301": {
+        "title": "三绝碑（苏仙岭）",
+        "label": "三绝碑（苏仙岭）",
+        "url": "https://www.baike.com/wikiid/8415061275056657290",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn74search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "苏仙岭三绝碑"
+      }
+    },
+    {
+      "id": "zuiweng",
+      "title": "苏轼书醉翁亭记碑",
+      "author": "欧阳修文；苏轼书",
+      "url": "https://shilun.xafa.edu.cn/info/1036/6708.htm",
+      "isPerson": false,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。",
+      "encyclopedia301": {
+        "title": "醉翁亭记碑",
+        "label": "醉翁亭记碑",
+        "url": "https://www.baike.com/wikiid/7426107752939312611",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn74search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "苏轼书醉翁亭记碑"
+      }
+    },
+    {
+      "id": "lisheng",
+      "title": "李晟墓碑",
+      "author": "裴度撰；柳公权书",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "李晟碑",
+        "label": "李晟碑",
+        "url": "https://bkso.baidu.com/item/%E6%9D%8E%E6%99%9F%E7%A2%91/1123785",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn74search17",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "李晟墓碑"
+      }
+    },
+    {
+      "id": "chenghuang",
+      "title": "新修城隍庙碑",
+      "author": "郑板桥撰并书；司徒文膏刻",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "城隍庙碑",
+        "label": "城隍庙碑",
+        "url": "https://bkso.baidu.com/item/%E5%9F%8E%E9%9A%8D%E5%BA%99%E7%A2%91/14442104",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn78search29",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "新修城隍庙碑"
+      }
+    },
+    {
+      "id": "wanan",
+      "title": "万安桥记大字碑",
+      "author": "蔡襄撰并书",
+      "url": "https://www.sfrx.cn/html/2018/yshy_0730/10160.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "洛阳桥",
+        "label": "洛阳桥",
+        "url": "https://bkso.baidu.com/item/%E6%B4%9B%E9%98%B3%E6%A1%A5/3550436",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn113search9",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "万安桥记大字碑"
+      }
+    },
+    {
+      "id": "shouchan",
+      "title": "上尊号与受禅碑",
+      "author": "传王朗文；梁鹄书；钟繇刻",
+      "url": "https://www.dpm.org.cn/collection/impres/231867.html",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "三绝碑（上尊号与受禅碑）",
+        "label": "三绝碑（上尊号与受禅碑）",
+        "url": "https://www.baike.com/wikiid/7960363879797370192",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn78search10",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "上尊号与受禅碑"
+      }
+    },
+    {
+      "id": "auction-pingan",
+      "title": "平安帖（拍卖本）",
+      "author": "传王羲之",
+      "url": "https://amma.artron.net/observation_shownews.php?newid=1114816",
+      "isPerson": false,
+      "term": "立春",
+      "reason": "循春日雅集与晋人尺牍，读自然流动的笔意。",
+      "encyclopedia301": {
+        "title": "平安帖",
+        "label": "平安帖",
+        "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%B8%96/25252",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn78search24",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "平安帖（拍卖本）"
+      }
+    },
+    {
+      "id": "guoyouzhi",
+      "title": "致郭右之二帖卷",
+      "author": "赵孟頫",
+      "url": "https://www.chinanews.com/cul/2019/11-20/9012462.shtml",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。",
+      "encyclopedia301": {
+        "title": "赵孟頫",
+        "label": "赵孟頫",
+        "url": "https://www.baike.com/wikiid/7166510562602582068",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn82search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "致郭右之二帖卷"
+      }
+    },
+    {
+      "id": "rao-hanliu",
+      "title": "草书韩愈柳宗元文",
+      "author": "饶介",
+      "url": "https://www.sothebys.com/en/buy/auction/2025/fine-classical-chinese-paintings/rao-jie-cao-shu-han-yu-liu-zong-yuan-wen-rao-jie",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。",
+      "encyclopedia301": {
+        "title": "饶 介",
+        "label": "饶 介",
+        "url": "https://bkso.baidu.com/item/%E9%A5%B6%20%E4%BB%8B/7172649",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn113search4",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "草书韩愈柳宗元文"
+      }
+    },
+    {
+      "id": "jushi",
+      "title": "局事帖",
+      "author": "曾巩",
+      "url": "https://collection.sina.com.cn/zgsh/20091124/12257008300.shtml",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "局事帖",
+        "label": "局事帖",
+        "url": "https://bkso.baidu.com/item/%E5%B1%80%E4%BA%8B%E5%B8%96/5761624",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn82search8",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "zhao-xinjing",
+      "title": "般若波罗蜜多心经",
+      "author": "赵孟頫",
+      "url": "https://collection.sina.cn/auction/2017-12-12/detail-ifyppemf6456208.d.html?vt=4",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。",
+      "encyclopedia301": {
+        "title": "般若波罗蜜多心经（赵孟頫）",
+        "label": "般若波罗蜜多心经（赵孟頫）",
+        "url": "https://www.baike.com/wikiid/4448353435201950778",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn82search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "般若波罗蜜多心经"
+      }
+    },
+    {
+      "id": "zhao-huangting",
+      "title": "临黄庭经（保利本）",
+      "author": "赵孟頫",
+      "url": "https://amma.artron.net/observation_shownews.php?newid=1123015",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。",
+      "encyclopedia301": {
+        "title": "临黄庭经",
+        "label": "临黄庭经",
+        "url": "https://www.baike.com/wikiid/7417268205297434634",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn89search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "临黄庭经（保利本）"
+      }
+    },
+    {
+      "id": "gongfu",
+      "title": "功甫帖（拍卖本）",
+      "author": "传苏轼",
+      "url": "https://www.sudongpo.org/gong-fu-tie/",
+      "isPerson": false,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。",
+      "encyclopedia301": {
+        "title": "苏轼",
+        "label": "苏轼",
+        "url": "https://www.baike.com/wikiid/2840507407652825840",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn69search32",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "功甫帖（拍卖本）"
+      }
+    },
+    {
+      "id": "songke-zhuangyou",
+      "title": "草书杜子美壮游诗卷",
+      "author": "宋克",
+      "url": "https://collection.sina.com.cn/zgsh/20091123/16397003637.shtml",
+      "isPerson": false,
+      "term": "大暑",
+      "reason": "从夏日的舒展，体会草书线条的速度与节奏。",
+      "encyclopedia301": {
+        "title": "宋克",
+        "label": "宋克",
+        "url": "https://bkso.baidu.com/item/%E5%AE%8B%E5%85%8B/4221501",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn113search11",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "草书杜子美壮游诗卷"
+      }
+    },
+    {
+      "id": "dong-longshen",
+      "title": "龙神感应记",
+      "author": "董其昌",
+      "url": "https://app.6z6z.com/class/2023-04-14/18374.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "董其昌",
+        "label": "董其昌",
+        "url": "https://www.zgbk.com/ecph/words?Name=%E8%91%A3%E5%85%B6%E6%98%8C&SiteID=1&SourceID=110077&Type=bkzyb&subSourceType=000003000013000004",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn111search15",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "龙神感应记"
+      }
+    },
+    {
+      "id": "oracle",
+      "title": "殷墟甲骨",
+      "author": "书者佚名",
+      "url": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "殷墟甲骨"
+      }
+    },
+    {
+      "id": "juyan",
+      "title": "居延汉简",
+      "author": "书者佚名",
+      "url": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "以耕作时节的沉实节奏，读汉隶与简牍的质朴。",
+      "encyclopedia301": {
+        "title": "居延汉简",
+        "label": "居延汉简",
+        "url": "https://www.baike.com/wikiid/1062948867994668044",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn93search1",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "dunhuang",
+      "title": "敦煌遗书",
+      "author": "书者佚名",
+      "url": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "敦煌遗书",
+        "label": "敦煌遗书",
+        "url": "https://www.baike.com/wikiid/2991392701994393781",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn93search0",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "mingqing",
+      "title": "明清档案",
+      "author": "书者佚名",
+      "url": "https://www.nlc.cn/nmcb/ztzl/2023sdfxz/",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "明清档案",
+        "label": "明清档案",
+        "url": "https://www.zgbk.com/ecph/words?ID=728210&SiteID=1&SubID=242104",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn93search25",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "zhaocheng275",
+      "title": "赵城金藏",
+      "author": "金代刻工",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00159297",
+      "isPerson": false,
+      "term": "立夏",
+      "reason": "夏日静读经卷与小楷，观察字形的秩序与空间。",
+      "encyclopedia301": {
+        "title": "赵城金藏",
+        "label": "赵城金藏",
+        "url": "https://bkso.baidu.com/item/%E8%B5%B5%E5%9F%8E%E9%87%91%E8%97%8F/8959606",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn98search20",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "yongle275",
+      "title": "永乐大典",
+      "author": "明代纂修诸臣",
+      "url": "https://www.nlc.cn/nmcb/jpww/zhhp_ljcg/",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "《永乐大典》",
+        "label": "《永乐大典》",
+        "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E6%B0%B8%E4%B9%90%E5%A4%A7%E5%85%B8%E3%80%8B&SiteID=1&SourceID=105132&Type=bkzyb&subSourceType=000003000012000001",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn124search22",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "永乐大典"
+      }
+    },
+    {
+      "id": "wenjinge275",
+      "title": "文津阁《四库全书》",
+      "author": "清代纂修与誊录诸臣",
+      "url": "https://www.nlc.cn/pcab/gjbhzs/sc/20170814_154335.shtml",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "四库全书",
+        "label": "四库全书",
+        "url": "https://www.baike.com/wikiid/7176095215131508791",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn98search2",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "文津阁《四库全书》"
+      }
+    },
+    {
+      "id": "oracle-sacrifice298",
+      "title": "祭祀牛胛骨刻辞《甲》3333＋3361",
+      "author": "书者佚名",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "以可定位的缀合编号，将商代祭祀记录与真实契刻布局对应起来。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "祭祀牛胛骨刻辞《甲》3333＋3361"
+      }
+    },
+    {
+      "id": "oracle-tufang298",
+      "title": "土方征涂朱卜骨刻辞《合集》6057",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zp/zpml/201812/t20181218_26025.shtml",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "土方征涂朱卜骨刻辞《合集》6057"
+      }
+    },
+    {
+      "id": "oracle-ban298",
+      "title": "般无咎全甲刻辞《合集》4264",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250929.shtml",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "般无咎全甲刻辞《合集》4264"
+      }
+    },
+    {
+      "id": "oracle-qiang298",
+      "title": "小臣墙记事刻辞《合集》36481",
+      "author": "书者佚名",
+      "url": "https://www.dpm.org.cn/impress/talk/248912.html",
+      "isPerson": false,
+      "term": "春分",
+      "reason": "在昼夜均分之时，观察这件作品的结体、章法与传承。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "小臣墙记事刻辞《合集》36481"
+      }
+    },
+    {
+      "id": "oracle-zaifeng298",
+      "title": "宰丰骨匕《合补》11299",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250927.shtml",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "宰丰骨匕《合补》11299"
+      }
+    },
+    {
+      "id": "oracle-farming298",
+      "title": "众人协田卜骨刻辞《合集》1",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202107/t20210728_250885.shtml",
+      "isPerson": false,
+      "term": "芒种",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "众人协田卜骨刻辞《合集》1"
+      }
+    },
+    {
+      "id": "oracle-zhou298",
+      "title": "先书后刻龟甲《乙》5867＋8202",
+      "author": "书者佚名",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "罕见的先书后刻痕迹，为追溯毛笔与甲骨契刻的关系提供实物线索。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "先书后刻龟甲《乙》5867＋8202"
+      }
+    },
+    {
+      "id": "oracle-fuhao298",
+      "title": "妇好分娩卜辞《丙》247",
+      "author": "书者佚名",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "妇好分娩卜辞《丙》247"
+      }
+    },
+    {
+      "id": "oracle-brush298",
+      "title": "带朱书龟甲卜辞《乙》0778",
+      "author": "书者佚名",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+      "isPerson": false,
+      "term": "雨水",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "带朱书龟甲卜辞《乙》0778"
+      }
+    },
+    {
+      "id": "oracle-harvest298",
+      "title": "填朱卜辞龟腹甲《乙》0867",
+      "author": "书者佚名",
+      "url": "https://museum.sinica.edu.tw/exhibitions/21/",
+      "isPerson": false,
+      "term": "谷雨",
+      "reason": "循农事与天时，观察早期汉字如何记录人与自然。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "填朱卜辞龟腹甲《乙》0867"
+      }
+    },
+    {
+      "id": "collector-mi",
+      "title": "米芾",
+      "author": "米芾",
+      "url": "https://www.dpm.org.cn/lemmas/242576.html",
+      "isPerson": true,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。"
+    },
+    {
+      "id": "collector-yue",
+      "title": "岳珂",
+      "author": "岳珂",
+      "url": "https://www.dpm.org.cn/ancient/hall/161801.html",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-jia",
+      "title": "贾似道",
+      "author": "贾似道",
+      "url": "https://minghuaji.dpm.org.cn/paint/detail?id=chgo2dy9jf92f6nutocr4w2gbhwt6dhd",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-anguo",
+      "title": "安国",
+      "author": "安国",
+      "url": "https://daj.wuxi.gov.cn/doc/2016/03/30/2425467.shtml",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-xiang",
+      "title": "项元汴",
+      "author": "项元汴",
+      "url": "https://www.dpm.org.cn/lemmas/240345.html",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-wang",
+      "title": "王世贞",
+      "author": "王世贞",
+      "url": "https://www.taicang.gov.cn/taicang/whtyzc/202507/b50ece43547847f6ad3c4b569b81ac90.shtml",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-sun",
+      "title": "孙承泽",
+      "author": "孙承泽",
+      "url": "https://www.dpm.org.cn/lemmas/243352.html",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-liang",
+      "title": "梁清标",
+      "author": "梁清标",
+      "url": "https://www.dpm.org.cn/lemmas/240115.html",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-anqi",
+      "title": "安岐",
+      "author": "安岐",
+      "url": "https://theme.npm.edu.tw/khan/Article.aspx?sNo=03009219",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "collector-qianlong",
+      "title": "乾隆",
+      "author": "乾隆",
+      "url": "https://young.dpm.org.cn/info/308",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "song-cai",
+      "title": "蔡襄",
+      "author": "蔡襄",
+      "url": "https://www.dpm.org.cn/lemmas/244591.html",
+      "isPerson": true,
+      "term": "白露",
+      "reason": "在秋日读收藏、鉴赏与传承，循其所藏名帖走近古人。"
+    },
+    {
+      "id": "song-su",
+      "title": "苏轼",
+      "author": "苏轼",
+      "url": "https://www.dpm.org.cn/lemmas/242068.html",
+      "isPerson": true,
+      "term": "秋分",
+      "reason": "循秋水与明月，读东坡诗文及其书法回响。"
+    },
+    {
+      "id": "song-huang",
+      "title": "黄庭坚",
+      "author": "黄庭坚",
+      "url": "https://www.dpm.org.cn/lemmas/242585.html",
+      "isPerson": true,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。"
+    },
+    {
+      "id": "song-mi",
+      "title": "米芾",
+      "author": "米芾",
+      "url": "https://www.dpm.org.cn/collection/handwriting/228246.html",
+      "isPerson": true,
+      "term": "寒露",
+      "reason": "循登高山水与文人交游，感受宋人书风的意趣。"
+    },
+    {
+      "id": "maogong",
+      "title": "毛公鼎",
+      "author": "书者佚名",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1438?dep=U&mode=full",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。",
+      "encyclopedia301": {
+        "title": "毛公鼎",
+        "label": "毛公鼎",
+        "url": "https://wapbaike.baidu.com/item/%E6%AF%9B%E5%85%AC%E9%BC%8E/1161082",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn105search9",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "sanshi",
+      "title": "散氏盘",
+      "author": "书者佚名",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1462?dep=U&mode=full",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。",
+      "encyclopedia301": {
+        "title": "散氏盘",
+        "label": "散氏盘",
+        "url": "https://bkso.baidu.com/item/%E6%95%A3%E6%B0%8F%E7%9B%98/1162572",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn105search21",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "bronze-dayu299",
+      "title": "大盂鼎",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247375.shtml",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。",
+      "encyclopedia301": {
+        "title": "西周大盂鼎",
+        "label": "西周大盂鼎",
+        "url": "https://www.baike.com/wikiid/5662362161878402519",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn105search7",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "大盂鼎"
+      }
+    },
+    {
+      "id": "bronze-dake299",
+      "title": "大克鼎",
+      "author": "书者佚名",
+      "url": "https://www.shanghaimuseum.net/mu/asset2/20151104094055028/",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。",
+      "encyclopedia301": {
+        "title": "西周大克鼎",
+        "label": "西周大克鼎",
+        "url": "https://www.baike.com/wikiid/4642129257017115206",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn105search2",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "大克鼎"
+      }
+    },
+    {
+      "id": "bronze-guoji299",
+      "title": "虢季子白盘",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247376.shtml",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。",
+      "encyclopedia301": {
+        "title": "虢季子白盘铭文",
+        "label": "虢季子白盘铭文",
+        "url": "https://bkso.baidu.com/item/%E8%99%A2%E5%AD%A3%E5%AD%90%E7%99%BD%E7%9B%98%E9%93%AD%E6%96%87/2189625",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn139search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "虢季子白盘"
+      }
+    },
+    {
+      "id": "hezun",
+      "title": "何尊",
+      "author": "书者佚名",
+      "url": "https://www.xianqin.org/xr_html/articles/lwjsh/384.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。",
+      "encyclopedia301": {
+        "title": "何尊",
+        "label": "何尊",
+        "url": "https://wapbaike.baidu.com/item/%E4%BD%95%E5%B0%8A/1163495",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn110search4",
+          "checkedAt": "2026-10-30"
+        }
+      }
+    },
+    {
+      "id": "bronze-qiang299",
+      "title": "史墙盘",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zl/zlhg/201812/t20181220_32314.shtml",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。",
+      "encyclopedia301": {
+        "title": "西周墙盘（史墙盘）",
+        "label": "西周墙盘（史墙盘）",
+        "url": "https://www.baike.com/wikiid/1317121069323420857",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn110search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "史墙盘"
+      }
+    },
+    {
+      "id": "bronze-lai299",
+      "title": "逨盘",
+      "author": "书者佚名",
+      "url": "https://www.cdmuseum.com/xinwen/202011/1853.html",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。",
+      "encyclopedia301": {
+        "title": "西周逨盘",
+        "label": "西周逨盘",
+        "url": "https://www.baike.com/wikiid/2888467483454473949",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn111search24",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "逨盘"
+      }
+    },
+    {
+      "id": "bronze-li299",
+      "title": "利簋",
+      "author": "书者佚名",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250931.shtml",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。",
+      "encyclopedia301": {
+        "title": "西周利簋",
+        "label": "西周利簋",
+        "url": "https://www.baike.com/wikiid/6757961208690498463",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn110search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "利簋"
+      }
+    },
+    {
+      "id": "bronze-zongzhou299",
+      "title": "宗周钟",
+      "author": "书者佚名",
+      "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1464?dep=U&mode=full",
+      "isPerson": false,
+      "term": "冬至",
+      "reason": "在岁序转换之时读青铜铭文，观察礼制、记忆与汉字结构的演进。",
+      "encyclopedia301": {
+        "title": "青铜宗周钟",
+        "label": "青铜宗周钟",
+        "url": "https://www.baike.com/wikiid/4646305985044596611",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn111search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "宗周钟"
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "lanting353",
+      "title": "兰亭修禊",
+      "kind": "documented",
+      "rule": {
+        "lunar": [
+          3,
+          3
+        ]
+      },
+      "year": 353,
+      "reason": "永和九年三月三日，王羲之与友人在兰亭修禊作序。按农历三月三纪念，不固定成某个公历日。",
+      "works": [
+        "lanting"
+      ],
+      "source": "https://www.dpm.org.cn/collection/handwriting/228277.html",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "兰亭集序",
+        "label": "兰亭集序",
+        "url": "https://www.baike.com/wikiid/7237045937847189519",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "兰亭集序,东晋书法家王羲之的作品",
+        "verifiedAt": "2026-10-30",
+        "eventTitle": "兰亭修禊"
+      }
+    },
+    {
+      "id": "chibi1082",
+      "title": "苏轼夜游赤壁",
+      "kind": "documented",
+      "rule": {
+        "lunar": [
+          7,
+          16
+        ]
+      },
+      "year": 1082,
+      "reason": "《前赤壁赋》自记“壬戌之秋，七月既望”。按农历七月十六纪念这次江上夜游。",
+      "works": [
+        "chibi"
+      ],
+      "source": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/373?dep=P&mode=full",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "前后赤壁赋",
+        "label": "元赵孟頫前后赤壁赋",
+        "url": "https://www.baike.com/wikiid/3506969429149715867",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+        "verifiedAt": "2026-10-30",
+        "eventTitle": "苏轼夜游赤壁"
+      }
+    },
+    {
+      "id": "chibi-later1082",
+      "title": "后赤壁夜游",
+      "kind": "documented",
+      "rule": {
+        "lunar": [
+          10,
+          15
+        ]
+      },
+      "year": 1082,
+      "reason": "《后赤壁赋》自记“是岁十月之望”。按农历十月十五重读江月与人生。",
+      "works": [
+        "chibi"
+      ],
+      "source": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/373?dep=P&mode=full",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "前后赤壁赋",
+        "label": "元赵孟頫前后赤壁赋",
+        "url": "https://www.baike.com/wikiid/3506969429149715867",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+        "verifiedAt": "2026-10-30",
+        "eventTitle": "后赤壁夜游"
+      }
+    },
+    {
+      "id": "su-birth",
+      "title": "苏轼诞辰",
+      "kind": "birth",
+      "rule": {
+        "lunar": [
+          12,
+          19
+        ]
+      },
+      "year": 1036,
+      "reason": "景祐三年十二月十九，后世寿苏雅集沿用农历纪念。诞辰年数按农历纪年相减；对应公历出生年为1037年。",
+      "works": [
+        "hanshi",
+        "chibi",
+        "gongfu",
+        "lizi",
+        "zuiweng",
+        "suxian"
+      ],
+      "source": "https://www.chinawriter.com.cn/n1/2025/0120/c442005-40405544.html",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "黄州寒食帖",
+        "label": "寒食帖",
+        "url": "https://www.baike.com/wikiid/7205811311510863883",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "寒食帖,苏轼撰诗并书的墨迹素笺本",
+        "verifiedAt": "2026-10-30",
+        "eventTitle": "苏轼诞辰"
+      }
+    },
+    {
+      "id": "zhao-birth",
+      "title": "赵孟頫诞辰",
+      "kind": "birth",
+      "rule": {
+        "lunar": [
+          9,
+          10
+        ]
+      },
+      "year": 1254,
+      "reason": "故宫大事年表记宝祐二年九月十日出生；按农历九月十日纪念。",
+      "works": [
+        "chibi",
+        "guoyouzhi",
+        "zhao-xinjing",
+        "zhao-huangting"
+      ],
+      "source": "https://www.dpm.org.cn/subject_zhaomengfu/event.html",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "前后赤壁赋",
+        "label": "元赵孟頫前后赤壁赋",
+        "url": "https://www.baike.com/wikiid/3506969429149715867",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+        "verifiedAt": "2026-10-30",
+        "eventTitle": "赵孟頫诞辰"
+      }
+    },
+    {
+      "id": "yan758",
+      "title": "颜真卿祭侄",
+      "kind": "documented",
+      "rule": {
+        "lunar": [
+          9,
+          3
+        ]
+      },
+      "year": 758,
+      "reason": "稿首自记乾元元年九月三日，循农历日期读未加修饰的亲情与悲愤。",
+      "works": [
+        "jizhi"
+      ],
+      "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/27275?dep=P",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "祭侄文稿",
+        "label": "祭侄文稿",
+        "url": "https://www.baike.com/wikiid/7218806996241006644",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "祭侄文稿,唐代书法家颜真卿的作品",
+        "verifiedAt": "2026-10-30",
+        "eventTitle": "颜真卿祭侄"
+      }
+    },
+    {
+      "id": "zhao-death",
+      "title": "赵孟頫逝世纪念",
+      "kind": "death",
+      "rule": {
+        "lunar": [
+          6,
+          16
+        ]
+      },
+      "year": 1322,
+      "reason": "故宫大事年表记至治二年六月十六日卒于家；按农历日期纪念，重读晋唐传统在元代的回响。",
+      "works": [
+        "chibi",
+        "guoyouzhi",
+        "zhao-xinjing",
+        "zhao-huangting"
+      ],
+      "source": "https://www.dpm.org.cn/subject_zhaomengfu/event.html",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "前后赤壁赋",
+        "label": "元赵孟頫前后赤壁赋",
+        "url": "https://www.baike.com/wikiid/3506969429149715867",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+        "verifiedAt": "2026-10-30",
+        "eventTitle": "赵孟頫逝世纪念"
+      }
+    },
+    {
+      "id": "oracle-memory",
+      "title": "甲骨入选世界记忆名录纪念",
+      "kind": "documented",
+      "rule": {
+        "solar": [
+          10,
+          30
+        ]
+      },
+      "year": 2017,
+      "reason": "以甲骨文走向世界的当代记忆，回望汉字的早期形态。",
+      "works": [
+        "oracle",
+        "oracle-sacrifice298",
+        "oracle-tufang298",
+        "oracle-ban298",
+        "oracle-qiang298",
+        "oracle-zaifeng298",
+        "oracle-farming298",
+        "oracle-zhou298",
+        "oracle-fuhao298",
+        "oracle-brush298",
+        "oracle-harvest298"
+      ],
+      "source": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/moe_1485/201712/t20171227_322958.html",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "世界记忆遗产",
+        "label": "世界记忆遗产",
+        "url": "https://www.baike.com/wikiid/5414947337833649717",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/5414947337833649717",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "甲骨入选世界记忆名录纪念"
+      }
+    },
+    {
+      "id": "festival-spring",
+      "title": "春节",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          1,
+          1
+        ]
+      },
+      "reason": "新岁临写，寄愿四时安康。",
+      "works": [
+        "caoshuqianzi"
+      ],
+      "poem": {
+        "id": "festival-spring",
+        "title": "元日",
+        "author": "王安石",
+        "text": "爆竹声中一岁除，春风送暖入屠苏。千门万户曈曈日，总把新桃换旧符。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "春节",
+        "label": "春节",
+        "url": "https://www.baike.com/wikiid/7164607077330223111",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7164607077330223111",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "春节"
+      }
+    },
+    {
+      "id": "festival-lantern",
+      "title": "元宵",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          1,
+          15
+        ]
+      },
+      "reason": "灯火与人间相逢，适合写一阕春夜词。",
+      "works": [
+        "lanting"
+      ],
+      "poem": {
+        "id": "festival-lantern",
+        "title": "青玉案·元夕（节选）",
+        "author": "辛弃疾",
+        "text": "东风夜放花千树。更吹落、星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "元宵"
+      }
+    },
+    {
+      "id": "festival-shangsi",
+      "title": "上巳",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          3,
+          3
+        ]
+      },
+      "reason": "春禊雅集，循古人的曲水流觞重读兰亭。",
+      "works": [
+        "lanting"
+      ],
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "上巳"
+      }
+    },
+    {
+      "id": "festival-dragon",
+      "title": "端午",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          5,
+          5
+        ]
+      },
+      "reason": "由端午追怀屈原，把求索与坚守写在纸上。",
+      "works": [
+        "shupu"
+      ],
+      "poem": {
+        "id": "festival-dragon",
+        "title": "离骚（节选）",
+        "author": "屈原",
+        "text": "路漫漫其修远兮，吾将上下而求索。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "端午节",
+        "label": "端午节",
+        "url": "https://www.baike.com/wikiid/7164594471366262817",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7164594471366262817",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "端午"
+      }
+    },
+    {
+      "id": "festival-qixi",
+      "title": "七夕",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          7,
+          7
+        ]
+      },
+      "reason": "借星河与相逢，写一阕温柔而辽阔的词。",
+      "works": [
+        "luoshen13"
+      ],
+      "poem": {
+        "id": "festival-qixi",
+        "title": "鹊桥仙·纤云弄巧（节选）",
+        "author": "秦观",
+        "text": "金风玉露一相逢，便胜却人间无数。两情若是久长时，又岂在朝朝暮暮。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "七夕"
+      }
+    },
+    {
+      "id": "festival-ghost",
+      "title": "中元",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          7,
+          15
+        ]
+      },
+      "reason": "追思与记忆，适合静读祭文中的亲情。",
+      "works": [
+        "jizhi"
+      ],
+      "poem": {
+        "id": "festival-ghost",
+        "title": "游子吟",
+        "author": "孟郊",
+        "text": "慈母手中线，游子身上衣。临行密密缝，意恐迟迟归。谁言寸草心，报得三春晖。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "中元"
+      }
+    },
+    {
+      "id": "festival-moon",
+      "title": "中秋",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          8,
+          15
+        ]
+      },
+      "reason": "以月色与尺牍寄相思。",
+      "works": [
+        "zhongqiu"
+      ],
+      "poem": {
+        "id": "festival-moon",
+        "title": "水调歌头·明月几时有（节选）",
+        "author": "苏轼",
+        "text": "但愿人长久，千里共婵娟。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "中秋"
+      }
+    },
+    {
+      "id": "festival-double9",
+      "title": "重阳",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          9,
+          9
+        ]
+      },
+      "reason": "登高怀远，借书写问候远方的人。",
+      "works": [
+        "shusu"
+      ],
+      "poem": {
+        "id": "festival-double9",
+        "title": "九月九日忆山东兄弟",
+        "author": "王维",
+        "text": "独在异乡为异客，每逢佳节倍思亲。遥知兄弟登高处，遍插茱萸少一人。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "重阳"
+      }
+    },
+    {
+      "id": "festival-winterclothes",
+      "title": "寒衣节",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          10,
+          1
+        ]
+      },
+      "reason": "以思亲之诗寄托对故人的记忆。",
+      "works": [
+        "jizhi"
+      ],
+      "poem": {
+        "id": "festival-winterclothes",
+        "title": "月夜忆舍弟（节选）",
+        "author": "杜甫",
+        "text": "露从今夜白，月是故乡明。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "寒衣节"
+      }
+    },
+    {
+      "id": "festival-lower",
+      "title": "下元",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          10,
+          15
+        ]
+      },
+      "reason": "静观江月，遥应后赤壁的夜游。",
+      "works": [
+        "chibi"
+      ],
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "下元"
+      }
+    },
+    {
+      "id": "festival-laba",
+      "title": "腊八",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          12,
+          8
+        ]
+      },
+      "reason": "岁末静写，留一份平实而温暖的心意。",
+      "works": [
+        "zhao-xinjing"
+      ],
+      "poem": {
+        "id": "festival-laba",
+        "title": "问刘十九",
+        "author": "白居易",
+        "text": "绿蚁新醅酒，红泥小火炉。晚来天欲雪，能饮一杯无？",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "腊八"
+      }
+    },
+    {
+      "id": "festival-north",
+      "title": "小年（北方习俗）",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          12,
+          23
+        ]
+      },
+      "reason": "扫尘迎新，写下对团聚的期待。",
+      "works": [
+        "caoshuqianzi"
+      ],
+      "poem": {
+        "id": "festival-north",
+        "title": "元日",
+        "author": "王安石",
+        "text": "爆竹声中一岁除，春风送暖入屠苏。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "小年（北方习俗）"
+      }
+    },
+    {
+      "id": "festival-south",
+      "title": "小年（南方部分地区习俗）",
+      "kind": "festival",
+      "rule": {
+        "lunar": [
+          12,
+          24
+        ]
+      },
+      "reason": "各地小年日期不同，借书写迎新纳福。",
+      "works": [
+        "caoshuqianzi"
+      ],
+      "poem": {
+        "id": "festival-south",
+        "title": "元日",
+        "author": "王安石",
+        "text": "千门万户曈曈日，总把新桃换旧符。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.gov.cn/guoqing/2017-06/09/content_5201202.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "小年（南方部分地区习俗）"
+      }
+    },
+    {
+      "id": "festival-eve",
+      "title": "除夕",
+      "kind": "festival",
+      "rule": {
+        "newYearEve": true
+      },
+      "reason": "在一年的最后一晚，写一行向新岁出发的心愿。",
+      "works": [
+        "caoshuqianzi"
+      ],
+      "poem": {
+        "id": "eve",
+        "title": "除夜作",
+        "author": "高适",
+        "text": "旅馆寒灯独不眠，客心何事转凄然。故乡今夜思千里，霜鬓明朝又一年。"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "除夕"
+      }
+    },
+    {
+      "id": "festival-hanshi",
+      "title": "寒食",
+      "kind": "festival",
+      "rule": {
+        "beforeTerm": [
+          "清明",
+          1
+        ]
+      },
+      "reason": "按今行清明前一日纪念寒食，古代节期存在差异；并非《寒食帖》创作的精确公历日期。",
+      "works": [
+        "hanshi"
+      ],
+      "source": "https://www.dpm.org.cn/lemmas/242596.html",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "中国节日",
+        "label": "中国节日",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8434563368583944152",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "寒食"
+      }
+    },
+    {
+      "id": "term-小寒",
+      "title": "小寒",
+      "kind": "seasonal",
+      "rule": {
+        "term": "小寒"
+      },
+      "reason": "以雪景中的留白，感受尺牍疏密。",
+      "works": [
+        "kuaixue"
+      ],
+      "poem": {
+        "id": "term-小寒",
+        "title": "江雪",
+        "author": "柳宗元",
+        "text": "千山鸟飞绝，万径人踪灭。孤舟蓑笠翁，独钓寒江雪。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "小寒"
+      }
+    },
+    {
+      "id": "term-大寒",
+      "title": "大寒",
+      "kind": "seasonal",
+      "rule": {
+        "term": "大寒"
+      },
+      "reason": "从岁寒气节读郑板桥的笔意。",
+      "works": [
+        "chenghuang"
+      ],
+      "poem": {
+        "id": "term-大寒",
+        "title": "竹石",
+        "author": "郑燮",
+        "text": "咬定青山不放松，立根原在破岩中。千磨万击还坚劲，任尔东西南北风。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "大寒"
+      }
+    },
+    {
+      "id": "term-立春",
+      "title": "立春",
+      "kind": "seasonal",
+      "rule": {
+        "term": "立春"
+      },
+      "reason": "以春意开启文人雅集与行书的阅读。",
+      "works": [
+        "lanting",
+        "luoshen13",
+        "boyuan",
+        "zhongqiu",
+        "huangting",
+        "leyi",
+        "yanta",
+        "shiqi",
+        "shengjiao",
+        "auction-pingan"
+      ],
+      "poem": {
+        "id": "term-立春",
+        "title": "咏柳",
+        "author": "贺知章",
+        "text": "碧玉妆成一树高，万条垂下绿丝绦。不知细叶谁裁出，二月春风似剪刀。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "立春"
+      }
+    },
+    {
+      "id": "term-雨水",
+      "title": "雨水",
+      "kind": "seasonal",
+      "rule": {
+        "term": "雨水"
+      },
+      "reason": "从雨水与农事，追寻最早的朱书笔迹。",
+      "works": [
+        "oracle-brush298"
+      ],
+      "poem": {
+        "id": "term-雨水",
+        "title": "春夜喜雨",
+        "author": "杜甫",
+        "text": "好雨知时节，当春乃发生。随风潜入夜，润物细无声。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "雨水"
+      }
+    },
+    {
+      "id": "term-惊蛰",
+      "title": "惊蛰",
+      "kind": "seasonal",
+      "rule": {
+        "term": "惊蛰"
+      },
+      "reason": "把春耕诗与协田刻辞放在一起读。",
+      "works": [
+        "oracle-farming298"
+      ],
+      "poem": {
+        "id": "term-惊蛰",
+        "title": "观田家（节选）",
+        "author": "韦应物",
+        "text": "微雨众卉新，一雷惊蛰始。田家几日闲，耕种从此起。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "惊蛰"
+      }
+    },
+    {
+      "id": "term-春分",
+      "title": "春分",
+      "kind": "seasonal",
+      "rule": {
+        "term": "春分"
+      },
+      "reason": "于春分静观草书线条的节奏。",
+      "works": [
+        "shupu",
+        "longcang",
+        "jiucheng",
+        "zhanghan",
+        "jiuhua",
+        "mengzhao",
+        "tumu",
+        "mengdian",
+        "xuanshi",
+        "nikuan",
+        "pingfu",
+        "zhengwengong",
+        "shimenming",
+        "shamenghai-bangshu",
+        "wuhou",
+        "lisheng",
+        "chenghuang",
+        "wanan",
+        "jushi",
+        "dong-longshen",
+        "dunhuang",
+        "mingqing",
+        "yongle275",
+        "wenjinge275",
+        "oracle-ban298",
+        "oracle-qiang298"
+      ],
+      "poem": {
+        "id": "term-春分",
+        "title": "鸟鸣涧",
+        "author": "王维",
+        "text": "人闲桂花落，夜静春山空。月出惊山鸟，时鸣春涧中。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "春分",
+        "label": "春分",
+        "url": "https://www.baike.com/wikiid/7220719297227669536",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7220719297227669536",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "春分"
+      }
+    },
+    {
+      "id": "term-清明",
+      "title": "清明",
+      "kind": "seasonal",
+      "rule": {
+        "term": "清明"
+      },
+      "reason": "追思时节，体会祭文中的亲情与悲悯。",
+      "works": [
+        "jizhi",
+        "hanshi",
+        "duobao",
+        "yanqinli",
+        "zhongxing",
+        "baozhi"
+      ],
+      "poem": {
+        "id": "term-清明",
+        "title": "清明",
+        "author": "杜牧",
+        "text": "清明时节雨纷纷，路上行人欲断魂。借问酒家何处有？牧童遥指杏花村。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "清明"
+      }
+    },
+    {
+      "id": "term-谷雨",
+      "title": "谷雨",
+      "kind": "seasonal",
+      "rule": {
+        "term": "谷雨"
+      },
+      "reason": "从丰年之愿读古今农事。",
+      "works": [
+        "oracle-harvest298",
+        "oracle",
+        "oracle-sacrifice298",
+        "oracle-tufang298",
+        "oracle-zaifeng298",
+        "oracle-zhou298",
+        "oracle-fuhao298"
+      ],
+      "poem": {
+        "id": "term-谷雨",
+        "title": "游山西村（节选）",
+        "author": "陆游",
+        "text": "莫笑农家腊酒浑，丰年留客足鸡豚。山重水复疑无路，柳暗花明又一村。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "谷雨"
+      }
+    },
+    {
+      "id": "term-立夏",
+      "title": "立夏",
+      "kind": "seasonal",
+      "rule": {
+        "term": "立夏"
+      },
+      "reason": "夏日静写小楷，观察均衡与留白。",
+      "works": [
+        "huangting",
+        "xuanmi",
+        "jingshiyu",
+        "sishan",
+        "xiping",
+        "zhengshi",
+        "kaicheng",
+        "guoyouzhi",
+        "zhao-xinjing",
+        "zhao-huangting",
+        "zhaocheng275"
+      ],
+      "poem": {
+        "id": "term-立夏",
+        "title": "山亭夏日",
+        "author": "高骈",
+        "text": "绿树阴浓夏日长，楼台倒影入池塘。水晶帘动微风起，满架蔷薇一院香。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "立夏"
+      }
+    },
+    {
+      "id": "term-小满",
+      "title": "小满",
+      "kind": "seasonal",
+      "rule": {
+        "term": "小满"
+      },
+      "reason": "以麦田诗意重读早期农耕文字。",
+      "works": [
+        "oracle-farming298"
+      ],
+      "poem": {
+        "id": "term-小满",
+        "title": "观刈麦（节选）",
+        "author": "白居易",
+        "text": "田家少闲月，五月人倍忙。夜来南风起，小麦覆陇黄。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "小满"
+      }
+    },
+    {
+      "id": "term-芒种",
+      "title": "芒种",
+      "kind": "seasonal",
+      "rule": {
+        "term": "芒种"
+      },
+      "reason": "丰收祈愿与民生诗意相互对读。",
+      "works": [
+        "oracle-harvest298",
+        "caoquan",
+        "liqi",
+        "yiying",
+        "shichen",
+        "zhangqian",
+        "shimen",
+        "huashan",
+        "xixia",
+        "hengfang",
+        "xianyuhuang",
+        "fuge",
+        "yihe",
+        "jitaishan",
+        "shouchan",
+        "juyan",
+        "oracle-farming298"
+      ],
+      "poem": {
+        "id": "term-芒种",
+        "title": "悯农二首·其一",
+        "author": "李绅",
+        "text": "春种一粒粟，秋收万颗子。四海无闲田，农夫犹饿死。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "芒种"
+      }
+    },
+    {
+      "id": "term-夏至",
+      "title": "夏至",
+      "kind": "seasonal",
+      "rule": {
+        "term": "夏至"
+      },
+      "reason": "借水光与荷影读飘逸精细的小楷。",
+      "works": [
+        "luoshen13"
+      ],
+      "poem": {
+        "id": "term-夏至",
+        "title": "晓出净慈寺送林子方",
+        "author": "杨万里",
+        "text": "毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "夏至"
+      }
+    },
+    {
+      "id": "term-小暑",
+      "title": "小暑",
+      "kind": "seasonal",
+      "rule": {
+        "term": "小暑"
+      },
+      "reason": "以短篇诗文和尺牍，练习小中见大。",
+      "works": [
+        "boyuan"
+      ],
+      "poem": {
+        "id": "term-小暑",
+        "title": "小池",
+        "author": "杨万里",
+        "text": "泉眼无声惜细流，树阴照水爱晴柔。小荷才露尖尖角，早有蜻蜓立上头。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "小暑"
+      }
+    },
+    {
+      "id": "term-大暑",
+      "title": "大暑",
+      "kind": "seasonal",
+      "rule": {
+        "term": "大暑"
+      },
+      "reason": "在暑日体会草书的纵逸。",
+      "works": [
+        "zixu",
+        "caoshuqianzi",
+        "zhupoems",
+        "gushi",
+        "guanjun",
+        "rao-hanliu",
+        "songke-zhuangyou"
+      ],
+      "poem": {
+        "id": "term-大暑",
+        "title": "夏日山中",
+        "author": "李白",
+        "text": "懒摇白羽扇，裸袒青林中。脱巾挂石壁，露顶洒松风。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "大暑"
+      }
+    },
+    {
+      "id": "term-立秋",
+      "title": "立秋",
+      "kind": "seasonal",
+      "rule": {
+        "term": "立秋"
+      },
+      "reason": "秋风起时读思鲈旧事。",
+      "works": [
+        "zhanghan"
+      ],
+      "poem": {
+        "id": "term-立秋",
+        "title": "秋词·其一",
+        "author": "刘禹锡",
+        "text": "自古逢秋悲寂寥，我言秋日胜春朝。晴空一鹤排云上，便引诗情到碧霄。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "立秋"
+      }
+    },
+    {
+      "id": "term-处暑",
+      "title": "处暑",
+      "kind": "seasonal",
+      "rule": {
+        "term": "处暑"
+      },
+      "reason": "把山中秋意与松风书卷并读。",
+      "works": [
+        "songfeng"
+      ],
+      "poem": {
+        "id": "term-处暑",
+        "title": "山居秋暝（节选）",
+        "author": "王维",
+        "text": "空山新雨后，天气晚来秋。明月松间照，清泉石上流。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "处暑"
+      }
+    },
+    {
+      "id": "term-白露",
+      "title": "白露",
+      "kind": "seasonal",
+      "rule": {
+        "term": "白露"
+      },
+      "reason": "从思亲之诗体会祭文的真情。",
+      "works": [
+        "jizhi",
+        "collector-yue",
+        "collector-jia",
+        "collector-anguo",
+        "collector-xiang",
+        "collector-wang",
+        "collector-sun",
+        "collector-liang",
+        "collector-anqi",
+        "collector-qianlong",
+        "song-cai"
+      ],
+      "poem": {
+        "id": "term-白露",
+        "title": "月夜忆舍弟（节选）",
+        "author": "杜甫",
+        "text": "戍鼓断人行，边秋一雁声。露从今夜白，月是故乡明。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "白露"
+      }
+    },
+    {
+      "id": "term-秋分",
+      "title": "秋分",
+      "kind": "seasonal",
+      "rule": {
+        "term": "秋分"
+      },
+      "reason": "以秋水明月遥应赤壁诗文。",
+      "works": [
+        "chibi",
+        "lizi",
+        "suxian",
+        "zuiweng",
+        "gongfu",
+        "song-su"
+      ],
+      "poem": {
+        "id": "term-秋分",
+        "title": "望洞庭",
+        "author": "刘禹锡",
+        "text": "湖光秋月两相和，潭面无风镜未磨。遥望洞庭山水翠，白银盘里一青螺。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "秋分"
+      }
+    },
+    {
+      "id": "term-寒露",
+      "title": "寒露",
+      "kind": "seasonal",
+      "rule": {
+        "term": "寒露"
+      },
+      "reason": "登高赏秋，也读米芾的诗与行书。",
+      "works": [
+        "shusu",
+        "songfeng",
+        "zhushang",
+        "dizhu",
+        "collector-mi",
+        "song-huang",
+        "song-mi"
+      ],
+      "poem": {
+        "id": "term-寒露",
+        "title": "山行",
+        "author": "杜牧",
+        "text": "远上寒山石径斜，白云生处有人家。停车坐爱枫林晚，霜叶红于二月花。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "寒露"
+      }
+    },
+    {
+      "id": "term-霜降",
+      "title": "霜降",
+      "kind": "seasonal",
+      "rule": {
+        "term": "霜降"
+      },
+      "reason": "从秋夜声景感受行书的起伏。",
+      "works": [
+        "songfeng"
+      ],
+      "poem": {
+        "id": "term-霜降",
+        "title": "枫桥夜泊",
+        "author": "张继",
+        "text": "月落乌啼霜满天，江枫渔火对愁眠。姑苏城外寒山寺，夜半钟声到客船。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "霜降"
+      }
+    },
+    {
+      "id": "term-立冬",
+      "title": "立冬",
+      "kind": "seasonal",
+      "rule": {
+        "term": "立冬"
+      },
+      "reason": "入冬读雪，以短札体会问候之情。",
+      "works": [
+        "kuaixue"
+      ],
+      "poem": {
+        "id": "term-立冬",
+        "title": "逢雪宿芙蓉山主人",
+        "author": "刘长卿",
+        "text": "日暮苍山远，天寒白屋贫。柴门闻犬吠，风雪夜归人。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "立冬"
+      }
+    },
+    {
+      "id": "term-小雪",
+      "title": "小雪",
+      "kind": "seasonal",
+      "rule": {
+        "term": "小雪"
+      },
+      "reason": "以相邀之诗，写朋友之间的温暖。",
+      "works": [
+        "boyuan"
+      ],
+      "poem": {
+        "id": "term-小雪",
+        "title": "问刘十九",
+        "author": "白居易",
+        "text": "绿蚁新醅酒，红泥小火炉。晚来天欲雪，能饮一杯无？",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "小雪"
+      }
+    },
+    {
+      "id": "term-大雪",
+      "title": "大雪",
+      "kind": "seasonal",
+      "rule": {
+        "term": "大雪"
+      },
+      "reason": "以雪夜诗和快雪尺牍感受动静相生。",
+      "works": [
+        "kuaixue"
+      ],
+      "poem": {
+        "id": "term-大雪",
+        "title": "夜雪",
+        "author": "白居易",
+        "text": "已讶衾枕冷，复见窗户明。夜深知雪重，时闻折竹声。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "二十四节气",
+        "label": "二十四节气",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7309648023263379456",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "大雪"
+      }
+    },
+    {
+      "id": "term-冬至",
+      "title": "冬至",
+      "kind": "seasonal",
+      "rule": {
+        "term": "冬至"
+      },
+      "reason": "借节令思亲，读尺牍里的牵挂。",
+      "works": [
+        "zhongqiu",
+        "taishan",
+        "shigu",
+        "yishan",
+        "langya",
+        "kuaiji",
+        "yuanan",
+        "yuanchang",
+        "tianfa",
+        "biluo",
+        "sanfen",
+        "wuchangshuo-shigu",
+        "maogong",
+        "sanshi",
+        "bronze-dayu299",
+        "bronze-dake299",
+        "bronze-guoji299",
+        "hezun",
+        "bronze-qiang299",
+        "bronze-lai299",
+        "bronze-li299",
+        "bronze-zongzhou299"
+      ],
+      "poem": {
+        "id": "term-冬至",
+        "title": "邯郸冬至夜思家",
+        "author": "白居易",
+        "text": "邯郸驿里逢冬至，抱膝灯前影伴身。想得家中夜深坐，还应说着远行人。",
+        "url": "https://ctext.org/poetry/zh"
+      },
+      "source": "https://www.hko.gov.hk/sc/gts/time/conversion.htm",
+      "category": "writing",
+      "encyclopedia301": {
+        "title": "冬至",
+        "label": "冬至",
+        "url": "https://www.baike.com/wikiid/7170999249693032451",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7170999249693032451",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "冬至"
+      }
+    },
+    {
+      "id": "mother299",
+      "title": "国际母语日",
+      "rule": {
+        "solar": [
+          2,
+          21
+        ]
+      },
+      "kind": "observance",
+      "category": "writing",
+      "reason": "珍惜每一种语言，也珍惜以母语写下的第一句话。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/mother-language",
+      "poem": {
+        "id": "mother299",
+        "title": "国际母语日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "一字一音，皆是故乡。",
+        "url": "https://www.unesco.org/en/days/mother-language"
+      },
+      "encyclopedia301": {
+        "title": "国际母语日",
+        "label": "国际母语日",
+        "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E6%AF%8D%E8%AF%AD%E6%97%A5/1835253",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E6%AF%8D%E8%AF%AD%E6%97%A5/1835253",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "国际母语日"
+      }
+    },
+    {
+      "id": "poetry299",
+      "title": "世界诗歌日",
+      "rule": {
+        "solar": [
+          3,
+          21
+        ]
+      },
+      "kind": "observance",
+      "category": "arts",
+      "reason": "不同语言的诗，让各地的人在感受中相遇。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/poetry",
+      "poem": {
+        "id": "poetry299",
+        "title": "世界诗歌日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "以诗相逢，以字传情。",
+        "url": "https://www.unesco.org/en/days/poetry"
+      },
+      "encyclopedia301": {
+        "title": "世界诗歌日",
+        "label": "世界诗歌日",
+        "url": "https://www.baike.com/wikiid/1778596615998299033",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/1778596615998299033",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "世界诗歌日"
+      }
+    },
+    {
+      "id": "monuments299",
+      "title": "国际古迹遗址日",
+      "rule": {
+        "solar": [
+          4,
+          18
+        ]
+      },
+      "kind": "observance",
+      "category": "heritage",
+      "reason": "从长城、金字塔到吴哥，建筑与遗址保存着人类营造生活的记忆。",
+      "works": [],
+      "source": "https://www.icomos.org/what-we-do/focus/18-april-international-day-for-monuments-and-sites/",
+      "poem": {
+        "id": "monuments299",
+        "title": "国际古迹遗址日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "山河有迹，文明长存。",
+        "url": "https://www.icomos.org/what-we-do/focus/18-april-international-day-for-monuments-and-sites/"
+      },
+      "encyclopedia301": {
+        "title": "国际古迹遗址日",
+        "label": "国际古迹遗址日",
+        "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%8F%A4%E8%BF%B9%E9%81%97%E5%9D%80%E6%97%A5/9183977",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%8F%A4%E8%BF%B9%E9%81%97%E5%9D%80%E6%97%A5/9183977",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "国际古迹遗址日"
+      }
+    },
+    {
+      "id": "books299",
+      "title": "世界图书与版权日",
+      "rule": {
+        "solar": [
+          4,
+          23
+        ]
+      },
+      "kind": "observance",
+      "category": "memory",
+      "reason": "典籍、手稿与印本把跨越时代的思想交到下一双手中。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/world-book-and-copyright",
+      "poem": {
+        "id": "books299",
+        "title": "世界图书与版权日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "一卷在手，千年相闻。",
+        "url": "https://www.unesco.org/en/days/world-book-and-copyright"
+      },
+      "encyclopedia301": {
+        "title": "世界读书日",
+        "label": "世界读书日",
+        "url": "https://www.baike.com/wikiid/8895194975427498298",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/8895194975427498298",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "世界图书与版权日"
+      }
+    },
+    {
+      "id": "museum299",
+      "title": "国际博物馆日",
+      "rule": {
+        "solar": [
+          5,
+          18
+        ]
+      },
+      "kind": "observance",
+      "category": "heritage",
+      "reason": "从一件器物进入一段历史，让保护与分享成为共同的责任。",
+      "works": [],
+      "source": "https://icom.museum/en/international-museum-day/",
+      "poem": {
+        "id": "museum299",
+        "title": "国际博物馆日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "与古为新，万物有声。",
+        "url": "https://icom.museum/en/international-museum-day/"
+      },
+      "encyclopedia301": {
+        "title": "国际博物馆日",
+        "label": "国际博物馆日",
+        "url": "https://www.baike.com/wikiid/7542822566286150107",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7542822566286150107",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "国际博物馆日"
+      }
+    },
+    {
+      "id": "diversity299",
+      "title": "世界文化多样性促进对话和发展日",
+      "rule": {
+        "solar": [
+          5,
+          21
+        ]
+      },
+      "kind": "observance",
+      "category": "exchange",
+      "reason": "不同文明的表达值得相互尊重；相遇不必抹去各自的独特。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/cultural-diversity-day",
+      "poem": {
+        "id": "diversity299",
+        "title": "世界文化多样性促进对话和发展日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "不同的美，在纸上相逢。",
+        "url": "https://www.un.org/en/observances/cultural-diversity-day"
+      },
+      "encyclopedia301": {
+        "title": "世界文化多样性促进对话和发展日",
+        "label": "史料与纪念日来源",
+        "url": "https://www.un.org/en/observances/cultural-diversity-day",
+        "provider": "原始来源",
+        "relatedTopic": false,
+        "encyclopediaVerified": false,
+        "verifiedVia": {
+          "method": "existing_calendar_primary_source",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    },
+    {
+      "id": "archives299",
+      "title": "国际档案日",
+      "rule": {
+        "solar": [
+          6,
+          9
+        ]
+      },
+      "kind": "observance",
+      "category": "memory",
+      "reason": "档案不仅是名人的记录，也保存普通人的生活与社会的共同记忆。",
+      "works": [],
+      "source": "https://www.ica.org/what-we-do/international-archives-week/",
+      "poem": {
+        "id": "archives299",
+        "title": "国际档案日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "留一纸真迹，存一代记忆。",
+        "url": "https://www.ica.org/what-we-do/international-archives-week/"
+      },
+      "encyclopedia301": {
+        "title": "国际档案日",
+        "label": "国际档案日",
+        "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E6%A1%A3%E6%A1%88%E6%97%A5/3754113",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E6%A1%A3%E6%A1%88%E6%97%A5/3754113",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "国际档案日"
+      }
+    },
+    {
+      "id": "moon299",
+      "title": "国际月球日",
+      "rule": {
+        "solar": [
+          7,
+          20
+        ]
+      },
+      "kind": "observance",
+      "category": "science",
+      "reason": "月亮既是诗歌中的故乡，也连接人类对未知的共同探索。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/moon-day",
+      "poem": {
+        "id": "moon299",
+        "title": "国际月球日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "仰望同一轮明月。",
+        "url": "https://www.un.org/en/observances/moon-day"
+      },
+      "encyclopedia301": {
+        "title": "国际月球日",
+        "label": "史料与纪念日来源",
+        "url": "https://www.un.org/en/observances/moon-day",
+        "provider": "原始来源",
+        "relatedTopic": false,
+        "encyclopediaVerified": false,
+        "verifiedVia": {
+          "method": "existing_calendar_primary_source",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    },
+    {
+      "id": "indigenous299",
+      "title": "世界土著人民国际日",
+      "rule": {
+        "solar": [
+          8,
+          9
+        ]
+      },
+      "kind": "observance",
+      "category": "intangible",
+      "reason": "口述传统、语言和地方知识，提醒我们尊重各群体自己的文化表达。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/list-days-weeks",
+      "poem": {
+        "id": "indigenous299",
+        "title": "世界土著人民国际日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "每一种声音，都值得被听见。",
+        "url": "https://www.un.org/en/observances/list-days-weeks"
+      },
+      "encyclopedia301": {
+        "title": "世界土著人民国际日",
+        "label": "史料与纪念日来源",
+        "url": "https://www.un.org/en/observances/list-days-weeks",
+        "provider": "原始来源",
+        "relatedTopic": false,
+        "encyclopediaVerified": false,
+        "verifiedVia": {
+          "method": "existing_calendar_primary_source",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    },
+    {
+      "id": "literacy299",
+      "title": "国际扫盲日",
+      "rule": {
+        "solar": [
+          9,
+          8
+        ]
+      },
+      "kind": "observance",
+      "category": "writing",
+      "reason": "能读能写，让更多人表达经验、参与生活并掌握自己的故事。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/literacy",
+      "poem": {
+        "id": "literacy299",
+        "title": "国际扫盲日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "人人可读，人人可写。",
+        "url": "https://www.unesco.org/en/days/literacy"
+      },
+      "encyclopedia301": {
+        "title": "国际扫盲日",
+        "label": "史料与纪念日来源",
+        "url": "https://www.unesco.org/en/days/literacy",
+        "provider": "原始来源",
+        "relatedTopic": false,
+        "encyclopediaVerified": false,
+        "verifiedVia": {
+          "method": "existing_calendar_primary_source",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    },
+    {
+      "id": "peace299",
+      "title": "国际和平日",
+      "rule": {
+        "solar": [
+          9,
+          21
+        ]
+      },
+      "kind": "observance",
+      "category": "values",
+      "reason": "写下对和平的期望，让不同语言的人能够平等相见。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/international-day-peace",
+      "poem": {
+        "id": "peace299",
+        "title": "国际和平日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "愿山河无恙，愿人间相安。",
+        "url": "https://www.un.org/en/observances/international-day-peace"
+      },
+      "encyclopedia301": {
+        "title": "国际和平日",
+        "label": "国际和平日",
+        "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%92%8C%E5%B9%B3%E6%97%A5/513979",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%92%8C%E5%B9%B3%E6%97%A5/513979",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "国际和平日"
+      }
+    },
+    {
+      "id": "access299",
+      "title": "普遍获取信息国际日",
+      "rule": {
+        "solar": [
+          9,
+          28
+        ]
+      },
+      "kind": "observance",
+      "category": "memory",
+      "reason": "保存文献之后，还需要让人们有机会阅读与理解它们。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/universal-access-information",
+      "poem": {
+        "id": "access299",
+        "title": "普遍获取信息国际日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "记忆属于所有人。",
+        "url": "https://www.unesco.org/en/days/universal-access-information"
+      },
+      "encyclopedia301": {
+        "title": "“普遍获取信息国际日”",
+        "label": "“普遍获取信息国际日”",
+        "url": "https://bkso.baidu.com/item/%E2%80%9C%E6%99%AE%E9%81%8D%E8%8E%B7%E5%8F%96%E4%BF%A1%E6%81%AF%E5%9B%BD%E9%99%85%E6%97%A5%E2%80%9D/62035880",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E2%80%9C%E6%99%AE%E9%81%8D%E8%8E%B7%E5%8F%96%E4%BF%A1%E6%81%AF%E5%9B%BD%E9%99%85%E6%97%A5%E2%80%9D/62035880",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "普遍获取信息国际日"
+      }
+    },
+    {
+      "id": "translation299",
+      "title": "国际翻译日",
+      "rule": {
+        "solar": [
+          9,
+          30
+        ]
+      },
+      "kind": "observance",
+      "category": "exchange",
+      "reason": "翻译让一种语言中的经验走进另一种语言，文字因此跨越边界。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/international-translation-day",
+      "poem": {
+        "id": "translation299",
+        "title": "国际翻译日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "译一行文字，开一扇窗。",
+        "url": "https://www.un.org/en/observances/international-translation-day"
+      },
+      "encyclopedia301": {
+        "title": "国际翻译日",
+        "label": "史料与纪念日来源",
+        "url": "https://www.un.org/en/observances/international-translation-day",
+        "provider": "原始来源",
+        "relatedTopic": false,
+        "encyclopediaVerified": false,
+        "verifiedVia": {
+          "method": "existing_calendar_primary_source",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    },
+    {
+      "id": "living299",
+      "title": "国际非物质文化遗产日",
+      "rule": {
+        "solar": [
+          10,
+          17
+        ]
+      },
+      "kind": "observance",
+      "category": "intangible",
+      "reason": "技艺、节庆、音乐与口述传统，依靠人的实践而代代相续。",
+      "works": [],
+      "source": "https://ich.unesco.org/en/internationalday-of-intangible-cultural-heritage-01363",
+      "poem": {
+        "id": "living299",
+        "title": "国际非物质文化遗产日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "手传心授，生生不息。",
+        "url": "https://ich.unesco.org/en/internationalday-of-intangible-cultural-heritage-01363"
+      },
+      "encyclopedia301": {
+        "title": "非物质文化遗产",
+        "label": "非物质文化遗产",
+        "url": "https://www.baike.com/wikiid/738538672412540237",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/738538672412540237",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "国际非物质文化遗产日"
+      }
+    },
+    {
+      "id": "av299",
+      "title": "世界音像遗产日",
+      "rule": {
+        "solar": [
+          10,
+          27
+        ]
+      },
+      "kind": "observance",
+      "category": "memory",
+      "reason": "电影、声音与影像也在记录人类；它们与手稿同样需要保护。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/audiovisual-heritage",
+      "poem": {
+        "id": "av299",
+        "title": "世界音像遗产日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "留住声音，留住此刻。",
+        "url": "https://www.unesco.org/en/days/audiovisual-heritage"
+      },
+      "encyclopedia301": {
+        "title": "世界音像遗产日",
+        "label": "史料与纪念日来源",
+        "url": "https://www.unesco.org/en/days/audiovisual-heritage",
+        "provider": "原始来源",
+        "relatedTopic": false,
+        "encyclopediaVerified": false,
+        "verifiedVia": {
+          "method": "existing_calendar_primary_source",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    },
+    {
+      "id": "science299",
+      "title": "世界科学促进和平与发展日",
+      "rule": {
+        "solar": [
+          11,
+          10
+        ]
+      },
+      "kind": "observance",
+      "category": "science",
+      "reason": "观察、求证与分享知识，让不同地方的人共同拓展认识。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/science-peace-development",
+      "poem": {
+        "id": "science299",
+        "title": "世界科学促进和平与发展日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "求真知，行远路。",
+        "url": "https://www.unesco.org/en/days/science-peace-development"
+      },
+      "encyclopedia301": {
+        "title": "世界科学促进和平与发展日",
+        "label": "史料与纪念日来源",
+        "url": "https://www.unesco.org/en/days/science-peace-development",
+        "provider": "原始来源",
+        "relatedTopic": false,
+        "encyclopediaVerified": false,
+        "verifiedVia": {
+          "method": "existing_calendar_primary_source",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    },
+    {
+      "id": "tolerance299",
+      "title": "国际宽容日",
+      "rule": {
+        "solar": [
+          11,
+          16
+        ]
+      },
+      "kind": "observance",
+      "category": "values",
+      "reason": "尊重不同文化、信仰与表达，是文明相处的日常功课。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/tolerance-day",
+      "poem": {
+        "id": "tolerance299",
+        "title": "国际宽容日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "和而不同，相敬相知。",
+        "url": "https://www.un.org/en/observances/tolerance-day"
+      },
+      "encyclopedia301": {
+        "title": "国际宽容日",
+        "label": "国际宽容日",
+        "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%AE%BD%E5%AE%B9%E6%97%A5/10673828",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%AE%BD%E5%AE%B9%E6%97%A5/10673828",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "国际宽容日"
+      }
+    },
+    {
+      "id": "rights299",
+      "title": "人权日",
+      "rule": {
+        "solar": [
+          12,
+          10
+        ]
+      },
+      "kind": "observance",
+      "category": "values",
+      "reason": "1948年这一天，《世界人权宣言》获得通过，人的尊严成为共同的书面承诺。",
+      "works": [],
+      "source": "https://www.un.org/en/observances/human-rights-day",
+      "poem": {
+        "id": "rights299",
+        "title": "人权日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "生而有尊严，彼此有光。",
+        "url": "https://www.un.org/en/observances/human-rights-day"
+      },
+      "encyclopedia301": {
+        "title": "人权日",
+        "label": "史料与纪念日来源",
+        "url": "https://www.un.org/en/observances/human-rights-day",
+        "provider": "原始来源",
+        "relatedTopic": false,
+        "encyclopediaVerified": false,
+        "verifiedVia": {
+          "method": "existing_calendar_primary_source",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    },
+    {
+      "id": "arabicday299",
+      "title": "世界阿拉伯语日",
+      "rule": {
+        "solar": [
+          12,
+          18
+        ]
+      },
+      "kind": "observance",
+      "category": "writing",
+      "reason": "在连绵的字形中认识另一种语言，让书写成为相互理解的入口。",
+      "works": [],
+      "source": "https://www.unesco.org/en/days/world-arabic-language",
+      "poem": {
+        "id": "arabicday299",
+        "title": "世界阿拉伯语日 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "字形各异，心意相通。",
+        "url": "https://www.unesco.org/en/days/world-arabic-language"
+      },
+      "encyclopedia301": {
+        "title": "世界阿拉伯语日",
+        "label": "史料与纪念日来源",
+        "url": "https://www.unesco.org/en/days/world-arabic-language",
+        "provider": "原始来源",
+        "relatedTopic": false,
+        "encyclopediaVerified": false,
+        "verifiedVia": {
+          "method": "existing_calendar_primary_source",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    },
+    {
+      "id": "worldconvention299",
+      "title": "世界遗产公约获通过",
+      "rule": {
+        "solar": [
+          11,
+          16
+        ]
+      },
+      "kind": "documented",
+      "category": "heritage",
+      "reason": "1972年11月16日，保护文化与自然遗产的共同责任写入国际公约。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/conventiontext/",
+      "poem": {
+        "id": "worldconvention299",
+        "title": "世界遗产公约获通过 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "守护共同的家园。",
+        "url": "https://whc.unesco.org/en/conventiontext/"
+      },
+      "year": 1972,
+      "encyclopedia301": {
+        "title": "保护世界文化和自然遗产公约",
+        "label": "保护世界文化和自然遗产公约",
+        "url": "https://www.baike.com/wikiid/1694519371281395788",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/1694519371281395788",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "世界遗产公约获通过"
+      }
+    },
+    {
+      "id": "ichconvention299",
+      "title": "保护非物质文化遗产公约获通过",
+      "rule": {
+        "solar": [
+          10,
+          17
+        ]
+      },
+      "kind": "documented",
+      "category": "intangible",
+      "reason": "2003年10月17日通过的公约，让活着的传统与传承群体得到更多关注。",
+      "works": [],
+      "source": "https://ich.unesco.org/en/convention",
+      "poem": {
+        "id": "ichconvention299",
+        "title": "保护非物质文化遗产公约获通过 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "传统在手，未来在心。",
+        "url": "https://ich.unesco.org/en/convention"
+      },
+      "year": 2003,
+      "encyclopedia301": {
+        "title": "非物质文化遗产",
+        "label": "非物质文化遗产",
+        "url": "https://www.baike.com/wikiid/738538672412540237",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/738538672412540237",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "保护非物质文化遗产公约获通过"
+      }
+    },
+    {
+      "id": "iss299",
+      "title": "《兰亭集序》从国际空间站传来",
+      "rule": {
+        "solar": [
+          10,
+          12
+        ]
+      },
+      "kind": "documented",
+      "category": "exchange",
+      "reason": "2022年10月12日，欧空局意大利航天员萨曼莎·克里斯托福雷蒂在国际空间站任务期间分享中国上空影像，并引用《兰亭集序》。从地面到太空，古文与今日的观看相遇。",
+      "works": [
+        "lanting"
+      ],
+      "source": "https://www.fmprc.gov.cn/web/fyrbt_673021/202210/t20221013_10782902.shtml",
+      "poem": {
+        "id": "iss299",
+        "title": "《兰亭集序》从国际空间站传来 · 荐写",
+        "author": "王羲之 ·《兰亭集序》",
+        "text": "仰观宇宙之大，俯察品类之盛，所以游目骋怀，足以极视听之娱，信可乐也。",
+        "url": "https://www.fmprc.gov.cn/web/fyrbt_673021/202210/t20221013_10782902.shtml"
+      },
+      "year": 2022,
+      "encyclopedia301": {
+        "title": "萨曼莎·克里斯托弗雷蒂",
+        "label": "萨曼莎·克里斯托弗雷蒂",
+        "url": "https://bkso.baidu.com/item/%E8%90%A8%E6%9B%BC%E8%8E%8E%C2%B7%E5%85%8B%E9%87%8C%E6%96%AF%E6%89%98%E5%BC%97%E9%9B%B7%E8%92%82/5137055",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E8%90%A8%E6%9B%BC%E8%8E%8E%C2%B7%E5%85%8B%E9%87%8C%E6%96%AF%E6%89%98%E5%BC%97%E9%9B%B7%E8%92%82/5137055",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "《兰亭集序》从国际空间站传来"
+      }
+    },
+    {
+      "id": "jobs299",
+      "title": "一堂书法课，走进个人电脑",
+      "rule": {
+        "solar": [
+          6,
+          12
+        ]
+      },
+      "kind": "documented",
+      "category": "exchange",
+      "reason": "2005年6月12日，乔布斯在斯坦福毕业演讲中回忆里德学院的书法课如何启发 Macintosh 字体设计。这里说的是西方字母书法课程。",
+      "works": [],
+      "source": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says",
+      "poem": {
+        "id": "jobs299",
+        "title": "一堂书法课，走进个人电脑 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "美的学习，会在未来相遇。",
+        "url": "https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says"
+      },
+      "year": 2005,
+      "encyclopedia301": {
+        "title": "史蒂夫·乔布斯",
+        "label": "史蒂夫·乔布斯",
+        "url": "https://bkso.baidu.com/item/%E5%8F%B2%E8%92%82%E5%A4%AB%C2%B7%E4%B9%94%E5%B8%83%E6%96%AF/85300",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E5%8F%B2%E8%92%82%E5%A4%AB%C2%B7%E4%B9%94%E5%B8%83%E6%96%AF/85300",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "一堂书法课，走进个人电脑"
+      }
+    },
+    {
+      "id": "arabicinscription299",
+      "title": "阿拉伯书法成为人类非遗",
+      "rule": {
+        "solar": [
+          12,
+          14
+        ]
+      },
+      "kind": "documented",
+      "category": "intangible",
+      "reason": "2021年12月14日，16国联合申报的阿拉伯书法项目列入人类非物质文化遗产代表作名录，呈现书写艺术的跨国传承。",
+      "works": [],
+      "source": "https://www.unesco.org/en/articles/unesco-adds-arabic-calligraphy-intangible-cultural-heritage-humanity-list",
+      "poem": {
+        "id": "arabicinscription299",
+        "title": "阿拉伯书法成为人类非遗 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "一笔连山海，一字见天地。",
+        "url": "https://www.unesco.org/en/articles/unesco-adds-arabic-calligraphy-intangible-cultural-heritage-humanity-list"
+      },
+      "year": 2021,
+      "encyclopedia301": {
+        "title": "阿拉伯书法",
+        "label": "阿拉伯书法",
+        "url": "https://bkso.baidu.com/item/%E9%98%BF%E6%8B%89%E4%BC%AF%E4%B9%A6%E6%B3%95/449745",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E9%98%BF%E6%8B%89%E4%BC%AF%E4%B9%A6%E6%B3%95/449745",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "阿拉伯书法成为人类非遗"
+      }
+    },
+    {
+      "id": "dylan299",
+      "title": "迪伦的公寓里，一幅中文书法",
+      "rule": {
+        "solar": [
+          5,
+          24
+        ]
+      },
+      "kind": "editorial",
+      "category": "exchange",
+      "reason": "特德·罗素拍摄的早年公寓照片里，可见迪伦家中悬挂的中文书法。借他的生日回看这段文明相遇；现有依据不能证明书法由迪伦亲笔，也没有可靠的悬挂月日。",
+      "works": [],
+      "source": "https://whb-oss.oss-cn-shanghai.aliyuncs.com/zhuzhan/dushu/20180618/201138.html",
+      "poem": {
+        "id": "dylan299",
+        "title": "迪伦的公寓里，一幅中文书法 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "以诚为心，以爱为基。",
+        "url": "https://whb-oss.oss-cn-shanghai.aliyuncs.com/zhuzhan/dushu/20180618/201138.html"
+      },
+      "dateNote": "借5月24日诞辰荐写；不是书法悬挂日",
+      "encyclopedia301": {
+        "title": "鲍勃·迪伦",
+        "label": "鲍勃·迪伦",
+        "url": "https://www.baike.com/wikiid/7791226860991216465",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7791226860991216465",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "迪伦的公寓里，一幅中文书法"
+      }
+    },
+    {
+      "id": "sutra868299",
+      "title": "一卷有纪年的雕版印本",
+      "rule": {
+        "solar": [
+          5,
+          11
+        ]
+      },
+      "kind": "documented",
+      "category": "memory",
+      "reason": "大英图书馆所藏868年《金刚经》卷末题记，对应公历5月11日。明确纪年的印本见证了复制、流通与知识共享。",
+      "works": [],
+      "source": "https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/buddhism-on-the-ground/buddhist-texts-the-diamond-sutra/",
+      "poem": {
+        "id": "sutra868299",
+        "title": "一卷有纪年的雕版印本 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "一纸传灯，千载同明。",
+        "url": "https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/buddhism-on-the-ground/buddhist-texts-the-diamond-sutra/"
+      },
+      "year": 868,
+      "encyclopedia301": {
+        "title": "金刚经刻本",
+        "label": "金刚经刻本",
+        "url": "https://www.baike.com/wikiid/3947992085243950698",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/3947992085243950698",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "一卷有纪年的雕版印本"
+      }
+    },
+    {
+      "id": "mow299",
+      "title": "世界记忆：让文献对所有人开放",
+      "rule": {
+        "solar": [
+          6,
+          9
+        ]
+      },
+      "kind": "editorial",
+      "category": "memory",
+      "reason": "世界记忆计划始于1992年；在国际档案日回看世界记忆名录。这里的6月9日是主题荐写日，不是计划创立日。",
+      "works": [],
+      "source": "https://www.unesco.org/en/memory-world/register",
+      "poem": {
+        "id": "mow299",
+        "title": "世界记忆：让文献对所有人开放 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "记忆不灭，文明不息。",
+        "url": "https://www.unesco.org/en/memory-world/register"
+      },
+      "dateNote": "主题荐写；非遗产入选日",
+      "encyclopedia301": {
+        "title": "世界记忆遗产",
+        "label": "世界记忆遗产",
+        "url": "https://www.baike.com/wikiid/5414947337833649717",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/5414947337833649717",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "世界记忆：让文献对所有人开放"
+      }
+    },
+    {
+      "id": "mogao299",
+      "title": "莫高窟：壁画、洞窟与丝路",
+      "rule": {
+        "solar": [
+          4,
+          18
+        ]
+      },
+      "kind": "editorial",
+      "category": "heritage",
+      "reason": "莫高窟列入世界遗产名录；在古迹遗址日，循洞窟、壁画和写卷认识丝路交流，不将今日说成入选日。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/list/440/",
+      "poem": {
+        "id": "mogao299",
+        "title": "莫高窟：壁画、洞窟与丝路 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "千年壁上，一眼相逢。",
+        "url": "https://whc.unesco.org/en/list/440/"
+      },
+      "dateNote": "主题荐写；非遗产入选日",
+      "encyclopedia301": {
+        "title": "莫高窟",
+        "label": "莫高窟",
+        "url": "https://bkso.baidu.com/item/%E8%8E%AB%E9%AB%98%E7%AA%9F/303038",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E8%8E%AB%E9%AB%98%E7%AA%9F/303038",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "莫高窟：壁画、洞窟与丝路"
+      }
+    },
+    {
+      "id": "pyramid299",
+      "title": "孟菲斯及其墓地：石上的文明",
+      "rule": {
+        "solar": [
+          4,
+          18
+        ]
+      },
+      "kind": "editorial",
+      "category": "heritage",
+      "reason": "从吉萨金字塔到古埃及的营造传统，世界遗产让远方文明留下可见的印记。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/list/86/",
+      "poem": {
+        "id": "pyramid299",
+        "title": "孟菲斯及其墓地：石上的文明 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "以石记时，以字相知。",
+        "url": "https://whc.unesco.org/en/list/86/"
+      },
+      "dateNote": "主题荐写；非遗产入选日",
+      "encyclopedia301": {
+        "title": "孟菲斯及其墓地金字塔",
+        "label": "孟菲斯及其墓地金字塔",
+        "url": "https://bkso.baidu.com/item/%E5%AD%9F%E8%8F%B2%E6%96%AF%E5%8F%8A%E5%85%B6%E5%A2%93%E5%9C%B0%E9%87%91%E5%AD%97%E5%A1%94/7791822",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E5%AD%9F%E8%8F%B2%E6%96%AF%E5%8F%8A%E5%85%B6%E5%A2%93%E5%9C%B0%E9%87%91%E5%AD%97%E5%A1%94/7791822",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "孟菲斯及其墓地：石上的文明"
+      }
+    },
+    {
+      "id": "borobudur299",
+      "title": "婆罗浮屠：海上丝路的回响",
+      "rule": {
+        "solar": [
+          5,
+          21
+        ]
+      },
+      "kind": "editorial",
+      "category": "heritage",
+      "reason": "在文化多样性之日，认识印度尼西亚婆罗浮屠寺庙群的造像、建筑与跨文化历史。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/list/592/",
+      "poem": {
+        "id": "borobudur299",
+        "title": "婆罗浮屠：海上丝路的回响 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "山海相望，文明相通。",
+        "url": "https://whc.unesco.org/en/list/592/"
+      },
+      "dateNote": "主题荐写；非遗产入选日",
+      "encyclopedia301": {
+        "title": "婆罗浮屠",
+        "label": "婆罗浮屠",
+        "url": "https://www.baike.com/wikiid/2594270372718171083",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/2594270372718171083",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "婆罗浮屠：海上丝路的回响"
+      }
+    },
+    {
+      "id": "taj299",
+      "title": "泰姬陵：建筑中的爱与记忆",
+      "rule": {
+        "solar": [
+          4,
+          18
+        ]
+      },
+      "kind": "editorial",
+      "category": "heritage",
+      "reason": "在古迹遗址日，读印度泰姬陵的建筑、花园与书法装饰；不把纪念关联误当作建成日期。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/list/252/",
+      "poem": {
+        "id": "taj299",
+        "title": "泰姬陵：建筑中的爱与记忆 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "把思念写进时间。",
+        "url": "https://whc.unesco.org/en/list/252/"
+      },
+      "dateNote": "主题荐写；非遗产入选日",
+      "encyclopedia301": {
+        "title": "泰姬陵",
+        "label": "泰姬陵",
+        "url": "https://www.baike.com/wikiid/7205958012069593140",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7205958012069593140",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "泰姬陵：建筑中的爱与记忆"
+      }
+    },
+    {
+      "id": "chinesecalligraphy299",
+      "title": "中国书法：从纸墨到人类非遗",
+      "rule": {
+        "solar": [
+          10,
+          17
+        ]
+      },
+      "kind": "editorial",
+      "category": "intangible",
+      "reason": "中国书法于2009年列入人类非遗代表作名录。借国际非遗日读五体笔墨，不编造具体入选月日。",
+      "works": [],
+      "source": "https://ich.unesco.org/en/RL/chinese-calligraphy-00216",
+      "poem": {
+        "id": "chinesecalligraphy299",
+        "title": "中国书法：从纸墨到人类非遗 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "笔墨相传，心手相应。",
+        "url": "https://ich.unesco.org/en/RL/chinese-calligraphy-00216"
+      },
+      "dateNote": "主题荐写；非遗产入选日",
+      "encyclopedia301": {
+        "title": "非物质文化遗产",
+        "label": "非物质文化遗产",
+        "url": "https://www.baike.com/wikiid/738538672412540237",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/738538672412540237",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "中国书法：从纸墨到人类非遗"
+      }
+    },
+    {
+      "id": "silk299",
+      "title": "丝绸之路：跨越山海的对话",
+      "rule": {
+        "solar": [
+          9,
+          30
+        ]
+      },
+      "kind": "editorial",
+      "category": "exchange",
+      "reason": "从长安至天山廊道的世界遗产，在翻译日回看语言、商旅与艺术如何跨越边界。",
+      "works": [],
+      "source": "https://whc.unesco.org/en/list/1442/",
+      "poem": {
+        "id": "silk299",
+        "title": "丝绸之路：跨越山海的对话 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "路通山海，字达远方。",
+        "url": "https://whc.unesco.org/en/list/1442/"
+      },
+      "dateNote": "主题荐写；非遗产入选日",
+      "encyclopedia301": {
+        "title": "丝绸之路",
+        "label": "丝绸之路",
+        "url": "https://www.zgbk.com/ecph/words?Name=%E4%B8%9D%E7%BB%B8%E4%B9%8B%E8%B7%AF&SiteID=1&SourceID=560143&Type=bkzyb&subSourceType=000003000001000002",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.zgbk.com/ecph/words?Name=%E4%B8%9D%E7%BB%B8%E4%B9%8B%E8%B7%AF&SiteID=1&SourceID=560143&Type=bkzyb&subSourceType=000003000001000002",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "丝绸之路：跨越山海的对话"
+      }
+    },
+    {
+      "id": "tea299",
+      "title": "中国传统制茶技艺及其相关习俗",
+      "rule": {
+        "solar": [
+          10,
+          17
+        ]
+      },
+      "kind": "editorial",
+      "category": "intangible",
+      "reason": "联合国教科文组织于2022年将这一项目列入人类非遗代表作名录。借国际非遗日写茶事与待客。",
+      "works": [],
+      "source": "https://ich.unesco.org/en/RL/traditional-tea-processing-techniques-and-associated-social-practices-in-china-01884",
+      "poem": {
+        "id": "tea299",
+        "title": "中国传统制茶技艺及其相关习俗 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "一盏清茶，四海相知。",
+        "url": "https://ich.unesco.org/en/RL/traditional-tea-processing-techniques-and-associated-social-practices-in-china-01884"
+      },
+      "dateNote": "主题荐写；非遗产入选日",
+      "encyclopedia301": {
+        "title": "中国传统制茶技艺及其相关习俗",
+        "label": "中国传统制茶技艺及其相关习俗",
+        "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E7%BB%9F%E5%88%B6%E8%8C%B6%E6%8A%80%E8%89%BA%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E4%B9%A0%E4%BF%97/62389766",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E7%BB%9F%E5%88%B6%E8%8C%B6%E6%8A%80%E8%89%BA%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E4%B9%A0%E4%BF%97/62389766",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "中国传统制茶技艺及其相关习俗"
+      }
+    },
+    {
+      "id": "annefrank299",
+      "title": "《安妮日记》手稿成为世界记忆",
+      "rule": {
+        "solar": [
+          7,
+          30
+        ]
+      },
+      "kind": "documented",
+      "category": "memory",
+      "reason": "安妮之家2009年7月31日公告称，联合国教科文组织于前一天宣布将安妮的手稿列入世界记忆名录。私人日记由此成为共同记忆的见证。",
+      "works": [],
+      "source": "https://www.annefrank.org/en/about-us/news-and-press/news/2009/7/31/geschriften-anne-frank-op-unesco-lijst/",
+      "dateNote": "日期按安妮之家公告所述的宣布日",
+      "poem": {
+        "id": "annefrank299",
+        "title": "《安妮日记》手稿成为世界记忆 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "守护每一个人的故事。",
+        "url": "https://www.annefrank.org/en/about-us/news-and-press/news/2009/7/31/geschriften-anne-frank-op-unesco-lijst/"
+      },
+      "year": 2009,
+      "encyclopedia301": {
+        "title": "安妮日记",
+        "label": "安妮日记",
+        "url": "https://bkso.baidu.com/item/%E5%AE%89%E5%A6%AE%E6%97%A5%E8%AE%B0/63088034",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E5%AE%89%E5%A6%AE%E6%97%A5%E8%AE%B0/63088034",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "《安妮日记》手稿成为世界记忆"
+      }
+    },
+    {
+      "id": "jikji299",
+      "title": "《直指》列入世界记忆名录",
+      "rule": {
+        "solar": [
+          9,
+          4
+        ]
+      },
+      "kind": "documented",
+      "category": "memory",
+      "reason": "1377年的金属活字印本《直指》于2001年9月4日列入世界记忆名录。小小活字连接了手工技艺与知识传播。",
+      "works": [],
+      "source": "https://www.globaljikji.org/en/sub.do?menukey=4205",
+      "dateNote": "日期据清州古印刷博物馆资料",
+      "poem": {
+        "id": "jikji299",
+        "title": "《直指》列入世界记忆名录 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "活字生光，文脉相连。",
+        "url": "https://www.globaljikji.org/en/sub.do?menukey=4205"
+      },
+      "year": 2001,
+      "encyclopedia301": {
+        "title": "直指心体要节",
+        "label": "直指心体要节",
+        "url": "https://bkso.baidu.com/item/%E7%9B%B4%E6%8C%87%E5%BF%83%E4%BD%93%E8%A6%81%E8%8A%82/3978244",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://bkso.baidu.com/item/%E7%9B%B4%E6%8C%87%E5%BF%83%E4%BD%93%E8%A6%81%E8%8A%82/3978244",
+          "checkedAt": "2026-10-31"
+        },
+        "eventTitle": "《直指》列入世界记忆名录"
+      }
+    },
+    {
+      "id": "beethoven299",
+      "title": "贝多芬《第九交响曲》手稿",
+      "rule": {
+        "solar": [
+          10,
+          27
+        ]
+      },
+      "kind": "editorial",
+      "category": "memory",
+      "reason": "这部交响曲的亲笔总谱于2001年列入世界记忆名录。借世界音像遗产日，认识音乐从手写谱页走向人类共同聆听的过程。",
+      "works": [],
+      "source": "https://www.loc.gov/item/2021668114/",
+      "dateNote": "主题荐写；非手稿入选日",
+      "poem": {
+        "id": "beethoven299",
+        "title": "贝多芬《第九交响曲》手稿 · 荐写",
+        "author": "手筆 · 原创荐写",
+        "text": "纸上有声，心中相通。",
+        "url": "https://www.loc.gov/item/2021668114/"
+      },
+      "encyclopedia301": {
+        "title": "贝多芬《第九交响曲》手稿",
+        "label": "史料与纪念日来源",
+        "url": "https://www.loc.gov/item/2021668114/",
+        "provider": "原始来源",
+        "relatedTopic": false,
+        "encyclopediaVerified": false,
+        "verifiedVia": {
+          "method": "existing_calendar_primary_source",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "heritage",
+      "title": "世界遗产"
+    },
+    {
+      "id": "memory",
+      "title": "世界记忆"
+    },
+    {
+      "id": "intangible",
+      "title": "活态非遗"
+    },
+    {
+      "id": "writing",
+      "title": "文字与典籍"
+    },
+    {
+      "id": "arts",
+      "title": "艺术与文学"
+    },
+    {
+      "id": "science",
+      "title": "科学与探索"
+    },
+    {
+      "id": "exchange",
+      "title": "文明交流"
+    },
+    {
+      "id": "values",
+      "title": "和平与尊严"
+    }
+  ],
+  "encyclopedia301": {
+    "categories": {
+      "heritage": {
+        "title": "世界遗产名录",
+        "label": "世界遗产名录",
+        "url": "https://www.baike.com/wikiid/7191672317444707644",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/7191672317444707644",
+          "checkedAt": "2026-10-31"
+        }
+      },
+      "memory": {
+        "title": "世界记忆遗产",
+        "label": "世界记忆遗产",
+        "url": "https://www.baike.com/wikiid/5414947337833649717",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/5414947337833649717",
+          "checkedAt": "2026-10-31"
+        }
+      },
+      "intangible": {
+        "title": "非物质文化遗产",
+        "label": "非物质文化遗产",
+        "url": "https://www.baike.com/wikiid/738538672412540237",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "public_search_result_or_article_html",
+          "url": "https://www.baike.com/wikiid/738538672412540237",
+          "checkedAt": "2026-10-31"
+        }
+      }
+    },
+    "registers": {
+      "heritage": {
+        "label": "全球世界遗产名录",
+        "url": "https://whc.unesco.org/en/list/",
+        "provider": "UNESCO"
+      },
+      "memory": {
+        "label": "全球世界记忆名录",
+        "url": "https://www.unesco.org/en/memory-world/grid?hub=1081",
+        "provider": "UNESCO"
+      },
+      "intangible": {
+        "label": "全球非物质文化遗产名录",
+        "url": "https://ich.unesco.org/en/lists",
+        "provider": "UNESCO"
+      }
+    }
+  }
+}

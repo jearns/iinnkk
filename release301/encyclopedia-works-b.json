@@ -1,0 +1,778 @@
+{
+  "zhongxing": {
+    "title": "大唐中兴颂",
+    "label": "大唐中兴颂",
+    "url": "https://www.baike.com/wikiid/292857875054594688",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn61search0",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "shimenming": {
+    "title": "石门铭",
+    "label": "石门铭",
+    "url": "https://wapbaike.baidu.com/item/%E7%9F%B3%E9%97%A8%E9%93%AD/9937775",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn63search0",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "jitaishan": {
+    "title": "纪泰山铭",
+    "label": "纪泰山铭",
+    "url": "https://bkso.baidu.com/item/%E7%BA%AA%E6%B3%B0%E5%B1%B1%E9%93%AD/5248009",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn63search1",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "shengjiao": {
+    "title": "集王圣教序",
+    "label": "集王圣教序",
+    "url": "https://bkso.baidu.com/item/%E9%9B%86%E7%8E%8B%E5%9C%A3%E6%95%99%E5%BA%8F/61489707",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn63search2",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "xiping": {
+    "title": "熹平石经",
+    "label": "熹平石经",
+    "url": "https://www.zgbk.com/ecph/words?ID=406856&SiteID=1&SubID=205242&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn63search4",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "zhengshi": {
+    "title": "三体石经（正始石经）",
+    "label": "三体石经（正始石经）",
+    "url": "https://www.baike.com/wikiid/8127465928708748561",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn67search19",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "正始石经"
+  },
+  "kaicheng": {
+    "title": "开成石经",
+    "label": "开成石经",
+    "url": "https://bkso.baidu.com/item/%E5%BC%80%E6%88%90%E7%9F%B3%E7%BB%8F/0",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn67search0",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "dizhu": {
+    "title": "砥柱铭",
+    "label": "砥柱铭",
+    "url": "https://bkso.baidu.com/item/%E7%A0%A5%E6%9F%B1%E9%93%AD/10487439",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn67search22",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "shamenghai-bangshu": {
+    "title": "沙孟海",
+    "label": "沙孟海",
+    "url": "https://www.baike.com/wikiid/7277601295829467147",
+    "provider": "快懂百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "article_html_og_title",
+      "url": "https://www.baike.com/wikiid/7277601295829467147",
+      "checkedAt": "2026-10-31"
+    }
+  },
+  "wuchangshuo-shigu": {
+    "title": "吴昌硕",
+    "label": "吴昌硕",
+    "url": "https://www.baike.com/wikiid/7251744333568180285",
+    "provider": "快懂百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn69search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "临石鼓文"
+  },
+  "wuhou": {
+    "title": "蜀丞相诸葛武侯祠堂碑",
+    "label": "蜀丞相诸葛武侯祠堂碑",
+    "url": "https://www.baike.com/wikiid/2775137578744231",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn69search0",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "lizi": {
+    "title": "荔子碑",
+    "label": "荔子碑",
+    "url": "https://bkso.baidu.com/item/%E8%8D%94%E5%AD%90%E7%A2%91/10846310",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn69search26",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "苏轼荔子碑"
+  },
+  "baozhi": {
+    "title": "宝志禅师",
+    "label": "宝志禅师",
+    "url": "https://www.baike.com/wikiid/8498096015577952946",
+    "provider": "快懂百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn74search24",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "宝志公像赞诗碑"
+  },
+  "suxian": {
+    "title": "三绝碑（苏仙岭）",
+    "label": "三绝碑（苏仙岭）",
+    "url": "https://www.baike.com/wikiid/8415061275056657290",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn74search0",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "苏仙岭三绝碑"
+  },
+  "zuiweng": {
+    "title": "醉翁亭记碑",
+    "label": "醉翁亭记碑",
+    "url": "https://www.baike.com/wikiid/7426107752939312611",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn74search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "苏轼书醉翁亭记碑"
+  },
+  "lisheng": {
+    "title": "李晟碑",
+    "label": "李晟碑",
+    "url": "https://bkso.baidu.com/item/%E6%9D%8E%E6%99%9F%E7%A2%91/1123785",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn74search17",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "李晟墓碑"
+  },
+  "chenghuang": {
+    "title": "城隍庙碑",
+    "label": "城隍庙碑",
+    "url": "https://bkso.baidu.com/item/%E5%9F%8E%E9%9A%8D%E5%BA%99%E7%A2%91/14442104",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn78search29",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "新修城隍庙碑"
+  },
+  "wanan": {
+    "title": "洛阳桥",
+    "label": "洛阳桥",
+    "url": "https://bkso.baidu.com/item/%E6%B4%9B%E9%98%B3%E6%A1%A5/3550436",
+    "provider": "百度百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn113search9",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "万安桥记大字碑"
+  },
+  "shouchan": {
+    "title": "三绝碑（上尊号与受禅碑）",
+    "label": "三绝碑（上尊号与受禅碑）",
+    "url": "https://www.baike.com/wikiid/7960363879797370192",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn78search10",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "上尊号与受禅碑"
+  },
+  "auction-pingan": {
+    "title": "平安帖",
+    "label": "平安帖",
+    "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%B8%96/25252",
+    "provider": "百度百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn78search24",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "平安帖（拍卖本）"
+  },
+  "guoyouzhi": {
+    "title": "赵孟頫",
+    "label": "赵孟頫",
+    "url": "https://www.baike.com/wikiid/7166510562602582068",
+    "provider": "快懂百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn82search0",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "致郭右之二帖卷"
+  },
+  "rao-hanliu": {
+    "title": "饶 介",
+    "label": "饶 介",
+    "url": "https://bkso.baidu.com/item/%E9%A5%B6%20%E4%BB%8B/7172649",
+    "provider": "百度百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn113search4",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "草书韩愈柳宗元文"
+  },
+  "jushi": {
+    "title": "局事帖",
+    "label": "局事帖",
+    "url": "https://bkso.baidu.com/item/%E5%B1%80%E4%BA%8B%E5%B8%96/5761624",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn82search8",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "zhao-xinjing": {
+    "title": "般若波罗蜜多心经（赵孟頫）",
+    "label": "般若波罗蜜多心经（赵孟頫）",
+    "url": "https://www.baike.com/wikiid/4448353435201950778",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn82search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "般若波罗蜜多心经"
+  },
+  "zhao-huangting": {
+    "title": "临黄庭经",
+    "label": "临黄庭经",
+    "url": "https://www.baike.com/wikiid/7417268205297434634",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn89search0",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "临黄庭经（保利本）"
+  },
+  "gongfu": {
+    "title": "苏轼",
+    "label": "苏轼",
+    "url": "https://www.baike.com/wikiid/2840507407652825840",
+    "provider": "快懂百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn69search32",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "功甫帖（拍卖本）"
+  },
+  "songke-zhuangyou": {
+    "title": "宋克",
+    "label": "宋克",
+    "url": "https://bkso.baidu.com/item/%E5%AE%8B%E5%85%8B/4221501",
+    "provider": "百度百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn113search11",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "草书杜子美壮游诗卷"
+  },
+  "dong-longshen": {
+    "title": "董其昌",
+    "label": "董其昌",
+    "url": "https://www.zgbk.com/ecph/words?Name=%E8%91%A3%E5%85%B6%E6%98%8C&SiteID=1&SourceID=110077&Type=bkzyb&subSourceType=000003000013000004",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn111search15",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "龙神感应记"
+  },
+  "oracle": {
+    "title": "甲骨文",
+    "label": "甲骨文",
+    "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "殷墟甲骨"
+  },
+  "juyan": {
+    "title": "居延汉简",
+    "label": "居延汉简",
+    "url": "https://www.baike.com/wikiid/1062948867994668044",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn93search1",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "dunhuang": {
+    "title": "敦煌遗书",
+    "label": "敦煌遗书",
+    "url": "https://www.baike.com/wikiid/2991392701994393781",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn93search0",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "mingqing": {
+    "title": "明清档案",
+    "label": "明清档案",
+    "url": "https://www.zgbk.com/ecph/words?ID=728210&SiteID=1&SubID=242104",
+    "provider": "中国百科网",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn93search25",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "milan247": {
+    "title": "兰亭序",
+    "label": "兰亭序",
+    "url": "https://www.baike.com/wikiid/7237045937847189519",
+    "provider": "快懂百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "article_html_og_title_and_body",
+      "url": "https://www.baike.com/wikiid/7237045937847189519",
+      "checkedAt": "2026-10-31"
+    },
+    "workTitle": "米芾题兰亭序卷"
+  },
+  "yingguang247": {
+    "title": "英光堂帖",
+    "label": "英光堂帖",
+    "url": "https://www.baike.com/wikiid/3146326561090188971",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn96search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "英光堂帖 · 岳珂集刻米芾书迹"
+  },
+  "caishi247": {
+    "title": "蔡襄",
+    "label": "蔡襄",
+    "url": "https://wapbaike.baidu.com/item/%E8%94%A1%E8%A5%84/491720",
+    "provider": "百度百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn140search2",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "蔡襄行书自书诗卷"
+  },
+  "anguoshigu247": {
+    "title": "石鼓",
+    "label": "石鼓",
+    "url": "https://www.baike.com/wikiid/7228428268792348727",
+    "provider": "快懂百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search0",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "十鼓斋旧藏石鼓文 · 版本专题"
+  },
+  "kushu247": {
+    "title": "褚遂良",
+    "label": "褚遂良",
+    "url": "https://www.baike.com/wikiid/7232188329596338237",
+    "provider": "快懂百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn140search0",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "枯树赋 · 王世贞鉴藏专题"
+  },
+  "luoshui247": {
+    "title": "兰亭序",
+    "label": "兰亭序",
+    "url": "https://www.baike.com/wikiid/7237045937847189519",
+    "provider": "快懂百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "article_html_og_title_and_body",
+      "url": "https://www.baike.com/wikiid/7237045937847189519",
+      "checkedAt": "2026-10-31"
+    },
+    "workTitle": "落水兰亭 · 孙承泽旧藏本的清内府摹刻"
+  },
+  "zhaocheng275": {
+    "title": "赵城金藏",
+    "label": "赵城金藏",
+    "url": "https://bkso.baidu.com/item/%E8%B5%B5%E5%9F%8E%E9%87%91%E8%97%8F/8959606",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn98search20",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "yongle275": {
+    "title": "《永乐大典》",
+    "label": "《永乐大典》",
+    "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E6%B0%B8%E4%B9%90%E5%A4%A7%E5%85%B8%E3%80%8B&SiteID=1&SourceID=105132&Type=bkzyb&subSourceType=000003000012000001",
+    "provider": "中国百科网",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn124search22",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "永乐大典"
+  },
+  "wenjinge275": {
+    "title": "四库全书",
+    "label": "四库全书",
+    "url": "https://www.baike.com/wikiid/7176095215131508791",
+    "provider": "快懂百科",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn98search2",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "文津阁《四库全书》"
+  },
+  "oracle-sacrifice298": {
+    "title": "甲骨文",
+    "label": "甲骨文",
+    "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "祭祀牛胛骨刻辞《甲》3333＋3361"
+  },
+  "oracle-tufang298": {
+    "title": "甲骨文",
+    "label": "甲骨文",
+    "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "土方征涂朱卜骨刻辞《合集》6057"
+  },
+  "oracle-ban298": {
+    "title": "甲骨文",
+    "label": "甲骨文",
+    "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "般无咎全甲刻辞《合集》4264"
+  },
+  "oracle-qiang298": {
+    "title": "甲骨文",
+    "label": "甲骨文",
+    "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "小臣墙记事刻辞《合集》36481"
+  },
+  "oracle-zaifeng298": {
+    "title": "甲骨文",
+    "label": "甲骨文",
+    "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "宰丰骨匕《合补》11299"
+  },
+  "oracle-farming298": {
+    "title": "甲骨文",
+    "label": "甲骨文",
+    "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "众人协田卜骨刻辞《合集》1"
+  },
+  "oracle-zhou298": {
+    "title": "甲骨文",
+    "label": "甲骨文",
+    "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "先书后刻龟甲《乙》5867＋8202"
+  },
+  "oracle-fuhao298": {
+    "title": "甲骨文",
+    "label": "甲骨文",
+    "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "妇好分娩卜辞《丙》247"
+  },
+  "oracle-brush298": {
+    "title": "甲骨文",
+    "label": "甲骨文",
+    "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "带朱书龟甲卜辞《乙》0778"
+  },
+  "oracle-harvest298": {
+    "title": "甲骨文",
+    "label": "甲骨文",
+    "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": true,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn143search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "填朱卜辞龟腹甲《乙》0867"
+  },
+  "maogong": {
+    "title": "毛公鼎",
+    "label": "毛公鼎",
+    "url": "https://wapbaike.baidu.com/item/%E6%AF%9B%E5%85%AC%E9%BC%8E/1161082",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn105search9",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "sanshi": {
+    "title": "散氏盘",
+    "label": "散氏盘",
+    "url": "https://bkso.baidu.com/item/%E6%95%A3%E6%B0%8F%E7%9B%98/1162572",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn105search21",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "bronze-dayu299": {
+    "title": "西周大盂鼎",
+    "label": "西周大盂鼎",
+    "url": "https://www.baike.com/wikiid/5662362161878402519",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn105search7",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "大盂鼎"
+  },
+  "bronze-dake299": {
+    "title": "西周大克鼎",
+    "label": "西周大克鼎",
+    "url": "https://www.baike.com/wikiid/4642129257017115206",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn105search2",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "大克鼎"
+  },
+  "bronze-guoji299": {
+    "title": "虢季子白盘铭文",
+    "label": "虢季子白盘铭文",
+    "url": "https://bkso.baidu.com/item/%E8%99%A2%E5%AD%A3%E5%AD%90%E7%99%BD%E7%9B%98%E9%93%AD%E6%96%87/2189625",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn139search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "虢季子白盘"
+  },
+  "hezun": {
+    "title": "何尊",
+    "label": "何尊",
+    "url": "https://wapbaike.baidu.com/item/%E4%BD%95%E5%B0%8A/1163495",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn110search4",
+      "checkedAt": "2026-10-30"
+    }
+  },
+  "bronze-qiang299": {
+    "title": "西周墙盘（史墙盘）",
+    "label": "西周墙盘（史墙盘）",
+    "url": "https://www.baike.com/wikiid/1317121069323420857",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn110search0",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "史墙盘"
+  },
+  "bronze-lai299": {
+    "title": "西周逨盘",
+    "label": "西周逨盘",
+    "url": "https://www.baike.com/wikiid/2888467483454473949",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn111search24",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "逨盘"
+  },
+  "bronze-li299": {
+    "title": "西周利簋",
+    "label": "西周利簋",
+    "url": "https://www.baike.com/wikiid/6757961208690498463",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn110search1",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "利簋"
+  },
+  "bronze-zongzhou299": {
+    "title": "青铜宗周钟",
+    "label": "青铜宗周钟",
+    "url": "https://www.baike.com/wikiid/4646305985044596611",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": {
+      "method": "web_search",
+      "reference": "turn111search0",
+      "checkedAt": "2026-10-30"
+    },
+    "workTitle": "宗周钟"
+  }
+}

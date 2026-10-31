@@ -1,0 +1,2567 @@
+{
+  "version": 301,
+  "policy": {
+    "priority": [
+      "快懂百科",
+      "中国百科网",
+      "百度百科"
+    ],
+    "chinaEncyclopediaDomain": "zgbk.com",
+    "checkedAt": "2026-10-31",
+    "relatedTopicMeaning": "相关概念、作者或作品总类，不是该具体器物/事件的独立条目；展示时应标注相关百科。",
+    "verificationLimit": "未检出的百科不猜测地址；保留已有官方史料。网络检索并非证明某站绝无条目。"
+  },
+  "works": {
+    "jiucheng": {
+      "title": "九成宫醴泉铭",
+      "label": "九成宫醴泉铭",
+      "url": "https://www.baike.com/wikiid/7166154239981846539",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "九成宫醴泉铭,唐代欧阳询的书法作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "luoshen13": {
+      "title": "洛神赋十三行",
+      "label": "洛神赋十三行",
+      "url": "https://www.baike.com/wikiid/2789507547732558327",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "洛神赋十三行,东晋王献之的小楷书法代表作",
+      "verifiedAt": "2026-10-30"
+    },
+    "lanting": {
+      "title": "兰亭集序",
+      "label": "兰亭集序",
+      "url": "https://www.baike.com/wikiid/7237045937847189519",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "兰亭集序,东晋书法家王羲之的作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "zixu": {
+      "title": "自叙帖",
+      "label": "自叙帖",
+      "url": "https://www.baike.com/wikiid/7264881404662710335",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "自叙帖,唐代怀素创作的草书书法作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "shusu": {
+      "title": "蜀素帖",
+      "label": "蜀素帖",
+      "url": "https://www.baike.com/wikiid/7265595839627542562",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "蜀素帖,北宋米芾书法作品、“天下第八行书”",
+      "verifiedAt": "2026-10-30"
+    },
+    "jizhi": {
+      "title": "祭侄文稿",
+      "label": "祭侄文稿",
+      "url": "https://www.baike.com/wikiid/7218806996241006644",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "祭侄文稿,唐代书法家颜真卿的作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "hanshi": {
+      "title": "黄州寒食帖",
+      "label": "寒食帖",
+      "url": "https://www.baike.com/wikiid/7205811311510863883",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "寒食帖,苏轼撰诗并书的墨迹素笺本",
+      "verifiedAt": "2026-10-30"
+    },
+    "boyuan": {
+      "title": "伯远帖",
+      "label": "伯远帖",
+      "url": "https://www.baike.com/wikiid/2881573534556213471",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "伯远帖,东晋王珣创作的行书书法作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "zhanghan": {
+      "title": "张翰思鲈帖",
+      "label": "张翰帖",
+      "url": "https://www.baike.com/wikiid/7715380762822830093",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "张翰帖,唐代欧阳询创作的纸本行书作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "jiuhua": {
+      "title": "韭花帖",
+      "label": "韭花帖",
+      "url": "https://www.baike.com/wikiid/606311241788293304",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "韭花帖,唐末杨凝式创作的作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "kuaixue": {
+      "title": "快雪时晴帖",
+      "label": "快雪时晴帖",
+      "url": "https://www.baike.com/wikiid/6899776579822686382",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "快雪时晴帖,传为晋代王羲之书法作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "zhongqiu": {
+      "title": "中秋帖",
+      "label": "中秋帖",
+      "url": "https://www.baike.com/wikiid/887161870007944866",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "中秋帖,行草纸本书法作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "sanxi": {
+      "title": "三希宝帖",
+      "label": "三希帖",
+      "url": "https://www.baike.com/wikiid/3632858331976661186",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "三希帖,王羲之、王献之等所著的字帖",
+      "verifiedAt": "2026-10-30"
+    },
+    "caoshuqianzi": {
+      "title": "草书千字文",
+      "label": "草书千字文",
+      "url": "https://www.baike.com/wikiid/7234086138804781068",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "草书千字文,北宋宋徽宗赵佶书写的狂草作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "chibi": {
+      "title": "前后赤壁赋",
+      "label": "元赵孟頫前后赤壁赋",
+      "url": "https://www.baike.com/wikiid/3506969429149715867",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "zhupoems": {
+      "title": "草书诗帖",
+      "label": "草书诗帖",
+      "url": "https://www.baike.com/wikiid/1371777566279050871",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "草书诗帖,明代祝允明创作的作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "shichen": {
+      "title": "史晨碑",
+      "label": "史晨碑",
+      "url": "https://www.baike.com/wikiid/5302226356616770109",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "史晨碑,东汉建宁碑刻",
+      "verifiedAt": "2026-10-30"
+    },
+    "zhangqian": {
+      "title": "张迁碑",
+      "label": "张迁碑",
+      "url": "https://www.baike.com/wikiid/7269969715882901565",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "张迁碑,东汉时期佚名隶书",
+      "verifiedAt": "2026-10-30"
+    },
+    "shimen": {
+      "title": "石门颂",
+      "label": "石门颂",
+      "url": "https://www.baike.com/wikiid/2758724730360020400",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "石门颂,东汉隶书摩崖石刻",
+      "verifiedAt": "2026-10-30"
+    },
+    "xixia": {
+      "title": "西狭颂",
+      "label": "西狭颂",
+      "url": "https://www.baike.com/wikiid/7502080265885862835",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "西狭颂,仇靖创作隶书书法作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "hengfang": {
+      "title": "衡方碑",
+      "label": "衡方碑",
+      "url": "https://www.baike.com/wikiid/8321886279196814321",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "衡方碑,东汉灵帝建宁元年所刻的书法碑",
+      "verifiedAt": "2026-10-30"
+    },
+    "xianyuhuang": {
+      "title": "鲜于璜碑",
+      "label": "鲜于璜碑",
+      "url": "https://www.baike.com/wikiid/5308100680465518861",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "鲜于璜碑,天津市武清区出土的汉代碑刻",
+      "verifiedAt": "2026-10-30"
+    },
+    "leyi": {
+      "title": "乐毅论",
+      "label": "乐毅论",
+      "url": "https://www.baike.com/wikiid/3374454192292108748",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "乐毅论,王羲之书法作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "yanqinli": {
+      "title": "颜勤礼碑",
+      "label": "颜勤礼碑",
+      "url": "https://www.baike.com/wikiid/6823655394236180626",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "颜勤礼碑,唐代颜真卿撰文并书写的神道碑",
+      "verifiedAt": "2026-10-30"
+    },
+    "gushi": {
+      "title": "古诗四帖",
+      "label": "古诗四帖",
+      "url": "https://www.baike.com/wikiid/568374178561649744",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "古诗四帖,唐代书法家张旭代表作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "shiqi": {
+      "title": "十七帖",
+      "label": "十七帖",
+      "url": "https://www.baike.com/wikiid/7171013034918395912",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "十七帖,王羲之重要的草书代表作之一",
+      "verifiedAt": "2026-10-30"
+    },
+    "fuge": {
+      "title": "郙阁颂",
+      "label": "郙阁颂",
+      "url": "https://www.baike.com/wikiid/8376265384829168502",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "郙阁颂,一方摩崖石刻",
+      "verifiedAt": "2026-10-30"
+    },
+    "zhengwengong": {
+      "title": "郑文公下碑",
+      "label": "郑文公碑",
+      "url": "https://www.baike.com/wikiid/1368860765563557191",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "郑文公碑,北魏光州刺史郑道昭所立碑刻",
+      "verifiedAt": "2026-10-30"
+    },
+    "yihe": {
+      "title": "瘗鹤铭",
+      "label": "瘗鹤铭",
+      "url": "https://www.baike.com/wikiid/6610215489071873026",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "瘗鹤铭,南朝时期陶弘景创作的书法作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "mengdian": {
+      "title": "仲尼梦奠帖",
+      "label": "梦奠帖",
+      "url": "https://www.baike.com/wikiid/7239565328207380519",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息",
+      "descriptionSignal": "梦奠帖,唐代欧阳询书法作品",
+      "verifiedAt": "2026-10-30"
+    },
+    "zhushang": {
+      "title": "诸上座帖",
+      "label": "诸上座",
+      "url": "https://www.baike.com/wikiid/7239567495035142181",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "快懂百科HTML元信息",
+      "descriptionSignal": "诸上座,宋代书法家黄庭坚的草书代表作之一",
+      "verifiedAt": "2026-10-30"
+    },
+    "taishan": {
+      "title": "泰山刻石",
+      "label": "泰山刻石（秦代石刻）",
+      "url": "https://bkso.baidu.com/item/%E6%B3%B0%E5%B1%B1%E5%88%BB%E7%9F%B3/2820330?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "longcang": {
+      "title": "龙藏寺碑",
+      "label": "龙藏寺碑",
+      "url": "https://www.zgbk.com/ecph/words?ID=550117&SiteID=1&SubID=205242&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "caoquan": {
+      "title": "曹全碑",
+      "label": "曹全碑（东汉隶书碑刻）",
+      "url": "https://bkso.baidu.com/item/%E6%9B%B9%E5%85%A8%E7%A2%91/62962291?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "mengzhao": {
+      "title": "蒙诏帖",
+      "label": "蒙诏帖",
+      "url": "https://wapbaike.baidu.com/item/%E8%92%99%E8%AF%8F%E5%B8%96/8370535?fromModule=tashuo-article_bottom-lemma",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "songfeng": {
+      "title": "松风阁诗帖",
+      "label": "自书松风阁诗卷",
+      "url": "https://www.baike.com/wikiid/8499115645532462377",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回完整条目简介，明确黄庭坚1102年卷、台北故宫藏",
+      "verifiedAt": "2026-10-30"
+    },
+    "shigu": {
+      "title": "石鼓文",
+      "label": "石鼓文",
+      "url": "https://www.zgbk.com/ecph/words?ID=759914&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "langya": {
+      "title": "琅琊台刻石",
+      "label": "琅琊刻石",
+      "url": "https://bkso.baidu.com/item/%E7%90%85%E7%90%8A%E5%88%BB%E7%9F%B3/7872969?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "kuaiji": {
+      "title": "会稽刻石",
+      "label": "会稽刻石",
+      "url": "https://bkso.baidu.com/item/%E4%BC%9A%E7%A8%BD%E5%88%BB%E7%9F%B3/3680412?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "yuanan": {
+      "title": "袁安碑",
+      "label": "袁安碑",
+      "url": "https://www.zgbk.com/ecph/words?ID=406572&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "sanfen": {
+      "title": "三坟记",
+      "label": "三坟记",
+      "url": "https://bkso.baidu.com/item/%E4%B8%89%E5%9D%9F%E8%AE%B0/8486479?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "liqi": {
+      "title": "礼器碑",
+      "label": "礼器碑（东汉碑刻）",
+      "url": "https://bkso.baidu.com/item/%E7%A4%BC%E5%99%A8%E7%A2%91/5791902?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "yiying": {
+      "title": "乙瑛碑",
+      "label": "《乙瑛碑》",
+      "url": "https://www.zgbk.com/ecph/words?ID=52253&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "huashan": {
+      "title": "西岳华山庙碑",
+      "label": "西岳华山庙碑（东汉延熹八年（公元165年）所立碑刻）",
+      "url": "https://bkso.baidu.com/item/%E8%A5%BF%E5%B2%B3%E5%8D%8E%E5%B1%B1%E5%BA%99%E7%A2%91/8102725?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "huangting": {
+      "title": "黄庭经",
+      "label": "黄庭经（道教养生修仙专著）",
+      "url": "https://bkso.baidu.com/item/%E9%BB%84%E5%BA%AD%E7%BB%8F/6240400?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "nikuan": {
+      "title": "倪宽赞",
+      "label": "倪宽赞",
+      "url": "https://bkso.baidu.com/item/%E5%80%AA%E5%AE%BD%E8%B5%9E/11042962?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "yanta": {
+      "title": "雁塔圣教序",
+      "label": "《雁塔圣教序》",
+      "url": "https://www.zgbk.com/ecph/words?ID=52316&SiteID=1&SubID=61002&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "duobao": {
+      "title": "多宝塔碑",
+      "label": "多宝塔碑（唐代颜真卿创作书法作品）",
+      "url": "https://bkso.baidu.com/item/%E5%A4%9A%E5%AE%9D%E5%A1%94%E7%A2%91/5607244",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "xuanmi": {
+      "title": "玄秘塔碑",
+      "label": "玄秘塔碑（唐代柳公权创作书法作品）",
+      "url": "https://bkso.baidu.com/item/%E7%8E%84%E7%A7%98%E5%A1%94%E7%A2%91/766770",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "shupu": {
+      "title": "书谱",
+      "label": "《书谱》",
+      "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E4%B9%A6%E8%B0%B1%E3%80%8B&SiteID=1&SourceID=52384&Type=bkzyb&subSourceType=000003000013000004",
+      "provider": "中国百科网",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "pingfu": {
+      "title": "平复帖",
+      "label": "平复帖",
+      "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%A4%8D%E5%B8%96/2146947?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "guanjun": {
+      "title": "冠军帖",
+      "label": "冠军帖",
+      "url": "https://bkso.baidu.com/item/%E5%86%A0%E5%86%9B%E5%B8%96/9578917?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网络搜索返回条目标题和正文摘要",
+      "verifiedAt": "2026-10-30"
+    },
+    "yishan": {
+      "title": "峄山碑",
+      "label": "峄山刻石",
+      "url": "https://www.baike.com/wikiid/5893640894273981017",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "网页条目标题和简介已核对",
+      "verifiedAt": "2026-10-30"
+    },
+    "yuanchang": {
+      "title": "袁敞碑",
+      "label": "袁敞碑",
+      "url": "https://bkso.baidu.com/item/%E8%A2%81%E6%95%9E%E7%A2%91/0?fromModule=lemma_inlink",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网页条目标题和简介已核对",
+      "verifiedAt": "2026-10-30"
+    },
+    "xuanshi": {
+      "title": "宣示表",
+      "label": "宣示表",
+      "url": "https://wapbaike.baidu.com/item/%E5%AE%A3%E7%A4%BA%E8%A1%A8/9938021?fromModule=tashuo-article_bottom-lemma",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "网页条目标题和简介已核对",
+      "verifiedAt": "2026-10-30"
+    },
+    "jingshiyu": {
+      "title": "经石峪金刚经",
+      "label": "泰山金刚经",
+      "url": "https://www.baike.com/wikiid/4297149561839363724",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": "网页条目标题和简介已核对",
+      "verifiedAt": "2026-10-30"
+    },
+    "tumu": {
+      "title": "土母帖",
+      "label": "李建中",
+      "url": "https://www.baike.com/wikiid/2870243261680206802",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": "已打开作者条目，正文列出《土母帖》；未核实到作品独立条目",
+      "verifiedAt": "2026-10-31"
+    },
+    "tianfa": {
+      "title": "天发神谶碑",
+      "label": "吴天玺纪功碑",
+      "url": "https://bkso.baidu.com/item/%E5%90%B4%E5%A4%A9%E7%8E%BA%E7%BA%AA%E5%8A%9F%E7%A2%91/3784870",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": "从皇象词条进入天发神谶碑，实际跳转吴天玺纪功碑，正文明确两名指同一碑",
+      "verifiedAt": "2026-10-31"
+    },
+    "biluo": {
+      "title": "碧落碑",
+      "label": "新绛县博物馆",
+      "url": "https://bkso.baidu.com/item/%E6%96%B0%E7%BB%9B%E5%8E%BF%E5%8D%9A%E7%89%A9%E9%A6%86/2329947",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": "已打开馆藏机构条目并核实碧落碑藏品介绍；其作品内链未能读取，使用相关馆藏机构条目",
+      "verifiedAt": "2026-10-31"
+    },
+    "mengying": {
+      "title": "篆书千字文碑",
+      "label": "千字文",
+      "url": "https://wapbaike.baidu.com/item/%E5%8D%83%E5%AD%97%E6%96%87/447586",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": "搜索核实为周兴嗣原文条目，作为碑文内容背景；未找到已核实的梦英原碑独立条目",
+      "verifiedAt": "2026-10-31"
+    },
+    "sishan": {
+      "title": "四山摩崖刻经",
+      "label": "摩崖",
+      "url": "https://bkso.baidu.com/item/%E6%91%A9%E5%B4%96/6120237",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": "搜索核实文化术语条目，正文明确提及山东四山摩崖北周佛经；未找到已核实独立条目",
+      "verifiedAt": "2026-10-31"
+    },
+    "zhongxing": {
+      "title": "大唐中兴颂",
+      "label": "大唐中兴颂",
+      "url": "https://www.baike.com/wikiid/292857875054594688",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn61search0",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "shimenming": {
+      "title": "石门铭",
+      "label": "石门铭",
+      "url": "https://wapbaike.baidu.com/item/%E7%9F%B3%E9%97%A8%E9%93%AD/9937775",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn63search0",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "jitaishan": {
+      "title": "纪泰山铭",
+      "label": "纪泰山铭",
+      "url": "https://bkso.baidu.com/item/%E7%BA%AA%E6%B3%B0%E5%B1%B1%E9%93%AD/5248009",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn63search1",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "shengjiao": {
+      "title": "集王圣教序",
+      "label": "集王圣教序",
+      "url": "https://bkso.baidu.com/item/%E9%9B%86%E7%8E%8B%E5%9C%A3%E6%95%99%E5%BA%8F/61489707",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn63search2",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "xiping": {
+      "title": "熹平石经",
+      "label": "熹平石经",
+      "url": "https://www.zgbk.com/ecph/words?ID=406856&SiteID=1&SubID=205242&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn63search4",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "zhengshi": {
+      "title": "三体石经（正始石经）",
+      "label": "三体石经（正始石经）",
+      "url": "https://www.baike.com/wikiid/8127465928708748561",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn67search19",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "正始石经"
+    },
+    "kaicheng": {
+      "title": "开成石经",
+      "label": "开成石经",
+      "url": "https://bkso.baidu.com/item/%E5%BC%80%E6%88%90%E7%9F%B3%E7%BB%8F/0",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn67search0",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "dizhu": {
+      "title": "砥柱铭",
+      "label": "砥柱铭",
+      "url": "https://bkso.baidu.com/item/%E7%A0%A5%E6%9F%B1%E9%93%AD/10487439",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn67search22",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "shamenghai-bangshu": {
+      "title": "沙孟海",
+      "label": "沙孟海",
+      "url": "https://www.baike.com/wikiid/7277601295829467147",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "article_html_og_title",
+        "url": "https://www.baike.com/wikiid/7277601295829467147",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "wuchangshuo-shigu": {
+      "title": "吴昌硕",
+      "label": "吴昌硕",
+      "url": "https://www.baike.com/wikiid/7251744333568180285",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn69search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "临石鼓文"
+    },
+    "wuhou": {
+      "title": "蜀丞相诸葛武侯祠堂碑",
+      "label": "蜀丞相诸葛武侯祠堂碑",
+      "url": "https://www.baike.com/wikiid/2775137578744231",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn69search0",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "lizi": {
+      "title": "荔子碑",
+      "label": "荔子碑",
+      "url": "https://bkso.baidu.com/item/%E8%8D%94%E5%AD%90%E7%A2%91/10846310",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn69search26",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "苏轼荔子碑"
+    },
+    "baozhi": {
+      "title": "宝志禅师",
+      "label": "宝志禅师",
+      "url": "https://www.baike.com/wikiid/8498096015577952946",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn74search24",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "宝志公像赞诗碑"
+    },
+    "suxian": {
+      "title": "三绝碑（苏仙岭）",
+      "label": "三绝碑（苏仙岭）",
+      "url": "https://www.baike.com/wikiid/8415061275056657290",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn74search0",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "苏仙岭三绝碑"
+    },
+    "zuiweng": {
+      "title": "醉翁亭记碑",
+      "label": "醉翁亭记碑",
+      "url": "https://www.baike.com/wikiid/7426107752939312611",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn74search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "苏轼书醉翁亭记碑"
+    },
+    "lisheng": {
+      "title": "李晟碑",
+      "label": "李晟碑",
+      "url": "https://bkso.baidu.com/item/%E6%9D%8E%E6%99%9F%E7%A2%91/1123785",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn74search17",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "李晟墓碑"
+    },
+    "chenghuang": {
+      "title": "城隍庙碑",
+      "label": "城隍庙碑",
+      "url": "https://bkso.baidu.com/item/%E5%9F%8E%E9%9A%8D%E5%BA%99%E7%A2%91/14442104",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn78search29",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "新修城隍庙碑"
+    },
+    "wanan": {
+      "title": "洛阳桥",
+      "label": "洛阳桥",
+      "url": "https://bkso.baidu.com/item/%E6%B4%9B%E9%98%B3%E6%A1%A5/3550436",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn113search9",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "万安桥记大字碑"
+    },
+    "shouchan": {
+      "title": "三绝碑（上尊号与受禅碑）",
+      "label": "三绝碑（上尊号与受禅碑）",
+      "url": "https://www.baike.com/wikiid/7960363879797370192",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn78search10",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "上尊号与受禅碑"
+    },
+    "auction-pingan": {
+      "title": "平安帖",
+      "label": "平安帖",
+      "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%B8%96/25252",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn78search24",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "平安帖（拍卖本）"
+    },
+    "guoyouzhi": {
+      "title": "赵孟頫",
+      "label": "赵孟頫",
+      "url": "https://www.baike.com/wikiid/7166510562602582068",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn82search0",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "致郭右之二帖卷"
+    },
+    "rao-hanliu": {
+      "title": "饶 介",
+      "label": "饶 介",
+      "url": "https://bkso.baidu.com/item/%E9%A5%B6%20%E4%BB%8B/7172649",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn113search4",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "草书韩愈柳宗元文"
+    },
+    "jushi": {
+      "title": "局事帖",
+      "label": "局事帖",
+      "url": "https://bkso.baidu.com/item/%E5%B1%80%E4%BA%8B%E5%B8%96/5761624",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn82search8",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "zhao-xinjing": {
+      "title": "般若波罗蜜多心经（赵孟頫）",
+      "label": "般若波罗蜜多心经（赵孟頫）",
+      "url": "https://www.baike.com/wikiid/4448353435201950778",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn82search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "般若波罗蜜多心经"
+    },
+    "zhao-huangting": {
+      "title": "临黄庭经",
+      "label": "临黄庭经",
+      "url": "https://www.baike.com/wikiid/7417268205297434634",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn89search0",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "临黄庭经（保利本）"
+    },
+    "gongfu": {
+      "title": "苏轼",
+      "label": "苏轼",
+      "url": "https://www.baike.com/wikiid/2840507407652825840",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn69search32",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "功甫帖（拍卖本）"
+    },
+    "songke-zhuangyou": {
+      "title": "宋克",
+      "label": "宋克",
+      "url": "https://bkso.baidu.com/item/%E5%AE%8B%E5%85%8B/4221501",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn113search11",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "草书杜子美壮游诗卷"
+    },
+    "dong-longshen": {
+      "title": "董其昌",
+      "label": "董其昌",
+      "url": "https://www.zgbk.com/ecph/words?Name=%E8%91%A3%E5%85%B6%E6%98%8C&SiteID=1&SourceID=110077&Type=bkzyb&subSourceType=000003000013000004",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn111search15",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "龙神感应记"
+    },
+    "oracle": {
+      "title": "甲骨文",
+      "label": "甲骨文",
+      "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "殷墟甲骨"
+    },
+    "juyan": {
+      "title": "居延汉简",
+      "label": "居延汉简",
+      "url": "https://www.baike.com/wikiid/1062948867994668044",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn93search1",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "dunhuang": {
+      "title": "敦煌遗书",
+      "label": "敦煌遗书",
+      "url": "https://www.baike.com/wikiid/2991392701994393781",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn93search0",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "mingqing": {
+      "title": "明清档案",
+      "label": "明清档案",
+      "url": "https://www.zgbk.com/ecph/words?ID=728210&SiteID=1&SubID=242104",
+      "provider": "中国百科网",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn93search25",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "milan247": {
+      "title": "兰亭序",
+      "label": "兰亭序",
+      "url": "https://www.baike.com/wikiid/7237045937847189519",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "article_html_og_title_and_body",
+        "url": "https://www.baike.com/wikiid/7237045937847189519",
+        "checkedAt": "2026-10-31"
+      },
+      "workTitle": "米芾题兰亭序卷"
+    },
+    "yingguang247": {
+      "title": "英光堂帖",
+      "label": "英光堂帖",
+      "url": "https://www.baike.com/wikiid/3146326561090188971",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn96search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "英光堂帖 · 岳珂集刻米芾书迹"
+    },
+    "caishi247": {
+      "title": "蔡襄",
+      "label": "蔡襄",
+      "url": "https://wapbaike.baidu.com/item/%E8%94%A1%E8%A5%84/491720",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn140search2",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "蔡襄行书自书诗卷"
+    },
+    "anguoshigu247": {
+      "title": "石鼓",
+      "label": "石鼓",
+      "url": "https://www.baike.com/wikiid/7228428268792348727",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search0",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "十鼓斋旧藏石鼓文 · 版本专题"
+    },
+    "kushu247": {
+      "title": "褚遂良",
+      "label": "褚遂良",
+      "url": "https://www.baike.com/wikiid/7232188329596338237",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn140search0",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "枯树赋 · 王世贞鉴藏专题"
+    },
+    "luoshui247": {
+      "title": "兰亭序",
+      "label": "兰亭序",
+      "url": "https://www.baike.com/wikiid/7237045937847189519",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "article_html_og_title_and_body",
+        "url": "https://www.baike.com/wikiid/7237045937847189519",
+        "checkedAt": "2026-10-31"
+      },
+      "workTitle": "落水兰亭 · 孙承泽旧藏本的清内府摹刻"
+    },
+    "zhaocheng275": {
+      "title": "赵城金藏",
+      "label": "赵城金藏",
+      "url": "https://bkso.baidu.com/item/%E8%B5%B5%E5%9F%8E%E9%87%91%E8%97%8F/8959606",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn98search20",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "yongle275": {
+      "title": "《永乐大典》",
+      "label": "《永乐大典》",
+      "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E6%B0%B8%E4%B9%90%E5%A4%A7%E5%85%B8%E3%80%8B&SiteID=1&SourceID=105132&Type=bkzyb&subSourceType=000003000012000001",
+      "provider": "中国百科网",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn124search22",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "永乐大典"
+    },
+    "wenjinge275": {
+      "title": "四库全书",
+      "label": "四库全书",
+      "url": "https://www.baike.com/wikiid/7176095215131508791",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn98search2",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "文津阁《四库全书》"
+    },
+    "oracle-sacrifice298": {
+      "title": "甲骨文",
+      "label": "甲骨文",
+      "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "祭祀牛胛骨刻辞《甲》3333＋3361"
+    },
+    "oracle-tufang298": {
+      "title": "甲骨文",
+      "label": "甲骨文",
+      "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "土方征涂朱卜骨刻辞《合集》6057"
+    },
+    "oracle-ban298": {
+      "title": "甲骨文",
+      "label": "甲骨文",
+      "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "般无咎全甲刻辞《合集》4264"
+    },
+    "oracle-qiang298": {
+      "title": "甲骨文",
+      "label": "甲骨文",
+      "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "小臣墙记事刻辞《合集》36481"
+    },
+    "oracle-zaifeng298": {
+      "title": "甲骨文",
+      "label": "甲骨文",
+      "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "宰丰骨匕《合补》11299"
+    },
+    "oracle-farming298": {
+      "title": "甲骨文",
+      "label": "甲骨文",
+      "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "众人协田卜骨刻辞《合集》1"
+    },
+    "oracle-zhou298": {
+      "title": "甲骨文",
+      "label": "甲骨文",
+      "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "先书后刻龟甲《乙》5867＋8202"
+    },
+    "oracle-fuhao298": {
+      "title": "甲骨文",
+      "label": "甲骨文",
+      "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "妇好分娩卜辞《丙》247"
+    },
+    "oracle-brush298": {
+      "title": "甲骨文",
+      "label": "甲骨文",
+      "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "带朱书龟甲卜辞《乙》0778"
+    },
+    "oracle-harvest298": {
+      "title": "甲骨文",
+      "label": "甲骨文",
+      "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn143search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "填朱卜辞龟腹甲《乙》0867"
+    },
+    "maogong": {
+      "title": "毛公鼎",
+      "label": "毛公鼎",
+      "url": "https://wapbaike.baidu.com/item/%E6%AF%9B%E5%85%AC%E9%BC%8E/1161082",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn105search9",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "sanshi": {
+      "title": "散氏盘",
+      "label": "散氏盘",
+      "url": "https://bkso.baidu.com/item/%E6%95%A3%E6%B0%8F%E7%9B%98/1162572",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn105search21",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "bronze-dayu299": {
+      "title": "西周大盂鼎",
+      "label": "西周大盂鼎",
+      "url": "https://www.baike.com/wikiid/5662362161878402519",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn105search7",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "大盂鼎"
+    },
+    "bronze-dake299": {
+      "title": "西周大克鼎",
+      "label": "西周大克鼎",
+      "url": "https://www.baike.com/wikiid/4642129257017115206",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn105search2",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "大克鼎"
+    },
+    "bronze-guoji299": {
+      "title": "虢季子白盘铭文",
+      "label": "虢季子白盘铭文",
+      "url": "https://bkso.baidu.com/item/%E8%99%A2%E5%AD%A3%E5%AD%90%E7%99%BD%E7%9B%98%E9%93%AD%E6%96%87/2189625",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn139search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "虢季子白盘"
+    },
+    "hezun": {
+      "title": "何尊",
+      "label": "何尊",
+      "url": "https://wapbaike.baidu.com/item/%E4%BD%95%E5%B0%8A/1163495",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn110search4",
+        "checkedAt": "2026-10-30"
+      }
+    },
+    "bronze-qiang299": {
+      "title": "西周墙盘（史墙盘）",
+      "label": "西周墙盘（史墙盘）",
+      "url": "https://www.baike.com/wikiid/1317121069323420857",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn110search0",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "史墙盘"
+    },
+    "bronze-lai299": {
+      "title": "西周逨盘",
+      "label": "西周逨盘",
+      "url": "https://www.baike.com/wikiid/2888467483454473949",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn111search24",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "逨盘"
+    },
+    "bronze-li299": {
+      "title": "西周利簋",
+      "label": "西周利簋",
+      "url": "https://www.baike.com/wikiid/6757961208690498463",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn110search1",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "利簋"
+    },
+    "bronze-zongzhou299": {
+      "title": "青铜宗周钟",
+      "label": "青铜宗周钟",
+      "url": "https://www.baike.com/wikiid/4646305985044596611",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "web_search",
+        "reference": "turn111search0",
+        "checkedAt": "2026-10-30"
+      },
+      "workTitle": "宗周钟"
+    }
+  },
+  "events": {
+    "lanting353": {
+      "title": "兰亭集序",
+      "label": "兰亭集序",
+      "url": "https://www.baike.com/wikiid/7237045937847189519",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "兰亭集序,东晋书法家王羲之的作品",
+      "verifiedAt": "2026-10-30",
+      "eventTitle": "兰亭修禊"
+    },
+    "chibi1082": {
+      "title": "前后赤壁赋",
+      "label": "元赵孟頫前后赤壁赋",
+      "url": "https://www.baike.com/wikiid/3506969429149715867",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+      "verifiedAt": "2026-10-30",
+      "eventTitle": "苏轼夜游赤壁"
+    },
+    "chibi-later1082": {
+      "title": "前后赤壁赋",
+      "label": "元赵孟頫前后赤壁赋",
+      "url": "https://www.baike.com/wikiid/3506969429149715867",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+      "verifiedAt": "2026-10-30",
+      "eventTitle": "后赤壁夜游"
+    },
+    "su-birth": {
+      "title": "黄州寒食帖",
+      "label": "寒食帖",
+      "url": "https://www.baike.com/wikiid/7205811311510863883",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "寒食帖,苏轼撰诗并书的墨迹素笺本",
+      "verifiedAt": "2026-10-30",
+      "eventTitle": "苏轼诞辰"
+    },
+    "zhao-birth": {
+      "title": "前后赤壁赋",
+      "label": "元赵孟頫前后赤壁赋",
+      "url": "https://www.baike.com/wikiid/3506969429149715867",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+      "verifiedAt": "2026-10-30",
+      "eventTitle": "赵孟頫诞辰"
+    },
+    "yan758": {
+      "title": "祭侄文稿",
+      "label": "祭侄文稿",
+      "url": "https://www.baike.com/wikiid/7218806996241006644",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "祭侄文稿,唐代书法家颜真卿的作品",
+      "verifiedAt": "2026-10-30",
+      "eventTitle": "颜真卿祭侄"
+    },
+    "zhao-death": {
+      "title": "前后赤壁赋",
+      "label": "元赵孟頫前后赤壁赋",
+      "url": "https://www.baike.com/wikiid/3506969429149715867",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": "快懂百科HTML元信息及正文链接",
+      "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+      "verifiedAt": "2026-10-30",
+      "eventTitle": "赵孟頫逝世纪念"
+    },
+    "oracle-memory": {
+      "title": "世界记忆遗产",
+      "label": "世界记忆遗产",
+      "url": "https://www.baike.com/wikiid/5414947337833649717",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/5414947337833649717",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "甲骨入选世界记忆名录纪念"
+    },
+    "festival-spring": {
+      "title": "春节",
+      "label": "春节",
+      "url": "https://www.baike.com/wikiid/7164607077330223111",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7164607077330223111",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "春节"
+    },
+    "festival-lantern": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "元宵"
+    },
+    "festival-shangsi": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "上巳"
+    },
+    "festival-dragon": {
+      "title": "端午节",
+      "label": "端午节",
+      "url": "https://www.baike.com/wikiid/7164594471366262817",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7164594471366262817",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "端午"
+    },
+    "festival-qixi": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "七夕"
+    },
+    "festival-ghost": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "中元"
+    },
+    "festival-moon": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "中秋"
+    },
+    "festival-double9": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "重阳"
+    },
+    "festival-winterclothes": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "寒衣节"
+    },
+    "festival-lower": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "下元"
+    },
+    "festival-laba": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "腊八"
+    },
+    "festival-north": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "小年（北方习俗）"
+    },
+    "festival-south": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "小年（南方部分地区习俗）"
+    },
+    "festival-eve": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "除夕"
+    },
+    "festival-hanshi": {
+      "title": "中国节日",
+      "label": "中国节日",
+      "url": "https://www.baike.com/wikiid/8434563368583944152",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8434563368583944152",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "寒食"
+    },
+    "term-小寒": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "小寒"
+    },
+    "term-大寒": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "大寒"
+    },
+    "term-立春": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "立春"
+    },
+    "term-雨水": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "雨水"
+    },
+    "term-惊蛰": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "惊蛰"
+    },
+    "term-春分": {
+      "title": "春分",
+      "label": "春分",
+      "url": "https://www.baike.com/wikiid/7220719297227669536",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7220719297227669536",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "春分"
+    },
+    "term-清明": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "清明"
+    },
+    "term-谷雨": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "谷雨"
+    },
+    "term-立夏": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "立夏"
+    },
+    "term-小满": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "小满"
+    },
+    "term-芒种": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "芒种"
+    },
+    "term-夏至": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "夏至"
+    },
+    "term-小暑": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "小暑"
+    },
+    "term-大暑": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "大暑"
+    },
+    "term-立秋": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "立秋"
+    },
+    "term-处暑": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "处暑"
+    },
+    "term-白露": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "白露"
+    },
+    "term-秋分": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "秋分"
+    },
+    "term-寒露": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "寒露"
+    },
+    "term-霜降": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "霜降"
+    },
+    "term-立冬": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "立冬"
+    },
+    "term-小雪": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "小雪"
+    },
+    "term-大雪": {
+      "title": "二十四节气",
+      "label": "二十四节气",
+      "url": "https://www.baike.com/wikiid/7309648023263379456",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7309648023263379456",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "大雪"
+    },
+    "term-冬至": {
+      "title": "冬至",
+      "label": "冬至",
+      "url": "https://www.baike.com/wikiid/7170999249693032451",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7170999249693032451",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "冬至"
+    },
+    "mother299": {
+      "title": "国际母语日",
+      "label": "国际母语日",
+      "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E6%AF%8D%E8%AF%AD%E6%97%A5/1835253",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E6%AF%8D%E8%AF%AD%E6%97%A5/1835253",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "国际母语日"
+    },
+    "poetry299": {
+      "title": "世界诗歌日",
+      "label": "世界诗歌日",
+      "url": "https://www.baike.com/wikiid/1778596615998299033",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/1778596615998299033",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "世界诗歌日"
+    },
+    "monuments299": {
+      "title": "国际古迹遗址日",
+      "label": "国际古迹遗址日",
+      "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%8F%A4%E8%BF%B9%E9%81%97%E5%9D%80%E6%97%A5/9183977",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%8F%A4%E8%BF%B9%E9%81%97%E5%9D%80%E6%97%A5/9183977",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "国际古迹遗址日"
+    },
+    "books299": {
+      "title": "世界读书日",
+      "label": "世界读书日",
+      "url": "https://www.baike.com/wikiid/8895194975427498298",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/8895194975427498298",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "世界图书与版权日"
+    },
+    "museum299": {
+      "title": "国际博物馆日",
+      "label": "国际博物馆日",
+      "url": "https://www.baike.com/wikiid/7542822566286150107",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7542822566286150107",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "国际博物馆日"
+    },
+    "diversity299": {
+      "title": "世界文化多样性促进对话和发展日",
+      "label": "史料与纪念日来源",
+      "url": "https://www.un.org/en/observances/cultural-diversity-day",
+      "provider": "原始来源",
+      "relatedTopic": false,
+      "encyclopediaVerified": false,
+      "verifiedVia": {
+        "method": "existing_calendar_primary_source",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "archives299": {
+      "title": "国际档案日",
+      "label": "国际档案日",
+      "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E6%A1%A3%E6%A1%88%E6%97%A5/3754113",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E6%A1%A3%E6%A1%88%E6%97%A5/3754113",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "国际档案日"
+    },
+    "moon299": {
+      "title": "国际月球日",
+      "label": "史料与纪念日来源",
+      "url": "https://www.un.org/en/observances/moon-day",
+      "provider": "原始来源",
+      "relatedTopic": false,
+      "encyclopediaVerified": false,
+      "verifiedVia": {
+        "method": "existing_calendar_primary_source",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "indigenous299": {
+      "title": "世界土著人民国际日",
+      "label": "史料与纪念日来源",
+      "url": "https://www.un.org/en/observances/list-days-weeks",
+      "provider": "原始来源",
+      "relatedTopic": false,
+      "encyclopediaVerified": false,
+      "verifiedVia": {
+        "method": "existing_calendar_primary_source",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "literacy299": {
+      "title": "国际扫盲日",
+      "label": "史料与纪念日来源",
+      "url": "https://www.unesco.org/en/days/literacy",
+      "provider": "原始来源",
+      "relatedTopic": false,
+      "encyclopediaVerified": false,
+      "verifiedVia": {
+        "method": "existing_calendar_primary_source",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "peace299": {
+      "title": "国际和平日",
+      "label": "国际和平日",
+      "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%92%8C%E5%B9%B3%E6%97%A5/513979",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%92%8C%E5%B9%B3%E6%97%A5/513979",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "国际和平日"
+    },
+    "access299": {
+      "title": "“普遍获取信息国际日”",
+      "label": "“普遍获取信息国际日”",
+      "url": "https://bkso.baidu.com/item/%E2%80%9C%E6%99%AE%E9%81%8D%E8%8E%B7%E5%8F%96%E4%BF%A1%E6%81%AF%E5%9B%BD%E9%99%85%E6%97%A5%E2%80%9D/62035880",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E2%80%9C%E6%99%AE%E9%81%8D%E8%8E%B7%E5%8F%96%E4%BF%A1%E6%81%AF%E5%9B%BD%E9%99%85%E6%97%A5%E2%80%9D/62035880",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "普遍获取信息国际日"
+    },
+    "translation299": {
+      "title": "国际翻译日",
+      "label": "史料与纪念日来源",
+      "url": "https://www.un.org/en/observances/international-translation-day",
+      "provider": "原始来源",
+      "relatedTopic": false,
+      "encyclopediaVerified": false,
+      "verifiedVia": {
+        "method": "existing_calendar_primary_source",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "living299": {
+      "title": "非物质文化遗产",
+      "label": "非物质文化遗产",
+      "url": "https://www.baike.com/wikiid/738538672412540237",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/738538672412540237",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "国际非物质文化遗产日"
+    },
+    "av299": {
+      "title": "世界音像遗产日",
+      "label": "史料与纪念日来源",
+      "url": "https://www.unesco.org/en/days/audiovisual-heritage",
+      "provider": "原始来源",
+      "relatedTopic": false,
+      "encyclopediaVerified": false,
+      "verifiedVia": {
+        "method": "existing_calendar_primary_source",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "science299": {
+      "title": "世界科学促进和平与发展日",
+      "label": "史料与纪念日来源",
+      "url": "https://www.unesco.org/en/days/science-peace-development",
+      "provider": "原始来源",
+      "relatedTopic": false,
+      "encyclopediaVerified": false,
+      "verifiedVia": {
+        "method": "existing_calendar_primary_source",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "tolerance299": {
+      "title": "国际宽容日",
+      "label": "国际宽容日",
+      "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%AE%BD%E5%AE%B9%E6%97%A5/10673828",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E5%9B%BD%E9%99%85%E5%AE%BD%E5%AE%B9%E6%97%A5/10673828",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "国际宽容日"
+    },
+    "rights299": {
+      "title": "人权日",
+      "label": "史料与纪念日来源",
+      "url": "https://www.un.org/en/observances/human-rights-day",
+      "provider": "原始来源",
+      "relatedTopic": false,
+      "encyclopediaVerified": false,
+      "verifiedVia": {
+        "method": "existing_calendar_primary_source",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "arabicday299": {
+      "title": "世界阿拉伯语日",
+      "label": "史料与纪念日来源",
+      "url": "https://www.unesco.org/en/days/world-arabic-language",
+      "provider": "原始来源",
+      "relatedTopic": false,
+      "encyclopediaVerified": false,
+      "verifiedVia": {
+        "method": "existing_calendar_primary_source",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "worldconvention299": {
+      "title": "保护世界文化和自然遗产公约",
+      "label": "保护世界文化和自然遗产公约",
+      "url": "https://www.baike.com/wikiid/1694519371281395788",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/1694519371281395788",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "世界遗产公约获通过"
+    },
+    "ichconvention299": {
+      "title": "非物质文化遗产",
+      "label": "非物质文化遗产",
+      "url": "https://www.baike.com/wikiid/738538672412540237",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/738538672412540237",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "保护非物质文化遗产公约获通过"
+    },
+    "iss299": {
+      "title": "萨曼莎·克里斯托弗雷蒂",
+      "label": "萨曼莎·克里斯托弗雷蒂",
+      "url": "https://bkso.baidu.com/item/%E8%90%A8%E6%9B%BC%E8%8E%8E%C2%B7%E5%85%8B%E9%87%8C%E6%96%AF%E6%89%98%E5%BC%97%E9%9B%B7%E8%92%82/5137055",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E8%90%A8%E6%9B%BC%E8%8E%8E%C2%B7%E5%85%8B%E9%87%8C%E6%96%AF%E6%89%98%E5%BC%97%E9%9B%B7%E8%92%82/5137055",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "《兰亭集序》从国际空间站传来"
+    },
+    "jobs299": {
+      "title": "史蒂夫·乔布斯",
+      "label": "史蒂夫·乔布斯",
+      "url": "https://bkso.baidu.com/item/%E5%8F%B2%E8%92%82%E5%A4%AB%C2%B7%E4%B9%94%E5%B8%83%E6%96%AF/85300",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E5%8F%B2%E8%92%82%E5%A4%AB%C2%B7%E4%B9%94%E5%B8%83%E6%96%AF/85300",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "一堂书法课，走进个人电脑"
+    },
+    "arabicinscription299": {
+      "title": "阿拉伯书法",
+      "label": "阿拉伯书法",
+      "url": "https://bkso.baidu.com/item/%E9%98%BF%E6%8B%89%E4%BC%AF%E4%B9%A6%E6%B3%95/449745",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E9%98%BF%E6%8B%89%E4%BC%AF%E4%B9%A6%E6%B3%95/449745",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "阿拉伯书法成为人类非遗"
+    },
+    "dylan299": {
+      "title": "鲍勃·迪伦",
+      "label": "鲍勃·迪伦",
+      "url": "https://www.baike.com/wikiid/7791226860991216465",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7791226860991216465",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "迪伦的公寓里，一幅中文书法"
+    },
+    "sutra868299": {
+      "title": "金刚经刻本",
+      "label": "金刚经刻本",
+      "url": "https://www.baike.com/wikiid/3947992085243950698",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/3947992085243950698",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "一卷有纪年的雕版印本"
+    },
+    "mow299": {
+      "title": "世界记忆遗产",
+      "label": "世界记忆遗产",
+      "url": "https://www.baike.com/wikiid/5414947337833649717",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/5414947337833649717",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "世界记忆：让文献对所有人开放"
+    },
+    "mogao299": {
+      "title": "莫高窟",
+      "label": "莫高窟",
+      "url": "https://bkso.baidu.com/item/%E8%8E%AB%E9%AB%98%E7%AA%9F/303038",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E8%8E%AB%E9%AB%98%E7%AA%9F/303038",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "莫高窟：壁画、洞窟与丝路"
+    },
+    "pyramid299": {
+      "title": "孟菲斯及其墓地金字塔",
+      "label": "孟菲斯及其墓地金字塔",
+      "url": "https://bkso.baidu.com/item/%E5%AD%9F%E8%8F%B2%E6%96%AF%E5%8F%8A%E5%85%B6%E5%A2%93%E5%9C%B0%E9%87%91%E5%AD%97%E5%A1%94/7791822",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E5%AD%9F%E8%8F%B2%E6%96%AF%E5%8F%8A%E5%85%B6%E5%A2%93%E5%9C%B0%E9%87%91%E5%AD%97%E5%A1%94/7791822",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "孟菲斯及其墓地：石上的文明"
+    },
+    "borobudur299": {
+      "title": "婆罗浮屠",
+      "label": "婆罗浮屠",
+      "url": "https://www.baike.com/wikiid/2594270372718171083",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/2594270372718171083",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "婆罗浮屠：海上丝路的回响"
+    },
+    "taj299": {
+      "title": "泰姬陵",
+      "label": "泰姬陵",
+      "url": "https://www.baike.com/wikiid/7205958012069593140",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7205958012069593140",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "泰姬陵：建筑中的爱与记忆"
+    },
+    "chinesecalligraphy299": {
+      "title": "非物质文化遗产",
+      "label": "非物质文化遗产",
+      "url": "https://www.baike.com/wikiid/738538672412540237",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/738538672412540237",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "中国书法：从纸墨到人类非遗"
+    },
+    "silk299": {
+      "title": "丝绸之路",
+      "label": "丝绸之路",
+      "url": "https://www.zgbk.com/ecph/words?Name=%E4%B8%9D%E7%BB%B8%E4%B9%8B%E8%B7%AF&SiteID=1&SourceID=560143&Type=bkzyb&subSourceType=000003000001000002",
+      "provider": "中国百科网",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.zgbk.com/ecph/words?Name=%E4%B8%9D%E7%BB%B8%E4%B9%8B%E8%B7%AF&SiteID=1&SourceID=560143&Type=bkzyb&subSourceType=000003000001000002",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "丝绸之路：跨越山海的对话"
+    },
+    "tea299": {
+      "title": "中国传统制茶技艺及其相关习俗",
+      "label": "中国传统制茶技艺及其相关习俗",
+      "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E7%BB%9F%E5%88%B6%E8%8C%B6%E6%8A%80%E8%89%BA%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E4%B9%A0%E4%BF%97/62389766",
+      "provider": "百度百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E7%BB%9F%E5%88%B6%E8%8C%B6%E6%8A%80%E8%89%BA%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E4%B9%A0%E4%BF%97/62389766",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "中国传统制茶技艺及其相关习俗"
+    },
+    "annefrank299": {
+      "title": "安妮日记",
+      "label": "安妮日记",
+      "url": "https://bkso.baidu.com/item/%E5%AE%89%E5%A6%AE%E6%97%A5%E8%AE%B0/63088034",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E5%AE%89%E5%A6%AE%E6%97%A5%E8%AE%B0/63088034",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "《安妮日记》手稿成为世界记忆"
+    },
+    "jikji299": {
+      "title": "直指心体要节",
+      "label": "直指心体要节",
+      "url": "https://bkso.baidu.com/item/%E7%9B%B4%E6%8C%87%E5%BF%83%E4%BD%93%E8%A6%81%E8%8A%82/3978244",
+      "provider": "百度百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://bkso.baidu.com/item/%E7%9B%B4%E6%8C%87%E5%BF%83%E4%BD%93%E8%A6%81%E8%8A%82/3978244",
+        "checkedAt": "2026-10-31"
+      },
+      "eventTitle": "《直指》列入世界记忆名录"
+    },
+    "beethoven299": {
+      "title": "贝多芬《第九交响曲》手稿",
+      "label": "史料与纪念日来源",
+      "url": "https://www.loc.gov/item/2021668114/",
+      "provider": "原始来源",
+      "relatedTopic": false,
+      "encyclopediaVerified": false,
+      "verifiedVia": {
+        "method": "existing_calendar_primary_source",
+        "checkedAt": "2026-10-31"
+      }
+    }
+  },
+  "categories": {
+    "heritage": {
+      "title": "世界遗产名录",
+      "label": "世界遗产名录",
+      "url": "https://www.baike.com/wikiid/7191672317444707644",
+      "provider": "快懂百科",
+      "relatedTopic": false,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/7191672317444707644",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "memory": {
+      "title": "世界记忆遗产",
+      "label": "世界记忆遗产",
+      "url": "https://www.baike.com/wikiid/5414947337833649717",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/5414947337833649717",
+        "checkedAt": "2026-10-31"
+      }
+    },
+    "intangible": {
+      "title": "非物质文化遗产",
+      "label": "非物质文化遗产",
+      "url": "https://www.baike.com/wikiid/738538672412540237",
+      "provider": "快懂百科",
+      "relatedTopic": true,
+      "verifiedVia": {
+        "method": "public_search_result_or_article_html",
+        "url": "https://www.baike.com/wikiid/738538672412540237",
+        "checkedAt": "2026-10-31"
+      }
+    }
+  },
+  "registers": {
+    "heritage": {
+      "label": "全球世界遗产名录",
+      "url": "https://whc.unesco.org/en/list/",
+      "provider": "UNESCO"
+    },
+    "memory": {
+      "label": "全球世界记忆名录",
+      "url": "https://www.unesco.org/en/memory-world/grid?hub=1081",
+      "provider": "UNESCO"
+    },
+    "intangible": {
+      "label": "全球非物质文化遗产名录",
+      "url": "https://ich.unesco.org/en/lists",
+      "provider": "UNESCO"
+    }
+  },
+  "unresolved": [
+    {
+      "kind": "event",
+      "id": "diversity299",
+      "title": "世界文化多样性促进对话和发展日",
+      "reason": "未检出已核实的独立百科条目；保留原始史料链接"
+    },
+    {
+      "kind": "event",
+      "id": "moon299",
+      "title": "国际月球日",
+      "reason": "未检出已核实的独立百科条目；保留原始史料链接"
+    },
+    {
+      "kind": "event",
+      "id": "indigenous299",
+      "title": "世界土著人民国际日",
+      "reason": "未检出已核实的独立百科条目；保留原始史料链接"
+    },
+    {
+      "kind": "event",
+      "id": "literacy299",
+      "title": "国际扫盲日",
+      "reason": "未检出已核实的独立百科条目；保留原始史料链接"
+    },
+    {
+      "kind": "event",
+      "id": "translation299",
+      "title": "国际翻译日",
+      "reason": "未检出已核实的独立百科条目；保留原始史料链接"
+    },
+    {
+      "kind": "event",
+      "id": "av299",
+      "title": "世界音像遗产日",
+      "reason": "未检出已核实的独立百科条目；保留原始史料链接"
+    },
+    {
+      "kind": "event",
+      "id": "science299",
+      "title": "世界科学促进和平与发展日",
+      "reason": "未检出已核实的独立百科条目；保留原始史料链接"
+    },
+    {
+      "kind": "event",
+      "id": "rights299",
+      "title": "人权日",
+      "reason": "未检出已核实的独立百科条目；保留原始史料链接"
+    },
+    {
+      "kind": "event",
+      "id": "arabicday299",
+      "title": "世界阿拉伯语日",
+      "reason": "未检出已核实的独立百科条目；保留原始史料链接"
+    },
+    {
+      "kind": "event",
+      "id": "beethoven299",
+      "title": "贝多芬《第九交响曲》手稿",
+      "reason": "未检出已核实的独立百科条目；保留原始史料链接"
+    }
+  ],
+  "coverage": {
+    "works": 122,
+    "exactWorks": 90,
+    "relatedWorks": 32,
+    "events": 84,
+    "eventsWithEncyclopedia": 74,
+    "eventsWithPrimarySourceOnly": 10
+  }
+}

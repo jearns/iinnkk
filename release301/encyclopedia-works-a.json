@@ -1,0 +1,582 @@
+{
+  "jiucheng": {
+    "title": "九成宫醴泉铭",
+    "label": "九成宫醴泉铭",
+    "url": "https://www.baike.com/wikiid/7166154239981846539",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "九成宫醴泉铭,唐代欧阳询的书法作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "luoshen13": {
+    "title": "洛神赋十三行",
+    "label": "洛神赋十三行",
+    "url": "https://www.baike.com/wikiid/2789507547732558327",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "洛神赋十三行,东晋王献之的小楷书法代表作",
+    "verifiedAt": "2026-10-30"
+  },
+  "lanting": {
+    "title": "兰亭集序",
+    "label": "兰亭集序",
+    "url": "https://www.baike.com/wikiid/7237045937847189519",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "兰亭集序,东晋书法家王羲之的作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "zixu": {
+    "title": "自叙帖",
+    "label": "自叙帖",
+    "url": "https://www.baike.com/wikiid/7264881404662710335",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "自叙帖,唐代怀素创作的草书书法作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "shusu": {
+    "title": "蜀素帖",
+    "label": "蜀素帖",
+    "url": "https://www.baike.com/wikiid/7265595839627542562",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "蜀素帖,北宋米芾书法作品、“天下第八行书”",
+    "verifiedAt": "2026-10-30"
+  },
+  "jizhi": {
+    "title": "祭侄文稿",
+    "label": "祭侄文稿",
+    "url": "https://www.baike.com/wikiid/7218806996241006644",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "祭侄文稿,唐代书法家颜真卿的作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "hanshi": {
+    "title": "黄州寒食帖",
+    "label": "寒食帖",
+    "url": "https://www.baike.com/wikiid/7205811311510863883",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "寒食帖,苏轼撰诗并书的墨迹素笺本",
+    "verifiedAt": "2026-10-30"
+  },
+  "boyuan": {
+    "title": "伯远帖",
+    "label": "伯远帖",
+    "url": "https://www.baike.com/wikiid/2881573534556213471",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "伯远帖,东晋王珣创作的行书书法作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "zhanghan": {
+    "title": "张翰思鲈帖",
+    "label": "张翰帖",
+    "url": "https://www.baike.com/wikiid/7715380762822830093",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "张翰帖,唐代欧阳询创作的纸本行书作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "jiuhua": {
+    "title": "韭花帖",
+    "label": "韭花帖",
+    "url": "https://www.baike.com/wikiid/606311241788293304",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "韭花帖,唐末杨凝式创作的作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "kuaixue": {
+    "title": "快雪时晴帖",
+    "label": "快雪时晴帖",
+    "url": "https://www.baike.com/wikiid/6899776579822686382",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "快雪时晴帖,传为晋代王羲之书法作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "zhongqiu": {
+    "title": "中秋帖",
+    "label": "中秋帖",
+    "url": "https://www.baike.com/wikiid/887161870007944866",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "中秋帖,行草纸本书法作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "sanxi": {
+    "title": "三希宝帖",
+    "label": "三希帖",
+    "url": "https://www.baike.com/wikiid/3632858331976661186",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "三希帖,王羲之、王献之等所著的字帖",
+    "verifiedAt": "2026-10-30"
+  },
+  "caoshuqianzi": {
+    "title": "草书千字文",
+    "label": "草书千字文",
+    "url": "https://www.baike.com/wikiid/7234086138804781068",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "草书千字文,北宋宋徽宗赵佶书写的狂草作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "chibi": {
+    "title": "前后赤壁赋",
+    "label": "元赵孟頫前后赤壁赋",
+    "url": "https://www.baike.com/wikiid/3506969429149715867",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "zhupoems": {
+    "title": "草书诗帖",
+    "label": "草书诗帖",
+    "url": "https://www.baike.com/wikiid/1371777566279050871",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "草书诗帖,明代祝允明创作的作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "shichen": {
+    "title": "史晨碑",
+    "label": "史晨碑",
+    "url": "https://www.baike.com/wikiid/5302226356616770109",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "史晨碑,东汉建宁碑刻",
+    "verifiedAt": "2026-10-30"
+  },
+  "zhangqian": {
+    "title": "张迁碑",
+    "label": "张迁碑",
+    "url": "https://www.baike.com/wikiid/7269969715882901565",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "张迁碑,东汉时期佚名隶书",
+    "verifiedAt": "2026-10-30"
+  },
+  "shimen": {
+    "title": "石门颂",
+    "label": "石门颂",
+    "url": "https://www.baike.com/wikiid/2758724730360020400",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "石门颂,东汉隶书摩崖石刻",
+    "verifiedAt": "2026-10-30"
+  },
+  "xixia": {
+    "title": "西狭颂",
+    "label": "西狭颂",
+    "url": "https://www.baike.com/wikiid/7502080265885862835",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "西狭颂,仇靖创作隶书书法作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "hengfang": {
+    "title": "衡方碑",
+    "label": "衡方碑",
+    "url": "https://www.baike.com/wikiid/8321886279196814321",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "衡方碑,东汉灵帝建宁元年所刻的书法碑",
+    "verifiedAt": "2026-10-30"
+  },
+  "xianyuhuang": {
+    "title": "鲜于璜碑",
+    "label": "鲜于璜碑",
+    "url": "https://www.baike.com/wikiid/5308100680465518861",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "鲜于璜碑,天津市武清区出土的汉代碑刻",
+    "verifiedAt": "2026-10-30"
+  },
+  "leyi": {
+    "title": "乐毅论",
+    "label": "乐毅论",
+    "url": "https://www.baike.com/wikiid/3374454192292108748",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "乐毅论,王羲之书法作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "yanqinli": {
+    "title": "颜勤礼碑",
+    "label": "颜勤礼碑",
+    "url": "https://www.baike.com/wikiid/6823655394236180626",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "颜勤礼碑,唐代颜真卿撰文并书写的神道碑",
+    "verifiedAt": "2026-10-30"
+  },
+  "gushi": {
+    "title": "古诗四帖",
+    "label": "古诗四帖",
+    "url": "https://www.baike.com/wikiid/568374178561649744",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "古诗四帖,唐代书法家张旭代表作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "shiqi": {
+    "title": "十七帖",
+    "label": "十七帖",
+    "url": "https://www.baike.com/wikiid/7171013034918395912",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "十七帖,王羲之重要的草书代表作之一",
+    "verifiedAt": "2026-10-30"
+  },
+  "fuge": {
+    "title": "郙阁颂",
+    "label": "郙阁颂",
+    "url": "https://www.baike.com/wikiid/8376265384829168502",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "郙阁颂,一方摩崖石刻",
+    "verifiedAt": "2026-10-30"
+  },
+  "zhengwengong": {
+    "title": "郑文公下碑",
+    "label": "郑文公碑",
+    "url": "https://www.baike.com/wikiid/1368860765563557191",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "郑文公碑,北魏光州刺史郑道昭所立碑刻",
+    "verifiedAt": "2026-10-30"
+  },
+  "yihe": {
+    "title": "瘗鹤铭",
+    "label": "瘗鹤铭",
+    "url": "https://www.baike.com/wikiid/6610215489071873026",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息及正文链接",
+    "descriptionSignal": "瘗鹤铭,南朝时期陶弘景创作的书法作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "mengdian": {
+    "title": "仲尼梦奠帖",
+    "label": "梦奠帖",
+    "url": "https://www.baike.com/wikiid/7239565328207380519",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息",
+    "descriptionSignal": "梦奠帖,唐代欧阳询书法作品",
+    "verifiedAt": "2026-10-30"
+  },
+  "zhushang": {
+    "title": "诸上座帖",
+    "label": "诸上座",
+    "url": "https://www.baike.com/wikiid/7239567495035142181",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "快懂百科HTML元信息",
+    "descriptionSignal": "诸上座,宋代书法家黄庭坚的草书代表作之一",
+    "verifiedAt": "2026-10-30"
+  },
+  "taishan": {
+    "title": "泰山刻石",
+    "label": "泰山刻石（秦代石刻）",
+    "url": "https://bkso.baidu.com/item/%E6%B3%B0%E5%B1%B1%E5%88%BB%E7%9F%B3/2820330?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "longcang": {
+    "title": "龙藏寺碑",
+    "label": "龙藏寺碑",
+    "url": "https://www.zgbk.com/ecph/words?ID=550117&SiteID=1&SubID=205242&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "caoquan": {
+    "title": "曹全碑",
+    "label": "曹全碑（东汉隶书碑刻）",
+    "url": "https://bkso.baidu.com/item/%E6%9B%B9%E5%85%A8%E7%A2%91/62962291?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "mengzhao": {
+    "title": "蒙诏帖",
+    "label": "蒙诏帖",
+    "url": "https://wapbaike.baidu.com/item/%E8%92%99%E8%AF%8F%E5%B8%96/8370535?fromModule=tashuo-article_bottom-lemma",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "songfeng": {
+    "title": "松风阁诗帖",
+    "label": "自书松风阁诗卷",
+    "url": "https://www.baike.com/wikiid/8499115645532462377",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回完整条目简介，明确黄庭坚1102年卷、台北故宫藏",
+    "verifiedAt": "2026-10-30"
+  },
+  "shigu": {
+    "title": "石鼓文",
+    "label": "石鼓文",
+    "url": "https://www.zgbk.com/ecph/words?ID=759914&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "langya": {
+    "title": "琅琊台刻石",
+    "label": "琅琊刻石",
+    "url": "https://bkso.baidu.com/item/%E7%90%85%E7%90%8A%E5%88%BB%E7%9F%B3/7872969?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "kuaiji": {
+    "title": "会稽刻石",
+    "label": "会稽刻石",
+    "url": "https://bkso.baidu.com/item/%E4%BC%9A%E7%A8%BD%E5%88%BB%E7%9F%B3/3680412?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "yuanan": {
+    "title": "袁安碑",
+    "label": "袁安碑",
+    "url": "https://www.zgbk.com/ecph/words?ID=406572&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "sanfen": {
+    "title": "三坟记",
+    "label": "三坟记",
+    "url": "https://bkso.baidu.com/item/%E4%B8%89%E5%9D%9F%E8%AE%B0/8486479?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "liqi": {
+    "title": "礼器碑",
+    "label": "礼器碑（东汉碑刻）",
+    "url": "https://bkso.baidu.com/item/%E7%A4%BC%E5%99%A8%E7%A2%91/5791902?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "yiying": {
+    "title": "乙瑛碑",
+    "label": "《乙瑛碑》",
+    "url": "https://www.zgbk.com/ecph/words?ID=52253&SiteID=1&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "huashan": {
+    "title": "西岳华山庙碑",
+    "label": "西岳华山庙碑（东汉延熹八年（公元165年）所立碑刻）",
+    "url": "https://bkso.baidu.com/item/%E8%A5%BF%E5%B2%B3%E5%8D%8E%E5%B1%B1%E5%BA%99%E7%A2%91/8102725?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "huangting": {
+    "title": "黄庭经",
+    "label": "黄庭经（道教养生修仙专著）",
+    "url": "https://bkso.baidu.com/item/%E9%BB%84%E5%BA%AD%E7%BB%8F/6240400?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": true,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "nikuan": {
+    "title": "倪宽赞",
+    "label": "倪宽赞",
+    "url": "https://bkso.baidu.com/item/%E5%80%AA%E5%AE%BD%E8%B5%9E/11042962?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "yanta": {
+    "title": "雁塔圣教序",
+    "label": "《雁塔圣教序》",
+    "url": "https://www.zgbk.com/ecph/words?ID=52316&SiteID=1&SubID=61002&Type=bkzyb",
+    "provider": "中国百科网",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "duobao": {
+    "title": "多宝塔碑",
+    "label": "多宝塔碑（唐代颜真卿创作书法作品）",
+    "url": "https://bkso.baidu.com/item/%E5%A4%9A%E5%AE%9D%E5%A1%94%E7%A2%91/5607244",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "xuanmi": {
+    "title": "玄秘塔碑",
+    "label": "玄秘塔碑（唐代柳公权创作书法作品）",
+    "url": "https://bkso.baidu.com/item/%E7%8E%84%E7%A7%98%E5%A1%94%E7%A2%91/766770",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "shupu": {
+    "title": "书谱",
+    "label": "《书谱》",
+    "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E4%B9%A6%E8%B0%B1%E3%80%8B&SiteID=1&SourceID=52384&Type=bkzyb&subSourceType=000003000013000004",
+    "provider": "中国百科网",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "pingfu": {
+    "title": "平复帖",
+    "label": "平复帖",
+    "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%A4%8D%E5%B8%96/2146947?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "guanjun": {
+    "title": "冠军帖",
+    "label": "冠军帖",
+    "url": "https://bkso.baidu.com/item/%E5%86%A0%E5%86%9B%E5%B8%96/9578917?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网络搜索返回条目标题和正文摘要",
+    "verifiedAt": "2026-10-30"
+  },
+  "yishan": {
+    "title": "峄山碑",
+    "label": "峄山刻石",
+    "url": "https://www.baike.com/wikiid/5893640894273981017",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "网页条目标题和简介已核对",
+    "verifiedAt": "2026-10-30"
+  },
+  "yuanchang": {
+    "title": "袁敞碑",
+    "label": "袁敞碑",
+    "url": "https://bkso.baidu.com/item/%E8%A2%81%E6%95%9E%E7%A2%91/0?fromModule=lemma_inlink",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网页条目标题和简介已核对",
+    "verifiedAt": "2026-10-30"
+  },
+  "xuanshi": {
+    "title": "宣示表",
+    "label": "宣示表",
+    "url": "https://wapbaike.baidu.com/item/%E5%AE%A3%E7%A4%BA%E8%A1%A8/9938021?fromModule=tashuo-article_bottom-lemma",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "网页条目标题和简介已核对",
+    "verifiedAt": "2026-10-30"
+  },
+  "jingshiyu": {
+    "title": "经石峪金刚经",
+    "label": "泰山金刚经",
+    "url": "https://www.baike.com/wikiid/4297149561839363724",
+    "provider": "快懂百科",
+    "relatedTopic": false,
+    "verifiedVia": "网页条目标题和简介已核对",
+    "verifiedAt": "2026-10-30"
+  },
+  "tumu": {
+    "title": "土母帖",
+    "label": "李建中",
+    "url": "https://www.baike.com/wikiid/2870243261680206802",
+    "provider": "快懂百科",
+    "relatedTopic": true,
+    "verifiedVia": "已打开作者条目，正文列出《土母帖》；未核实到作品独立条目",
+    "verifiedAt": "2026-10-31"
+  },
+  "tianfa": {
+    "title": "天发神谶碑",
+    "label": "吴天玺纪功碑",
+    "url": "https://bkso.baidu.com/item/%E5%90%B4%E5%A4%A9%E7%8E%BA%E7%BA%AA%E5%8A%9F%E7%A2%91/3784870",
+    "provider": "百度百科",
+    "relatedTopic": false,
+    "verifiedVia": "从皇象词条进入天发神谶碑，实际跳转吴天玺纪功碑，正文明确两名指同一碑",
+    "verifiedAt": "2026-10-31"
+  },
+  "biluo": {
+    "title": "碧落碑",
+    "label": "新绛县博物馆",
+    "url": "https://bkso.baidu.com/item/%E6%96%B0%E7%BB%9B%E5%8E%BF%E5%8D%9A%E7%89%A9%E9%A6%86/2329947",
+    "provider": "百度百科",
+    "relatedTopic": true,
+    "verifiedVia": "已打开馆藏机构条目并核实碧落碑藏品介绍；其作品内链未能读取，使用相关馆藏机构条目",
+    "verifiedAt": "2026-10-31"
+  },
+  "mengying": {
+    "title": "篆书千字文碑",
+    "label": "千字文",
+    "url": "https://wapbaike.baidu.com/item/%E5%8D%83%E5%AD%97%E6%96%87/447586",
+    "provider": "百度百科",
+    "relatedTopic": true,
+    "verifiedVia": "搜索核实为周兴嗣原文条目，作为碑文内容背景；未找到已核实的梦英原碑独立条目",
+    "verifiedAt": "2026-10-31"
+  },
+  "sishan": {
+    "title": "四山摩崖刻经",
+    "label": "摩崖",
+    "url": "https://bkso.baidu.com/item/%E6%91%A9%E5%B4%96/6120237",
+    "provider": "百度百科",
+    "relatedTopic": true,
+    "verifiedVia": "搜索核实文化术语条目，正文明确提及山东四山摩崖北周佛经；未找到已核实独立条目",
+    "verifiedAt": "2026-10-31"
+  }
+}

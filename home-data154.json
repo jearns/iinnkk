@@ -18,7 +18,26 @@
       "portraitLabel": "",
       "year": -1250,
       "dateLabel": "约公元前1300—1200年",
-      "summary211": "汉字最早的成熟形态，在契刻与占卜中留下中华文明的文字源头。"
+      "summary211": "汉字最早的成熟形态，在契刻与占卜中留下中华文明的文字源头。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "殷墟甲骨"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ]
     },
     {
       "id": "maogong",
@@ -47,7 +66,26 @@
           "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1438?dep=U&mode=full"
         }
       ],
-      "objectNumber300": "台北故宫文物统一编号：中銅000651N000000000"
+      "objectNumber300": "台北故宫文物统一编号：中銅000651N000000000",
+      "encyclopedia301": {
+        "title": "毛公鼎",
+        "label": "毛公鼎",
+        "url": "https://wapbaike.baidu.com/item/%E6%AF%9B%E5%85%AC%E9%BC%8E/1161082",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn105search9",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 毛公鼎 · 百度百科",
+          "url": "https://wapbaike.baidu.com/item/%E6%AF%9B%E5%85%AC%E9%BC%8E/1161082"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     {
       "id": "sanshi",
@@ -76,7 +114,26 @@
           "url": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1462?dep=U&mode=full"
         }
       ],
-      "objectNumber300": "台北故宫文物统一编号：故銅002376N000000000"
+      "objectNumber300": "台北故宫文物统一编号：故銅002376N000000000",
+      "encyclopedia301": {
+        "title": "散氏盘",
+        "label": "散氏盘",
+        "url": "https://bkso.baidu.com/item/%E6%95%A3%E6%B0%8F%E7%9B%98/1162572",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn105search21",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 散氏盘 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E6%95%A3%E6%B0%8F%E7%9B%98/1162572"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     {
       "id": "hezun",
@@ -105,7 +162,26 @@
           "url": "https://www.xianqin.org/xr_html/articles/lwjsh/384.html"
         }
       ],
-      "objectNumber300": "《殷周金文集成》6014"
+      "objectNumber300": "《殷周金文集成》6014",
+      "encyclopedia301": {
+        "title": "何尊",
+        "label": "何尊",
+        "url": "https://wapbaike.baidu.com/item/%E4%BD%95%E5%B0%8A/1163495",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn110search4",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 何尊 · 百度百科",
+          "url": "https://wapbaike.baidu.com/item/%E4%BD%95%E5%B0%8A/1163495"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     {
       "id": "shizhoupian",
@@ -165,7 +241,26 @@
       "portraitLabel": "",
       "year": -400,
       "dateLabel": "约公元前450—350年·断代有争议",
-      "summary211": "先秦石刻文字的重镇，以浑厚圆劲的字势开启碑刻书法的宏大传统。"
+      "summary211": "先秦石刻文字的重镇，以浑厚圆劲的字势开启碑刻书法的宏大传统。",
+      "encyclopedia301": {
+        "title": "石鼓",
+        "label": "石鼓",
+        "url": "https://www.baike.com/wikiid/7228428268792348727",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "十鼓斋旧藏石鼓文 · 版本专题"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 石鼓 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7228428268792348727"
+        }
+      ]
     },
     {
       "id": "yishan",
@@ -185,7 +280,22 @@
       "portraitLabel": "李斯",
       "year": -219,
       "dateLabel": "公元前219年·原石佚",
-      "summary211": "秦篆匀整修长的典范，以圆劲中锋呈现统一文字的秩序之美。"
+      "summary211": "秦篆匀整修长的典范，以圆劲中锋呈现统一文字的秩序之美。",
+      "encyclopedia301": {
+        "title": "峄山碑",
+        "label": "峄山刻石",
+        "url": "https://www.baike.com/wikiid/5893640894273981017",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "网页条目标题和简介已核对",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 峄山刻石 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/5893640894273981017"
+        }
+      ]
     },
     {
       "id": "mawangdui",
@@ -225,7 +335,25 @@
       "portraitLabel": "",
       "year": -100,
       "dateLabel": "约公元前100—公元100年·简牍群",
-      "summary211": "汉代边塞的真实手迹，在简牍疾书中展现隶草转化的鲜活节奏。"
+      "summary211": "汉代边塞的真实手迹，在简牍疾书中展现隶草转化的鲜活节奏。",
+      "encyclopedia301": {
+        "title": "居延汉简",
+        "label": "居延汉简",
+        "url": "https://www.baike.com/wikiid/1062948867994668044",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn93search1",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 居延汉简 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/1062948867994668044"
+        }
+      ]
     },
     {
       "id": "caoquan",
@@ -245,7 +373,22 @@
       "portraitLabel": "",
       "year": 185,
       "dateLabel": "公元185年",
-      "summary211": "汉隶秀逸一路的典范，以舒展波磔和匀净结体写出碑刻的柔美风神。"
+      "summary211": "汉隶秀逸一路的典范，以舒展波磔和匀净结体写出碑刻的柔美风神。",
+      "encyclopedia301": {
+        "title": "曹全碑",
+        "label": "曹全碑（东汉隶书碑刻）",
+        "url": "https://bkso.baidu.com/item/%E6%9B%B9%E5%85%A8%E7%A2%91/62962291?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 曹全碑（东汉隶书碑刻） · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E6%9B%B9%E5%85%A8%E7%A2%91/62962291?fromModule=lemma_inlink"
+        }
+      ]
     },
     {
       "id": "zhangzhi",
@@ -285,7 +428,22 @@
       "portraitLabel": "钟繇",
       "year": 230,
       "dateLabel": "约公元220—280年·后世摹刻",
-      "summary211": "小楷古雅一路的经典，以疏朗章法和质朴笔意开启钟王书风的审美传统。"
+      "summary211": "小楷古雅一路的经典，以疏朗章法和质朴笔意开启钟王书风的审美传统。",
+      "encyclopedia301": {
+        "title": "宣示表",
+        "label": "宣示表",
+        "url": "https://wapbaike.baidu.com/item/%E5%AE%A3%E7%A4%BA%E8%A1%A8/9938021?fromModule=tashuo-article_bottom-lemma",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网页条目标题和简介已核对",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 宣示表 · 百度百科",
+          "url": "https://wapbaike.baidu.com/item/%E5%AE%A3%E7%A4%BA%E8%A1%A8/9938021?fromModule=tashuo-article_bottom-lemma"
+        }
+      ]
     },
     {
       "id": "yuanshe",
@@ -345,7 +503,22 @@
       "portraitLabel": "陆机",
       "year": 300,
       "dateLabel": "约公元290—320年",
-      "summary211": "传世早期文人墨迹的重镇，以苍古草隶保留魏晋书写的质朴气息。"
+      "summary211": "传世早期文人墨迹的重镇，以苍古草隶保留魏晋书写的质朴气息。",
+      "encyclopedia301": {
+        "title": "平复帖",
+        "label": "平复帖",
+        "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%A4%8D%E5%B8%96/2146947?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 平复帖 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%A4%8D%E5%B8%96/2146947?fromModule=lemma_inlink"
+        }
+      ]
     },
     {
       "after": "pingfu",
@@ -365,7 +538,23 @@
       "portraitLabel": "王羲之",
       "year": 353,
       "dateLabel": "公元353年·唐摹",
-      "summary211": "行书审美的巅峰范式，在自然流转的笔势中写尽魏晋风度与生命感怀。"
+      "summary211": "行书审美的巅峰范式，在自然流转的笔势中写尽魏晋风度与生命感怀。",
+      "encyclopedia301": {
+        "title": "兰亭集序",
+        "label": "兰亭集序",
+        "url": "https://www.baike.com/wikiid/7237045937847189519",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "兰亭集序,东晋书法家王羲之的作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 兰亭集序 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7237045937847189519"
+        }
+      ]
     },
     {
       "id": "shengjiao",
@@ -431,7 +620,26 @@
           "sha256": "c1a4f04293c5a912f6ac20841e822179177b50960f2e4e6eaced0f5fb531ca59"
         }
       ],
-      "imageSelection300": "代表图像节选；不代表整套拓本"
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "encyclopedia301": {
+        "title": "集王圣教序",
+        "label": "集王圣教序",
+        "url": "https://bkso.baidu.com/item/%E9%9B%86%E7%8E%8B%E5%9C%A3%E6%95%99%E5%BA%8F/61489707",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn63search2",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 集王圣教序 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E9%9B%86%E7%8E%8B%E5%9C%A3%E6%95%99%E5%BA%8F/61489707"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     {
       "after": "shengjiao",
@@ -497,7 +705,24 @@
           "sha256": "88262208cca37ccafcfcc4d1de3d6512828f185f0bb9bd6beed63c23ba8fe43b"
         }
       ],
-      "imageSelection300": "代表图像节选；不代表整套拓本"
+      "imageSelection300": "代表图像节选；不代表整套拓本",
+      "encyclopedia301": {
+        "title": "瘗鹤铭",
+        "label": "瘗鹤铭",
+        "url": "https://www.baike.com/wikiid/6610215489071873026",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "瘗鹤铭,南朝时期陶弘景创作的书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 瘗鹤铭 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/6610215489071873026"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     {
       "after": "yihe",
@@ -557,7 +782,22 @@
       "portraitLabel": "",
       "year": 586,
       "dateLabel": "公元586年",
-      "summary211": "隋代楷书的重要桥梁，在北碑风骨与唐楷法度之间写出清朗端正的气象。"
+      "summary211": "隋代楷书的重要桥梁，在北碑风骨与唐楷法度之间写出清朗端正的气象。",
+      "encyclopedia301": {
+        "title": "龙藏寺碑",
+        "label": "龙藏寺碑",
+        "url": "https://www.zgbk.com/ecph/words?ID=550117&SiteID=1&SubID=205242&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 龙藏寺碑 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=550117&SiteID=1&SubID=205242&Type=bkzyb"
+        }
+      ]
     },
     {
       "after": "longcang",
@@ -597,7 +837,23 @@
       "portraitLabel": "张旭",
       "year": 750,
       "dateLabel": "约公元730—770年·传张旭",
-      "summary211": "狂草壮美的代表，以连绵绞转与跌宕章法呈现纵横奔涌的笔墨气势。"
+      "summary211": "狂草壮美的代表，以连绵绞转与跌宕章法呈现纵横奔涌的笔墨气势。",
+      "encyclopedia301": {
+        "title": "古诗四帖",
+        "label": "古诗四帖",
+        "url": "https://www.baike.com/wikiid/568374178561649744",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "古诗四帖,唐代书法家张旭代表作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 古诗四帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/568374178561649744"
+        }
+      ]
     },
     {
       "id": "yanqinli",
@@ -638,7 +894,23 @@
       "portraitLabel": "欧阳询",
       "year": 632,
       "dateLabel": "公元632年",
-      "summary211": "欧体楷书的法度典范，以险中求正的结体和精严点画树立唐楷标尺。"
+      "summary211": "欧体楷书的法度典范，以险中求正的结体和精严点画树立唐楷标尺。",
+      "encyclopedia301": {
+        "title": "九成宫醴泉铭",
+        "label": "九成宫醴泉铭",
+        "url": "https://www.baike.com/wikiid/7166154239981846539",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "九成宫醴泉铭,唐代欧阳询的书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 九成宫醴泉铭 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7166154239981846539"
+        }
+      ]
     },
     {
       "id": "shupu",
@@ -658,7 +930,22 @@
       "portraitLabel": "孙过庭",
       "year": 687,
       "dateLabel": "公元687年",
-      "summary211": "草书与书论相融的高峰，以精妙使转将笔法、性情与艺术思辨写在同一长卷。"
+      "summary211": "草书与书论相融的高峰，以精妙使转将笔法、性情与艺术思辨写在同一长卷。",
+      "encyclopedia301": {
+        "title": "书谱",
+        "label": "《书谱》",
+        "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E4%B9%A6%E8%B0%B1%E3%80%8B&SiteID=1&SourceID=52384&Type=bkzyb&subSourceType=000003000013000004",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 《书谱》 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E4%B9%A6%E8%B0%B1%E3%80%8B&SiteID=1&SourceID=52384&Type=bkzyb&subSourceType=000003000013000004"
+        }
+      ]
     },
     {
       "id": "zixu",
@@ -678,7 +965,23 @@
       "portraitLabel": "怀素",
       "year": 777,
       "dateLabel": "公元777年",
-      "summary211": "狂草的巅峰名卷，以疾涩相生的线条和奔腾章法写出草书的自由精神。"
+      "summary211": "狂草的巅峰名卷，以疾涩相生的线条和奔腾章法写出草书的自由精神。",
+      "encyclopedia301": {
+        "title": "自叙帖",
+        "label": "自叙帖",
+        "url": "https://www.baike.com/wikiid/7264881404662710335",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "自叙帖,唐代怀素创作的草书书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 自叙帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7264881404662710335"
+        }
+      ]
     },
     {
       "after": "zixu",
@@ -698,7 +1001,23 @@
       "portraitLabel": "杨凝式",
       "year": 950,
       "dateLabel": "约公元930—970年·传本",
-      "summary211": "五代行书的清雅典范，在疏朗留白与从容笔势间承接晋韵、开启宋意。"
+      "summary211": "五代行书的清雅典范，在疏朗留白与从容笔势间承接晋韵、开启宋意。",
+      "encyclopedia301": {
+        "title": "韭花帖",
+        "label": "韭花帖",
+        "url": "https://www.baike.com/wikiid/606311241788293304",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "韭花帖,唐末杨凝式创作的作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 韭花帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/606311241788293304"
+        }
+      ]
     },
     {
       "id": "caoshuqianzi",
@@ -719,7 +1038,23 @@
       "year": 1112,
       "dateLabel": "公元1112年",
       "summary211": "瘦金之外的狂草奇观，以劲逸连绵的笔势展开长卷书写的恢宏想象。",
-      "author": "赵佶"
+      "author": "赵佶",
+      "encyclopedia301": {
+        "title": "草书千字文",
+        "label": "草书千字文",
+        "url": "https://www.baike.com/wikiid/7234086138804781068",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "草书千字文,北宋宋徽宗赵佶书写的狂草作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 草书千字文 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7234086138804781068"
+        }
+      ]
     },
     {
       "id": "dizhu",
@@ -740,7 +1075,25 @@
       "year": 1095,
       "dateLabel": "约公元1080—1100年",
       "summary211": "黄庭坚大字行书的代表，以长枪大戟般的线条写出奇崛开张的山谷气象。",
-      "author": "黄庭坚"
+      "author": "黄庭坚",
+      "encyclopedia301": {
+        "title": "砥柱铭",
+        "label": "砥柱铭",
+        "url": "https://bkso.baidu.com/item/%E7%A0%A5%E6%9F%B1%E9%93%AD/10487439",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn67search22",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 砥柱铭 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E7%A0%A5%E6%9F%B1%E9%93%AD/10487439"
+        }
+      ]
     },
     {
       "id": "hanshi",
@@ -760,7 +1113,23 @@
       "portraitLabel": "苏轼",
       "year": 1082,
       "dateLabel": "约1082年",
-      "summary211": "宋代尚意书法的高峰，让诗意、身世与笔墨在跌宕章法中融为一体。"
+      "summary211": "宋代尚意书法的高峰，让诗意、身世与笔墨在跌宕章法中融为一体。",
+      "encyclopedia301": {
+        "title": "黄州寒食帖",
+        "label": "寒食帖",
+        "url": "https://www.baike.com/wikiid/7205811311510863883",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "寒食帖,苏轼撰诗并书的墨迹素笺本",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 寒食帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7205811311510863883"
+        }
+      ]
     },
     {
       "after": "hanshi",
@@ -781,7 +1150,23 @@
       "year": 1088,
       "dateLabel": "公元1088年",
       "summary211": "米芾行书的代表，以八面出锋的点画和欹侧取势写出痛快淋漓的晋人风神。",
-      "author": "米芾"
+      "author": "米芾",
+      "encyclopedia301": {
+        "title": "蜀素帖",
+        "label": "蜀素帖",
+        "url": "https://www.baike.com/wikiid/7265595839627542562",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "蜀素帖,北宋米芾书法作品、“天下第八行书”",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 蜀素帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7265595839627542562"
+        }
+      ]
     },
     {
       "id": "chibi",
@@ -801,7 +1186,23 @@
       "portraitLabel": "赵孟頫",
       "year": 1301,
       "dateLabel": "约公元1300—1320年",
-      "summary211": "赵孟頫行书的经典，以圆润流美的笔墨将赤壁诗意化为清雅从容的书卷气。"
+      "summary211": "赵孟頫行书的经典，以圆润流美的笔墨将赤壁诗意化为清雅从容的书卷气。",
+      "encyclopedia301": {
+        "title": "前后赤壁赋",
+        "label": "元赵孟頫前后赤壁赋",
+        "url": "https://www.baike.com/wikiid/3506969429149715867",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 元赵孟頫前后赤壁赋 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/3506969429149715867"
+        }
+      ]
     },
     {
       "id": "tengwang",
@@ -928,7 +1329,13 @@
       "size": 15,
       "zoom": 350,
       "cover143": "timeline/pages/world-sumerian218/inventory.jpg",
-      "summary211": "楔形文字起源于两河流域。此件新苏美尔时期的清单泥板约作于公元前2045年，呈现书吏以芦苇笔在湿泥上压出笔画的方式。图为大都会艺术博物馆开放馆藏，并非《吉尔伽美什史诗》原文。"
+      "summary211": "楔形文字起源于两河流域。此件新苏美尔时期的清单泥板约作于公元前2045年，呈现书吏以芦苇笔在湿泥上压出笔画的方式。图为大都会艺术博物馆开放馆藏，并非《吉尔伽美什史诗》原文。",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
+      "manualImagesProtected301": true
     },
     {
       "id": "world-gilgamesh218",
@@ -953,7 +1360,8 @@
       "size": 15,
       "zoom": 350,
       "cover143": "timeline/pages/world-gilgamesh218/sumerian-poem.jpg",
-      "summary211": "第一图是苏美尔语《吉尔伽美什与胡瓦瓦》的古巴比伦时期抄本，现藏阿什莫林博物馆。第二图是阿卡德语史诗第十一泥板“洪水篇”，属公元前7世纪的新亚述时期，现藏大英博物馆。两图语种与抄写年代不同，不应把洪水篇误称为苏美尔语原文。"
+      "summary211": "第一图是苏美尔语《吉尔伽美什与胡瓦瓦》的古巴比伦时期抄本，现藏阿什莫林博物馆。第二图是阿卡德语史诗第十一泥板“洪水篇”，属公元前7世纪的新亚述时期，现藏大英博物馆。两图语种与抄写年代不同，不应把洪水篇误称为苏美尔语原文。",
+      "manualImagesProtected301": true
     },
     {
       "id": "world-hammurabi218",
@@ -977,7 +1385,13 @@
       "size": 15,
       "zoom": 350,
       "cover143": "timeline/pages/world-hammurabi218/stele.jpg",
-      "summary211": "汉谟拉比法典石碑约作于公元前18世纪，以阿卡德语楔形文字刻写。碑首是国王与神祇的浮雕，下方排列长篇法律文字，现藏卢浮宫。它是古代法律文字的重要见证，并非苏美尔语文本。"
+      "summary211": "汉谟拉比法典石碑约作于公元前18世纪，以阿卡德语楔形文字刻写。碑首是国王与神祇的浮雕，下方排列长篇法律文字，现藏卢浮宫。它是古代法律文字的重要见证，并非苏美尔语文本。",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
+      "manualImagesProtected301": true
     }
   ],
   "world": {

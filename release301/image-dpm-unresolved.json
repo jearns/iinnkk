@@ -1,0 +1,305 @@
+{
+  "criterion": "短边至少1080原生像素；不进行上采样。",
+  "scope": "300版补图中故宫公开来源的低清图像，非全站既有上传原图审计。",
+  "recommendedWorkIds": [
+    "boyuan",
+    "zhongqiu",
+    "liqi",
+    "xuanmi",
+    "shichen"
+  ],
+  "replacedLowPaths": 45,
+  "unresolved": [
+    {
+      "id": "zhanghan",
+      "source": "https://www.dpm.org.cn/collection/handwriting/234567.html",
+      "lowResolutionPaths": [
+        "release300/assets/core/zhanghan-01.webp",
+        "release300/assets/core/zhanghan-02.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "yanta",
+      "source": "https://www.dpm.org.cn/collection/impres/234134.html",
+      "lowResolutionPaths": [
+        "release300/assets/core/yanta-01.webp",
+        "release300/assets/core/yanta-02.webp",
+        "release300/assets/core/yanta-03.webp",
+        "release300/assets/core/yanta-04.webp",
+        "release300/assets/core/yanta-05.webp",
+        "release300/assets/core/yanta-06.webp",
+        "release300/assets/core/yanta-07.webp",
+        "release300/assets/core/yanta-08.webp",
+        "release300/assets/core/yanta-09.webp",
+        "release300/assets/core/yanta-10.webp",
+        "release300/assets/core/yanta-11.webp",
+        "release300/assets/core/yanta-12.webp",
+        "release300/assets/core/yanta-13.webp",
+        "release300/assets/core/yanta-14.webp",
+        "release300/assets/core/yanta-15.webp",
+        "release300/assets/core/yanta-16.webp",
+        "release300/assets/core/yanta-17.webp",
+        "release300/assets/core/yanta-18.webp",
+        "release300/assets/core/yanta-19.webp",
+        "release300/assets/core/yanta-20.webp",
+        "release300/assets/core/yanta-21.webp",
+        "release300/assets/core/yanta-22.webp",
+        "release300/assets/core/yanta-23.webp",
+        "release300/assets/core/yanta-24.webp",
+        "release300/assets/core/yanta-25.webp",
+        "release300/assets/core/yanta-26.webp",
+        "release300/assets/core/yanta-27.webp",
+        "release300/assets/core/yanta-28.webp",
+        "release300/assets/core/yanta-29.webp",
+        "release300/assets/core/yanta-30.webp",
+        "release300/assets/core/yanta-31.webp",
+        "release300/assets/core/yanta-32.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "fuge",
+      "source": "https://www.dpm.org.cn/collection/impres/231823.html",
+      "lowResolutionPaths": [
+        "release300/assets/core/fuge-01.webp",
+        "release300/assets/core/fuge-02.webp",
+        "release300/assets/core/fuge-03.webp",
+        "release300/assets/core/fuge-04.webp",
+        "release300/assets/core/fuge-05.webp",
+        "release300/assets/core/fuge-06.webp",
+        "release300/assets/core/fuge-07.webp",
+        "release300/assets/core/fuge-08.webp",
+        "release300/assets/core/fuge-09.webp",
+        "release300/assets/core/fuge-10.webp",
+        "release300/assets/core/fuge-11.webp",
+        "release300/assets/core/fuge-12.webp",
+        "release300/assets/core/fuge-13.webp",
+        "release300/assets/core/fuge-14.webp",
+        "release300/assets/core/fuge-15.webp",
+        "release300/assets/core/fuge-16.webp",
+        "release300/assets/core/fuge-17.webp",
+        "release300/assets/core/fuge-18.webp",
+        "release300/assets/core/fuge-19.webp",
+        "release300/assets/core/fuge-20.webp",
+        "release300/assets/core/fuge-21.webp",
+        "release300/assets/core/fuge-22.webp",
+        "release300/assets/core/fuge-23.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "taishan",
+      "source": "https://www.dpm.org.cn/collection/impres/234107.html",
+      "lowResolutionPaths": [
+        "release300/assets/core/taishan-01.webp",
+        "release300/assets/core/taishan-02.webp",
+        "release300/assets/core/taishan-03.webp",
+        "release300/assets/core/taishan-04.webp",
+        "release300/assets/core/taishan-05.webp",
+        "release300/assets/core/taishan-06.webp",
+        "release300/assets/core/taishan-07.webp",
+        "release300/assets/core/taishan-08.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "mengzhao",
+      "source": "https://www.dpm.org.cn/collection/handwriting/231095.html",
+      "lowResolutionPaths": [
+        "release300/assets/manuscripts/mengzhao-1.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "tianfa",
+      "source": "https://www.dpm.org.cn/collection/impres/234552.html",
+      "lowResolutionPaths": [
+        "release300/assets/steles/tianfa-1.webp",
+        "release300/assets/steles/tianfa-2.webp",
+        "release300/assets/steles/tianfa-3.webp",
+        "release300/assets/steles/tianfa-4.webp",
+        "release300/assets/steles/tianfa-5.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E5%8F%91%E7%A5%9E%E8%B0%B6%E7%A2%91%E4%B9%8B%E4%B8%80.jpg",
+      "candidateRestriction": "alternate-version-requires-review"
+    },
+    {
+      "id": "yanqinli",
+      "source": "https://www.dpm.org.cn/collection/impres/234175.html",
+      "lowResolutionPaths": [
+        "release300/assets/steles/yanqinli-2.webp",
+        "release300/assets/steles/yanqinli-3.webp",
+        "release300/assets/steles/yanqinli-4.webp",
+        "release300/assets/steles/yanqinli-5.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "hengfang",
+      "source": "https://www.dpm.org.cn/collection/impres/228606.html",
+      "lowResolutionPaths": [
+        "release300/assets/steles/hengfang-1.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "huashan",
+      "source": "https://www.dpm.org.cn/collection/impres/234706.html",
+      "lowResolutionPaths": [
+        "release300/assets/steles/huashan-1.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "shimen",
+      "source": "https://www.dpm.org.cn/collection/impres/234191.html",
+      "lowResolutionPaths": [
+        "release300/assets/steles/shimen-3.webp",
+        "release300/assets/steles/shimen-4.webp",
+        "release300/assets/steles/shimen-5.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E9%97%A8%E5%8D%81%E4%B8%89%E5%93%81%20%E7%9F%B3%E9%97%A8%E9%A2%82.jpg",
+      "candidateRestriction": "illustration-only"
+    },
+    {
+      "id": "yiying",
+      "source": "https://www.dpm.org.cn/collection/impres/228529.html",
+      "lowResolutionPaths": [
+        "release300/assets/steles/yiying-1.webp",
+        "release300/assets/steles/yiying-2.webp",
+        "release300/assets/steles/yiying-3.webp",
+        "release300/assets/steles/yiying-4.webp",
+        "release300/assets/steles/yiying-5.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "yihe",
+      "source": "https://www.dpm.org.cn/collection/impres/234548.html",
+      "lowResolutionPaths": [
+        "release300/assets/steles/yihe-1.webp",
+        "release300/assets/steles/yihe-2.webp",
+        "release300/assets/steles/yihe-3.webp",
+        "release300/assets/steles/yihe-4.webp",
+        "release300/assets/steles/yihe-5.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "shengjiao",
+      "source": "https://www.dpm.org.cn/collection/impres/228597.html",
+      "lowResolutionPaths": [
+        "release300/assets/steles/shengjiao-1.webp",
+        "release300/assets/steles/shengjiao-2.webp",
+        "release300/assets/steles/shengjiao-3.webp",
+        "release300/assets/steles/shengjiao-4.webp",
+        "release300/assets/steles/shengjiao-5.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "zhongxing",
+      "source": "https://www.dpm.org.cn/collection/impres/228473.html",
+      "lowResolutionPaths": [
+        "release300/assets/steles/zhongxing-1.webp",
+        "release300/assets/steles/zhongxing-2.webp",
+        "release300/assets/steles/zhongxing-3.webp",
+        "release300/assets/steles/zhongxing-4.webp",
+        "release300/assets/steles/zhongxing-5.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "shouchan",
+      "source": "https://www.dpm.org.cn/collection/impres/231867.html",
+      "lowResolutionPaths": [
+        "release300/assets/misc/shouchan-1.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "oracle-qiang298",
+      "source": "https://www.dpm.org.cn/impress/talk/248912.html",
+      "lowResolutionPaths": [
+        "release300/assets/oracle/qiang-1.webp",
+        "release300/assets/oracle/qiang-3.webp",
+        "release300/assets/oracle/qiang-5.webp",
+        "release300/assets/oracle/qiang-6.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "milan247",
+      "source": "https://www.dpm.org.cn/collection/handwriting/233528.html",
+      "lowResolutionPaths": [
+        "release300/assets/manuscripts-collector/milan247-1.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "caishi247",
+      "source": "https://www.dpm.org.cn/collection/handwriting/228526.html",
+      "lowResolutionPaths": [
+        "release300/assets/manuscripts-collector/caishi247-1.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "luoshui247",
+      "source": "https://www.dpm.org.cn/collection/impres/233223.html",
+      "lowResolutionPaths": [
+        "release300/assets/manuscripts-collector/luoshui247-1.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    },
+    {
+      "id": "sanxi",
+      "source": "https://www.dpm.org.cn/collection/handwriting/228199.html",
+      "lowResolutionPaths": [
+        "release300/assets/core/boyuan-01.webp",
+        "release300/assets/core/zhongqiu-01.webp",
+        "release300/assets/manuscripts/kuaixue-2.webp"
+      ],
+      "status": "尚未找到可核实且短边至少1080的无数字水印同版本公开图像；不放大凑像素，不冒用其他作品。",
+      "candidate": null,
+      "candidateRestriction": null
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-31",
+  "amap": {
+    "status": "requires_real_group_invitation",
+    "capability": "高德地图群组支持通过真实分享链接或口令邀请用户加入；群组内可共享位置、标记地点、路线等。",
+    "officialEvidence": [
+      {
+        "url": "https://terms.alicdn.com/legal-agreement/terms/privacy_other/20250313225308569/20250313225308569.html",
+        "type": "高德地图群组隐私政策",
+        "evidence": "在您创建群组过程中，可以通过分享链接或口令去邀请您的好友加入群组。"
+      },
+      {
+        "url": "https://lbs.amap.com/api/wia/tutorial/content/import",
+        "type": "高德地图小程序制作平台官方数据导入教程",
+        "note": "地点数据可维护为导入文件；平台需要登录，不等于存在无需登录即可创建的永久公开群组 API。"
+      }
+    ],
+    "joinUrl": null,
+    "requirements": ["由维护者登录高德地图创建真实群组", "实际验证群组共享地点与用户加入流程", "将生成的邀请链接或口令维护到配置中"],
+    "integration": "仅在配置了真实邀请链接后展示加入入口；未配置时保留站内地图和地点导出。不得拼接或伪造群组邀请地址。",
+    "limitations": "未找到可公开免认证创建群组并维护所有地点的官方接口；链接有效期和加入限制须以实际群组界面为准。"
+  },
+  "chinaEncyclopedia": {
+    "domain": "zgbk.com",
+    "name": "中国百科网·中国大百科全书第三版",
+    "verificationSource": "https://www.clcn.net.cn/resources/default/index?first_letter=Z&mode=internal_link",
+    "note": "首都图书馆数字资源目录使用此名称；不以百科吧等无关网站替代。"
+  }
+}

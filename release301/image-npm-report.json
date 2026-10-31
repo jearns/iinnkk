@@ -1,0 +1,111 @@
+{
+  "works": 8,
+  "attempted": 57,
+  "replaced": 40,
+  "unresolved": [
+    {
+      "old": "release300/assets/manuscripts/kuaixue-9.webp",
+      "work": "kuaixue",
+      "name": "K2B000141N000000000PAJ",
+      "service": "https://iiifod.npm.gov.tw/iiif/2/K2B%2FK2B000141N000000000PAJ",
+      "manifest": "https://digitalarchive.npm.gov.tw/opendata/Integrate/GetJson?cid=19&dept=P&imageName=",
+      "catalogue": "https://digitalarchive.npm.gov.tw/Collection/Detail/19?dep=P",
+      "pageIndex": 8,
+      "error": "IncompleteRead(688128 bytes read)"
+    },
+    {
+      "work": "leyi",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-2.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479513"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-3.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479514"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-4.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479515"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-5.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479516"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-6.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479517"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-7.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479518"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-8.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479519"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-9.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479520"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-10.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479521"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-11.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479522"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-12.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479523"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-13.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479524"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-14.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479525"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-15.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479526"
+    },
+    {
+      "old": "release300/assets/manuscripts-extra/shiqi-16.webp",
+      "work": "shiqi",
+      "error": "Canonical image mapping absent",
+      "imageId": "479527"
+    }
+  ]
+}

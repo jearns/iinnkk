@@ -1,4 +1,7 @@
 export const MUSIC_TRACKS = [
+{"id": "liushui", "title": "流水 · 古琴", "directory": "video-music301", "credit": "Charlie Huang；古琴《流水》（川派），2006-04-15，Shaoyun Xuan，英国伯明翰。CC BY 2.5；剪辑为30/120秒、单声道32 kb/s AAC、音量与淡入淡出调整。https://commons.wikimedia.org/wiki/File:Liu_Shui.ogg；https://creativecommons.org/licenses/by/2.5/", "source": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Liu_Shui.ogg", "sourcePage": "https://commons.wikimedia.org/wiki/File:Liu_Shui.ogg", "license": "CC BY 2.5", "availableDurations": [30, 120], "relatedRequestedTitle": "高山流水", "note": "古琴《流水》是独立曲目，不等同于古筝曲《高山流水》；需按此名称显示。"},
+{id:'local-0',title:'渔舟唱晚',requiresImport301:true,credit:'本机导入音源'},{id:'local-1',title:'高山流水',requiresImport301:true,credit:'本机导入音源'},{id:'local-2',title:'春江花月夜',requiresImport301:true,credit:'本机导入音源'},{id:'local-3',title:'将进酒',requiresImport301:true,credit:'本机导入音源'},
+
  {id:'qiannian',title:'千年之后',directory:'video-music296',credit:'用户指定音源：https://music.163.com/song/media/outer/url?id=3442664844.mp3；轻量AAC裁切、音量与淡入淡出调整；原录音权利归原权利人。'},
   {
     "id": "strauss",
@@ -62,4 +65,4 @@ export const MUSIC_TRACKS = [
   }
 ];
 export function musicTrack(id){return MUSIC_TRACKS.find(x=>x.id===id)||null;}
-export function musicSource(id,seconds){return musicTrack(id)?`${musicTrack(id).directory||'video-music295'}/${id}-${[8,15,30,60,120].includes(Number(seconds))?Number(seconds):30}.m4a`:null;}
+export function musicSource(id,seconds){if(musicTrack(id)?.requiresImport301)return null;return musicTrack(id)?`${musicTrack(id).directory||'video-music295'}/${id}-${musicTrack(id).availableDurations?(Number(seconds)>30?120:30):[8,15,30,60,120].includes(Number(seconds))?Number(seconds):120}.m4a`:null;}

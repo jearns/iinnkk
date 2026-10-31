@@ -54,7 +54,8 @@
         "timeline/pages/qinling/6eff7748-380e-4cc6-aa09-9da1a4ea19f8.jpg",
         "timeline/pages/qinling/fe778c81-7500-45b3-b353-ed3894e7e4b4.jpg",
         "timeline/pages/qinling/36ccdcd9-04aa-4915-b970-22e7fb8f0257.jpg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "yuyouren": {
       "deleted": false,
@@ -104,7 +105,8 @@
         "timeline/pages/yuyouren/mum854bu-4.jpg",
         "timeline/pages/yuyouren/mum855x0-5.jpg",
         "timeline/pages/yuyouren/mum857fk-6.jpg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "hanshi": {
       "deleted": false,
@@ -192,7 +194,24 @@
         "timeline/pages/hanshi/muzjrts9-n/IMG_3882.jpeg",
         "timeline/pages/hanshi/muzjrv9x-o/IMG_3883.jpeg",
         "timeline/pages/hanshi/muzjrvyo-p/IMG_3884.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "黄州寒食帖",
+        "label": "寒食帖",
+        "url": "https://www.baike.com/wikiid/7205811311510863883",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "寒食帖,苏轼撰诗并书的墨迹素笺本",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 寒食帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7205811311510863883"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "post-c25db8c6-638a-48ad-a9f5-cebacf39cc4e": {
       "deleted": false,
@@ -249,7 +268,8 @@
         "timeline/pages/post-c25db8c6-638a-48ad-a9f5-cebacf39cc4e/muy1dcj5-9/ 前赤壁赋 09.jpg",
         "timeline/pages/post-c25db8c6-638a-48ad-a9f5-cebacf39cc4e/muy1d4mr-3/ 前赤壁赋10.jpg",
         "timeline/pages/post-c25db8c6-638a-48ad-a9f5-cebacf39cc4e/muy1db3u-8/ 前赤壁赋11.jpg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "post-63edf3c7-d3ee-4792-96ef-d7cfb3595fa5": {
       "deleted": false,
@@ -486,7 +506,8 @@
         "timeline/pages/post-63edf3c7-d3ee-4792-96ef-d7cfb3595fa5/muzfra6w-21/IMG_3787.jpeg",
         "timeline/pages/post-63edf3c7-d3ee-4792-96ef-d7cfb3595fa5/muzfrc2i-22/IMG_3788.jpeg",
         "timeline/pages/post-63edf3c7-d3ee-4792-96ef-d7cfb3595fa5/muzfrdkb-23/IMG_3789.jpeg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "dizhu": {
       "deleted": false,
@@ -590,7 +611,26 @@
         "timeline/pages/dizhu/muywpa5a-v/IMG_3821.jpeg",
         "timeline/pages/dizhu/muywpbii-w/IMG_3822.jpeg",
         "timeline/pages/dizhu/muywpdb9-x/IMG_3823.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "砥柱铭",
+        "label": "砥柱铭",
+        "url": "https://bkso.baidu.com/item/%E7%A0%A5%E6%9F%B1%E9%93%AD/10487439",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn67search22",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 砥柱铭 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E7%A0%A5%E6%9F%B1%E9%93%AD/10487439"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "lanting": {
       "deleted": false,
@@ -690,7 +730,24 @@
         "timeline/pages/lanting/mv04vrf3-t/IMG_3916.jpeg",
         "timeline/pages/lanting/mv04vtbd-u/IMG_3917.jpeg",
         "timeline/pages/lanting/mv04vv9x-v/IMG_3918.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "兰亭集序",
+        "label": "兰亭集序",
+        "url": "https://www.baike.com/wikiid/7237045937847189519",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "兰亭集序,东晋书法家王羲之的作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 兰亭集序 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7237045937847189519"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "zhangbaoyi": {
       "deleted": false,
@@ -780,7 +837,8 @@
         "timeline/pages/zhangbaoyi/mv0fmxgk-o/IMG_3943.jpeg",
         "timeline/pages/zhangbaoyi/mv0fmz6a-p/IMG_3944.jpeg",
         "timeline/pages/zhangbaoyi/mv0fmzvx-q/IMG_3945.jpeg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "tengwang": {
       "deleted": false,
@@ -904,7 +962,8 @@
         "timeline/pages/tengwang/mv0gl16k-15/IMG_6963.jpeg",
         "timeline/pages/tengwang/mv0gl2kf-16/IMG_6964.jpeg",
         "timeline/pages/tengwang/mv0gl3m3-17/IMG_6965.jpeg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "dengqianzi": {
       "deleted": false,
@@ -1066,7 +1125,8 @@
         "timeline/pages/dengqianzi/mv0rl74f-1o/IMG_4007.jpeg",
         "timeline/pages/dengqianzi/mv0rl8xr-1p/IMG_4008.jpeg",
         "timeline/pages/dengqianzi/mv0rlafv-1q/IMG_4009.jpeg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "gushi": {
       "deleted": false,
@@ -1138,7 +1198,24 @@
         "timeline/pages/gushi/mv0xhmcu-f/IMG_3840.jpeg",
         "timeline/pages/gushi/mv0xho0k-g/IMG_3841.jpeg",
         "timeline/pages/gushi/mv0xhq19-h/IMG_3842.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "古诗四帖",
+        "label": "古诗四帖",
+        "url": "https://www.baike.com/wikiid/568374178561649744",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "古诗四帖,唐代书法家张旭代表作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 古诗四帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/568374178561649744"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "caoshuqianzi": {
       "deleted": false,
@@ -1244,7 +1321,24 @@
         "timeline/pages/caoshuqianzi/mv0xoojj-w/IMG_7016.jpeg",
         "timeline/pages/caoshuqianzi/mv0xopsw-x/IMG_7017.jpeg",
         "timeline/pages/caoshuqianzi/mv0xoqyx-y/IMG_7018.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "草书千字文",
+        "label": "草书千字文",
+        "url": "https://www.baike.com/wikiid/7234086138804781068",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "草书千字文,北宋宋徽宗赵佶书写的狂草作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 草书千字文 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7234086138804781068"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "shusu": {
       "deleted": false,
@@ -1324,7 +1418,24 @@
         "timeline/pages/shusu/mv0y8lw5-j/IMG_4066.jpeg",
         "timeline/pages/shusu/mv0y8nsf-k/IMG_4067.jpeg",
         "timeline/pages/shusu/mv0y8omh-l/IMG_4068.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "蜀素帖",
+        "label": "蜀素帖",
+        "url": "https://www.baike.com/wikiid/7265595839627542562",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "蜀素帖,北宋米芾书法作品、“天下第八行书”",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 蜀素帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7265595839627542562"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "jiuhua": {
       "deleted": false,
@@ -1402,7 +1513,24 @@
         "timeline/pages/jiuhua/mv0yfdw6-i/IMG_4087.jpeg",
         "timeline/pages/jiuhua/mv0yffp2-j/IMG_4088.jpeg",
         "timeline/pages/jiuhua/mv0yfhx2-k/IMG_4089.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "韭花帖",
+        "label": "韭花帖",
+        "url": "https://www.baike.com/wikiid/606311241788293304",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "韭花帖,唐末杨凝式创作的作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 韭花帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/606311241788293304"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "yanqinli": {
       "deleted": false,
@@ -1522,7 +1650,8 @@
         "timeline/pages/yanqinli/mv169wv9-13/IMG_4129.jpeg",
         "timeline/pages/yanqinli/mv169ynk-14/IMG_4130.jpeg",
         "timeline/pages/yanqinli/mv16a0c2-15/IMG_4131.jpeg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "shupu": {
       "deleted": false,
@@ -1700,7 +1829,23 @@
         "timeline/pages/shupu/mv25vhgz-1w/IMG_4201.jpeg",
         "timeline/pages/shupu/mv25vi9o-1x/IMG_4202.jpeg",
         "timeline/pages/shupu/mv25vjt8-1y/IMG_4203.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "书谱",
+        "label": "《书谱》",
+        "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E4%B9%A6%E8%B0%B1%E3%80%8B&SiteID=1&SourceID=52384&Type=bkzyb&subSourceType=000003000013000004",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 《书谱》 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E4%B9%A6%E8%B0%B1%E3%80%8B&SiteID=1&SourceID=52384&Type=bkzyb&subSourceType=000003000013000004"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "zixu": {
       "deleted": false,
@@ -1834,7 +1979,24 @@
         "timeline/pages/zixu/mv26pzqx-1a/IMG_4251.jpeg",
         "timeline/pages/zixu/mv26q1t8-1b/IMG_4252.jpeg",
         "timeline/pages/zixu/mv26q3de-1c/IMG_4253.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "自叙帖",
+        "label": "自叙帖",
+        "url": "https://www.baike.com/wikiid/7264881404662710335",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "自叙帖,唐代怀素创作的草书书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 自叙帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7264881404662710335"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "shengjiao": {
       "deleted": false,
@@ -2019,7 +2181,26 @@
       ],
       "imageSelection300": "代表图像节选；不代表整套拓本",
       "id": "shengjiao",
-      "catalogueRelease300": true
+      "catalogueRelease300": true,
+      "encyclopedia301": {
+        "title": "集王圣教序",
+        "label": "集王圣教序",
+        "url": "https://bkso.baidu.com/item/%E9%9B%86%E7%8E%8B%E5%9C%A3%E6%95%99%E5%BA%8F/61489707",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn63search2",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 集王圣教序 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E9%9B%86%E7%8E%8B%E5%9C%A3%E6%95%99%E5%BA%8F/61489707"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "jiucheng": {
       "deleted": false,
@@ -2157,7 +2338,24 @@
         "timeline/pages/jiucheng/mv3sanf4-1c/IMG_7131.jpeg",
         "timeline/pages/jiucheng/mv3sap32-1d/IMG_7132.jpeg",
         "timeline/pages/jiucheng/mv3saq5s-1e/IMG_7133.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "九成宫醴泉铭",
+        "label": "九成宫醴泉铭",
+        "url": "https://www.baike.com/wikiid/7166154239981846539",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "九成宫醴泉铭,唐代欧阳询的书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 九成宫醴泉铭 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7166154239981846539"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "chibi": {
       "deleted": false,
@@ -2257,7 +2455,24 @@
         "timeline/pages/chibi/mv3z8g6t-t/IMG_4386.jpeg",
         "timeline/pages/chibi/mv3z8haw-u/IMG_4387.jpeg",
         "timeline/pages/chibi/mv3z8ibl-v/IMG_4388.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "前后赤壁赋",
+        "label": "元赵孟頫前后赤壁赋",
+        "url": "https://www.baike.com/wikiid/3506969429149715867",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "元赵孟頫前后赤壁赋,1301年赵孟頫创作的书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 元赵孟頫前后赤壁赋 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/3506969429149715867"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "zhiyongqianzi": {
       "deleted": false,
@@ -2361,7 +2576,8 @@
         "timeline/pages/zhiyongqianzi/mv3zb0kr-v/IMG_4354.jpeg",
         "timeline/pages/zhiyongqianzi/mv3zb1rj-w/IMG_4355.jpeg",
         "timeline/pages/zhiyongqianzi/mv3zb2vb-x/IMG_4356.jpeg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "longcang": {
       "deleted": false,
@@ -2507,7 +2723,23 @@
         "timeline/pages/longcang/mv3zfm6p-1g/IMG_4441.jpeg",
         "timeline/pages/longcang/mv3zfnxc-1h/IMG_4442.jpeg",
         "timeline/pages/longcang/mv3zfpe5-1i/IMG_4443.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "龙藏寺碑",
+        "label": "龙藏寺碑",
+        "url": "https://www.zgbk.com/ecph/words?ID=550117&SiteID=1&SubID=205242&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 龙藏寺碑 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=550117&SiteID=1&SubID=205242&Type=bkzyb"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "zhangmenglong": {
       "deleted": false,
@@ -2699,7 +2931,8 @@
         "timeline/pages/zhangmenglong/mv4ldgqi-10/IMG_7257.jpeg",
         "timeline/pages/zhangmenglong/mv4ldii0-11/IMG_7258.jpeg",
         "timeline/pages/zhangmenglong/mv4ldk50-12/IMG_7259.jpeg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "longmen": {
       "deleted": false,
@@ -2805,7 +3038,8 @@
         "timeline/pages/longmen/mv4l7hpg-w/IMG_4477.jpeg",
         "timeline/pages/longmen/mv4l7id3-x/IMG_4478.jpeg",
         "timeline/pages/longmen/mv4l7izy-y/IMG_4479.jpeg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "yihe": {
       "deleted": false,
@@ -3150,7 +3384,24 @@
       "imageSelection300": "代表图像节选；不代表整套拓本",
       "id": "yihe",
       "catalogueRelease300": true,
-      "preserveUserPages300": true
+      "preserveUserPages300": true,
+      "encyclopedia301": {
+        "title": "瘗鹤铭",
+        "label": "瘗鹤铭",
+        "url": "https://www.baike.com/wikiid/6610215489071873026",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "瘗鹤铭,南朝时期陶弘景创作的书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 瘗鹤铭 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/6610215489071873026"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "pingfu": {
       "deleted": false,
@@ -3220,7 +3471,23 @@
         "timeline/pages/pingfu/mv4pu5fq-e/IMG_7274.jpeg",
         "timeline/pages/pingfu/mv4pu72o-f/IMG_7275.jpeg",
         "timeline/pages/pingfu/mv4pu93q-g/IMG_7276.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "平复帖",
+        "label": "平复帖",
+        "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%A4%8D%E5%B8%96/2146947?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 平复帖 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%A4%8D%E5%B8%96/2146947?fromModule=lemma_inlink"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "post-dce8216d-2ad0-44c2-b2e6-a6374b276582": {
       "deleted": false,
@@ -3258,7 +3525,24 @@
       ],
       "pages": [
         "timeline/pages/post-dce8216d-2ad0-44c2-b2e6-a6374b276582/mv7fcpz1-0/IMG_4779.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "草书诗帖",
+        "label": "草书诗帖",
+        "url": "https://www.baike.com/wikiid/1371777566279050871",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "草书诗帖,明代祝允明创作的作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 草书诗帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/1371777566279050871"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "jijiuzhang": {
       "deleted": false,
@@ -3398,7 +3682,8 @@
         "timeline/pages/jijiuzhang/mv7tvlej-1d/IMG_7326.jpeg",
         "timeline/pages/jijiuzhang/mv7tvn0h-1e/IMG_7327.jpeg",
         "timeline/pages/jijiuzhang/mv7tvomm-1f/IMG_7328.jpeg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "xuanshi": {
       "deleted": false,
@@ -3442,7 +3727,23 @@
         "timeline/pages/xuanshi/mv81osxm-1/IMG_4843.jpeg",
         "timeline/pages/xuanshi/mv81oxa0-2/IMG_4844.jpeg",
         "timeline/pages/xuanshi/mv81oz69-3/IMG_4845.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "宣示表",
+        "label": "宣示表",
+        "url": "https://wapbaike.baidu.com/item/%E5%AE%A3%E7%A4%BA%E8%A1%A8/9938021?fromModule=tashuo-article_bottom-lemma",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网页条目标题和简介已核对",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 宣示表 · 百度百科",
+          "url": "https://wapbaike.baidu.com/item/%E5%AE%A3%E7%A4%BA%E8%A1%A8/9938021?fromModule=tashuo-article_bottom-lemma"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "zhangzhi": {
       "deleted": false,
@@ -3486,7 +3787,8 @@
         "timeline/pages/zhangzhi/mv81q94q-1/IMG_4847.jpeg",
         "timeline/pages/zhangzhi/mv81qdhz-2/IMG_4848.jpeg",
         "timeline/pages/zhangzhi/mv81qflz-3/IMG_4849.jpeg"
-      ]
+      ],
+      "manualImagesProtected301": true
     },
     "caoquan": {
       "deleted": false,
@@ -3622,7 +3924,23 @@
         "timeline/pages/caoquan/mv82397g-1b/IMG_4897.jpeg",
         "timeline/pages/caoquan/mv823asa-1c/IMG_4898.jpeg",
         "timeline/pages/caoquan/mv823ccb-1d/IMG_4899.jpeg"
-      ]
+      ],
+      "encyclopedia301": {
+        "title": "曹全碑",
+        "label": "曹全碑（东汉隶书碑刻）",
+        "url": "https://bkso.baidu.com/item/%E6%9B%B9%E5%85%A8%E7%A2%91/62962291?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 曹全碑（东汉隶书碑刻） · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E6%9B%B9%E5%85%A8%E7%A2%91/62962291?fromModule=lemma_inlink"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "world-sumerian218": {
       "year": -2045,
@@ -3645,7 +3963,13 @@
       "size": 15,
       "zoom": 350,
       "cover143": "timeline/pages/world-sumerian218/inventory.jpg",
-      "summary211": "楔形文字起源于两河流域。此件新苏美尔时期的清单泥板约作于公元前2045年，呈现书吏以芦苇笔在湿泥上压出笔画的方式。图为大都会艺术博物馆开放馆藏，并非《吉尔伽美什史诗》原文。"
+      "summary211": "楔形文字起源于两河流域。此件新苏美尔时期的清单泥板约作于公元前2045年，呈现书吏以芦苇笔在湿泥上压出笔画的方式。图为大都会艺术博物馆开放馆藏，并非《吉尔伽美什史诗》原文。",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
+      "manualImagesProtected301": true
     },
     "world-gilgamesh218": {
       "year": -1800,
@@ -3669,7 +3993,8 @@
       "size": 15,
       "zoom": 350,
       "cover143": "timeline/pages/world-gilgamesh218/sumerian-poem.jpg",
-      "summary211": "第一图是苏美尔语《吉尔伽美什与胡瓦瓦》的古巴比伦时期抄本，现藏阿什莫林博物馆。第二图是阿卡德语史诗第十一泥板“洪水篇”，属公元前7世纪的新亚述时期，现藏大英博物馆。两图语种与抄写年代不同，不应把洪水篇误称为苏美尔语原文。"
+      "summary211": "第一图是苏美尔语《吉尔伽美什与胡瓦瓦》的古巴比伦时期抄本，现藏阿什莫林博物馆。第二图是阿卡德语史诗第十一泥板“洪水篇”，属公元前7世纪的新亚述时期，现藏大英博物馆。两图语种与抄写年代不同，不应把洪水篇误称为苏美尔语原文。",
+      "manualImagesProtected301": true
     },
     "world-hammurabi218": {
       "year": -1750,
@@ -3692,7 +4017,13 @@
       "size": 15,
       "zoom": 350,
       "cover143": "timeline/pages/world-hammurabi218/stele.jpg",
-      "summary211": "汉谟拉比法典石碑约作于公元前18世纪，以阿卡德语楔形文字刻写。碑首是国王与神祇的浮雕，下方排列长篇法律文字，现藏卢浮宫。它是古代法律文字的重要见证，并非苏美尔语文本。"
+      "summary211": "汉谟拉比法典石碑约作于公元前18世纪，以阿卡德语楔形文字刻写。碑首是国王与神祇的浮雕，下方排列长篇法律文字，现藏卢浮宫。它是古代法律文字的重要见证，并非苏美尔语文本。",
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
+      "manualImagesProtected301": true
     },
     "yuanshe": {
       "id": "yuanshe",
@@ -3726,7 +4057,8 @@
         "zoom": 1,
         "x": 50,
         "y": 50
-      }
+      },
+      "manualImagesProtected301": true
     },
     "yishan": {
       "id": "yishan",
@@ -3796,7 +4128,23 @@
         "zoom": 1,
         "x": 50,
         "y": 50
-      }
+      },
+      "encyclopedia301": {
+        "title": "峄山碑",
+        "label": "峄山刻石",
+        "url": "https://www.baike.com/wikiid/5893640894273981017",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "网页条目标题和简介已核对",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 峄山刻石 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/5893640894273981017"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "juyan": {
       "id": "juyan",
@@ -3834,7 +4182,26 @@
         "zoom": 2.21,
         "x": 76,
         "y": 50
-      }
+      },
+      "encyclopedia301": {
+        "title": "居延汉简",
+        "label": "居延汉简",
+        "url": "https://www.baike.com/wikiid/1062948867994668044",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn93search1",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 居延汉简 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/1062948867994668044"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "oracle": {
       "id": "oracle",
@@ -3918,7 +4285,27 @@
           ]
         }
       ],
-      "featuredCopies260": []
+      "featuredCopies260": [],
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "殷墟甲骨"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "mawangdui": {
       "id": "mawangdui",
@@ -3986,7 +4373,8 @@
         "timeline/pages/mawangdui/b17eee85-a52a-4825-a838-510472993713.jpg"
       ],
       "cover143": "timeline/pages/mawangdui/47a7a876-c0f0-48e3-bce7-a7549785c1a8.jpg",
-      "deleted": false
+      "deleted": false,
+      "manualImagesProtected301": true
     },
     "dunhuang": {
       "id": "dunhuang",
@@ -4085,7 +4473,26 @@
         "zoom": 1.1210533717157496,
         "x": 52.5,
         "y": 50.177444794952685
-      }
+      },
+      "encyclopedia301": {
+        "title": "敦煌遗书",
+        "label": "敦煌遗书",
+        "url": "https://www.baike.com/wikiid/2991392701994393781",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn93search0",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 敦煌遗书 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/2991392701994393781"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "mingqing": {
       "id": "mingqing",
@@ -4127,7 +4534,26 @@
         "zoom": 1,
         "x": 50,
         "y": 50
-      }
+      },
+      "encyclopedia301": {
+        "title": "明清档案",
+        "label": "明清档案",
+        "url": "https://www.zgbk.com/ecph/words?ID=728210&SiteID=1&SubID=242104",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn93search25",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 明清档案 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=728210&SiteID=1&SubID=242104"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "shigu": {
       "id": "shigu",
@@ -4211,7 +4637,27 @@
         "zoom": 1.57,
         "x": 81.33030488509344,
         "y": 3.6461325313418733
-      }
+      },
+      "encyclopedia301": {
+        "title": "石鼓",
+        "label": "石鼓",
+        "url": "https://www.baike.com/wikiid/7228428268792348727",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "十鼓斋旧藏石鼓文 · 版本专题"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 石鼓 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7228428268792348727"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "shizhoupian": {
       "id": "shizhoupian",
@@ -4300,7 +4746,26 @@
       ],
       "objectNumber300": "《殷周金文集成》6014",
       "catalogueRelease300": true,
-      "preserveUserPages300": true
+      "preserveUserPages300": true,
+      "encyclopedia301": {
+        "title": "何尊",
+        "label": "何尊",
+        "url": "https://wapbaike.baidu.com/item/%E4%BD%95%E5%B0%8A/1163495",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn110search4",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 何尊 · 百度百科",
+          "url": "https://wapbaike.baidu.com/item/%E4%BD%95%E5%B0%8A/1163495"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "wangziwu": {
       "id": "wangziwu",
@@ -4337,7 +4802,8 @@
         "zoom": 1,
         "x": 0,
         "y": 0
-      }
+      },
+      "manualImagesProtected301": true
     },
     "sanshi": {
       "id": "sanshi",
@@ -4407,7 +4873,26 @@
       ],
       "objectNumber300": "台北故宫文物统一编号：故銅002376N000000000",
       "catalogueRelease300": true,
-      "preserveUserPages300": true
+      "preserveUserPages300": true,
+      "encyclopedia301": {
+        "title": "散氏盘",
+        "label": "散氏盘",
+        "url": "https://bkso.baidu.com/item/%E6%95%A3%E6%B0%8F%E7%9B%98/1162572",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn105search21",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 散氏盘 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E6%95%A3%E6%B0%8F%E7%9B%98/1162572"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "maogong": {
       "id": "maogong",
@@ -4466,7 +4951,26 @@
       ],
       "objectNumber300": "台北故宫文物统一编号：中銅000651N000000000",
       "catalogueRelease300": true,
-      "preserveUserPages300": true
+      "preserveUserPages300": true,
+      "encyclopedia301": {
+        "title": "毛公鼎",
+        "label": "毛公鼎",
+        "url": "https://wapbaike.baidu.com/item/%E6%AF%9B%E5%85%AC%E9%BC%8E/1161082",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn105search9",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 毛公鼎 · 百度百科",
+          "url": "https://wapbaike.baidu.com/item/%E6%AF%9B%E5%85%AC%E9%BC%8E/1161082"
+        }
+      ],
+      "manualImagesProtected301": true
     },
     "mao-changzheng257": {
       "id": "mao-changzheng257",
@@ -4539,7 +5043,8 @@
           ]
         }
       ],
-      "featuredCopies260": []
+      "featuredCopies260": [],
+      "manualImagesProtected301": true
     },
     "post-3c02271a-2d59-47be-b6df-2ac30b92359d": {
       "title": "颜真卿·祭侄文稿",
@@ -4564,7 +5069,8 @@
         "x": 50,
         "y": 50
       },
-      "status": "纸本墨迹原件存世；上传图版版本待核"
+      "status": "纸本墨迹原件存世；上传图版版本待核",
+      "manualImagesProtected301": true
     },
     "post-80341a42-7261-4a60-85ae-a6d6f716d099": {
       "title": "颜真卿·争座位帖",
@@ -4649,7 +5155,8 @@
           ]
         }
       ],
-      "featuredCopies260": []
+      "featuredCopies260": [],
+      "manualImagesProtected301": true
     },
     "post-8399fc62-466e-44f8-b655-a36464c55d6a": {
       "title": "颜真卿·祭伯父稿",
@@ -4710,7 +5217,8 @@
           ]
         }
       ],
-      "featuredCopies260": []
+      "featuredCopies260": [],
+      "manualImagesProtected301": true
     },
     "post-f497fff1-5dbb-45aa-9b5e-4aa32b2501bd": {
       "title": "松风阁帖",
@@ -4749,7 +5257,8 @@
         "zoom": 1,
         "x": 50,
         "y": 50
-      }
+      },
+      "manualImagesProtected301": true
     },
     "post-1d90d9b3-8507-4737-8460-4141aba61ce4": {
       "title": "诸上座帖",
@@ -4809,7 +5318,8 @@
         "zoom": 1,
         "x": 50,
         "y": 50
-      }
+      },
+      "manualImagesProtected301": true
     },
     "post-0b353763-38f7-4c4c-a2b4-497329755afa": {
       "title": "寒山子庞居士诗帖",
@@ -4879,7 +5389,8 @@
           ]
         }
       ],
-      "featuredCopies260": []
+      "featuredCopies260": [],
+      "manualImagesProtected301": true
     },
     "zhaocheng275": {
       "id": "zhaocheng275",
@@ -4912,7 +5423,30 @@
       "size": 320,
       "zoom": 170,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "赵城金藏",
+        "label": "赵城金藏",
+        "url": "https://bkso.baidu.com/item/%E8%B5%B5%E5%9F%8E%E9%87%91%E8%97%8F/8959606",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn98search20",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 赵城金藏 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E8%B5%B5%E5%9F%8E%E9%87%91%E8%97%8F/8959606"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "yongle275": {
       "id": "yongle275",
@@ -4944,7 +5478,31 @@
       "size": 320,
       "zoom": 170,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "《永乐大典》",
+        "label": "《永乐大典》",
+        "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E6%B0%B8%E4%B9%90%E5%A4%A7%E5%85%B8%E3%80%8B&SiteID=1&SourceID=105132&Type=bkzyb&subSourceType=000003000012000001",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn124search22",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "永乐大典"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 《永乐大典》 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?Name=%E3%80%8A%E6%B0%B8%E4%B9%90%E5%A4%A7%E5%85%B8%E3%80%8B&SiteID=1&SourceID=105132&Type=bkzyb&subSourceType=000003000012000001"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "wenjinge275": {
       "id": "wenjinge275",
@@ -5017,6 +5575,30 @@
       "zoom": 170,
       "catalogueRelease300": true,
       "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "四库全书",
+        "label": "四库全书",
+        "url": "https://www.baike.com/wikiid/7176095215131508791",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn98search2",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "文津阁《四库全书》"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 四库全书 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7176095215131508791"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      },
       "authorPosition151": "",
       "status": "",
       "videoUrl148": "",
@@ -5049,11 +5631,7 @@
         }
       ],
       "featuredCopies260": [],
-      "coverCrop145": {
-        "zoom": 1,
-        "x": 50,
-        "y": 50
-      }
+      "manualImagesProtected301": true
     },
     "oracle-sacrifice298": {
       "id": "oracle-sacrifice298",
@@ -5092,7 +5670,31 @@
       "objectNumber300": "《殷虚文字甲编》3333＋3361",
       "replaces300": "299版祭祀刻辞龟甲未取得可核实著录号，300改选同主题且有明确编号的馆藏。",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "祭祀牛胛骨刻辞《甲》3333＋3361"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "oracle-tufang298": {
       "id": "oracle-tufang298",
@@ -5108,17 +5710,17 @@
       "dateLabel": "商代晚期；具体分期依馆方研究",
       "script": "甲骨文",
       "place": "北京",
-      "cover143": "release300/assets/oracle/oracle-tufang298-1.webp",
+      "cover143": "release301/assets/dpm/oracle-tufang298-6057.webp",
       "pages": [
-        "release300/assets/oracle/oracle-tufang298-1.webp"
+        "release301/assets/dpm/oracle-tufang298-6057.webp"
       ],
       "pageNames": [
-        "原器图 · 《甲骨文合集》6057正、反"
+        "正文"
       ],
       "style": "ouyang",
       "size": 320,
       "zoom": 170,
-      "imageCredit247": "图像：中国国家博物馆公开馆藏图；具体著录号与依据分别登记。",
+      "imageCredit247": "CC0 1.0；Gary Lee Todd，2011年拍摄，中国国家博物馆藏《合集》6057正面。 · https://commons.wikimedia.org/wiki/File:Shang_Inscribed_Ox_Scapula_(for_divination).jpg",
       "textStatus183": "单件实物；释读以馆方著录为准，不补造缺字。",
       "fullText148": "",
       "deleted": false,
@@ -5134,7 +5736,37 @@
       ],
       "objectNumber300": "《甲骨文合集》6057正、反",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "coverCrop244": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      },
+      "versionNote301": "同一件中国国家博物馆藏甲骨的高清原器照片，Commons著录明确标示Heji 6057、Jinghua 2。",
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "土方征涂朱卜骨刻辞《合集》6057"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ],
+      "coverCrop145": {
+        "x": 50,
+        "y": 50,
+        "zoom": 1
+      }
     },
     "oracle-ban298": {
       "id": "oracle-ban298",
@@ -5176,7 +5808,26 @@
       ],
       "objectNumber300": "《甲骨文合集》4264",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "般无咎全甲刻辞《合集》4264"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ]
     },
     "oracle-qiang298": {
       "id": "oracle-qiang298",
@@ -5224,7 +5875,31 @@
       ],
       "objectNumber300": "《甲骨文合集》36481；《双剑誃所藏甲骨文字》212",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "小臣墙记事刻辞《合集》36481"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "oracle-zaifeng298": {
       "id": "oracle-zaifeng298",
@@ -5266,7 +5941,26 @@
       ],
       "objectNumber300": "《甲骨文合集补编》11299；《殷契佚存》518",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "宰丰骨匕《合补》11299"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ]
     },
     "oracle-farming298": {
       "id": "oracle-farming298",
@@ -5312,7 +6006,26 @@
       ],
       "objectNumber300": "《甲骨文合集》1；国博甲骨卷45，旧编号Y703",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "众人协田卜骨刻辞《合集》1"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ]
     },
     "oracle-zhou298": {
       "id": "oracle-zhou298",
@@ -5351,7 +6064,31 @@
       "objectNumber300": "《殷虚文字乙编》5867＋8202",
       "replaces300": "299版西周卦画卜骨未取得可核实器号，300改选明确著录号的先书后刻龟甲；并非同一文物。",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "先书后刻龟甲《乙》5867＋8202"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "oracle-fuhao298": {
       "id": "oracle-fuhao298",
@@ -5393,7 +6130,31 @@
       ],
       "objectNumber300": "《殷虚文字丙编》247；《甲骨文合集》14002正",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "妇好分娩卜辞《丙》247"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "oracle-brush298": {
       "id": "oracle-brush298",
@@ -5431,7 +6192,31 @@
       ],
       "objectNumber300": "《殷虚文字乙编》0778",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "带朱书龟甲卜辞《乙》0778"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "oracle-harvest298": {
       "id": "oracle-harvest298",
@@ -5469,7 +6254,31 @@
       ],
       "objectNumber300": "《殷虚文字乙编》0867",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "甲骨文",
+        "label": "甲骨文",
+        "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn143search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "填朱卜辞龟腹甲《乙》0867"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 甲骨文 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=524682&Preview=false&SiteID=1&Type=bkzyb"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "bronze-dayu299": {
       "id": "bronze-dayu299",
@@ -5511,7 +6320,31 @@
       "objectNumber300": "《殷周金文集成》2837",
       "glyph": "大",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "西周大盂鼎",
+        "label": "西周大盂鼎",
+        "url": "https://www.baike.com/wikiid/5662362161878402519",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn105search7",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "大盂鼎"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 西周大盂鼎 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/5662362161878402519"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "bronze-dake299": {
       "id": "bronze-dake299",
@@ -5556,7 +6389,31 @@
       "versionNote300": "原器与铭文拓片分开呈现；拓片及释文图保留馆方原有编排。",
       "glyph": "大",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "西周大克鼎",
+        "label": "西周大克鼎",
+        "url": "https://www.baike.com/wikiid/4642129257017115206",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn105search2",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "大克鼎"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 西周大克鼎 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/4642129257017115206"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "bronze-guoji299": {
       "id": "bronze-guoji299",
@@ -5598,7 +6455,31 @@
       "objectNumber300": "《殷周金文集成》10173",
       "glyph": "虢",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "虢季子白盘铭文",
+        "label": "虢季子白盘铭文",
+        "url": "https://bkso.baidu.com/item/%E8%99%A2%E5%AD%A3%E5%AD%90%E7%99%BD%E7%9B%98%E9%93%AD%E6%96%87/2189625",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn139search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "虢季子白盘"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 虢季子白盘铭文 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E8%99%A2%E5%AD%A3%E5%AD%90%E7%99%BD%E7%9B%98%E9%93%AD%E6%96%87/2189625"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "bronze-qiang299": {
       "id": "bronze-qiang299",
@@ -5636,7 +6517,31 @@
       "objectNumber300": "《殷周金文集成》10175",
       "glyph": "史",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "西周墙盘（史墙盘）",
+        "label": "西周墙盘（史墙盘）",
+        "url": "https://www.baike.com/wikiid/1317121069323420857",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn110search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "史墙盘"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 西周墙盘（史墙盘） · 快懂百科",
+          "url": "https://www.baike.com/wikiid/1317121069323420857"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "bronze-lai299": {
       "id": "bronze-lai299",
@@ -5674,7 +6579,31 @@
       "objectNumber300": "《商周青铜器铭文暨图像集成》14543",
       "glyph": "逨",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "西周逨盘",
+        "label": "西周逨盘",
+        "url": "https://www.baike.com/wikiid/2888467483454473949",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn111search24",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "逨盘"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 西周逨盘 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/2888467483454473949"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "bronze-li299": {
       "id": "bronze-li299",
@@ -5714,7 +6643,26 @@
       "objectNumber300": "《殷周金文集成》4131",
       "glyph": "利",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "西周利簋",
+        "label": "西周利簋",
+        "url": "https://www.baike.com/wikiid/6757961208690498463",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn110search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "利簋"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 西周利簋 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/6757961208690498463"
+        }
+      ]
     },
     "bronze-zongzhou299": {
       "id": "bronze-zongzhou299",
@@ -5752,7 +6700,31 @@
       "objectNumber300": "台北故宫文物统一编号：故銅002377N000000000；《殷周金文集成》260",
       "glyph": "宗",
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "青铜宗周钟",
+        "label": "青铜宗周钟",
+        "url": "https://www.baike.com/wikiid/4646305985044596611",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn111search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "宗周钟"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 青铜宗周钟 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/4646305985044596611"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "boyuan": {
       "title": "伯远帖",
@@ -5767,13 +6739,33 @@
       "description": "五行四十七字书札，风神萧散而笔势流畅。与快雪时晴帖、中秋帖合称“三希”，三帖各有作者与流传史，不能写为三人合写一卷。",
       "url": "https://www.dpm.org.cn/collection/handwriting/228199.html",
       "pages": [
-        "release300/assets/core/boyuan-01.webp"
+        "release301/assets/dpm/boyuan-main.webp",
+        "release301/assets/dpm/boyuan-10.webp",
+        "release301/assets/dpm/boyuan-9.webp",
+        "release301/assets/dpm/boyuan-8.webp",
+        "release301/assets/dpm/boyuan-7.webp",
+        "release301/assets/dpm/boyuan-6.webp",
+        "release301/assets/dpm/boyuan-5.webp",
+        "release301/assets/dpm/boyuan-4.webp",
+        "release301/assets/dpm/boyuan-3.webp",
+        "release301/assets/dpm/boyuan-2.webp",
+        "release301/assets/dpm/boyuan-1.webp"
       ],
       "pageNames": [
-        "伯远帖"
+        "正文",
+        "原卷分段 1",
+        "原卷分段 2",
+        "原卷分段 3",
+        "原卷分段 4",
+        "原卷分段 5",
+        "原卷分段 6",
+        "原卷分段 7",
+        "原卷分段 8",
+        "原卷分段 9",
+        "原卷分段 10"
       ],
-      "cover143": "release300/assets/core/boyuan-01.webp",
-      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "cover143": "release301/assets/dpm/boyuan-main.webp",
+      "imageCredit247": "Public domain (PD-Art) · https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E7%8F%A3%E8%A1%8C%E4%B9%A6%E4%BC%AF%E8%BF%9C%E5%B8%96%E5%8D%B7.png",
       "status": "传世晋人墨迹",
       "id": "boyuan",
       "style": "ouyang",
@@ -5782,7 +6774,34 @@
       "glyph": "伯",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "coverCrop244": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      },
+      "versionNote301": "伯远帖卷，故宫博物院藏。完整卷分段，原作与卷后题跋按原图顺序保留。",
+      "encyclopedia301": {
+        "title": "伯远帖",
+        "label": "伯远帖",
+        "url": "https://www.baike.com/wikiid/2881573534556213471",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "伯远帖,东晋王珣创作的行书书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 伯远帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/2881573534556213471"
+        }
+      ],
+      "coverCrop145": {
+        "x": 50,
+        "y": 50,
+        "zoom": 1
+      }
     },
     "zhanghan": {
       "title": "张翰思鲈帖",
@@ -5814,7 +6833,28 @@
       "glyph": "张",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "张翰思鲈帖",
+        "label": "张翰帖",
+        "url": "https://www.baike.com/wikiid/7715380762822830093",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "张翰帖,唐代欧阳询创作的纸本行书作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 张翰帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7715380762822830093"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "zhongqiu": {
       "title": "中秋帖",
@@ -5829,13 +6869,29 @@
       "description": "馆方指出它是《十二月割帖》的不完全临本，多认为宋人米芾所临。正文只录现存部分，不补入原帖已佚的前六字。",
       "url": "https://www.dpm.org.cn/collection/handwriting/228204.html",
       "pages": [
-        "release300/assets/core/zhongqiu-01.webp"
+        "release301/assets/dpm/zhongqiu-main.webp",
+        "release301/assets/dpm/zhongqiu-8.webp",
+        "release301/assets/dpm/zhongqiu-7.webp",
+        "release301/assets/dpm/zhongqiu-6.webp",
+        "release301/assets/dpm/zhongqiu-5.webp",
+        "release301/assets/dpm/zhongqiu-4.webp",
+        "release301/assets/dpm/zhongqiu-3.webp",
+        "release301/assets/dpm/zhongqiu-2.webp",
+        "release301/assets/dpm/zhongqiu-1.webp"
       ],
       "pageNames": [
-        "王献之中秋帖"
+        "正文",
+        "原卷分段 1",
+        "原卷分段 2",
+        "原卷分段 3",
+        "原卷分段 4",
+        "原卷分段 5",
+        "原卷分段 6",
+        "原卷分段 7",
+        "原卷分段 8"
       ],
-      "cover143": "release300/assets/core/zhongqiu-01.webp",
-      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "cover143": "release301/assets/dpm/zhongqiu-main.webp",
+      "imageCredit247": "Public domain (PD-Art) · https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E7%8C%AE%E4%B9%8B%E8%A1%8C%E8%8D%89%E4%B9%A6%E4%B8%AD%E7%A7%8B%E5%B8%96%E5%8D%B7.png",
       "status": "宋临本；传王献之",
       "id": "zhongqiu",
       "style": "ouyang",
@@ -5844,7 +6900,34 @@
       "glyph": "中",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "coverCrop244": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      },
+      "versionNote301": "中秋帖卷，故宫博物院藏。完整卷分段，传世本的归属依馆方研究。",
+      "encyclopedia301": {
+        "title": "中秋帖",
+        "label": "中秋帖",
+        "url": "https://www.baike.com/wikiid/887161870007944866",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "中秋帖,行草纸本书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 中秋帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/887161870007944866"
+        }
+      ],
+      "coverCrop145": {
+        "x": 50,
+        "y": 50,
+        "zoom": 1
+      }
     },
     "liqi": {
       "title": "礼器碑",
@@ -5859,89 +6942,13 @@
       "description": "记韩敕修饰孔庙、增置礼器，碑阳与碑阴、两侧题名共同构成文本。与乙瑛、史晨合称孔庙三碑，上传应标明所含各面。",
       "url": "https://www.dpm.org.cn/collection/impres/234635.html",
       "pages": [
-        "release300/assets/core/liqi-01.webp",
-        "release300/assets/core/liqi-02.webp",
-        "release300/assets/core/liqi-03.webp",
-        "release300/assets/core/liqi-04.webp",
-        "release300/assets/core/liqi-05.webp",
-        "release300/assets/core/liqi-06.webp",
-        "release300/assets/core/liqi-07.webp",
-        "release300/assets/core/liqi-08.webp",
-        "release300/assets/core/liqi-09.webp",
-        "release300/assets/core/liqi-10.webp",
-        "release300/assets/core/liqi-11.webp",
-        "release300/assets/core/liqi-12.webp",
-        "release300/assets/core/liqi-13.webp",
-        "release300/assets/core/liqi-14.webp",
-        "release300/assets/core/liqi-15.webp",
-        "release300/assets/core/liqi-16.webp",
-        "release300/assets/core/liqi-17.webp",
-        "release300/assets/core/liqi-18.webp",
-        "release300/assets/core/liqi-19.webp",
-        "release300/assets/core/liqi-20.webp",
-        "release300/assets/core/liqi-21.webp",
-        "release300/assets/core/liqi-22.webp",
-        "release300/assets/core/liqi-23.webp",
-        "release300/assets/core/liqi-24.webp",
-        "release300/assets/core/liqi-25.webp",
-        "release300/assets/core/liqi-26.webp",
-        "release300/assets/core/liqi-27.webp",
-        "release300/assets/core/liqi-28.webp",
-        "release300/assets/core/liqi-29.webp",
-        "release300/assets/core/liqi-30.webp",
-        "release300/assets/core/liqi-31.webp",
-        "release300/assets/core/liqi-32.webp",
-        "release300/assets/core/liqi-33.webp",
-        "release300/assets/core/liqi-34.webp",
-        "release300/assets/core/liqi-35.webp",
-        "release300/assets/core/liqi-36.webp",
-        "release300/assets/core/liqi-37.webp",
-        "release300/assets/core/liqi-38.webp",
-        "release300/assets/core/liqi-39.webp"
+        "release301/assets/dpm/liqi-1.webp"
       ],
       "pageNames": [
-        "礼器碑-碑阳之封面",
-        "礼器碑-碑阳之一",
-        "礼器碑-碑阳之二",
-        "礼器碑-碑阳之三",
-        "礼器碑-碑阳之四",
-        "礼器碑-碑阳之五",
-        "礼器碑-碑阳之六",
-        "礼器碑-碑阳之七",
-        "礼器碑-碑阳之八",
-        "礼器碑-碑阳之九",
-        "礼器碑-碑阳之十",
-        "礼器碑-碑阳之十一",
-        "礼器碑-碑阳之十二",
-        "礼器碑-碑阳之十三",
-        "礼器碑-碑阳之十四",
-        "礼器碑-碑阳之十五",
-        "礼器碑-碑阳之十六",
-        "礼器碑-碑阳之十七",
-        "礼器碑-碑阴碑侧之封面",
-        "礼器碑-碑阴碑侧之一",
-        "礼器碑-碑阴碑侧之二",
-        "礼器碑-碑阴碑侧之三",
-        "礼器碑-碑阴碑侧之四",
-        "礼器碑-碑阴碑侧之五",
-        "礼器碑-碑阴碑侧之六",
-        "礼器碑-碑阴碑侧之七",
-        "礼器碑-碑阴碑侧之八",
-        "礼器碑-碑阴碑侧之九",
-        "礼器碑-碑阴碑侧之十",
-        "礼器碑-碑阴碑侧之十一",
-        "礼器碑-碑阴碑侧之十二",
-        "礼器碑-碑阴碑侧之十三",
-        "礼器碑-碑阴碑侧之十四",
-        "礼器碑-碑阴碑侧之十五",
-        "礼器碑-碑阴碑侧之十六",
-        "礼器碑-碑阴碑侧之十七",
-        "礼器碑-碑阴碑侧之十八",
-        "礼器碑-碑阴碑侧之十九",
-        "礼器碑-碑阴碑侧之二十"
+        "正文"
       ],
-      "cover143": "release300/assets/core/liqi-02.webp",
-      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "cover143": "release301/assets/dpm/liqi-1.webp",
+      "imageCredit247": "Public domain (PD-Art) · https://commons.wikimedia.org/wiki/File:%E6%B1%89%20%E4%BD%9A%E5%90%8D%20%E7%A4%BC%E5%99%A8%E7%A2%91%200.jpg",
       "status": "原碑与多期拓本分藏",
       "id": "liqi",
       "style": "ouyang",
@@ -5950,7 +6957,33 @@
       "glyph": "礼",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "coverCrop244": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      },
+      "versionNote301": "礼器碑拓本图；与旧版故宫明拓册页不同装帧和拓印版本，不将新图与旧册页逐页混排。",
+      "encyclopedia301": {
+        "title": "礼器碑",
+        "label": "礼器碑（东汉碑刻）",
+        "url": "https://bkso.baidu.com/item/%E7%A4%BC%E5%99%A8%E7%A2%91/5791902?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 礼器碑（东汉碑刻） · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E7%A4%BC%E5%99%A8%E7%A2%91/5791902?fromModule=lemma_inlink"
+        }
+      ],
+      "coverCrop145": {
+        "x": 50,
+        "y": 50,
+        "zoom": 1
+      }
     },
     "yanta": {
       "title": "雁塔圣教序",
@@ -6042,7 +7075,27 @@
       "glyph": "雁",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "雁塔圣教序",
+        "label": "《雁塔圣教序》",
+        "url": "https://www.zgbk.com/ecph/words?ID=52316&SiteID=1&SubID=61002&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 《雁塔圣教序》 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=52316&SiteID=1&SubID=61002&Type=bkzyb"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "xuanmi": {
       "title": "玄秘塔碑",
@@ -6057,19 +7110,13 @@
       "description": "为端甫法师而立，由柳公权书丹并篆额，刻工亦有姓名。与颜体同属唐楷高峰，但紧密中宫和骨力取向自具面貌。",
       "url": "https://www.dpm.org.cn/collection/impres/261926.html",
       "pages": [
-        "release300/assets/core/xuanmi-01.webp",
-        "release300/assets/core/xuanmi-02.webp",
-        "release300/assets/core/xuanmi-03.webp",
-        "release300/assets/core/xuanmi-04.webp"
+        "release301/assets/dpm/xuanmi-1.webp"
       ],
       "pageNames": [
-        "宋拓唐柳公权书玄秘塔碑册",
-        "宋拓唐柳公权书玄秘塔碑册",
-        "宋拓唐柳公权书玄秘塔碑册",
-        "宋拓唐柳公权书玄秘塔碑册"
+        "正文"
       ],
-      "cover143": "release300/assets/core/xuanmi-02.webp",
-      "imageCredit247": "图像来自所列收藏机构或文保机构公开资料；保留来源，不将原器照片冒称拓片。",
+      "cover143": "release301/assets/dpm/xuanmi-1.webp",
+      "imageCredit247": "Public domain (PD-Art) · https://commons.wikimedia.org/wiki/File:%E5%94%90%20%E6%9F%B3%E5%85%AC%E6%9D%83%20%E7%8E%84%E7%A7%98%E5%A1%94%E7%A2%91%E6%95%B4%E6%8B%93.jpg",
       "status": "原碑；宋拓本另藏",
       "id": "xuanmi",
       "style": "ouyang",
@@ -6078,7 +7125,33 @@
       "glyph": "玄",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "coverCrop244": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      },
+      "versionNote301": "玄秘塔碑整拓；替换旧版低清册页。拓印年代与原碑建刻年代分别理解。",
+      "encyclopedia301": {
+        "title": "玄秘塔碑",
+        "label": "玄秘塔碑（唐代柳公权创作书法作品）",
+        "url": "https://bkso.baidu.com/item/%E7%8E%84%E7%A7%98%E5%A1%94%E7%A2%91/766770",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 玄秘塔碑（唐代柳公权创作书法作品） · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E7%8E%84%E7%A7%98%E5%A1%94%E7%A2%91/766770"
+        }
+      ],
+      "coverCrop145": {
+        "x": 50,
+        "y": 50,
+        "zoom": 1
+      }
     },
     "fuge": {
       "title": "郙阁颂",
@@ -6152,7 +7225,28 @@
       "glyph": "郙",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "郙阁颂",
+        "label": "郙阁颂",
+        "url": "https://www.baike.com/wikiid/8376265384829168502",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "郙阁颂,一方摩崖石刻",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 郙阁颂 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/8376265384829168502"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "taishan": {
       "title": "泰山刻石",
@@ -6196,7 +7290,27 @@
       "glyph": "泰",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "泰山刻石",
+        "label": "泰山刻石（秦代石刻）",
+        "url": "https://bkso.baidu.com/item/%E6%B3%B0%E5%B1%B1%E5%88%BB%E7%9F%B3/2820330?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 泰山刻石（秦代石刻） · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E6%B3%B0%E5%B1%B1%E5%88%BB%E7%9F%B3/2820330?fromModule=lemma_inlink"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "jitaishan": {
       "title": "纪泰山铭",
@@ -6226,7 +7340,30 @@
       "glyph": "纪",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "纪泰山铭",
+        "label": "纪泰山铭",
+        "url": "https://bkso.baidu.com/item/%E7%BA%AA%E6%B3%B0%E5%B1%B1%E9%93%AD/5248009",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn63search1",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 纪泰山铭 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E7%BA%AA%E6%B3%B0%E5%B1%B1%E9%93%AD/5248009"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "jingshiyu": {
       "title": "经石峪金刚经",
@@ -6256,7 +7393,27 @@
       "glyph": "经",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "经石峪金刚经",
+        "label": "泰山金刚经",
+        "url": "https://www.baike.com/wikiid/4297149561839363724",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "网页条目标题和简介已核对",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 泰山金刚经 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/4297149561839363724"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "langya": {
       "title": "琅琊台刻石",
@@ -6286,7 +7443,22 @@
       "glyph": "琅",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "琅琊台刻石",
+        "label": "琅琊刻石",
+        "url": "https://bkso.baidu.com/item/%E7%90%85%E7%90%8A%E5%88%BB%E7%9F%B3/7872969?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 琅琊刻石 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E7%90%85%E7%90%8A%E5%88%BB%E7%9F%B3/7872969?fromModule=lemma_inlink"
+        }
+      ]
     },
     "xiping": {
       "title": "熹平石经",
@@ -6316,7 +7488,25 @@
       "glyph": "熹",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "熹平石经",
+        "label": "熹平石经",
+        "url": "https://www.zgbk.com/ecph/words?ID=406856&SiteID=1&SubID=205242&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn63search4",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 熹平石经 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=406856&SiteID=1&SubID=205242&Type=bkzyb"
+        }
+      ]
     },
     "zhengshi": {
       "title": "正始石经",
@@ -6346,7 +7536,31 @@
       "glyph": "正",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "三体石经（正始石经）",
+        "label": "三体石经（正始石经）",
+        "url": "https://www.baike.com/wikiid/8127465928708748561",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn67search19",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "正始石经"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 三体石经（正始石经） · 快懂百科",
+          "url": "https://www.baike.com/wikiid/8127465928708748561"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "yuanchang": {
       "title": "袁敞碑",
@@ -6376,7 +7590,27 @@
       "glyph": "袁",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "袁敞碑",
+        "label": "袁敞碑",
+        "url": "https://bkso.baidu.com/item/%E8%A2%81%E6%95%9E%E7%A2%91/0?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网页条目标题和简介已核对",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 袁敞碑 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E8%A2%81%E6%95%9E%E7%A2%91/0?fromModule=lemma_inlink"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "wuchangshuo-shigu": {
       "title": "临石鼓文",
@@ -6403,7 +7637,31 @@
       "glyph": "临",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "吴昌硕",
+        "label": "吴昌硕",
+        "url": "https://www.baike.com/wikiid/7251744333568180285",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn69search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "临石鼓文"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 吴昌硕 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7251744333568180285"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "mengzhao": {
       "title": "蒙诏帖",
@@ -6434,7 +7692,27 @@
       "glyph": "蒙",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "蒙诏帖",
+        "label": "蒙诏帖",
+        "url": "https://wapbaike.baidu.com/item/%E8%92%99%E8%AF%8F%E5%B8%96/8370535?fromModule=tashuo-article_bottom-lemma",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 蒙诏帖 · 百度百科",
+          "url": "https://wapbaike.baidu.com/item/%E8%92%99%E8%AF%8F%E5%B8%96/8370535?fromModule=tashuo-article_bottom-lemma"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "tumu": {
       "title": "土母帖",
@@ -6449,11 +7727,11 @@
       "description": "馆方编目为《宋十二名家法书·李建中书谘》，俗称土母帖；内容请求土母、合药等生活事项。它显示宋初行书的稳厚基础，不能混写为北京故宫藏原迹。",
       "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/22635?dep=P",
       "pages": [
-        "release300/assets/manuscripts/tumu-1.webp",
-        "release300/assets/manuscripts/tumu-2.webp",
-        "release300/assets/manuscripts/tumu-3.webp",
-        "release300/assets/manuscripts/tumu-4.webp",
-        "release300/assets/manuscripts/tumu-5.webp"
+        "release301/assets/npm/tumu-1.webp",
+        "release301/assets/npm/tumu-2.webp",
+        "release301/assets/npm/tumu-3.webp",
+        "release301/assets/npm/tumu-4.webp",
+        "release301/assets/npm/tumu-5.webp"
       ],
       "pageNames": [
         "清三希堂法帖（八）　冊　宋李建中書土母帖 · 1",
@@ -6462,7 +7740,7 @@
         "清三希堂法帖（八）　冊　宋李建中書土母帖 · 4",
         "清三希堂法帖（八）　冊　宋李建中書土母帖 · 5"
       ],
-      "cover143": "release300/assets/manuscripts/tumu-1.webp",
+      "cover143": "release301/assets/npm/tumu-1.webp",
       "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。图像为清《三希堂法帖》所刻李建中《土母帖》，是刻帖拓本，不是墨迹原件。",
       "objectNumber300": "贈帖000085N000000003",
       "versionNote300": "图像为清《三希堂法帖》所刻李建中《土母帖》，是刻帖拓本，不是墨迹原件。",
@@ -6474,7 +7752,22 @@
       "glyph": "土",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "土母帖",
+        "label": "李建中",
+        "url": "https://www.baike.com/wikiid/2870243261680206802",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": "已打开作者条目，正文列出《土母帖》；未核实到作品独立条目",
+        "verifiedAt": "2026-10-31"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 李建中 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/2870243261680206802"
+        }
+      ]
     },
     "kuaixue": {
       "title": "快雪时晴帖",
@@ -6489,18 +7782,18 @@
       "description": "传世为摹本，正文是雪后问安的短信，是“三希”之一。本帖在台北，其他两希伯远、中秋在北京，三希不在同一馆。",
       "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/19?dep=P",
       "pages": [
-        "release300/assets/manuscripts/kuaixue-1.webp",
-        "release300/assets/manuscripts/kuaixue-2.webp",
-        "release300/assets/manuscripts/kuaixue-3.webp",
-        "release300/assets/manuscripts/kuaixue-4.webp",
-        "release300/assets/manuscripts/kuaixue-5.webp",
-        "release300/assets/manuscripts/kuaixue-6.webp",
-        "release300/assets/manuscripts/kuaixue-7.webp",
-        "release300/assets/manuscripts/kuaixue-8.webp",
-        "release300/assets/manuscripts/kuaixue-9.webp",
-        "release300/assets/manuscripts/kuaixue-10.webp",
-        "release300/assets/manuscripts/kuaixue-11.webp",
-        "release300/assets/manuscripts/kuaixue-12.webp"
+        "release301/assets/npm/kuaixue-1.webp",
+        "release301/assets/npm/kuaixue-2.webp",
+        "release301/assets/npm/kuaixue-3.webp",
+        "release301/assets/npm/kuaixue-4.webp",
+        "release301/assets/npm/kuaixue-5.webp",
+        "release301/assets/npm/kuaixue-6.webp",
+        "release301/assets/npm/kuaixue-7.webp",
+        "release301/assets/npm/kuaixue-8.webp",
+        "release301/assets/npm/kuaixue-9.webp",
+        "release301/assets/npm/kuaixue-10.webp",
+        "release301/assets/npm/kuaixue-11.webp",
+        "release301/assets/npm/kuaixue-12.webp"
       ],
       "pageNames": [
         "晉王羲之快雪時晴帖　冊 · 1",
@@ -6516,7 +7809,7 @@
         "晉王羲之快雪時晴帖　冊 · 11",
         "晉王羲之快雪時晴帖　冊 · 12"
       ],
-      "cover143": "release300/assets/manuscripts/kuaixue-2.webp",
+      "cover143": "release301/assets/npm/kuaixue-2.webp",
       "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。台北故宫所藏《快雪时晴帖》册；王羲之原迹与唐摹本归属依馆方研究。",
       "objectNumber300": "故書000141N000000000",
       "versionNote300": "台北故宫所藏《快雪时晴帖》册；王羲之原迹与唐摹本归属依馆方研究。",
@@ -6528,7 +7821,23 @@
       "glyph": "快",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "快雪时晴帖",
+        "label": "快雪时晴帖",
+        "url": "https://www.baike.com/wikiid/6899776579822686382",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "快雪时晴帖,传为晋代王羲之书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 快雪时晴帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/6899776579822686382"
+        }
+      ]
     },
     "huangting": {
       "title": "黄庭经",
@@ -6543,12 +7852,12 @@
       "description": "流传有不同刻本，书写年代和作者归属不能仅凭题名确定；作品文学正文与本帖实际刻字范围应分别标明。",
       "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1949?dep=P",
       "pages": [
-        "release300/assets/manuscripts/huangting-1.webp",
-        "release300/assets/manuscripts/huangting-2.webp",
-        "release300/assets/manuscripts/huangting-3.webp",
-        "release300/assets/manuscripts/huangting-4.webp",
-        "release300/assets/manuscripts/huangting-5.webp",
-        "release300/assets/manuscripts/huangting-6.webp"
+        "release301/assets/npm/huangting-1.webp",
+        "release301/assets/npm/huangting-2.webp",
+        "release301/assets/npm/huangting-3.webp",
+        "release301/assets/npm/huangting-4.webp",
+        "release301/assets/npm/huangting-5.webp",
+        "release301/assets/npm/huangting-6.webp"
       ],
       "pageNames": [
         "宋拓寶晉齋黃庭經　冊 · 1",
@@ -6558,7 +7867,7 @@
         "宋拓寶晉齋黃庭經　冊 · 5",
         "宋拓寶晉齋黃庭經　冊 · 6"
       ],
-      "cover143": "release300/assets/manuscripts/huangting-1.webp",
+      "cover143": "release301/assets/npm/huangting-1.webp",
       "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。所用图像为宋拓《宝晋斋黄庭经》册，是刻帖拓本，不是王羲之墨迹。",
       "objectNumber300": "故帖000021N000000000",
       "versionNote300": "所用图像为宋拓《宝晋斋黄庭经》册，是刻帖拓本，不是王羲之墨迹。",
@@ -6570,7 +7879,22 @@
       "glyph": "黄",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "黄庭经",
+        "label": "黄庭经（道教养生修仙专著）",
+        "url": "https://bkso.baidu.com/item/%E9%BB%84%E5%BA%AD%E7%BB%8F/6240400?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 黄庭经（道教养生修仙专著） · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E9%BB%84%E5%BA%AD%E7%BB%8F/6240400?fromModule=lemma_inlink"
+        }
+      ]
     },
     "leyi": {
       "title": "乐毅论",
@@ -6606,7 +7930,28 @@
       "glyph": "乐",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "乐毅论",
+        "label": "乐毅论",
+        "url": "https://www.baike.com/wikiid/3374454192292108748",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "乐毅论,王羲之书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 乐毅论 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/3374454192292108748"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "nikuan": {
       "title": "倪宽赞",
@@ -6621,17 +7966,17 @@
       "description": "本帖题归褚遂良，归属与时代须按馆方鉴定说明；同名董其昌仿颜真卿卷与本帖不同，不能误用它的图片与作者。",
       "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14846?dep=P",
       "pages": [
-        "release300/assets/manuscripts/nikuan-1.webp",
-        "release300/assets/manuscripts/nikuan-2.webp",
-        "release300/assets/manuscripts/nikuan-3.webp",
-        "release300/assets/manuscripts/nikuan-4.webp",
-        "release300/assets/manuscripts/nikuan-5.webp",
-        "release300/assets/manuscripts/nikuan-6.webp",
-        "release300/assets/manuscripts/nikuan-7.webp",
-        "release300/assets/manuscripts/nikuan-8.webp",
-        "release300/assets/manuscripts/nikuan-9.webp",
-        "release300/assets/manuscripts/nikuan-10.webp",
-        "release300/assets/manuscripts/nikuan-11.webp"
+        "release301/assets/npm/nikuan-1.webp",
+        "release301/assets/npm/nikuan-2.webp",
+        "release301/assets/npm/nikuan-3.webp",
+        "release301/assets/npm/nikuan-4.webp",
+        "release301/assets/npm/nikuan-5.webp",
+        "release301/assets/npm/nikuan-6.webp",
+        "release301/assets/npm/nikuan-7.webp",
+        "release301/assets/npm/nikuan-8.webp",
+        "release301/assets/npm/nikuan-9.webp",
+        "release301/assets/npm/nikuan-10.webp",
+        "release301/assets/npm/nikuan-11.webp"
       ],
       "pageNames": [
         "唐褚遂良書倪寬傳贊　卷 · 1",
@@ -6646,7 +7991,7 @@
         "唐褚遂良書倪寬傳贊　卷 · 10",
         "唐褚遂良書倪寬傳贊　卷 · 11"
       ],
-      "cover143": "release300/assets/manuscripts/nikuan-2.webp",
+      "cover143": "release301/assets/npm/nikuan-2.webp",
       "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。传褚遂良《倪宽传赞》卷；馆方指出可能为南宋摹本，不以旧题当作确定唐代真迹。",
       "objectNumber300": "故書000054N000000000",
       "versionNote300": "传褚遂良《倪宽传赞》卷；馆方指出可能为南宋摹本，不以旧题当作确定唐代真迹。",
@@ -6658,7 +8003,22 @@
       "glyph": "倪",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "倪宽赞",
+        "label": "倪宽赞",
+        "url": "https://bkso.baidu.com/item/%E5%80%AA%E5%AE%BD%E8%B5%9E/11042962?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 倪宽赞 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E5%80%AA%E5%AE%BD%E8%B5%9E/11042962?fromModule=lemma_inlink"
+        }
+      ]
     },
     "luoshen13": {
       "title": "洛神赋十三行",
@@ -6718,7 +8078,28 @@
       "glyph": "洛",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "洛神赋十三行",
+        "label": "洛神赋十三行",
+        "url": "https://www.baike.com/wikiid/2789507547732558327",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "洛神赋十三行,东晋王献之的小楷书法代表作",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 洛神赋十三行 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/2789507547732558327"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "mengdian": {
       "title": "仲尼梦奠帖",
@@ -6749,7 +8130,28 @@
       "glyph": "仲",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "仲尼梦奠帖",
+        "label": "梦奠帖",
+        "url": "https://www.baike.com/wikiid/7239565328207380519",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息",
+        "descriptionSignal": "梦奠帖,唐代欧阳询书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 梦奠帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7239565328207380519"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "tianfa": {
       "title": "天发神谶碑",
@@ -6830,7 +8232,27 @@
       "glyph": "天",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "天发神谶碑",
+        "label": "吴天玺纪功碑",
+        "url": "https://bkso.baidu.com/item/%E5%90%B4%E5%A4%A9%E7%8E%BA%E7%BA%AA%E5%8A%9F%E7%A2%91/3784870",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "从皇象词条进入天发神谶碑，实际跳转吴天玺纪功碑，正文明确两名指同一碑",
+        "verifiedAt": "2026-10-31"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 吴天玺纪功碑 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E5%90%B4%E5%A4%A9%E7%8E%BA%E7%BA%AA%E5%8A%9F%E7%A2%91/3784870"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "catalogue300-yanqinli": {
       "title": "颜勤礼碑",
@@ -6901,7 +8323,28 @@
       "glyph": "颜",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "颜勤礼碑",
+        "label": "颜勤礼碑",
+        "url": "https://www.baike.com/wikiid/6823655394236180626",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "颜勤礼碑,唐代颜真卿撰文并书写的神道碑",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 颜勤礼碑 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/6823655394236180626"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "sanfen": {
       "title": "三坟记",
@@ -6942,7 +8385,27 @@
       "glyph": "三",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "三坟记",
+        "label": "三坟记",
+        "url": "https://bkso.baidu.com/item/%E4%B8%89%E5%9D%9F%E8%AE%B0/8486479?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 三坟记 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E4%B8%89%E5%9D%9F%E8%AE%B0/8486479?fromModule=lemma_inlink"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "mengying": {
       "title": "篆书千字文碑",
@@ -6983,7 +8446,27 @@
       "glyph": "篆",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "篆书千字文碑",
+        "label": "千字文",
+        "url": "https://wapbaike.baidu.com/item/%E5%8D%83%E5%AD%97%E6%96%87/447586",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": "搜索核实为周兴嗣原文条目，作为碑文内容背景；未找到已核实的梦英原碑独立条目",
+        "verifiedAt": "2026-10-31"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 千字文 · 百度百科",
+          "url": "https://wapbaike.baidu.com/item/%E5%8D%83%E5%AD%97%E6%96%87/447586"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "hengfang": {
       "title": "衡方碑",
@@ -7024,7 +8507,28 @@
       "glyph": "衡",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "衡方碑",
+        "label": "衡方碑",
+        "url": "https://www.baike.com/wikiid/8321886279196814321",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "衡方碑,东汉灵帝建宁元年所刻的书法碑",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 衡方碑 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/8321886279196814321"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "shichen": {
       "title": "史晨碑",
@@ -7039,19 +8543,13 @@
       "description": "前碑、后碑文字不同，均记录史晨祭孔相关事宜；与乙瑛、礼器并读可见成熟汉隶既有法度也有个性。",
       "url": "https://www.dpm.org.cn/collection/impres/228527.html",
       "pages": [
-        "release300/assets/steles/shichen-2.webp",
-        "release300/assets/steles/shichen-3.webp",
-        "release300/assets/steles/shichen-4.webp",
-        "release300/assets/steles/shichen-5.webp"
+        "release301/assets/dpm/shichen-1.webp"
       ],
       "pageNames": [
-        "史晨碑帖页之二",
-        "史晨碑帖页之三",
-        "史晨碑帖页之四",
-        "史晨碑帖页之五"
+        "正文"
       ],
-      "cover143": "release300/assets/steles/shichen-2.webp",
-      "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
+      "cover143": "release301/assets/dpm/shichen-1.webp",
+      "imageCredit247": "Public domain (PD-Art) · https://commons.wikimedia.org/wiki/File:%E5%8F%B2%E6%99%A8%E5%89%8D%E5%90%8E%E7%A2%91%E6%8B%93%E6%9C%AC.jpg",
       "sources300": [
         {
           "path": "release300/assets/steles/shichen-2.webp",
@@ -7095,7 +8593,34 @@
       "glyph": "史",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "coverCrop244": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      },
+      "versionNote301": "史晨碑前后整拓；替换旧版故宫低清册页，不宣称与旧版是同一拓本。",
+      "encyclopedia301": {
+        "title": "史晨碑",
+        "label": "史晨碑",
+        "url": "https://www.baike.com/wikiid/5302226356616770109",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "史晨碑,东汉建宁碑刻",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 史晨碑 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/5302226356616770109"
+        }
+      ],
+      "coverCrop145": {
+        "x": 50,
+        "y": 50,
+        "zoom": 1
+      }
     },
     "huashan": {
       "title": "西岳华山庙碑",
@@ -7136,7 +8661,27 @@
       "glyph": "西",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "西岳华山庙碑",
+        "label": "西岳华山庙碑（东汉延熹八年（公元165年）所立碑刻）",
+        "url": "https://bkso.baidu.com/item/%E8%A5%BF%E5%B2%B3%E5%8D%8E%E5%B1%B1%E5%BA%99%E7%A2%91/8102725?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 西岳华山庙碑（东汉延熹八年（公元165年）所立碑刻） · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E8%A5%BF%E5%B2%B3%E5%8D%8E%E5%B1%B1%E5%BA%99%E7%A2%91/8102725?fromModule=lemma_inlink"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "shimen": {
       "title": "石门颂",
@@ -7197,7 +8742,28 @@
       "glyph": "石",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "石门颂",
+        "label": "石门颂",
+        "url": "https://www.baike.com/wikiid/2758724730360020400",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "石门颂,东汉隶书摩崖石刻",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 石门颂 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/2758724730360020400"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "yiying": {
       "title": "乙瑛碑",
@@ -7278,7 +8844,27 @@
       "glyph": "乙",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "乙瑛碑",
+        "label": "《乙瑛碑》",
+        "url": "https://www.zgbk.com/ecph/words?ID=52253&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 《乙瑛碑》 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=52253&SiteID=1&Type=bkzyb"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "kaicheng": {
       "title": "开成石经",
@@ -7329,7 +8915,25 @@
       "glyph": "开",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "开成石经",
+        "label": "开成石经",
+        "url": "https://bkso.baidu.com/item/%E5%BC%80%E6%88%90%E7%9F%B3%E7%BB%8F/0",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn67search0",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 开成石经 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E5%BC%80%E6%88%90%E7%9F%B3%E7%BB%8F/0"
+        }
+      ]
     },
     "xianyuhuang": {
       "title": "鲜于璜碑",
@@ -7380,7 +8984,28 @@
       "glyph": "鲜",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "鲜于璜碑",
+        "label": "鲜于璜碑",
+        "url": "https://www.baike.com/wikiid/5308100680465518861",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "鲜于璜碑,天津市武清区出土的汉代碑刻",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 鲜于璜碑 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/5308100680465518861"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "zhongxing": {
       "title": "大唐中兴颂",
@@ -7461,7 +9086,30 @@
       "glyph": "大",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "大唐中兴颂",
+        "label": "大唐中兴颂",
+        "url": "https://www.baike.com/wikiid/292857875054594688",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn61search0",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 大唐中兴颂 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/292857875054594688"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "zhengwengong": {
       "title": "郑文公下碑",
@@ -7502,7 +9150,28 @@
       "glyph": "郑",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "郑文公下碑",
+        "label": "郑文公碑",
+        "url": "https://www.baike.com/wikiid/1368860765563557191",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "郑文公碑,北魏光州刺史郑道昭所立碑刻",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 郑文公碑 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/1368860765563557191"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "sishan": {
       "title": "四山摩崖刻经",
@@ -7553,7 +9222,27 @@
       "glyph": "四",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "四山摩崖刻经",
+        "label": "摩崖",
+        "url": "https://bkso.baidu.com/item/%E6%91%A9%E5%B4%96/6120237",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": "搜索核实文化术语条目，正文明确提及山东四山摩崖北周佛经；未找到已核实独立条目",
+        "verifiedAt": "2026-10-31"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 摩崖 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E6%91%A9%E5%B4%96/6120237"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "shimenming": {
       "title": "石门铭",
@@ -7568,20 +9257,20 @@
       "description": "记录褒斜道修复，字体保留隶意而已具楷书面貌；与东汉石门颂不同，迁藏后应写现存收藏位置。",
       "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/15187?dep=P",
       "pages": [
-        "release300/assets/steles/shimenming-1.webp",
-        "release300/assets/steles/shimenming-2.webp",
-        "release300/assets/steles/shimenming-3.webp"
+        "release301/assets/npm/shimenming-1.webp",
+        "release301/assets/npm/shimenming-2.webp",
+        "release301/assets/npm/shimenming-3.webp"
       ],
       "pageNames": [
         "魏王远石门铭墨拓本（台北故宫）",
         "魏王远石门铭墨拓本（台北故宫）",
         "魏王远石门铭墨拓本（台北故宫）"
       ],
-      "cover143": "release300/assets/steles/shimenming-1.webp",
+      "cover143": "release301/assets/npm/shimenming-1.webp",
       "imageCredit247": "魏王远石门铭墨拓本　轴。国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw",
       "sources300": [
         {
-          "path": "release300/assets/steles/shimenming-1.webp",
+          "path": "release301/assets/npm/shimenming-1.webp",
           "source": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=498208&randomCode=96067555462",
           "label": "魏王远石门铭墨拓本（台北故宫）",
           "width": 569,
@@ -7589,7 +9278,7 @@
           "sha256": "883a7d44912e9e55e949247056c1d035c13ccb063d048e21ec42409d7cd3a9cc"
         },
         {
-          "path": "release300/assets/steles/shimenming-2.webp",
+          "path": "release301/assets/npm/shimenming-2.webp",
           "source": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=498209&randomCode=63187861859",
           "label": "魏王远石门铭墨拓本（台北故宫）",
           "width": 446,
@@ -7597,7 +9286,7 @@
           "sha256": "897050ec5b861d55376d2a4a9931efbc5d7b3adf75e41a7781b53763bdf44c78"
         },
         {
-          "path": "release300/assets/steles/shimenming-3.webp",
+          "path": "release301/assets/npm/shimenming-3.webp",
           "source": "https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=498210&randomCode=96530751048",
           "label": "魏王远石门铭墨拓本（台北故宫）",
           "width": 446,
@@ -7614,7 +9303,25 @@
       "glyph": "石",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "石门铭",
+        "label": "石门铭",
+        "url": "https://wapbaike.baidu.com/item/%E7%9F%B3%E9%97%A8%E9%93%AD/9937775",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn63search0",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 石门铭 · 百度百科",
+          "url": "https://wapbaike.baidu.com/item/%E7%9F%B3%E9%97%A8%E9%93%AD/9937775"
+        }
+      ]
     },
     "biluo": {
       "title": "碧落碑",
@@ -7655,7 +9362,22 @@
       "glyph": "碧",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "碧落碑",
+        "label": "新绛县博物馆",
+        "url": "https://bkso.baidu.com/item/%E6%96%B0%E7%BB%9B%E5%8E%BF%E5%8D%9A%E7%89%A9%E9%A6%86/2329947",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": "已打开馆藏机构条目并核实碧落碑藏品介绍；其作品内链未能读取，使用相关馆藏机构条目",
+        "verifiedAt": "2026-10-31"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 新绛县博物馆 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E6%96%B0%E7%BB%9B%E5%8E%BF%E5%8D%9A%E7%89%A9%E9%A6%86/2329947"
+        }
+      ]
     },
     "lizi": {
       "title": "苏轼荔子碑",
@@ -7690,7 +9412,31 @@
       "glyph": "苏",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "荔子碑",
+        "label": "荔子碑",
+        "url": "https://bkso.baidu.com/item/%E8%8D%94%E5%AD%90%E7%A2%91/10846310",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn69search26",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "苏轼荔子碑"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 荔子碑 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E8%8D%94%E5%AD%90%E7%A2%91/10846310"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "zuiweng": {
       "title": "苏轼书醉翁亭记碑",
@@ -7725,7 +9471,31 @@
       "glyph": "苏",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "醉翁亭记碑",
+        "label": "醉翁亭记碑",
+        "url": "https://www.baike.com/wikiid/7426107752939312611",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn74search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "苏轼书醉翁亭记碑"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 醉翁亭记碑 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7426107752939312611"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "wanan": {
       "title": "万安桥记大字碑",
@@ -7760,7 +9530,31 @@
       "glyph": "万",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "洛阳桥",
+        "label": "洛阳桥",
+        "url": "https://bkso.baidu.com/item/%E6%B4%9B%E9%98%B3%E6%A1%A5/3550436",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn113search9",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "万安桥记大字碑"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 洛阳桥 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E6%B4%9B%E9%98%B3%E6%A1%A5/3550436"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "lisheng": {
       "title": "李晟墓碑",
@@ -7803,7 +9597,31 @@
       "glyph": "李",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "李晟碑",
+        "label": "李晟碑",
+        "url": "https://bkso.baidu.com/item/%E6%9D%8E%E6%99%9F%E7%A2%91/1123785",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn74search17",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "李晟墓碑"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 李晟碑 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E6%9D%8E%E6%99%9F%E7%A2%91/1123785"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "songke-zhuangyou": {
       "title": "草书杜子美壮游诗卷",
@@ -7838,7 +9656,31 @@
       "glyph": "草",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "宋克",
+        "label": "宋克",
+        "url": "https://bkso.baidu.com/item/%E5%AE%8B%E5%85%8B/4221501",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn113search11",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "草书杜子美壮游诗卷"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 宋克 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E5%AE%8B%E5%85%8B/4221501"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "wuhou": {
       "title": "蜀丞相诸葛武侯祠堂碑",
@@ -7873,7 +9715,30 @@
       "glyph": "蜀",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "蜀丞相诸葛武侯祠堂碑",
+        "label": "蜀丞相诸葛武侯祠堂碑",
+        "url": "https://www.baike.com/wikiid/2775137578744231",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn69search0",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 蜀丞相诸葛武侯祠堂碑 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/2775137578744231"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "shouchan": {
       "title": "上尊号与受禅碑",
@@ -7909,7 +9774,31 @@
       "glyph": "上",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "三绝碑（上尊号与受禅碑）",
+        "label": "三绝碑（上尊号与受禅碑）",
+        "url": "https://www.baike.com/wikiid/7960363879797370192",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn78search10",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "上尊号与受禅碑"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 三绝碑（上尊号与受禅碑） · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7960363879797370192"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "suxian": {
       "title": "苏仙岭三绝碑",
@@ -7952,7 +9841,31 @@
       "glyph": "苏",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "三绝碑（苏仙岭）",
+        "label": "三绝碑（苏仙岭）",
+        "url": "https://www.baike.com/wikiid/8415061275056657290",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn74search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "苏仙岭三绝碑"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 三绝碑（苏仙岭） · 快懂百科",
+          "url": "https://www.baike.com/wikiid/8415061275056657290"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "guoyouzhi": {
       "title": "致郭右之二帖卷",
@@ -7987,7 +9900,31 @@
       "glyph": "致",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "赵孟頫",
+        "label": "赵孟頫",
+        "url": "https://www.baike.com/wikiid/7166510562602582068",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn82search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "致郭右之二帖卷"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 赵孟頫 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7166510562602582068"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "jushi": {
       "title": "局事帖",
@@ -8022,7 +9959,30 @@
       "glyph": "局",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "局事帖",
+        "label": "局事帖",
+        "url": "https://bkso.baidu.com/item/%E5%B1%80%E4%BA%8B%E5%B8%96/5761624",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn82search8",
+          "checkedAt": "2026-10-30"
+        }
+      },
+      "sources301": [
+        {
+          "label": "百科 · 局事帖 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E5%B1%80%E4%BA%8B%E5%B8%96/5761624"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "dong-longshen": {
       "title": "龙神感应记",
@@ -8057,7 +10017,31 @@
       "glyph": "龙",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "董其昌",
+        "label": "董其昌",
+        "url": "https://www.zgbk.com/ecph/words?Name=%E8%91%A3%E5%85%B6%E6%98%8C&SiteID=1&SourceID=110077&Type=bkzyb&subSourceType=000003000013000004",
+        "provider": "中国百科网",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn111search15",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "龙神感应记"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 董其昌 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?Name=%E8%91%A3%E5%85%B6%E6%98%8C&SiteID=1&SourceID=110077&Type=bkzyb&subSourceType=000003000013000004"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "auction-pingan": {
       "title": "平安帖（拍卖本）",
@@ -8092,7 +10076,31 @@
       "glyph": "平",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "平安帖",
+        "label": "平安帖",
+        "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%B8%96/25252",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn78search24",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "平安帖（拍卖本）"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 平安帖 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E5%B9%B3%E5%AE%89%E5%B8%96/25252"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "baozhi": {
       "title": "宝志公像赞诗碑",
@@ -8135,7 +10143,31 @@
       "glyph": "宝",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "宝志禅师",
+        "label": "宝志禅师",
+        "url": "https://www.baike.com/wikiid/8498096015577952946",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn74search24",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "宝志公像赞诗碑"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 宝志禅师 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/8498096015577952946"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "chenghuang": {
       "title": "新修城隍庙碑",
@@ -8178,7 +10210,31 @@
       "glyph": "新",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "城隍庙碑",
+        "label": "城隍庙碑",
+        "url": "https://bkso.baidu.com/item/%E5%9F%8E%E9%9A%8D%E5%BA%99%E7%A2%91/14442104",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn78search29",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "新修城隍庙碑"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 城隍庙碑 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E5%9F%8E%E9%9A%8D%E5%BA%99%E7%A2%91/14442104"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "shamenghai-bangshu": {
       "title": "榜书选赏",
@@ -8213,7 +10269,30 @@
       "glyph": "榜",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "沙孟海",
+        "label": "沙孟海",
+        "url": "https://www.baike.com/wikiid/7277601295829467147",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "article_html_og_title",
+          "url": "https://www.baike.com/wikiid/7277601295829467147",
+          "checkedAt": "2026-10-31"
+        }
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 沙孟海 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7277601295829467147"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "gongfu": {
       "title": "功甫帖（拍卖本）",
@@ -8256,7 +10335,26 @@
       "glyph": "功",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "苏轼",
+        "label": "苏轼",
+        "url": "https://www.baike.com/wikiid/2840507407652825840",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn69search32",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "功甫帖（拍卖本）"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 苏轼 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/2840507407652825840"
+        }
+      ]
     },
     "zhao-huangting": {
       "title": "临黄庭经（保利本）",
@@ -8299,7 +10397,31 @@
       "glyph": "临",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "临黄庭经",
+        "label": "临黄庭经",
+        "url": "https://www.baike.com/wikiid/7417268205297434634",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn89search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "临黄庭经（保利本）"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 临黄庭经 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7417268205297434634"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "rao-hanliu": {
       "title": "草书韩愈柳宗元文",
@@ -8375,7 +10497,26 @@
       "glyph": "草",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "饶 介",
+        "label": "饶 介",
+        "url": "https://bkso.baidu.com/item/%E9%A5%B6%20%E4%BB%8B/7172649",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn113search4",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "草书韩愈柳宗元文"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 饶 介 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E9%A5%B6%20%E4%BB%8B/7172649"
+        }
+      ]
     },
     "zhao-xinjing": {
       "title": "般若波罗蜜多心经",
@@ -8434,7 +10575,31 @@
       "glyph": "般",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "般若波罗蜜多心经（赵孟頫）",
+        "label": "般若波罗蜜多心经（赵孟頫）",
+        "url": "https://www.baike.com/wikiid/4448353435201950778",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn82search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "般若波罗蜜多心经"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 般若波罗蜜多心经（赵孟頫） · 快懂百科",
+          "url": "https://www.baike.com/wikiid/4448353435201950778"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "yuanan": {
       "title": "袁安碑",
@@ -8465,7 +10630,27 @@
       "glyph": "袁",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "袁安碑",
+        "label": "袁安碑",
+        "url": "https://www.zgbk.com/ecph/words?ID=406572&SiteID=1&Type=bkzyb",
+        "provider": "中国百科网",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 袁安碑 · 中国百科网",
+          "url": "https://www.zgbk.com/ecph/words?ID=406572&SiteID=1&Type=bkzyb"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "kuaiji": {
       "title": "会稽刻石",
@@ -8498,7 +10683,22 @@
       "glyph": "会",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "会稽刻石",
+        "label": "会稽刻石",
+        "url": "https://bkso.baidu.com/item/%E4%BC%9A%E7%A8%BD%E5%88%BB%E7%9F%B3/3680412?fromModule=lemma_inlink",
+        "provider": "百度百科",
+        "relatedTopic": false,
+        "verifiedVia": "网络搜索返回条目标题和正文摘要",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 会稽刻石 · 百度百科",
+          "url": "https://bkso.baidu.com/item/%E4%BC%9A%E7%A8%BD%E5%88%BB%E7%9F%B3/3680412?fromModule=lemma_inlink"
+        }
+      ]
     },
     "zhangqian": {
       "title": "张迁碑",
@@ -8552,7 +10752,23 @@
       "glyph": "张",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "张迁碑",
+        "label": "张迁碑",
+        "url": "https://www.baike.com/wikiid/7269969715882901565",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "张迁碑,东汉时期佚名隶书",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 张迁碑 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7269969715882901565"
+        }
+      ]
     },
     "shiqi": {
       "title": "十七帖",
@@ -8567,22 +10783,22 @@
       "description": "由不同书札汇集，名取卷首“十七日”三字，不是一封书信；历代翻刻、馆藏版本与分帖数量有差异。",
       "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1986?dep=P",
       "pages": [
-        "release300/assets/manuscripts-extra/shiqi-1.webp",
-        "release300/assets/manuscripts-extra/shiqi-2.webp",
-        "release300/assets/manuscripts-extra/shiqi-3.webp",
-        "release300/assets/manuscripts-extra/shiqi-4.webp",
-        "release300/assets/manuscripts-extra/shiqi-5.webp",
-        "release300/assets/manuscripts-extra/shiqi-6.webp",
-        "release300/assets/manuscripts-extra/shiqi-7.webp",
-        "release300/assets/manuscripts-extra/shiqi-8.webp",
-        "release300/assets/manuscripts-extra/shiqi-9.webp",
-        "release300/assets/manuscripts-extra/shiqi-10.webp",
-        "release300/assets/manuscripts-extra/shiqi-11.webp",
-        "release300/assets/manuscripts-extra/shiqi-12.webp",
-        "release300/assets/manuscripts-extra/shiqi-13.webp",
-        "release300/assets/manuscripts-extra/shiqi-14.webp",
-        "release300/assets/manuscripts-extra/shiqi-15.webp",
-        "release300/assets/manuscripts-extra/shiqi-16.webp"
+        "release301/assets/npm/shiqi-1.webp",
+        "release301/assets/npm/shiqi-2.webp",
+        "release301/assets/npm/shiqi-3.webp",
+        "release301/assets/npm/shiqi-4.webp",
+        "release301/assets/npm/shiqi-5.webp",
+        "release301/assets/npm/shiqi-6.webp",
+        "release301/assets/npm/shiqi-7.webp",
+        "release301/assets/npm/shiqi-8.webp",
+        "release301/assets/npm/shiqi-9.webp",
+        "release301/assets/npm/shiqi-10.webp",
+        "release301/assets/npm/shiqi-11.webp",
+        "release301/assets/npm/shiqi-12.webp",
+        "release301/assets/npm/shiqi-13.webp",
+        "release301/assets/npm/shiqi-14.webp",
+        "release301/assets/npm/shiqi-15.webp",
+        "release301/assets/npm/shiqi-16.webp"
       ],
       "pageNames": [
         "《旧榻十七帖》册页 · 1",
@@ -8602,7 +10818,7 @@
         "《旧榻十七帖》册页 · 15",
         "《旧榻十七帖》册页 · 16"
       ],
-      "cover143": "release300/assets/manuscripts-extra/shiqi-2.webp",
+      "cover143": "release301/assets/npm/shiqi-2.webp",
       "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。正文图像来自馆方分件记录。",
       "objectNumber300": "故帖000062N000000000",
       "versionNote300": "台北故宫藏《旧榻十七帖》册，勅字本系统；正文图像由馆方关联分件取得，不以册页封面代替正文。",
@@ -8614,7 +10830,23 @@
       "glyph": "十",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "十七帖",
+        "label": "十七帖",
+        "url": "https://www.baike.com/wikiid/7171013034918395912",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "十七帖,王羲之重要的草书代表作之一",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 十七帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7171013034918395912"
+        }
+      ]
     },
     "sanxi": {
       "title": "三希宝帖",
@@ -8631,7 +10863,7 @@
       "pages": [
         "release300/assets/core/boyuan-01.webp",
         "release300/assets/core/zhongqiu-01.webp",
-        "release300/assets/manuscripts/kuaixue-2.webp"
+        "release301/assets/npm/kuaixue-2.webp"
       ],
       "pageNames": [
         "伯远帖 · 馆方图像",
@@ -8649,7 +10881,28 @@
       "glyph": "三",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "三希宝帖",
+        "label": "三希帖",
+        "url": "https://www.baike.com/wikiid/3632858331976661186",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "三希帖,王羲之、王献之等所著的字帖",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 三希帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/3632858331976661186"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "xixia": {
       "title": "西狭颂",
@@ -8682,7 +10935,28 @@
       "glyph": "西",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "西狭颂",
+        "label": "西狭颂",
+        "url": "https://www.baike.com/wikiid/7502080265885862835",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": "快懂百科HTML元信息及正文链接",
+        "descriptionSignal": "西狭颂,仇靖创作隶书书法作品",
+        "verifiedAt": "2026-10-30"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 西狭颂 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7502080265885862835"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "milan247": {
       "title": "米芾题兰亭序卷",
@@ -8709,7 +10983,31 @@
       "glyph": "帖",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "兰亭序",
+        "label": "兰亭序",
+        "url": "https://www.baike.com/wikiid/7237045937847189519",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "article_html_og_title_and_body",
+          "url": "https://www.baike.com/wikiid/7237045937847189519",
+          "checkedAt": "2026-10-31"
+        },
+        "workTitle": "米芾题兰亭序卷"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 兰亭序 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7237045937847189519"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "caishi247": {
       "title": "蔡襄行书自书诗卷",
@@ -8736,7 +11034,31 @@
       "glyph": "帖",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "蔡襄",
+        "label": "蔡襄",
+        "url": "https://wapbaike.baidu.com/item/%E8%94%A1%E8%A5%84/491720",
+        "provider": "百度百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn140search2",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "蔡襄行书自书诗卷"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 蔡襄 · 百度百科",
+          "url": "https://wapbaike.baidu.com/item/%E8%94%A1%E8%A5%84/491720"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "luoshui247": {
       "title": "落水兰亭 · 孙承泽旧藏本的清内府摹刻",
@@ -8763,7 +11085,31 @@
       "glyph": "帖",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "兰亭序",
+        "label": "兰亭序",
+        "url": "https://www.baike.com/wikiid/7237045937847189519",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "article_html_og_title_and_body",
+          "url": "https://www.baike.com/wikiid/7237045937847189519",
+          "checkedAt": "2026-10-31"
+        },
+        "workTitle": "落水兰亭 · 孙承泽旧藏本的清内府摹刻"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 兰亭序 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7237045937847189519"
+        }
+      ],
+      "coverCrop145": {
+        "zoom": 1,
+        "x": 50,
+        "y": 50
+      }
     },
     "kushu247": {
       "title": "枯树赋 · 王世贞鉴藏专题",
@@ -8775,16 +11121,16 @@
       "description": "王世贞鉴藏与题跋的枯树赋有唐人双钩本、赵孟頫临本等版本。链接展示经训堂刻帖中的赵临本及王氏题跋，刻帖与王氏所藏墨迹须分别理解。",
       "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/27579?dep=P",
       "pages": [
-        "release300/assets/manuscripts-collector/kushu247-1.webp",
-        "release300/assets/manuscripts-collector/kushu247-2.webp",
-        "release300/assets/manuscripts-collector/kushu247-3.webp"
+        "release301/assets/npm/kushu247-1.webp",
+        "release301/assets/npm/kushu247-2.webp",
+        "release301/assets/npm/kushu247-3.webp"
       ],
       "pageNames": [
         "《经训堂法帖》赵孟頫临《枯树赋》及王世贞相关跋文的刻帖本；不是赵孟頫原墨迹。 · 1",
         "《经训堂法帖》赵孟頫临《枯树赋》及王世贞相关跋文的刻帖本；不是赵孟頫原墨迹。 · 2",
         "《经训堂法帖》赵孟頫临《枯树赋》及王世贞相关跋文的刻帖本；不是赵孟頫原墨迹。 · 3"
       ],
-      "cover143": "release300/assets/manuscripts-collector/kushu247-1.webp",
+      "cover143": "release301/assets/npm/kushu247-1.webp",
       "imageCredit247": "国立故宫博物院，台北，CC BY 4.0 @ www.npm.gov.tw。《经训堂法帖》赵孟頫临《枯树赋》及王世贞相关跋文的刻帖本；不是赵孟頫原墨迹。",
       "versionNote300": "《经训堂法帖》赵孟頫临《枯树赋》及王世贞相关跋文的刻帖本；不是赵孟頫原墨迹。",
       "id": "kushu247",
@@ -8794,7 +11140,26 @@
       "glyph": "帖",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "褚遂良",
+        "label": "褚遂良",
+        "url": "https://www.baike.com/wikiid/7232188329596338237",
+        "provider": "快懂百科",
+        "relatedTopic": true,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn140search0",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "枯树赋 · 王世贞鉴藏专题"
+      },
+      "sources301": [
+        {
+          "label": "相关百科 · 褚遂良 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/7232188329596338237"
+        }
+      ]
     },
     "yingguang247": {
       "title": "英光堂帖 · 岳珂集刻米芾书迹",
@@ -8822,7 +11187,26 @@
       "glyph": "帖",
       "deleted": false,
       "catalogueRelease300": true,
-      "preserveUserPages300": false
+      "preserveUserPages300": false,
+      "encyclopedia301": {
+        "title": "英光堂帖",
+        "label": "英光堂帖",
+        "url": "https://www.baike.com/wikiid/3146326561090188971",
+        "provider": "快懂百科",
+        "relatedTopic": false,
+        "verifiedVia": {
+          "method": "web_search",
+          "reference": "turn96search1",
+          "checkedAt": "2026-10-30"
+        },
+        "workTitle": "英光堂帖 · 岳珂集刻米芾书迹"
+      },
+      "sources301": [
+        {
+          "label": "百科 · 英光堂帖 · 快懂百科",
+          "url": "https://www.baike.com/wikiid/3146326561090188971"
+        }
+      ]
     }
   },
   "order129": []

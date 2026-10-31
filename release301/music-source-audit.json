@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-01",
+  "requestedTitles": [
+    "渔舟唱晚",
+    "高山流水",
+    "春江花月夜",
+    "将进酒"
+  ],
+  "verifiedAlternative": {
+    "id": "liushui",
+    "title": "流水 · 古琴",
+    "directory": "video-music301",
+    "credit": "Charlie Huang；古琴《流水》（川派），2006-04-15，Shaoyun Xuan，英国伯明翰。CC BY 2.5；剪辑为30/120秒、单声道32 kb/s AAC、音量与淡入淡出调整。https://commons.wikimedia.org/wiki/File:Liu_Shui.ogg；https://creativecommons.org/licenses/by/2.5/",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Liu_Shui.ogg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Liu_Shui.ogg",
+    "license": "CC BY 2.5",
+    "availableDurations": [
+      30,
+      120
+    ],
+    "relatedRequestedTitle": "高山流水",
+    "note": "古琴《流水》是独立曲目，不等同于古筝曲《高山流水》；需按此名称显示。"
+  },
+  "unresolved": [
+    {
+      "title": "渔舟唱晚",
+      "status": "未核实可供本站再分发及视频同步的录音来源；不以同名诗朗诵、广播剧、异曲或生成音乐替代。"
+    },
+    {
+      "title": "高山流水",
+      "status": "未核实可供本站再分发及视频同步的录音来源；不以同名诗朗诵、广播剧、异曲或生成音乐替代。"
+    },
+    {
+      "title": "春江花月夜",
+      "status": "未核实可供本站再分发及视频同步的录音来源；不以同名诗朗诵、广播剧、异曲或生成音乐替代。"
+    },
+    {
+      "title": "将进酒",
+      "status": "未核实可供本站再分发及视频同步的录音来源；不以同名诗朗诵、广播剧、异曲或生成音乐替代。"
+    }
+  ],
+  "notes": [
+    "已有千年之后继续沿用用户指定的既有音源；本次没有改动。",
+    "网易公开搜索接口返回不可直接核实的加密结果，未破解或猜测歌曲编号。",
+    "公开可播放不等于开放授权；未将普通公开播放录音标为CC许可。"
+  ]
+}
