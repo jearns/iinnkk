@@ -144,6 +144,7 @@
     "heritage102-data.js",
     "heritage102.js",
     "heritage-stories113.js",
+    "release305/palettes.js",
     "revision94.js",
     "revision95.js",
     "cloud-tools95.js",
@@ -418,6 +419,7 @@
     "revision255.css",
     "release260/relations.css",
     "release276/excerpts.css",
-    "release277/ui.css"
+    "release277/ui.css",
+    "release305/layout.css"
   ]
 }
