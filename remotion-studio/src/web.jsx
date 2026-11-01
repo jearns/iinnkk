@@ -7,7 +7,7 @@ import {MUSIC_TRACKS, musicTrack, musicSource} from './music.mjs';
 import {artworkRatio,videoFormat} from './format.mjs';
 import{prepareSequence294}from'./sequence.mjs';
 import{localItems294,filmFilename294}from'../../release296/selection.mjs';
-import {TRANSITIONS} from './scene-plan.mjs';
+import {ZOOM_LEVELS307} from './scene-plan.mjs';
 const FilmPlayer=lazy(()=>import('./player.jsx'));
 
 function Studio() {
@@ -18,7 +18,7 @@ function Studio() {
   const [work, setWork] = useState(null);
   const [replay, setReplay] = useState(null);
   const [poster, setPoster] = useState(null);
-  const [transition,setTransition]=useState('push');
+  const transition='push';const [zoomLevel307,setZoomLevel307]=useState('closeup');
   const [durationSeconds, setDurationSeconds] = useState(30);
   const [retry, setRetry] = useState(0);
   const initial = new URLSearchParams(location.search);
@@ -50,7 +50,7 @@ function Studio() {
   const language = window.I18n218?.language || 'zh';
   const heading = t('手筆 · 纪录大片');
   const format=videoFormat(artworkRatio(work?.draft,replay));
-  const inputProps=useMemo(()=>({surface:replay?.surface,artwork:poster,title,signature,music,renderStyle296,background296,musicUrl295:musicURLs302.current[music]||(music==='custom295'?customURL295.current:null),transition}),[poster,replay,title,signature,music,transition,customMusic295,musicLibrary302,renderStyle296,background296]);
+  const inputProps=useMemo(()=>({surface:replay?.surface,artwork:poster,title,signature,music,renderStyle296,background296,musicUrl295:musicURLs302.current[music]||(music==='custom295'?customURL295.current:null),transition,zoomLevel307}),[poster,replay,title,signature,music,transition,zoomLevel307,customMusic295,musicLibrary302,renderStyle296,background296]);
   const durationInFrames=durationSeconds*VIDEO_FPS;
 
 
@@ -205,8 +205,9 @@ function Studio() {
 </div>}{panel301==='时长'&&<div className="vsPanel301"><header><strong>{t('时长')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('影片时长')}<select value={durationSeconds} onChange={e => {stopAudition(); setDurationSeconds(normalizeDuration(e.target.value));}} disabled={busy}><option value={8}>{t('8 秒')}</option><option value={15}>{t('15 秒')}</option><option value={30}>{t('30 秒')}</option><option value={60}>{t('1 分钟')}</option><option value={120}>{t('2 分钟')}</option><option value={180}>{t('3 分钟')}</option><option value={300}>{t('5 分钟')}</option></select></label>
       <p className="vsTiming291">{t('片头、片尾各 2 秒，其余时间展示作品。')}</p>
       <p className="vsTiming291">{t(format.orientation==='landscape'?'横屏 16:9 · 自动适配横向作品':'竖屏 9:16 · 自动适配纵向作品')}</p>
-</div>}{panel301==='运镜'&&<div className="vsPanel301"><header><strong>{t('运镜')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('镜头转场')}<select value={transition} disabled={busy} onChange={e=>setTransition(e.target.value)}>{TRANSITIONS.map(mode=><option key={mode.id} value={mode.id}>{t(mode.label)}</option>)}</select></label>
-      <p className="vsTiming291">{t('长片增加不同字与笔画的取景场景，按原始点位绘制。')}</p>
+</div>}{panel301==='运镜'&&<div className="vsPanel301"><header><strong>{t('运镜')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <div className="zoomLevels307" role="group" aria-label={t('慢速拉近')}>
+{ZOOM_LEVELS307.map(level=><button key={level.id} type="button" disabled={busy} aria-pressed={zoomLevel307===level.id} onClick={()=>setZoomLevel307(level.id)}>{t(level.label)}</button>)}
+</div><p className="vsNote">{t('固定焦点慢速拉近 · Zoom in')}</p>
 </div>}{panel301==='音乐'&&<div className="vsPanel301"><header><strong>{t('音乐')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('背景音乐')}<select value={music} disabled={busy} onChange={e=>{stopAudition();setMusic(e.target.value);if(musicTrack(e.target.value)?.requiresImport301&&!musicURLs302.current[e.target.value])setStatus({key:'这首配乐尚未添加音源，请从本机配乐库添加。'})}}><option value="none">{t('无音乐')}</option>{customMusic295&&<option value="custom295">{customMusic295.name}</option>}{MUSIC_TRACKS.map(track => <option key={track.id} value={track.id}>{t(track.title)}</option>)}</select></label>
       <button className="vsSecondary292" disabled={busy} onClick={()=>{importTrack302.current=selectedTrack?.requiresImport301?music:'custom295';document.getElementById('localMusic301').click()}}>{t(musicLibrary302[music]?'更换本机音源':'添加本机音源')}</button><input hidden type="file" id="localMusic301" accept="audio/*,.m4a,.mp3,.wav,.ogg,.flac" onChange={importMusic295}/>{musicLibrary302[music]&&<small translate="no">{musicLibrary302[music].name}</small>}{selectedTrack?.requiresImport301&&!musicLibrary302[music]&&<p>{t('已列入配乐清单；原曲外链失效，添加本机录音后即可试听和导出。')}</p>}
       {selectedTrack && <div className="vsMusic292"><button type="button" className="vsSecondary292" disabled={busy} onClick={auditionMusic}>{t(audition ? '停止试听' : '试听')}</button><small>{t('仅按需加载所选配乐。')}</small></div>}

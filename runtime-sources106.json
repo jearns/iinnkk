@@ -264,7 +264,8 @@
     "subject-controls270.js",
     "release278/text-scope.js",
     "rank-excerpts276.js",
-    "release277/reader.js"
+    "release277/reader.js",
+    "release307/children.js"
   ],
   "styles": [
     "style.css",
@@ -420,6 +421,7 @@
     "release260/relations.css",
     "release276/excerpts.css",
     "release277/ui.css",
-    "release305/layout.css"
+    "release305/layout.css",
+    "release307/ui.css"
   ]
 }
