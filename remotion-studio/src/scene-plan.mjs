@@ -11,20 +11,20 @@ export function scenePlan(duration,fps,chapters=[]){
  scenes.push({id:count+1,kind:'full',from:writingEnd,to:outro,start:1,end:1,region:full(),scale:1});
  // Overlapping broad windows keep the pen inside a generous frame; interpolation is pure and deterministic.
  const focus=Array.from({length:65},(_,i)=>({p:i/64,...region(chapters,Math.max(0,i/64-.08),Math.min(1,i/64+.08))}));
- const bounds=region(chapters,0,1),edge=Math.max(Math.abs(bounds.x-.5)+bounds.w/2,Math.abs(bounds.y-.5)+bounds.h/2),maxScale=Math.max(1,Math.min(1.085,1/(edge*2+.06)));return{scenes,intro,outro,writingStart,writingEnd,focus,maxScale};
+ const maxScale=1.18;return{scenes,intro,outro,writingStart,writingEnd,focus,maxScale};
 }
 export function sceneFrame(frame,plan,fps,mode='push'){
  const scene=plan.scenes.find(s=>frame>=s.from&&frame<s.to)||plan.scenes.at(-1),index=scene.id,t=clamp((frame-scene.from)/Math.max(1,scene.to-scene.from-1));
  const progress=clamp((frame-plan.writingStart)/Math.max(1,plan.writingEnd-plan.writingStart)),selected=mode==='mixed'?'combo':mode;
  const index302=Math.min(63,Math.floor(progress*64)),a=plan.focus[index302],b=plan.focus[index302+1],mix=ease(progress*64-index302),focus={x:a.x+(b.x-a.x)*mix,y:a.y+(b.y-a.y)*mix};
- const ramp=ease(progress/.22),finish=ease((progress-.78)/.22),envelope=ramp*(1-finish),shot={...scene,region:{...full(),x:.5+(focus.x-.5)*envelope*.1,y:.5+(focus.y-.5)*envelope*.1}};
+ const ramp=ease(progress/.22),finish=ease((progress-.78)/.22),envelope=ramp*(1-finish),shot={...scene,region:{...full(),x:.5+(focus.x-.5)*envelope*.24,y:.5+(focus.y-.5)*envelope*.24}};
  let scale=1;
  if(scene.kind==='writing'){
-  if(selected==='push')scale=1+.065*ease(progress);
-  else if(selected==='pull')scale=1+.065*(1-ease(progress));
-  else if(selected==='dolly')scale=1+.045*Math.sin(Math.PI*progress);
-  else if(selected==='combo'){const keys=[1,1.065,1.025,1.085,1.04,1],at=Math.min(4,Math.floor(progress*5));scale=keys[at]+(keys[at+1]-keys[at])*ease(progress*5-at);}
-  else scale=1+.025*Math.sin(Math.PI*progress);
+  if(selected==='push')scale=1+.16*ease(progress);
+  else if(selected==='pull')scale=1+.16*(1-ease(progress));
+  else if(selected==='dolly')scale=1+.12*Math.sin(Math.PI*progress);
+  else if(selected==='combo'){const keys=[1,1.16,1.07,1.18,1.09,1],at=Math.min(4,Math.floor(progress*5));scale=keys[at]+(keys[at+1]-keys[at])*ease(progress*5-at);}
+  else scale=1+.09*Math.sin(Math.PI*progress);
   // Smooth lead-in and landing; no per-scene zoom reset or cycling camera position.
   scale=1+(scale-1)*envelope;
  }

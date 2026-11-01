@@ -2,6 +2,7 @@ import{readFile,writeFile,copyFile}from'node:fs/promises';import{execFileSync}fr
 execFileSync(process.execPath,['scripts/system-input275.mjs'],{stdio:'inherit'});
 execFileSync(process.execPath,['scripts/handwriting254.mjs'],{stdio:'inherit'});
 execFileSync(process.execPath,['scripts/stickers279.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/music-library303.mjs'],{stdio:'inherit'});
 execFileSync(process.execPath,['scripts/lazy257.mjs'],{stdio:'inherit'});
 const previous=JSON.parse(await readFile('runtime-history154.json','utf8'));
 execFileSync(process.execPath,['scripts/runtime224.mjs'],{stdio:'inherit'});await writeFile('writer257.html',(await readFile('writer.html','utf8')).trimEnd()+'\n');

@@ -1,0 +1,2 @@
+/* Restore saved portraits independently of the removed excerpt feature. */
+(async()=>{const api=window.PhotoPortrait255;if(!api)return;await api.ready297;const q=new URLSearchParams(location.search),id=q.get('editPortrait297');if(!id)return;try{await api.restore297(id);if(q.has('download297'))await api.save()}catch(e){document.getElementById('photoStatus255').textContent=window.I18n218?.text(e.message)||e.message}})();

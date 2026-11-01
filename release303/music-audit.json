@@ -1,0 +1,592 @@
+{
+  "version": 303,
+  "checkedAt": "2026-11-01",
+  "scope": "14 user-provided NetEase URLs; HTTPS direct public request only; audio signature and ffprobe plus full ffmpeg decode for successful responses. No sign-in, purchase, membership bypass, or substitute recordings.",
+  "summary": {
+    "provided": 14,
+    "audioConfirmed": 4,
+    "unavailable": 10
+  },
+  "tracks": [
+    {
+      "id": 3312527187,
+      "artistProvidedByUser": "黄霑",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=3312527187.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "audio/mpeg; charset=UTF-8",
+      "finalURL": "http://m701.music.126.net/20261101121707/99a402f28ccfe39cc2435171082cf451/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/63592820636/e1fa/d1f1/a3eb/1ae24393a79d1e74849099ee75058cdb.mp3?vuutv=DwjTwjUARwDOiRKzyyiMo01TUxbmY0v7y+58rWDlUIb9PC8wZDlwT0S/05b66/rct4vqvkGWovFEnN15AI+hYDJzJtGzm1qWVGuAzZTFeobghp91gkBgHXAsaKSSkoVhdgyYvIPXvmzaGceObIEaiQ==&cdntag=bWFyaz1vc193ZWIscXVhbGl0eV9zdGFuZGFyZA",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=3312527187.mp3",
+          "to": "http://m701.music.126.net/20261101121707/99a402f28ccfe39cc2435171082cf451/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/63592820636/e1fa/d1f1/a3eb/1ae24393a79d1e74849099ee75058cdb.mp3?vuutv=DwjTwjUARwDOiRKzyyiMo01TUxbmY0v7y+58rWDlUIb9PC8wZDlwT0S/05b66/rct4vqvkGWovFEnN15AI+hYDJzJtGzm1qWVGuAzZTFeobghp91gkBgHXAsaKSSkoVhdgyYvIPXvmzaGceObIEaiQ==&cdntag=bWFyaz1vc193ZWIscXVhbGl0eV9zdGFuZGFyZA"
+        }
+      ],
+      "bytes": 2853165,
+      "sha256": "e1f3ded1a6528f3ac9886091394dabf29d9ca56e78349fb622b972e8f27c3bdb",
+      "signature": "ID3",
+      "truncated": false,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "duration": "178.296000"
+        }
+      },
+      "decodable": true,
+      "available": true,
+      "elapsedSeconds": 20.09,
+      "titleProvidedByUser": "沧海一声笑",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "fullDecodeVerified": true,
+      "decodeErrors": "",
+      "temporaryVerifiedAudioPath": "/tmp/music303-3312527187.bin",
+      "lastValidatedStatus": "audio-confirmed"
+    },
+    {
+      "id": 2628466650,
+      "artistProvidedByUser": "许镜清",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=2628466650.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "audio/mpeg; charset=UTF-8",
+      "finalURL": "http://m701.music.126.net/20261101121707/088a1197120cace0279fc74e27034b31/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/46008599151/1172/2039/f871/980f1cb094066e2217436220947ad965.mp3?vuutv=IhMbRl+0VV8/kxCyo4kzdnqxvS8gKdiM44zszx+2jD/1Kd+8aeTd0C51mBCBXmyevG1am9EUSxwNHMm8b/uEk5vubaCNzXtYenkzOoDKE3ArnpV55ZHyZRp22zqnmmVJznkCYupjNgEwwtOYW4zMNw==&cdntag=bWFyaz1vc193ZWIscXVhbGl0eV9zdGFuZGFyZA",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=2628466650.mp3",
+          "to": "http://m701.music.126.net/20261101121707/088a1197120cace0279fc74e27034b31/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/46008599151/1172/2039/f871/980f1cb094066e2217436220947ad965.mp3?vuutv=IhMbRl+0VV8/kxCyo4kzdnqxvS8gKdiM44zszx+2jD/1Kd+8aeTd0C51mBCBXmyevG1am9EUSxwNHMm8b/uEk5vubaCNzXtYenkzOoDKE3ArnpV55ZHyZRp22zqnmmVJznkCYupjNgEwwtOYW4zMNw==&cdntag=bWFyaz1vc193ZWIscXVhbGl0eV9zdGFuZGFyZA"
+        }
+      ],
+      "bytes": 1857454,
+      "sha256": "7799a9e6ea536fcccac3f322a4cb28c330df646d01915bca747f523282730ea6",
+      "signature": "ID3",
+      "truncated": false,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "codec_type": "audio",
+            "sample_rate": "44100",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "duration": "116.062041"
+        }
+      },
+      "decodable": true,
+      "available": true,
+      "elapsedSeconds": 18.46,
+      "titleProvidedByUser": "云宫迅音",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "fullDecodeVerified": true,
+      "decodeErrors": "",
+      "temporaryVerifiedAudioPath": "/tmp/music303-2628466650.bin",
+      "lastValidatedStatus": "audio-confirmed"
+    },
+    {
+      "id": 1695922,
+      "artistProvidedByUser": "马克西姆",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=1695922.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf8",
+      "finalURL": "https://music.163.com/404",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=1695922.mp3",
+          "to": "http://music.163.com/404"
+        },
+        {
+          "status": 302,
+          "from": "http://music.163.com/404",
+          "to": "https://music.163.com/404"
+        }
+      ],
+      "bytes": 107191,
+      "sha256": "9b057eae7b5bcacaad4a6de784ba31e839629077cc20485054d1a908c0e04af3",
+      "signature": null,
+      "truncated": false,
+      "decodable": false,
+      "responsePrefix": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"baidu_ssp_verify\" cont",
+      "available": false,
+      "elapsedSeconds": 25.96,
+      "titleProvidedByUser": "出埃及记",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "lastValidatedStatus": "unavailable-html-error"
+    },
+    {
+      "id": 1915256246,
+      "artistProvidedByUser": "马克西姆",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=1915256246.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf8",
+      "finalURL": "https://music.163.com/404",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=1915256246.mp3",
+          "to": "http://music.163.com/404"
+        },
+        {
+          "status": 302,
+          "from": "http://music.163.com/404",
+          "to": "https://music.163.com/404"
+        }
+      ],
+      "bytes": 107191,
+      "sha256": "cb4a9a4a19d9653930658833affff686cbff22c23108f23e838f2e3fc79c8ff1",
+      "signature": null,
+      "truncated": false,
+      "decodable": false,
+      "responsePrefix": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"baidu_ssp_verify\" cont",
+      "available": false,
+      "elapsedSeconds": 26.36,
+      "titleProvidedByUser": "野蜂飞舞",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "lastValidatedStatus": "unavailable-html-error"
+    },
+    {
+      "id": 2003977754,
+      "artistProvidedByUser": "齐柏林飞船",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=2003977754.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf8",
+      "finalURL": "https://music.163.com/404",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=2003977754.mp3",
+          "to": "http://music.163.com/404"
+        },
+        {
+          "status": 302,
+          "from": "http://music.163.com/404",
+          "to": "https://music.163.com/404"
+        }
+      ],
+      "bytes": 107191,
+      "sha256": "76c0450893141d8e7076ca90ccdd3528cdf59db66c29548e25014cd60c2d223a",
+      "signature": null,
+      "truncated": false,
+      "decodable": false,
+      "responsePrefix": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"baidu_ssp_verify\" cont",
+      "available": false,
+      "elapsedSeconds": 23.47,
+      "titleProvidedByUser": "Moby Dick",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "lastValidatedStatus": "unavailable-html-error"
+    },
+    {
+      "id": 2630864134,
+      "artistProvidedByUser": "山西绛州鼓乐",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=2630864134.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf8",
+      "finalURL": "https://music.163.com/404",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=2630864134.mp3",
+          "to": "http://music.163.com/404"
+        },
+        {
+          "status": 302,
+          "from": "http://music.163.com/404",
+          "to": "https://music.163.com/404"
+        }
+      ],
+      "bytes": 107191,
+      "sha256": "127c08001d5824d3168ba01eaae94588bad940fc22f2f1109058b83b3e849e69",
+      "signature": null,
+      "truncated": false,
+      "decodable": false,
+      "responsePrefix": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"baidu_ssp_verify\" cont",
+      "available": false,
+      "elapsedSeconds": 21.92,
+      "titleProvidedByUser": "滚核桃",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "lastValidatedStatus": "unavailable-html-error"
+    },
+    {
+      "id": 490637515,
+      "artistProvidedByUser": "",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=490637515.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "audio/mpeg; charset=UTF-8",
+      "finalURL": "http://m10.music.126.net/20261101121729/72a9c82fe24e462c5ec3559ffb86f26d/ymusic/fecb/8a00/c1f7/ba410f20bd67ab743afa07789ab52329.mp3?vuutv=XHETyhZLXb8jINs6Eapwgqy9OMX9RlUEUQVSNY3DeVL25SqWh9z8m3UAbtt0Ls1IZGdyEwydjyzd6igA4zDXNsTkFwh7+rjtivQA70KbH1NQvelplZ7ERSdtZl4cvDV1ZIdNlXdUv6XMmaoFqWcyiA==&cdntag=bWFyaz1vc193ZWIscXVhbGl0eV9zdGFuZGFyZA",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=490637515.mp3",
+          "to": "http://m10.music.126.net/20261101121729/72a9c82fe24e462c5ec3559ffb86f26d/ymusic/fecb/8a00/c1f7/ba410f20bd67ab743afa07789ab52329.mp3?vuutv=XHETyhZLXb8jINs6Eapwgqy9OMX9RlUEUQVSNY3DeVL25SqWh9z8m3UAbtt0Ls1IZGdyEwydjyzd6igA4zDXNsTkFwh7+rjtivQA70KbH1NQvelplZ7ERSdtZl4cvDV1ZIdNlXdUv6XMmaoFqWcyiA==&cdntag=bWFyaz1vc193ZWIscXVhbGl0eV9zdGFuZGFyZA"
+        }
+      ],
+      "bytes": 2097781,
+      "sha256": "9e1e1f57f5643ed2c292076d5851d8be37ed9ed1cf99fbf2afddbc219c41e4f9",
+      "signature": "ID3",
+      "truncated": false,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "codec_type": "audio",
+            "sample_rate": "44100",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "duration": "131.082449"
+        }
+      },
+      "decodable": true,
+      "available": true,
+      "elapsedSeconds": 12.65,
+      "titleProvidedByUser": "十面埋伏",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "fullDecodeVerified": true,
+      "decodeErrors": "",
+      "temporaryVerifiedAudioPath": "/tmp/music303-490637515.bin",
+      "lastValidatedStatus": "audio-confirmed"
+    },
+    {
+      "id": 128669,
+      "artistProvidedByUser": "",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=128669.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf8",
+      "finalURL": "https://music.163.com/404",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=128669.mp3",
+          "to": "http://music.163.com/404"
+        },
+        {
+          "status": 302,
+          "from": "http://music.163.com/404",
+          "to": "https://music.163.com/404"
+        }
+      ],
+      "bytes": 107191,
+      "sha256": "abef02585e80da556d3215d240ec31b07ce3a32265c66423f18b5de89d6975d2",
+      "signature": null,
+      "truncated": false,
+      "decodable": false,
+      "responsePrefix": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"baidu_ssp_verify\" cont",
+      "available": false,
+      "elapsedSeconds": 15.79,
+      "titleProvidedByUser": "小刀会序曲",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "lastValidatedStatus": "unavailable-html-error"
+    },
+    {
+      "id": 62567,
+      "artistProvidedByUser": "",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=62567.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf8",
+      "finalURL": "https://music.163.com/404",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=62567.mp3",
+          "to": "http://music.163.com/404"
+        },
+        {
+          "status": 302,
+          "from": "http://music.163.com/404",
+          "to": "https://music.163.com/404"
+        }
+      ],
+      "bytes": 107191,
+      "sha256": "6cf02fc075ad8b2e80ed70d40c7a8318cb251cb6c3c9f5ff6d6c569f226f1da6",
+      "signature": null,
+      "truncated": false,
+      "decodable": false,
+      "responsePrefix": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"baidu_ssp_verify\" cont",
+      "available": false,
+      "elapsedSeconds": 20.61,
+      "titleProvidedByUser": "渔舟唱晚",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "lastValidatedStatus": "unavailable-html-error"
+    },
+    {
+      "id": 2063436719,
+      "artistProvidedByUser": "",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=2063436719.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf8",
+      "finalURL": "https://music.163.com/404",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=2063436719.mp3",
+          "to": "http://music.163.com/404"
+        },
+        {
+          "status": 302,
+          "from": "http://music.163.com/404",
+          "to": "https://music.163.com/404"
+        }
+      ],
+      "bytes": 107191,
+      "sha256": "6cf02fc075ad8b2e80ed70d40c7a8318cb251cb6c3c9f5ff6d6c569f226f1da6",
+      "signature": null,
+      "truncated": false,
+      "decodable": false,
+      "responsePrefix": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"baidu_ssp_verify\" cont",
+      "available": false,
+      "elapsedSeconds": 17.03,
+      "titleProvidedByUser": "将进酒",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "lastValidatedStatus": "unavailable-html-error"
+    },
+    {
+      "id": 1859192821,
+      "artistProvidedByUser": "",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=1859192821.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "audio/mpeg; charset=UTF-8",
+      "finalURL": "http://m701.music.126.net/20261101121747/33a8ae7150f26f9f1c29da4bd9da4b93/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/9739104314/2ac9/bf2d/ce54/6fce9a04fd98cc9aed25918fa5ce0f07.mp3?vuutv=61l+isjeZlSa/u/yhajlWC34ivP1mjav0cRuThvujDi7igysWJZmKaesZdeGlr1tTv2mI6ThPd3mm/5g1UhlwRjJrAANG5n2EVOl/d/k+wI3+M6keNoKt0x5OIn7QhOPFt7ksF2KS1xBSsOwhDVZpg==&cdntag=bWFyaz1vc193ZWIscXVhbGl0eV9zdGFuZGFyZA",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=1859192821.mp3",
+          "to": "http://m701.music.126.net/20261101121747/33a8ae7150f26f9f1c29da4bd9da4b93/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/9739104314/2ac9/bf2d/ce54/6fce9a04fd98cc9aed25918fa5ce0f07.mp3?vuutv=61l+isjeZlSa/u/yhajlWC34ivP1mjav0cRuThvujDi7igysWJZmKaesZdeGlr1tTv2mI6ThPd3mm/5g1UhlwRjJrAANG5n2EVOl/d/k+wI3+M6keNoKt0x5OIn7QhOPFt7ksF2KS1xBSsOwhDVZpg==&cdntag=bWFyaz1vc193ZWIscXVhbGl0eV9zdGFuZGFyZA"
+        }
+      ],
+      "bytes": 3681010,
+      "sha256": "40469c6a442774880d94f3e50a49d221c85bb6c28be2555320af40ac4a0a84c3",
+      "signature": "ID3",
+      "truncated": false,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "codec_type": "audio",
+            "sample_rate": "44100",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "duration": "230.034286"
+        }
+      },
+      "decodable": true,
+      "available": true,
+      "elapsedSeconds": 17.22,
+      "titleProvidedByUser": "定风波",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "fullDecodeVerified": true,
+      "decodeErrors": "",
+      "temporaryVerifiedAudioPath": "/tmp/music303-1859192821.bin",
+      "lastValidatedStatus": "audio-confirmed"
+    },
+    {
+      "id": 1954611957,
+      "artistProvidedByUser": "",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=1954611957.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf8",
+      "finalURL": "https://music.163.com/404",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=1954611957.mp3",
+          "to": "http://music.163.com/404"
+        },
+        {
+          "status": 302,
+          "from": "http://music.163.com/404",
+          "to": "https://music.163.com/404"
+        }
+      ],
+      "bytes": 107191,
+      "sha256": "d275302bc1f7871f05ed96c0eedf6d5cd2cadafcefb61fb0d90f5fc1cfca86d9",
+      "signature": null,
+      "truncated": false,
+      "decodable": false,
+      "responsePrefix": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"baidu_ssp_verify\" cont",
+      "available": false,
+      "elapsedSeconds": 16.8,
+      "titleProvidedByUser": "高山流水",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "lastValidatedStatus": "unavailable-html-error"
+    },
+    {
+      "id": 1895373087,
+      "artistProvidedByUser": "",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=1895373087.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf8",
+      "finalURL": "https://music.163.com/404",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=1895373087.mp3",
+          "to": "http://music.163.com/404"
+        },
+        {
+          "status": 302,
+          "from": "http://music.163.com/404",
+          "to": "https://music.163.com/404"
+        }
+      ],
+      "bytes": 107191,
+      "sha256": "1e21069a62af43ab20cb3ab1e221df2de540fb3c2ceeaaad79ec1dc5e0929e9a",
+      "signature": null,
+      "truncated": false,
+      "decodable": false,
+      "responsePrefix": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"baidu_ssp_verify\" cont",
+      "available": false,
+      "elapsedSeconds": 29.48,
+      "titleProvidedByUser": "春江花月夜",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "lastValidatedStatus": "unavailable-html-error"
+    },
+    {
+      "id": 396334,
+      "artistProvidedByUser": "",
+      "requestedURL": "https://music.163.com/song/media/outer/url?id=396334.mp3",
+      "checkedAt": "2026-11-01",
+      "providedByUser": true,
+      "httpStatus": 200,
+      "contentType": "text/html;charset=utf8",
+      "finalURL": "https://music.163.com/404",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://music.163.com/song/media/outer/url?id=396334.mp3",
+          "to": "http://music.163.com/404"
+        },
+        {
+          "status": 302,
+          "from": "http://music.163.com/404",
+          "to": "https://music.163.com/404"
+        }
+      ],
+      "bytes": 107191,
+      "sha256": "f58673e151c06378d87b97ccd3fb27ab52d8d08abfef334cb9f2e2b6a5cf9920",
+      "signature": null,
+      "truncated": false,
+      "decodable": false,
+      "responsePrefix": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"baidu_ssp_verify\" cont",
+      "available": false,
+      "elapsedSeconds": 29.49,
+      "titleProvidedByUser": "广陵散",
+      "rights": "User-provided public source; original recording rights retained; no open license inferred.",
+      "lastValidatedStatus": "unavailable-html-error"
+    }
+  ],
+  "unificationRecommendations": {
+    "currentImplementation": [
+      {
+        "path": "writing-music.js",
+        "finding": "Own hardcoded tracks array uses key; four environmental tracks added separately. play constructs music/<key>.mp3 rather than reading an explicit source. One Audio instance is shared with live/process recording through WritingMusic.audio."
+      },
+      {
+        "path": "remotion-studio/src/music.mjs",
+        "finding": "Second hardcoded array uses id and different title/credit fields. Four requested song names are requiresImport301 placeholders whose musicSource returns null. Source resolver guesses video-music295 or directory plus id and duration, with 180/300-second films mapped to120-second excerpts."
+      },
+      {
+        "path": "remotion-studio/src/showcase.jsx",
+        "finding": "Uses Audio loop; long films can reuse a short verified excerpt without loading every duration. Preview and export should keep the same selected recording and fade/volume rules."
+      },
+      {
+        "path": "revision65.js / revision117.js / media-studio235.js",
+        "finding": "Live/photo recording music pickers derive from writingTrack, but some panels snapshot options at initialization. An asynchronously changed library needs a library-ready/change event or data must be bundled before initialization."
+      },
+      {
+        "path": "process-video.js",
+        "finding": "MediaElementAudioSourceNode uses WritingMusic.audio; remote playback alone does not establish cross-origin recording permission. Same-origin verified assets avoid silent Web Audio/CORS failures."
+      }
+    ],
+    "recommendedSingleSource": {
+      "location": "One repository JSON or pure JS data module consumed by both builds; no duplicate manually maintained lists.",
+      "schema": {
+        "id": "stable canonical id, e.g. netease-3312527187",
+        "aliases": [
+          "old writing key or video id for preference migration"
+        ],
+        "title": "display title",
+        "artist": "verified artist, otherwise explicitly user-provided",
+        "category": "Chinese/classical/nature/user",
+        "sourceURL": "stable user-provided source URL",
+        "sourcePage": "recording information page where known",
+        "rights": "original rights/verified license",
+        "licenseURL": "only if verified",
+        "credit": "one shared attribution string",
+        "availability": "verified-local / verified-remote / unavailable / user-import",
+        "playbackSrc": "explicit same-origin full MP3 or verified selected source",
+        "renderSrc": "explicit same-origin AAC excerpt or selected local blob",
+        "durationSeconds": "probe duration",
+        "sha256": "hash of the actual validated bytes",
+        "checkedAt": "timestamp",
+        "defaults": "per-surface default is a preference, not a duplicated playlist"
+      }
+    },
+    "implementationOrder": [
+      "Build a single validated registry, preserving all current published audio files and existing ids with aliases. Add only four confirmed recordings to playable choices; show the other ten as unavailable with a truthful explanation and import action rather than pretending selection plays music.",
+      "Replace path construction in writing-music.js and musicSource with explicit registry sources. Let live/photo/scene reuse WritingMusic.audio and the same track ids. Keep documentary default qiannian.",
+      "Generate the registry into both immutable bundles at build time to avoid a network prerequisite for the first writable canvas. If runtime loading is used, perform only when opening the music UI and refresh snapshot pickers with an explicit event.",
+      "Use stable user-provided URLs as provenance; do not persist signed music.126.net redirect URLs as future playback sources because they expire. A source becoming unavailable must give a visible status, never silently substitute another recording.",
+      "Use one short verified local AAC excerpt plus Audio loop for long documentary durations. Apply preview/export attribution and selected-recording semantics consistently.",
+      "Keep custom audio local in DraftStore; preserve explicit user play, paused restore, visibility pause, sequence/random behavior, and no install-time music prefetch or background retries."
+    ],
+    "verificationChecks": [
+      "tests/interaction188.test.mjs: no network/audio request before explicit play",
+      "all selected registry entries resolve to actual bytes and audio signatures",
+      "live/process recording still shares WritingMusic.audio",
+      "documentary preview/export use the identical selected track",
+      "unavailable entry produces status and never passes null/HTML into Audio",
+      "library-ready event refreshes snapshot pickers",
+      "five-language display labels synchronized; ids and source URLs unchanged"
+    ]
+  },
+  "limits": [
+    "Availability is a point-in-time network check, not a guarantee of continuing source availability.",
+    "Names/artists in this audit are supplied by user unless separately verified.",
+    "A publicly readable recording is not thereby CC0 or an open-license recording; preserve original rights attribution."
+  ]
+}
