@@ -1,35 +1,34 @@
 export const TRANSITIONS=[{id:'shadow',label:'阴影渐变'},{id:'push',label:'平稳推近 · Zoom in'},{id:'pull',label:'平稳拉远 · Zoom out'},{id:'dolly',label:'希区柯克式变焦'},{id:'dissolve',label:'柔和叠化'},{id:'fade',label:'黑场淡入淡出'},{id:'match',label:'匹配剪辑'},{id:'combo',label:'组合运镜'}];
 export const clamp=n=>Math.max(0,Math.min(1,n));
 export const ease=n=>{n=clamp(n);return n*n*(3-2*n)};
-function region(chapters,start,end){const list=chapters.filter(c=>c.end>start&&c.start<end);if(!list.length)return{x:.5,y:.5,w:1,h:1};let x=1,y=1,r=0,b=0;for(const c of list){x=Math.min(x,c.x-c.w/2);y=Math.min(y,c.y-c.h/2);r=Math.max(r,c.x+c.w/2);b=Math.max(b,c.y+c.h/2)}return{x:clamp((x+r)/2),y:clamp((y+b)/2),w:Math.max(.03,r-x),h:Math.max(.03,b-y)}}
+const full=()=>({x:.5,y:.5,w:1,h:1});
+function region(chapters,start,end){const list=chapters.filter(c=>c.end>start&&c.start<end);if(!list.length)return full();let x=1,y=1,r=0,b=0;for(const c of list){x=Math.min(x,c.x-c.w/2);y=Math.min(y,c.y-c.h/2);r=Math.max(r,c.x+c.w/2);b=Math.max(b,c.y+c.h/2)}return{x:clamp((x+r)/2),y:clamp((y+b)/2),w:Math.max(.03,r-x),h:Math.max(.03,b-y)}}
 export function scenePlan(duration,fps,chapters=[]){
- const intro=1+2*fps,outro=duration-2*fps,body=outro-intro;
- const hero=Math.min(Math.round(2.8*fps),Math.floor(body*.28)),hold=Math.min(Math.round(2.2*fps),Math.floor(body*.17));
- const writing=body-hero-hold,count=Math.max(1,Math.min(32,Math.ceil(writing/(3.6*fps)))),scenes=[];
- scenes.push({id:0,kind:'hero',from:intro,to:intro+hero,start:1,end:1,region:{x:.5,y:.5,w:1,h:1},scale:1});
- for(let i=0;i<count;i++){const start=i/count,end=(i+1)/count,box=region(chapters,start,end);scenes.push({id:i+1,kind:'writing',from:intro+hero+Math.round(i*writing/count),to:intro+hero+Math.round((i+1)*writing/count),start,end,region:box,scale:i%5===0?1:Math.min(5.5,Math.max(2.4,1.1/Math.max(box.w,box.h)))});}
- scenes.push({id:count+1,kind:'full',from:outro-hold,to:outro,start:1,end:1,region:{x:.5,y:.5,w:1,h:1},scale:1});return{scenes,intro,outro};
+ const intro=1+2*fps,outro=duration-2*fps,body=outro-intro,hero=Math.min(Math.round(2.8*fps),Math.floor(body*.28)),hold=Math.min(Math.round(2.2*fps),Math.floor(body*.17));
+ const writingStart=intro+hero,writingEnd=outro-hold,writing=writingEnd-writingStart,count=Math.max(1,Math.min(32,Math.ceil(writing/(7.5*fps)))),scenes=[];
+ scenes.push({id:0,kind:'hero',from:intro,to:writingStart,start:1,end:1,region:full(),scale:1});
+ for(let i=0;i<count;i++){const start=i/count,end=(i+1)/count;scenes.push({id:i+1,kind:'writing',from:writingStart+Math.round(i*writing/count),to:writingStart+Math.round((i+1)*writing/count),start,end,region:region(chapters,start,end),scale:1});}
+ scenes.push({id:count+1,kind:'full',from:writingEnd,to:outro,start:1,end:1,region:full(),scale:1});
+ // Overlapping broad windows keep the pen inside a generous frame; interpolation is pure and deterministic.
+ const focus=Array.from({length:65},(_,i)=>({p:i/64,...region(chapters,Math.max(0,i/64-.08),Math.min(1,i/64+.08))}));
+ const bounds=region(chapters,0,1),edge=Math.max(Math.abs(bounds.x-.5)+bounds.w/2,Math.abs(bounds.y-.5)+bounds.h/2),maxScale=Math.max(1,Math.min(1.085,1/(edge*2+.06)));return{scenes,intro,outro,writingStart,writingEnd,focus,maxScale};
 }
 export function sceneFrame(frame,plan,fps,mode='push'){
- const scene=plan.scenes.find(s=>frame>=s.from&&frame<s.to)||plan.scenes.at(-1),index=scene.id;
- const t=clamp((frame-scene.from)/Math.max(1,scene.to-scene.from-1));
- const selected=mode==='mixed'?'combo':mode;
- const blend=Math.min(.4*fps,(scene.to-scene.from)*.18),enter=clamp((frame-scene.from)/Math.max(1,blend));
- let factor=1,shot={...scene,region:{...scene.region}};if(scene.kind==='writing'){
- const close=Math.min(6,Math.max(3,scene.scale));
- if(selected==='push'||selected==='dolly'){shot.scale=1+(close-1)*ease(t);factor=1;}
- if(selected==='pull')shot.scale=close-(close-1)*ease(t);
- if(selected==='combo'){
-  const cycle=(frame-plan.intro)%(18*fps)/(18*fps);
-  // Fixed 18-second sequence: full view → first character → down to third → full view.
-  const writing=plan.scenes.filter(s=>s.kind==='writing'),base=writing[Math.min(writing.length-1,Math.floor((frame-plan.intro)/(18*fps))*3)]||scene;
-  const target=writing[Math.min(writing.length-1,writing.indexOf(base)+2)]||base;
-  shot.region={...base.region};
-  if(cycle<.3)shot.scale=1+(close-1)*ease(cycle/.3);
-  else if(cycle<.76){shot.scale=close;const travel=ease((cycle-.3)/.46);shot.region.x=base.region.x+(target.region.x-base.region.x)*travel;shot.region.y=base.region.y+(target.region.y-base.region.y)*travel;}
-  else{shot.scale=close-(close-1)*ease((cycle-.76)/.24);shot.region={...target.region};}
+ const scene=plan.scenes.find(s=>frame>=s.from&&frame<s.to)||plan.scenes.at(-1),index=scene.id,t=clamp((frame-scene.from)/Math.max(1,scene.to-scene.from-1));
+ const progress=clamp((frame-plan.writingStart)/Math.max(1,plan.writingEnd-plan.writingStart)),selected=mode==='mixed'?'combo':mode;
+ const index302=Math.min(63,Math.floor(progress*64)),a=plan.focus[index302],b=plan.focus[index302+1],mix=ease(progress*64-index302),focus={x:a.x+(b.x-a.x)*mix,y:a.y+(b.y-a.y)*mix};
+ const ramp=ease(progress/.22),finish=ease((progress-.78)/.22),envelope=ramp*(1-finish),shot={...scene,region:{...full(),x:.5+(focus.x-.5)*envelope*.1,y:.5+(focus.y-.5)*envelope*.1}};
+ let scale=1;
+ if(scene.kind==='writing'){
+  if(selected==='push')scale=1+.065*ease(progress);
+  else if(selected==='pull')scale=1+.065*(1-ease(progress));
+  else if(selected==='dolly')scale=1+.045*Math.sin(Math.PI*progress);
+  else if(selected==='combo'){const keys=[1,1.065,1.025,1.085,1.04,1],at=Math.min(4,Math.floor(progress*5));scale=keys[at]+(keys[at+1]-keys[at])*ease(progress*5-at);}
+  else scale=1+.025*Math.sin(Math.PI*progress);
+  // Smooth lead-in and landing; no per-scene zoom reset or cycling camera position.
+  scale=1+(scale-1)*envelope;
  }
- }
- const distance=Math.min(frame-scene.from,scene.to-frame),shade=(selected==='dissolve'||selected==='match')?0:index===0?1-ease((scene.to-frame)/blend):1-ease(distance/blend);
- return{scene:shot,previous:plan.scenes[index-1],progress:scene.start+(scene.end-scene.start)*t,t,mode:selected,factor,shade:clamp(shade),blend:1-ease(enter)};
+ shot.scale=Math.min(scale,plan.maxScale);
+ const blend=Math.min(.55*fps,(scene.to-scene.from)*.2),enter=clamp((frame-scene.from)/Math.max(1,blend));
+ return{scene:shot,previous:null,progress:scene.kind==='hero'||scene.kind==='full'?1:progress,t,mode:selected,factor:1,shade:0,blend:1-ease(enter)};
 }

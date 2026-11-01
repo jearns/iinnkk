@@ -35,8 +35,10 @@ function Studio() {
   const [customMusic295,setCustomMusic295]=useState(null);
   const customURL295=useRef(null);
   const selectedTrack = music==='custom295'&&customMusic295?{title:customMusic295.name,credit:'用户本机导入音频'}:musicTrack(music);
-  const sourceMusic295=()=>music==='custom295'?customURL295.current:musicSource(music,durationSeconds);
+  const sourceMusic295=()=>musicURLs302.current[music]||(music==='custom295'?customURL295.current:musicSource(music,durationSeconds));
   const [quality, setQuality] = useState('full');
+  const [musicLibrary302,setMusicLibrary302]=useState({});const musicURLs302=useRef({});const importTrack302=useRef(null);
+  useEffect(()=>{let active=true;window.DraftStore?.get('documentary-music302').then(rows=>{if(!active)return;const next={};for(const [id,row]of Object.entries(rows||{})){if(row.file instanceof Blob){musicURLs302.current[id]=URL.createObjectURL(row.file);next[id]=row}}setMusicLibrary302(next)}).catch(()=>{});return()=>{active=false;for(const url of Object.values(musicURLs302.current))URL.revokeObjectURL(url)}},[]);
   const [busy, setBusy] = useState(false);
   const [checking, setChecking] = useState(false);const [stylePreparing297,setStylePreparing297]=useState(false);
   const [status, setStatus] = useState({key: '从我的作品选择一幅保存了笔画轨迹的作品。'});
@@ -48,7 +50,7 @@ function Studio() {
   const language = window.I18n218?.language || 'zh';
   const heading = t('手筆 · 纪录大片');
   const format=videoFormat(artworkRatio(work?.draft,replay));
-  const inputProps=useMemo(()=>({surface:replay?.surface,artwork:poster,title,signature,music,renderStyle296,background296,musicUrl295:music==='custom295'?customURL295.current:null,transition}),[poster,replay,title,signature,music,transition,customMusic295,renderStyle296,background296]);
+  const inputProps=useMemo(()=>({surface:replay?.surface,artwork:poster,title,signature,music,renderStyle296,background296,musicUrl295:musicURLs302.current[music]||(music==='custom295'?customURL295.current:null),transition}),[poster,replay,title,signature,music,transition,customMusic295,musicLibrary302,renderStyle296,background296]);
   const durationInFrames=durationSeconds*VIDEO_FPS;
 
 
@@ -114,7 +116,7 @@ function Studio() {
 
   function stopAudition() {musicRef.current?.pause(); setAudition(false);}
   async function auditionMusic() {
-    if (!selectedTrack) return;
+    if (!selectedTrack) return;if(!sourceMusic295()){setStatus({key:'这首配乐尚未添加音源，请从本机配乐库添加。'});return;}
     if (audition) return stopAudition();
     playerRef.current?.pause();
     if (!musicRef.current) {musicRef.current = new Audio(); musicRef.current.volume = 1; musicRef.current.onended = () => setAudition(false);}
@@ -129,13 +131,14 @@ function Studio() {
   }, [replay, durationSeconds]);
 
   useEffect(()=>()=>{if(customURL295.current)URL.revokeObjectURL(customURL295.current)},[]);
-  function importMusic295(event){const file=event.target.files?.[0];if(!file)return;stopAudition();if(customURL295.current)URL.revokeObjectURL(customURL295.current);customURL295.current=URL.createObjectURL(file);setCustomMusic295({file,name:file.name});setMusic('custom295');event.target.value='';}
+  async function importMusic295(event){const file=event.target.files?.[0];if(!file)return;stopAudition();const id=importTrack302.current||'custom295';importTrack302.current=null;if(id==='custom295'){if(customURL295.current)URL.revokeObjectURL(customURL295.current);customURL295.current=URL.createObjectURL(file);setCustomMusic295({file,name:file.name});setMusic(id);}else{if(musicURLs302.current[id])URL.revokeObjectURL(musicURLs302.current[id]);musicURLs302.current[id]=URL.createObjectURL(file);const row={file,name:file.name,title:musicTrack(id)?.title,updated:Date.now()},next={...musicLibrary302,[id]:row};setMusicLibrary302(next);setMusic(id);try{await window.DraftStore.set('documentary-music302',next);setStatus({key:'配乐已加入本机配乐库，下次打开仍可使用。'})}catch{setStatus({key:'音源可在本次使用，未能保存到本机配乐库。'})}}event.target.value='';}
+
   useEffect(()=>()=>backgroundRef296.current?.close(),[]);
   async function chooseBackground296(kind,event){playerRef.current?.pause();stopAudition();try{let selected;if(kind==='catalogue'){const {pickCatalogue296}=await import('../../release296/catalogue.mjs');selected=await pickCatalogue296();if(!selected)return;}else{let file=event?.target.files?.[0];if(!file)return;if(file.type.startsWith('video/')){const {editVideos297}=await import('../../release297/video.mjs');file=await editVideos297([...event.target.files].filter(x=>x.type.startsWith('video/')));if(!file){event.target.value='';return}}selected={file,kind:file.type.startsWith('video/')?'video':'image',title:file.name};event.target.value='';}const {prepareBackground296}=await import('./background.mjs');const next=await prepareBackground296(selected);backgroundRef296.current?.close();backgroundRef296.current=next;setBackground296(next);}catch(e){setStatus({key:'背景读取未完成：',detail:e.message})}}
   async function capturePoster296(surface=replay.surface){const im=await surface.hero({style:renderStyle296,transparent:!!background296});const c=document.createElement('canvas');c.width=format.width;c.height=format.height;const t=c.getContext('2d');t.fillStyle='#08090b';t.fillRect(0,0,c.width,c.height);if(background296){const bg=await background296.frame(0,showOriginal295),k=Math.max(c.width/bg.width,c.height/bg.height);t.drawImage(bg,(c.width-bg.width*k)/2,(c.height-bg.height*k)/2,bg.width*k,bg.height*k)}const k=Math.min(c.width/im.width,c.height/im.height);t.drawImage(im,(c.width-im.width*k)/2,(c.height-im.height*k)/2,im.width*k,im.height*k);return new Promise((resolve,reject)=>c.toBlob(b=>b?resolve(b):reject(Error('作品封面未能生成')),'image/jpeg',.94))}
   useEffect(()=>{if(!replay)return;let active=true;capturePoster296().then(blob=>{if(!active)return;const url=URL.createObjectURL(blob);if(posterRef.current)URL.revokeObjectURL(posterRef.current);posterRef.current=url;setPoster(url)}).catch(()=>{});return()=>active=false},[replay,renderStyle296,background296]);
   async function exportVideo() {
-    if (!replay?.surface || busy || checking || stylePreparing297) return;
+    if (!replay?.surface || busy || checking || stylePreparing297) return;if(selectedTrack?.requiresImport301&&!sourceMusic295()){setPanel301('音乐');setStatus({key:'这首配乐尚未添加音源，请从本机配乐库添加。'});return;}
     playerRef.current?.pause(); stopAudition();
     setBusy(true);
     const controller = new AbortController();
@@ -144,19 +147,20 @@ function Studio() {
       setStatus({key:'正在加载导出组件…'});
       const {canRenderMediaOnWeb,renderMediaOnWeb,ShoubiShowcase,coverMetadata,addMusic}=await import('./export-engine.mjs');
       if(controller.signal.aborted)throw new Error('cancelled');
-      const composition={id:'ShoubiDocumentary',component:ShoubiShowcase,durationInFrames,fps:VIDEO_FPS,width:format.width,height:format.height};
-      const scale=quality==='compact'?.5:1;
+      const output302={width:format.width*(quality==='ultra'?2:1),height:format.height*(quality==='ultra'?2:1)};
+      const composition={id:'ShoubiDocumentary',component:ShoubiShowcase,durationInFrames,fps:VIDEO_FPS,...output302};
+      const scale=1;
       setStatus({key: '正在检测本机 MP4 编码能力…'});
       const audioOptions = {muted: true};
-      const support = await canRenderMediaOnWeb({width: format.width, height: format.height, scale, container: 'mp4', videoCodec: 'h264', ...audioOptions});
-      if (!support.canRender) throw new Error('此浏览器暂不支持 MP4 导出，请尝试其他浏览器。');
+      const support = await canRenderMediaOnWeb({width:output302.width,height:output302.height,scale, container: 'mp4', videoCodec: 'h264', ...audioOptions});
+      if (!support.canRender) throw new Error(quality==='ultra'?'当前设备不支持4K合成，请切回1080高清后导出。':'此浏览器暂不支持 MP4 导出，请尝试其他浏览器。');
       if (controller.signal.aborted) throw new Error('cancelled');
-      exportReplay297=await replay.surface.fork297(quality==='compact'?960:1920,renderStyle296);
+      exportReplay297=await replay.surface.fork297(quality==='ultra'?3840:1920,renderStyle296);
       const coverURL296=URL.createObjectURL(await capturePoster296(exportReplay297.surface));let metadata;try{metadata = await coverMetadata(coverURL296, {signal: controller.signal, title, signature, credit: selectedTrack?.credit || '', width:format.width, height:format.height});}finally{URL.revokeObjectURL(coverURL296)}
       const {getBlob} = await renderMediaOnWeb({
         composition, inputProps:{...inputProps,surface:exportReplay297.surface},
         container: 'mp4', videoCodec: 'h264', ...audioOptions, metadata,
-        scale, pageResponsiveness: 'high', videoBitrate: quality === 'compact' ? 'medium' : 'high',
+        scale, pageResponsiveness: 'high', videoBitrate:'high',
         signal: controller.signal,
         onProgress: ({progress}) => {
           if (!controller.signal.aborted) setStatus({key: '正在本机合成视频 {progress}%', progress: Math.round(progress * 100)});
@@ -165,7 +169,7 @@ function Studio() {
       let blob = await getBlob();
       if (selectedTrack) {
         setStatus({key: '正在加入配乐与作品封面…'});
-        let source295=sourceMusic295();if(music==='custom295'){const {compressMusic295}=await import('./custom-music.mjs');source295=await compressMusic295(customMusic295.file,{signal:controller.signal});}blob = await addMusic(blob, source295, {signal: controller.signal, metadata, duration: durationSeconds});
+        let source295=sourceMusic295();if(music==='custom295'||musicLibrary302[music]){const {compressMusic295}=await import('./custom-music.mjs');source295=await compressMusic295(musicLibrary302[music]?.file||customMusic295.file,{signal:controller.signal});}blob = await addMusic(blob, source295, {signal: controller.signal, metadata, duration: durationSeconds});
       }
       if (controller.signal.aborted) throw new Error('cancelled');
       if (!blob?.size) throw new Error('导出结果为空，请重新生成。');
@@ -197,20 +201,18 @@ function Studio() {
       {work && <p className="vsSelected" translate="no">{work.title} · {work.items?work.items.length:strokeCount(work.draft)} {t(work.items?'页 / 幅':'笔')}</p>}
       {checking && <button type="button" className="vsButton" onClick={() => prepareRef.current?.abort()}>{t('取消准备')}</button>}
       {work && !checking && !replay && <button type="button" className="vsButton" onClick={() => setRetry(n => n + 1)}>{t('重新准备')}</button>}
-{panel301==='背景'&&<div className="vsPanel301"><header><strong>{t('背景')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('背景')}<select value={showOriginal295?'show':'clean'} disabled={busy} onChange={e=>{if(e.target.value==='catalogue'){chooseBackground296('catalogue');return}if(e.target.value==='local'){document.getElementById('backgroundLocal301').click();return}backgroundRef296.current?.close();backgroundRef296.current=null;setBackground296(null);setShowOriginal295(e.target.value==='show')}}><option value="clean">{t('原帖无字')}</option><option value="show">{t('原帖有字')}</option><option value="catalogue">{t('全站选帖')}</option><option value="local">{t('本地添加')}</option></select></label>
-      <div className="vsBackground296"><button disabled={busy} onClick={()=>chooseBackground296('catalogue')}>{t('全站名帖背景')}</button><label>{t('拍照作背景')}<input type="file" accept="image/*" capture="environment" disabled={busy} onChange={e=>chooseBackground296('file',e)}/></label><label>{t('本机图片或视频背景')}<input id="backgroundLocal301" type="file" accept="image/*,video/*" multiple disabled={busy} onChange={e=>chooseBackground296('file',e)}/></label>{background296&&<><span translate="no">{background296.title}</span><button disabled={busy} onClick={()=>{backgroundRef296.current?.close();backgroundRef296.current=null;setBackground296(null)}}>{t('恢复作品背景')}</button></>}</div>
-</div>}{panel301==='墨色'&&<div className="vsPanel301"><header><strong>{t('墨色')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('回放墨色')}<select value={inkColor296} disabled={busy} onChange={e=>setInkColor296(e.target.value)}>{[['original','临写原墨色'],['#111111','黑'],['#ffffff','白'],['#b62118','红'],['#ffdd00','黄'],['#703ca0','紫'],['custom','自定义色']].map(([value,label])=><option key={value} value={value}>{t(label)}</option>)}</select>{inkColor296==='custom'&&<input type="color" aria-label={t('自定义墨色')} value={customInk296} disabled={busy} onChange={e=>setCustomInk296(e.target.value)}/>}</label>
+{panel301==='背景'&&<div className="vsPanel301"><header><strong>{t('背景')}</strong><button onClick={()=>setPanel301(null)} aria-label={t('关闭')}>×</button></header><div className="vsBackground302">{[['show','原帖有字'],['clean','原帖无字'],['catalogue','全站选帖'],['local','本地添加']].map(([id,label])=><button key={id} disabled={busy} aria-pressed={id==='show'?showOriginal295&&!background296:id==='clean'?!showOriginal295&&!background296:id==='catalogue'?background296?.kind==='catalogue':background296&&background296.kind!=='catalogue'} onClick={()=>{if(id==='catalogue')chooseBackground296('catalogue');else if(id==='local')document.getElementById('backgroundLocal302').click();else{backgroundRef296.current?.close();backgroundRef296.current=null;setBackground296(null);setShowOriginal295(id==='show')}}}>{t(label)}</button>)}</div><input hidden id="backgroundLocal302" type="file" accept="image/*,video/*" multiple onChange={e=>chooseBackground296('file',e)}/>{background296&&<small translate="no">{background296.title}</small>}</div>}{panel301==='墨色'&&<div className="vsPanel301"><header><strong>{t('墨色')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('回放墨色')}<select value={inkColor296} disabled={busy} onChange={e=>setInkColor296(e.target.value)}>{[['original','临写原墨色'],['#111111','黑'],['#ffffff','白'],['#b62118','红'],['#ffdd00','黄'],['#703ca0','紫'],['custom','自定义色']].map(([value,label])=><option key={value} value={value}>{t(label)}</option>)}</select>{inkColor296==='custom'&&<input type="color" aria-label={t('自定义墨色')} value={customInk296} disabled={busy} onChange={e=>setCustomInk296(e.target.value)}/>}</label>
 </div>}{panel301==='时长'&&<div className="vsPanel301"><header><strong>{t('时长')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('影片时长')}<select value={durationSeconds} onChange={e => {stopAudition(); setDurationSeconds(normalizeDuration(e.target.value));}} disabled={busy}><option value={8}>{t('8 秒')}</option><option value={15}>{t('15 秒')}</option><option value={30}>{t('30 秒')}</option><option value={60}>{t('1 分钟')}</option><option value={120}>{t('2 分钟')}</option><option value={180}>{t('3 分钟')}</option><option value={300}>{t('5 分钟')}</option></select></label>
       <p className="vsTiming291">{t('片头、片尾各 2 秒，其余时间展示作品。')}</p>
       <p className="vsTiming291">{t(format.orientation==='landscape'?'横屏 16:9 · 自动适配横向作品':'竖屏 9:16 · 自动适配纵向作品')}</p>
 </div>}{panel301==='运镜'&&<div className="vsPanel301"><header><strong>{t('运镜')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('镜头转场')}<select value={transition} disabled={busy} onChange={e=>setTransition(e.target.value)}>{TRANSITIONS.map(mode=><option key={mode.id} value={mode.id}>{t(mode.label)}</option>)}</select></label>
       <p className="vsTiming291">{t('长片增加不同字与笔画的取景场景，按原始点位绘制。')}</p>
-</div>}{panel301==='音乐'&&<div className="vsPanel301"><header><strong>{t('音乐')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('背景音乐')}<select value={music} disabled={busy} onChange={e => {stopAudition();if(musicTrack(e.target.value)?.requiresImport301){setStatus({key:'请选择这首曲目的本机音源'});document.getElementById('localMusic301').click();return}setMusic(e.target.value);}}><option value="none">{t('无音乐')}</option>{customMusic295&&<option value="custom295">{customMusic295.name}</option>}{MUSIC_TRACKS.map(track => <option key={track.id} value={track.id}>{t(track.title)}</option>)}</select></label>
-      <label className="vsField">{t('导入本机音乐')}<input type="file" id="localMusic301" accept="audio/*,.m4a,.mp3,.wav,.ogg,.flac" disabled={busy} onChange={importMusic295}/></label>
+</div>}{panel301==='音乐'&&<div className="vsPanel301"><header><strong>{t('音乐')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('背景音乐')}<select value={music} disabled={busy} onChange={e=>{stopAudition();setMusic(e.target.value);if(musicTrack(e.target.value)?.requiresImport301&&!musicURLs302.current[e.target.value])setStatus({key:'这首配乐尚未添加音源，请从本机配乐库添加。'})}}><option value="none">{t('无音乐')}</option>{customMusic295&&<option value="custom295">{customMusic295.name}</option>}{MUSIC_TRACKS.map(track => <option key={track.id} value={track.id}>{t(track.title)}</option>)}</select></label>
+      <button className="vsSecondary292" disabled={busy} onClick={()=>{importTrack302.current=selectedTrack?.requiresImport301?music:'custom295';document.getElementById('localMusic301').click()}}>{t(musicLibrary302[music]?'更换本机音源':'添加本机音源')}</button><input hidden type="file" id="localMusic301" accept="audio/*,.m4a,.mp3,.wav,.ogg,.flac" onChange={importMusic295}/>{musicLibrary302[music]&&<small translate="no">{musicLibrary302[music].name}</small>}{selectedTrack?.requiresImport301&&!musicLibrary302[music]&&<p>{t('已列入配乐清单；原曲外链失效，添加本机录音后即可试听和导出。')}</p>}
       {selectedTrack && <div className="vsMusic292"><button type="button" className="vsSecondary292" disabled={busy} onClick={auditionMusic}>{t(audition ? '停止试听' : '试听')}</button><small>{t('仅加载所选配乐，音轨约每分钟增加 240 KB。')}</small></div>}
-</div>}{panel301==='画质'&&<div className="vsPanel301"><header><strong>{t('画质')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('导出画质')}<select value={quality} onChange={e => setQuality(e.target.value)} disabled={busy || checking}><option value="compact">{t(format.orientation==='landscape'?'轻量 · 960 × 540':'轻量 · 540 × 960')}</option><option value="full">{t(format.orientation==='landscape'?'1080 高清 · 1920 × 1080':'1080 高清 · 1080 × 1920')}</option></select></label>
+</div>}{panel301==='画质'&&<div className="vsPanel301"><header><strong>{t('画质')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header>      <label className="vsField">{t('导出画质')}<select value={quality} onChange={e => setQuality(e.target.value)} disabled={busy || checking}><option value="full">{t(format.orientation==='landscape'?'1080 高清 · 1920 × 1080':'1080 高清 · 1080 × 1920')}</option><option value="ultra">{t(format.orientation==='landscape'?'4K 高清 · 3840 × 2160':'4K 高清 · 2160 × 3840')}</option></select></label>
 </div>}{panel301==='滤镜'&&<div className="vsPanel301"><header><strong>{t('滤镜')}</strong><button onClick={()=>{setPanel301(null);setSpot301(null)}} aria-label={t('关闭')}>×</button></header><div className="vsFilter301">{[['original','原片'],['veil','蒙板'],['noir','黑白'],['blur','虚化'],['hd','高清']].map(([id,label])=><button key={id} onClick={()=>{setSpot301(id==='noir'?'colorSpots':id==='blur'?'clearSpots235':id==='veil'?'lightSpots238':null);setEffects301(v=>id==='hd'?{...v,hd241:!v.hd241}:id==='veil'?{...v,veil235:.42}: {...v,style:id==='noir'?'noir':'original',blur:id==='blur'?12:0,colorSpots:[],clearSpots235:[]})}}>{t(label)}</button>)}<label>{t('滤镜程度')}<input type="range" min="0" max="100" value={spot301==='lightSpots238'?effects301.veil235*100:effects301.blur} onChange={e=>setEffects301(v=>({...v,[spot301==='lightSpots238'?'veil235':'blur']:+e.target.value/(spot301==='lightSpots238'?100:1)}))}/></label><p>{t('轻点预览添加局部亮区、彩色或清晰区域。')}</p></div></div>}      <div className="vsStatus" role="status">{t(status.key).replace('{progress}', status.progress ?? '')}{status.detail ? t(status.detail) : ''}</div>
-      <details className="vsNote"><summary>{t('关于本机合成与配乐')}</summary><div>{t('无需上传图片。按保存的笔画顺序回放，不推测图片中的笔顺，也不修改原作品。仅有图片的旧作品需要先保存原笔迹；多页临帖使用当前保存页。云端原笔迹仅在点选该作品后读取。视频在当前设备生成。')}<p>{t('Remotion 会向其服务发送不含作品内容的使用统计，包括站点来源、网络地址及生成状态。')}</p><p>{t('手机和平板兼容性仍在验证中，建议先使用轻量画质。')}</p>{selectedTrack && <p translate="no">{selectedTrack.credit}</p>}<p><a href={selectedTrack?.directory?selectedTrack.directory+'/CREDITS.md':'video-music292/CREDITS.md'} target="_blank" rel="noreferrer">{t('配乐来源与许可')}</a></p></div></details>
+      <details className="vsNote"><summary>{t('关于本机合成与配乐')}</summary><div>{t('无需上传图片。按保存的笔画顺序回放，不推测图片中的笔顺，也不修改原作品。仅有图片的旧作品需要先保存原笔迹；多页临帖使用当前保存页。云端原笔迹仅在点选该作品后读取。视频在当前设备生成。')}<p>{t('Remotion 会向其服务发送不含作品内容的使用统计，包括站点来源、网络地址及生成状态。')}</p><p>{t('4K 合成需要更多时间和本机内存。')}</p>{selectedTrack && <p translate="no">{selectedTrack.credit}</p>}<p><a href={selectedTrack?.directory?selectedTrack.directory+'/CREDITS.md':'video-music292/CREDITS.md'} target="_blank" rel="noreferrer">{t('配乐来源与许可')}</a></p></div></details>
     </section>
     {(pickerOpen || (initial.get('source290')==='cloud'&&initial.get('work290'))) && <section className="vsPicker290" hidden={!pickerOpen} role="dialog" aria-modal="true" aria-label={t('选择作品')}>
       <header><strong>{t('选择作品')}</strong><button type="button" onClick={() => setPickerOpen(false)}>{t('关闭')}</button></header>

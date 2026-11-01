@@ -1,0 +1,153 @@
+{
+  "version": 302,
+  "tracks": [
+    {
+      "id": "yuzhou",
+      "title": "渔舟唱晚",
+      "artist": "中央民族乐团",
+      "available": false,
+      "source": null,
+      "directory": null,
+      "status": "verified-title-source-unavailable",
+      "checkedAt": "2026-11-01",
+      "verifiedOfficialPage": "https://music.163.com/song?id=396322",
+      "testedOfficialSongIds": [
+        396322
+      ],
+      "blocker": "所列网易官网单曲标题已核实；官方公开outer/url全部重定向至/404并返回text/html，不是音频。尚未获得可再分发及视频同步的实际录音。不可将这些地址当作可播放音源。"
+    },
+    {
+      "id": "gaoshan",
+      "title": "高山流水",
+      "artist": "许菱子",
+      "available": false,
+      "source": null,
+      "directory": null,
+      "status": "verified-title-source-unavailable",
+      "checkedAt": "2026-11-01",
+      "verifiedOfficialPage": "https://music.163.com/song?id=315454",
+      "testedOfficialSongIds": [
+        315454,
+        520568264,
+        165857
+      ],
+      "blocker": "所列网易官网单曲标题已核实；官方公开outer/url全部重定向至/404并返回text/html，不是音频。尚未获得可再分发及视频同步的实际录音。不可将这些地址当作可播放音源。"
+    },
+    {
+      "id": "chunjiang",
+      "title": "春江花月夜",
+      "artist": "项斯华",
+      "available": false,
+      "source": null,
+      "directory": null,
+      "status": "verified-title-source-unavailable",
+      "checkedAt": "2026-11-01",
+      "verifiedOfficialPage": "https://music.163.com/song?id=310166",
+      "testedOfficialSongIds": [
+        310166,
+        29719241,
+        5266649
+      ],
+      "blocker": "所列网易官网单曲标题已核实；官方公开outer/url全部重定向至/404并返回text/html，不是音频。尚未获得可再分发及视频同步的实际录音。不可将这些地址当作可播放音源。"
+    },
+    {
+      "id": "jiangjinjiu",
+      "title": "将进酒",
+      "artist": "陈涌海",
+      "available": false,
+      "source": null,
+      "directory": null,
+      "status": "verified-title-source-unavailable",
+      "checkedAt": "2026-11-01",
+      "verifiedOfficialPage": "https://music.163.com/song?id=76304",
+      "testedOfficialSongIds": [
+        76304
+      ],
+      "blocker": "所列网易官网单曲标题已核实；官方公开outer/url全部重定向至/404并返回text/html，不是音频。尚未获得可再分发及视频同步的实际录音。不可将这些地址当作可播放音源。"
+    }
+  ],
+  "audit": {
+    "officialOuterResults": [
+      {
+        "id": 396322,
+        "status": 200,
+        "contentType": "text/html;charset=utf8",
+        "bytes": 107191,
+        "finalURL": "https://music.163.com/404"
+      },
+      {
+        "id": 315454,
+        "status": 200,
+        "contentType": "text/html;charset=utf8",
+        "bytes": 107191,
+        "finalURL": "https://music.163.com/404"
+      },
+      {
+        "id": 520568264,
+        "status": 200,
+        "contentType": "text/html;charset=utf8",
+        "bytes": 107191,
+        "finalURL": "https://music.163.com/404"
+      },
+      {
+        "id": 165857,
+        "status": 200,
+        "contentType": "text/html;charset=utf8",
+        "bytes": 107191,
+        "finalURL": "https://music.163.com/404"
+      },
+      {
+        "id": 310166,
+        "status": 200,
+        "contentType": "text/html;charset=utf8",
+        "bytes": 107191,
+        "finalURL": "https://music.163.com/404"
+      },
+      {
+        "id": 29719241,
+        "status": 200,
+        "contentType": "text/html;charset=utf8",
+        "bytes": 107191,
+        "finalURL": "https://music.163.com/404"
+      },
+      {
+        "id": 5266649,
+        "status": 200,
+        "contentType": "text/html;charset=utf8",
+        "bytes": 107191,
+        "finalURL": "https://music.163.com/404"
+      },
+      {
+        "id": 76304,
+        "status": 200,
+        "contentType": "text/html;charset=utf8",
+        "bytes": 107191,
+        "finalURL": "https://music.163.com/404"
+      }
+    ],
+    "control": {
+      "id": 3442664844,
+      "contentType": "audio/mpeg; charset=UTF-8",
+      "bytes": 2149677,
+      "note": "既有用户指定千年之后同一请求方式返回真正音频，排除了全站音频网络不可用。"
+    },
+    "otherSources": [
+      {
+        "url": "https://www.guzheng.cn/music/2254.html",
+        "title": "渔舟唱晚—周望",
+        "blocker": "页面播放和下载均调用checkHasBuy；未绕过购买或登录检查。"
+      },
+      {
+        "url": "https://bowuguan.shcmusic.edu.cn/2020/0427/c549a9397/page.htm",
+        "title": "春江花月夜—大同乐会",
+        "blocker": "馆方页面明确“文中所有资料版权归百年大同纪念活动主办方所有，未经授权请勿转载”。未复制入库。"
+      }
+    ],
+    "notSubstituted": [
+      "醉渔唱晚≠渔舟唱晚",
+      "古琴独立曲流水≠古筝高山流水",
+      "同名广播剧≠将进酒配乐",
+      "MIDISynth/AI原创不冒充真实演奏录音"
+    ]
+  }
+}

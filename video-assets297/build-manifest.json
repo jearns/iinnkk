@@ -207,7 +207,7 @@
       "format": "esm"
     },
     "src/scene-plan.mjs": {
-      "bytes": 3471,
+      "bytes": 3684,
       "imports": [],
       "format": "esm"
     },
@@ -3840,7 +3840,7 @@
       "format": "esm"
     },
     "src/showcase.jsx": {
-      "bytes": 11112,
+      "bytes": 10950,
       "imports": [
         {
           "path": "../media-effects241.js",
@@ -4270,7 +4270,7 @@
       "format": "esm"
     },
     "src/web.jsx": {
-      "bytes": 27175,
+      "bytes": 28784,
       "imports": [
         {
           "path": "node_modules/react/index.js",
@@ -4378,18 +4378,18 @@
     }
   },
   "outputs": {
-    "../video-assets297/chunk.HA5B5ZXU.js": {
+    "../video-assets297/chunk.JTXJODA4.js": {
       "imports": [
         {
-          "path": "../video-assets297/chunk.CQDI3NF5.js",
+          "path": "../video-assets297/chunk.MXPUCZCI.js",
           "kind": "import-statement"
         },
         {
-          "path": "../video-assets297/chunk.ZLXECZVO.js",
+          "path": "../video-assets297/chunk.SN5EDHZL.js",
           "kind": "import-statement"
         },
         {
-          "path": "../video-assets297/chunk.ZI3QZRG5.js",
+          "path": "../video-assets297/chunk.KT2NQPFE.js",
           "kind": "import-statement"
         },
         {
@@ -4657,10 +4657,10 @@
       },
       "bytes": 311916
     },
-    "../video-assets297/web.BOOGQHBE.js": {
+    "../video-assets297/web.3CCQCPPI.js": {
       "imports": [
         {
-          "path": "../video-assets297/chunk.CQDI3NF5.js",
+          "path": "../video-assets297/chunk.MXPUCZCI.js",
           "kind": "import-statement"
         },
         {
@@ -4668,7 +4668,7 @@
           "kind": "import-statement"
         },
         {
-          "path": "../video-assets297/chunk.ZI3QZRG5.js",
+          "path": "../video-assets297/chunk.KT2NQPFE.js",
           "kind": "import-statement"
         },
         {
@@ -4688,7 +4688,7 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../video-assets297/chunk.UGRKAG32.js",
+          "path": "../video-assets297/chunk.LNKYH7E2.js",
           "kind": "dynamic-import"
         },
         {
@@ -4704,7 +4704,7 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../video-assets297/chunk.HA5B5ZXU.js",
+          "path": "../video-assets297/chunk.JTXJODA4.js",
           "kind": "dynamic-import"
         },
         {
@@ -4716,7 +4716,7 @@
       "entryPoint": "src/web.jsx",
       "inputs": {
         "src/web.jsx": {
-          "bytesInOutput": 24203
+          "bytesInOutput": 25433
         },
         "src/format.mjs": {
           "bytesInOutput": 302
@@ -4725,7 +4725,7 @@
           "bytesInOutput": 2089
         },
         "../brush.js": {
-          "bytesInOutput": 14348
+          "bytesInOutput": 14344
         },
         "src/detached297.mjs": {
           "bytesInOutput": 5120
@@ -4734,12 +4734,12 @@
           "bytesInOutput": 801
         }
       },
-      "bytes": 47360
+      "bytes": 48586
     },
-    "../video-assets297/chunk.CQDI3NF5.js": {
+    "../video-assets297/chunk.MXPUCZCI.js": {
       "imports": [
         {
-          "path": "../video-assets297/chunk.ZI3QZRG5.js",
+          "path": "../video-assets297/chunk.KT2NQPFE.js",
           "kind": "import-statement"
         },
         {
@@ -5033,14 +5033,14 @@
       },
       "bytes": 5059
     },
-    "../video-assets297/chunk.UGRKAG32.js": {
+    "../video-assets297/chunk.LNKYH7E2.js": {
       "imports": [
         {
-          "path": "../video-assets297/chunk.ZLXECZVO.js",
+          "path": "../video-assets297/chunk.SN5EDHZL.js",
           "kind": "import-statement"
         },
         {
-          "path": "../video-assets297/chunk.ZI3QZRG5.js",
+          "path": "../video-assets297/chunk.KT2NQPFE.js",
           "kind": "import-statement"
         },
         {
@@ -5066,10 +5066,10 @@
       },
       "bytes": 62641
     },
-    "../video-assets297/chunk.ZLXECZVO.js": {
+    "../video-assets297/chunk.SN5EDHZL.js": {
       "imports": [
         {
-          "path": "../video-assets297/chunk.ZI3QZRG5.js",
+          "path": "../video-assets297/chunk.KT2NQPFE.js",
           "kind": "import-statement"
         },
         {
@@ -5096,7 +5096,7 @@
           "bytesInOutput": 4066
         },
         "src/showcase.jsx": {
-          "bytesInOutput": 7871
+          "bytesInOutput": 7509
         },
         "node_modules/remotion/dist/esm/index.mjs": {
           "bytesInOutput": 265104
@@ -5108,9 +5108,9 @@
           "bytesInOutput": 40239
         }
       },
-      "bytes": 431820
+      "bytes": 431458
     },
-    "../video-assets297/chunk.ZI3QZRG5.js": {
+    "../video-assets297/chunk.KT2NQPFE.js": {
       "imports": [
         {
           "path": "../video-assets297/chunk.5LHGNSCY.js",
@@ -5135,10 +5135,10 @@
       ],
       "inputs": {
         "node_modules/react/cjs/react.production.js": {
-          "bytesInOutput": 7435
+          "bytesInOutput": 7442
         },
         "node_modules/react/index.js": {
-          "bytesInOutput": 47
+          "bytesInOutput": 50
         },
         "node_modules/react/cjs/react-jsx-runtime.production.js": {
           "bytesInOutput": 359
@@ -5159,10 +5159,10 @@
           "bytesInOutput": 6163
         },
         "src/scene-plan.mjs": {
-          "bytesInOutput": 2517
+          "bytesInOutput": 2577
         }
       },
-      "bytes": 21902
+      "bytes": 21972
     },
     "../video-assets297/chunk.DH43MJXE.js": {
       "imports": [
