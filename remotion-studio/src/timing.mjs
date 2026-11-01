@@ -1,8 +1,8 @@
 export const VIDEO_FPS = 30;
-export const VIDEO_DURATIONS = [8, 15, 30, 60, 120, 180, 300];
+export const VIDEO_DURATIONS = [8, 15, 30, 60, 120, 180, 300, 480, 600];
 export const OUTRO_SLOGAN = '以手为笔，随时写字';
 export const OUTRO_SITE = 'iinnkk.me';
-export function normalizeDuration(value) { return VIDEO_DURATIONS.includes(Number(value)) ? Number(value) : 30; }
+export function normalizeDuration(value) { const n=Number(value); return Number.isFinite(n)&&n>=8 ? Math.ceil(n) : 30; }
 export function videoTimeline(frame, durationInFrames, fps) {
   const introEnd = 1 + 2 * fps, outroStart = durationInFrames - 2 * fps;
   const hold = Math.min(3 * fps, Math.max(fps * .6, Math.round((outroStart - introEnd) * .12)));
@@ -13,3 +13,5 @@ export function videoTimeline(frame, durationInFrames, fps) {
     introEnd, outroStart, writingEnd,
   };
 }
+
+export function resolveDuration308(choice, estimatedSeconds) { return choice==='auto' ? normalizeDuration(estimatedSeconds||30) : normalizeDuration(choice); }
