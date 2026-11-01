@@ -1,0 +1,18 @@
+
+/* 306: three categories, one row apiece. */
+.discoverLinks305 h3{font:600 13px/1.2 system-ui!important;opacity:1!important;margin:7px 0 5px!important}
+.discoverLinks305 nav{display:flex!important;flex-wrap:nowrap!important;justify-content:space-between!important;gap:4px!important;min-width:0!important}
+.discoverLinks305 nav>a{flex:1 1 0!important;min-width:0!important;gap:3px!important;font-size:11px!important}
+.discoverLinks305 nav svg{width:23px!important;height:23px!important}
+.homeScreens302 #timeline154 .card154::after,.homeScreens302 #timeline154 .worldTile219::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,#0008 0%,#0000 38%,#0001 55%,#000b 100%)}
+.homeScreens302 #timeline154 .worldTile219{position:relative;isolation:isolate}
+.homeScreens302 #timeline154 .worldInfo220{inset:auto 9px 10px!important;padding:0!important;background:none!important;backdrop-filter:none!important;color:#fff!important;max-height:50%!important;z-index:3!important;text-shadow:0 1px 3px #0009}
+.homeScreens302 #timeline154 .cardAuthor305{background:none!important;backdrop-filter:none!important;padding:0!important;right:10px!important;top:10px!important;z-index:3!important;color:#fff!important;text-shadow:0 1px 3px #0009}
+.homeScreens302 #timeline154 .cardAuthor305 small{color:#fff!important}
+.homeScreens302 #timeline154 .cardInfo154{background:none!important;z-index:2!important;padding:8px!important;right:104px!important}
+.homeScreens302 #timeline154 .cardQuick154,.homeScreens302 #timeline154 .hasWorld305 .cardQuick154{display:flex!important;position:absolute!important;top:auto!important;bottom:9px!important;right:7px!important;left:auto!important;align-items:center!important;gap:4px!important;padding:0!important;background:none!important;z-index:4!important}
+.homeScreens302 #timeline154 .cardQuick154>*{position:static!important;inset:auto!important;display:flex;flex-direction:column;align-items:center;justify-content:center;width:28px!important;min-width:28px!important;margin:0!important;padding:0!important;gap:3px!important;font-size:9px!important}
+.homeScreens302 #timeline154 .cardQuick154>[hidden]{display:none!important}
+.homeScreens302 #timeline154 .cardQuick154 svg{width:20px!important;height:20px!important}
+.homeScreens302 #timeline154 .dots154{right:3px!important;top:50%!important;bottom:auto!important;left:auto!important;transform:translateY(-50%)!important;display:flex!important;flex-direction:column!important;gap:4px!important;max-height:60%!important;overflow-y:auto!important;z-index:5!important}
+.homeScreens302 #timeline154 .dots154 button{flex:0 0 10px!important;min-height:10px!important;min-width:10px!important;width:10px!important;height:10px!important;padding:2px!important}

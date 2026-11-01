@@ -3,7 +3,7 @@
  const {node296:E,style296,pickCatalogue296,tr296:tr}=await import('../release296/catalogue.mjs');
  if(!window.PhotoPortrait255||document.getElementById('portraitOutline296'))return;
  style296('release304/portrait-panel.css');const tools=E('nav');tools.className='outlineTools296';const outline=E('button');outline.id='portraitOutline296';outline.type='button';outline.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20 7 6l5-3 5 3 3 14zM8 20l4-8 4 8"/></svg><span></span>';outline.querySelector('span').textContent=tr('轮廓');tools.append(outline);document.querySelector('.portraitPrimary259').after(tools);
- let catalogue;const load=()=>catalogue||=(fetch('release304/outlines.json').then(r=>{if(!r.ok)throw Error('轮廓目录暂未读取，请重试');return r.json()}).catch(e=>{catalogue=null;throw e}));
+ let catalogue;const load=()=>catalogue||=(fetch('release306/outlines.json').then(r=>{if(!r.ok)throw Error('轮廓目录暂未读取，请重试');return r.json()}).catch(e=>{catalogue=null;throw e}));
  const status=s=>document.getElementById('photoStatus255').textContent=tr(s);
  outline.onclick=async()=>{outline.disabled=true;try{
   const [{photoMask301},data]=await Promise.all([import('../release301/photo-mask.mjs'),load()]);

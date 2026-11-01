@@ -111,7 +111,7 @@ function Studio() {
     return () => {active = false; controller.abort();};
   }, [work, retry]);
   useEffect(() => () => {prepareRef.current?.abort(); abortRef.current?.abort(); replayRef.current?.close(); if (posterRef.current) URL.revokeObjectURL(posterRef.current);}, []);
-  useEffect(()=>{if(!replay){setStylePreparing297(false);return}if(replay.surface.color297===renderStyle296.inkColor296){setStylePreparing297(false);replay.surface.warmStyle297(renderStyle296).catch(()=>{});return}let active=true;playerRef.current?.pause();setStylePreparing297(true);replay.surface.warmStyle297(renderStyle296,p=>{if(active)setStatus({key:'正在准备书写回放 {progress}%',progress:Math.round(p*100)})}).then(()=>{if(active)setStatus({key:'原始笔迹已就绪，可预览纪录大片。'})}).catch(e=>{if(active)setStatus({key:'作品读取未完成：',detail:e.message})}).finally(()=>{if(active)setStylePreparing297(false)});return()=>{active=false}},[replay,renderStyle296.inkColor296]);
+  useEffect(()=>{if(!replay){setStylePreparing297(false);return}if(replay.surface.color297===renderStyle296.inkColor296){setStylePreparing297(false);return}let active=true;playerRef.current?.pause();setStylePreparing297(true);replay.surface.warmStyle297(renderStyle296,p=>{if(active)setStatus({key:'正在准备书写回放 {progress}%',progress:Math.round(p*100)})}).then(()=>{if(active)setStatus({key:'原始笔迹已就绪，可预览纪录大片。'})}).catch(e=>{if(active)setStatus({key:'作品读取未完成：',detail:e.message})}).finally(()=>{if(active)setStylePreparing297(false)});return()=>{active=false}},[replay,renderStyle296.inkColor296]);
   const pickerUrl = 'works206.html?' + new URLSearchParams({selectVideo290: '1', channel290: channel.current, ...pickerSource});
 
   function stopAudition() {musicRef.current?.pause(); setAudition(false);}
