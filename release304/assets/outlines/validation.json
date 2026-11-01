@@ -1,0 +1,31 @@
+{
+  "total": 52,
+  "originalTotal": 50,
+  "originalPreserved": 50,
+  "additionalIds": [
+    "petronas",
+    "eiffel"
+  ],
+  "groupCounts": {
+    "地标轮廓": 12,
+    "宗教建筑": 10,
+    "科技品牌": 10,
+    "汽车品牌": 10,
+    "奢侈品牌": 10
+  },
+  "photographs": 22,
+  "preciseBrandVectors": 30,
+  "missingIds": [],
+  "changedIdentityIds": [],
+  "unresolvedAssets": [],
+  "partialViews": [
+    "makkah"
+  ],
+  "checks": [
+    "All 52 local assets exist and match SHA256",
+    "All 22 photographic WebP files decode",
+    "All 30 brand SVG files rendered with sharp; Hermès replaced after visual review with official site carriage logo",
+    "Original 50 id/name/group/words fields match exactly"
+  ],
+  "directoryBytes": 12741146
+}
