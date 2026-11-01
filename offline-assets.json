@@ -1,7 +1,7 @@
 [
   "release303/restore.js",
   "release303/screens.js",
-  "release303/ui.css",
+  "release303/layout.css",
   "release303/portrait.js",
   "release303/portrait-ui.js",
   "release303/outlines.json",
