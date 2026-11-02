@@ -171,6 +171,33 @@
       ],
       "format": "esm"
     },
+    "src/matte311.mjs": {
+      "bytes": 669,
+      "imports": [
+        {
+          "path": "src/tracking308.mjs",
+          "kind": "import-statement",
+          "original": "./tracking308.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/ink313.mjs": {
+      "bytes": 2046,
+      "imports": [
+        {
+          "path": "src/tracking308.mjs",
+          "kind": "import-statement",
+          "original": "./tracking308.mjs"
+        },
+        {
+          "path": "src/matte311.mjs",
+          "kind": "import-statement",
+          "original": "./matte311.mjs"
+        }
+      ],
+      "format": "esm"
+    },
     "../museum-scenes.js": {
       "bytes": 24,
       "imports": [],
@@ -187,12 +214,17 @@
       "format": "esm"
     },
     "src/detached297.mjs": {
-      "bytes": 7289,
+      "bytes": 9466,
       "imports": [
         {
           "path": "../brush.js",
           "kind": "import-statement",
           "original": "../../brush.js"
+        },
+        {
+          "path": "src/ink313.mjs",
+          "kind": "import-statement",
+          "original": "./ink313.mjs"
         },
         {
           "path": "src/tracking308.mjs",
@@ -3866,19 +3898,8 @@
       ],
       "format": "esm"
     },
-    "src/matte311.mjs": {
-      "bytes": 669,
-      "imports": [
-        {
-          "path": "src/tracking308.mjs",
-          "kind": "import-statement",
-          "original": "./tracking308.mjs"
-        }
-      ],
-      "format": "esm"
-    },
     "src/camera311.mjs": {
-      "bytes": 5396,
+      "bytes": 5573,
       "imports": [
         {
           "path": "src/matte311.mjs",
@@ -3889,8 +3910,24 @@
       "format": "esm"
     },
     "src/camera312.mjs": {
-      "bytes": 2921,
+      "bytes": 3070,
       "imports": [
+        {
+          "path": "src/camera311.mjs",
+          "kind": "import-statement",
+          "original": "./camera311.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/camera313.mjs": {
+      "bytes": 3784,
+      "imports": [
+        {
+          "path": "src/camera312.mjs",
+          "kind": "import-statement",
+          "original": "./camera312.mjs"
+        },
         {
           "path": "src/camera311.mjs",
           "kind": "import-statement",
@@ -3900,7 +3937,7 @@
       "format": "esm"
     },
     "src/scene-plan.mjs": {
-      "bytes": 2667,
+      "bytes": 2735,
       "imports": [
         {
           "path": "src/camera311.mjs",
@@ -3908,15 +3945,15 @@
           "original": "./camera311.mjs"
         },
         {
-          "path": "src/camera312.mjs",
+          "path": "src/camera313.mjs",
           "kind": "import-statement",
-          "original": "./camera312.mjs"
+          "original": "./camera313.mjs"
         }
       ],
       "format": "esm"
     },
     "src/showcase.jsx": {
-      "bytes": 12337,
+      "bytes": 13234,
       "imports": [
         {
           "path": "../media-effects241.js",
@@ -4029,8 +4066,8 @@
       ],
       "format": "esm"
     },
-    "../release312/paper-picker.mjs": {
-      "bytes": 3013,
+    "../release313/paper-picker.mjs": {
+      "bytes": 3022,
       "imports": [],
       "format": "esm"
     },
@@ -4356,7 +4393,7 @@
       "format": "esm"
     },
     "src/web.jsx": {
-      "bytes": 30786,
+      "bytes": 30807,
       "imports": [
         {
           "path": "node_modules/react/index.js",
@@ -4409,9 +4446,9 @@
           "original": "./background.mjs"
         },
         {
-          "path": "../release312/paper-picker.mjs",
+          "path": "../release313/paper-picker.mjs",
           "kind": "dynamic-import",
-          "original": "../../release312/paper-picker.mjs"
+          "original": "../../release313/paper-picker.mjs"
         },
         {
           "path": "../release296/catalogue.mjs",
@@ -4490,18 +4527,18 @@
       },
       "bytes": 311916
     },
-    "../video-assets297/chunk.B3NHXLBC.js": {
+    "../video-assets297/chunk.Z7TQGQ3O.js": {
       "imports": [
         {
-          "path": "../video-assets297/chunk.RI2CSD3Q.js",
+          "path": "../video-assets297/chunk.MPD72T4P.js",
           "kind": "import-statement"
         },
         {
-          "path": "../video-assets297/chunk.SL6MA4DD.js",
+          "path": "../video-assets297/chunk.AX24WAAD.js",
           "kind": "import-statement"
         },
         {
-          "path": "../video-assets297/chunk.I6RQJ6FK.js",
+          "path": "../video-assets297/chunk.42I273T4.js",
           "kind": "import-statement"
         },
         {
@@ -4680,7 +4717,7 @@
       },
       "bytes": 2917
     },
-    "../video-assets297/chunk.YYNYAILB.js": {
+    "../video-assets297/chunk.V3QP54YH.js": {
       "imports": [
         {
           "path": "../video-assets297/chunk.5LHGNSCY.js",
@@ -4692,13 +4729,13 @@
         "loadPapers312",
         "pickPaper312"
       ],
-      "entryPoint": "../release312/paper-picker.mjs",
+      "entryPoint": "../release313/paper-picker.mjs",
       "inputs": {
-        "../release312/paper-picker.mjs": {
-          "bytesInOutput": 2540
+        "../release313/paper-picker.mjs": {
+          "bytesInOutput": 2558
         }
       },
-      "bytes": 2915
+      "bytes": 2933
     },
     "../video-assets297/chunk.RUDHHM7O.js": {
       "imports": [],
@@ -4763,10 +4800,10 @@
       },
       "bytes": 323348
     },
-    "../video-assets297/web.N4RTKTES.js": {
+    "../video-assets297/web.TDXSKX5K.js": {
       "imports": [
         {
-          "path": "../video-assets297/chunk.RI2CSD3Q.js",
+          "path": "../video-assets297/chunk.MPD72T4P.js",
           "kind": "import-statement"
         },
         {
@@ -4774,7 +4811,7 @@
           "kind": "import-statement"
         },
         {
-          "path": "../video-assets297/chunk.I6RQJ6FK.js",
+          "path": "../video-assets297/chunk.42I273T4.js",
           "kind": "import-statement"
         },
         {
@@ -4794,7 +4831,7 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../video-assets297/chunk.J6HNLBJU.js",
+          "path": "../video-assets297/chunk.54S7JKCJ.js",
           "kind": "dynamic-import"
         },
         {
@@ -4802,7 +4839,7 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../video-assets297/chunk.YYNYAILB.js",
+          "path": "../video-assets297/chunk.V3QP54YH.js",
           "kind": "dynamic-import"
         },
         {
@@ -4814,7 +4851,7 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../video-assets297/chunk.B3NHXLBC.js",
+          "path": "../video-assets297/chunk.Z7TQGQ3O.js",
           "kind": "dynamic-import"
         },
         {
@@ -4826,7 +4863,7 @@
       "entryPoint": "src/web.jsx",
       "inputs": {
         "src/web.jsx": {
-          "bytesInOutput": 27107
+          "bytesInOutput": 27153
         },
         "src/format.mjs": {
           "bytesInOutput": 379
@@ -4835,21 +4872,24 @@
           "bytesInOutput": 2086
         },
         "../brush.js": {
-          "bytesInOutput": 14374
+          "bytesInOutput": 14324
+        },
+        "src/ink313.mjs": {
+          "bytesInOutput": 1417
         },
         "src/detached297.mjs": {
-          "bytesInOutput": 5535
+          "bytesInOutput": 6960
         },
         "src/sequence.mjs": {
           "bytesInOutput": 964
         }
       },
-      "bytes": 50966
+      "bytes": 53820
     },
-    "../video-assets297/chunk.RI2CSD3Q.js": {
+    "../video-assets297/chunk.MPD72T4P.js": {
       "imports": [
         {
-          "path": "../video-assets297/chunk.I6RQJ6FK.js",
+          "path": "../video-assets297/chunk.42I273T4.js",
           "kind": "import-statement"
         },
         {
@@ -5143,14 +5183,14 @@
       },
       "bytes": 5059
     },
-    "../video-assets297/chunk.J6HNLBJU.js": {
+    "../video-assets297/chunk.54S7JKCJ.js": {
       "imports": [
         {
-          "path": "../video-assets297/chunk.SL6MA4DD.js",
+          "path": "../video-assets297/chunk.AX24WAAD.js",
           "kind": "import-statement"
         },
         {
-          "path": "../video-assets297/chunk.I6RQJ6FK.js",
+          "path": "../video-assets297/chunk.42I273T4.js",
           "kind": "import-statement"
         },
         {
@@ -5176,10 +5216,10 @@
       },
       "bytes": 63025
     },
-    "../video-assets297/chunk.SL6MA4DD.js": {
+    "../video-assets297/chunk.AX24WAAD.js": {
       "imports": [
         {
-          "path": "../video-assets297/chunk.I6RQJ6FK.js",
+          "path": "../video-assets297/chunk.42I273T4.js",
           "kind": "import-statement"
         },
         {
@@ -5206,7 +5246,7 @@
           "bytesInOutput": 4066
         },
         "src/showcase.jsx": {
-          "bytesInOutput": 8539
+          "bytesInOutput": 9109
         },
         "node_modules/remotion/dist/esm/index.mjs": {
           "bytesInOutput": 265104
@@ -5217,22 +5257,22 @@
         "node_modules/remotion/dist/esm/no-react.mjs": {
           "bytesInOutput": 40239
         },
-        "src/matte311.mjs": {
-          "bytesInOutput": 429
-        },
         "src/camera311.mjs": {
-          "bytesInOutput": 3547
+          "bytesInOutput": 3656
         },
         "src/camera312.mjs": {
-          "bytesInOutput": 1912
+          "bytesInOutput": 1989
+        },
+        "src/camera313.mjs": {
+          "bytesInOutput": 2733
         },
         "src/scene-plan.mjs": {
-          "bytesInOutput": 1841
+          "bytesInOutput": 1903
         }
       },
-      "bytes": 440201
+      "bytes": 443339
     },
-    "../video-assets297/chunk.I6RQJ6FK.js": {
+    "../video-assets297/chunk.42I273T4.js": {
       "imports": [
         {
           "path": "../video-assets297/chunk.5LHGNSCY.js",
@@ -5254,7 +5294,10 @@
         "l",
         "m",
         "n",
-        "o"
+        "o",
+        "p",
+        "q",
+        "r"
       ],
       "inputs": {
         "node_modules/react/cjs/react.production.js": {
@@ -5289,9 +5332,12 @@
         },
         "src/tracking308.mjs": {
           "bytesInOutput": 4145
+        },
+        "src/matte311.mjs": {
+          "bytesInOutput": 429
         }
       },
-      "bytes": 32007
+      "bytes": 32460
     },
     "../video-assets297/chunk.DH43MJXE.js": {
       "imports": [

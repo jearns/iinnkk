@@ -635,21 +635,22 @@ async function prepareVideoReplay293(draft,{maxSide=2240,onProgress=()=>{},signa
  const check=()=>{if(signal?.aborted)throw new DOMException('已取消','AbortError')};
  check();openingWork=true;window.WarmEngine158=true;
  try{await loadEditableDraft(structuredClone(draft));}finally{openingWork=false;renderSuspended=true;clearTimeout(saveTimer)}
- let source295=reference||floatingPaper212||referencePaper188;if(floatingPaperState214?.originalData215)source295=await ReferenceIO129.load(floatingPaperState214.originalData215,location.href);const paper295=source295?(showOriginal295?source295:await window.PaperInk188.ensure(source295)):null;check();
+ let source295=reference||floatingPaper212||referencePaper188;if(floatingPaperState214?.originalData215)source295=await ReferenceIO129.load(floatingPaperState214.originalData215,location.href);const naturalPaper313=/\/timeline\/pages\/papers31[23]\//.test(floatingPaperState214?.originalData215||source295?.src||''),paper295=source295?(showOriginal295||naturalPaper313?source295:await window.PaperInk188.ensure(source295)):null;check();
  const opts={...exportPrefs,inkColor:true,paperColor:true,credit:false,qr:false,palette:false,guide:false,highResolution:true,filmReference295:!!paper295,original184:!!paper295,originalClean188:!showOriginal295,originalOpacity187:100,referenceEffect215:paper295,referencePaper188:paper295};
  if($('sceneChoice').value.startsWith('annotation:'))await AnnotationTemplates.ensure($('sceneChoice').value.slice(11),true);
  await Promise.all(photos.filter(p=>p.effects?.behindPerson270).map(p=>window.SubjectLayers270?.prepare(p.image)));check();
  const bounds=sheetBounds(),scale=maxSide/Math.max(bounds.w,bounds.h),pw=bounds.w*scale,ph=bounds.h*scale,b=Mounting.box(mountKey,pw,ph);
  const make=()=>{const c=document.createElement('canvas');c.width=Math.max(2,Math.round(b.width));c.height=Math.max(2,Math.round(b.height));return c};
- const background293=make(),foreground293=make(),ink293=make(),combined293=make(),result293=make();
+ const subjects313=detach297&&photos.some(p=>p.effects?.behindPerson270)?make():null,background293=make(),foreground293=make(),ink293=make(),combined293=make(),result293=make();
  const backgrounds296=new Map([[showOriginal295,background293]]);let currentBackground296=background293,currentColor296='original',styleFlight296=Promise.resolve();
  const previous=compositionOptions,previousArtwork=composingArtwork;compositionOptions=opts;composingArtwork=true;
  try{
   const t=background293.getContext('2d');if(mountKey!=='bare'||$('papercolor').value!=='transparent')Mounting.draw(t,mountKey,pw,ph);
   t.save();t.translate(b.x-bounds.x*scale,b.y-bounds.y*scale);drawStationery(t,bounds,scale);t.restore();
-  const f=foreground293.getContext('2d');f.save();f.translate(b.x-bounds.x*scale,b.y-bounds.y*scale);f.beginPath();f.rect(0,0,pw,ph);f.clip();f.save();f.scale(scale,scale);drawPhotoSubjects270(f,bounds);drawExtraSeals(f,bounds);f.restore();f.restore();
+  const f=foreground293.getContext('2d');f.save();f.translate(b.x-bounds.x*scale,b.y-bounds.y*scale);f.beginPath();f.rect(0,0,pw,ph);f.clip();f.save();f.scale(scale,scale);if(!detach297)drawPhotoSubjects270(f,bounds);drawExtraSeals(f,bounds);f.restore();f.restore();
   f.save();f.translate(b.x,b.y);f.save();f.scale(scale,scale);drawBrand(f,bounds);f.restore();
   if(sealEnabled('tail')&&$('tailText').value.trim()){const item=sealItem('tail');if(item)stamp39(f,item.config,item.x*pw,item.y*ph,item.size*scale,item.angle)}f.restore();
+  if(subjects313){const s=subjects313.getContext('2d');s.save();s.translate(b.x-bounds.x*scale,b.y-bounds.y*scale);s.beginPath();s.rect(0,0,pw,ph);s.clip();s.scale(scale,scale);drawPhotoSubjects270(s,bounds);s.restore()}
  }finally{compositionOptions=previous;composingArtwork=previousArtwork}
  window.annotationInkOpacity=1;const originalMode296=draft.values?.inkMode||'raw';const originalColor296=draft.brush?.color||draft.values?.color||'#111111';const stableStroke296=st=>({...structuredClone(st),inkMode:st.inkMode||originalMode296,settings:{...st.settings,color:st.settings?.color||originalColor296}});flow.strokes=flow.strokes.map(stableStroke296);signatureStrokes=signatureStrokes.map(stableStroke296);
  const records=flow.strokes.filter(s=>s.points?.length).map(st=>({st,k:1,x:0,y:0}));
@@ -661,7 +662,7 @@ async function prepareVideoReplay293(draft,{maxSide=2240,onProgress=()=>{},signa
   const encode=(c,type='image/webp')=>new Promise((resolve,reject)=>c.toBlob(x=>x?resolve(x):reject(Error('回放背景准备失败')),type,.92));
   const original=make(),prev=compositionOptions,art=composingArtwork;compositionOptions={...opts,referenceEffect215:source295,referencePaper188:source295};composingArtwork=true;
   try{const t=original.getContext('2d');if(mountKey!=='bare'||$('papercolor').value!=='transparent')Mounting.draw(t,mountKey,pw,ph);t.save();t.translate(b.x-bounds.x*scale,b.y-bounds.y*scale);drawStationery(t,bounds,scale);t.restore()}finally{compositionOptions=prev;composingArtwork=art}
-  try{return{version297:1,sceneKey:$('sceneChoice').value!=='none'&&!$('sceneChoice').value.startsWith('annotation:')&&CreativePaper.ready($('sceneChoice').value)?$('sceneChoice').value:null,width:combined293.width,height:combined293.height,scale,b:{x:b.x,y:b.y},bounds,records:records.map(r=>({...r,st:structuredClone(displayStroke(r.st))})),chapters:chapters.map(c=>({...c,start:total?c.start/total:0,end:total?c.end/total:1})),total,background:await encode(background293),original:source295?await encode(original):null,foreground:await encode(foreground293,'image/png')}}finally{for(const c of[original,background293,foreground293,ink293,combined293,result293])c.width=c.height=0}
+  try{return{version297:1,sceneKey:$('sceneChoice').value!=='none'&&!$('sceneChoice').value.startsWith('annotation:')&&CreativePaper.ready($('sceneChoice').value)?$('sceneChoice').value:null,width:combined293.width,height:combined293.height,scale,b:{x:b.x,y:b.y},bounds,records:records.map(r=>({...r,st:structuredClone(displayStroke(r.st))})),chapters:chapters.map(c=>({...c,start:total?c.start/total:0,end:total?c.end/total:1})),total,background:await encode(background293),original:source295?await encode(original):null,foreground:await encode(foreground293,'image/png'),subjects313:subjects313?await encode(subjects313,'image/png'):null,foregroundKind313:'seals'}}finally{for(const c of[original,background293,foreground293,ink293,combined293,result293,subjects313].filter(Boolean))c.width=c.height=0}
  }
  let tiles=new Map(),pixels=0,completed=0,closed=false;const budget=16000000; // 64 MB maximum tile cache
  const renderStroke=(ctx,r,st=r.st)=>{const prev=compositionOptions;compositionOptions=opts;ctx.save();try{ctx.translate(b.x+(r.x-bounds.x)*scale,b.y+(r.y-bounds.y)*scale);ctx.beginPath();ctx.rect(-r.x*scale,-r.y*scale,pw,ph);ctx.clip();renderInk(st,ctx,r.k*scale,r.k*scale,null,true)}finally{ctx.restore();compositionOptions=prev}};
