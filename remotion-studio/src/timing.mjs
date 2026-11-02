@@ -14,4 +14,7 @@ export function videoTimeline(frame, durationInFrames, fps) {
   };
 }
 
-export function resolveDuration308(choice, estimatedSeconds) { return choice==='auto' ? normalizeDuration(estimatedSeconds||30) : normalizeDuration(choice); }
+export function resolveDuration308(choice, estimatedSeconds) { return choice==='auto' ? (estimatedSeconds?automaticDuration309(estimatedSeconds):30) : normalizeDuration(choice); }
+
+// Preserve 308's brand/hero/hold time; only the actual writing runs 1.5 times faster.
+export function automaticDuration309(estimate308) { return Math.max(8,Math.ceil(9+Math.max(0,estimate308-9)/1.5)); }
