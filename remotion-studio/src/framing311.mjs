@@ -17,7 +17,7 @@ export function writingRegions311(pages,pointFor){
   const size=Math.max(small*.025,Math.min(small*.22,Math.max(quantile(minor,.75),median(compact)*.7,median(entries.map(e=>vertical?e.box.b-e.box.y:e.box.r-e.box.x))*.9,minor.length?0:small*.08)*1.25));
   const chunks=[];
   for(const e of entries){const r=e.record,pts=r.st.points,major=vertical?e.box.b-e.box.y:e.box.r-e.box.x,long=major>size*2.6;let box=empty(),mapped=empty(),from=0,lastT=0,previous=null;
-   const emit=to=>{if(!Number.isFinite(box.x)||to<=from)return;chunks.push({start:p.start+p.span*(r.start+from)/(page.total||1),end:p.start+p.span*(r.start+to)/(page.total||1),paperBox:box,box:mapped,stroke:e.index});from=to;box=empty();mapped=empty()};
+   const emit=to=>{if(!Number.isFinite(box.x)||to<=from)return;chunks.push({start:p.start+p.span*(r.start+from)/(page.total||1),end:p.start+p.span*(r.start+to)/(page.total||1),paperBox:box,box:mapped,stroke:e.index,firstStroke:e.index});from=to;box=empty();mapped=empty()};
    for(let i=0;i<pts.length;i++){
     const prev=pts[Math.max(0,i-1)],current=pts[i],a=pointFor(page,r,prev),b=pointFor(page,r,current),distance=Math.hypot((b.x-a.x)*page.width,(b.y-a.y)*page.height),steps=long&&i?Math.max(1,Math.ceil(distance/Math.max(1,size*.35))):1;
     for(let j=i?1:0;j<=steps;j++){const t=i?i-1+j/steps:0,u=i?j/steps:0,raw={x:prev.x+(current.x-prev.x)*u,y:prev.y+(current.y-prev.y)*u},q=pointFor(page,r,raw),physical={x:q.x*page.width,y:q.y*page.height},projected=p.map(q),combined=add({...box},physical),span=vertical?combined.b-combined.y:combined.r-combined.x;
