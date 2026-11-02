@@ -44,8 +44,10 @@ export function trackedCamera308(track,progress,seconds,target,outAspect){
  let lo=0,hi=track.transitions.length;while(lo<hi){const m=(lo+hi)>>1;if(track.transitions[m].p<progress)lo=m+1;else hi=m}
  for(const i of [lo-1,lo]){const e=track.transitions[i];if(!e)continue;const d=Math.abs((progress-e.p)*seconds);if(d<1.2&&d<best){best=d;eventIndex=i}}
  if(eventIndex>=0){const e=track.transitions[eventIndex],offset=(progress-e.p)*seconds,blend=ease((offset+1.2)/2.4);const strength=ease((1.2-Math.abs(offset))/.7);focus={x:mix(focus.x,mix(e.before.x,e.after.x,blend),strength),y:mix(focus.y,mix(e.before.y,e.after.y,blend),strength)};scale=1+(scale-1)*ease(Math.abs(offset)/1.2);const prev=track.transitions[eventIndex-1],next=track.transitions[eventIndex+1],spaced=(!prev||(e.p-prev.p)*seconds>4)&&(!next||(next.p-e.p)*seconds>4);if(e.kind==='column'&&spaced&&Math.abs(offset)<.35)shade=.18*(1-ease(Math.abs(offset)/.35));}
- const base=projectPoint308(point,point.aspect,outAspect,1,focus),margin=Math.max(0,Math.min(.08,base.x*.85,(1-base.x)*.85,base.y*.85,(1-base.y)*.85));
- const safe=s=>{const p=projectPoint308(point,point.aspect,outAspect,s,focus);return p.x>=margin&&p.x<=1-margin&&p.y>=margin&&p.y<=1-margin};
+ // Margins follow the ink's distance from paper edges, not letterbox padding.
+ // Letterbox-based margins become impossible around fit-to-fill and cause zoom jumps.
+ const mx=Math.max(0,Math.min(.04,point.x*.5,(1-point.x)*.5)),my=Math.max(0,Math.min(.04,point.y*.5,(1-point.y)*.5));
+ const safe=s=>{const p=projectPoint308(point,point.aspect,outAspect,s,focus);return p.x>=mx&&p.x<=1-mx&&p.y>=my&&p.y<=1-my};
  if(!safe(scale)){let a=1,b=scale;for(let i=0;i<14;i++){const mid=(a+b)/2;if(safe(mid))a=mid;else b=mid}scale=a}
  return{scale,focus,shade,point,transition:eventIndex>=0?track.transitions[eventIndex].kind:null};
 }
