@@ -1,0 +1,163 @@
+[
+  {
+    "id": "cloud-dragon",
+    "title": "云龙笺 · 嘉庆宣统双玺",
+    "work": "草书千字文",
+    "author": "赵佶",
+    "era": "北宋作品 · 卷尾本幅",
+    "story": "取赵佶《草书千字文》卷尾本幅的天然无字处，云龙纹与嘉庆、宣统鉴藏玺原样保留；帝王草书的华美笺纸，也记录了清宫递藏。",
+    "source": "https://zhuanti.mct.gov.cn/lnsbwg2022.html",
+    "provenance": "辽宁省博物馆藏赵佶《草书千字文》；本站原图第 32 张，卷尾署款右侧留白。",
+    "seals": [
+      "嘉庆御览之宝",
+      "宣统御览之宝"
+    ],
+    "cropPart": "本幅卷尾",
+    "sourceImage": "timeline/pages/caoshuqianzi/mv0xomoy-v/IMG_7015.jpeg",
+    "sourcePage": 31,
+    "crop": {
+      "x": 870,
+      "y": 0,
+      "w": 581,
+      "h": 775
+    },
+    "image": "timeline/pages/papers312/cloud-dragon.png",
+    "thumbnail": "timeline/pages/papers312/cloud-dragon-thumb.webp",
+    "paperColor": "#cfb18b",
+    "width": 581,
+    "height": 775,
+    "sourceSha256": "7774c76f7910eff8f187e34af4502fbc2ba0d17fe6e471535fa905ed24c9c0bd",
+    "imageSha256": "a8325991535e837b0902cf6af833e9167fabe636caaf93990e2fa78457677f13",
+    "processing": "仅矩形裁切；PNG 与源图裁切像素完全一致；未去字、修复、补绘、调色或拼接。",
+    "naturalBlank": true,
+    "hasOriginalSeals": true
+  },
+  {
+    "id": "hanshi-gold",
+    "title": "寒食金笺 · 卷后留白",
+    "work": "黄州寒食诗帖",
+    "author": "苏轼",
+    "era": "北宋作品 · 后世题跋纸",
+    "story": "《寒食帖》历经多次递藏，卷后接有张縯等人的题跋。这张选自卷后金色纸的天然留白，保留两枚原有朱印；并非苏轼写诗的本幅原纸。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/14714?dep=P",
+    "provenance": "国立故宫博物院藏《北宋苏东坡书黄州寒食诗》卷；本站第 19 张，张縯题跋纸上方无字区域。纸张具体制作年代未作判定。",
+    "seals": [
+      "卷后原有朱印两枚（未强行释读印主）"
+    ],
+    "cropPart": "张縯题跋纸",
+    "sourceImage": "timeline/pages/hanshi/muzjrkcp-i/IMG_3877.jpeg",
+    "sourcePage": 18,
+    "crop": {
+      "x": 20,
+      "y": 0,
+      "w": 500,
+      "h": 667
+    },
+    "image": "timeline/pages/papers312/hanshi-gold.png",
+    "thumbnail": "timeline/pages/papers312/hanshi-gold-thumb.webp",
+    "paperColor": "#f1e09b",
+    "width": 500,
+    "height": 667,
+    "sourceSha256": "5db4e3535a3223412aca80cbb3fb4e9de50494ef5ab357b69224896c7c674e44",
+    "imageSha256": "c1d2a3cf3012f4769d7b864ae7bb39980140bdfaeb1e1152a70ac7c8ab873053",
+    "processing": "仅矩形裁切；PNG 与源图裁切像素完全一致；未去字、修复、补绘、调色或拼接。",
+    "naturalBlank": true,
+    "hasOriginalSeals": true
+  },
+  {
+    "id": "boyuan-ivory",
+    "title": "三希素纸 · 卷后双印",
+    "work": "伯远帖",
+    "author": "王珣",
+    "era": "东晋作品 · 清代题跋纸",
+    "story": "《伯远帖》与《快雪时晴帖》《中秋帖》同为乾隆珍藏的三希。这里取卷后《三希堂歌》题跋纸的天然留白，保留清宫鉴藏印，不是王珣书写的晋代本幅。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/228199.html",
+    "provenance": "故宫博物院藏《王珣行书伯远帖》卷；本站原卷分段 10，沈德潜奉敕书《三希堂歌》左侧留白。",
+    "seals": [
+      "清宫鉴藏印两枚"
+    ],
+    "cropPart": "清代沈德潜《三希堂歌》题跋纸",
+    "sourceImage": "release301/assets/dpm/boyuan-1.webp",
+    "sourcePage": 10,
+    "crop": {
+      "x": 100,
+      "y": 70,
+      "w": 1350,
+      "h": 1800
+    },
+    "image": "timeline/pages/papers312/boyuan-ivory.png",
+    "thumbnail": "timeline/pages/papers312/boyuan-ivory-thumb.webp",
+    "paperColor": "#c7c2b3",
+    "width": 1350,
+    "height": 1800,
+    "sourceSha256": "e7d064d946dade7dfe9eff55bfca1805f2e96ca4aee2fb0f3dab14b30d90a162",
+    "imageSha256": "d250903799d9f9ed6931207b8a6ba411144d5d145512ef4126fbef44e659a12c",
+    "processing": "仅矩形裁切；PNG 与源图裁切像素完全一致；未去字、修复、补绘、调色或拼接。",
+    "naturalBlank": true,
+    "hasOriginalSeals": true
+  },
+  {
+    "id": "zixu-pattern",
+    "title": "自叙纹笺 · 重装旧印",
+    "work": "自叙帖",
+    "author": "怀素",
+    "era": "唐代作品 · 重装题记区",
+    "story": "取《自叙帖》重装题记附近的天然无字纹笺，保留一枚完整旧藏朱印。卷中可见后世重装与递藏的记录，此处纹笺不冒称怀素原始书写纸。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/14890?dep=P",
+    "provenance": "国立故宫博物院藏《唐怀素自叙帖》卷；本站第 36 张，昇元四年重装题记左侧纹笺留白。纹笺具体制作年代未作判定。",
+    "seals": [
+      "原有旧藏朱印一枚（未强行释读印主）"
+    ],
+    "cropPart": "重装题记左侧纹笺",
+    "sourceImage": "timeline/pages/zixu/mv26pl8a-z/IMG_4240.jpeg",
+    "sourcePage": 35,
+    "crop": {
+      "x": 90,
+      "y": 970,
+      "w": 390,
+      "h": 520
+    },
+    "image": "timeline/pages/papers312/zixu-pattern.png",
+    "thumbnail": "timeline/pages/papers312/zixu-pattern-thumb.webp",
+    "paperColor": "#c4a17d",
+    "width": 390,
+    "height": 520,
+    "sourceSha256": "02f8e06c10eb6655ef3008584120fc61e79325c39c6b51c0f9493e991429877a",
+    "imageSha256": "e97742ba402674483d76cdd786e0bbd25ea7837db2fe2594fc4d43d603413590",
+    "processing": "仅矩形裁切；PNG 与源图裁切像素完全一致；未去字、修复、补绘、调色或拼接。",
+    "naturalBlank": true,
+    "hasOriginalSeals": true
+  },
+  {
+    "id": "shusu-colophon",
+    "title": "蜀素跋纸 · 清宫圆玺",
+    "work": "蜀素帖",
+    "author": "米芾",
+    "era": "北宋作品 · 明代王衡跋纸",
+    "story": "米芾《蜀素帖》的本幅写在绫上，卷后另接纸本题跋。这张取王衡跋纸左上角的天然留白与完整清宫圆玺，保留后世鉴藏的印记，不是米芾书写的蜀素本幅。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/912?dep=P",
+    "provenance": "国立故宫博物院藏《宋米芾蜀素帖》卷；本站第 21 张，明代王衡甲辰年跋纸左上角。馆方题跋释文可核对王衡款识。",
+    "seals": [
+      "清宫鉴藏圆玺"
+    ],
+    "cropPart": "明代王衡题跋纸",
+    "sourceImage": "timeline/pages/shusu/mv0y8nsf-k/IMG_4067.jpeg",
+    "sourcePage": 20,
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 330,
+      "h": 440
+    },
+    "image": "timeline/pages/papers312/shusu-colophon.png",
+    "thumbnail": "timeline/pages/papers312/shusu-colophon-thumb.webp",
+    "paperColor": "#dbc28b",
+    "width": 330,
+    "height": 440,
+    "sourceSha256": "4d2ca027855d4456cc933a8410ce1c3af9e2088f19642380576a6f632fa0a0c7",
+    "imageSha256": "fc0e4098abe518389dd85223fa6a82c25797575eb5f7142e5be78d8be8254f37",
+    "processing": "仅矩形裁切；PNG 与源图裁切像素完全一致；未去字、修复、补绘、调色或拼接。",
+    "naturalBlank": true,
+    "hasOriginalSeals": true
+  }
+]

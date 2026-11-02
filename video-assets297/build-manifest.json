@@ -3888,8 +3888,8 @@
       ],
       "format": "esm"
     },
-    "src/scene-plan.mjs": {
-      "bytes": 2588,
+    "src/camera312.mjs": {
+      "bytes": 2921,
       "imports": [
         {
           "path": "src/camera311.mjs",
@@ -3899,8 +3899,24 @@
       ],
       "format": "esm"
     },
+    "src/scene-plan.mjs": {
+      "bytes": 2667,
+      "imports": [
+        {
+          "path": "src/camera311.mjs",
+          "kind": "import-statement",
+          "original": "./camera311.mjs"
+        },
+        {
+          "path": "src/camera312.mjs",
+          "kind": "import-statement",
+          "original": "./camera312.mjs"
+        }
+      ],
+      "format": "esm"
+    },
     "src/showcase.jsx": {
-      "bytes": 11920,
+      "bytes": 12337,
       "imports": [
         {
           "path": "../media-effects241.js",
@@ -3976,6 +3992,11 @@
       ],
       "format": "esm"
     },
+    "../paper-ink188.js": {
+      "bytes": 9000,
+      "imports": [],
+      "format": "esm"
+    },
     "../release296/catalogue.mjs": {
       "bytes": 4512,
       "imports": [],
@@ -3992,13 +4013,8 @@
       ],
       "format": "esm"
     },
-    "../paper-ink188.js": {
-      "bytes": 9000,
-      "imports": [],
-      "format": "esm"
-    },
     "src/background.mjs": {
-      "bytes": 3231,
+      "bytes": 3254,
       "imports": [
         {
           "path": "../paper-ink188.js",
@@ -4011,6 +4027,11 @@
           "original": "../../release297/video.mjs"
         }
       ],
+      "format": "esm"
+    },
+    "../release312/paper-picker.mjs": {
+      "bytes": 3013,
+      "imports": [],
       "format": "esm"
     },
     "node_modules/remotion/dist/esm/version.mjs": {
@@ -4335,7 +4356,7 @@
       "format": "esm"
     },
     "src/web.jsx": {
-      "bytes": 30398,
+      "bytes": 30786,
       "imports": [
         {
           "path": "node_modules/react/index.js",
@@ -4383,6 +4404,16 @@
           "original": "./player.jsx"
         },
         {
+          "path": "src/background.mjs",
+          "kind": "dynamic-import",
+          "original": "./background.mjs"
+        },
+        {
+          "path": "../release312/paper-picker.mjs",
+          "kind": "dynamic-import",
+          "original": "../../release312/paper-picker.mjs"
+        },
+        {
           "path": "../release296/catalogue.mjs",
           "kind": "dynamic-import",
           "original": "../../release296/catalogue.mjs"
@@ -4391,11 +4422,6 @@
           "path": "../release297/video.mjs",
           "kind": "dynamic-import",
           "original": "../../release297/video.mjs"
-        },
-        {
-          "path": "src/background.mjs",
-          "kind": "dynamic-import",
-          "original": "./background.mjs"
         },
         {
           "path": "src/export-engine.mjs",
@@ -4438,14 +4464,40 @@
     }
   },
   "outputs": {
-    "../video-assets297/chunk.HFZCKANQ.js": {
+    "../video-assets297/chunk.IF5PWCDO.js": {
+      "imports": [
+        {
+          "path": "../video-assets297/chunk.DH43MJXE.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets297/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../video-assets297/chunk.RUDHHM7O.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "registerMp3Encoder"
+      ],
+      "entryPoint": "node_modules/@mediabunny/mp3-encoder/dist/bundles/mediabunny-mp3-encoder.mjs",
+      "inputs": {
+        "node_modules/@mediabunny/mp3-encoder/dist/bundles/mediabunny-mp3-encoder.mjs": {
+          "bytesInOutput": 311117
+        }
+      },
+      "bytes": 311916
+    },
+    "../video-assets297/chunk.B3NHXLBC.js": {
       "imports": [
         {
           "path": "../video-assets297/chunk.RI2CSD3Q.js",
           "kind": "import-statement"
         },
         {
-          "path": "../video-assets297/chunk.4WFPEB2N.js",
+          "path": "../video-assets297/chunk.SL6MA4DD.js",
           "kind": "import-statement"
         },
         {
@@ -4526,6 +4578,17 @@
       },
       "bytes": 1366
     },
+    "../video-assets297/chunk.HWYUC3W4.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "../paper-ink188.js",
+      "inputs": {
+        "../paper-ink188.js": {
+          "bytesInOutput": 6377
+        }
+      },
+      "bytes": 6654
+    },
     "../video-assets297/chunk.JHUHCOW5.js": {
       "imports": [
         {
@@ -4591,18 +4654,7 @@
       },
       "bytes": 4171
     },
-    "../video-assets297/chunk.HWYUC3W4.js": {
-      "imports": [],
-      "exports": [],
-      "entryPoint": "../paper-ink188.js",
-      "inputs": {
-        "../paper-ink188.js": {
-          "bytesInOutput": 6377
-        }
-      },
-      "bytes": 6654
-    },
-    "../video-assets297/chunk.W4ESKGHK.js": {
+    "../video-assets297/chunk.35ELNCUW.js": {
       "imports": [
         {
           "path": "../video-assets297/chunk.5LHGNSCY.js",
@@ -4623,10 +4675,30 @@
       "entryPoint": "src/background.mjs",
       "inputs": {
         "src/background.mjs": {
-          "bytesInOutput": 2551
+          "bytesInOutput": 2578
         }
       },
-      "bytes": 2890
+      "bytes": 2917
+    },
+    "../video-assets297/chunk.YYNYAILB.js": {
+      "imports": [
+        {
+          "path": "../video-assets297/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "applyWriterPaper312",
+        "loadPapers312",
+        "pickPaper312"
+      ],
+      "entryPoint": "../release312/paper-picker.mjs",
+      "inputs": {
+        "../release312/paper-picker.mjs": {
+          "bytesInOutput": 2540
+        }
+      },
+      "bytes": 2915
     },
     "../video-assets297/chunk.RUDHHM7O.js": {
       "imports": [],
@@ -4691,33 +4763,7 @@
       },
       "bytes": 323348
     },
-    "../video-assets297/chunk.IF5PWCDO.js": {
-      "imports": [
-        {
-          "path": "../video-assets297/chunk.DH43MJXE.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "../video-assets297/chunk.5LHGNSCY.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "../video-assets297/chunk.RUDHHM7O.js",
-          "kind": "dynamic-import"
-        }
-      ],
-      "exports": [
-        "registerMp3Encoder"
-      ],
-      "entryPoint": "node_modules/@mediabunny/mp3-encoder/dist/bundles/mediabunny-mp3-encoder.mjs",
-      "inputs": {
-        "node_modules/@mediabunny/mp3-encoder/dist/bundles/mediabunny-mp3-encoder.mjs": {
-          "bytesInOutput": 311117
-        }
-      },
-      "bytes": 311916
-    },
-    "../video-assets297/web.P3TY6LAD.js": {
+    "../video-assets297/web.N4RTKTES.js": {
       "imports": [
         {
           "path": "../video-assets297/chunk.RI2CSD3Q.js",
@@ -4748,7 +4794,15 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../video-assets297/chunk.WIKEMEA4.js",
+          "path": "../video-assets297/chunk.J6HNLBJU.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "../video-assets297/chunk.35ELNCUW.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "../video-assets297/chunk.YYNYAILB.js",
           "kind": "dynamic-import"
         },
         {
@@ -4760,11 +4814,7 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../video-assets297/chunk.W4ESKGHK.js",
-          "kind": "dynamic-import"
-        },
-        {
-          "path": "../video-assets297/chunk.HFZCKANQ.js",
+          "path": "../video-assets297/chunk.B3NHXLBC.js",
           "kind": "dynamic-import"
         },
         {
@@ -4776,7 +4826,7 @@
       "entryPoint": "src/web.jsx",
       "inputs": {
         "src/web.jsx": {
-          "bytesInOutput": 26769
+          "bytesInOutput": 27107
         },
         "src/format.mjs": {
           "bytesInOutput": 379
@@ -4785,7 +4835,7 @@
           "bytesInOutput": 2086
         },
         "../brush.js": {
-          "bytesInOutput": 14381
+          "bytesInOutput": 14374
         },
         "src/detached297.mjs": {
           "bytesInOutput": 5535
@@ -4794,7 +4844,7 @@
           "bytesInOutput": 964
         }
       },
-      "bytes": 50635
+      "bytes": 50966
     },
     "../video-assets297/chunk.RI2CSD3Q.js": {
       "imports": [
@@ -5093,10 +5143,10 @@
       },
       "bytes": 5059
     },
-    "../video-assets297/chunk.WIKEMEA4.js": {
+    "../video-assets297/chunk.J6HNLBJU.js": {
       "imports": [
         {
-          "path": "../video-assets297/chunk.4WFPEB2N.js",
+          "path": "../video-assets297/chunk.SL6MA4DD.js",
           "kind": "import-statement"
         },
         {
@@ -5126,7 +5176,7 @@
       },
       "bytes": 63025
     },
-    "../video-assets297/chunk.4WFPEB2N.js": {
+    "../video-assets297/chunk.SL6MA4DD.js": {
       "imports": [
         {
           "path": "../video-assets297/chunk.I6RQJ6FK.js",
@@ -5156,7 +5206,7 @@
           "bytesInOutput": 4066
         },
         "src/showcase.jsx": {
-          "bytesInOutput": 8211
+          "bytesInOutput": 8539
         },
         "node_modules/remotion/dist/esm/index.mjs": {
           "bytesInOutput": 265104
@@ -5173,11 +5223,14 @@
         "src/camera311.mjs": {
           "bytesInOutput": 3547
         },
+        "src/camera312.mjs": {
+          "bytesInOutput": 1912
+        },
         "src/scene-plan.mjs": {
-          "bytesInOutput": 1801
+          "bytesInOutput": 1841
         }
       },
-      "bytes": 437921
+      "bytes": 440201
     },
     "../video-assets297/chunk.I6RQJ6FK.js": {
       "imports": [
