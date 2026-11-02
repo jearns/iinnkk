@@ -4,12 +4,12 @@ import{AbsoluteFill,Img,staticFile,useCurrentFrame,useVideoConfig,delayRender,co
 import{Audio}from'@remotion/media';
 import{OUTRO_SLOGAN,OUTRO_SITE,videoTimeline}from'./timing.mjs';
 import{scenePlan,sceneFrame,clamp}from'./scene-plan.mjs';
-import{cameraTransform308}from'./tracking308.mjs';
+import{paperTransform311,paintMatte311}from'./matte311.mjs';
 import{musicTrack,musicSource}from'./music.mjs';
 let font294;function loadBrandFont294(){return font294||(font294=new FontFace('ShoubiFilm294',`url("${staticFile('release294/film-brand.woff')}")`).load().then(font=>document.fonts.add(font)));}
 function paintImage(ctx,image,w,h,scene,factor=1){
- const m=cameraTransform308(image.width,image.height,w,h,scene.scale*factor,scene.region);
- ctx.drawImage(image,m.x,m.y,m.width,m.height);
+ const m=paperTransform311(image.width,image.height,w,h,scene.scale*factor,scene.region);
+ ctx.save();ctx.beginPath();ctx.rect(m.viewport.x,m.viewport.y,m.viewport.width,m.viewport.height);ctx.clip();ctx.drawImage(image,m.x,m.y,m.width,m.height);ctx.restore();paintMatte311(ctx,m.viewport,w,h);
 }
 function FilmCanvas({surface,frame,timing,view,enter,width,height,fps,renderStyle296,background296}){
  const buffering296=useBufferState();const ref=useRef(null),layers=useRef({}),handle=useMemo(()=>delayRender('Original ink frame'),[frame,width,height]);
@@ -22,7 +22,7 @@ function FilmCanvas({surface,frame,timing,view,enter,width,height,fps,renderStyl
    let backdrop,previous;
    if(false){const im=await capture(current,{complete:true});if(disposed||!im)return;backdrop=copy(im,'backdrop')}
    if(false){const im=await capture(view.previous.end,{hero:surface.sequence294&&view.previous.kind==='hero'});if(disposed||!im)return;previous=copy(im,'previous')}
-   const image=await capture(current,{hero:surface.sequence294&&(isCover||hero)});if(disposed||!image)return;
+   const image=await capture(current,{complete:view.completePage311,hero:surface.sequence294&&(isCover||hero)});if(disposed||!image)return;
    return {image,backdrop,previous,isCover,hero};
   };
   const commit=({image,backdrop,previous,isCover,hero},bg296)=>{
@@ -36,18 +36,18 @@ function FilmCanvas({surface,frame,timing,view,enter,width,height,fps,renderStyl
    paintImage(ctx,image,width,height,shot,isCover?1:view.factor);ctx.restore();
    const effects=renderStyle296?.effects301;if(effects&&(effects.hd241||effects.blur||effects.veil235||['mono','noir'].includes(effects.style))){const scratch=layers.current.filter301||(layers.current.filter301=document.createElement('canvas'));scratch.width=width;scratch.height=height;scratch.getContext('2d').drawImage(ref.current,0,0);const filtered=window.MediaEffects241.video(scratch,effects);ctx.drawImage(filtered,0,0,width,height);if(effects.veil235){const veil=layers.current.veil301||(layers.current.veil301=document.createElement('canvas'));veil.width=width;veil.height=height;const v=veil.getContext('2d');v.clearRect(0,0,width,height);v.fillStyle=`rgba(0,0,0,${effects.veil235})`;v.fillRect(0,0,width,height);v.globalCompositeOperation='destination-out';for(const p of effects.lightSpots238||[]){const r=p.radius*Math.min(width,height),g=v.createRadialGradient(p.x*width,p.y*height,0,p.x*width,p.y*height,r);g.addColorStop(0,'#000');g.addColorStop(1,'#0000');v.fillStyle=g;v.fillRect(p.x*width-r,p.y*height-r,r*2,r*2)}v.globalCompositeOperation='source-over';ctx.drawImage(veil,0,0)}}
    ref.current.dataset.painted297=String(frame);
-   if(view.point310){const m=cameraTransform308(image.width,image.height,width,height,shot.scale*view.factor,shot.region);ref.current.dataset.penScreenX310=String((m.x+view.point310.x*m.width)/width);ref.current.dataset.penScreenY310=String((m.y+view.point310.y*m.height)/height)}
+   if(!view.point310){delete ref.current.dataset.penScreenX310;delete ref.current.dataset.penScreenY310}if(view.point310){const m=paperTransform311(image.width,image.height,width,height,shot.scale*view.factor,shot.region);ref.current.dataset.penScreenX310=String((m.x+view.point310.x*m.width)/width);ref.current.dataset.penScreenY310=String((m.y+view.point310.y*m.height)/height)}
    if(!isCover&&view.shade>0){ctx.save();ctx.globalAlpha=view.shade;const g=ctx.createLinearGradient(0,0,width,height);g.addColorStop(0,'#050608');g.addColorStop(1,view.mode==='shadow'?'#17191e':'#050608');ctx.fillStyle=g;ctx.fillRect(0,0,width,height);ctx.restore()}
-  };const paint=()=>{if(surface?.frame297&&!background296){const isCover=timing.phase==='cover',hero=view.scene.kind==='hero',current=isCover?1:view.progress,capture=(p,o={})=>surface.frame297(p,{style:renderStyle296,...o});const backdrop=false?copy(capture(current,{complete:true}),'backdrop'):null,previous=view.mode==='dissolve'&&view.previous&&view.blend>0&&!isCover?copy(capture(view.previous.end,{hero:view.previous.kind==='hero'}),'previous'):null,image=capture(current,{hero:isCover||hero});commit({image,backdrop,previous,isCover,hero},null);return Promise.resolve()}return collect().then(async data=>{if(!data||disposed)return;const bg=background296?await background296.frame(frame/fps,renderStyle296?.showOriginal295):null;commit(data,bg)})};paint().then(finish,error=>{if(!disposed)cancelRender(error);finish()});return()=>{disposed=true;finish()};
+  };const paint=()=>{if(surface?.frame297&&!background296){const isCover=timing.phase==='cover',hero=view.scene.kind==='hero',current=isCover?1:view.progress,capture=(p,o={})=>surface.frame297(p,{style:renderStyle296,...o});const backdrop=false?copy(capture(current,{complete:true}),'backdrop'):null,previous=view.mode==='dissolve'&&view.previous&&view.blend>0&&!isCover?copy(capture(view.previous.end,{hero:view.previous.kind==='hero'}),'previous'):null,image=capture(current,{complete:view.completePage311,hero:isCover||hero});commit({image,backdrop,previous,isCover,hero},null);return Promise.resolve()}return collect().then(async data=>{if(!data||disposed)return;const bg=background296?await background296.frame(frame/fps,renderStyle296?.showOriginal295):null;commit(data,bg)})};paint().then(finish,error=>{if(!disposed)cancelRender(error);finish()});return()=>{disposed=true;finish()};
  },[frame,handle,surface,width,height,view.mode,view.factor,view.progress,view.scene.scale,view.scene.region.x,view.scene.region.y,enter,renderStyle296,background296]);
- return <canvas ref={ref} width={width} height={height} data-canvas293="" data-scene293={view.scene.id} data-mode293={view.mode} data-scale303={view.scene.scale} data-focus-x303={view.scene.region.x} data-focus-y303={view.scene.region.y} data-progress293={timing.phase==='cover'?1:view.progress} data-target-scale309={view.scene.scale*view.factor} data-shade308={view.shade} data-pen-x310={view.point310?.x} data-pen-y310={view.point310?.y} data-page310={view.point310?.page} style={{width:'100%',height:'100%',display:'block'}}/>;
+ return <canvas ref={ref} width={width} height={height} data-canvas293="" data-phase311={view.phase311} data-region311={view.region311} data-drawing311={view.drawing311} data-scene293={view.scene.id} data-mode293={view.mode} data-scale303={view.scene.scale} data-focus-x303={view.scene.region.x} data-focus-y303={view.scene.region.y} data-progress293={timing.phase==='cover'?1:view.progress} data-target-scale309={view.scene.scale*view.factor} data-shade308={view.shade} data-pen-x310={view.point310?.x} data-pen-y310={view.point310?.y} data-page310={view.point310?.page} style={{width:'100%',height:'100%',display:'block'}}/>;
 }
-export const ShoubiShowcase=({surface,artwork,title,signature,music='none',musicUrl295=null,transition='push',renderStyle296={},background296=null})=>{
+export const ShoubiShowcase=({surface,artwork,title,signature,music='none',musicUrl295=null,transition='push',cameraMode311='track',renderStyle296={},background296=null})=>{
  const brandFontHandle=useMemo(()=>delayRender('Brand typography'),[]);useEffect(()=>{loadBrandFont294().then(()=>continueRender(brandFontHandle),cancelRender)},[]);
  const frame=useCurrentFrame(),{fps,durationInFrames,width,height}=useVideoConfig();
- const timing=videoTimeline(frame,durationInFrames,fps),plan=useMemo(()=>scenePlan(durationInFrames,fps,surface?.chapters||[],surface?.tracking308,width/height),[durationInFrames,fps,surface,width,height]);
+ const timing=videoTimeline(frame,durationInFrames,fps),plan=useMemo(()=>scenePlan(durationInFrames,fps,surface?.chapters||[],surface?.tracking308,width/height,cameraMode311),[durationInFrames,fps,surface,width,height,cameraMode311]);
  const view=sceneFrame(frame,plan,fps),brand=timing.phase==='intro'||timing.phase==='outro';
- const enter=interpolate(frame-plan.intro,[0,Math.min(fps*1.3,plan.scenes[0].to-plan.intro)],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp',easing:Easing.bezier(.22,1,.36,1)});
+ const enter=interpolate(frame-plan.intro,[0,Math.min(fps*.25,plan.scenes[0].to-plan.intro)],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp',easing:Easing.bezier(.22,1,.36,1)});
  const unit=Math.min(width,height)/1080,brandUnit310=unit*2/3;
  const brandAlpha=timing.phase==='intro'?Math.min(clamp((frame-1)/(fps*.15)),clamp((plan.intro-frame)/(fps*.2))):clamp((frame-plan.outro)/(fps*.2));
  const track=musicTrack(music);

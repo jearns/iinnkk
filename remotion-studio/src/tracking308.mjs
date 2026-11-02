@@ -1,3 +1,4 @@
+import {writingRegions311} from './framing311.mjs';
 // Geometry and timing shared by replay, camera planning and export. No DOM or frame history.
 export const clamp308=(n,a=0,b=1)=>Math.max(a,Math.min(b,n));
 const mix=(a,b,t)=>a+(b-a)*t;
@@ -34,7 +35,7 @@ export function buildTracking308(snapshots,{museums=[]}={}){
   jumps310.push({p:b.start,before,after,beforePaper:paperSpace(a.p.page,recordPoint308(a.p.page,a.r,a.r.st.points.at(-1))),afterPaper:paperSpace(b.p.page,recordPoint308(b.p.page,b.r,b.r.st.points[0])),page,pageIndex:b.p.index,strokeIndex:b.strokeIndex});
   if(page||dx>.28&&dy>.18||dy>.42&&dx>.1)transitions.push({p:b.start,before,after,page,kind:page?'page':'column'});
  }
- return{pages:pages.map(p=>({index:p.index,start:p.start,end:p.end,span:p.span,aspect:p.aspect,seconds:p.seconds,strokeCount:p.page.records?.length||0,points:p.page.total||0})),sample,pageAt,transitions,jumps310,estimatedSeconds:Math.ceil(sum+9),strokeCount:records.length,pointCount:snapshots.reduce((n,p)=>n+(p.total||0),0)};
+ return{pages:pages.map(p=>({index:p.index,start:p.start,end:p.end,span:p.span,aspect:p.aspect,seconds:p.seconds,strokeCount:p.page.records?.length||0,points:p.page.total||0})),regions311:writingRegions311(pages,recordPoint308),sample,pageAt,transitions,jumps310,estimatedSeconds:Math.ceil(sum+9),strokeCount:records.length,pointCount:snapshots.reduce((n,p)=>n+(p.total||0),0)};
 }
 export function cameraTransform308(iw,ih,w,h,scale,focus){const k=Math.min(w/iw,h/ih)*scale,sw=iw*k,sh=ih*k,lx=Math.max(0,(sw-w)/2),ly=Math.max(0,(sh-h)/2),x=clamp308((.5-focus.x)*sw,-lx,lx),y=clamp308((.5-focus.y)*sh,-ly,ly);return{x:(w-sw)/2+x,y:(h-sh)/2+y,width:sw,height:sh}}
 export function projectPoint308(point,aspect,outAspect,scale,focus){const m=cameraTransform308(aspect,1,outAspect,1,scale,focus);return{x:(m.x+point.x*m.width)/outAspect,y:m.y+point.y*m.height}}
