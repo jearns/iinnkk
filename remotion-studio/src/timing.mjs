@@ -1,8 +1,10 @@
 export const VIDEO_FPS = 30;
-export const VIDEO_DURATIONS = [8, 15, 30, 60, 120, 180, 300, 480, 600];
+export const VIDEO_DURATIONS = [10, 30, 60, 120, 180, 300];
+export const DEFAULT_VIDEO_DURATION310=120;
+export const MAX_VIDEO_DURATION310=1800;
 export const OUTRO_SLOGAN = '以手为笔，随时写字';
 export const OUTRO_SITE = 'iinnkk.me';
-export function normalizeDuration(value) { const n=Number(value); return Number.isFinite(n)&&n>=8 ? Math.ceil(n) : 30; }
+export function normalizeDuration(value) { const n=Number(value); return Number.isFinite(n)&&n>0 ? Math.max(10,Math.min(MAX_VIDEO_DURATION310,Math.round(n))) : DEFAULT_VIDEO_DURATION310; }
 export function videoTimeline(frame, durationInFrames, fps) {
   const introEnd = 1 + 2 * fps, outroStart = durationInFrames - 2 * fps;
   const hold = Math.min(3 * fps, Math.max(fps * .6, Math.round((outroStart - introEnd) * .12)));

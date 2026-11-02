@@ -8,7 +8,7 @@ export const Root = () => (
   <Composition
     id="ShoubiShowcase"
     component={ShoubiShowcase}
-    durationInFrames={30 * VIDEO_FPS}
+    durationInFrames={120 * VIDEO_FPS}
     fps={VIDEO_FPS}
     calculateMetadata={({props}) => ({...videoFormat(props.artworkRatio||.75),durationInFrames: normalizeDuration(props.durationSeconds) * VIDEO_FPS})}
     width={1080}
@@ -18,7 +18,7 @@ export const Root = () => (
       title: '一纸一世界',
       signature: '手筆 · 以手为笔，随时写字',
       paperColor: '#e9dfca',
-      durationSeconds: 30,
+      durationSeconds: 120,
     }}
   />
 );
