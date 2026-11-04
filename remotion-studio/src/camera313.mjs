@@ -3,7 +3,7 @@ import{blendPose311,travel311}from'./camera311.mjs';
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const wide={scale:1,focus:{x:.5,y:.5}},EPS=1e-10;
 export function buildCamera313(track,count,fps,outAspect,mode='combo'){
- const n=Math.max(1,count),budget=Math.floor(n*.16),base=buildCamera312(track,Math.max(1,n-budget),fps,outAspect,mode,{steady313:.35,wide313:1.12,alternatePages313:true,pullAfter313:true});
+ const n=Math.max(1,count),budget=Math.floor(n*.16),base=buildCamera312(track,Math.max(1,n-budget),fps,outAspect,mode,{steady313:.35,wide313:1.12,alternatePages313:true,pullAfter313:true,freeZoom314:true});
  const columns=base.columns312||[];if(!columns.length){let c=null,boundary=null;for(const s of base.segments){if(s.kind!=='draw'){boundary=s.kind;continue}if(!c||c.page!==s.r.page||boundary==='column'){c={id:columns.length,page:s.r.page,ordinal:c?.page===s.r.page?c.ordinal+1:0,from:s.from,to:s.to,lastFrom:s.from,close:mode==='track'&&s.r.ink!==false};columns.push(c)}c.to=s.to;c.lastFrom=s.from;boundary=null}}
  const timeline=base.segments.at(-1)?.to||base.count,publicFrame=f=>clamp(Math.round(f*(base.count-1)/Math.max(1,timeline-1)),0,base.count-1),regionColumns=new Map;
  for(const s of base.segments)if(s.kind==='draw')regionColumns.set(s.index,columns.find(c=>s.from>=c.from&&s.from<c.to));

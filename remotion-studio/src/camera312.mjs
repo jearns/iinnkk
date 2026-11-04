@@ -5,7 +5,7 @@ const wide={scale:1,focus:{x:.5,y:.5}};
 function pageZoom312(track,index,maximum=1.06){const rows=(track.regions311||[]).filter(r=>r.page===index&&r.ink!==false);let distance=.001;for(const r of rows)for(const v of[r.box.x,r.box.r,r.box.y,r.box.b])distance=Math.max(distance,Math.abs(v-.5));return Math.max(1,Math.min(maximum,.49/distance))}
 export function buildCamera312(track,count,fps,outAspect,mode='combo',options313={}){
  if(mode==='track')return buildCamera311(track,count,fps,outAspect,'track',options313);
- const base=buildCamera311(track,count,fps,outAspect,mode==='fixed'?'fixed':'track',options313),limits=track.pages.map((p,i)=>pageZoom312(track,i,options313.wide313||1.06));
+ const base=buildCamera311(track,count,fps,outAspect,mode==='fixed'?'fixed':'track',options313),limits=track.pages.map((p,i)=>options313.freeZoom314?(options313.wide313||1.12):pageZoom312(track,i,options313.wide313||1.06));
  if(mode==='fixed')return{...base,at(index){const v=base.at(index),p=track.pages[v.point.page],t=clamp((v.progress311-p.start)/(p.end-p.start||1));return{...v,scale:1+(limits[v.point.page]-1)*travel311(t),focus:{x:.5,y:.5},shot312:'single',column312:0}}};
  const columns=[],regionColumns=new Map();let current=null,boundary=null;
  for(const s of base.segments){if(s.kind!=='draw'){boundary=s.kind;continue}if(!current||current.page!==s.r.page||boundary==='column'){const ordinal=current?.page===s.r.page?current.ordinal+1:0;current={id:columns.length,page:s.r.page,ordinal,from:s.from,to:s.to,lastFrom:s.from,close:(options313.alternatePages313?columns.length:ordinal)%2===0&&s.r.ink!==false};columns.push(current)}current.to=s.to;current.lastFrom=s.from;regionColumns.set(s.index,current);boundary=null}

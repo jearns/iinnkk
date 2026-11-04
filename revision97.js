@@ -1,5 +1,5 @@
 (function init97(){
- if(!window.Revision94?.ready||!window.Toolbar95||!document.getElementById('previewEffects55')){setTimeout(init97,60);return}
+ if(!window.Revision94?.ready||!window.Toolbar95||!document.getElementById('previewEffects55')){(window.WriterStartup173?.retry314||setTimeout)(init97,60);return}
  const A=AnnotationApp,$=id=>document.getElementById(id),body=document.body,board=$('board'),panel=$('previewEffects55'),steps=panel.querySelector('.finalSteps54'),rail=panel.querySelector('.finalRail54');
  for(const b of steps.querySelectorAll('button')){const label=b.textContent.trim();if(label==='图文配置')b.textContent='图文';if(/文创/.test(label)){b.textContent='文创';b.hidden=true}if(label==='流变')b.hidden=true}
  const ratio=[...steps.querySelectorAll('button')].find(b=>(window.I18n218?.matches?.(b,"比例")||b.textContent==='比例')),current=steps.querySelector('[aria-current=true]');ratio?.click();requestAnimationFrame(()=>{const h=rail.getBoundingClientRect().height;panel.style.setProperty('--rail-height97',(h>0?h:54)+'px');if(current&&current!==ratio&&!current.hidden)current.click()});

@@ -1,2 +1,2 @@
 /* Shared natural paper selection; legacy full-catalogue extraction stays available. */
-(function(root){root.PostPaper188={async open(){const m=await import('./release313/paper-picker.mjs'),selected=await m.pickPaper312({catalogue:async()=>{await root.FloatingPost214.open({paper:true});return null}});if(selected)await m.applyWriterPaper312(selected)},pages:work=>root.FloatingPost214.choose(work,{paper:true})}})(window);
+(function(root){root.PostPaper188={async open(){const m=await import('./release314/paper-picker.mjs'),selected=await m.pickPaper312({catalogue:async()=>{await root.FloatingPost214.open({paper:true});return null}});if(selected)await m.applyWriterPaper312(selected)},pages:work=>root.FloatingPost214.choose(work,{paper:true})}})(window);

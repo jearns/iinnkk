@@ -1,0 +1,741 @@
+{
+  "id": "wen-tengwang-ndl314",
+  "title": "文徵明·行书滕王阁序并诗（1907年影印本）",
+  "work": "滕王阁序并诗",
+  "author": "文徵明",
+  "script": "行书",
+  "era": "明",
+  "year": null,
+  "originalWorkYear": null,
+  "publicationYear": 1907,
+  "version": "1907年东京田沼书店影印本；国立国会图书馆数字馆藏",
+  "dateLabel": "明代书迹 · 1907年影印本（原作纪年未核）",
+  "museum": "日本国立国会图书馆（影印本馆藏）",
+  "place": "日本·东京",
+  "source": "https://dl.ndl.go.jp/pid/853047",
+  "manifest": "https://dl.ndl.go.jp/api/iiif/853047/manifest.json",
+  "doi": "https://doi.org/10.11501/853047",
+  "bibliographicId": "000000489154",
+  "callNumber": "特56-609",
+  "attribution": "国立国会図書館 National Diet Library, JAPAN",
+  "rights": "PDM",
+  "rightsDescription": "馆方 IIIF manifest 的 Access Restrictions=PDM；1907年出版的公版扫描影印本。署明国立国会图书馆来源，不冒称馆藏明代墨迹真迹。",
+  "rightsSource": "https://dl.ndl.go.jp/api/iiif/853047/manifest.json",
+  "iiifTerms": "https://dl.ndl.go.jp/ja/help_iiif#api-の利用について",
+  "access": "公开 IIIF 图像，无需登录。",
+  "verification": [
+    "馆方元数据 Creator 为“文徴明 書”。",
+    "扫描第4幅书前鉴査状称“文徵明筆”，并明示“行書”。",
+    "扫描第17幅左页可见“徵明”署款及印记。",
+    "正文视觉核对为行书，不是小楷；不得因原请求使用“小楷”而改写书体。",
+    "原作纪年尚未核验；1907仅为这份影印本出版年。"
+  ],
+  "summary": "文徵明行书《滕王阁序并诗》的旧影印本，行笔秀逸，保留书前鉴査状、正文和署款，作为可靠可追溯的法帖版本展示。",
+  "pages": [
+    "timeline/pages/wen-tengwang314/page-01.webp",
+    "timeline/pages/wen-tengwang314/page-02.webp",
+    "timeline/pages/wen-tengwang314/page-03.webp",
+    "timeline/pages/wen-tengwang314/page-04.webp",
+    "timeline/pages/wen-tengwang314/page-05.webp",
+    "timeline/pages/wen-tengwang314/page-06.webp",
+    "timeline/pages/wen-tengwang314/page-07.webp",
+    "timeline/pages/wen-tengwang314/page-08.webp",
+    "timeline/pages/wen-tengwang314/page-09.webp",
+    "timeline/pages/wen-tengwang314/page-10.webp",
+    "timeline/pages/wen-tengwang314/page-11.webp",
+    "timeline/pages/wen-tengwang314/page-12.webp",
+    "timeline/pages/wen-tengwang314/page-13.webp",
+    "timeline/pages/wen-tengwang314/page-14.webp",
+    "timeline/pages/wen-tengwang314/page-15.webp",
+    "timeline/pages/wen-tengwang314/page-16.webp",
+    "timeline/pages/wen-tengwang314/page-17.webp",
+    "timeline/pages/wen-tengwang314/page-18.webp",
+    "timeline/pages/wen-tengwang314/page-19.webp",
+    "timeline/pages/wen-tengwang314/page-20.webp",
+    "timeline/pages/wen-tengwang314/page-21.webp",
+    "timeline/pages/wen-tengwang314/page-22.webp",
+    "timeline/pages/wen-tengwang314/page-23.webp",
+    "timeline/pages/wen-tengwang314/page-24.webp",
+    "timeline/pages/wen-tengwang314/page-25.webp"
+  ],
+  "pageNames": [
+    "正文第1页（影印扫描5，左页）",
+    "正文第2页（影印扫描6，右页）",
+    "正文第3页（影印扫描6，左页）",
+    "正文第4页（影印扫描7，右页）",
+    "正文第5页（影印扫描7，左页）",
+    "正文第6页（影印扫描8，右页）",
+    "正文第7页（影印扫描8，左页）",
+    "正文第8页（影印扫描9，右页）",
+    "正文第9页（影印扫描9，左页）",
+    "正文第10页（影印扫描10，右页）",
+    "正文第11页（影印扫描10，左页）",
+    "正文第12页（影印扫描11，右页）",
+    "正文第13页（影印扫描11，左页）",
+    "正文第14页（影印扫描12，右页）",
+    "正文第15页（影印扫描12，左页）",
+    "正文第16页（影印扫描13，右页）",
+    "正文第17页（影印扫描13，左页）",
+    "正文第18页（影印扫描14，右页）",
+    "正文第19页（影印扫描14，左页）",
+    "正文第20页（影印扫描15，右页）",
+    "正文第21页（影印扫描15，左页）",
+    "正文第22页（影印扫描16，右页）",
+    "正文第23页（影印扫描16，左页）",
+    "正文第24页（影印扫描17，右页）",
+    "正文第25页（影印扫描17，左页）"
+  ],
+  "thumbnails": [
+    "timeline/pages/wen-tengwang314/page-01-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-02-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-03-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-04-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-05-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-06-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-07-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-08-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-09-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-10-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-11-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-12-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-13-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-14-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-15-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-16-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-17-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-18-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-19-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-20-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-21-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-22-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-23-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-24-thumb.webp",
+    "timeline/pages/wen-tengwang314/page-25-thumb.webp"
+  ],
+  "cover": "timeline/pages/wen-tengwang314/page-01.webp",
+  "coverThumbnail": "timeline/pages/wen-tengwang314/page-01-thumb.webp",
+  "readingPages": [
+    {
+      "image": "timeline/pages/wen-tengwang314/page-01.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-01-thumb.webp",
+      "name": "正文第1页（影印扫描5，左页）",
+      "scan": 5,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-02.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-02-thumb.webp",
+      "name": "正文第2页（影印扫描6，右页）",
+      "scan": 6,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-03.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-03-thumb.webp",
+      "name": "正文第3页（影印扫描6，左页）",
+      "scan": 6,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-04.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-04-thumb.webp",
+      "name": "正文第4页（影印扫描7，右页）",
+      "scan": 7,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-05.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-05-thumb.webp",
+      "name": "正文第5页（影印扫描7，左页）",
+      "scan": 7,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-06.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-06-thumb.webp",
+      "name": "正文第6页（影印扫描8，右页）",
+      "scan": 8,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-07.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-07-thumb.webp",
+      "name": "正文第7页（影印扫描8，左页）",
+      "scan": 8,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-08.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-08-thumb.webp",
+      "name": "正文第8页（影印扫描9，右页）",
+      "scan": 9,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-09.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-09-thumb.webp",
+      "name": "正文第9页（影印扫描9，左页）",
+      "scan": 9,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-10.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-10-thumb.webp",
+      "name": "正文第10页（影印扫描10，右页）",
+      "scan": 10,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-11.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-11-thumb.webp",
+      "name": "正文第11页（影印扫描10，左页）",
+      "scan": 10,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-12.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-12-thumb.webp",
+      "name": "正文第12页（影印扫描11，右页）",
+      "scan": 11,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-13.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-13-thumb.webp",
+      "name": "正文第13页（影印扫描11，左页）",
+      "scan": 11,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-14.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-14-thumb.webp",
+      "name": "正文第14页（影印扫描12，右页）",
+      "scan": 12,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-15.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-15-thumb.webp",
+      "name": "正文第15页（影印扫描12，左页）",
+      "scan": 12,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-16.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-16-thumb.webp",
+      "name": "正文第16页（影印扫描13，右页）",
+      "scan": 13,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-17.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-17-thumb.webp",
+      "name": "正文第17页（影印扫描13，左页）",
+      "scan": 13,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-18.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-18-thumb.webp",
+      "name": "正文第18页（影印扫描14，右页）",
+      "scan": 14,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-19.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-19-thumb.webp",
+      "name": "正文第19页（影印扫描14，左页）",
+      "scan": 14,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-20.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-20-thumb.webp",
+      "name": "正文第20页（影印扫描15，右页）",
+      "scan": 15,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-21.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-21-thumb.webp",
+      "name": "正文第21页（影印扫描15，左页）",
+      "scan": 15,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-22.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-22-thumb.webp",
+      "name": "正文第22页（影印扫描16，右页）",
+      "scan": 16,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-23.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-23-thumb.webp",
+      "name": "正文第23页（影印扫描16，左页）",
+      "scan": 16,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-24.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-24-thumb.webp",
+      "name": "正文第24页（影印扫描17，右页）",
+      "scan": 17,
+      "side": "right",
+      "crop": {
+        "x": 2080,
+        "y": 500,
+        "w": 1650,
+        "h": 2560
+      },
+      "width": 1650,
+      "height": 2560
+    },
+    {
+      "image": "timeline/pages/wen-tengwang314/page-25.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/page-25-thumb.webp",
+      "name": "正文第25页（影印扫描17，左页）",
+      "scan": 17,
+      "side": "left",
+      "crop": {
+        "x": 200,
+        "y": 500,
+        "w": 1640,
+        "h": 2560
+      },
+      "width": 1640,
+      "height": 2560
+    }
+  ],
+  "fullScans": [
+    {
+      "scan": 1,
+      "image": "timeline/pages/wen-tengwang314/scan-01.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-01-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000001/full/full/0/default.jpg",
+      "sourceSha256": "5bc6d20f6d5028a4f9e7209e572cde6e1f7bb9a734d0238d2d8f31a94bd35d13"
+    },
+    {
+      "scan": 2,
+      "image": "timeline/pages/wen-tengwang314/scan-02.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-02-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000002/full/full/0/default.jpg",
+      "sourceSha256": "416bba6da335df1b36da9fd1e5e8ea4a12952ab31831b6692829f079478f7a79"
+    },
+    {
+      "scan": 3,
+      "image": "timeline/pages/wen-tengwang314/scan-03.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-03-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000003/full/full/0/default.jpg",
+      "sourceSha256": "b57e2e1a8ff13ebb1ff97316c60e2a60cb801e142c385ac0794839e103c0c9de"
+    },
+    {
+      "scan": 4,
+      "image": "timeline/pages/wen-tengwang314/scan-04.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-04-thumb.webp",
+      "width": 3200,
+      "height": 2760,
+      "sourceWidth": 3837,
+      "sourceHeight": 3309,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000004/full/full/0/default.jpg",
+      "sourceSha256": "7c202a26e733000f64b2382bbc8926f7fd89a2f0ac19e5ba007b27856489c2c7"
+    },
+    {
+      "scan": 5,
+      "image": "timeline/pages/wen-tengwang314/scan-05.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-05-thumb.webp",
+      "width": 3200,
+      "height": 2737,
+      "sourceWidth": 3837,
+      "sourceHeight": 3282,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000005/full/full/0/default.jpg",
+      "sourceSha256": "3fc6fe14fb4a7ccb3ac16da1994fa2afc54e8777c7f21e007fb2836001f03d01"
+    },
+    {
+      "scan": 6,
+      "image": "timeline/pages/wen-tengwang314/scan-06.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-06-thumb.webp",
+      "width": 3200,
+      "height": 2773,
+      "sourceWidth": 3837,
+      "sourceHeight": 3325,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000006/full/full/0/default.jpg",
+      "sourceSha256": "5aef4173e7732944d5e6cc6a48a0e8f018405f0aecc16a1fa9d935546976587d"
+    },
+    {
+      "scan": 7,
+      "image": "timeline/pages/wen-tengwang314/scan-07.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-07-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000007/full/full/0/default.jpg",
+      "sourceSha256": "64f8d4e2a4bdcc96f9e02881b48253ea6c18ed3dbbdd1487e9ec153e371e4dd1"
+    },
+    {
+      "scan": 8,
+      "image": "timeline/pages/wen-tengwang314/scan-08.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-08-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000008/full/full/0/default.jpg",
+      "sourceSha256": "45a973f80308251eb1f4bf84cb2e45c477be6b9001e14fe14b01f7e995548449"
+    },
+    {
+      "scan": 9,
+      "image": "timeline/pages/wen-tengwang314/scan-09.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-09-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000009/full/full/0/default.jpg",
+      "sourceSha256": "a097bcffb8842af9b6f57e2dd4d6d92e5e841657f153444891c1d7ee71d1f8d1"
+    },
+    {
+      "scan": 10,
+      "image": "timeline/pages/wen-tengwang314/scan-10.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-10-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000010/full/full/0/default.jpg",
+      "sourceSha256": "f9e1568673928d794601f900097f16fc7baeea3587b93bd88e8a23a867e2ea5b"
+    },
+    {
+      "scan": 11,
+      "image": "timeline/pages/wen-tengwang314/scan-11.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-11-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000011/full/full/0/default.jpg",
+      "sourceSha256": "fd6a5cc8ece732ef7948480bff9e08bae5300022930a35a75cbb29444cd23370"
+    },
+    {
+      "scan": 12,
+      "image": "timeline/pages/wen-tengwang314/scan-12.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-12-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000012/full/full/0/default.jpg",
+      "sourceSha256": "a104ba9ea7949529cd17e17eb21ea5cceeaa0739669eb1ae9b01caf85ecf0df3"
+    },
+    {
+      "scan": 13,
+      "image": "timeline/pages/wen-tengwang314/scan-13.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-13-thumb.webp",
+      "width": 3200,
+      "height": 2773,
+      "sourceWidth": 3837,
+      "sourceHeight": 3325,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000013/full/full/0/default.jpg",
+      "sourceSha256": "70f14524835d37362ade87f24f1625f0f45bf5d6ab2a7d881bbe78611bde2122"
+    },
+    {
+      "scan": 14,
+      "image": "timeline/pages/wen-tengwang314/scan-14.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-14-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000014/full/full/0/default.jpg",
+      "sourceSha256": "22b5abdde621a2b18c257c912d310b294456d1b470294aa5a186bc3f0df64715"
+    },
+    {
+      "scan": 15,
+      "image": "timeline/pages/wen-tengwang314/scan-15.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-15-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000015/full/full/0/default.jpg",
+      "sourceSha256": "6e6212414a1a05c2f81977fa4cbf4f5dde0846f683a763853aa500a4d859d25a"
+    },
+    {
+      "scan": 16,
+      "image": "timeline/pages/wen-tengwang314/scan-16.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-16-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000016/full/full/0/default.jpg",
+      "sourceSha256": "5f46d921439298df1ec5ce4f45fbc1712596f24f6e4d7c970e1f6c56f8b1a797"
+    },
+    {
+      "scan": 17,
+      "image": "timeline/pages/wen-tengwang314/scan-17.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-17-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000017/full/full/0/default.jpg",
+      "sourceSha256": "dc500af47d406d07f586559d62cf9ae9d4d0ce7ca17ec46ed719664ab3d3cdc1"
+    },
+    {
+      "scan": 18,
+      "image": "timeline/pages/wen-tengwang314/scan-18.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-18-thumb.webp",
+      "width": 3200,
+      "height": 2737,
+      "sourceWidth": 3837,
+      "sourceHeight": 3282,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000018/full/full/0/default.jpg",
+      "sourceSha256": "ed9fdf44566e1918e6a9acbae71f8e866cf7f7d658665163a5f4b44401b6789b"
+    },
+    {
+      "scan": 19,
+      "image": "timeline/pages/wen-tengwang314/scan-19.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-19-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000019/full/full/0/default.jpg",
+      "sourceSha256": "4c9ce0fab8798c251182041c297a5ab213030ae6bf60fd55dcc5d27fbc21dfdf"
+    },
+    {
+      "scan": 20,
+      "image": "timeline/pages/wen-tengwang314/scan-20.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-20-thumb.webp",
+      "width": 3200,
+      "height": 2788,
+      "sourceWidth": 3837,
+      "sourceHeight": 3343,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000020/full/full/0/default.jpg",
+      "sourceSha256": "38bc5c4de83cfef7f90ebecdc9fab4931fe9a2a57f5a91579cba44c4d9da4793"
+    },
+    {
+      "scan": 21,
+      "image": "timeline/pages/wen-tengwang314/scan-21.webp",
+      "thumbnail": "timeline/pages/wen-tengwang314/scan-21-thumb.webp",
+      "width": 3200,
+      "height": 2791,
+      "sourceWidth": 3837,
+      "sourceHeight": 3346,
+      "url": "https://dl.ndl.go.jp/api/iiif/853047/R0000021/full/full/0/default.jpg",
+      "sourceSha256": "54512ea544ed377512dea59476c7792024fe0df10cb03ff83127f1f943f96d7f"
+    }
+  ],
+  "originalScanCount": 21,
+  "readingPageCount": 25,
+  "processing": "完整扫描等比缩小至最长边3200后以WebP quality90保存；正文页仅按标明源像素框作右页→左页裁切，以WebP quality92保存；无去字、增字、补绘或锐化。",
+  "catalogueCorrection": {
+    "id": "tengwang",
+    "wrongField": "author",
+    "currentValue": "文徵明",
+    "correctValue": "祝允明",
+    "evidence": "现有 title、portraitLabel 已是祝允明，script为草书，只有author遗留错误。不要用这份文徵明影印本替换原有祝允明草书正文。"
+  },
+  "authorLife": "1470—1559",
+  "authorSource": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201508/3fe86c6ce19240ee959f3871fd992e57.shtml",
+  "institutionalAttribution": "国立国会图书馆将1907年这部影印本著录为“文徴明 書”；这是影印本的馆方著者著录，并不等同于对原作墨迹的新鉴定。",
+  "visibleInscription": "甲寅三月廿又二日，书于玉磬山房。徵明（影印末页款识，公历年未另作判定）。"
+}
