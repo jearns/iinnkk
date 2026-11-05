@@ -1,3 +1,48 @@
+/* Versioned v315 bundle model. Persistent bristle identities deposit ink; no white paint or noise masks. */
+(function(root){
+ const C=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),lerp=(a,b,t)=>a+(b-a)*t,angleDelta=(a,b)=>Math.atan2(Math.sin(a-b),Math.cos(a-b));
+ const hash=(id,seed)=>{let n=Math.imul((id+1)|0,374761393)^Math.imul(seed|0,668265263);n=Math.imul(n^(n>>>13),1274126177);return((n^(n>>>16))>>>0)/4294967296};
+ const versioned=st=>st?.settings?.engineVersion315===315;
+ function config(s){const c=s.calibration315||{};return{hz:C(+c.modelHz||120,60,240),high:C(+c.highSpeed||8,2,60),low:C(+c.lowSpeed||5.5,1,50),velocityTau:C(+c.velocityTauMs||32,8,120),nibTau:C(+c.nibTauMs||48,12,180),consume:C(+c.consumePerWidth||.0025,.0001,.02),virtual:s.virtualPressure315!==false&&c.virtualPressure!==false}}
+ function start(st,ctx,W=390,H=W){const s=st.settings||{},p=st.points[0],ink=s.inkStart315||{ink:(s.inkLoad315??100)/100,water:.9},size=C(+s.size||30,1,1000),initial=C(ink.ink??1);
+  return{engine315:true,index:1,last:p,x:p.x*390,y:p.y*390,heading:0,angle:0,velocity:0,acceleration:0,curvature:0,r:size*.1,contact:.4,ink:initial,water:C(ink.water??.9),loads:Array.from({length:32},(_,i)=>C(ink.loads?.[i]??initial)),fibres:Array.from({length:32},(_,i)=>({u:(i+.5)/16-1,drag:.8+hash(i,st.seed||1)*.4,last:null})),config:config(s),size,travel:0,fast:false,gate:0,maxGate:0,nodes:0,opacity:ctx?.globalAlpha??1,pressureSource:'virtual',reason:'slow',trace:null};
+ }
+ function inkState(state){return{ink:state.ink,water:state.water,loads:state.loads.slice()}}
+ function node(st,state,x,y,dt,speed,targetAngle,pressure,source,tilt,twist,lift,paths){const s=st.settings,c=state.config,size=state.size,alpha=t=>1-Math.exp(-dt/t),oldVelocity=state.velocity,dx=x-state.x,dy=y-state.y,dist=Math.hypot(dx,dy),widths=dist/size;
+  state.velocity=state.nodes?lerp(state.velocity,speed,alpha(c.velocityTau)):speed;state.acceleration=lerp(state.acceleration,(state.velocity-oldVelocity)*1000/Math.max(1,dt),alpha(48));
+  const turn=state.nodes?angleDelta(targetAngle,state.angle):0;state.curvature=dist>.001?C(Math.abs(turn)*size/dist,0,12):0;
+  if(!state.nodes){state.heading=targetAngle;state.angle=targetAngle}state.heading+=angleDelta(targetAngle,state.heading)*alpha(c.nibTau*(.7+Math.min(state.velocity,30)/30));state.angle=targetAngle;
+  let press=source==='pen-reported'?C(pressure):c.virtual?C(.67/Math.sqrt(1+state.velocity/7)+Math.min(.16,state.curvature*.025)+(state.velocity<1?.08:0),.13,.85):.55;
+  if(lift)press*=.06;state.pressureSource=source==='pen-reported'?'pen-reported':c.virtual?'virtual':'fixed';state.contact=lerp(state.contact,press,alpha(24));
+  const fullness=C(+s.fullness||1,.4,1.8),targetRadius=size*(.045+.49*Math.pow(C(state.contact),.8))*fullness*(1+Math.min(.15,Math.abs(tilt)/90*.15)),rate=alpha(c.nibTau);state.r=lerp(state.r,targetRadius,rate);
+  state.ink=C(state.ink-widths*c.consume*(.4+state.contact)*(.8+state.r/size));state.water=C(state.water-widths*c.consume*.26);
+  for(let i=0;i<32;i++){const weight=.7+state.fibres[i].drag*.3;state.loads[i]=C(state.loads[i]-widths*c.consume*(.45+state.contact)*weight);state.loads[i]=lerp(state.loads[i],Math.min(state.loads[i],state.ink),alpha(120))}
+  if(state.velocity>=c.high)state.fast=true;else if(state.velocity<=Math.min(c.low,c.high*.9))state.fast=false;
+  const strength=C((s.flyingWhite315??50)/100),flow=C(s.flowResponse315??((s.lineStrength108??75)-50)/25),supply=C((.8-Math.min(state.ink,state.loads.reduce((a,b)=>a+b,0)/32))/.32),target=state.fast&&flow>0&&strength>0?strength*flow*supply:0;
+  state.gate=lerp(state.gate,target,alpha(target>state.gate?32:28));if(state.gate<.00001)state.gate=0;state.maxGate=Math.max(state.maxGate,state.gate);
+  state.reason=!strength?'disabled':!flow?'preset':!state.fast?'slow':!supply?'saturated':'limited-supply';
+  const h=state.heading+(twist||0)*Math.PI/180*.07,nx=-Math.sin(h),ny=Math.cos(h),tx=Math.cos(h),ty=Math.sin(h),spacing=state.r/16;
+  for(let i=0;i<32;i++){const f=state.fibres[i],bend=C(angleDelta(targetAngle,state.heading),-.8,.8)*size*.035*f.drag*(.4+Math.abs(f.u)),cx=x+nx*state.r*f.u-tx*bend,cy=y+ny*state.r*f.u-ty*bend,w=spacing*C(1.35-state.gate*(.9+.1*(1-state.loads[i])),.26,1.35)/2;
+   const current={x:cx,y:cy,nx,ny,w},previous=f.last;
+   if(paths&&previous){const shade=C((1-state.loads[i])*(.16+.38*(1-state.water))),bucket=Math.min(3,Math.floor(shade*9)),p=paths[bucket];p.push(previous.x+previous.nx*previous.w,previous.y+previous.ny*previous.w,cx+nx*w,cy+ny*w,cx-nx*w,cy-ny*w,previous.x-previous.nx*previous.w,previous.y-previous.ny*previous.w)}
+   f.last=current;
+  }
+  state.x=x;state.y=y;state.travel+=dist;state.nodes++;if(state.trace)state.trace.push({x:x/390,y:y/390,t:state.time,velocity:state.velocity,acceleration:state.acceleration,curvature:state.curvature,direction:state.heading,pressureSource:state.pressureSource,contact:state.contact,nibWidth:state.r*2,ink:state.ink,water:state.water,gate:state.gate,reason:state.reason});
+ }
+ function tone(color,amount){let hex=String(color||'#050505').replace('#','');if(hex.length===3)hex=hex.split('').map(c=>c+c).join('');if(!/^[0-9a-f]{6}$/i.test(hex))return color;const n=parseInt(hex,16);return'#'+[n>>16,(n>>8)&255,n&255].map(v=>Math.round(lerp(v,Math.min(210,v+145),amount)).toString(16).padStart(2,'0')).join('')}
+ function advance(st,state,ctx,W=390,H=W){const paths=ctx?[[],[],[],[]]:null,c=state.config,s=st.settings,points=st.points;
+  if(!state.nodes){const p=points[0];state.time=p.t;node(st,state,p.x*390,p.y*390,1000/c.hz,0,0,p.pressure,p.pressureSource315||'none',p.tiltX||0,p.twist||0,!!p.lift,null)}
+  for(;state.index<points.length;state.index++){const a=state.last,b=points[state.index],dt=C(b.t-a.t,1,1000),dx=(b.x-a.x)*390,dy=(b.y-a.y)*390,dist=Math.hypot(dx,dy),speed=dist/state.size*1000/dt,direction=dist>.001?Math.atan2(dy,dx):state.angle,steps=Math.min(256,Math.max(1,Math.ceil(dt*c.hz/1000),Math.ceil(dist/(state.size*.18))));
+   if(!b.hover315)for(let k=1;k<=steps;k++){const u=k/steps,source=b.pressureSource315||'none',pressure=source==='pen-reported'?lerp(a.pressureSource315==='pen-reported'?a.pressure:b.pressure,b.pressure,u):null;state.time=lerp(a.t,b.t,u);node(st,state,lerp(a.x,b.x,u)*390,lerp(a.y,b.y,u)*390,dt/steps,speed,direction,pressure,source,lerp(a.tiltX||0,b.tiltX||0,u),lerp(a.twist||0,b.twist||0,u),!!b.lift&&u>.8,paths)}state.last=b;
+  }
+  if(ctx){ctx.save();ctx.scale(W/390,H/390);ctx.globalAlpha=state.opacity;for(let bucket=0;bucket<4;bucket++){const p=paths[bucket];if(!p.length)continue;ctx.fillStyle=tone(s.color||'#050505',bucket/3*.36);ctx.beginPath();for(let i=0;i<p.length;i+=8){ctx.moveTo(p[i],p[i+1]);ctx.lineTo(p[i+2],p[i+3]);ctx.lineTo(p[i+4],p[i+5]);ctx.lineTo(p[i+6],p[i+7]);ctx.closePath()}ctx.fill()}if(!state.travel&&!state.last.hover315){ctx.fillStyle=s.color||'#050505';ctx.beginPath();ctx.arc(state.x,state.y,Math.max(.15,state.r),0,Math.PI*2);ctx.fill()}ctx.restore()}
+  state.ended=!!st.done;return state;
+ }
+ function render(st,ctx,W,H){if(!st.points?.length)return null;return advance(st,start(st,ctx,W,H),ctx,W,H)}
+ function analyze(st,{trace=false}={}){const state=start(st,null);if(trace)state.trace=[];advance(st,state,null);return{ink:inkState(state),maxGate:state.maxGate,nodes:state.nodes,trace:state.trace,final:{velocity:state.velocity,pressureSource:state.pressureSource,gate:state.gate,reason:state.reason,nibWidth:state.r*2}}}
+ root.Brush315={versioned,start,advance,render,analyze,inkState};
+})(typeof globalThis!=='undefined'?globalThis:this);
+
 /* 源迹：轨迹驱动笔毫。原始采样保留；局部纸纹是二维噪声，不生成平行白槽。 */
 (function(root){
  const clamp=(x,a,b)=>Math.max(a,Math.min(b,x)),mix=(a,b,t)=>a+(b-a)*t;
@@ -24,7 +69,7 @@
  let canvasFactory=null;const masks=new Map(),grains194=new Map();
  function setCanvasFactory(factory){canvasFactory=factory}
  function mask(s,level){const key=s.color+':'+s.particle+':'+level;if(masks.has(key))return masks.get(key);const create=canvasFactory||(root.document?()=>root.document.createElement('canvas'):null);if(!create)return null;const c=create();c.width=128;c.height=128;const ctx=c.getContext('2d');ctx.fillStyle=s.color;ctx.fillRect(0,0,128,128);const data=ctx.getImageData(0,0,128,128);let grain=grains194.get(s.particle);if(!grain){grain=new Float32Array(128*128);for(let y=0;y<128;y++)for(let x=0;x<128;x++)grain[y*128+x]=hash(x>>2,y>>1,72)*.7+hash(x,y,18)*.3;grains194.set(s.particle,grain)}for(let y=0;y<128;y++)for(let x=0;x<128;x++){const cloud=grain[y*128+x];data.data[(y*128+x)*4+3]=Math.round(clamp((cloud-level/5*.54)/.10+.5,0,1)*255)}ctx.putImageData(data,0,0);if(masks.size>=24)masks.delete(masks.keys().next().value);masks.set(key,c);return c}
- function prepare(s){if(!s.dryUser314&&((s.regular194||0)+(s.running194||0)+(s.cursive194||0)>.2))return;for(let i=1;i<=5;i++)mask(s,i)}
+ function prepare(s){if(s.engineVersion315===315)return;if(!s.dryUser314&&((s.regular194||0)+(s.running194||0)+(s.cursive194||0)>.2))return;for(let i=1;i<=5;i++)mask(s,i)}
  function dab(t,x,y,r,angle,s,dry,opacity,turn,state,scale){
   if(r<.08*scale)return;const clip=state.clip;if(clip&&(x+r*1.5<clip.x||y+r*1.5<clip.y||x-r*1.5>clip.x+clip.w||y-r*1.5>clip.y+clip.h))return;
  const twist=state.twist||0,rx=r*(.76+Math.abs(turn)*.14),ry=r*(1+Math.abs(turn)*.10);angle=s.kaishu127?angle*.22+Math.PI/4+twist*.12:angle+twist*.35;t.fillStyle=s.color;t.globalAlpha=state.opacity??1;
@@ -39,7 +84,7 @@
   t.beginPath();t.ellipse(x,y,rx,ry*core,angle,0,Math.PI*2);t.fill();
   for(let k=0;k<9;k++){const u=hash(k,2,state.seed)*1.5-.75,v=hash(k,5,state.seed)*2-1,phase=noise(state.travel/(8+hash(k,4,state.seed)*19),k,state.seed+7);if(phase<dry*.48)continue;const width=.13+hash(k,8,state.seed)*.19,dx=u*rx*.6,dy=v*ry*(.7+dry*.18),px=x+dx*cs-dy*sn,py=y+dx*sn+dy*cs;t.beginPath();if(s.particle==='square'){t.save();t.translate(px,py);t.rotate(angle);t.fillRect(-rx*.26,-ry*width,rx*.52,ry*width*2);t.restore()}else{t.ellipse(px,py,Math.max(.15*scale,rx*.36),Math.max(.12*scale,ry*width),angle,0,Math.PI*2);t.fill()}}
  }
- function start(st,t,W,H){const s=settings(st.settings),p=st.points[0];return{index:1,last:p,pos:{x:p.x*W,y:p.y*H},r:s.size*(.025+.20*(s.clerical194||0)+.05*(s.regular194||0)),contact:s.size*(.025+.20*(s.clerical194||0)+.05*(s.regular194||0)),velocity:0,angle:0,travel:0,hold:0,turn:0,dry:0,seed:st.seed||1,opacity:t.globalAlpha??1,ended:false}}
+ function start(st,t,W,H){if(root.Brush315.versioned(st))return root.Brush315.start(st,t,W,H);const s=settings(st.settings),p=st.points[0];return{index:1,last:p,pos:{x:p.x*W,y:p.y*H},r:s.size*(.025+.20*(s.clerical194||0)+.05*(s.regular194||0)),contact:s.size*(.025+.20*(s.clerical194||0)+.05*(s.regular194||0)),velocity:0,angle:0,travel:0,hold:0,turn:0,dry:0,seed:st.seed||1,opacity:t.globalAlpha??1,ended:false}}
  function tailInfo(st,W,H){const pts=st.points;let length=0,remaining=Array(pts.length).fill(0);for(let i=pts.length-2;i>=0;i--){length+=Math.hypot((pts[i+1].x-pts[i].x)*W,(pts[i+1].y-pts[i].y)*H)/(W/390);remaining[i]=length}let end=pts.length-1;while(end>0&&Math.hypot(pts[end].x-pts[end-1].x,pts[end].y-pts[end-1].y)<.0003)end--;const v=end?Math.hypot((pts[end].x-pts[end-1].x)*390,(pts[end].y-pts[end-1].y)*H/(W/390))/Math.max(1,pts[end].t-pts[end-1].t):0;let hook=false;for(let i=Math.max(1,end-9);i<end-1;i++){const a=pts[i-1],b=pts[i],c=pts[end],ux=(b.x-a.x)*W,uy=(b.y-a.y)*H,vx=(c.x-b.x)*W,vy=(c.y-b.y)*H,mag=Math.hypot(ux,uy)*Math.hypot(vx,vy);if(mag>1&&remaining[i]<st.settings.size*.85&&remaining[i]>st.settings.size*.08&&Math.acos(Math.max(-1,Math.min(1,(ux*vx+uy*vy)/mag)))>1.12){hook=true;break}}const lowPressure=st.hasPressure&&pts[end].pressure<.3,ex=end?Math.abs(pts[end].x-pts[end-1].x)*W:0,ey=end?Math.abs(pts[end].y-pts[end-1].y)*H:0,axisEnd=st.settings.kaishu127&&!hook&&!lowPressure&&v<.18&&Math.min(ex,ey)/Math.max(.001,ex,ey)<.35;return{remaining,length,hook,sharp:!axisEnd&&(v>.24||lowPressure||hook||Math.min(ex,ey)/Math.max(.001,ex,ey)>.35&&length>st.settings.size*.35)}}
  // Swept contact: each segment is a connected ribbon, not thousands of stamps.
  // Sparse longitudinal fibers appear only at a fast, lifted cursive tail.
@@ -67,7 +112,7 @@
  }
  function advanceSeal194(st,state,t,W,H){const s=settings(st.settings),radius=s.size*.34*s.fullness*(W/390);t.save();t.globalAlpha=state.opacity??1;t.strokeStyle=s.color;t.lineWidth=radius*2;t.lineCap=t.lineJoin='round';for(;state.index<st.points.length;state.index++){const p=st.points[state.index],last=state.last,x=p.x*W,y=p.y*H;if(Math.hypot(x-state.pos.x,y-state.pos.y)<.01)continue;const end=st.done&&state.index===st.points.length-1,qx=end?x:(last.x*W+x)/2,qy=end?y:(last.y*H+y)/2;t.beginPath();t.moveTo(state.pos.x,state.pos.y);t.quadraticCurveTo(last.x*W,last.y*H,qx,qy);t.stroke();state.travel+=Math.hypot(qx-state.pos.x,qy-state.pos.y)/(W/390);state.pos={x:qx,y:qy};state.last=p}if(st.done){const p=st.points.at(-1);t.beginPath();t.moveTo(state.pos.x,state.pos.y);t.lineTo(p.x*W,p.y*H);t.stroke()}t.restore();return state}
  function inkTone194(color,amount){if(!/^#[0-9a-f]{6}$/i.test(color))return color;const n=parseInt(color.slice(1),16);return '#'+[n>>16,(n>>8)&255,n&255].map(v=>Math.round(mix(v,Math.min(120,v+60),amount)).toString(16).padStart(2,'0')).join('')}
- function advance(st,state,t,W,H){const s=settings(st.settings),scale=W/390,tail=st.done?tailInfo(st,W,H):null;if((s.seal194||0)>.99&&st.points.length>1)return advanceSeal194(st,state,t,W,H);const first=st.points[0],last=st.points.at(-1),sx=(last.x-first.x)*390,sy=(last.y-first.y)*H/scale,clerical=!!tail&&(s.clerical194||0)>.2&&sx>Math.max(s.size*.9,Math.abs(sy)*2),knife=!!tail&&(s.regular194||0)>.2&&sx>s.size*.3&&sy>s.size*.3,sharp194=!!tail&&((s.clerical194||0)>.5?clerical||tail.hook:tail.sharp||knife)&&!((s.regular194||0)>.5&&!knife&&!tail.hook&&Math.abs(sy)<Math.abs(sx)*.15);
+ function advance(st,state,t,W,H){if(state?.engine315)return root.Brush315.advance(st,state,t,W,H);const s=settings(st.settings),scale=W/390,tail=st.done?tailInfo(st,W,H):null;if((s.seal194||0)>.99&&st.points.length>1)return advanceSeal194(st,state,t,W,H);const first=st.points[0],last=st.points.at(-1),sx=(last.x-first.x)*390,sy=(last.y-first.y)*H/scale,clerical=!!tail&&(s.clerical194||0)>.2&&sx>Math.max(s.size*.9,Math.abs(sy)*2),knife=!!tail&&(s.regular194||0)>.2&&sx>s.size*.3&&sy>s.size*.3,sharp194=!!tail&&((s.clerical194||0)>.5?clerical||tail.hook:tail.sharp||knife)&&!((s.regular194||0)>.5&&!knife&&!tail.hook&&Math.abs(sy)<Math.abs(sx)*.15);
   for(;state.index<st.points.length;state.index++){
    const i=state.index,p=st.points[i],prev=state.last,dt=clamp(p.t-prev.t,1,250);let x=p.x*W,y=p.y*H;
    // 194 engine, small local correction only: do not soften real folded corners.
@@ -92,7 +137,7 @@
   if(st.done&&!state.travel&&st.points.length>1)dab(t,state.pos.x,state.pos.y,s.size*((s.seal194||0)>.98?.34*s.fullness:.12)*scale,0,s,0,1,0,state,scale);
   state.ended=!!st.done;return state;
  }
- function render(st,t,W,H,clip=null){if(!st.points?.length)return null;const state=start(st,t,W,H);state.clip=clip;if(st.points.length===1){const s=settings(st.settings);dab(t,state.pos.x,state.pos.y,s.size*((s.seal194||0)>.98?.34*s.fullness:.12)*(W/390),0,s,0,1,0,state,W/390)}return advance(st,state,t,W,H)}
+ function render(st,t,W,H,clip=null){if(root.Brush315.versioned(st))return root.Brush315.render(st,t,W,H);if(!st.points?.length)return null;const state=start(st,t,W,H);state.clip=clip;if(st.points.length===1){const s=settings(st.settings);dab(t,state.pos.x,state.pos.y,s.size*((s.seal194||0)>.98?.34*s.fullness:.12)*(W/390),0,s,0,1,0,state,W/390)}return advance(st,state,t,W,H)}
  const api={presets194,profiles194,setCanvasFactory,prepare,settings,lineProfile108,radiusForSpeed,dryForSpeed,start,advance,render};root.ParticleBrush=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
 

@@ -1,8 +1,8 @@
 /* v315 input capabilities are local stroke metadata, never a pressure claim for touch/mouse. */
 (function(root){
  const clamp=(v,a,b)=>Math.max(a,Math.min(b,v)),finite=Number.isFinite;
- const defaults={modelHz:120,highSpeed:8,lowSpeed:5.5,velocityTauMs:32,nibTauMs:48,bundleCount:32,consumePerWidth:.0016,virtualPressure:true};
- function calibration(settings={}){const c={...defaults,...settings.calibration315};return{modelHz:clamp(+c.modelHz||120,60,240),highSpeed:clamp(+c.highSpeed||8,2,60),lowSpeed:clamp(+c.lowSpeed||5.5,1,50),velocityTauMs:clamp(+c.velocityTauMs||32,8,120),nibTauMs:clamp(+c.nibTauMs||48,12,180),bundleCount:32,consumePerWidth:clamp(+c.consumePerWidth||.0016,.0001,.02),virtualPressure:settings.virtualPressure315!==false&&c.virtualPressure!==false}}
+ const defaults={modelHz:120,highSpeed:8,lowSpeed:5.5,velocityTauMs:32,nibTauMs:48,bundleCount:32,consumePerWidth:.0025,virtualPressure:true};
+ function calibration(settings={}){const c={...defaults,...settings.calibration315};return{modelHz:clamp(+c.modelHz||120,60,240),highSpeed:clamp(+c.highSpeed||8,2,60),lowSpeed:clamp(+c.lowSpeed||5.5,1,50),velocityTauMs:clamp(+c.velocityTauMs||32,8,120),nibTauMs:clamp(+c.nibTauMs||48,12,180),bundleCount:32,consumePerWidth:clamp(+c.consumePerWidth||.0025,.0001,.02),virtualPressure:settings.virtualPressure315!==false&&c.virtualPressure!==false}}
  function capabilities(e){return{deviceType:['pen','touch','mouse'].includes(e.pointerType)?e.pointerType:'unknown',pressureReported:false,pressureConfirmed:false,tiltReported:false,twistReported:false,minPressure:1,maxPressure:0}}
  function point(e,world,last=null,cap=capabilities(e)){
   const type=cap.deviceType,reported=type==='pen'&&finite(e.pressure)&&e.pressure>=0&&e.pressure<=1,rawTime=finite(e.timeStamp)?e.timeStamp:last?.t??0;
