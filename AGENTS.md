@@ -1,11 +1,11 @@
 # 手筆 release defaults
 
-- After every web release, synchronize all new and changed visible UI text into English, French, Russian, Arabic and Spanish (`locales218`). Preserve control identifiers and option values. Check compact navigation and Arabic direction. Users select language on the homepage; other pages inherit it.
+- After every web release, synchronize all new and changed visible UI text into English, French, Russian, Arabic and Spanish (`app/locales218`). Preserve control identifiers and option values. Check compact navigation and Arabic direction. Users select language on the homepage; other pages inherit it.
 - Use 手筆 for the product brand in titles, slides and interfaces. Do not alter genuine quoted literary text merely because it contains 亲笔.
 - Automatic writing saves are local. Do not add Supabase traffic, automatic full-book image prefetch, polling or retry loops. Keep the image-cache and copy-session regression tests passing.
 - Camera and photo editor are fixed, frameless viewport dialogs; generic dialog dragging and fitting must skip `data-fixed224`.
 - Keep source URLs and approximate-coordinate labels for geographical data. Do not represent cultural places as live exhibitions or promise exact entrances from approximate coordinates.
-- Build current immutable runtime bundles, retain published historical assets, run relevant regression tests and verify deployment before reporting a release as live.
+- Build current immutable runtime bundles, retain current assets and the immediately preceding writer runtime; remove unreferenced generated assets after checking production references, run relevant regression tests and verify deployment before reporting a release as live.
 
 ## Standing user authorization (2026-10-20)
 
@@ -20,3 +20,5 @@
 - Rank share images must include a substantive one-sentence milestone/cultural significance for every work; price alone is insufficient. Preview, full export and paginated export share one renderer. Original and personal-practice image choices stay independent.
 
 - Before every sync, run the current portrait handwriting recognition checks for 鹍, including candidate display and capture.
+
+- Application pages, modules, source and resources live inside `app/`; never create version-numbered pages or module directories at the repository root. Run root npm commands through `tools/run-app.mjs` and keep `npm run check:structure` passing. Historical implementation belongs in Git history. Preserve root entry/404/service-worker compatibility for saved URLs.

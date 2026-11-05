@@ -1,7 +1,9 @@
 /dist/
 /.sites-runtime/
-
 /node_modules/
-/remotion-studio/node_modules/
+/app/remotion-studio/node_modules/
+/app/dist/
 /.wrangler/
 /.env*
+/app/node_modules
+/.openai/

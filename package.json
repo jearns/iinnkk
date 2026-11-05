@@ -1,15 +1,16 @@
 {
   "name": "iinnkk",
   "private": true,
-  "version": "315.0.0",
+  "version": "316.0.0",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build47.mjs",
-    "schema": "drizzle-kit generate",
-    "test": "node --test tests/*.test.mjs",
-    "test:ui": "node tests/ui90.cjs",
-    "build:current": "node scripts/build224.mjs",
-    "check:release": "node scripts/check-release224.mjs"
+    "build": "node tools/run-app.mjs build",
+    "schema": "node tools/run-app.mjs schema",
+    "test": "node tools/run-app.mjs test",
+    "test:ui": "node tools/run-app.mjs test:ui",
+    "build:current": "node tools/run-app.mjs build:current",
+    "check:release": "node tools/run-app.mjs check:release",
+    "check:structure": "node tools/structure.mjs"
   },
   "dependencies": {
     "drizzle-orm": "^0.44.5",
