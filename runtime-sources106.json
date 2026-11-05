@@ -8,6 +8,7 @@
     "gallery210.js",
     "startup173.js",
     "brush.js",
+    "release315/input.js",
     "mount.js",
     "seal-map172.js",
     "seal.js",
@@ -422,6 +423,7 @@
     "release276/excerpts.css",
     "release277/ui.css",
     "release305/layout.css",
-    "release307/ui.css"
+    "release307/ui.css",
+    "release315/ui.css"
   ]
 }
