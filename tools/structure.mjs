@@ -1,8 +1,8 @@
 import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 const allowed=new Set(['dist','app','docs','tools','AGENTS.md','CNAME','README.md','VERSION.txt','package.json','package-lock.json','index.html','404.html','sw.js']);
 for(const name of fs.readdirSync('.'))if(!name.startsWith('.')&&name!=='node_modules')assert(allowed.has(name),'Unexpected root item: '+name+'; place application files in app/');
-const video=JSON.parse(fs.readFileSync('app/video-assets297/build-manifest.json'));const videoLive=new Set(Object.keys(video.outputs).map(p=>p.replace(/^\.\.\//,'')));
-for(const name of fs.readdirSync('app').filter(n=>/^video-assets\d+$/.test(n))){for(const file of fs.readdirSync('app/'+name)){if(file==='build-manifest.json'&&name==='video-assets297')continue;const key=name+'/'+file;if(!videoLive.has(key)){if(process.argv.includes('--prune'))fs.unlinkSync('app/'+key);else throw Error('Unused film build: '+key);}}}
+const video=JSON.parse(fs.readFileSync('app/video-assets297/build-manifest.json'));const previousVideo=fs.existsSync('app/video-assets297/previous-manifest.json')?JSON.parse(fs.readFileSync('app/video-assets297/previous-manifest.json')):{outputs:{}};const videoLive=new Set([...Object.keys(video.outputs),...Object.keys(previousVideo.outputs)].map(p=>p.replace(/^\.\.\//,'')));
+for(const name of fs.readdirSync('app').filter(n=>/^video-assets\d+$/.test(n))){for(const file of fs.readdirSync('app/'+name)){if(['build-manifest.json','previous-manifest.json'].includes(file)&&name==='video-assets297')continue;const key=name+'/'+file;if(!videoLive.has(key)){if(process.argv.includes('--prune'))fs.unlinkSync('app/'+key);else throw Error('Unused film build: '+key);}}}
 const generated=/^(?:(?:app|home)-runtime\.[a-f0-9]+\.(?:js|css)|lazy-[\w-]+\.[a-f0-9]+\.js|video-studio\.[a-f0-9]+\.css)$/;
 const references=/(?:app-runtime|home-runtime|video-studio)\.[a-f0-9]+\.(?:js|css)|lazy-[\w-]+\.[a-f0-9]+\.js/g;
 const history=JSON.parse(fs.readFileSync('app/runtime-history154.json'));const live=new Set([...history.current,...history.previous]);
@@ -27,3 +27,13 @@ for(const file of fs.readdirSync('app').filter(n=>n.endsWith('.html'))){
  }
 }
 console.log('Retained HTML stylesheet and script dependencies verified.');
+
+const retired=JSON.parse(fs.readFileSync('app/maintenance/retired-files.json'));
+for(const file of retired.files)assert(!fs.existsSync('app/'+file),'Retired duplicate was recreated: '+file);
+for(const name of fs.readdirSync('app'))assert(!/^video-music\d+$/.test(name),'Use music/library, not another versioned audio directory: '+name);
+
+const boundaries=JSON.parse(fs.readFileSync('app/maintenance/module-boundaries.json'));
+for(const name of fs.readdirSync('app')){
+ if(/^(?:release|hand|fonts?|lab|video-assets)\d+$/.test(name))assert(boundaries.existingNumberedDirectories.includes(name),'Do not create another numbered feature directory: '+name);
+ if(/^revision\d+\.(?:js|css)$/.test(name))assert(boundaries.existingRevisionFiles.includes(name),'Edit maintained feature source, rather than adding another revision copy: '+name);
+}

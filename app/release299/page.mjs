@@ -1,1 +1,0 @@
-import{mountHome,open}from './ui.mjs';document.getElementById('calendarOpen299').onclick=()=>open();mountHome().then(()=>open()).catch(e=>document.getElementById('calendarStatus299').textContent=e.message);

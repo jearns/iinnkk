@@ -1,0 +1,31 @@
+{
+  "reason": "No references from current entry pages, runtime source list or current build pipeline; superseded by maintained implementations. Music derivatives are listed separately in audio-cleanup.json.",
+  "files": [
+    "boot146.js",
+    "cloud51.css",
+    "copy-download176.js",
+    "copy-download179.js",
+    "copy-download206.js",
+    "copy-download211.js",
+    "loading205.css",
+    "video-studio.bundle.js",
+    "lazy-manage.0002846efaea5010.js",
+    "release298/calendar.mjs",
+    "release298/ui.mjs",
+    "release298/ui.css",
+    "release299/page.mjs",
+    "release299/ui.mjs",
+    "remotion-studio/scripts/build-music292.mjs",
+    "remotion-studio/scripts/music294.py",
+    "scripts/runtime106.mjs",
+    "scripts/home154.mjs",
+    "scripts/runtime195-local.mjs",
+    "scripts/home195-local.mjs",
+    "scripts/runtime196-local.mjs",
+    "scripts/home196-local.mjs",
+    "scripts/runtime197-local.mjs",
+    "scripts/home197-local.mjs",
+    "scripts/runtime198-local.mjs",
+    "scripts/home198-local.mjs"
+  ]
+}
