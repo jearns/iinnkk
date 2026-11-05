@@ -1,11 +1,11 @@
 {
   "release": "316",
   "current": [
-    "app-runtime.034b3e7dbf108c0e.js",
+    "app-runtime.e704eaa99a68040a.js",
     "app-runtime.eaa8f29c80773d8a.css"
   ],
   "previous": [
-    "app-runtime.9d00fb180cd2995b.js",
-    "app-runtime.a2671f8a1af53289.js"
+    "app-runtime.034b3e7dbf108c0e.js",
+    "app-runtime.9d00fb180cd2995b.js"
   ]
 }
