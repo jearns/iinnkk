@@ -183,7 +183,7 @@
       "format": "esm"
     },
     "../brush.js": {
-      "bytes": 19037,
+      "bytes": 27127,
       "imports": [],
       "format": "esm"
     },
@@ -4875,7 +4875,7 @@
       },
       "bytes": 992832
     },
-    "../video-assets297/web.Z6OX7WOE.js": {
+    "../video-assets297/web.JGNCC5XR.js": {
       "imports": [
         {
           "path": "../video-assets297/chunk.EKYFUHPE.js",
@@ -4938,7 +4938,7 @@
       "entryPoint": "src/web.jsx",
       "inputs": {
         "src/web.jsx": {
-          "bytesInOutput": 27092
+          "bytesInOutput": 27107
         },
         "src/format.mjs": {
           "bytesInOutput": 484
@@ -4950,19 +4950,19 @@
           "bytesInOutput": 2086
         },
         "../brush.js": {
-          "bytesInOutput": 14450
+          "bytesInOutput": 20716
         },
         "src/ink313.mjs": {
           "bytesInOutput": 1417
         },
         "src/detached297.mjs": {
-          "bytesInOutput": 6965
+          "bytesInOutput": 6958
         },
         "src/sequence.mjs": {
           "bytesInOutput": 968
         }
       },
-      "bytes": 54091
+      "bytes": 60365
     },
     "../video-assets297/chunk.EKYFUHPE.js": {
       "imports": [

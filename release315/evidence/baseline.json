@@ -1,0 +1,67 @@
+{
+  "generatedFor": 315,
+  "input": "synthetic fixtures, not physical pen capture",
+  "cases": [
+    {
+      "case": "A",
+      "maxGate": 0,
+      "ink": 0.37499569278733846,
+      "renderMs": 156.64588200000003,
+      "pngSha256": "c8ed1880a1c8d73b10473af61bd39d94be95a02d77cd9c47e23a975f0367f6f2"
+    },
+    {
+      "case": "B",
+      "maxGate": 0,
+      "ink": 0.9847808310466599,
+      "renderMs": 19.320019000000002,
+      "pngSha256": "3d1eeccc99fbc23b455d7c186108ff9a7c1f1a7b0f7524b1298a8516b8ccefb4"
+    },
+    {
+      "case": "C",
+      "maxGate": 0.995723179650791,
+      "ink": 0.3847808310466603,
+      "renderMs": 19.401679999999942,
+      "pngSha256": "0d2b47858bd6fb00963e538871f32fcf8760c833febaa4d7ad27368f79245088"
+    },
+    {
+      "case": "D",
+      "maxGate": 0.995723179650791,
+      "ink": 0.36841916590858986,
+      "renderMs": 16.305757000000085,
+      "pngSha256": "3c0f422333edcbda15d86451fede09333cf6fdbff761f3407be41b0b9325af91"
+    },
+    {
+      "case": "E",
+      "maxGate": 0.9994724481123616,
+      "ink": 0.36701218558218734,
+      "renderMs": 37.719246,
+      "pngSha256": "1c00818400d73e50b4a4641e64cb4cc4b696d7f2d6199fb606742600d8ef7318"
+    },
+    {
+      "case": "C2",
+      "maxGate": 0.9994562633102847,
+      "ink": 0.38389751554671214,
+      "renderMs": 53.90565599999991,
+      "pngSha256": "e50005f6645da4a7f725a6bf978c94237f5ac0b7135902a6d27f74306648358d"
+    },
+    {
+      "case": "F0",
+      "maxGate": 0,
+      "ink": 0.3847808310466603,
+      "renderMs": 13.904258000000027,
+      "pngSha256": "54352000f3303be942eb0ab4741c33ca73675fdc926f6e3beaa04b78933663d5"
+    },
+    {
+      "case": "F",
+      "remainingInk": 0.7103651617211029,
+      "synthetic": true
+    },
+    {
+      "case": "live-batches",
+      "p50Ms": 0.8244660000000295,
+      "p95Ms": 1.3619000000001051,
+      "surface": "800x800 native Canvas on Codex Linux",
+      "hardwareAcceptance": false
+    }
+  ]
+}
