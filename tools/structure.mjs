@@ -1,4 +1,4 @@
-import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 const allowed=new Set(['dist','app','docs','tools','AGENTS.md','CNAME','README.md','VERSION.txt','package.json','package-lock.json','index.html','404.html','sw.js']);
 for(const name of fs.readdirSync('.'))if(!name.startsWith('.')&&name!=='node_modules')assert(allowed.has(name),'Unexpected root item: '+name+'; place application files in app/');
 const video=JSON.parse(fs.readFileSync('app/video-assets297/build-manifest.json'));const videoLive=new Set(Object.keys(video.outputs).map(p=>p.replace(/^\.\.\//,'')));
@@ -13,3 +13,17 @@ for(const file of ['index.html','writer.html','video-studio.html','lab258.html',
 assert(history.previous.length<=2,'Keep only the immediately previous writer release');
 assert(!fs.readdirSync('app').some(n=>/^(?:writer\d+|engine\d+)\.html$/.test(n)&&n!=='writer257.html'),'Historical writer pages must route to writer.html');
 console.log('Structure verified: application consolidated in app/; obsolete builds removed:',removed);
+
+// Validate each retained HTML dependency, including assets missing from disk.
+const tracked=new Set(execFileSync('git',['ls-files','-z'],{encoding:'utf8'}).split('\0'));
+for(const file of fs.readdirSync('app').filter(n=>n.endsWith('.html'))){
+ const html=fs.readFileSync('app/'+file,'utf8');
+ for(const tag of html.matchAll(/<(?:script|link)\b[^>]*>/g)){
+  if(tag[0].startsWith('<link')&&!/rel=["']stylesheet["']/.test(tag[0]))continue;
+  const raw=tag[0].match(/(?:src|href)=["']([^"']+)["']/)?.[1];
+  if(!raw||/^(?:https?:|data:|blob:|#)/.test(raw)||/^__[A-Z_]+__$/.test(raw))continue;
+  const url=new URL(raw,'https://iinnkk.me/app/'+file),local=url.pathname.slice(1);
+  assert(fs.existsSync(local)||tracked.has(local),'Page dependency missing: '+file+' -> '+raw);
+ }
+}
+console.log('Retained HTML stylesheet and script dependencies verified.');
