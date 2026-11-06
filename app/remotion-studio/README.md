@@ -40,3 +40,7 @@ npm run studio
 ```
 
 桌面示例仍使用 public/sample-paper.svg。可把作品图片放入 public 并用 npm run render 生成图片展示影片；这与网页的原笔迹回放入口分开。
+
+### Audio export regression
+
+Run `npm ci` then `npm run test:audio` here with Node 22.20+/24.12+, FFmpeg and ffprobe installed. This uses Node WebCodecs and the production mux/conversion helpers to export all 14 supplied MP3s, an existing AAC track and an imported MP3. It decodes the resulting MP4 audio to check for nonzero sound, checks short-track looping and cancellation, and verifies the H.264 picture stream is unchanged. Native AAC encoding is disabled in this suite to exercise the same WASM fallback used by browsers without an AAC encoder.

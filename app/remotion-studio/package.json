@@ -7,7 +7,8 @@
     "studio": "remotion studio src/index.jsx --no-open",
     "render": "remotion render src/index.jsx ShoubiShowcase out/shoubi-showcase.mp4",
     "compositions": "remotion compositions src/index.jsx",
-    "build:web": "node scripts/build-web.mjs"
+    "build:web": "node scripts/build-web.mjs",
+    "test:audio": "node --test tests/audio-export.test.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.539",
@@ -20,6 +21,7 @@
     "remotion": "4.0.539"
   },
   "devDependencies": {
+    "@napi-rs/webcodecs": "1.5.0",
     "esbuild": "0.25.10"
   }
 }

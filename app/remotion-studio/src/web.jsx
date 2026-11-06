@@ -173,7 +173,7 @@ function Studio() {
       let blob = await getBlob();
       if (selectedTrack) {
         setStatus({key: '正在加入配乐与作品封面…'});
-        let source295=sourceMusic295();if(music==='custom295'||musicLibrary302[music]){const {compressMusic295}=await import('./custom-music.mjs');source295=await compressMusic295(musicLibrary302[music]?.file||customMusic295.file,{signal:controller.signal});}blob = await addMusic(blob, source295, {signal: controller.signal, metadata, duration: durationSeconds});
+        const source295=musicLibrary302[music]?.file||(music==='custom295'?customMusic295.file:sourceMusic295());blob = await addMusic(blob, source295, {signal: controller.signal, metadata, duration: durationSeconds});
       }
       if (controller.signal.aborted) throw new Error('cancelled');
       if (!blob?.size) throw new Error('导出结果为空，请重新生成。');

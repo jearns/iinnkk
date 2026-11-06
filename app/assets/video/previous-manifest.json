@@ -96,18 +96,18 @@
       "imports": [],
       "format": "esm"
     },
-    "../release303/music-library.mjs": {
-      "bytes": 11143,
+    "../features/music/music-library.mjs": {
+      "bytes": 11325,
       "imports": [],
       "format": "esm"
     },
     "src/music.mjs": {
-      "bytes": 85,
+      "bytes": 89,
       "imports": [
         {
-          "path": "../release303/music-library.mjs",
+          "path": "../features/music/music-library.mjs",
           "kind": "import-statement",
-          "original": "../../release303/music-library.mjs"
+          "original": "../../features/music/music-library.mjs"
         }
       ],
       "format": "esm"
@@ -144,40 +144,40 @@
       "imports": [],
       "format": "esm"
     },
-    "../release314/film-draft.mjs": {
+    "../features/papers/film-draft.mjs": {
       "bytes": 188,
       "imports": [],
       "format": "esm"
     },
-    "../release295/page-preview.mjs": {
-      "bytes": 503,
+    "../features/film/page-preview.mjs": {
+      "bytes": 506,
       "imports": [
         {
           "path": "src/replay.mjs",
           "kind": "dynamic-import",
-          "original": "../remotion-studio/src/replay.mjs"
+          "original": "../../remotion-studio/src/replay.mjs"
         }
       ],
       "format": "esm"
     },
-    "../release295/collection.mjs": {
+    "../features/film/collection.mjs": {
       "bytes": 2040,
       "imports": [
         {
-          "path": "../release295/page-preview.mjs",
+          "path": "../features/film/page-preview.mjs",
           "kind": "import-statement",
           "original": "./page-preview.mjs"
         }
       ],
       "format": "esm"
     },
-    "../release296/selection.mjs": {
-      "bytes": 5613,
+    "../features/portrait/catalogue/selection.mjs": {
+      "bytes": 5610,
       "imports": [
         {
-          "path": "../release295/collection.mjs",
+          "path": "../features/film/collection.mjs",
           "kind": "dynamic-import",
-          "original": "../release295/collection.mjs"
+          "original": "../../film/collection.mjs"
         }
       ],
       "format": "esm"
@@ -255,12 +255,12 @@
       "format": "esm"
     },
     "src/sequence.mjs": {
-      "bytes": 1693,
+      "bytes": 1715,
       "imports": [
         {
-          "path": "../release314/film-draft.mjs",
+          "path": "../features/papers/film-draft.mjs",
           "kind": "import-statement",
-          "original": "../../release314/film-draft.mjs"
+          "original": "../../features/papers/film-draft.mjs"
         },
         {
           "path": "src/replay.mjs",
@@ -268,9 +268,9 @@
           "original": "./replay.mjs"
         },
         {
-          "path": "../release296/selection.mjs",
+          "path": "../features/portrait/catalogue/selection.mjs",
           "kind": "import-statement",
-          "original": "../../release296/selection.mjs"
+          "original": "../../features/portrait/catalogue/selection.mjs"
         },
         {
           "path": "src/detached297.mjs",
@@ -3963,7 +3963,7 @@
       "format": "esm"
     },
     "src/showcase.jsx": {
-      "bytes": 13350,
+      "bytes": 13351,
       "imports": [
         {
           "path": "../media-effects241.js",
@@ -4039,7 +4039,7 @@
       ],
       "format": "esm"
     },
-    "../release314/paper-tiles.mjs": {
+    "../features/papers/paper-tiles.mjs": {
       "bytes": 1836,
       "imports": [],
       "format": "esm"
@@ -4049,29 +4049,29 @@
       "imports": [],
       "format": "esm"
     },
-    "../release296/catalogue.mjs": {
-      "bytes": 4512,
+    "../features/portrait/catalogue/catalogue.mjs": {
+      "bytes": 4525,
       "imports": [],
       "format": "esm"
     },
-    "../release297/video.mjs": {
-      "bytes": 8687,
+    "../features/film/editor/video.mjs": {
+      "bytes": 8721,
       "imports": [
         {
-          "path": "../release296/catalogue.mjs",
+          "path": "../features/portrait/catalogue/catalogue.mjs",
           "kind": "import-statement",
-          "original": "../release296/catalogue.mjs"
+          "original": "../../portrait/catalogue/catalogue.mjs"
         }
       ],
       "format": "esm"
     },
     "src/background.mjs": {
-      "bytes": 3540,
+      "bytes": 3555,
       "imports": [
         {
-          "path": "../release314/paper-tiles.mjs",
+          "path": "../features/papers/paper-tiles.mjs",
           "kind": "import-statement",
-          "original": "../../release314/paper-tiles.mjs"
+          "original": "../../features/papers/paper-tiles.mjs"
         },
         {
           "path": "../paper-ink188.js",
@@ -4079,18 +4079,18 @@
           "original": "../../paper-ink188.js"
         },
         {
-          "path": "../release297/video.mjs",
+          "path": "../features/film/editor/video.mjs",
           "kind": "dynamic-import",
-          "original": "../../release297/video.mjs"
+          "original": "../../features/film/editor/video.mjs"
         }
       ],
       "format": "esm"
     },
-    "../release314/paper-picker.mjs": {
-      "bytes": 3098,
+    "../features/papers/paper-picker.mjs": {
+      "bytes": 3112,
       "imports": [
         {
-          "path": "../release314/paper-tiles.mjs",
+          "path": "../features/papers/paper-tiles.mjs",
           "kind": "dynamic-import",
           "original": "./paper-tiles.mjs"
         }
@@ -4419,7 +4419,7 @@
       "format": "esm"
     },
     "src/web.jsx": {
-      "bytes": 30920,
+      "bytes": 30969,
       "imports": [
         {
           "path": "node_modules/react/index.js",
@@ -4462,9 +4462,9 @@
           "original": "./sequence.mjs"
         },
         {
-          "path": "../release296/selection.mjs",
+          "path": "../features/portrait/catalogue/selection.mjs",
           "kind": "import-statement",
-          "original": "../../release296/selection.mjs"
+          "original": "../../features/portrait/catalogue/selection.mjs"
         },
         {
           "path": "src/player.jsx",
@@ -4477,19 +4477,19 @@
           "original": "./background.mjs"
         },
         {
-          "path": "../release314/paper-picker.mjs",
+          "path": "../features/papers/paper-picker.mjs",
           "kind": "dynamic-import",
-          "original": "../../release314/paper-picker.mjs"
+          "original": "../../features/papers/paper-picker.mjs"
         },
         {
-          "path": "../release296/catalogue.mjs",
+          "path": "../features/portrait/catalogue/catalogue.mjs",
           "kind": "dynamic-import",
-          "original": "../../release296/catalogue.mjs"
+          "original": "../../features/portrait/catalogue/catalogue.mjs"
         },
         {
-          "path": "../release297/video.mjs",
+          "path": "../features/film/editor/video.mjs",
           "kind": "dynamic-import",
-          "original": "../../release297/video.mjs"
+          "original": "../../features/film/editor/video.mjs"
         },
         {
           "path": "src/export-engine.mjs",
@@ -4584,18 +4584,18 @@
       },
       "bytes": 311916
     },
-    "../assets/video/chunk.LVRUPB2P.js": {
+    "../assets/video/chunk.WF2JOQ6Z.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.O3QEWGV3.js",
+          "path": "../assets/video/chunk.AFAMWJAP.js",
           "kind": "import-statement"
         },
         {
-          "path": "../assets/video/chunk.HHKNVYLX.js",
+          "path": "../assets/video/chunk.N3ZURT4Y.js",
           "kind": "import-statement"
         },
         {
-          "path": "../assets/video/chunk.E2SYMW67.js",
+          "path": "../assets/video/chunk.LH3EZTEX.js",
           "kind": "import-statement"
         },
         {
@@ -4672,10 +4672,10 @@
       },
       "bytes": 1366
     },
-    "../assets/video/chunk.5LYYCJZ2.js": {
+    "../assets/video/chunk.QFT6PTVD.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.HVTI36Y5.js",
+          "path": "../assets/video/chunk.ZICMS7ZI.js",
           "kind": "import-statement"
         },
         {
@@ -4689,7 +4689,7 @@
         "paperLayout314",
         "preparePaper314"
       ],
-      "entryPoint": "../release314/paper-tiles.mjs",
+      "entryPoint": "../features/papers/paper-tiles.mjs",
       "inputs": {},
       "bytes": 432
     },
@@ -4704,10 +4704,10 @@
       },
       "bytes": 6654
     },
-    "../assets/video/chunk.JHUHCOW5.js": {
+    "../assets/video/chunk.265FOR2X.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.UWMD5N5Q.js",
+          "path": "../assets/video/chunk.Z5JIQHXN.js",
           "kind": "import-statement"
         },
         {
@@ -4723,14 +4723,14 @@
         "style296",
         "tr296"
       ],
-      "entryPoint": "../release296/catalogue.mjs",
+      "entryPoint": "../features/portrait/catalogue/catalogue.mjs",
       "inputs": {},
       "bytes": 450
     },
-    "../assets/video/chunk.KQRDVWT3.js": {
+    "../assets/video/chunk.JSZC7IHR.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.UWMD5N5Q.js",
+          "path": "../assets/video/chunk.Z5JIQHXN.js",
           "kind": "import-statement"
         },
         {
@@ -4744,15 +4744,15 @@
         "editVideos297",
         "joinVideos297"
       ],
-      "entryPoint": "../release297/video.mjs",
+      "entryPoint": "../features/film/editor/video.mjs",
       "inputs": {
-        "../release297/video.mjs": {
-          "bytesInOutput": 7401
+        "../features/film/editor/video.mjs": {
+          "bytesInOutput": 7424
         }
       },
-      "bytes": 7838
+      "bytes": 7861
     },
-    "../assets/video/chunk.UWMD5N5Q.js": {
+    "../assets/video/chunk.Z5JIQHXN.js": {
       "imports": [],
       "exports": [
         "a",
@@ -4763,16 +4763,16 @@
         "f"
       ],
       "inputs": {
-        "../release296/catalogue.mjs": {
-          "bytesInOutput": 3844
+        "../features/portrait/catalogue/catalogue.mjs": {
+          "bytesInOutput": 3857
         }
       },
-      "bytes": 4171
+      "bytes": 4184
     },
-    "../assets/video/chunk.KVZDSL5J.js": {
+    "../assets/video/chunk.CNPEYMNM.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.HVTI36Y5.js",
+          "path": "../assets/video/chunk.ZICMS7ZI.js",
           "kind": "import-statement"
         },
         {
@@ -4784,7 +4784,7 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../assets/video/chunk.KQRDVWT3.js",
+          "path": "../assets/video/chunk.JSZC7IHR.js",
           "kind": "dynamic-import"
         }
       ],
@@ -4799,7 +4799,7 @@
       },
       "bytes": 3110
     },
-    "../assets/video/chunk.HVTI36Y5.js": {
+    "../assets/video/chunk.ZICMS7ZI.js": {
       "imports": [],
       "exports": [
         "a",
@@ -4808,20 +4808,20 @@
         "d"
       ],
       "inputs": {
-        "../release314/paper-tiles.mjs": {
+        "../features/papers/paper-tiles.mjs": {
           "bytesInOutput": 1156
         }
       },
       "bytes": 1469
     },
-    "../assets/video/chunk.MFRIRAXK.js": {
+    "../assets/video/chunk.NDLF5FX4.js": {
       "imports": [
         {
           "path": "../assets/video/chunk.5LHGNSCY.js",
           "kind": "import-statement"
         },
         {
-          "path": "../assets/video/chunk.5LYYCJZ2.js",
+          "path": "../assets/video/chunk.QFT6PTVD.js",
           "kind": "dynamic-import"
         }
       ],
@@ -4830,13 +4830,13 @@
         "loadPapers312",
         "pickPaper312"
       ],
-      "entryPoint": "../release314/paper-picker.mjs",
+      "entryPoint": "../features/papers/paper-picker.mjs",
       "inputs": {
-        "../release314/paper-picker.mjs": {
-          "bytesInOutput": 2634
+        "../features/papers/paper-picker.mjs": {
+          "bytesInOutput": 2648
         }
       },
-      "bytes": 3009
+      "bytes": 3023
     },
     "../assets/video/chunk.RUDHHM7O.js": {
       "imports": [],
@@ -4875,10 +4875,10 @@
       },
       "bytes": 992832
     },
-    "../assets/video/web.TUWIELA3.js": {
+    "../assets/video/web.Q4UEWFGB.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.O3QEWGV3.js",
+          "path": "../assets/video/chunk.AFAMWJAP.js",
           "kind": "import-statement"
         },
         {
@@ -4886,7 +4886,7 @@
           "kind": "import-statement"
         },
         {
-          "path": "../assets/video/chunk.E2SYMW67.js",
+          "path": "../assets/video/chunk.LH3EZTEX.js",
           "kind": "import-statement"
         },
         {
@@ -4906,27 +4906,27 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../assets/video/chunk.7PV6FLQ4.js",
+          "path": "../assets/video/chunk.T764FBX5.js",
           "kind": "dynamic-import"
         },
         {
-          "path": "../assets/video/chunk.KVZDSL5J.js",
+          "path": "../assets/video/chunk.CNPEYMNM.js",
           "kind": "dynamic-import"
         },
         {
-          "path": "../assets/video/chunk.MFRIRAXK.js",
+          "path": "../assets/video/chunk.NDLF5FX4.js",
           "kind": "dynamic-import"
         },
         {
-          "path": "../assets/video/chunk.JHUHCOW5.js",
+          "path": "../assets/video/chunk.265FOR2X.js",
           "kind": "dynamic-import"
         },
         {
-          "path": "../assets/video/chunk.KQRDVWT3.js",
+          "path": "../assets/video/chunk.JSZC7IHR.js",
           "kind": "dynamic-import"
         },
         {
-          "path": "../assets/video/chunk.LVRUPB2P.js",
+          "path": "../assets/video/chunk.WF2JOQ6Z.js",
           "kind": "dynamic-import"
         },
         {
@@ -4943,10 +4943,10 @@
         "src/format.mjs": {
           "bytesInOutput": 484
         },
-        "../release314/film-draft.mjs": {
+        "../features/papers/film-draft.mjs": {
           "bytesInOutput": 84
         },
-        "../release296/selection.mjs": {
+        "../features/portrait/catalogue/selection.mjs": {
           "bytesInOutput": 2086
         },
         "../brush.js": {
@@ -4964,10 +4964,10 @@
       },
       "bytes": 60364
     },
-    "../assets/video/chunk.O3QEWGV3.js": {
+    "../assets/video/chunk.AFAMWJAP.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.E2SYMW67.js",
+          "path": "../assets/video/chunk.LH3EZTEX.js",
           "kind": "import-statement"
         },
         {
@@ -5201,7 +5201,7 @@
       },
       "bytes": 3017
     },
-    "../assets/video/chunk.7KRXOUWJ.js": {
+    "../assets/video/chunk.YYJBZHAD.js": {
       "imports": [
         {
           "path": "../assets/video/chunk.5LHGNSCY.js",
@@ -5217,12 +5217,12 @@
         "createCollection295",
         "pageSources295"
       ],
-      "entryPoint": "../release295/collection.mjs",
+      "entryPoint": "../features/film/collection.mjs",
       "inputs": {
-        "../release295/page-preview.mjs": {
+        "../features/film/page-preview.mjs": {
           "bytesInOutput": 282
         },
-        "../release295/collection.mjs": {
+        "../features/film/collection.mjs": {
           "bytesInOutput": 1531
         }
       },
@@ -5261,14 +5261,14 @@
       },
       "bytes": 5059
     },
-    "../assets/video/chunk.7PV6FLQ4.js": {
+    "../assets/video/chunk.T764FBX5.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.HHKNVYLX.js",
+          "path": "../assets/video/chunk.N3ZURT4Y.js",
           "kind": "import-statement"
         },
         {
-          "path": "../assets/video/chunk.E2SYMW67.js",
+          "path": "../assets/video/chunk.LH3EZTEX.js",
           "kind": "import-statement"
         },
         {
@@ -5294,10 +5294,10 @@
       },
       "bytes": 63025
     },
-    "../assets/video/chunk.HHKNVYLX.js": {
+    "../assets/video/chunk.N3ZURT4Y.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.E2SYMW67.js",
+          "path": "../assets/video/chunk.LH3EZTEX.js",
           "kind": "import-statement"
         },
         {
@@ -5324,7 +5324,7 @@
           "bytesInOutput": 4066
         },
         "src/showcase.jsx": {
-          "bytesInOutput": 9167
+          "bytesInOutput": 9168
         },
         "node_modules/remotion/dist/esm/index.mjs": {
           "bytesInOutput": 265104
@@ -5348,9 +5348,9 @@
           "bytesInOutput": 1903
         }
       },
-      "bytes": 443442
+      "bytes": 443443
     },
-    "../assets/video/chunk.E2SYMW67.js": {
+    "../assets/video/chunk.LH3EZTEX.js": {
       "imports": [
         {
           "path": "../assets/video/chunk.5LHGNSCY.js",
@@ -5391,7 +5391,7 @@
           "bytesInOutput": 50
         },
         "node_modules/react-dom/cjs/react-dom.production.js": {
-          "bytesInOutput": 3289
+          "bytesInOutput": 3291
         },
         "node_modules/react-dom/index.js": {
           "bytesInOutput": 252
@@ -5399,8 +5399,8 @@
         "src/timing.mjs": {
           "bytesInOutput": 486
         },
-        "../release303/music-library.mjs": {
-          "bytesInOutput": 11778
+        "../features/music/music-library.mjs": {
+          "bytesInOutput": 11950
         },
         "src/music.mjs": {
           "bytesInOutput": 0
@@ -5415,7 +5415,7 @@
           "bytesInOutput": 429
         }
       },
-      "bytes": 32439
+      "bytes": 32613
     },
     "../assets/video/chunk.DH43MJXE.js": {
       "imports": [
