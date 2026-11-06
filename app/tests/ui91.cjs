@@ -1,7 +1,8 @@
+const {readSourceSync}=require('../source/read.cjs');
 const {chromium}=require('playwright');
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
 const root=path.resolve(__dirname,'..');
-const server=http.createServer((req,res)=>{const file=path.join(root,req.url.split('?')[0]==='/'?'index.html':req.url.split('?')[0]);try{res.setHeader('Content-Type',({js:'application/javascript',css:'text/css',html:'text/html',png:'image/png',svg:'image/svg+xml'})[path.extname(file).slice(1)]||'application/octet-stream');res.end(fs.readFileSync(file))}catch{res.statusCode=404;res.end()}});
+const server=http.createServer((req,res)=>{const file=path.join(root,req.url.split('?')[0]==='/'?'index.html':req.url.split('?')[0]);try{res.setHeader('Content-Type',({js:'application/javascript',css:'text/css',html:'text/html',png:'image/png',svg:'image/svg+xml'})[path.extname(file).slice(1)]||'application/octet-stream');res.end(readSourceSync(file))}catch{res.statusCode=404;res.end()}});
 (async()=>{
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  let browser;

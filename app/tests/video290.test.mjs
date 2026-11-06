@@ -1,9 +1,10 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import fs from 'node:fs';
-import {partialDraft, strokeCount} from '../remotion-studio/src/replay.mjs';
-import {disposalPrelude} from '../remotion-studio/scripts/disposal-prelude.mjs';
+import{partialDraft, strokeCount}from'../remotion-studio/src/replay.mjs';
+import{disposalPrelude}from'../remotion-studio/scripts/disposal-prelude.mjs';
 
 test('replay follows stored stroke order and pressure without altering paper, seals or the source', () => {
   const stroke = id => ({id, geometry: {x: .1, y: .2, k: 2}, settings: {color: '#123456', size: 50}, points: [{x: 0, y: 0, p: .2, t: 0}, {x: 1, y: 2, p: .8, t: 100}]});
@@ -30,17 +31,17 @@ test('legacy browser disposal symbols are installed before renderer helpers capt
 });
 
 test('selection is opt-in, message source is checked, and laboratory source retains the entry', () => {
-  const works = fs.readFileSync('works206.js', 'utf8'), web = fs.readFileSync('remotion-studio/src/web.jsx', 'utf8');
+  const works = readSourceSync('works206.js', 'utf8'), web = readSourceSync('remotion-studio/src/web.jsx', 'utf8');
   assert.match(works, /eq\('owner',owner\)\.eq\('id',id\)/);
   assert.match(works, /db\.storage\.from\('ink-drafts'\)\.download/);
   assert.match(web, /event\.source !== pickerRef\.current\?\.contentWindow/);
   assert.doesNotMatch(web, /type="file"/);
-  assert.match(fs.readFileSync('lab240.html', 'utf8'), /href="video-studio.html"/);
-  assert.match(fs.readFileSync('lab257.html', 'utf8'), /href="video-studio.html"/);
+  assert.match(readSourceSync('lab240.html', 'utf8'), /href="video-studio.html"/);
+  assert.match(readSourceSync('lab257.html', 'utf8'), /href="video-studio.html"/);
 });
 
 test('foreign owners and traversal paths are rejected before any draft download', async () => {
-  const source = fs.readFileSync('works206.js', 'utf8');
+  const source = readSourceSync('works206.js', 'utf8');
   const begin = source.indexOf('async function videoDraft290('), end = source.indexOf('async function chooseVideo290(', begin);
   const AsyncFunction = Object.getPrototypeOf(async () => {}).constructor;
   const read = new AsyncFunction('client', 'user', 'bounded', 'store', 'root', 'row', source.slice(begin, end) + ';return videoDraft290(row);');

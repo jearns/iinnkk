@@ -33,5 +33,5 @@ for w in ranks:
  if found:
   p=sorted(found,key=lambda p:-(w.get('author','') in p.get('description','')+p.get('abstract','')))[0]
   result[w['id']]={'title':w['title'],'label':p['title'],'url':p['url'],'provider':'快懂百科','relatedTopic':False,'verifiedVia':p['verifiedVia'],'descriptionSignal':p['description'],'verifiedAt':'2026-10-30'}
-(ROOT/'release301/encyclopedia-works-a.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+(ROOT/'features/library/encyclopedia-works-a.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 print('matched',len(result),'missing',[(w['id'],w['title']) for w in ranks if w['id'] not in result],flush=True)

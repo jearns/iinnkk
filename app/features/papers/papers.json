@@ -1,0 +1,711 @@
+[
+  {
+    "id": "cloud-dragon",
+    "title": "云龙笺 · 嘉庆宣统双玺",
+    "work": "草书千字文",
+    "author": "赵佶",
+    "era": "北宋作品 · 卷尾本幅",
+    "story": "取赵佶《草书千字文》卷尾本幅的天然无字处，云龙纹与嘉庆、宣统鉴藏玺原样保留；帝王草书的华美笺纸，也记录了清宫递藏。 此版本取原纸纹与原印作设计排版，朱印缩小置于边缘，不代表原卷的实际布局。",
+    "source": "https://zhuanti.mct.gov.cn/lnsbwg2022.html",
+    "provenance": "辽宁省博物馆藏赵佶《草书千字文》；本站原图第 32 张，卷尾署款右侧留白。",
+    "seals": [
+      "嘉庆御览之宝",
+      "宣统御览之宝"
+    ],
+    "cropPart": "本幅卷尾",
+    "sourceImage": "timeline/pages/caoshuqianzi/mv0xomoy-v/IMG_7015.jpeg",
+    "sourcePage": 31,
+    "crop": {
+      "x": 870,
+      "y": 0,
+      "w": 581,
+      "h": 775
+    },
+    "image": "timeline/pages/papers313/cloud-dragon.png",
+    "thumbnail": "timeline/pages/papers313/cloud-dragon-thumb.webp",
+    "paperColor": "#cfb18b",
+    "width": 900,
+    "height": 1200,
+    "sourceSha256": "7774c76f7910eff8f187e34af4502fbc2ba0d17fe6e471535fa905ed24c9c0bd",
+    "imageSha256": "6536903f381e52b8aec517433a994ac189a6ef4667cc475aba0a21d5f77dfe9a",
+    "processing": "取原图天然留白纸纹作镜像平铺，原有朱印提取后缩小靠边排版；属于设计排版，不是完整历史原纸照片。未生成假印或手写文字。",
+    "naturalBlank": true,
+    "hasOriginalSeals": true,
+    "layout313": {
+      "kind": "original-texture-and-edge-seals",
+      "source312": "timeline/pages/papers312/cloud-dragon.png",
+      "textureRect312": {
+        "x": 0,
+        "y": 490,
+        "w": 581,
+        "h": 285
+      },
+      "textureMethod": "reflected tiling",
+      "textureScale": 1.35,
+      "sealExtraction": {
+        "method": "red-chroma alpha, soft crop-edge mask",
+        "coefficient": 1.2,
+        "bias": 7,
+        "range": 23
+      },
+      "seals": [
+        {
+          "sourceRect312": {
+            "x": 236,
+            "y": 12,
+            "w": 183,
+            "h": 248
+          },
+          "x": 788,
+          "y": 28,
+          "width": 117,
+          "height": 159,
+          "relativeWidth": 0.13
+        },
+        {
+          "sourceRect312": {
+            "x": 244,
+            "y": 307,
+            "w": 176,
+            "h": 174
+          },
+          "x": -36,
+          "y": 978,
+          "width": 108,
+          "height": 107,
+          "relativeWidth": 0.12
+        }
+      ],
+      "centerWritingArea": {
+        "x": 0.175,
+        "y": 0,
+        "w": 0.65,
+        "h": 1
+      }
+    },
+    "tile314": {
+      "image": "timeline/pages/papers314/cloud-dragon-tile.png",
+      "width": 1162,
+      "height": 570,
+      "referenceScale": 1.35,
+      "referenceShortSide": 900,
+      "source312": "timeline/pages/papers312/cloud-dragon.png",
+      "sourceRect312": {
+        "x": 0,
+        "y": 490,
+        "w": 581,
+        "h": 285
+      },
+      "method": "2x2 mirrored blank-paper patch; opposite edge pixels equal",
+      "sha256": "6da4d318dc4cbe23314bde4c13554ae286b3b823c3e1769c450cf64adbbca032"
+    },
+    "seals314": [
+      {
+        "image": "timeline/pages/papers314/cloud-dragon-seal-1.png",
+        "width": 183,
+        "height": 248,
+        "relativeWidth": 0.13,
+        "edge": "right",
+        "insetRatio": -0.00555556,
+        "centerY": 0.08958333,
+        "source312": "timeline/pages/papers312/cloud-dragon.png",
+        "sourceRect312": {
+          "x": 236,
+          "y": 12,
+          "w": 183,
+          "h": 248
+        },
+        "alphaMethod": {
+          "method": "red-chroma alpha, soft crop-edge mask",
+          "coefficient": 1.2,
+          "bias": 7,
+          "range": 23
+        },
+        "sha256": "ba41a3fb44d36bbd27a10a109662b9d48cbcadf26a9448329101db2945581a61"
+      },
+      {
+        "image": "timeline/pages/papers314/cloud-dragon-seal-2.png",
+        "width": 176,
+        "height": 174,
+        "relativeWidth": 0.12,
+        "edge": "left",
+        "insetRatio": -0.04,
+        "centerY": 0.85958333,
+        "source312": "timeline/pages/papers312/cloud-dragon.png",
+        "sourceRect312": {
+          "x": 244,
+          "y": 307,
+          "w": 176,
+          "h": 174
+        },
+        "alphaMethod": {
+          "method": "red-chroma alpha, soft crop-edge mask",
+          "coefficient": 1.2,
+          "bias": 7,
+          "range": 23
+        },
+        "sha256": "ea3b3965791a8d422f01df955f0457ade5305e4cb727913b12acc7a9472f8af5"
+      }
+    ],
+    "layout314": {
+      "kind": "seamless-paper-repeat-with-independent-edge-seals",
+      "textureAspect": "preserve; repeat rather than stretch",
+      "sealSizing": "short-side relative, independent of work width",
+      "fallbackImage": "timeline/pages/papers313/cloud-dragon.png",
+      "fallbackThumbnail": "timeline/pages/papers313/cloud-dragon-thumb.webp"
+    },
+    "processing314": "原图天然无字无章纸纹作双向镜像无缝循环；真实朱印以透明图层独立按短边比例贴边排版，纸纹不混入朱印。"
+  },
+  {
+    "id": "hanshi-gold",
+    "title": "寒食金笺 · 卷后留白",
+    "work": "黄州寒食诗帖",
+    "author": "苏轼",
+    "era": "北宋作品 · 后世题跋纸",
+    "story": "《寒食帖》历经多次递藏，卷后接有张縯等人的题跋。这张选自卷后金色纸的天然留白，保留两枚原有朱印；并非苏轼写诗的本幅原纸。 此版本取原纸纹与原印作设计排版，朱印缩小置于边缘，不代表原卷的实际布局。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/14714?dep=P",
+    "provenance": "国立故宫博物院藏《北宋苏东坡书黄州寒食诗》卷；本站第 19 张，张縯题跋纸上方无字区域。纸张具体制作年代未作判定。",
+    "seals": [
+      "卷后原有朱印两枚（未强行释读印主）"
+    ],
+    "cropPart": "张縯题跋纸",
+    "sourceImage": "timeline/pages/hanshi/muzjrkcp-i/IMG_3877.jpeg",
+    "sourcePage": 18,
+    "crop": {
+      "x": 20,
+      "y": 0,
+      "w": 500,
+      "h": 667
+    },
+    "image": "timeline/pages/papers313/hanshi-gold.png",
+    "thumbnail": "timeline/pages/papers313/hanshi-gold-thumb.webp",
+    "paperColor": "#f1e09b",
+    "width": 900,
+    "height": 1200,
+    "sourceSha256": "5db4e3535a3223412aca80cbb3fb4e9de50494ef5ab357b69224896c7c674e44",
+    "imageSha256": "acea62d6472bc308ae7fbe1208ba6ff1736f7f1eec9086d94e1bbf71ba85d5ff",
+    "processing": "取原图天然留白纸纹作镜像平铺，原有朱印提取后缩小靠边排版；属于设计排版，不是完整历史原纸照片。未生成假印或手写文字。",
+    "naturalBlank": true,
+    "hasOriginalSeals": true,
+    "layout313": {
+      "kind": "original-texture-and-edge-seals",
+      "source312": "timeline/pages/papers312/hanshi-gold.png",
+      "textureRect312": {
+        "x": 225,
+        "y": 10,
+        "w": 270,
+        "h": 640
+      },
+      "textureMethod": "reflected tiling",
+      "textureScale": 1.6,
+      "sealExtraction": {
+        "method": "red-chroma alpha, soft crop-edge mask",
+        "coefficient": 0.42,
+        "bias": 6,
+        "range": 26
+      },
+      "seals": [
+        {
+          "sourceRect312": {
+            "x": 105,
+            "y": 292,
+            "w": 106,
+            "h": 110
+          },
+          "x": -27,
+          "y": 74,
+          "width": 99,
+          "height": 103,
+          "relativeWidth": 0.11
+        },
+        {
+          "sourceRect312": {
+            "x": 91,
+            "y": 451,
+            "w": 130,
+            "h": 137
+          },
+          "x": 819,
+          "y": 1005,
+          "width": 108,
+          "height": 114,
+          "relativeWidth": 0.12
+        }
+      ],
+      "centerWritingArea": {
+        "x": 0.175,
+        "y": 0,
+        "w": 0.65,
+        "h": 1
+      }
+    },
+    "tile314": {
+      "image": "timeline/pages/papers314/hanshi-gold-tile.png",
+      "width": 540,
+      "height": 1280,
+      "referenceScale": 1.6,
+      "referenceShortSide": 900,
+      "source312": "timeline/pages/papers312/hanshi-gold.png",
+      "sourceRect312": {
+        "x": 225,
+        "y": 10,
+        "w": 270,
+        "h": 640
+      },
+      "method": "2x2 mirrored blank-paper patch; opposite edge pixels equal",
+      "sha256": "4261e49778f70396522d7593c16f60e91b3d4157245d3cb452489be42b4f7ce9"
+    },
+    "seals314": [
+      {
+        "image": "timeline/pages/papers314/hanshi-gold-seal-1.png",
+        "width": 106,
+        "height": 110,
+        "relativeWidth": 0.11,
+        "edge": "left",
+        "insetRatio": -0.03,
+        "centerY": 0.10458333,
+        "source312": "timeline/pages/papers312/hanshi-gold.png",
+        "sourceRect312": {
+          "x": 105,
+          "y": 292,
+          "w": 106,
+          "h": 110
+        },
+        "alphaMethod": {
+          "method": "red-chroma alpha, soft crop-edge mask",
+          "coefficient": 0.42,
+          "bias": 6,
+          "range": 26
+        },
+        "sha256": "d70c79b20c168390760da1b025e34a4c387b7e1ca3ef46b2f20323b7d8ca2723"
+      },
+      {
+        "image": "timeline/pages/papers314/hanshi-gold-seal-2.png",
+        "width": 130,
+        "height": 137,
+        "relativeWidth": 0.12,
+        "edge": "right",
+        "insetRatio": -0.03,
+        "centerY": 0.885,
+        "source312": "timeline/pages/papers312/hanshi-gold.png",
+        "sourceRect312": {
+          "x": 91,
+          "y": 451,
+          "w": 130,
+          "h": 137
+        },
+        "alphaMethod": {
+          "method": "red-chroma alpha, soft crop-edge mask",
+          "coefficient": 0.42,
+          "bias": 6,
+          "range": 26
+        },
+        "sha256": "2eef5608d16f5dcadafb8c2d6d3205d557b90b75d73d59eb10db18e4281cef5f"
+      }
+    ],
+    "layout314": {
+      "kind": "seamless-paper-repeat-with-independent-edge-seals",
+      "textureAspect": "preserve; repeat rather than stretch",
+      "sealSizing": "short-side relative, independent of work width",
+      "fallbackImage": "timeline/pages/papers313/hanshi-gold.png",
+      "fallbackThumbnail": "timeline/pages/papers313/hanshi-gold-thumb.webp"
+    },
+    "processing314": "原图天然无字无章纸纹作双向镜像无缝循环；真实朱印以透明图层独立按短边比例贴边排版，纸纹不混入朱印。"
+  },
+  {
+    "id": "boyuan-ivory",
+    "title": "三希素纸 · 卷后双印",
+    "work": "伯远帖",
+    "author": "王珣",
+    "era": "东晋作品 · 清代题跋纸",
+    "story": "《伯远帖》与《快雪时晴帖》《中秋帖》同为乾隆珍藏的三希。这里取卷后《三希堂歌》题跋纸的天然留白，保留清宫鉴藏印，不是王珣书写的晋代本幅。 此版本取原纸纹与原印作设计排版，朱印缩小置于边缘，不代表原卷的实际布局。",
+    "source": "https://www.dpm.org.cn/collection/handwriting/228199.html",
+    "provenance": "故宫博物院藏《王珣行书伯远帖》卷；本站原卷分段 10，沈德潜奉敕书《三希堂歌》左侧留白。",
+    "seals": [
+      "清宫鉴藏印两枚"
+    ],
+    "cropPart": "清代沈德潜《三希堂歌》题跋纸",
+    "sourceImage": "features/library/assets/dpm/boyuan-1.webp",
+    "sourcePage": 10,
+    "crop": {
+      "x": 100,
+      "y": 70,
+      "w": 1350,
+      "h": 1800
+    },
+    "image": "timeline/pages/papers313/boyuan-ivory.png",
+    "thumbnail": "timeline/pages/papers313/boyuan-ivory-thumb.webp",
+    "paperColor": "#c7c2b3",
+    "width": 900,
+    "height": 1200,
+    "sourceSha256": "e7d064d946dade7dfe9eff55bfca1805f2e96ca4aee2fb0f3dab14b30d90a162",
+    "imageSha256": "b28ca87ace226d75f73e40dbb7358f919f0f11fe8b4b6f4def6c99be7b5eec01",
+    "processing": "取原图天然留白纸纹作镜像平铺，原有朱印提取后缩小靠边排版；属于设计排版，不是完整历史原纸照片。未生成假印或手写文字。",
+    "naturalBlank": true,
+    "hasOriginalSeals": true,
+    "layout313": {
+      "kind": "original-texture-and-edge-seals",
+      "source312": "timeline/pages/papers312/boyuan-ivory.png",
+      "textureRect312": {
+        "x": 15,
+        "y": 30,
+        "w": 365,
+        "h": 1730
+      },
+      "textureMethod": "reflected tiling",
+      "textureScale": 1.6,
+      "sealExtraction": {
+        "method": "red-chroma alpha, soft crop-edge mask",
+        "coefficient": 0.65,
+        "bias": 3,
+        "range": 14
+      },
+      "seals": [
+        {
+          "sourceRect312": {
+            "x": 622,
+            "y": 513,
+            "w": 248,
+            "h": 252
+          },
+          "x": 822,
+          "y": 84,
+          "width": 94,
+          "height": 96,
+          "relativeWidth": 0.105
+        },
+        {
+          "sourceRect312": {
+            "x": 606,
+            "y": 1007,
+            "w": 304,
+            "h": 314
+          },
+          "x": -32,
+          "y": 988,
+          "width": 108,
+          "height": 112,
+          "relativeWidth": 0.12
+        }
+      ],
+      "centerWritingArea": {
+        "x": 0.175,
+        "y": 0,
+        "w": 0.65,
+        "h": 1
+      }
+    },
+    "tile314": {
+      "image": "timeline/pages/papers314/boyuan-ivory-tile.png",
+      "width": 730,
+      "height": 3460,
+      "referenceScale": 1.6,
+      "referenceShortSide": 900,
+      "source312": "timeline/pages/papers312/boyuan-ivory.png",
+      "sourceRect312": {
+        "x": 15,
+        "y": 30,
+        "w": 365,
+        "h": 1730
+      },
+      "method": "2x2 mirrored blank-paper patch; opposite edge pixels equal",
+      "sha256": "ad4ea13fb9da1250131a4df58a9b4fecb350b2997017be2574c7f6151296f549"
+    },
+    "seals314": [
+      {
+        "image": "timeline/pages/papers314/boyuan-ivory-seal-1.png",
+        "width": 248,
+        "height": 252,
+        "relativeWidth": 0.105,
+        "edge": "right",
+        "insetRatio": -0.01777778,
+        "centerY": 0.11,
+        "source312": "timeline/pages/papers312/boyuan-ivory.png",
+        "sourceRect312": {
+          "x": 622,
+          "y": 513,
+          "w": 248,
+          "h": 252
+        },
+        "alphaMethod": {
+          "method": "red-chroma alpha, soft crop-edge mask",
+          "coefficient": 0.65,
+          "bias": 3,
+          "range": 14
+        },
+        "sha256": "d00ae528ea406670d66c47a3ce0c9586757d3c1f1736491f0d49f286829059e1"
+      },
+      {
+        "image": "timeline/pages/papers314/boyuan-ivory-seal-2.png",
+        "width": 304,
+        "height": 314,
+        "relativeWidth": 0.12,
+        "edge": "left",
+        "insetRatio": -0.03555556,
+        "centerY": 0.87,
+        "source312": "timeline/pages/papers312/boyuan-ivory.png",
+        "sourceRect312": {
+          "x": 606,
+          "y": 1007,
+          "w": 304,
+          "h": 314
+        },
+        "alphaMethod": {
+          "method": "red-chroma alpha, soft crop-edge mask",
+          "coefficient": 0.65,
+          "bias": 3,
+          "range": 14
+        },
+        "sha256": "b4e6419ceb1ae865b418ab3071e5979cea9ee5ba6bc11fc0c01cc255d39a1560"
+      }
+    ],
+    "layout314": {
+      "kind": "seamless-paper-repeat-with-independent-edge-seals",
+      "textureAspect": "preserve; repeat rather than stretch",
+      "sealSizing": "short-side relative, independent of work width",
+      "fallbackImage": "timeline/pages/papers313/boyuan-ivory.png",
+      "fallbackThumbnail": "timeline/pages/papers313/boyuan-ivory-thumb.webp"
+    },
+    "processing314": "原图天然无字无章纸纹作双向镜像无缝循环；真实朱印以透明图层独立按短边比例贴边排版，纸纹不混入朱印。"
+  },
+  {
+    "id": "zixu-pattern",
+    "title": "自叙纹笺 · 重装旧印",
+    "work": "自叙帖",
+    "author": "怀素",
+    "era": "唐代作品 · 重装题记区",
+    "story": "取《自叙帖》重装题记附近的天然无字纹笺，保留一枚完整旧藏朱印。卷中可见后世重装与递藏的记录，此处纹笺不冒称怀素原始书写纸。 此版本取原纸纹与原印作设计排版，朱印缩小置于边缘，不代表原卷的实际布局。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/14890?dep=P",
+    "provenance": "国立故宫博物院藏《唐怀素自叙帖》卷；本站第 36 张，昇元四年重装题记左侧纹笺留白。纹笺具体制作年代未作判定。",
+    "seals": [
+      "原有旧藏朱印一枚（未强行释读印主）"
+    ],
+    "cropPart": "重装题记左侧纹笺",
+    "sourceImage": "timeline/pages/zixu/mv26pl8a-z/IMG_4240.jpeg",
+    "sourcePage": 35,
+    "crop": {
+      "x": 90,
+      "y": 970,
+      "w": 390,
+      "h": 520
+    },
+    "image": "timeline/pages/papers313/zixu-pattern.png",
+    "thumbnail": "timeline/pages/papers313/zixu-pattern-thumb.webp",
+    "paperColor": "#c4a17d",
+    "width": 900,
+    "height": 1200,
+    "sourceSha256": "02f8e06c10eb6655ef3008584120fc61e79325c39c6b51c0f9493e991429877a",
+    "imageSha256": "48ef0ada79f9a59697f7ba5fbc5c3be4ab22120ecf7afdd508de6a177e36bd11",
+    "processing": "取原图天然留白纸纹作镜像平铺，原有朱印提取后缩小靠边排版；属于设计排版，不是完整历史原纸照片。未生成假印或手写文字。",
+    "naturalBlank": true,
+    "hasOriginalSeals": true,
+    "layout313": {
+      "kind": "original-texture-and-edge-seals",
+      "source312": "timeline/pages/papers312/zixu-pattern.png",
+      "textureRect312": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 180
+      },
+      "textureMethod": "reflected tiling",
+      "textureScale": 1.65,
+      "sealExtraction": {
+        "method": "red-chroma alpha, soft crop-edge mask",
+        "coefficient": 1.3,
+        "bias": 6,
+        "range": 19
+      },
+      "seals": [
+        {
+          "sourceRect312": {
+            "x": 148,
+            "y": 195,
+            "w": 130,
+            "h": 146
+          },
+          "x": 814,
+          "y": 990,
+          "width": 117,
+          "height": 131,
+          "relativeWidth": 0.13
+        }
+      ],
+      "centerWritingArea": {
+        "x": 0.175,
+        "y": 0,
+        "w": 0.65,
+        "h": 1
+      }
+    },
+    "tile314": {
+      "image": "timeline/pages/papers314/zixu-pattern-tile.png",
+      "width": 780,
+      "height": 360,
+      "referenceScale": 1.65,
+      "referenceShortSide": 900,
+      "source312": "timeline/pages/papers312/zixu-pattern.png",
+      "sourceRect312": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 180
+      },
+      "method": "2x2 mirrored blank-paper patch; opposite edge pixels equal",
+      "sha256": "25363b16910a100850ec784016e346bb89dc418c66a386d3c0d0ff44fba2c5c7"
+    },
+    "seals314": [
+      {
+        "image": "timeline/pages/papers314/zixu-pattern-seal-1.png",
+        "width": 130,
+        "height": 146,
+        "relativeWidth": 0.13,
+        "edge": "right",
+        "insetRatio": -0.03444444,
+        "centerY": 0.87958333,
+        "source312": "timeline/pages/papers312/zixu-pattern.png",
+        "sourceRect312": {
+          "x": 148,
+          "y": 195,
+          "w": 130,
+          "h": 146
+        },
+        "alphaMethod": {
+          "method": "red-chroma alpha, soft crop-edge mask",
+          "coefficient": 1.3,
+          "bias": 6,
+          "range": 19
+        },
+        "sha256": "1bd91f99b8f32b8da758b9f0ff4024eba19951e9c483b608ad71ca514ca086f7"
+      }
+    ],
+    "layout314": {
+      "kind": "seamless-paper-repeat-with-independent-edge-seals",
+      "textureAspect": "preserve; repeat rather than stretch",
+      "sealSizing": "short-side relative, independent of work width",
+      "fallbackImage": "timeline/pages/papers313/zixu-pattern.png",
+      "fallbackThumbnail": "timeline/pages/papers313/zixu-pattern-thumb.webp"
+    },
+    "processing314": "原图天然无字无章纸纹作双向镜像无缝循环；真实朱印以透明图层独立按短边比例贴边排版，纸纹不混入朱印。"
+  },
+  {
+    "id": "shusu-colophon",
+    "title": "蜀素跋纸 · 清宫圆玺",
+    "work": "蜀素帖",
+    "author": "米芾",
+    "era": "北宋作品 · 明代王衡跋纸",
+    "story": "米芾《蜀素帖》的本幅写在绫上，卷后另接纸本题跋。这张取王衡跋纸左上角的天然留白与完整清宫圆玺，保留后世鉴藏的印记，不是米芾书写的蜀素本幅。 此版本取原纸纹与原印作设计排版，朱印缩小置于边缘，不代表原卷的实际布局。",
+    "source": "https://digitalarchive.npm.gov.tw/Collection/Detail/912?dep=P",
+    "provenance": "国立故宫博物院藏《宋米芾蜀素帖》卷；本站第 21 张，明代王衡甲辰年跋纸左上角。馆方题跋释文可核对王衡款识。",
+    "seals": [
+      "清宫鉴藏圆玺"
+    ],
+    "cropPart": "明代王衡题跋纸",
+    "sourceImage": "timeline/pages/shusu/mv0y8nsf-k/IMG_4067.jpeg",
+    "sourcePage": 20,
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 330,
+      "h": 440
+    },
+    "image": "timeline/pages/papers313/shusu-colophon.png",
+    "thumbnail": "timeline/pages/papers313/shusu-colophon-thumb.webp",
+    "paperColor": "#dbc28b",
+    "width": 900,
+    "height": 1200,
+    "sourceSha256": "4d2ca027855d4456cc933a8410ce1c3af9e2088f19642380576a6f632fa0a0c7",
+    "imageSha256": "22b31be0b63dfa2021dfeeaab8841e07af2b61791487a4400a2ce00eb7aab308",
+    "processing": "取原图天然留白纸纹作镜像平铺，原有朱印提取后缩小靠边排版；属于设计排版，不是完整历史原纸照片。未生成假印或手写文字。",
+    "naturalBlank": true,
+    "hasOriginalSeals": true,
+    "layout313": {
+      "kind": "original-texture-and-edge-seals",
+      "source312": "timeline/pages/papers312/shusu-colophon.png",
+      "textureRect312": {
+        "x": 0,
+        "y": 251,
+        "w": 330,
+        "h": 189
+      },
+      "textureMethod": "reflected tiling",
+      "textureScale": 1.7,
+      "sealExtraction": {
+        "method": "red-chroma alpha, soft crop-edge mask",
+        "coefficient": 0.9,
+        "bias": 7,
+        "range": 27
+      },
+      "seals": [
+        {
+          "sourceRect312": {
+            "x": 45,
+            "y": 31,
+            "w": 212,
+            "h": 216
+          },
+          "x": -36,
+          "y": 72,
+          "width": 117,
+          "height": 119,
+          "relativeWidth": 0.13
+        }
+      ],
+      "centerWritingArea": {
+        "x": 0.175,
+        "y": 0,
+        "w": 0.65,
+        "h": 1
+      }
+    },
+    "tile314": {
+      "image": "timeline/pages/papers314/shusu-colophon-tile.png",
+      "width": 660,
+      "height": 378,
+      "referenceScale": 1.7,
+      "referenceShortSide": 900,
+      "source312": "timeline/pages/papers312/shusu-colophon.png",
+      "sourceRect312": {
+        "x": 0,
+        "y": 251,
+        "w": 330,
+        "h": 189
+      },
+      "method": "2x2 mirrored blank-paper patch; opposite edge pixels equal",
+      "sha256": "1cdd61251656adf4072c08ae773630ae1e736cd72ce55c0603447a93759e8328"
+    },
+    "seals314": [
+      {
+        "image": "timeline/pages/papers314/shusu-colophon-seal-1.png",
+        "width": 212,
+        "height": 216,
+        "relativeWidth": 0.13,
+        "edge": "left",
+        "insetRatio": -0.04,
+        "centerY": 0.10958333,
+        "source312": "timeline/pages/papers312/shusu-colophon.png",
+        "sourceRect312": {
+          "x": 45,
+          "y": 31,
+          "w": 212,
+          "h": 216
+        },
+        "alphaMethod": {
+          "method": "red-chroma alpha, soft crop-edge mask",
+          "coefficient": 0.9,
+          "bias": 7,
+          "range": 27
+        },
+        "sha256": "c4c8005e0e7abfbb4da474889941b2406e5934e9a43e29b4260c04ae4afcb16f"
+      }
+    ],
+    "layout314": {
+      "kind": "seamless-paper-repeat-with-independent-edge-seals",
+      "textureAspect": "preserve; repeat rather than stretch",
+      "sealSizing": "short-side relative, independent of work width",
+      "fallbackImage": "timeline/pages/papers313/shusu-colophon.png",
+      "fallbackThumbnail": "timeline/pages/papers313/shusu-colophon-thumb.webp"
+    },
+    "processing314": "原图天然无字无章纸纹作双向镜像无缝循环；真实朱印以透明图层独立按短边比例贴边排版，纸纹不混入朱印。"
+  }
+]

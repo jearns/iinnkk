@@ -1,8 +1,9 @@
+import{readSource as readFile}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile,readdir} from 'node:fs/promises';
+import{readdir}from'node:fs/promises';
 import vm from 'node:vm';
-import {Window} from 'happy-dom';
+import{Window}from'happy-dom';
 const read=p=>readFile(p,'utf8');
 
 test('国图四宝和首页榜单目录使用同一份名单，文津阁版本明确',async()=>{
@@ -43,6 +44,6 @@ test('活动页面与离线清单只引用系统输入法，发布脚本保留�
  assert.ok(!sources.scripts.includes('handwriting-input254.js'));
  const offline=JSON.parse(await read('offline-assets.json'));
  assert.ok(offline.includes('rank-directory275.js'));
- assert.ok(offline.some(p=>/^release275\/home\.[a-f0-9]+\.css$/.test(p)));
+ assert.ok(offline.some(p=>/^features\/home\/home\.[a-f0-9]+\.css$/.test(p)));
  assert.match(await read('scripts/check-release224.mjs'),/check-context269\.mjs/i);
 });

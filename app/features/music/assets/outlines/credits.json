@@ -1,0 +1,181 @@
+{
+  "verifiedAt": "2026-11-01",
+  "method": "Wikimedia Commons file metadata checked through public MediaWiki imageinfo API. Actual photograph bytes decoded locally. No SVG or AI-generated architecture.",
+  "photos": [
+    {
+      "id": "petronas",
+      "name": "双子塔",
+      "group": "地标实景",
+      "words": [
+        "双子塔",
+        "吉隆坡",
+        "双峰",
+        "城市"
+      ],
+      "note": "基于真实摄影的明暗剪影；保留现场形态。",
+      "source": "https://commons.wikimedia.org/wiki/File:Petronas_Towers_Silver_Sunset.jpg",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "artist": "Michael",
+      "threshold": 145,
+      "invert": false,
+      "image": "features/music/assets/outlines/petronas-photo.webp",
+      "photoSource": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Petronas_Towers_Silver_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceTitle": "File:Petronas Towers Silver Sunset.jpg",
+      "originalSize": [
+        5312,
+        2988
+      ],
+      "pixelSize": [
+        2400,
+        1350
+      ],
+      "photoDerived": true,
+      "maskMethod": "canvas-luminance-threshold",
+      "credit": "Michael · Public domain",
+      "sourceVerifiedAt": "2026-11-01",
+      "sha256": "be594048bd764b53d33f9c7dfb8a1ed21169131c9a3dfbc890c56570e0365b60",
+      "modifications": "Resized to maximum 2400px and encoded as WebP; silhouette is derived at runtime from photograph luminance."
+    },
+    {
+      "id": "eiffel",
+      "name": "埃菲尔铁塔",
+      "group": "地标实景",
+      "words": [
+        "巴黎",
+        "铁塔",
+        "浪漫",
+        "远方"
+      ],
+      "note": "基于真实摄影的明暗剪影；保留现场形态。",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Eiffel_Tower_2.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "artist": "Jan.Keromnes",
+      "threshold": 120,
+      "invert": false,
+      "image": "features/music/assets/outlines/eiffel-photo.webp",
+      "photoSource": "https://upload.wikimedia.org/wikipedia/commons/8/8b/The_Eiffel_Tower_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceTitle": "File:The Eiffel Tower 2.jpg",
+      "originalSize": [
+        4048,
+        3036
+      ],
+      "pixelSize": [
+        2400,
+        1800
+      ],
+      "photoDerived": true,
+      "maskMethod": "canvas-luminance-threshold",
+      "credit": "Jan.Keromnes · CC0",
+      "sourceVerifiedAt": "2026-11-01",
+      "sha256": "49c4dcdd6220f9ed7fce65f4953df4ba731d9cbfafaf60b76b5946296f875d5b",
+      "modifications": "Resized to maximum 2400px and encoded as WebP; silhouette is derived at runtime from photograph luminance."
+    },
+    {
+      "id": "taj",
+      "name": "泰姬陵",
+      "group": "建筑实景",
+      "words": [
+        "泰姬陵",
+        "对称",
+        "永恒",
+        "守望"
+      ],
+      "note": "基于真实摄影的明暗剪影；保留现场形态。",
+      "source": "https://commons.wikimedia.org/wiki/File:Silhouette_of_Taj_Mahal_at_Sunset.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "artist": "Sdnphotoholic",
+      "threshold": 110,
+      "invert": false,
+      "image": "features/music/assets/outlines/taj-photo.webp",
+      "photoSource": "https://upload.wikimedia.org/wikipedia/commons/7/79/Silhouette_of_Taj_Mahal_at_Sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceTitle": "File:Silhouette of Taj Mahal at Sunset.jpg",
+      "originalSize": [
+        3600,
+        2400
+      ],
+      "pixelSize": [
+        2400,
+        1600
+      ],
+      "photoDerived": true,
+      "maskMethod": "canvas-luminance-threshold",
+      "credit": "Sdnphotoholic · CC BY-SA 4.0",
+      "sourceVerifiedAt": "2026-11-01",
+      "sha256": "71b2cb7180df648499bf2f6a3872a8ab4a8f1e72c9cc9d6bd234906cba3409c6",
+      "modifications": "Resized to maximum 2400px and encoded as WebP; silhouette is derived at runtime from photograph luminance."
+    },
+    {
+      "id": "angkor",
+      "name": "吴哥窟",
+      "group": "建筑实景",
+      "words": [
+        "吴哥窟",
+        "黎明",
+        "古迹",
+        "时光"
+      ],
+      "note": "基于真实摄影的明暗剪影；保留现场形态。",
+      "source": "https://commons.wikimedia.org/wiki/File:Angkor_Sunrise_Silhouette.JPG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "artist": "User: (WT-shared) Jpatokal at  wts wikivoyage",
+      "threshold": 130,
+      "invert": false,
+      "image": "features/music/assets/outlines/angkor-photo.webp",
+      "photoSource": "https://upload.wikimedia.org/wikipedia/commons/d/df/Angkor_Sunrise_Silhouette.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceTitle": "File:Angkor Sunrise Silhouette.JPG",
+      "originalSize": [
+        3008,
+        2000
+      ],
+      "pixelSize": [
+        2400,
+        1596
+      ],
+      "photoDerived": true,
+      "maskMethod": "canvas-luminance-threshold",
+      "credit": "User: (WT-shared) Jpatokal at  wts wikivoyage · CC BY-SA 4.0",
+      "sourceVerifiedAt": "2026-11-01",
+      "sha256": "af885bd36e4da10ea61fd7f081e2a64067d47d1c33c5fb19930da558c0927c6f",
+      "modifications": "Resized to maximum 2400px and encoded as WebP; silhouette is derived at runtime from photograph luminance."
+    },
+    {
+      "id": "borobudur",
+      "name": "婆罗浮屠",
+      "group": "建筑实景",
+      "words": [
+        "婆罗浮屠",
+        "静心",
+        "晨光",
+        "安宁"
+      ],
+      "note": "基于真实摄影的明暗剪影；保留现场形态。",
+      "source": "https://commons.wikimedia.org/wiki/File:Borobudur_Stupas_and_Chaityas_-_076_Silhouette_(11678315845).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "artist": "Photo Dharma from Penang, Malaysia",
+      "threshold": 130,
+      "invert": false,
+      "image": "features/music/assets/outlines/borobudur-photo.webp",
+      "photoSource": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Borobudur_Stupas_and_Chaityas_-_076_Silhouette_%2811678315845%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceTitle": "File:Borobudur Stupas and Chaityas - 076 Silhouette (11678315845).jpg",
+      "originalSize": [
+        4320,
+        3240
+      ],
+      "pixelSize": [
+        2400,
+        1800
+      ],
+      "photoDerived": true,
+      "maskMethod": "canvas-luminance-threshold",
+      "credit": "Photo Dharma from Penang, Malaysia · CC BY 2.0",
+      "sourceVerifiedAt": "2026-11-01",
+      "sha256": "247a8e1f34a7b5cebd397d22dc6266f8a0ba39fe1da081dd21feaaae87a579f0",
+      "modifications": "Resized to maximum 2400px and encoded as WebP; silhouette is derived at runtime from photograph luminance."
+    }
+  ]
+}

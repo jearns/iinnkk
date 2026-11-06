@@ -1,5 +1,5 @@
 import * as T from 'three';
-import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js';
+import{GLTFExporter}from'three/addons/exporters/GLTFExporter.js';
 function solidFiles(trace,widthMM){
  if(trace.paths.length>4000)throw Error('轮廓过密；提高阈值后再生成 3D 实体。');
  const scale=widthMM/trace.width,area=p=>p.reduce((sum,v,i)=>{const w=p[(i+1)%p.length];return sum+v[0]*w[1]-w[0]*v[1]},0),paths=trace.paths.map(p=>({points:p,area:area(p)})).filter(x=>Math.abs(x.area)>3);if(!paths.length)throw Error('没有足够的实体轮廓');

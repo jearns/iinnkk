@@ -1,6 +1,6 @@
-import{filmDraft314}from'../../release314/film-draft.mjs';
+import{filmDraft314}from'../../features/papers/film-draft.mjs';
 import{createReplayEngine296}from'./replay.mjs';
-import{loadDraft294}from'../../release296/selection.mjs';
+import{loadDraft294}from'../../features/portrait/catalogue/selection.mjs';
 import{detachedSequence297}from'./detached297.mjs';
 const snapshots306=new Map();
 // Only explicitly selected pages are prepared once; engines are released before playback/export.

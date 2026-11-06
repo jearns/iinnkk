@@ -35,5 +35,5 @@ for i in ['oracle']+[w['id'] for w in works if w['id'].startswith('oracle-')]:
 for i in ['shimenming','maogong','hezun','caishi247']:
  r[i]['url']=r[i]['url'].replace('https://bkso.baidu.com/','https://wapbaike.baidu.com/')
 assert len(r)==len(works)==61,(len(r),len(works))
-(p/'release301/encyclopedia-works-b.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+(p/'features/library/encyclopedia-works-b.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
 print('records',len(r),'exact',sum(not x['relatedTopic'] for x in r.values()),'related',sum(x['relatedTopic'] for x in r.values()))

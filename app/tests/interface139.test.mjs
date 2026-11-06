@@ -1,10 +1,11 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 
-const source=fs.readFileSync(new URL('../collaboration128.js',import.meta.url),'utf8');
-const css=fs.readFileSync(new URL('../revision139.css',import.meta.url),'utf8');
+const source=readSourceSync(new URL('../collaboration128.js',import.meta.url),'utf8');
+const css=readSourceSync(new URL('../revision139.css',import.meta.url),'utf8');
 function harness(){
   const calls=[],actions=[];
   const room={id:'room',title:'家人练字'},page={id:'page'};
@@ -48,6 +49,6 @@ test('writing never exposes lower co-writing bar and active page book retains ex
 test('reference controls have no plates in normal, pressed and hover states',()=>{
   for(const selector of ['header','footer','button:hover','button:active','button[aria-pressed=true]'])assert.ok(css.includes('.referenceFloat129.referenceFloat129 '+selector));
   assert.match(css,/background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important/);
-  const styles=JSON.parse(fs.readFileSync(new URL('../runtime-sources106.json',import.meta.url),'utf8')).styles;
+  const styles=JSON.parse(readSourceSync(new URL('../runtime-sources106.json',import.meta.url),'utf8')).styles;
   assert.ok(styles.indexOf('revision139.css')>styles.indexOf('revision133.css'));
 });

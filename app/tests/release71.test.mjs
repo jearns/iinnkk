@@ -1,10 +1,11 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+
 import vm from 'node:vm';
 import QRCode from 'qrcode';
 
-const read=name=>readFileSync(new URL('../'+name,import.meta.url),'utf8');
+const read=name=>readSourceSync(new URL('../'+name,import.meta.url),'utf8');
 test('every published literary author has an explicit country and a matching flag palette',()=>{
  const context={window:{}};
  vm.runInNewContext(read('quotes-refresh.js'),context);

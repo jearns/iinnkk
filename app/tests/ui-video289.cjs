@@ -1,3 +1,4 @@
+const {readSourceSync}=require('../source/read.cjs');
 const {chromium}=require('playwright');
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
 const {execFileSync}=require('node:child_process');
@@ -74,7 +75,7 @@ const server=http.createServer((req,res)=>{
   assert.deepEqual(errors,[]);assert.deepEqual(cloud,[]);
   for(const lang of ['en','fr','ru','ar','es']){
    await page.evaluate(lang=>localStorage.setItem('ink.language218',lang),lang);await page.reload();
-   const dict=JSON.parse(fs.readFileSync('locales218/'+lang+'.json'));
+   const dict=JSON.parse(readSourceSync('locales/'+lang+'.json'));
    await page.getByRole('heading',{name:dict['让作品，慢慢入镜。'],exact:true}).waitFor();
    assert.equal(await page.locator('.vsLayout').getAttribute('dir'),lang==='ar'?'rtl':'ltr');
    assert.equal(await page.getByRole('button',{name:dict['下载 MP4 视频'],exact:true}).count(),1);

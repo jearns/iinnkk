@@ -12,4 +12,4 @@
 
 验证：check:release；本轮交互、JPG编码/分页/系统分享、资源编号与旧图片保护、缓存与44页临帖会话、首次书写预算、鹍候选与笔迹采集；桌面浏览器实测首页、在线排名、甲骨榜单与介绍。手机原生相册菜单需真机确认。
 
-资料核对：release300/catalogue-audit.json、catalogue-enrichment.json、catalogue-images.json。来源水印按原图保留。
+资料核对：features/calendar/catalogue-audit.json、catalogue-enrichment.json、catalogue-images.json。来源水印按原图保留。

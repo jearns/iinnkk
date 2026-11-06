@@ -1,5 +1,6 @@
-import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';import {createRequire} from 'node:module';
-const require=createRequire(import.meta.url),{createCanvas}=require('/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/@napi-rs/canvas');const env={};for(const f of ['perfect-freehand201.js','brush.js','brush-contour201.js'])vm.runInNewContext(fs.readFileSync(f,'utf8'),env);const B=env.ParticleBrush;
+import{readSourceSync}from'../source/read.mjs';
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';import{createRequire}from'node:module';
+const require=createRequire(import.meta.url),{createCanvas}=require('/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/@napi-rs/canvas');const env={};for(const f of ['perfect-freehand201.js','brush.js','brush-contour201.js'])vm.runInNewContext(readSourceSync(f,'utf8'),env);const B=env.ParticleBrush;
 function trace(coords,count=20){let t=0,pts=[];for(let k=1;k<coords.length;k++){const a=coords[k-1],b=coords[k],dt=Math.hypot(b[0]-a[0],b[1]-a[1])*390/.25;for(let j=0;j<count;j++)pts.push({x:a[0]+(b[0]-a[0])*j/count,y:a[1]+(b[1]-a[1])*j/count,t:t+dt*j/count});t+=dt}pts.push({x:coords.at(-1)[0],y:coords.at(-1)[1],t});return pts}
 function stroke(coords,count=20,key='yan'){return {done:true,settings:{...B.presets194[key],size:65},points:trace(coords,count)}}
 function render(st,size=780){const c=createCanvas(size,size);B.render(st,c.getContext('2d'),size,size);return c}

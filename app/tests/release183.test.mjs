@@ -1,4 +1,5 @@
-import test from'node:test';import assert from'node:assert/strict';import{readFile}from'node:fs/promises';import vm from'node:vm';import{Window}from'happy-dom';
+import{readSource as readFile}from'../source/read.mjs';
+import test from'node:test';import assert from'node:assert/strict';import vm from'node:vm';import{Window}from'happy-dom';
 const read=p=>readFile(new URL('../'+p,import.meta.url),'utf8');
 function option(w){w.Option=function(t,v){const n=w.document.createElement('option');n.textContent=t;n.value=v;return n}}
 const turn=()=>new Promise(r=>setImmediate(r));

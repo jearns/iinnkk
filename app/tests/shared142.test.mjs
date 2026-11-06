@@ -1,9 +1,10 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 const env={Blob,Response,CompressionStream,DecompressionStream,Uint8Array};
-for(const file of ['cloud-draft-codec141.js','relay-model144.js','shared-service142.js','collaboration128.js'])vm.runInNewContext(fs.readFileSync(file,'utf8'),env);
+for(const file of ['cloud-draft-codec141.js','relay-model144.js','shared-service142.js','collaboration128.js'])vm.runInNewContext(readSourceSync(file,'utf8'),env);
 function harness(){
  const objects=new Map(),rooms=new Map(),pages=new Map(),ops=[],calls=[];let serial=0,failRPC=false,uncertain=false,failRead=false;
  const cloud={user:{id:'owner'},client:{}};
@@ -22,7 +23,7 @@ test('uncertain commit with failed recovery read never deletes an original that 
 test('final shared snapshot paginates beyond 500 operations and preserves reference, seals and photos',async()=>{const h=harness();await h.service.create(h.room,h.page);for(let seq=1;seq<=1101;seq++)h.ops.push({seq,page:'page',payload:[{kind:'put',stroke:{id128:'member-'+seq,points:[{p:seq/2000}]}}]});h.ops.push({seq:1102,page:'page',payload:[{kind:'delete',id:'original'}]});const draft=await h.service.snapshot(h.pages.get('page'));assert.equal(draft.flow.strokes.length,1101);assert.equal(draft.flow.strokes.at(-1).id128,'member-1101');assert.equal(draft.photos[0].data,'original photo');assert.equal(draft.extraSeals[0].x,.2);assert.equal(draft.referenceData111,h.page.draft.referenceData111)});
 test('only owner can end/delete; end removes invitations while delete also clears private originals',async()=>{const h=harness();await h.service.create(h.room,h.page);h.rooms.get('room').participants.push('child');h.cloud.user={id:'child'};await assert.rejects(h.service.close(h.room),/只有发起人/);await assert.rejects(h.service.remove(h.room),/只有发起人/);assert.equal(h.calls.includes('delete-room'),false);h.cloud.user={id:'owner'};const closed=await h.service.close(h.room);assert.equal(closed.closed142,true);assert.deepEqual(Array.from(closed.participants),['owner']);assert.equal(h.pages.size,1);await h.service.remove(h.room);assert.equal(h.rooms.size,0);assert.equal(h.pages.size,0);assert.equal(h.objects.size,0)});
 
-const source=fs.readFileSync('collaboration128.js','utf8');
+const source=readSourceSync('collaboration128.js','utf8');
 function lifecycleHarness({cloudError=false}={}){
  const calls=[],records=new Map(),r={id:'r',owner:'owner',title:'亲笔家人'},pages=[{id:'p1',title:'第1页'},{id:'p2',title:'第2页'}];
  const q={select(){return q},eq(){return q},order:async()=>({data:pages})};

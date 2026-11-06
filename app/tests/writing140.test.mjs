@@ -1,9 +1,10 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-const app=fs.readFileSync(new URL('../app.js',import.meta.url),'utf8');
-const ref=fs.readFileSync(new URL('../revision129.js',import.meta.url),'utf8');
+const app=readSourceSync(new URL('../app.js',import.meta.url),'utf8');
+const ref=readSourceSync(new URL('../revision129.js',import.meta.url),'utf8');
 function lineFunction(src,name){return src.split('\n').find(l=>l.trim().startsWith('function '+name+'('))}
 
 test('manual body diameter survives preview entry, signature return and zoom adjustment',()=>{
@@ -24,7 +25,7 @@ test('manual body diameter survives preview entry, signature return and zoom adj
 test('selecting the leftmost of eight source columns is not clamped to a two-column writing grid',()=>{
  const columns=Array.from({length:8},(_,i)=>({x:1-(i+.5)/8,w:1/8,glyphs:[{y:.2,h:.1},{y:.6,h:.1}]}));
  const e={A:{referenceCells128:()=>columns,writingGrid67:()=>({cols:2,rows:1}),getReference:()=>({naturalWidth:800,naturalHeight:1600}),paperBounds133:()=>({w:4,h:8}),focusPoint47:(x,y)=>e.focus={x,y}},current:{row:0,col:0},settings:{rows:2,follow:true,view133:'full'},manuallyMoved140:true,displayCrop137:{x:0,y:0,w:1,h:1},viewport:{clientWidth:800,clientHeight:1600,getBoundingClientRect:()=>({left:0,top:0})},image:{naturalWidth:800,naturalHeight:1600},pan:{x:0,y:0},zoom:1,window:{},document:{dispatchEvent(){}},CustomEvent:class{},transform(){},columnsView(){},sizeFloat(){},persist(){}};
- vm.createContext(e);vm.runInContext(fs.readFileSync(new URL('../reference-geometry133.js',import.meta.url),'utf8'),e);e.ReferenceGeometry133=e.window.ReferenceGeometry133;
+ vm.createContext(e);vm.runInContext(readSourceSync(new URL('../reference-geometry133.js',import.meta.url),'utf8'),e);e.ReferenceGeometry133=e.window.ReferenceGeometry133;
  vm.runInContext(lineFunction(ref,'sourceCell137')+'\n'+lineFunction(ref,'setCell')+'\n'+lineFunction(ref,'selectAt'),e);
  e.selectAt(50,960);assert.equal(e.current.col,7);assert.equal(e.current.row,1);assert.ok(Math.abs(e.focus.x-.25)<1e-8);assert.ok(Math.abs(e.focus.y-4.8)<1e-8);
  e.selectAt(750,320);assert.equal(e.current.col,0);assert.equal(e.current.row,0);
@@ -48,14 +49,14 @@ test('paper-and-brush steppers adjust current values precisely and enforce bound
  class Node{constructor(){this.children=[];this.dataset={};this.value='';this.classList={add(){}}}append(...nodes){this.children.push(...nodes)}}
  const controls={sizeNumber:{value:37,dispatchEvent(){}},zoom:{value:500,dispatchEvent(){}}},state={style:65};
  const e={E:()=>new Node(),panel:new Node(),$:key=>controls[key],A:{writingParameters133:()=>state,configure47:({brushPatch})=>state.style=brushPatch.lineStrength108},ParticleBrush:{lineProfile108:()=>({})},syncStatus(){},Event:class{}};
- vm.createContext(e);const s=fs.readFileSync(new URL('../revision133.js',import.meta.url),'utf8');vm.runInContext(s.slice(s.indexOf(' const fields=[];'),s.indexOf(' const icon=')),e);
+ vm.createContext(e);const s=readSourceSync(new URL('../revision133.js',import.meta.url),'utf8');vm.runInContext(s.slice(s.indexOf(' const fields=[];'),s.indexOf(' const icon=')),e);
  const stepper=i=>e.panel.children[i].children[1];stepper(1).children[2].onclick();assert.equal(controls.sizeNumber.value,38);stepper(1).children[0].onclick();assert.equal(controls.sizeNumber.value,37);
  stepper(2).children[2].onclick();assert.equal(controls.zoom.value,525);state.style=100;stepper(0).children[2].onclick();assert.equal(state.style,100);
 });
 
 test('copy work title uses the book, never a stale quote; cloud formatting retains it',()=>{
  const e={currentWork109:null,window:{CopyAlbums38:{active:{title:'赵孟頫·赤壁赋'},paused129:false},currentQuote:{author:'泰戈尔',title:'飞鸟集'}},reference:{},localStorage:{getItem:()=> 'copy'}};
- vm.createContext(e);vm.runInContext(fs.readFileSync(new URL('../work-meta84.js',import.meta.url),'utf8'),e);
+ vm.createContext(e);vm.runInContext(readSourceSync(new URL('../work-meta84.js',import.meta.url),'utf8'),e);
  e.WorkMeta84=e.window.WorkMeta84;vm.runInContext(app.slice(app.indexOf('function workSubject140()'),app.indexOf('async function archiveWork(')),e);
  assert.equal(e.workTitle140('敬源','旧标题',0),'敬源 临写 赵孟頫 赤壁赋');assert.equal(e.WorkMeta84.format('敬源','敬源 临写 赵孟頫 赤壁赋',0,'泰戈尔','飞鸟集'),'敬源 临写 赵孟頫 赤壁赋');
 });

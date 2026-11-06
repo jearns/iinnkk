@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {expandPaper} from '../experiments/paper119.mjs';import {InkViewportIndex} from '../experiments/ink-index119.mjs';
+import{expandPaper}from'../experiments/paper119.mjs';import{InkViewportIndex}from'../experiments/ink-index119.mjs';
 test('four directions preserve ink samples, pen size, scale and locked dimension',()=>{
  const original={values:{ratio:1,paperExtent:'fixed'},flow:{strokes:[{points:[{x:1,y:2}],settings:{size:35},geometry:{x:.2,y:.3,k:.7,r:0}}]},signatureStrokes:[],sealPositions:{tail:{x:.7,y:.8}},extraSeals:[],photos:[],camera:{x:1,y:1}};
  for(const edge of ['left','right','top','bottom']){const result=expandPaper(original,edge,2),stroke=result.flow.strokes[0];assert.equal(result.infiniteExtent.w,edge==='left'||edge==='right'?6:4);assert.equal(result.infiniteExtent.h,edge==='top'||edge==='bottom'?6:4);assert.equal(stroke.geometry.k,.7);assert.equal(stroke.settings.size,35);assert.strictEqual(stroke.points,original.flow.strokes[0].points);assert.equal(stroke.geometry.x,.2+(edge==='left'?2:0));assert.equal(stroke.geometry.y,.3+(edge==='top'?2:0));assert.equal(result.sealPositions.tail.x*result.infiniteExtent.w,2.8+(edge==='left'?2:0));assert.equal(original.values.paperExtent,'fixed')}

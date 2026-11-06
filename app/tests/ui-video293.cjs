@@ -1,3 +1,4 @@
+const {readSourceSync}=require('../source/read.cjs');
 const{chromium}=require('playwright'),fs=require('node:fs'),http=require('node:http'),path=require('node:path'),assert=require('node:assert/strict');
 const out='/tmp/video293';fs.mkdirSync(out,{recursive:true});
 const server=http.createServer((req,res)=>{const p=new URL(req.url,'http://localhost').pathname;fs.readFile(path.join(process.cwd(),p),(e,b)=>{res.writeHead(e?404:200,{'Content-Type':p.endsWith('.js')||p.endsWith('.mjs')?'application/javascript':p.endsWith('.html')?'text/html':p.endsWith('.css')?'text/css':p.endsWith('.json')?'application/json':'application/octet-stream'});res.end(e?'Not found':b)})});
@@ -12,7 +13,7 @@ const server=http.createServer((req,res)=>{const p=new URL(req.url,'http://local
  });
  const requests=[],errors=[];page.on('request',r=>requests.push(r.url()));page.on('pageerror',e=>errors.push(e.message));
  await page.goto(base+'/video-studio.html');await page.getByRole('button',{name:'从我的作品选择',exact:true}).waitFor();
- const meta=JSON.parse(fs.readFileSync('video-assets293/build-manifest.json'));
+ const meta=JSON.parse(readSourceSync('video-assets293/build-manifest.json'));
  const exporter=Object.entries(meta.outputs).find(([p,v])=>v.entryPoint==='src/export-engine.mjs')[0].replace('../','');
  assert.equal(requests.some(u=>u.includes(exporter)),false);console.log('Fast entry does not load the export engine.');
  await page.goto(base+'/video-studio.html?work290=stress293&source290=local');await page.locator('.vsStatus').filter({hasText:'原始笔迹已就绪'}).waitFor({timeout:90000});

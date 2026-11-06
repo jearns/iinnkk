@@ -1,7 +1,8 @@
+import{readSource as readFile}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
-import {readFile} from 'node:fs/promises';
+
 const source=await readFile('featured-images213.js','utf8');
 function images(){const window={};vm.runInNewContext(source,{window,Blob});return window.FeaturedImages213}
 const work={id:'1',image_path:'owner/one.jpg',updated_at:'2026-10-15'};

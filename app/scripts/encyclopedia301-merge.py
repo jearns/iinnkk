@@ -2,7 +2,7 @@ import json,re,urllib.request,html
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 def load(p):return json.loads((root/p).read_text())
-works={**load('release301/encyclopedia-works-a.json'),**load('release301/encyclopedia-works-b.json')}
+works={**load('features/library/encyclopedia-works-a.json'),**load('features/library/encyclopedia-works-b.json')}
 def entry(label,url,provider='快懂百科',related=False,via=None):return dict(title=label,label=label,url=url,provider=provider,relatedTopic=related,verifiedVia=via or {'method':'public_search_result_or_article_html','url':url,'checkedAt':'2026-10-31'})
 def ku(label,id,related=False):return entry(label,'https://www.baike.com/wikiid/'+id,related=related)
 def bd(label,id):return entry(label,'https://bkso.baidu.com/item/'+urllib.parse.quote(label)+'/'+id,'百度百科')
@@ -41,7 +41,7 @@ base={
 'pyramid299':bd('孟菲斯及其墓地金字塔','7791822'),
 'silk299':entry('丝绸之路','https://www.zgbk.com/ecph/words?Name=%E4%B8%9D%E7%BB%B8%E4%B9%8B%E8%B7%AF&SiteID=1&SourceID=560143&Type=bkzyb&subSourceType=000003000001000002','中国百科网'),
 'tea299':entry('中国传统制茶技艺及其相关习俗','https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E7%BB%9F%E5%88%B6%E8%8C%B6%E6%8A%80%E8%89%BA%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E4%B9%A0%E4%BF%97/62389766','百度百科')}
-calendar=load('release300/calendar-data.json');events={};categories={};unresolved=[]
+calendar=load('features/calendar/calendar-data.json');events={};categories={};unresolved=[]
 for e in calendar['events']:
  k=e['id'];v=base.get(k)
  if not v and k.startswith('festival-'):v=base['festival']
@@ -68,5 +68,5 @@ registers={
 'intangible':dict(label='全球非物质文化遗产名录',url='https://ich.unesco.org/en/lists',provider='UNESCO')}
 result=dict(version=301,policy=dict(priority=['快懂百科','中国百科网','百度百科'],chinaEncyclopediaDomain='zgbk.com',checkedAt='2026-10-31',relatedTopicMeaning='相关概念、作者或作品总类，不是该具体器物/事件的独立条目；展示时应标注相关百科。',verificationLimit='未检出的百科不猜测地址；保留已有官方史料。网络检索并非证明某站绝无条目。'),works=works,events=events,categories=categories,registers=registers,unresolved=unresolved)
 result['coverage']={'works':len(works),'exactWorks':sum(not v['relatedTopic'] for v in works.values()),'relatedWorks':sum(v['relatedTopic'] for v in works.values()),'events':len(events),'eventsWithEncyclopedia':len(events)-len(unresolved),'eventsWithPrimarySourceOnly':len(unresolved)}
-(root/'release301/encyclopedia.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+(root/'features/library/encyclopedia.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 print(result['coverage']);print('unresolved',[(x['id'],x['title']) for x in unresolved])

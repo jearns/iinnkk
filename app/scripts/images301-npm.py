@@ -2,8 +2,8 @@ import json,re,urllib.request,urllib.parse,concurrent.futures,hashlib,os,time
 from pathlib import Path
 from io import BytesIO
 from PIL import Image
-ROOT=Path('/workspace/scratch/b70d4350fc73/iinnkk300'); OUT=ROOT/'release301/assets/npm';OUT.mkdir(parents=True,exist_ok=True)
-enrich=json.loads((ROOT/'release300/catalogue-enrichment.json').read_text())
+ROOT=Path('/workspace/scratch/b70d4350fc73/iinnkk300'); OUT=ROOT/'features/library/assets/npm';OUT.mkdir(parents=True,exist_ok=True)
+enrich=json.loads((ROOT/'features/calendar/catalogue-enrichment.json').read_text())
 works={k:v for k,v in enrich.items() if 'digitalarchive.npm.gov.tw/Collection/Detail/' in v.get('url','')}
 def get(url):
  url=urllib.parse.quote(url,safe=':/?=&%[]+,')
@@ -39,12 +39,12 @@ def fetch_image(job):
  except Exception as e:return {**job,'error':str(e)}
 if __name__=='__main__':
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:groups=list(ex.map(lambda kv:prepare(*kv),works.items()))
- jobs=[j for group in groups for j in group];(ROOT/'release301/image-npm-plan.json').write_text(json.dumps(jobs,ensure_ascii=False,indent=2));print('Jobs',len(jobs),'mappingErrors',sum('error' in j for j in jobs),flush=True)
+ jobs=[j for group in groups for j in group];(ROOT/'features/library/image-npm-plan.json').write_text(json.dumps(jobs,ensure_ascii=False,indent=2));print('Jobs',len(jobs),'mappingErrors',sum('error' in j for j in jobs),flush=True)
  results=[]
  with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
   for i,row in enumerate(ex.map(fetch_image,jobs),1):
    results.append(row)
    if i%10==0:print('Fetched',i,'valid',sum('path' in r for r in results),flush=True)
- (ROOT/'release301/image-npm-replacements.json').write_text(json.dumps({r['old']:r for r in results if 'path' in r},ensure_ascii=False,indent=2))
- (ROOT/'release301/image-npm-report.json').write_text(json.dumps({'works':len(works),'attempted':len(results),'replaced':sum('path' in r for r in results),'unresolved':[r for r in results if 'path' not in r]},ensure_ascii=False,indent=2))
+ (ROOT/'features/library/image-npm-replacements.json').write_text(json.dumps({r['old']:r for r in results if 'path' in r},ensure_ascii=False,indent=2))
+ (ROOT/'features/library/image-npm-report.json').write_text(json.dumps({'works':len(works),'attempted':len(results),'replaced':sum('path' in r for r in results),'unresolved':[r for r in results if 'path' not in r]},ensure_ascii=False,indent=2))
  print('Done',len(results),sum('path' in r for r in results),flush=True)

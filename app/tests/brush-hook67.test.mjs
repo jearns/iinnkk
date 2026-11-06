@@ -1,10 +1,11 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+
 import vm from 'node:vm';
 
 const context={};context.globalThis=context;
-vm.runInNewContext(readFileSync(new URL('../brush.js',import.meta.url),'utf8'),context);
+vm.runInNewContext(readSourceSync(new URL('../brush.js',import.meta.url),'utf8'),context);
 function widths(points){const samples=[];const canvas={beginPath(){},ellipse(x,y,rx,ry){samples.push({x,y,r:Math.max(rx,ry)})},fill(){}};const stroke={points:points.map(([x,y],i)=>({x:x/390,y:y/390,t:i*75,pressure:.5,lift:i===points.length-1})),settings:{size:36,dry:0,taper:.8},done:true,seed:8,hasPressure:false};context.ParticleBrush.render(stroke,canvas,390,390);return samples}
 test('slow rising hook tapers rather than stamping an oversized blob',()=>{
  const hook=widths([[170,55],[170,75],[170,95],[170,115],[170,135],[170,155],[169,174],[166,185],[158,188],[149,184],[144,178]]);

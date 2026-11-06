@@ -1,9 +1,10 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+
 import vm from 'node:vm';
 const scope={};
-for(const file of ['work-albums84.js','work-meta84.js'])vm.runInNewContext(readFileSync(file,'utf8'),scope);
+for(const file of ['work-albums84.js','work-meta84.js'])vm.runInNewContext(readSourceSync(file,'utf8'),scope);
 const M=scope.WorkAlbumModel84,T=scope.WorkMeta84;
 test('directories support moving old works, renaming and deleting without deleting artwork ids',()=>{
  let data=M.create({},'唐诗');data=M.create(data,'宋词');data=M.assign(data,['old-1','old-2'],'唐诗');data=M.assign(data,['old-1'],'宋词');

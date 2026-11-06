@@ -6,7 +6,7 @@ import{OUTRO_SLOGAN,OUTRO_SITE,videoTimeline}from'./timing.mjs';
 import{scenePlan,sceneFrame,clamp}from'./scene-plan.mjs';
 import{paperTransform311,paintMatte311,paperViewport311}from'./matte311.mjs';
 import{musicTrack,musicSource}from'./music.mjs';
-let font294;function loadBrandFont294(){return font294||(font294=new FontFace('ShoubiFilm294',`url("${staticFile('release294/film-brand.woff')}")`).load().then(font=>document.fonts.add(font)));}
+let font294;function loadBrandFont294(){return font294||(font294=new FontFace('ShoubiFilm294',`url("${staticFile('assets/film/film-brand.woff')}")`).load().then(font=>document.fonts.add(font)));}
 function paintImage(ctx,image,w,h,scene,factor=1){
  const m=paperTransform311(image.width,image.height,w,h,scene.scale*factor,scene.region);
  ctx.save();ctx.beginPath();ctx.rect(m.viewport.x,m.viewport.y,m.viewport.width,m.viewport.height);ctx.clip();ctx.drawImage(image,m.x,m.y,m.width,m.height);ctx.restore();paintMatte311(ctx,m.viewport,w,h);

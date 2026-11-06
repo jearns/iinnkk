@@ -1,5 +1,6 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
-const context={};vm.runInNewContext(fs.readFileSync('paper-ink188.js','utf8'),context);const reconstruct=context.PaperInkPixels188.reconstruct;
+const context={};vm.runInNewContext(readSourceSync('paper-ink188.js','utf8'),context);const reconstruct=context.PaperInkPixels188.reconstruct;
 function image(w,h,paint){const a=new Uint8ClampedArray(w*h*4);for(let y=0;y<h;y++)for(let x=0;x<w;x++){const c=paint(x,y);a.set([...c,255],(y*w+x)*4)}return a}
 function pixel(a,w,x,y){return Array.from(a.slice((y*w+x)*4,(y*w+x)*4+3))}
 test('black brush strokes are replaced by local paper; coloured seals and untouched paper stay exact; original is immutable',()=>{const w=128,h=128,a=image(w,h,(x,y)=>x>10&&x<25&&y>20&&y<110?[14,13,12]:x>86&&x<108&&y>91&&y<114?[170,35,26]:[220+Math.floor(y/12),211+Math.floor(y/12),191+Math.floor(y/12)]),original=a.slice(),r=reconstruct(a,w,h);assert.ok(pixel(r.data,w,18,60)[0]>200);assert.deepEqual(pixel(r.data,w,94,102),[170,35,26]);assert.deepEqual(pixel(r.data,w,64,40),pixel(a,w,64,40));assert.deepEqual(a,original);assert.ok(r.masked>1000);assert.equal(r.inverse,false)});

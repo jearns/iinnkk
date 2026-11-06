@@ -1,9 +1,10 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-import {Window} from 'happy-dom';
-const read=p=>fs.readFileSync(p,'utf8');
+import{Window}from'happy-dom';
+const read=p=>readSourceSync(p,'utf8');
 function scene(t){
  const w=new Window({url:'https://iinnkk.me/writer.html'}),d=w.document;w.structuredClone=structuredClone;
  t.after(()=>w.happyDOM.abort());d.body.innerHTML='<main><div id="board"></div></main>';

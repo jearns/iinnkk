@@ -1,9 +1,10 @@
+import{readSource as readFile}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
-import {transform} from 'esbuild';
+
+import{transform}from'esbuild';
 import vm from 'node:vm';
-import {webcrypto} from 'node:crypto';
+import{webcrypto}from'node:crypto';
 async function load(name,env,fetch){const source=await readFile(new URL('../supabase/functions/'+name+'/index.ts',import.meta.url),'utf8'),compiled=await transform(source,{loader:'ts',format:'cjs',target:'es2022'}),context={exports:{},module:{exports:{}},Deno:{env:{get:k=>env[k]},serve:()=>{}},crypto:webcrypto,Request,Response,URL,URLSearchParams,TextEncoder,TextDecoder,Uint8Array,Date,JSON,btoa,atob,fetch};context.module.exports=context.exports;vm.runInNewContext(compiled.code,context);return context.module.exports.handler}
 test('WeChat OAuth validates callback/client and protects userinfo token',async()=>{
  const env={WECHAT_APP_ID:'wx93',WECHAT_APP_SECRET:'private-secret',BRIDGE_CLIENT_SECRET:'c'.repeat(32),BRIDGE_TOKEN_KEY:'k'.repeat(32),SUPABASE_AUTH_CALLBACK:'https://auth.example/auth/v1/callback'};

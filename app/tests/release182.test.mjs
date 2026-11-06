@@ -1,4 +1,5 @@
-import test from 'node:test';import assert from 'node:assert/strict';import{readFile}from'node:fs/promises';import vm from'node:vm';import{Window}from'happy-dom';
+import{readSource as readFile}from'../source/read.mjs';
+import test from 'node:test';import assert from 'node:assert/strict';import vm from'node:vm';import{Window}from'happy-dom';
 function options(w){w.Option=function(text,value){const o=w.document.createElement('option');o.textContent=text;o.value=value;return o}}
 const awaitGlass186=await readFile(new URL('../glass-control186.js',import.meta.url),'utf8');const source=await readFile(new URL('../export-studio182.js',import.meta.url),'utf8');
 function setup(){const w=new Window({url:'https://iinnkk.me/writer.html'});options(w);w.localStorage.setItem('iinnkk.mode53','copy');w.document.body.innerHTML='<div id="previewEffects55"><div class="finalSteps54"></div></div><nav id="writerModes53"></nav><button id="export"></button>';w.Revision161={ready:true};let calls=0,active=0,peak=0,snapshots=[],gates=[],manual=0,toasts=[];

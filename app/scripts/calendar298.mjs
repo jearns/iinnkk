@@ -1,7 +1,8 @@
+import{readSourceSync}from'../source/read.mjs';
 /* Curated dates are deliberately separate from editorial seasonal associations. */
 import fs from 'node:fs';import vm from 'node:vm';
-const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),write=(p,d)=>fs.writeFileSync(p,JSON.stringify(d,null,2)+'\n');
-const ctx={window:{}};vm.runInNewContext(fs.readFileSync('calligraphy-rank-data183.js','utf8'),ctx);const ranks=ctx.window.CalligraphyRanks183;
+const read=p=>JSON.parse(readSourceSync(p,'utf8')),write=(p,d)=>fs.writeFileSync(p,JSON.stringify(d,null,2)+'\n');
+const ctx={window:{}};vm.runInNewContext(readSourceSync('calligraphy-rank-data183.js','utf8'),ctx);const ranks=ctx.window.CalligraphyRanks183;
 const guobo='https://www.chnmuseum.cn/portals/0/web/zt/20191022jiagu/',sinica='https://museum.sinica.edu.tw/exhibitions/21/';
 const oracle=[
 ['sacrifice','祭祀刻辞龟甲','祭','祭祀文字把商代信仰与王室世系保存为可考的实物证据。','以龟腹甲上的契刻观察字形、行列与占卜记录的关系。',guobo,'中国国家博物馆'],
@@ -14,7 +15,7 @@ const oracle=[
 ['fuhao','妇好分娩卜辞《丙》247','好','关于妇好分娩的占卜，让三千年前具体人物的生活进入历史。','武丁时期的龟腹甲记录对妇好分娩的询问，兼具文字史与人物史价值。',sinica,'中央研究院历史语言研究所'],
 ['brush','带朱书龟甲卜辞《乙》0778','雨','保留下来的朱书笔迹，为理解契刻以前的毛笔书写提供线索。','以求问雨水的朱书材料，观察早期汉字真实的书写痕迹。',sinica,'中央研究院历史语言研究所'],
 ['harvest','填朱卜辞龟腹甲《乙》0867','年','正反两面设问收成的卜辞，展示早期记录的逻辑与填朱字形。','围绕收成年景的对贞卜辞，适合比较同一语境中的字形与布局。',sinica,'中央研究院历史语言研究所']
-].map(([key,title,glyph,milestone,description,url,museum])=>({id:`oracle-${key}298`,title,glyph,milestone,description,url,museum,author:'书者佚名',era:key==='zhou'?'西周':'殷商',year:key==='zhou'?-1000:-1250,dateLabel:key==='zhou'?'西周；具体年代依馆方研究':'商代晚期；具体分期依馆方研究',script:'甲骨文',place:museum==='中国国家博物馆'?'北京':'台北',cover143:`release298/oracle/oracle-${key}298.webp`,pages:[`release298/oracle/oracle-${key}298.webp`],pageNames:[title],style:'ouyang',size:320,zoom:170,imageCredit247:`图像与资料：${museum}；原图来源见资料链接。`,textStatus183:'单件实物；释读以馆方著录为准，不补造缺字。',fullText148:''}));
+].map(([key,title,glyph,milestone,description,url,museum])=>({id:`oracle-${key}298`,title,glyph,milestone,description,url,museum,author:'书者佚名',era:key==='zhou'?'西周':'殷商',year:key==='zhou'?-1000:-1250,dateLabel:key==='zhou'?'西周；具体年代依馆方研究':'商代晚期；具体分期依馆方研究',script:'甲骨文',place:museum==='中国国家博物馆'?'北京':'台北',cover143:`data/catalogue/oracle/oracle/oracle-${key}298.webp`,pages:[`data/catalogue/oracle/oracle/oracle-${key}298.webp`],pageNames:[title],style:'ouyang',size:320,zoom:170,imageCredit247:`图像与资料：${museum}；原图来源见资料链接。`,textStatus183:'单件实物；释读以馆方著录为准，不补造缺字。',fullText148:''}));
 for(const w of oracle){const i=ranks.works.findIndex(x=>x.id===w.id);if(i<0)ranks.works.push(w);else ranks.works[i]=w}
 const list={id:'oracle10-298',title:'十大甲骨经典',works:oracle.map(x=>x.id),note186:'本站从馆藏与甲骨专题展中精选十件，含殷商刻辞、朱书与西周卦画，按观察主题编排。非官方高下排名；各件年代与释读以来源机构说明为准。'};const at=ranks.lists.findIndex(x=>x.id===list.id);if(at<0)ranks.lists.splice(2,0,list);else ranks.lists[at]=list;ranks.release298=true;
 fs.writeFileSync('calligraphy-rank-data183.js','window.CalligraphyRanks183='+JSON.stringify(ranks)+';\n');
@@ -92,5 +93,5 @@ else {term='春分';reason='在昼夜均分之时，观察这件作品的结体�
 return {term,reason}}
 const works=all.map(w=>({id:w.id,title:w.title,author:w.author||w.author246||'',url:w.url||w.sources246?.[0]?.url||'',isPerson:!!w.isPerson246,...association(w)}));
 for(const w of works){const e=terms.find(t=>t.title===w.term);if(!e.works.includes(w.id))e.works.push(w.id)}
-write('release298/calendar-data.json',{version:298,sourceNote:'确切史事与诞辰按标示历法纪念；时令荐写为本站编辑关联，不声称作品创作于该日。节气使用北京时间2020—2040年实算表，农历由浏览器历法换算。',works,events:[...historical,...festive,...terms]});
+write('data/catalogue/oracle/calendar-data.json',{version:298,sourceNote:'确切史事与诞辰按标示历法纪念；时令荐写为本站编辑关联，不声称作品创作于该日。节气使用北京时间2020—2040年实算表，农历由浏览器历法换算。',works,events:[...historical,...festive,...terms]});
 console.log('Calendar:',works.length,'ranking entries,',historical.length,'historical dates,',festive.length,'festivals,',terms.length,'solar terms; oracle:',oracle.length);

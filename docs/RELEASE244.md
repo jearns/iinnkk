@@ -24,5 +24,5 @@
 
 - 原始字库：https://oracular.azurewebsites.net/glyphs/download （Oracular 1.0.1，秦沛超，SIL OFL 1.1）
 - Unicode映射子集：https://github.com/js1995127/Oracle-Bone-Atlas-GitHub-Pages
-- 授权文本：oracle244/OFL.txt；字体来源SHA256、子集提交及映射清单：oracle244/manifest.json。
+- 授权文本：education/oracle/OFL.txt；字体来源SHA256、子集提交及映射清单：education/oracle/manifest.json。
 - 展示为可考字库轮廓，不把左侧造字教学示意当成出土甲骨拓片；不推测补绘未收录字。

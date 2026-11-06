@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {VIDEO_DURATIONS, VIDEO_FPS, normalizeDuration, videoTimeline, OUTRO_SLOGAN, OUTRO_SITE} from '../remotion-studio/src/timing.mjs';
-import {cameraLayers, draftFocus} from '../remotion-studio/src/camera.mjs';
-import {prepareReplay} from '../remotion-studio/src/replay.mjs';
+import{VIDEO_DURATIONS, VIDEO_FPS, normalizeDuration, videoTimeline, OUTRO_SLOGAN, OUTRO_SITE}from'../remotion-studio/src/timing.mjs';
+import{cameraLayers, draftFocus}from'../remotion-studio/src/camera.mjs';
+import{prepareReplay}from'../remotion-studio/src/replay.mjs';
 
 test('all five durations reserve a finished-work cover frame and two seconds for each brand card', () => {
   assert.deepEqual(VIDEO_DURATIONS, [8, 15, 30, 60, 120]);

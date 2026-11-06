@@ -24,7 +24,7 @@
 
 ## 主要开源依据
 
-- PaddlePaddle/PaddleOCR 及官方 PP-OCRv5_mobile_rec ONNX 发布（Apache-2.0）；ONNX Runtime Web（MIT）。许可证、模型来源及 SHA 在 hand254/ocr-license254.txt 和 vendor254。
+- PaddlePaddle/PaddleOCR 及官方 PP-OCRv5_mobile_rec ONNX 发布（Apache-2.0）；ONNX Runtime Web（MIT）。许可证、模型来源及 SHA 在 handwriting/core/ocr-license254.txt 和 vendor254。
 - opentype.js（MIT）、Three.js（MIT）、fflate（MIT）。真实字体轮廓/3MF 由本地生成，不借用商业字体字形。
 - Blender 官方 Python API 与后台渲染；Apple Device Management Font payload（com.apple.font）。字体安装不承诺操作系统不支持的全局替换。
 - 笔迹人格推断缺乏可靠验证依据，因此仅提供可观察的笔迹风格及正向娱乐反馈。

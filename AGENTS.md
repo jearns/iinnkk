@@ -22,3 +22,10 @@
 - Before every sync, run the current portrait handwriting recognition checks for 鹍, including candidate display and capture.
 
 - Application pages, modules, source and resources live inside `app/`; never create version-numbered pages or module directories at the repository root. Run root npm commands through `tools/run-app.mjs` and keep `npm run check:structure` passing. Historical implementation belongs in Git history. Preserve root entry/404/service-worker compatibility for saved URLs.
+
+## Architecture principle (2026-11-06)
+
+- Organize live application code and resources by function, never by release number. Do not add revision*.js/css or numbered feature directories.
+- Maintain writing enhancements in app/source/writer.js and shared styles in app/source/interface.css. Preserve section initialization and cascade order; section IDs are provenance metadata, not standalone patch files.
+- Build each page cascade into shared content-addressed CSS through scripts/styles.mjs. Keep heavy feature code/models lazy. Do not flatten every feature into the first writing download.
+- When moving live resources, update all page, module, worker, build and cache references. Keep saved resource URLs compatible through the origin worker; never retain duplicate source copies as aliases.

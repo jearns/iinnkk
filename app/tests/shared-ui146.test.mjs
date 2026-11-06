@@ -1,8 +1,9 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-const source=fs.readFileSync(new URL('../collaboration128.js',import.meta.url),'utf8');
+const source=readSourceSync(new URL('../collaboration128.js',import.meta.url),'utf8');
 function harness(owner='me'){
  const actions=[],calls=[],room={id:'room',owner,title:'墨缘'},page={id:'page',title:'纸页'};
  const node=()=>({append(){},replaceChildren(){},setAttribute(){},add(){}});

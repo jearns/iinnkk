@@ -5,50 +5,50 @@
   },
   {
     "source": "export-studio182.js",
-    "name": "lazy-export.3f0d06c0602dc3cc.js"
+    "name": "lazy-export.640553454473ae1c.js"
   },
   {
     "source": "export-host255.js",
-    "name": "lazy-host.954e5bd2d3d5fc08.js"
+    "name": "lazy-host.53d99018b11154c6.js"
   },
   {
-    "source": "hand254/print-runtime254.js",
-    "name": "lazy-print3d.3fbc54455ab8ebfe.js"
+    "source": "handwriting/core/print-runtime254.js",
+    "name": "lazy-print3d.ed3c47288e6ffd52.js"
   },
   {
-    "source": "hand257/print-page.js",
-    "name": "lazy-printpage.2af616aa8a8f7678.js"
+    "source": "handwriting/print/print-page.js",
+    "name": "lazy-printpage.820faaef4a7657d2.js"
   },
   {
-    "source": "hand255/photo.js",
-    "name": "lazy-photo.e76a9574c63b2fda.js"
+    "source": "handwriting/photo/photo.js",
+    "name": "lazy-photo.3ef5d6a5c638f35c.js"
   },
   {
-    "source": "hand254/portrait.js",
+    "source": "handwriting/core/portrait.js",
     "name": "lazy-portrait.b08c4ac5ec786c24.js"
   },
   {
-    "source": "hand254/workshop.js",
-    "name": "lazy-workshop.0c367ae184671988.js"
+    "source": "handwriting/core/workshop.js",
+    "name": "lazy-workshop.a9af5867a799aaae.js"
   },
   {
     "source": "works206.js",
-    "name": "lazy-works.0421a70640f42581.js"
+    "name": "lazy-works.f1840193a5c9dfa2.js"
   },
   {
     "source": "manage234.js",
-    "name": "lazy-manage.3d9bd65ea9c4615e.js"
+    "name": "lazy-manage.9aee782fe1bc21d8.js"
   },
   {
-    "source": "lab242/game.js",
-    "name": "lazy-game.33cc6918ed6e214e.js"
+    "source": "games/crossword/game.js",
+    "name": "lazy-game.712d95955e27818c.js"
   },
   {
-    "source": "lab242/artwork250.js",
+    "source": "games/crossword/artwork250.js",
     "name": "lazy-artwork.05e900db7ed27ce5.js"
   },
   {
     "source": "i18n218.js",
-    "name": "lazy-i18n.dd40cc68c07347db.js"
+    "name": "lazy-i18n.7651907702d2f770.js"
   }
 ]

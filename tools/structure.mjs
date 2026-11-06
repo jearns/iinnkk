@@ -1,12 +1,12 @@
 import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 const allowed=new Set(['dist','app','docs','tools','AGENTS.md','CNAME','README.md','VERSION.txt','package.json','package-lock.json','index.html','404.html','sw.js']);
 for(const name of fs.readdirSync('.'))if(!name.startsWith('.')&&name!=='node_modules')assert(allowed.has(name),'Unexpected root item: '+name+'; place application files in app/');
-const video=JSON.parse(fs.readFileSync('app/video-assets297/build-manifest.json'));const previousVideo=fs.existsSync('app/video-assets297/previous-manifest.json')?JSON.parse(fs.readFileSync('app/video-assets297/previous-manifest.json')):{outputs:{}};const videoLive=new Set([...Object.keys(video.outputs),...Object.keys(previousVideo.outputs)].map(p=>p.replace(/^\.\.\//,'')));
-for(const name of fs.readdirSync('app').filter(n=>/^video-assets\d+$/.test(n))){for(const file of fs.readdirSync('app/'+name)){if(['build-manifest.json','previous-manifest.json'].includes(file)&&name==='video-assets297')continue;const key=name+'/'+file;if(!videoLive.has(key)){if(process.argv.includes('--prune'))fs.unlinkSync('app/'+key);else throw Error('Unused film build: '+key);}}}
+const video=JSON.parse(fs.readFileSync('app/assets/video/build-manifest.json'));const previousVideo=fs.existsSync('app/assets/video/previous-manifest.json')?JSON.parse(fs.readFileSync('app/assets/video/previous-manifest.json')):{outputs:{}};const videoLive=new Set([...Object.keys(video.outputs),...Object.keys(previousVideo.outputs)].map(p=>p.replace(/^\.\.\//,'')));
+for(const name of ['assets/video']){for(const file of fs.readdirSync('app/'+name)){if(['build-manifest.json','previous-manifest.json'].includes(file)&&name==='assets/video')continue;const key=name+'/'+file;if(!videoLive.has(key)){if(process.argv.includes('--prune'))fs.unlinkSync('app/'+key);else throw Error('Unused film build: '+key);}}}
 const generated=/^(?:(?:app|home)-runtime\.[a-f0-9]+\.(?:js|css)|lazy-[\w-]+\.[a-f0-9]+\.js|video-studio\.[a-f0-9]+\.css)$/;
 const references=/(?:app-runtime|home-runtime|video-studio)\.[a-f0-9]+\.(?:js|css)|lazy-[\w-]+\.[a-f0-9]+\.js/g;
 const history=JSON.parse(fs.readFileSync('app/runtime-history154.json'));const live=new Set([...history.current,...history.previous]);
-function scan(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(['node_modules','tests','maintenance','.git','release316'].includes(e.name))continue;const p=path.join(dir,e.name);if(e.isDirectory())scan(p);else if(/\.(?:html|js|mjs|css)$/.test(e.name)&&!generated.test(e.name))for(const m of fs.readFileSync(p,'utf8').matchAll(references))live.add(m[0]);}}
+function scan(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(['node_modules','tests','maintenance','.git','source'].includes(e.name))continue;const p=path.join(dir,e.name);if(e.isDirectory())scan(p);else if(/\.(?:html|js|mjs|css)$/.test(e.name)&&!generated.test(e.name))for(const m of fs.readFileSync(p,'utf8').matchAll(references))live.add(m[0]);}}
 scan('app');
 let removed=0;for(const name of fs.readdirSync('app'))if(generated.test(name)&&!live.has(name)){if(process.argv.includes('--prune')){fs.unlinkSync('app/'+name);removed++}else throw Error('Unreferenced build artifact: '+name+'; run npm run build:current');}
 for(const file of ['index.html','writer.html','video-studio.html','lab258.html','font258.html','practice258.html','copy259.html','handwriting254.html','timeline/manifest.json'])assert(fs.existsSync('app/'+file),'Active application entry missing: '+file);
@@ -32,8 +32,16 @@ const retired=JSON.parse(fs.readFileSync('app/maintenance/retired-files.json'));
 for(const file of retired.files)assert(!fs.existsSync('app/'+file),'Retired duplicate was recreated: '+file);
 for(const name of fs.readdirSync('app'))assert(!/^video-music\d+$/.test(name),'Use music/library, not another versioned audio directory: '+name);
 
-const boundaries=JSON.parse(fs.readFileSync('app/maintenance/module-boundaries.json'));
+// Enforce functional ownership and prevent another generation of patch directories.
 for(const name of fs.readdirSync('app')){
- if(/^(?:release|hand|fonts?|lab|video-assets)\d+$/.test(name))assert(boundaries.existingNumberedDirectories.includes(name),'Do not create another numbered feature directory: '+name);
- if(/^revision\d+\.(?:js|css)$/.test(name))assert(boundaries.existingRevisionFiles.includes(name),'Edit maintained feature source, rather than adding another revision copy: '+name);
+ assert(!/^(?:release|hand|fonts?|lab|guides|banners|children|characters|vendor|oracle|words|world|media|collectors|video-assets)\d+$/.test(name),'Numbered feature directory: '+name);
+ assert(!/^revision.*\.(?:js|css)$/.test(name),'Edit source/writer.js or source/interface.css: '+name);
 }
+
+// Shared page CSS retains only outputs referenced by current pages/code and the previous writer.
+const pageStyles=new Set();
+function uiReferences(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(['node_modules','tests','maintenance','.git','scripts'].includes(e.name))continue;const p=path.join(dir,e.name);if(e.isDirectory())uiReferences(p);else if(/\.(?:html|js|mjs|css)$/.test(e.name)&&!p.startsWith('app/assets/ui/'))for(const m of fs.readFileSync(p,'utf8').matchAll(/assets\/ui\/[a-f0-9]+\.css/g))pageStyles.add(m[0]);}}
+uiReferences('app');
+for(const file of fs.readdirSync('app/assets/ui'))if(!pageStyles.has('assets/ui/'+file)){if(process.argv.includes('--prune'))fs.unlinkSync('app/assets/ui/'+file);else throw Error('Unused page stylesheet: '+file);}
+const sections=JSON.parse(fs.readFileSync('app/source/sections.json'));
+for(const file of Object.keys(sections))assert(!fs.existsSync('app/'+file),'Consolidated source was duplicated: '+file);

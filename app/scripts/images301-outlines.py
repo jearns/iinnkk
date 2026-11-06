@@ -2,7 +2,7 @@ import json,urllib.request,urllib.parse,concurrent.futures,re,html,os
 from pathlib import Path
 from PIL import Image,ImageOps,ImageDraw
 from io import BytesIO
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'release301/assets/outlines';OUT.mkdir(parents=True,exist_ok=True)
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'features/library/assets/outlines';OUT.mkdir(parents=True,exist_ok=True)
 queries={'taj':'Taj Mahal silhouette filetype:bitmap','eiffel':'Eiffel Tower silhouette filetype:bitmap','angkor':'Angkor Wat sunrise silhouette filetype:bitmap','heaven':'Temple Heaven silhouette filetype:bitmap','hagia':'Hagia Sophia sunset filetype:bitmap','notredame':'Notre Dame silhouette filetype:bitmap','burj':'Burj Khalifa sunset filetype:bitmap','sagrada':'Sagrada Familia silhouette filetype:bitmap','petronas':'Petronas towers sunset filetype:bitmap','borobudur':'Borobudur silhouette filetype:bitmap'}
 def fetch(u):return urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'Shoubi301/1.0(public asset research)'}),timeout=25).read()
 def query(item):
@@ -21,7 +21,7 @@ def query(item):
   return key,rows
  except Exception as e:return key,{'error':str(e)}
 with concurrent.futures.ThreadPoolExecutor(max_workers=5)as pool:results=dict(pool.map(query,queries.items()))
-(ROOT/'release301/image-outline-candidates.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
+(ROOT/'features/library/image-outline-candidates.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
 # Contact sheet for source selection only; source images not modified in published assets.
 imgs=[]
 for key,rows in results.items():

@@ -1,4 +1,5 @@
-import{readFile,writeFile,readdir,unlink}from'node:fs/promises';
+import{readSource as readFile}from'../source/read.mjs';
+import{writeFile,readdir,unlink}from'node:fs/promises';
 import{createHash}from'node:crypto';
 import{transform}from'esbuild';
 const{scripts,styles}=JSON.parse(await readFile('runtime-sources106.json','utf8'));

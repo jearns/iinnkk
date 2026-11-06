@@ -1,9 +1,10 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+
 import vm from 'node:vm';
 const sandbox={window:{}};
-vm.runInNewContext(readFileSync('timeline73-data.js','utf8'),sandbox);
+vm.runInNewContext(readSourceSync('timeline73-data.js','utf8'),sandbox);
 const chapters=sandbox.window.CalligraphyTimeline73;
 test('history scroll covers the requested epochs in reverse chronology',()=>{
  assert.equal(chapters.length,31);

@@ -580,7 +580,7 @@
       "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
       "sources300": [
         {
-          "path": "release300/assets/steles/shengjiao-1.webp",
+          "path": "features/calendar/assets/steles/shengjiao-1.webp",
           "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9803.jpg",
           "label": "集王圣教序之一",
           "width": 379,
@@ -588,7 +588,7 @@
           "sha256": "057b796611302723bebc16d05d3a8aefd788e7baf8eb750ba4f0181006bd232b"
         },
         {
-          "path": "release300/assets/steles/shengjiao-2.webp",
+          "path": "features/calendar/assets/steles/shengjiao-2.webp",
           "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9804.jpg",
           "label": "集王圣教序之三",
           "width": 389,
@@ -596,7 +596,7 @@
           "sha256": "4b9180fcbb526788782c5f5fff0202244390ef19fa6bea951e77f9a7d69d647d"
         },
         {
-          "path": "release300/assets/steles/shengjiao-3.webp",
+          "path": "features/calendar/assets/steles/shengjiao-3.webp",
           "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9805.jpg",
           "label": "集王圣教序之四",
           "width": 388,
@@ -604,7 +604,7 @@
           "sha256": "d69b2ece6e711231a28e6a04ceac2b634cef2f1f3d16b59b00582b6d36443710"
         },
         {
-          "path": "release300/assets/steles/shengjiao-4.webp",
+          "path": "features/calendar/assets/steles/shengjiao-4.webp",
           "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9806.jpg",
           "label": "集王圣教序之五",
           "width": 384,
@@ -612,7 +612,7 @@
           "sha256": "aefdf5bd2e500ab41afd4b681e35f0215022fb3c798e1a358bc821245c952e2f"
         },
         {
-          "path": "release300/assets/steles/shengjiao-5.webp",
+          "path": "features/calendar/assets/steles/shengjiao-5.webp",
           "source": "https://img.dpm.org.cn/Uploads/Picture/dc/9808.jpg",
           "label": "集王圣教序之七",
           "width": 394,
@@ -665,7 +665,7 @@
       "imageCredit247": "故宫博物院公开图像；按来源标示拓片或原石照片。",
       "sources300": [
         {
-          "path": "release300/assets/steles/yihe-1.webp",
+          "path": "features/calendar/assets/steles/yihe-1.webp",
           "source": "https://img.dpm.org.cn/Uploads/Picture/dc/826.jpg",
           "label": "瘗鹤铭-碑文之一",
           "width": 400,
@@ -673,7 +673,7 @@
           "sha256": "bee0863f0054c1491b426314145d303d3094e18bc25d5f37c0d0339cf3772695"
         },
         {
-          "path": "release300/assets/steles/yihe-2.webp",
+          "path": "features/calendar/assets/steles/yihe-2.webp",
           "source": "https://img.dpm.org.cn/Uploads/Picture/dc/827[1024].jpg",
           "label": "瘗鹤铭-碑文之二",
           "width": 1024,
@@ -681,7 +681,7 @@
           "sha256": "ccf130398133878cc309a31188dc2de8c513613ad1c0ad94949f8693efa9e8a0"
         },
         {
-          "path": "release300/assets/steles/yihe-3.webp",
+          "path": "features/calendar/assets/steles/yihe-3.webp",
           "source": "https://img.dpm.org.cn/Uploads/Picture/dc/828.jpg",
           "label": "瘗鹤铭-碑文之三",
           "width": 400,
@@ -689,7 +689,7 @@
           "sha256": "0cf276afd040aa037dafd7167f250c99a020350b8d78dcec6a4879f90d1bdff1"
         },
         {
-          "path": "release300/assets/steles/yihe-4.webp",
+          "path": "features/calendar/assets/steles/yihe-4.webp",
           "source": "https://img.dpm.org.cn/Uploads/Picture/dc/830.jpg",
           "label": "瘗鹤铭-碑文之四",
           "width": 400,
@@ -697,7 +697,7 @@
           "sha256": "36c263dccc9681cce59cc47f1a52d84781f249f9279cf90cee1c8982b8122c64"
         },
         {
-          "path": "release300/assets/steles/yihe-5.webp",
+          "path": "features/calendar/assets/steles/yihe-5.webp",
           "source": "https://img.dpm.org.cn/Uploads/Picture/dc/831.jpg",
           "label": "瘗鹤铭-碑文之五",
           "width": 400,
@@ -1506,7 +1506,7 @@
         }
       ],
       "source314": {
-        "metadata": "release314/wen-tengwang-source.json",
+        "metadata": "features/papers/wen-tengwang-source.json",
         "manifest": "https://dl.ndl.go.jp/api/iiif/853047/manifest.json",
         "publicationYear": 1907,
         "rights": "PDM",
@@ -1829,7 +1829,7 @@
       "sub": "把每次落笔收进自己的字库。汇集字样、整理字集、生成个人字体。",
       "cta": "字迹方舟",
       "href": "lab258.html?module=ark",
-      "image": "lab257/ark.svg",
+      "image": "discovery/ark.svg",
       "paper": "#eee7d8",
       "ink": "#354139"
     },
@@ -1840,7 +1840,7 @@
       "sub": "从一个大字开始，听读音、看字源，在手写中认识汉字。",
       "cta": "识字启蒙",
       "href": "lab258.html?module=learn",
-      "image": "lab257/learn.svg",
+      "image": "discovery/learn.svg",
       "paper": "#e4ece4",
       "ink": "#354139"
     },
@@ -1851,7 +1851,7 @@
       "sub": "选九个亲手写过的字，收一封关于自己的温暖赞美信。",
       "cta": "见字识人",
       "href": "lab258.html?module=person",
-      "image": "lab257/person.svg",
+      "image": "discovery/person.svg",
       "paper": "#eae4d9",
       "ink": "#354139"
     },
@@ -1862,7 +1862,7 @@
       "sub": "用自己的手写品格词，把照片织成有温度的文字肖像。",
       "cta": "相由字生",
       "href": "lab258.html?module=portrait",
-      "image": "lab257/portrait.svg",
+      "image": "discovery/portrait.svg",
       "paper": "#e7e7f0",
       "ink": "#354139"
     },
@@ -1873,7 +1873,7 @@
       "sub": "在三体、长征、成语等故事中纵横落笔，九阶闯关。",
       "cta": "手笔填字",
       "href": "lab258.html?module=crossword",
-      "image": "lab257/crossword.svg",
+      "image": "discovery/crossword.svg",
       "paper": "#eee7d8",
       "ink": "#354139"
     },
@@ -1884,7 +1884,7 @@
       "sub": "把真实手写字样变成可安装字体。从补齐缺字到设备预览，一步一步完成。",
       "cta": "字成一体",
       "href": "lab258.html?module=font",
-      "image": "lab258/font.svg",
+      "image": "discovery/icons/font.svg",
       "paper": "#e4ece4",
       "ink": "#354139"
     },
@@ -1895,7 +1895,7 @@
       "sub": "把单字、格盘、创作与临帖放进五种展陈场景，导出立体作品。",
       "cta": "3D打印",
       "href": "lab258.html?module=print",
-      "image": "lab257/print.svg",
+      "image": "discovery/print.svg",
       "paper": "#eae4d9",
       "ink": "#354139"
     },
@@ -1906,7 +1906,7 @@
       "sub": "循历史上的今天和时令，遇见一帖适合此刻临写的墨迹。",
       "cta": "随机临帖",
       "href": "lab258.html?module=random",
-      "image": "lab257/random.svg",
+      "image": "discovery/random.svg",
       "paper": "#e7e7f0",
       "ink": "#354139"
     },
@@ -1917,7 +1917,7 @@
       "sub": "一帖三练：先得线条章法，再习具体笔法，最后融入自己的风格。",
       "cta": "三笔有神",
       "href": "lab258.html?module=three",
-      "image": "lab258/three.svg",
+      "image": "discovery/icons/three.svg",
       "paper": "#eee7d8",
       "ink": "#354139"
     },
@@ -1928,7 +1928,7 @@
       "sub": "把照片、书法与文句排成明信片、封面或一页心情。",
       "cta": "美图美文",
       "href": "lab258.html?module=picture",
-      "image": "lab257/picture.svg",
+      "image": "discovery/picture.svg",
       "paper": "#e4ece4",
       "ink": "#354139"
     },
@@ -1939,7 +1939,7 @@
       "sub": "在眼前的风景上写字，把这一刻留成照片与视频。",
       "cta": "实景题字",
       "href": "lab258.html?module=scene",
-      "image": "lab257/scene.svg",
+      "image": "discovery/scene.svg",
       "paper": "#eae4d9",
       "ink": "#354139"
     },
@@ -1950,7 +1950,7 @@
       "sub": "邀家人和朋友接着写，让不同的笔迹相遇在同一张纸上。",
       "cta": "一起写字",
       "href": "lab258.html?module=shared",
-      "image": "lab257/shared.svg",
+      "image": "discovery/shared.svg",
       "paper": "#e7e7f0",
       "ink": "#354139"
     },
@@ -1961,7 +1961,7 @@
       "sub": "循着名帖走到城市、博物馆与文化现场，发现附近书迹。",
       "cta": "书法地图",
       "href": "lab258.html?module=map",
-      "image": "lab257/map.svg",
+      "image": "discovery/map.svg",
       "paper": "#eee7d8",
       "ink": "#354139"
     },
@@ -1972,7 +1972,7 @@
       "sub": "把临帖足迹收成自己的通关文牒，慢慢走过书法长河。",
       "cta": "通关文牒",
       "href": "lab258.html?module=passport",
-      "image": "lab257/passport.svg",
+      "image": "discovery/passport.svg",
       "paper": "#e4ece4",
       "ink": "#354139"
     },
@@ -1983,7 +1983,7 @@
       "sub": "抄句子、抄经典、抄给自己。淡字铺底，自然声陪伴，给今天留一页安静。",
       "cta": "字愈抄写",
       "href": "lab258.html?module=copy",
-      "image": "lab258/copy.svg",
+      "image": "discovery/icons/copy.svg",
       "paper": "#e8e3d5",
       "ink": "#365044"
     }
@@ -2233,7 +2233,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/qinling-3053635ed0ad.webp"
+      "url": "assets/covers/qinling-3053635ed0ad.webp"
     },
     "yuyouren": {
       "source": "timeline/pages/yuyouren/mum84xny-0.jpg",
@@ -2242,7 +2242,7 @@
         "x": 93.61111111111111,
         "y": 53.07017543859649
       },
-      "url": "home-covers154/yuyouren-f893d91b4816.webp"
+      "url": "assets/covers/yuyouren-f893d91b4816.webp"
     },
     "hanshi": {
       "source": "timeline/pages/hanshi/muzjqxm1-3/IMG_3862.jpeg",
@@ -2251,7 +2251,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/hanshi-f4a57f892485.webp"
+      "url": "assets/covers/hanshi-f4a57f892485.webp"
     },
     "post-c25db8c6-638a-48ad-a9f5-cebacf39cc4e": {
       "source": "timeline/pages/post-c25db8c6-638a-48ad-a9f5-cebacf39cc4e/muy1da6h-7/ 前赤壁赋 01.jpg",
@@ -2260,7 +2260,7 @@
         "x": 27.592586941189236,
         "y": 15.123456790123456
       },
-      "url": "home-covers154/post-c25db8c6-638a-48ad-a9f5-cebacf39cc4e-fec0a7c32430.webp"
+      "url": "assets/covers/post-c25db8c6-638a-48ad-a9f5-cebacf39cc4e-fec0a7c32430.webp"
     },
     "post-63edf3c7-d3ee-4792-96ef-d7cfb3595fa5": {
       "source": "timeline/pages/post-63edf3c7-d3ee-4792-96ef-d7cfb3595fa5/muy5ffwa-0/千字文-六体-赵孟頫01.jpg",
@@ -2269,7 +2269,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/post-63edf3c7-d3ee-4792-96ef-d7cfb3595fa5-ab3881b5bf50.webp"
+      "url": "assets/covers/post-63edf3c7-d3ee-4792-96ef-d7cfb3595fa5-ab3881b5bf50.webp"
     },
     "dizhu": {
       "source": "timeline/pages/dizhu/muywo5xj-0/IMG_3790.jpeg",
@@ -2278,7 +2278,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/dizhu-f0cb27851a5c.webp"
+      "url": "assets/covers/dizhu-f0cb27851a5c.webp"
     },
     "lanting": {
       "source": "timeline/pages/lanting/mv04uqab-6/IMG_3891.jpeg",
@@ -2287,7 +2287,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/lanting-142f955e4329.webp"
+      "url": "assets/covers/lanting-142f955e4329.webp"
     },
     "zhangbaoyi": {
       "source": "timeline/pages/zhangbaoyi/mv0flsta-0/IMG_3919.jpeg",
@@ -2296,7 +2296,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/zhangbaoyi-704c3b09951e.webp"
+      "url": "assets/covers/zhangbaoyi-704c3b09951e.webp"
     },
     "tengwang": {
       "source": "timeline/pages/tengwang/mv0gjh5f-0/IMG_6922.jpeg",
@@ -2305,7 +2305,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/tengwang-cba3dd87223b.webp"
+      "url": "assets/covers/tengwang-cba3dd87223b.webp"
     },
     "dengqianzi": {
       "source": "timeline/pages/dengqianzi/mv0riu9h-0/IMG_3946.jpeg",
@@ -2314,7 +2314,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/dengqianzi-6e5d0aebab68.webp"
+      "url": "assets/covers/dengqianzi-6e5d0aebab68.webp"
     },
     "gushi": {
       "source": "timeline/pages/gushi/mv0xgsyp-0/IMG_3825.jpeg",
@@ -2323,7 +2323,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/gushi-24e650810594.webp"
+      "url": "assets/covers/gushi-24e650810594.webp"
     },
     "caoshuqianzi": {
       "source": "timeline/pages/caoshuqianzi/mv0xmpi5-0/IMG_6983.jpeg",
@@ -2332,7 +2332,7 @@
         "x": 90.83333333333334,
         "y": 51.53508771929825
       },
-      "url": "home-covers154/caoshuqianzi-ed1581c451e6.webp"
+      "url": "assets/covers/caoshuqianzi-ed1581c451e6.webp"
     },
     "shusu": {
       "source": "timeline/pages/shusu/mv0y7npq-3/IMG_4050.jpeg",
@@ -2341,7 +2341,7 @@
         "x": 100,
         "y": 49.890350877192986
       },
-      "url": "home-covers154/shusu-3013e7b63e27.webp"
+      "url": "assets/covers/shusu-3013e7b63e27.webp"
     },
     "jiuhua": {
       "source": "timeline/pages/jiuhua/mv0yesmj-5/IMG_4074.jpeg",
@@ -2350,7 +2350,7 @@
         "x": 88.05555555555556,
         "y": 48.68421052631579
       },
-      "url": "home-covers154/jiuhua-6f572147fa97.webp"
+      "url": "assets/covers/jiuhua-6f572147fa97.webp"
     },
     "yanqinli": {
       "source": "timeline/pages/yanqinli/mv1683dy-0/IMG_4090.jpeg",
@@ -2359,7 +2359,7 @@
         "x": 100,
         "y": 47.478070175438596
       },
-      "url": "home-covers154/yanqinli-2173146b1f1c.webp"
+      "url": "assets/covers/yanqinli-2173146b1f1c.webp"
     },
     "shupu": {
       "source": "timeline/pages/shupu/mv25smaq-0/IMG_4133.jpeg",
@@ -2368,7 +2368,7 @@
         "x": 0,
         "y": 0
       },
-      "url": "home-covers154/shupu-3f276908e7fc.webp"
+      "url": "assets/covers/shupu-3f276908e7fc.webp"
     },
     "zixu": {
       "source": "timeline/pages/zixu/mv26o2rr-1/IMG_4206.jpeg",
@@ -2377,7 +2377,7 @@
         "x": 0,
         "y": 52.96052631578947
       },
-      "url": "home-covers154/zixu-dd22d64811d8.webp"
+      "url": "assets/covers/zixu-dd22d64811d8.webp"
     },
     "shengjiao": {
       "source": "timeline/pages/shengjiao/mv27f4g7-1/IMG_4255.jpeg",
@@ -2386,7 +2386,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/shengjiao-514a763436c8.webp"
+      "url": "assets/covers/shengjiao-514a763436c8.webp"
     },
     "jiucheng": {
       "source": "timeline/pages/jiucheng/mv3s8yer-3/IMG_7086.jpeg",
@@ -2395,7 +2395,7 @@
         "x": 91.38888888888889,
         "y": 33.66228070175438
       },
-      "url": "home-covers154/jiucheng-04537dca0ab2.webp"
+      "url": "assets/covers/jiucheng-04537dca0ab2.webp"
     },
     "chibi": {
       "source": "timeline/pages/chibi/mv3z7ki6-2/IMG_4359.jpeg",
@@ -2404,7 +2404,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/chibi-f31d06d4c0ca.webp"
+      "url": "assets/covers/chibi-f31d06d4c0ca.webp"
     },
     "zhiyongqianzi": {
       "source": "timeline/pages/zhiyongqianzi/mv3z9y9c-0/IMG_4323.jpeg",
@@ -2413,7 +2413,7 @@
         "x": 50,
         "y": 50
       },
-      "url": "home-covers154/zhiyongqianzi-2fa36ada6008.webp"
+      "url": "assets/covers/zhiyongqianzi-2fa36ada6008.webp"
     },
     "longcang": {
       "source": "timeline/pages/longcang/mv3zd2gc-1/IMG_4390.jpeg",
@@ -2422,7 +2422,7 @@
         "x": 100,
         "y": 0
       },
-      "url": "home-covers154/longcang-932b83a9e29c.webp"
+      "url": "assets/covers/longcang-932b83a9e29c.webp"
     }
   },
   "worldNew218": [

@@ -1,2 +1,3 @@
-import test from 'node:test';import assert from 'node:assert/strict';import vm from 'node:vm';import {readFileSync} from 'node:fs';const ctx={};vm.runInNewContext(readFileSync('storage-path150.js','utf8'),ctx);
+import{readSourceSync}from'../source/read.mjs';
+import test from 'node:test';import assert from 'node:assert/strict';import vm from 'node:vm';const ctx={};vm.runInNewContext(readSourceSync('storage-path150.js','utf8'),ctx);
 test('legacy published preview names match actual Storage objects without changing ownership or directories',()=>{const path='owner/work%3A123%7Cpage/token.jpg';assert.equal(ctx.StoragePath150.canonical(path),'owner/work:123|page/token.jpg');assert.equal(ctx.StoragePath150.canonical('owner/work_123/token.jpg'),'owner/work_123/token.jpg');assert.equal(ctx.StoragePath150.canonical('owner/literal%2Fname/token.jpg'),'owner/literal%2Fname/token.jpg')});

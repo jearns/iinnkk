@@ -1,12 +1,13 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+
 import vm from 'node:vm';
 
 // Exercise the production renderInk body with canvas shims. The brush call is
 // the expensive operation, so count it over repeated viewport scale changes.
 test('completed strokes are not rebuilt for every zoom frame',()=>{
- const source=readFileSync(new URL('../app.js',import.meta.url),'utf8');
+ const source=readSourceSync(new URL('../app.js',import.meta.url),'utf8');
  const code=source.slice(source.indexOf('const strokeRasters=new Map()'),source.indexOf('function toggleInkMode()'));
  const canvas=()=>({width:0,height:0,getContext(){return{translate(){},drawImage(){},fillRect(){},save(){},restore(){},getTransform(){return{a:1,b:0}}}}});
  const surface=canvas();let brushCalls=0;
@@ -19,7 +20,7 @@ test('completed strokes are not rebuilt for every zoom frame',()=>{
 });
 
 test('heritage names presented in the design concept are localized',()=>{
- const source=readFileSync(new URL('../heritage102-data.js',import.meta.url),'utf8');
+ const source=readSourceSync(new URL('../heritage102-data.js',import.meta.url),'utf8');
  const context={window:{}};vm.runInNewContext(source,context);
  const names=context.window.HeritageSites102.map(row=>row[1]);
  assert.equal(names.filter(name=>!/[\u4e00-\u9fff]/.test(name)).length,0);

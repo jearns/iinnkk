@@ -8,9 +8,9 @@ for id,w in m['entries'].items():
  for p in [*w.get('pages',[]),w.get('cover143')]:
   p=p if isinstance(p,str) else p.get('image','') if isinstance(p,dict) else ''
   if p:paths.setdefault(p,[]).append(id)
-known=json.loads((ROOT/'release300/catalogue-images.json').read_text())
+known=json.loads((ROOT/'features/calendar/catalogue-images.json').read_text())
 existing={}
-out=ROOT/'release301/image-resolution-audit.json'
+out=ROOT/'features/library/image-resolution-audit.json'
 if out.exists():existing=json.loads(out.read_text()).get('images',{})
 def check(item):
  p,ids=item

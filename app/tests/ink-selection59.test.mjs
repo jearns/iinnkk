@@ -1,13 +1,14 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+
 import vm from 'node:vm';
 
 test('preview recolors the whole work with one undo step and keeps stroke geometry',()=>{
   const createElement=()=>({style:{},children:[],append(...children){this.children.push(...children)},setAttribute(){},addEventListener(){},contains(){return false}});
   const sandbox={document:{createElement},globalThis:null};
   sandbox.globalThis=sandbox;
-  vm.runInNewContext(readFileSync(new URL('../ink-selection.js',import.meta.url),'utf8'),sandbox);
+  vm.runInNewContext(readSourceSync(new URL('../ink-selection.js',import.meta.url),'utf8'),sandbox);
   const original=[
     {points:[{x:1,y:2}],settings:{color:'#050505',size:35,particle:'round'},geometry:{x:1,y:0,k:1}},
     {points:[{x:3,y:4}],settings:{color:'#aabbcc',size:12,particle:'square'}}

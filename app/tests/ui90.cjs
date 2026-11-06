@@ -1,6 +1,7 @@
+const {readSourceSync}=require('../source/read.cjs');
 const {chromium}=require('playwright');
 
-const fs=require('fs'),path=require('path'),http=require('http');const root=path.resolve(__dirname,'..');const server=http.createServer((req,res)=>{const name=path.join(root,req.url.split('?')[0]==='/'?'index.html':req.url.split('?')[0]);try{res.setHeader('Content-Type',({'js':'application/javascript','css':'text/css','html':'text/html','svg':'image/svg+xml','png':'image/png','woff':'font/woff','woff2':'font/woff2'})[name.split('.').pop()]||'application/octet-stream');res.end(fs.readFileSync(name))}catch{res.statusCode=404;res.end()}}).listen(8765,'127.0.0.1');
+const fs=require('fs'),path=require('path'),http=require('http');const root=path.resolve(__dirname,'..');const server=http.createServer((req,res)=>{const name=path.join(root,req.url.split('?')[0]==='/'?'index.html':req.url.split('?')[0]);try{res.setHeader('Content-Type',({'js':'application/javascript','css':'text/css','html':'text/html','svg':'image/svg+xml','png':'image/png','woff':'font/woff','woff2':'font/woff2'})[name.split('.').pop()]||'application/octet-stream');res.end(readSourceSync(name))}catch{res.statusCode=404;res.end()}}).listen(8765,'127.0.0.1');
 const assert=require('node:assert/strict');
 (async()=>{const browser=await chromium.launch({headless:true,executablePath:process.env.CHROMIUM_PATH,args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});const errors=[];try{
 for(const width of [320,390,768,1280]){

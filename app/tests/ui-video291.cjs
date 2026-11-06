@@ -1,3 +1,4 @@
+const {readSourceSync}=require('../source/read.cjs');
 const {chromium}=require('playwright'),fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict'),{execFileSync}=require('node:child_process');
 const output=process.env.VIDEO_TEST_OUTPUT||'/tmp/shoubi-video291';fs.mkdirSync(output,{recursive:true});
 const mime={'.html':'text/html','.js':'application/javascript','.json':'application/json','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.woff2':'font/woff2'};
@@ -80,7 +81,7 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
   const libraryFrame=page.frames().find(f=>f.url().includes('selectVideo290=1'));
   assert.deepEqual(await libraryFrame.evaluate(async()=>{const record=await DraftStore.get('video290-test');return record.draft;}),draft);
   assert.deepEqual(cloudRequests,[]);assert.deepEqual(errors.filter(e=>!e.includes('Failed to fetch')),[]);assert.equal(errors.some(e=>e.includes('disposable')),false);
-  }else draft=JSON.parse(fs.readFileSync(path.join(output,'source-draft.json')));
+  }else draft=JSON.parse(readSourceSync(path.join(output,'source-draft.json')));
   // Exercise the cloud ownership/download path through the real selection page,
   // with a bounded fake account; no private production data or quota is used.
   const mockSDK=`window.IInkSupabaseSDK = {createClient() {
@@ -114,7 +115,7 @@ const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL
   await page.goto(base+'/video-studio.html');await page.setViewportSize({width:390,height:844});
   for(const lang of ['en','fr','ru','ar','es']){
    await page.evaluate(lang=>localStorage.setItem('ink.language218',lang),lang);await page.reload();
-   const dictionary=JSON.parse(fs.readFileSync('locales218/'+lang+'.json'));
+   const dictionary=JSON.parse(readSourceSync('locales/'+lang+'.json'));
    await page.getByRole('button',{name:dictionary['从我的作品选择'],exact:true}).waitFor();
    assert.equal(await page.locator('.vsLayout').getAttribute('dir'),lang==='ar'?'rtl':'ltr');
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);

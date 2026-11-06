@@ -11,7 +11,7 @@ class Text(HTMLParser):
    if k in ['aria-label','placeholder','title'] and v and re.search(r'[\u3400-\u9fff]',v):texts.add(v)
 for name in ['manage234.html','self-portrait257.html']:
  Text().feed(Path(name).read_text())
-for name in ['atlas223.js','homepage154.js','release302/screens.js','release302/portrait.js','release302/portrait-ui.js','remotion-studio/src/web.jsx','remotion-studio/src/scene-plan.mjs']:
+for name in ['atlas223.js','homepage154.js','ui/screens/screens.js','ui/screens/portrait.js','ui/screens/portrait-ui.js','remotion-studio/src/web.jsx','remotion-studio/src/scene-plan.mjs']:
  s=Path(name).read_text()
  for m in re.finditer(r"(['\"])([^'\"\n]*[\u3400-\u9fff][^'\"\n]*)\1",s):
   value=m[2]
@@ -24,8 +24,8 @@ def collect(x):
  elif isinstance(x,list):
   for v in x:collect(v)
 texts.update(['步骤 1','步骤 2','步骤 3','步骤 4','步骤 5','高德网页','高德App','复制地址'])
-dicts={l:json.loads(Path('locales218/'+l+'.json').read_text()) for l in LANGS}
-keys=sorted(texts);Path('release302/locale-source.json').write_text(json.dumps(keys,ensure_ascii=False,indent=2)+'\n')
+dicts={l:json.loads(Path('locales/'+l+'.json').read_text()) for l in LANGS}
+keys=sorted(texts);Path('ui/screens/locale-source.json').write_text(json.dumps(keys,ensure_ascii=False,indent=2)+'\n')
 def translate(l):
  missing=[s for s in keys if s not in dicts[l]];result={};url='https://edge.microsoft.com/translate/translatetext?from=zh-Hans&to='+l+'&isEnterpriseClient=false'
  for start in range(0,len(missing),12):
@@ -43,4 +43,4 @@ def translate(l):
 with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
  for l,result in pool.map(translate,LANGS):dicts[l].update(result)
 assert all(set(dicts[l])==set(dicts['en']) for l in LANGS)
-for l in LANGS:Path('locales218/'+l+'.json').write_text(json.dumps(dicts[l],ensure_ascii=False,separators=(',',':'))+'\n')
+for l in LANGS:Path('locales/'+l+'.json').write_text(json.dumps(dicts[l],ensure_ascii=False,separators=(',',':'))+'\n')

@@ -2,7 +2,7 @@ import os,re,json,math,urllib.request,urllib.parse,html,concurrent.futures,hashl
 from PIL import Image
 from io import BytesIO
 Image.MAX_IMAGE_PIXELS=500_000_000
-ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));OUT=ROOT+'/release301/assets/dpm';os.makedirs(OUT,exist_ok=True)
+ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));OUT=ROOT+'/features/library/assets/dpm';os.makedirs(OUT,exist_ok=True)
 items=[
 ('boyuan','王珣行书伯远帖卷.png','伯远帖卷，故宫博物院藏。完整卷分段，原作与卷后题跋按原图顺序保留。','Public domain (PD-Art)'),
 ('zhongqiu','王献之行草书中秋帖卷.png','中秋帖卷，故宫博物院藏。完整卷分段，传世本的归属依馆方研究。','Public domain (PD-Art)'),
@@ -29,10 +29,10 @@ def go(item):
    frame=im.copy();frame.thumbnail((3600,4800));frames=[frame]
   for i,fr in enumerate(frames,1):
    if min(fr.size)<1080:raise RuntimeError('Derived below threshold '+str(fr.size))
-   rel='release301/assets/dpm/'+k+'-'+str(i)+'.webp';p=ROOT+'/'+rel;fr.convert('RGB').save(p,'WEBP',quality=93,method=5)
+   rel='features/library/assets/dpm/'+k+'-'+str(i)+'.webp';p=ROOT+'/'+rel;fr.convert('RGB').save(p,'WEBP',quality=93,method=5)
    pages.append(rel);meta.append({'path':rel,'width':fr.width,'height':fr.height,'bytes':os.path.getsize(p),'sha256':hashlib.sha256(open(p,'rb').read()).hexdigest(),'source':src})
   return k,{'title':title,'pages':pages,'cover143':pages[0],'originalSize':[ow,oh],'source':src,'sourcePage':page,'license':license,'versionNote301':note,'images':meta,'watermarkReview':'pending-visual-review'}
  except Exception as e:return k,{'error':str(e),'sourcePage':page}
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:result=dict(pool.map(go,items))
-json.dump(result,open(ROOT+'/release301/image-dpm-replacements.json','w'),ensure_ascii=False,indent=2)
+json.dump(result,open(ROOT+'/features/library/image-dpm-replacements.json','w'),ensure_ascii=False,indent=2)
 print(json.dumps({k:({'pages':len(v['pages']),'size':v['originalSize']} if 'pages'in v else v) for k,v in result.items()},ensure_ascii=False),flush=True)

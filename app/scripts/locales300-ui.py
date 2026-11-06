@@ -29,6 +29,6 @@ rows=[
 ]
 langs=['en','fr','ru','ar','es']
 for i,l in enumerate(langs,1):
- p=Path('locales218/'+l+'.json');d=json.loads(p.read_text());d.update({r[0]:r[i] for r in rows});p.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'))+'\n')
-p=Path('release300/locale-source.json');old=json.loads(p.read_text()) if p.exists() else [];p.write_text(json.dumps(sorted(set(old+[r[0] for r in rows])),ensure_ascii=False,indent=2)+'\n')
+ p=Path('locales/'+l+'.json');d=json.loads(p.read_text());d.update({r[0]:r[i] for r in rows});p.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'))+'\n')
+p=Path('features/calendar/locale-source.json');old=json.loads(p.read_text()) if p.exists() else [];p.write_text(json.dumps(sorted(set(old+[r[0] for r in rows])),ensure_ascii=False,indent=2)+'\n')
 print('Translated',len(rows),'UI strings into',len(langs),'languages')

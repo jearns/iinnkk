@@ -1,6 +1,6 @@
 # Account transition prepared for the quota recovery
 
-Release 254 stays local-public. The new workshop, handwriting input, font generator, portrait and print editor do not initialize Supabase or fetch account data. The existing writing-statistics uploader and rank reads are gated while HandLedger254.cloudAllowed() is false. `hand254/account-policy.json` is the authoritative release intent. Date alone MUST NOT enable account or cloud traffic.
+Release 254 stays local-public. The new workshop, handwriting input, font generator, portrait and print editor do not initialize Supabase or fetch account data. The existing writing-statistics uploader and rank reads are gated while HandLedger254.cloudAllowed() is false. `handwriting/core/account-policy.json` is the authoritative release intent. Date alone MUST NOT enable account or cloud traffic.
 
 A follow-up has been scheduled from October 28, Asia/Shanghai. First verify actual egress allowance and minimal REST availability, rather than interpreting ACTIVE_HEALTHY as a billing/quota result. After confirmed restoration, implement/test the authenticated transition and update the policy in a new release.
 

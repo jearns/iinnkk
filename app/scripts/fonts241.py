@@ -1,7 +1,7 @@
 """Rebuild a renamed educational font subset and 512-codepoint WOFF2 shards.
 Usage: python scripts/fonts241.py INPUT.ttf NAME CHARACTERS.txt OUTPUT_DIR
-Requires fonttools[woff]. No network access; source URLs/licenses in fonts241/credits.html.
-Wang LiSu corresponding modified TTF source is fonts241/clerical-source.ttf.
+Requires fonttools[woff]. No network access; source URLs/licenses in fonts/calligraphy/credits.html.
+Wang LiSu corresponding modified TTF source is fonts/calligraphy/clerical-source.ttf.
 """
 import sys,copy
 from pathlib import Path

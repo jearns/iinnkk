@@ -12,10 +12,10 @@ def collect(obj,key=''):
  elif isinstance(obj,str) and key in FIELDS and re.search(r'[\u3400-\u9fff]',obj):
   texts.add(obj)
   if key in {'objectNumber300','objectNumber'}:object_numbers.add(obj)
-for p in Path('release300').glob('catalogue*.json'):
+for p in Path('features/calendar').glob('catalogue*.json'):
  if 'audit' not in p.name and 'scan' not in p.name:collect(json.loads(p.read_text()))
-for p in Path('release300').glob('*oracle*.json'):collect(json.loads(p.read_text()))
-dicts={l:json.loads(Path('locales218/'+l+'.json').read_text()) for l in LANGS}
+for p in Path('features/calendar').glob('*oracle*.json'):collect(json.loads(p.read_text()))
+dicts={l:json.loads(Path('locales/'+l+'.json').read_text()) for l in LANGS}
 texts.update([
  '本站从馆藏与甲骨专题展中精选十件，含殷商刻辞、朱书与先书后刻的实物，按观察主题编排。非官方高下排名；各件年代与释读以来源机构说明为准。',
  '两片缀合牛肩胛骨记录在义京祭祀的占问，展示字形、卜兆与行列的关系。',
@@ -64,7 +64,7 @@ for text in keys:
 
 # Apply only after all languages completed, preserving parity and compact existing format.
 assert all(set(dicts[l])==set(dicts['en']) for l in LANGS)
-for l in LANGS:Path('locales218/'+l+'.json').write_text(json.dumps(dicts[l],ensure_ascii=False,separators=(',',':'))+'\n')
-p=Path('release300/locale-source.json');prior=json.loads(p.read_text()) if p.exists() else []
+for l in LANGS:Path('locales/'+l+'.json').write_text(json.dumps(dicts[l],ensure_ascii=False,separators=(',',':'))+'\n')
+p=Path('features/calendar/locale-source.json');prior=json.loads(p.read_text()) if p.exists() else []
 p.write_text(json.dumps(sorted(set(prior+keys)),ensure_ascii=False,indent=2)+'\n')
 print('Catalogue localization complete',flush=True)

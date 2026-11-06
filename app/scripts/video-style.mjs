@@ -1,5 +1,6 @@
-import {readFile,writeFile} from 'node:fs/promises';
-import {createHash} from 'node:crypto';
+import{readSource as readFile}from'../source/read.mjs';
+import{writeFile}from'node:fs/promises';
+import{createHash}from'node:crypto';
 const css=await readFile('video-studio.css');
 const name='video-studio.'+createHash('sha256').update(css).digest('hex').slice(0,16)+'.css';
 await writeFile(name,css);

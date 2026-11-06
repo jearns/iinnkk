@@ -20,6 +20,6 @@ rows=[
 'تُظهر أسئلة العرافة المتقابلة بصيغتي الإثبات والنفي حول المحصول منطق نقوش عهد شانغ وأشكال المحارف المملوءة بالزنجفر.',
 'Las preguntas adivinatorias sobre la cosecha, formuladas por pares afirmativos y negativos, muestran la lógica de las inscripciones Shang y las formas de sus caracteres rellenados con bermellón.')]
 for i,l in enumerate(['en','fr','ru','ar','es'],1):
- p=Path('locales218/'+l+'.json');d=json.loads(p.read_text());d.update({r[0]:r[i] for r in rows});p.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'))+'\n')
-p=Path('release300/locale-source.json');keys=json.loads(p.read_text());p.write_text(json.dumps(sorted(set(keys+[r[0] for r in rows])),ensure_ascii=False,indent=2)+'\n')
+ p=Path('locales/'+l+'.json');d=json.loads(p.read_text());d.update({r[0]:r[i] for r in rows});p.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'))+'\n')
+p=Path('features/calendar/locale-source.json');keys=json.loads(p.read_text());p.write_text(json.dumps(sorted(set(keys+[r[0] for r in rows])),ensure_ascii=False,indent=2)+'\n')
 print('Manually reviewed final three descriptions in all five languages')

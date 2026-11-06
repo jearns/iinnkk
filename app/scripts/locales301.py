@@ -11,7 +11,7 @@ class Text(HTMLParser):
    if k in ['aria-label','placeholder','title'] and v and re.search(r'[\u3400-\u9fff]',v):texts.add(v)
 for name in ['manage234.html','self-portrait257.html']:
  Text().feed(Path(name).read_text())
-for name in ['manage234.js','home-slides260.js','release301/calendar-ui.mjs','release301/portrait.js','release301/map-group.js','release301/portrait-ui.js','release301/screens.js','remotion-studio/src/web.jsx','remotion-studio/src/scene-plan.mjs','remotion-studio/src/music.mjs']:
+for name in ['manage234.js','home-slides260.js','features/library/calendar-ui.mjs','features/library/portrait.js','features/library/map-group.js','features/library/portrait-ui.js','features/library/screens.js','remotion-studio/src/web.jsx','remotion-studio/src/scene-plan.mjs','remotion-studio/src/music.mjs']:
  s=Path(name).read_text()
  for m in re.finditer(r"(['\"])([^'\"\n]*[\u3400-\u9fff][^'\"\n]*)\1",s):
   value=m[2]
@@ -23,9 +23,9 @@ def collect(x):
    elif isinstance(v,(dict,list)):collect(v)
  elif isinstance(x,list):
   for v in x:collect(v)
-for name in ['release301/encyclopedia.json','release301/outlines.json','release301/image-dpm-replacements.json']:collect(json.loads(Path(name).read_text()))
-dicts={l:json.loads(Path('locales218/'+l+'.json').read_text()) for l in LANGS}
-keys=sorted(texts);Path('release301/locale-source.json').write_text(json.dumps(keys,ensure_ascii=False,indent=2)+'\n')
+for name in ['features/library/encyclopedia.json','features/library/outlines.json','features/library/image-dpm-replacements.json']:collect(json.loads(Path(name).read_text()))
+dicts={l:json.loads(Path('locales/'+l+'.json').read_text()) for l in LANGS}
+keys=sorted(texts);Path('features/library/locale-source.json').write_text(json.dumps(keys,ensure_ascii=False,indent=2)+'\n')
 def translate(l):
  missing=[s for s in keys if s not in dicts[l]];result={};url='https://edge.microsoft.com/translate/translatetext?from=zh-Hans&to='+l+'&isEnterpriseClient=false'
  for start in range(0,len(missing),12):
@@ -43,4 +43,4 @@ def translate(l):
 with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
  for l,result in pool.map(translate,LANGS):dicts[l].update(result)
 assert all(set(dicts[l])==set(dicts['en']) for l in LANGS)
-for l in LANGS:Path('locales218/'+l+'.json').write_text(json.dumps(dicts[l],ensure_ascii=False,separators=(',',':'))+'\n')
+for l in LANGS:Path('locales/'+l+'.json').write_text(json.dumps(dicts[l],ensure_ascii=False,separators=(',',':'))+'\n')

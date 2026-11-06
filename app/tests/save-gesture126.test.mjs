@@ -1,8 +1,9 @@
+import{readSourceSync}from'../source/read.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-const source=fs.readFileSync('app.js','utf8');
+const source=readSourceSync('app.js','utf8');
 const fn=(name,next)=>source.slice(source.indexOf('function '+name+'('),source.indexOf(next,source.indexOf('function '+name+'(')));
 test('five and six taps dispatch only clear and undo after the sequence',()=>{
  for(const [count,expected] of [[2,'preview'],[3,'signature'],[4,'undo'],[5,'clear'],[6,'undo'],[7,undefined]]){

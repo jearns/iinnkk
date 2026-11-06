@@ -1,0 +1,18 @@
+{
+  "handwriting/export/export.css": "assets/ui/00d2a0bf646d1bdf.css",
+  "handwriting/export/export-fit.css": "assets/ui/996de52fc8ecc548.css",
+  "ui/layout/export-panel.css": "assets/ui/9672229c06c35a1e.css",
+  "features/calendar/rank-share.css": "assets/ui/a4b4a8721724baa3.css",
+  "features/calendar/base/ui.css": "assets/ui/438343ba9b77db7f.css",
+  "features/film/editor/ui.css": "assets/ui/0be735cc396b4a8c.css",
+  "features/portrait/catalogue/ui.css": "assets/ui/fa80c89da4d497f5.css",
+  "features/papers/picker/papers.css": "assets/ui/868fac86d32c8a21.css",
+  "features/portrait/portrait-panel.css": "assets/ui/781c3a599b3c61f3.css",
+  "features/sharing/stickers.css": "assets/ui/b068525d93fd55d6.css",
+  "features/sharing/share.css": "assets/ui/c79f5ca1c07fd837.css",
+  "features/stickers/stickers.css": "assets/ui/582b362b5a757115.css",
+  "handwriting/capture/hand-capture.css": "assets/ui/b251454e831d4a83.css",
+  "features/wishes/rank-share.css": "assets/ui/a88ff3b8554e522f.css",
+  "features/film/viewer.css": "assets/ui/c58544f6e134e2f2.css",
+  "ui/shared/hand-capture.css": "assets/ui/af787cccc1e0ec6c.css"
+}

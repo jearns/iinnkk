@@ -1,5 +1,6 @@
-import test from 'node:test';import assert from 'node:assert/strict';import vm from 'node:vm';import{readFileSync}from'node:fs';
-const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
+import{readSourceSync}from'../source/read.mjs';
+import test from 'node:test';import assert from 'node:assert/strict';import vm from 'node:vm';
+const read=p=>readSourceSync(new URL('../'+p,import.meta.url),'utf8');
 const ctx={};vm.runInNewContext(read('reference-geometry133.js'),ctx);
 test('three-column viewport centres the writing column and includes both neighbours',()=>{const cols=Array.from({length:6},(_,i)=>({x:1-(i+.5)/6,w:1/6}));const region=ctx.ReferenceGeometry133.threeColumns(cols,2);assert.equal(region.center,cols[2].x);assert.ok(Math.abs(region.w-.5)<1e-8);for(const i of [1,2,3])assert.ok(Math.abs(cols[i].x-region.center)+cols[i].w/2<=region.w/2+1e-8)});
 test('first and last columns keep their current column centred rather than jumping to the neighbour',()=>{const cols=[{x:.9,w:.12},{x:.6,w:.14},{x:.3,w:.13}];for(const i of [0,2]){const r=ctx.ReferenceGeometry133.threeColumns(cols,i);assert.equal(r.center,cols[i].x);assert.ok(Number.isFinite(r.w)&&r.w>0)}});
