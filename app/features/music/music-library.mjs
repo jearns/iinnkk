@@ -5,7 +5,7 @@ export const MUSIC_TRACKS=[
     "title": "沧海一声笑 · 黄霑",
     "sourcePage": "https://music.163.com/song?id=3312527187",
     "source": "https://music.163.com/song/media/outer/url?id=3312527187.mp3",
-    "playbackSrc": "music/library/canghai.m4a",
+    "playbackSrc": "music/01-canghai.mp3",
     "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 3312527187；录音权利归原权利人。"
   },
@@ -14,7 +14,7 @@ export const MUSIC_TRACKS=[
     "title": "云宫迅音 · 许镜清",
     "sourcePage": "https://music.163.com/song?id=2628466650",
     "source": "https://music.163.com/song/media/outer/url?id=2628466650.mp3",
-    "playbackSrc": "music/library/yungong.m4a",
+    "playbackSrc": "music/02-yungong.mp3",
     "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 2628466650；录音权利归原权利人。"
   },
@@ -23,8 +23,8 @@ export const MUSIC_TRACKS=[
     "title": "出埃及记 · 马克西姆",
     "sourcePage": "https://music.163.com/song?id=1695922",
     "source": "https://music.163.com/song/media/outer/url?id=1695922.mp3",
-    "playbackSrc": null,
-    "requiresImport301": true,
+    "playbackSrc": "music/03-aiji.mp3",
+    "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 1695922；录音权利归原权利人。"
   },
   {
@@ -32,8 +32,8 @@ export const MUSIC_TRACKS=[
     "title": "野蜂飞舞 · 马克西姆",
     "sourcePage": "https://music.163.com/song?id=1915256246",
     "source": "https://music.163.com/song/media/outer/url?id=1915256246.mp3",
-    "playbackSrc": null,
-    "requiresImport301": true,
+    "playbackSrc": "music/04-yefeng.mp3",
+    "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 1915256246；录音权利归原权利人。"
   },
   {
@@ -41,8 +41,8 @@ export const MUSIC_TRACKS=[
     "title": "Moby Dick · 齐柏林飞船",
     "sourcePage": "https://music.163.com/song?id=2003977754",
     "source": "https://music.163.com/song/media/outer/url?id=2003977754.mp3",
-    "playbackSrc": null,
-    "requiresImport301": true,
+    "playbackSrc": "music/05-baijing.mp3",
+    "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 2003977754；录音权利归原权利人。"
   },
   {
@@ -50,8 +50,8 @@ export const MUSIC_TRACKS=[
     "title": "滚核桃 · 山西绛州鼓乐",
     "sourcePage": "https://music.163.com/song?id=2630864134",
     "source": "https://music.163.com/song/media/outer/url?id=2630864134.mp3",
-    "playbackSrc": null,
-    "requiresImport301": true,
+    "playbackSrc": "music/06-gunhetao.mp3",
+    "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 2630864134；录音权利归原权利人。"
   },
   {
@@ -59,7 +59,7 @@ export const MUSIC_TRACKS=[
     "title": "十面埋伏",
     "sourcePage": "https://music.163.com/song?id=490637515",
     "source": "https://music.163.com/song/media/outer/url?id=490637515.mp3",
-    "playbackSrc": "music/library/shimian.m4a",
+    "playbackSrc": "music/07-maifu.mp3",
     "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 490637515；录音权利归原权利人。"
   },
@@ -68,8 +68,8 @@ export const MUSIC_TRACKS=[
     "title": "小刀会序曲",
     "sourcePage": "https://music.163.com/song?id=128669",
     "source": "https://music.163.com/song/media/outer/url?id=128669.mp3",
-    "playbackSrc": null,
-    "requiresImport301": true,
+    "playbackSrc": "music/08-xiaodaohui.mp3",
+    "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 128669；录音权利归原权利人。"
   },
   {
@@ -77,8 +77,8 @@ export const MUSIC_TRACKS=[
     "title": "渔舟唱晚",
     "sourcePage": "https://music.163.com/song?id=62567",
     "source": "https://music.163.com/song/media/outer/url?id=62567.mp3",
-    "playbackSrc": null,
-    "requiresImport301": true,
+    "playbackSrc": "music/09-yuzhou.mp3",
+    "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 62567；录音权利归原权利人。"
   },
   {
@@ -86,8 +86,8 @@ export const MUSIC_TRACKS=[
     "title": "将进酒",
     "sourcePage": "https://music.163.com/song?id=2063436719",
     "source": "https://music.163.com/song/media/outer/url?id=2063436719.mp3",
-    "playbackSrc": null,
-    "requiresImport301": true,
+    "playbackSrc": "music/10-qiangjinjiu.mp3",
+    "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 2063436719；录音权利归原权利人。"
   },
   {
@@ -95,7 +95,7 @@ export const MUSIC_TRACKS=[
     "title": "定风波",
     "sourcePage": "https://music.163.com/song?id=1859192821",
     "source": "https://music.163.com/song/media/outer/url?id=1859192821.mp3",
-    "playbackSrc": "music/library/dingfengbo.m4a",
+    "playbackSrc": "music/11-dingfengbo.mp3",
     "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 1859192821；录音权利归原权利人。"
   },
@@ -104,8 +104,8 @@ export const MUSIC_TRACKS=[
     "title": "高山流水",
     "sourcePage": "https://music.163.com/song?id=1954611957",
     "source": "https://music.163.com/song/media/outer/url?id=1954611957.mp3",
-    "playbackSrc": null,
-    "requiresImport301": true,
+    "playbackSrc": "music/12-gaoshanliushui.mp3",
+    "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 1954611957；录音权利归原权利人。"
   },
   {
@@ -113,8 +113,8 @@ export const MUSIC_TRACKS=[
     "title": "春江花月夜",
     "sourcePage": "https://music.163.com/song?id=1895373087",
     "source": "https://music.163.com/song/media/outer/url?id=1895373087.mp3",
-    "playbackSrc": null,
-    "requiresImport301": true,
+    "playbackSrc": "music/13-chunjiang.mp3",
+    "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 1895373087；录音权利归原权利人。"
   },
   {
@@ -122,8 +122,8 @@ export const MUSIC_TRACKS=[
     "title": "广陵散",
     "sourcePage": "https://music.163.com/song?id=396334",
     "source": "https://music.163.com/song/media/outer/url?id=396334.mp3",
-    "playbackSrc": null,
-    "requiresImport301": true,
+    "playbackSrc": "music/14-guangling.mp3",
+    "requiresImport301": false,
     "credit": "用户指定录音；来源：网易云音乐 396334；录音权利归原权利人。"
   },
   {

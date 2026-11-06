@@ -97,7 +97,7 @@
       "format": "esm"
     },
     "../features/music/music-library.mjs": {
-      "bytes": 11143,
+      "bytes": 11325,
       "imports": [],
       "format": "esm"
     },
@@ -4584,18 +4584,18 @@
       },
       "bytes": 311916
     },
-    "../assets/video/chunk.ALMMOYGP.js": {
+    "../assets/video/chunk.WF2JOQ6Z.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.SLLFHYOU.js",
+          "path": "../assets/video/chunk.AFAMWJAP.js",
           "kind": "import-statement"
         },
         {
-          "path": "../assets/video/chunk.CRKLMPBN.js",
+          "path": "../assets/video/chunk.N3ZURT4Y.js",
           "kind": "import-statement"
         },
         {
-          "path": "../assets/video/chunk.2VKDGZWW.js",
+          "path": "../assets/video/chunk.LH3EZTEX.js",
           "kind": "import-statement"
         },
         {
@@ -4875,10 +4875,10 @@
       },
       "bytes": 992832
     },
-    "../assets/video/web.C77J76CG.js": {
+    "../assets/video/web.Q4UEWFGB.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.SLLFHYOU.js",
+          "path": "../assets/video/chunk.AFAMWJAP.js",
           "kind": "import-statement"
         },
         {
@@ -4886,7 +4886,7 @@
           "kind": "import-statement"
         },
         {
-          "path": "../assets/video/chunk.2VKDGZWW.js",
+          "path": "../assets/video/chunk.LH3EZTEX.js",
           "kind": "import-statement"
         },
         {
@@ -4906,7 +4906,7 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../assets/video/chunk.ROKK4A5B.js",
+          "path": "../assets/video/chunk.T764FBX5.js",
           "kind": "dynamic-import"
         },
         {
@@ -4926,7 +4926,7 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../assets/video/chunk.ALMMOYGP.js",
+          "path": "../assets/video/chunk.WF2JOQ6Z.js",
           "kind": "dynamic-import"
         },
         {
@@ -4964,10 +4964,10 @@
       },
       "bytes": 60364
     },
-    "../assets/video/chunk.SLLFHYOU.js": {
+    "../assets/video/chunk.AFAMWJAP.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.2VKDGZWW.js",
+          "path": "../assets/video/chunk.LH3EZTEX.js",
           "kind": "import-statement"
         },
         {
@@ -5261,14 +5261,14 @@
       },
       "bytes": 5059
     },
-    "../assets/video/chunk.ROKK4A5B.js": {
+    "../assets/video/chunk.T764FBX5.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.CRKLMPBN.js",
+          "path": "../assets/video/chunk.N3ZURT4Y.js",
           "kind": "import-statement"
         },
         {
-          "path": "../assets/video/chunk.2VKDGZWW.js",
+          "path": "../assets/video/chunk.LH3EZTEX.js",
           "kind": "import-statement"
         },
         {
@@ -5294,10 +5294,10 @@
       },
       "bytes": 63025
     },
-    "../assets/video/chunk.CRKLMPBN.js": {
+    "../assets/video/chunk.N3ZURT4Y.js": {
       "imports": [
         {
-          "path": "../assets/video/chunk.2VKDGZWW.js",
+          "path": "../assets/video/chunk.LH3EZTEX.js",
           "kind": "import-statement"
         },
         {
@@ -5350,7 +5350,7 @@
       },
       "bytes": 443443
     },
-    "../assets/video/chunk.2VKDGZWW.js": {
+    "../assets/video/chunk.LH3EZTEX.js": {
       "imports": [
         {
           "path": "../assets/video/chunk.5LHGNSCY.js",
@@ -5391,7 +5391,7 @@
           "bytesInOutput": 50
         },
         "node_modules/react-dom/cjs/react-dom.production.js": {
-          "bytesInOutput": 3289
+          "bytesInOutput": 3291
         },
         "node_modules/react-dom/index.js": {
           "bytesInOutput": 252
@@ -5400,7 +5400,7 @@
           "bytesInOutput": 486
         },
         "../features/music/music-library.mjs": {
-          "bytesInOutput": 11778
+          "bytesInOutput": 11950
         },
         "src/music.mjs": {
           "bytesInOutput": 0
@@ -5415,7 +5415,7 @@
           "bytesInOutput": 429
         }
       },
-      "bytes": 32439
+      "bytes": 32613
     },
     "../assets/video/chunk.DH43MJXE.js": {
       "imports": [
