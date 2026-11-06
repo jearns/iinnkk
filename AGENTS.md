@@ -29,3 +29,5 @@
 - Maintain writing enhancements in app/source/writer.js and shared styles in app/source/interface.css. Preserve section initialization and cascade order; section IDs are provenance metadata, not standalone patch files.
 - Build each page cascade into shared content-addressed CSS through scripts/styles.mjs. Keep heavy feature code/models lazy. Do not flatten every feature into the first writing download.
 - When moving live resources, update all page, module, worker, build and cache references. Keep saved resource URLs compatible through the origin worker; never retain duplicate source copies as aliases.
+
+- Pages publication must stay under the 900MB release budget. Keep repository originals intact; do not duplicate timeline/pages in the Pages artifact. Preserve same-origin saved-image access through the worker and anonymous-CORS repository loading for references.

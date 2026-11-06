@@ -1,0 +1,20 @@
+# Keep Pages below its 1 GB limit. Full-resolution originals remain in Git and
+# are read on demand through the existing repository image source.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
+  - app/timeline/pages
+  - app/tests
+  - app/scripts
+  - app/remotion-studio/scripts
+  - app/remotion-studio/node_modules
+  - tools
+  - docs
+  - AGENTS.md
+  - package.json
+  - package-lock.json

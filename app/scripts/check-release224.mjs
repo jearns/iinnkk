@@ -2,7 +2,7 @@ import{readSourceSync}from'../source/read.mjs';
 import './check-startup270.mjs';
 import './check-context269.mjs';
 import{execFileSync}from'node:child_process';
-execFileSync(process.execPath,['--test','tests/release268.test.mjs','tests/release282.test.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['--test','tests/release268.test.mjs','tests/release282.test.mjs','tests/architecture.test.mjs','tests/publication.test.mjs','tests/music-library.test.mjs'],{stdio:'inherit'});
 import fs from 'node:fs';import assert from 'node:assert/strict';
 const read=p=>readSourceSync(p,'utf8'),places=JSON.parse(read('calligraphy-places224.json'));let keys;
 for(const lang of ['en','fr','ru','ar','es']){const dict=JSON.parse(read('locales/'+lang+'.json'));const current=Object.keys(dict).sort();if(keys)assert.deepEqual(current,keys);keys=current;for(const row of places)for(const k of ['name','country','city','institution','address','note'])if(row[k])assert.ok(dict[row[k]],lang+': '+row[k]);for(const v of Object.values(dict))assert.ok(v.trim());}
