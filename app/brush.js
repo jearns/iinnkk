@@ -101,6 +101,31 @@
    t.moveTo(x0+lx*a,y0+ly*a);t.lineTo(x1+lx*b,y1+ly*b);t.lineTo(x1+rx*b,y1+ry*b);t.lineTo(x0+rx*a,y0+ry*a);t.closePath();t.fill();
    for(const [x,y,radius] of [[x0,y0,a],[x1,y1,b]])if(radius>.001){t.beginPath();t.arc(x,y,radius,0,Math.PI*2);t.fill()}
   }
+  if(s.inkContact318){
+   const previousGaps=state.contactGaps318||[];
+   const gaps=state.nextContactGaps318||[];
+   state.contactGaps318=gaps;
+   if(gaps.some(gap=>gap.width>0)||previousGaps.some(gap=>gap.width>0)){
+    const point=(x,y,normal,radius,u)=>[x+normal.x*radius*u,y+normal.y*radius*u];
+    const normal={x:nx,y:ny};
+    // Overlap neighboring sweeps so Canvas antialiasing cannot expose seams across the stroke.
+    const overlap=Math.min(d*.24,.52*scale),ex=dx/d*overlap,ey=dy/d*overlap;
+    let from=-1,to=-1;
+    t.beginPath();
+    for(let i=0;i<=gaps.length;i++){
+     const current=gaps[i]||{center:1,width:0},prior=previousGaps[i]||{center:current.center,width:0};
+     t.moveTo(...point(x0-ex,y0-ey,previous,r0,from));
+     t.lineTo(...point(x1+ex,y1+ey,normal,r1,to));
+     t.lineTo(...point(x1+ex,y1+ey,normal,r1,current.center-current.width));
+     t.lineTo(...point(x0-ex,y0-ey,previous,r0,prior.center-prior.width));
+     t.closePath();
+     from=prior.center+prior.width;to=current.center+current.width;
+    }
+    t.fill();
+    state.normal204=normal;
+    return;
+   }
+  }
   if(s.bristleGaps317&&(dry>0||state.gaps317>0)){
    // Gaps between persistent bundles reveal the actual paper beneath the ink.
    const gaps=[[-.62,.075],[-.29,.13],[.07,.09],[.34,.15],[.65,.065]];
@@ -151,7 +176,30 @@
    let envelope=1;if(sharp194&&(s.seal194||0)<.98){const len=Math.min(160,Math.max(8,s.size*.6),tail.length*.28),u=clamp(tail.remaining[i]/Math.max(.01,len),0,1);envelope=mix(Math.min(u*u*(3-2*u),tail.remaining[i]/Math.max(.01,next)*.7),1,s.seal194||0)}
    const r0=Math.max(.02*scale,state.contact*scale),r1=Math.max(0,next*envelope*scale)*(tail?.hook?1+(noise((state.travel+distance)/Math.max(1,s.size*.025),3,state.seed)-.5)*.018:1);
    const depletion=clamp(state.travel/Math.max(1,s.size*8),0,1)*(s.cursive194||0),dryTarget=s.dryUser314?Math.max(dryForSpeed(state.velocity,s,pressure),s.dry*clamp(state.travel/Math.max(1,s.size*4),0,1)*.65):Math.max(dryForSpeed(state.velocity,s,pressure),depletion*.65);state.dry=mix(state.dry,dryTarget,1-Math.exp(-dt/95));state.color194=s.color;if(!s.dryUser314&&((s.regular194||0)+(s.running194||0)+(s.cursive194||0)>.2)){state.dry=0;const endLength205=tail&&Math.min(s.size*.28,tail.length*.08);if(tail&&sharp194&&!tail.hook&&(s.cursive194||0)>.2&&tail.remaining[i]<endLength205&&state.velocity>.35)state.dry=Math.min(.24,s.dry*.24*clamp(1-tail.remaining[i]/Math.max(1,endLength205),0,1))}
-   if(s.bristleGaps317){
+   if(s.inkContact318){
+    const eligible=turnWeight205>=.5&&turnWeight205>(s.regular194||0);
+    const strength=clamp((s.flyingWhite315??(s.dryUser314?s.dry*100:50))/100,0,1);
+    const lift=pressure??clamp(.68-state.velocity*.23+turn*.16,.20,.72);
+    const speedGate=clamp((Math.min(speed,state.velocity)-.78)/.7,0,1);
+    const turnGate=1-clamp((turn-.12)/.65,0,1);
+    const lightContact=clamp((.8-lift)/.58,0,1);
+    const nibLength=clamp(s.size*.37,8,56);
+    const carried=st.inkTravel195||0;
+    const initialInk=s.inkLoad315==null?.66:clamp(s.inkLoad315/100,0,1);
+    const reserveLength=nibLength*mix(38,116,clamp((initialInk-.70)/.30,0,1));
+    const localInk=initialInk-clamp((carried*.25+state.travel+distance)/reserveLength,0,.65);
+    const exposure=eligible?strength*speedGate*turnGate*lightContact*clamp((.75-localInk)/.42,0,1):0;
+    const phase=(state.travel+distance)/nibLength;
+    state.nextContactGaps318=[-.76,-.42,.38,.73].map((base,i)=>{
+     const strand=i+31,seed=state.seed;
+     const separation=noise(phase*(.52+hash(strand,8,seed)*.75),strand,seed);
+     const threshold=.28+hash(strand,9,seed)*.37;
+     const opening=clamp((separation-threshold)/.38,0,1);
+     const center=base+(noise(phase*.49,strand+9,seed)-.5)*.12;
+     return{center,width:exposure*opening*(.032+hash(strand,10,seed)*.079)};
+    });
+    state.dry=0;
+   }else if(s.bristleGaps317){
     const style=s.lineStrength108??0;
     const light=pressure===null?clamp(.64-state.velocity*.22,.2,.64):pressure;
     const speedGate=clamp((state.velocity-.60)/.65,0,1);

@@ -44,3 +44,37 @@ test('new strokes leave lengthwise paper gaps only in fast, lightly pressed runn
  }
  for(const style of [0,25,50])assert.equal(spans(paint(style,175,.32),500),1);
 });
+
+test('318 default brush opens and closes individual dry-ink gaps while preserving an ink spine',()=>{
+ function paint({style=100,ink=20,pressure=.36,fast=true,strength=100}={}){
+  const st=stroke({style,pressure,strength,points:121});
+  Object.assign(st.settings,{engineVersion315:0,bristleGaps317:true,inkContact318:true,inkLoad315:ink});
+  st.hasPressure=true;
+  st.points.forEach((p,i)=>{p.t=i*2+(fast?Math.max(0,i-100)*24:i*24)});
+  return render(st).getContext('2d');
+ }
+ function spans(ctx,x){
+  const alpha=ctx.getImageData(x,440,1,120).data;
+  let count=0,painted=false;
+  for(let i=3;i<alpha.length;i+=4){
+   const next=alpha[i]>128;
+   if(next&&!painted)count++;
+   painted=next;
+  }
+  return count;
+ }
+ for(const style of [75,100]){
+  const fast=paint({style}),counts=[];
+  for(let x=160;x<740;x+=5){
+   counts.push(spans(fast,x));
+   assert.ok(fast.getImageData(x,500,1,1).data[3]>128,'central ink spine stays painted');
+  }
+  assert.ok(Math.max(...counts)>=3);
+  assert.ok(new Set(counts).size>=3,'individual gaps open and close');
+  assert.equal(spans(fast,850),1,'deceleration closes the gaps');
+ }
+ for(const settings of [{ink:100},{pressure:.9},{fast:false},{strength:0},...[0,25,50].map(style=>({style}))]){
+  const ctx=paint(settings);
+  for(let x=160;x<850;x+=5)assert.equal(spans(ctx,x),1,JSON.stringify(settings));
+ }
+});
