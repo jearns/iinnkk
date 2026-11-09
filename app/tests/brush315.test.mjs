@@ -15,3 +15,32 @@ test('unversioned old strokes render byte-identically through the retained v314 
 export{stroke,render};
 test('pen hover does not deposit ink or connect an airborne bridge',()=>{const st=stroke({pressure:.7,ink:1});st.points=[{...st.points[0],x:.1,t:0},{...st.points[1],x:.2,t:20},{...st.points[2],x:.7,t:40,hover315:true},{...st.points[3],x:.75,t:60}];const c=render(st),d=c.getContext('2d').getImageData(400,450,1,100).data;assert.ok(d.every((v,i)=>i%4!==3||v===0));assert.ok(N.analyze(st).ink.ink>.99)});
 test('actual detached film replay and native HD export render v315 snapshots through the shared model',async()=>{const previousDoc=globalThis.document,previousWindow=globalThis.window;globalThis.document={createElement:()=>createCanvas(1,1)};globalThis.window={ParticleBrush:B};try{const{detachedSequence297}=await import('../remotion-studio/src/detached297.mjs');const st=JSON.parse(JSON.stringify(stroke())),paper=createCanvas(1000,1000),foreground=createCanvas(1000,1000),page={width:1000,height:1000,b:{x:0,y:0},bounds:{x:0,y:0,w:1,h:1},scale:1000,total:st.points.length-1,background:paper,foreground,records:[{st,start:0,end:st.points.length-1,k:1,x:0,y:0,rect:{x:0,y:0,w:1000,h:1000}}]};const film=await detachedSequence297([page],{decoded297:true,maxSide:1000});const expected=render(st),frame=film.surface.frame297(1,{transparent:true});assert.deepEqual(frame.toBuffer('image/png'),expected.toBuffer('image/png'));const high=createCanvas(2000,2000);assert.equal(film.surface.paintInk313(high.getContext('2d'),1,{width:2000,height:2000,scale:1,focus:{x:.5,y:.5}}),true);assert.deepEqual(high.toBuffer('image/png'),render(st,2000).toBuffer('image/png'));film.close()}finally{globalThis.document=previousDoc;globalThis.window=previousWindow}});
+
+test('new strokes leave lengthwise paper gaps only in fast, lightly pressed running and cursive ink',()=>{
+ function paint(style,duration,pressure){
+  const st=stroke({style,duration,pressure,strength:100});
+  delete st.settings.engineVersion315;
+  st.settings.bristleGaps317=true;
+  st.settings.color='#111111';
+  st.hasPressure=true;
+  return render(st).getContext('2d');
+ }
+ function spans(ctx,x){
+  const data=ctx.getImageData(x,450,1,100).data;
+  let count=0,ink=false;
+  for(let i=3;i<data.length;i+=4){
+   const next=data[i]>128;
+   if(next&&!ink)count++;
+   ink=next;
+  }
+  return count;
+ }
+ for(const style of [75,100]){
+  const fast=paint(style,175,.32);
+  assert.ok(spans(fast,500)>2);
+  assert.equal(spans(fast,510),spans(fast,500));
+  assert.equal(spans(paint(style,2500,.32),500),1);
+  assert.equal(spans(paint(style,175,.9),500),1);
+ }
+ for(const style of [0,25,50])assert.equal(spans(paint(style,175,.32),500),1);
+});

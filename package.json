@@ -1,7 +1,7 @@
 {
   "name": "iinnkk",
   "private": true,
-  "version": "316.0.0",
+  "version": "317.0.0",
   "type": "module",
   "scripts": {
     "build": "node tools/run-app.mjs build",

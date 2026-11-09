@@ -4365,13 +4365,34 @@
       "imports": [],
       "format": "esm"
     },
-    "src/audio-mux.mjs": {
-      "bytes": 2550,
+    "src/custom-music.mjs": {
+      "bytes": 1705,
       "imports": [
         {
           "path": "node_modules/mediabunny/dist/modules/src/index.js",
           "kind": "import-statement",
           "original": "mediabunny"
+        },
+        {
+          "path": "node_modules/@mediabunny/aac-encoder/dist/bundles/mediabunny-aac-encoder.mjs",
+          "kind": "dynamic-import",
+          "original": "@mediabunny/aac-encoder"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/audio-mux.mjs": {
+      "bytes": 3564,
+      "imports": [
+        {
+          "path": "node_modules/mediabunny/dist/modules/src/index.js",
+          "kind": "import-statement",
+          "original": "mediabunny"
+        },
+        {
+          "path": "src/custom-music.mjs",
+          "kind": "dynamic-import",
+          "original": "./custom-music.mjs"
         }
       ],
       "format": "esm"
@@ -4402,24 +4423,8 @@
       ],
       "format": "esm"
     },
-    "src/custom-music.mjs": {
-      "bytes": 1302,
-      "imports": [
-        {
-          "path": "node_modules/mediabunny/dist/modules/src/index.js",
-          "kind": "import-statement",
-          "original": "mediabunny"
-        },
-        {
-          "path": "node_modules/@mediabunny/aac-encoder/dist/bundles/mediabunny-aac-encoder.mjs",
-          "kind": "dynamic-import",
-          "original": "@mediabunny/aac-encoder"
-        }
-      ],
-      "format": "esm"
-    },
     "src/web.jsx": {
-      "bytes": 30969,
+      "bytes": 30823,
       "imports": [
         {
           "path": "node_modules/react/index.js",
@@ -4495,11 +4500,6 @@
           "path": "src/export-engine.mjs",
           "kind": "dynamic-import",
           "original": "./export-engine.mjs"
-        },
-        {
-          "path": "src/custom-music.mjs",
-          "kind": "dynamic-import",
-          "original": "./custom-music.mjs"
         },
         {
           "path": "node_modules/react/jsx-runtime.js",
@@ -4584,7 +4584,33 @@
       },
       "bytes": 311916
     },
-    "../assets/video/chunk.WF2JOQ6Z.js": {
+    "../assets/video/chunk.WVNYQYYV.js": {
+      "imports": [
+        {
+          "path": "../assets/video/chunk.DH43MJXE.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../assets/video/chunk.5LHGNSCY.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "../assets/video/chunk.J4TJ5MES.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "compressMusic295"
+      ],
+      "entryPoint": "src/custom-music.mjs",
+      "inputs": {
+        "src/custom-music.mjs": {
+          "bytesInOutput": 1031
+        }
+      },
+      "bytes": 1461
+    },
+    "../assets/video/chunk.OHX2YU27.js": {
       "imports": [
         {
           "path": "../assets/video/chunk.AFAMWJAP.js",
@@ -4617,6 +4643,10 @@
         {
           "path": "../assets/video/chunk.IF5PWCDO.js",
           "kind": "dynamic-import"
+        },
+        {
+          "path": "../assets/video/chunk.WVNYQYYV.js",
+          "kind": "dynamic-import"
         }
       ],
       "exports": [
@@ -4641,36 +4671,10 @@
           "bytesInOutput": 872
         },
         "src/audio-mux.mjs": {
-          "bytesInOutput": 1508
+          "bytesInOutput": 1998
         }
       },
-      "bytes": 106821
-    },
-    "../assets/video/chunk.FIQCLRMF.js": {
-      "imports": [
-        {
-          "path": "../assets/video/chunk.DH43MJXE.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "../assets/video/chunk.5LHGNSCY.js",
-          "kind": "import-statement"
-        },
-        {
-          "path": "../assets/video/chunk.J4TJ5MES.js",
-          "kind": "dynamic-import"
-        }
-      ],
-      "exports": [
-        "compressMusic295"
-      ],
-      "entryPoint": "src/custom-music.mjs",
-      "inputs": {
-        "src/custom-music.mjs": {
-          "bytesInOutput": 936
-        }
-      },
-      "bytes": 1366
+      "bytes": 107311
     },
     "../assets/video/chunk.QFT6PTVD.js": {
       "imports": [
@@ -4875,7 +4879,7 @@
       },
       "bytes": 992832
     },
-    "../assets/video/web.Q4UEWFGB.js": {
+    "../assets/video/web.GXM7WDHM.js": {
       "imports": [
         {
           "path": "../assets/video/chunk.AFAMWJAP.js",
@@ -4926,11 +4930,7 @@
           "kind": "dynamic-import"
         },
         {
-          "path": "../assets/video/chunk.WF2JOQ6Z.js",
-          "kind": "dynamic-import"
-        },
-        {
-          "path": "../assets/video/chunk.FIQCLRMF.js",
+          "path": "../assets/video/chunk.OHX2YU27.js",
           "kind": "dynamic-import"
         }
       ],
@@ -4938,7 +4938,7 @@
       "entryPoint": "src/web.jsx",
       "inputs": {
         "src/web.jsx": {
-          "bytesInOutput": 27106
+          "bytesInOutput": 27006
         },
         "src/format.mjs": {
           "bytesInOutput": 484
@@ -4962,7 +4962,7 @@
           "bytesInOutput": 968
         }
       },
-      "bytes": 60364
+      "bytes": 60264
     },
     "../assets/video/chunk.AFAMWJAP.js": {
       "imports": [

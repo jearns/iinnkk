@@ -70,7 +70,7 @@
  let canvasFactory=null;const masks=new Map(),grains194=new Map();
  function setCanvasFactory(factory){canvasFactory=factory}
  function mask(s,level){const key=s.color+':'+s.particle+':'+level;if(masks.has(key))return masks.get(key);const create=canvasFactory||(root.document?()=>root.document.createElement('canvas'):null);if(!create)return null;const c=create();c.width=128;c.height=128;const ctx=c.getContext('2d');ctx.fillStyle=s.color;ctx.fillRect(0,0,128,128);const data=ctx.getImageData(0,0,128,128);let grain=grains194.get(s.particle);if(!grain){grain=new Float32Array(128*128);for(let y=0;y<128;y++)for(let x=0;x<128;x++)grain[y*128+x]=hash(x>>2,y>>1,72)*.7+hash(x,y,18)*.3;grains194.set(s.particle,grain)}for(let y=0;y<128;y++)for(let x=0;x<128;x++){const cloud=grain[y*128+x];data.data[(y*128+x)*4+3]=Math.round(clamp((cloud-level/5*.54)/.10+.5,0,1)*255)}ctx.putImageData(data,0,0);if(masks.size>=24)masks.delete(masks.keys().next().value);masks.set(key,c);return c}
- function prepare(s){if(s.engineVersion315===315)return;if(!s.dryUser314&&((s.regular194||0)+(s.running194||0)+(s.cursive194||0)>.2))return;for(let i=1;i<=5;i++)mask(s,i)}
+ function prepare(s){if(s.engineVersion315===315||s.bristleGaps317)return;if(!s.dryUser314&&((s.regular194||0)+(s.running194||0)+(s.cursive194||0)>.2))return;for(let i=1;i<=5;i++)mask(s,i)}
  function dab(t,x,y,r,angle,s,dry,opacity,turn,state,scale){
   if(r<.08*scale)return;const clip=state.clip;if(clip&&(x+r*1.5<clip.x||y+r*1.5<clip.y||x-r*1.5>clip.x+clip.w||y-r*1.5>clip.y+clip.h))return;
  const twist=state.twist||0,rx=r*(.76+Math.abs(turn)*.14),ry=r*(1+Math.abs(turn)*.10);angle=s.kaishu127?angle*.22+Math.PI/4+twist*.12:angle+twist*.35;t.fillStyle=s.color;t.globalAlpha=state.opacity??1;
@@ -100,6 +100,26 @@
    const q=(a-b)/d,k=Math.sqrt(Math.max(0,1-q*q)),lx=ux*q-uy*k,ly=uy*q+ux*k,rx=ux*q+uy*k,ry=uy*q-ux*k;
    t.moveTo(x0+lx*a,y0+ly*a);t.lineTo(x1+lx*b,y1+ly*b);t.lineTo(x1+rx*b,y1+ry*b);t.lineTo(x0+rx*a,y0+ry*a);t.closePath();t.fill();
    for(const [x,y,radius] of [[x0,y0,a],[x1,y1,b]])if(radius>.001){t.beginPath();t.arc(x,y,radius,0,Math.PI*2);t.fill()}
+  }
+  if(s.bristleGaps317&&(dry>0||state.gaps317>0)){
+   // Gaps between persistent bundles reveal the actual paper beneath the ink.
+   const gaps=[[-.62,.075],[-.29,.13],[.07,.09],[.34,.15],[.65,.065]];
+   const previousDry=state.gaps317||0;
+   const position=(x,y,normal,r,u)=>[x+normal.x*r*u,y+normal.y*r*u];
+   let from=-1,to=-1;
+   t.beginPath();
+   for(const [center,width] of [...gaps,[1,0]]){
+    const end0=center-width*previousDry,end1=center-width*dry;
+    t.moveTo(...position(x0,y0,previous,r0,from));
+    t.lineTo(...position(x1,y1,{x:nx,y:ny},r1,to));
+    t.lineTo(...position(x1,y1,{x:nx,y:ny},r1,end1));
+    t.lineTo(...position(x0,y0,previous,r0,end0));
+    t.closePath();
+    from=center+width*previousDry;to=center+width*dry;
+   }
+   t.fill();
+   state.gaps317=dry;state.normal204={x:nx,y:ny};
+   return;
   }
   function shape(f=1){if((s.clerical194||0)<.5){roundSweep208(f);return}const overlap=.85*scale,start=state.travel?overlap:0,end=state.final204||state.tip193?0:overlap,ax=x0-dx/d*start,ay=y0-dy/d*start,bx=x1+dx/d*end,by=y1+dy/d*end;const a=[ax+previous.x*r0*f,ay+previous.y*r0*f],b=[ax-previous.x*r0*f,ay-previous.y*r0*f],c=[bx+nx*r1*f,by+ny*r1*f],cornerD=[bx-nx*r1*f,by-ny*r1*f];
    function triangle(a,b,c){if((b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0])<0)[b,c]=[c,b];t.moveTo(a[0],a[1]);t.lineTo(b[0],b[1]);t.lineTo(c[0],c[1]);t.closePath()}
@@ -131,6 +151,15 @@
    let envelope=1;if(sharp194&&(s.seal194||0)<.98){const len=Math.min(160,Math.max(8,s.size*.6),tail.length*.28),u=clamp(tail.remaining[i]/Math.max(.01,len),0,1);envelope=mix(Math.min(u*u*(3-2*u),tail.remaining[i]/Math.max(.01,next)*.7),1,s.seal194||0)}
    const r0=Math.max(.02*scale,state.contact*scale),r1=Math.max(0,next*envelope*scale)*(tail?.hook?1+(noise((state.travel+distance)/Math.max(1,s.size*.025),3,state.seed)-.5)*.018:1);
    const depletion=clamp(state.travel/Math.max(1,s.size*8),0,1)*(s.cursive194||0),dryTarget=s.dryUser314?Math.max(dryForSpeed(state.velocity,s,pressure),s.dry*clamp(state.travel/Math.max(1,s.size*4),0,1)*.65):Math.max(dryForSpeed(state.velocity,s,pressure),depletion*.65);state.dry=mix(state.dry,dryTarget,1-Math.exp(-dt/95));state.color194=s.color;if(!s.dryUser314&&((s.regular194||0)+(s.running194||0)+(s.cursive194||0)>.2)){state.dry=0;const endLength205=tail&&Math.min(s.size*.28,tail.length*.08);if(tail&&sharp194&&!tail.hook&&(s.cursive194||0)>.2&&tail.remaining[i]<endLength205&&state.velocity>.35)state.dry=Math.min(.24,s.dry*.24*clamp(1-tail.remaining[i]/Math.max(1,endLength205),0,1))}
+   if(s.bristleGaps317){
+    const style=s.lineStrength108??0;
+    const light=pressure===null?clamp(.64-state.velocity*.22,.2,.64):pressure;
+    const speedGate=clamp((state.velocity-.60)/.65,0,1);
+    const liftGate=clamp((.82-light)/.55,0,1);
+    const strength=clamp((s.flyingWhite315??(s.dryUser314?s.dry*100:50))/100,0,1);
+    const target=style>50?strength*speedGate*liftGate:0;
+    state.dry=target>0?mix(state.gaps317||0,target,1-Math.exp(-dt/32)):0;
+   }
    state.hook206=!!tail?.hook;state.turn204=turn;state.final204=!!st.done&&i===st.points.length-1;state.tip193=sharp194&&tail.remaining[i]<.001;
    ribbon192(t,state.pos.x,state.pos.y,r0,x+(state.tip193&&clerical?next*scale*.12:0),y-(state.tip193&&clerical?next*scale*.6:0),r1,s,state.dry,state,scale);
    state.contact=r1/scale;state.r=next;state.pos={x,y};state.angle=Math.atan2(dy,dx);state.travel+=distance;state.last=p;
